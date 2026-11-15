@@ -8,6 +8,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Technische Richtung für den ersten Build festgelegt: natives WordPress-Block-Theme ohne zusätzliche Build-Abhängigkeiten.
 - [x] Erste Theme-Struktur, globale Tokens, Templates, Template Parts und Startseiten-Patterns angelegt.
 - [x] Erste wiederverwendbare Produkt-, Feature-, Ablauf-, Preis-, FAQ-, Ressourcen- und Screenshot-Briefing-Patterns ergänzt.
+- [x] Setup-Assistent für optionale Plugin-Installation, geschützten Seitenimport und neun WooCommerce-Produktentwürfe mit License-Captain-Planzuordnung umgesetzt.
+- [x] Markdown-Inhalte in editierbare Gutenberg-Seitenvorlagen samt SEO-Basics kompilierbar gemacht.
 - [ ] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
 - [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
 - [ ] Redaktions-, Barrierefreiheits-, Browser- und Performance-Prüfung abschließen.
@@ -30,7 +32,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] WooCommerce-Seiten über WordPress-Seiteninhalt und unterstützte WooCommerce-Blöcke ausgeben; keine instabilen internen Block-DOM-Strukturen voraussetzen.
 - [x] Kein Theme-eigener Produkt-CPT und kein JavaScript-Framework im ersten Build.
 - [x] Erste optionale Seitentemplates für Produkt-, Preis- und Ressourcenseiten angelegt; nach Sichtung der realen Produkt-UIs gegebenenfalls anpassen.
-- [ ] Yoast SEO im redaktionellen Modell nutzen: SEO-Titel, Meta-Beschreibung, kanonische URL, Indexierung und Social-Vorschau je Seite pflegen; das Theme erzeugt keine konkurrierenden Meta-Tags.
+- [x] Yoast SEO im Import berücksichtigen: SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase werden ohne Überschreiben eigener Yoast-Werte gesetzt.
+- [ ] Yoast SEO im redaktionellen Modell vervollständigen: kanonische URL, Indexierung und Social-Vorschau je Seite pflegen; das Theme erzeugt keine konkurrierenden Meta-Tags.
 - [ ] Zuständigkeit für Inhalte, SEO-Freigabe, rechtliche Seiten und Preisupdates festlegen.
 
 ## Phase 3 – Designsystem und Grundlagen
@@ -66,10 +69,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 ## Phase 6 – Seiteninhalte einsetzen
 
-- [ ] Startseite mit `texte/homepage/index.md` und vorhandenem Website-Konzept zusammenführen.
-- [ ] Produktübersicht und Captain-Pro-/Preis-/Vergleichsseiten aus den jeweiligen Markdown-Entwürfen aufbauen.
-- [ ] Für Voucher Captain, Pass Captain, Affiliate Captain und License Captain je Produkt-, Features-, Pro- bzw. Im-Paket- und FAQ-Seiten einpflegen.
-- [ ] Dokumentation, Support, Integrationen, Kompatibilität, Bootsschul-Lösung, Über-uns, globale FAQ und Ratgeberseiten einpflegen.
+- [x] Startseite, Produktübersicht, Captain-Pro-/Preis-/Vergleichsseiten, Produkt-Unterseiten, Dokumentation, Support, Integrationen, Kompatibilität, Bootsschul-Lösung, Über-uns, FAQs und Ratgeber aus Markdown in Theme-Inhalte kompilieren.
+- [ ] Importierte Seiten in einer echten WordPress-Installation redaktionell und visuell abnehmen.
 - [ ] Screenshot-/Demo-Platzhalter mit dem vorhandenen Aufnahmebriefing und klarer Kennzeichnung in Redaktionsvorschau setzen; vor Livegang durch echte, freigegebene Ansichten ersetzen.
 - [ ] Kundenlogos, Bewertungen, Kennzahlen oder Fallstudien nur nach Beleg und Freigabe einsetzen.
 - [ ] Alle internen Links, CTAs, Downloads, Checkoutziele und Formulare mit realen Zielen verbinden.
@@ -78,6 +79,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [x] Warenkorb- und Checkout-Seitenvorlagen so vorbereiten, dass deren WordPress-Seiteninhalt die WooCommerce-Blöcke enthält.
 - [x] Mein-Konto-Seitentemplate für den WordPress-Seiteninhalt vorbereiten.
+- [x] Assistent für WooCommerce-Produkte und License-Captain-Zuordnungen vorbereiten: neun jährliche Captain-Pro-Produktentwürfe mit bestehender Plan-/Preisstruktur, ohne Steuer- oder Zahlungseinstellungen zu ändern.
 - [ ] WooCommerce-Katalog, Produktdetail, Warenkorb, Checkout, Bestätigung, Konto und E-Mail-Einstiege mit installierter Shop-Konfiguration durchgehen.
 - [ ] Theme-Styling nur auf unterstützte WooCommerce-Blöcke und öffentliche Klassen anwenden; Block-Markup nicht nachbauen.
 - [ ] Produkt-/Pro-CTA und Preisangaben mit dem tatsächlichen Shop-Katalog abstimmen.
@@ -119,6 +121,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 Das Theme ist absichtlich leichtgewichtig. Es stellt globale Gestaltung, Vorlagen und redaktionelle Patterns bereit. Es implementiert keine Lizenzverwaltung, Warenkorblogik, Affiliate-Abrechnung oder Ticket-/Gutscheinprozesse. Diese Funktionen bleiben in den zuständigen Plugins und WooCommerce. Screenshots, Demos und Kundenbeispiele bleiben bis zur Freigabe gekennzeichnete Inhaltsplätze.
 
+Der Setup-Assistent ist unter **Design → Einrichtung** verfügbar. Er installiert WooCommerce und Yoast SEO aus wordpress.org, wenn gewünscht. License Captain wird nur aus einer vorgegebenen HTTPS-ZIP installiert und verlangt dafür einen in `wp-config.php` hinterlegten SHA-256-Hash; alternativ ist die manuelle Installation der freigegebenen ZIP vorgesehen. Seiteninhalte sind in drei Gruppen wählbar. Bereits bearbeitete/benutzerdefinierte Seiten bleiben geschützt. Preispläne werden nur bei aktiver WooCommerce- und License-Captain-Installation sowie EUR-Währung als verborgene Produktentwürfe erstellt und zugeordnet. Der Wizard verändert keine Shop-Steuern, Zahlungen, rechtlichen Angaben oder Produktdateien.
+
 ## Aktueller Build-Stand
 
-Die Pattern-Bibliothek enthält jetzt einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, den vorhandenen Preisentwurf für Single/Business/Agency, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Platzhalter in eckigen Klammern sind beim Einfügen redaktionell zu ersetzen. Die Preiswerte sind aus dem aktuellen Konzept übernommen und vor Shop-Veröffentlichung mit dem Produktkatalog abzugleichen.
+Die Pattern-Bibliothek enthält jetzt einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, den vorhandenen Preisentwurf für Single/Business/Agency, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Der Inhaltscompiler baut 46 Markdown-Quellseiten plus notwendige Verzeichnisseiten als importierbare Gutenberg-Inhalte. Platzhalterseiten werden als Entwurf angelegt. Platzhalter in eckigen Klammern sind redaktionell zu ersetzen. Die Preiswerte sind aus dem aktuellen Konzept übernommen und vor Shop-Veröffentlichung mit dem Produktkatalog abzugleichen.

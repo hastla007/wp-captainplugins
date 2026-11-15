@@ -8,12 +8,22 @@ Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/capt
 
 ## Einrichten
 
-1. Website-Titel, Logo und Menüs unter **Design → Editor** bzw. in den Website-Einstellungen setzen.
-2. Die vorbereitete Startseite über **Einstellungen → Lesen** als statische Startseite auswählen.
-3. Seiteninhalte aus `../texte/homepage/` übernehmen und Patterns im Editor einfügen.
-4. Produktpreise, Downloads, Checkout-, Support- und Dokumentationsziele mit den tatsächlichen Shop- und Plugin-Endpunkten verbinden.
-5. Yoast SEO je Seite pflegen; Meta-Tags und strukturierte Daten nicht im Theme duplizieren.
-6. Screenshot-Platzhalter vor Veröffentlichung durch freigegebene echte Produktansichten ersetzen.
+Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setup-Assistenten. Er bietet WooCommerce, Yoast SEO und License Captain zur Installation/Aktivierung an, importiert ausgewählte Inhaltsgruppen und kann die neun vorhandenen Captain-Pro-Jahrespläne als WooCommerce-Entwürfe anlegen.
+
+- WooCommerce und Yoast SEO werden über wordpress.org bezogen. WooCommerce ist optional installierbar, wird aber für Shop und Produktentwürfe benötigt; Yoast bleibt optional.
+- License Captain ist die Lizenzbasis und in den Captain-Pro-Angeboten enthalten. Das Theme verteilt keine Plugin-ZIP. Für den Assistenten kann eine vertrauenswürdige HTTPS-ZIP samt SHA-256-Prüfsumme über `wp-config.php` konfiguriert werden:
+
+  ```php
+  define( 'CAPTAIN_LICENSE_PLUGIN_ZIP', 'https://downloads.example.com/wp-license.zip' );
+  define( 'CAPTAIN_LICENSE_PLUGIN_SHA256', '64-stelliger-sha256-hash' );
+  ```
+
+  Ohne Paketquelle kann die freigegebene ZIP manuell über den WordPress-Plugin-Uploader installiert werden.
+- Die Seitengruppen **Website-Grundseiten**, **Produktseiten** und **Ratgeber** sind separat auswählbar. Inhalte werden aus den Markdown-Dateien unter `texte/homepage/` mit `python3 tools/build-theme-content.py` zu editierbaren Gutenberg-Blöcken gebaut.
+- Bereits vorhandene Seiten werden nicht überschrieben. Das Theme aktualisiert nur eigene, seit dem Import unveränderte Seiten. SEO-Felder werden übernommen, wenn sie leer oder weiterhin unverändert sind.
+- Vollständige Seiten können veröffentlicht werden. Seiten mit Download-, Checkout-, Support-, Screenshot- oder Betreiber-Platzhaltern werden als Entwurf angelegt. Bestehende statische Startseiten bleiben unangetastet.
+- Der Produkt-Schritt legt virtuelle, verborgene **Entwürfe** für die drei Captain-Pro-Produkte und die neun Jahrespläne an. Er verändert keine bestehenden SKUs, Preise, Steuer- oder Zahlungseinstellungen und trägt keine Download-Dateien ein. WooCommerce muss auf EUR stehen; License Captain muss aktiv sein, damit die Pläne zugeordnet werden.
+- License Captain ZIP, Releases/Downloads, Checkout, Rechtstexte, Steuerkonfiguration, Supportwege und Unternehmensangaben müssen vor dem Verkauf ergänzt und geprüft werden.
 
 Für Produkt-Startseiten die Vorlage **Produktseite**, für Preise und Vergleich **Preisübersicht** und für Dokumentation, FAQ, Support und Kompatibilität **Ressourcen- und Dokumentationsseite** auswählen. Die WooCommerce-Seiten Warenkorb, Checkout und Mein Konto verwenden ihre gleichnamigen Seitentemplates, sofern die WordPress-Seiten diese Slugs haben.
 
@@ -31,6 +41,6 @@ Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/m
 
 Die Pattern-Texte mit eckigen Klammern sind redaktionelle Felder, die beim Einfügen auszufüllen sind. Der Preisvergleich startet mit den aktuellen Konzeptpreisen und enthält einen internen Abgleichhinweis. Screenshot-Platzhalter enthalten ein konkretes Aufnahmebriefing und müssen vor Veröffentlichung ersetzt werden.
 
-## Nicht im Theme enthalten
+## Setup-Assistent und Grenzen
 
-Lizenzprüfung, Shop-/Checkout-Funktionalität, Gutscheine, Tickets, Affiliate-Abrechnung, Preisverwaltung, Kundenkonten und SEO-Metadaten. Dafür sind WooCommerce, Yoast SEO und die jeweiligen Captain-Plugins zuständig.
+Der Assistent erledigt die gewählten Installations-, Seitenimport- und Produktentwurfsschritte. Er konfiguriert weder Steuern/Zahlungen noch Lizenzserver-Geheimnisse und veröffentlicht keine Produktangebote. Lizenzprüfung, Checkout, Gutscheine, Tickets, Affiliate-Abrechnung und Plugin-Downloads bleiben in WooCommerce, License Captain und den jeweiligen Captain-Plugins. Bei aktiver Yoast-Installation schreibt der Seitenimport grundlegende Yoast-Titel, Meta-Beschreibung und Fokus-Keyphrase, ohne bestehende individuelle Werte zu ersetzen.

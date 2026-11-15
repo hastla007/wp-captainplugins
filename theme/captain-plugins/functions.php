@@ -9,13 +9,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+require_once get_theme_file_path( 'inc/content.php' );
+require_once get_theme_file_path( 'inc/seo.php' );
+require_once get_theme_file_path( 'inc/catalog.php' );
+require_once get_theme_file_path( 'inc/setup.php' );
+
 function captain_plugins_setup() {
 	load_theme_textdomain( 'captain-plugins', get_template_directory() . '/languages' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'assets/css/theme.css' );
+	add_theme_support( 'custom-logo', array( 'height' => 64, 'width' => 220, 'flex-height' => true, 'flex-width' => true ) );
+	add_theme_support( 'woocommerce' );
 
 	register_block_pattern_category(
 		'captain-plugins',

@@ -1,0 +1,119 @@
+<!-- wp:paragraph -->
+<p>License Captain nutzt WooCommerce für den Verkauf von Softwarelizenzen und verwaltet Aktivierungen, Berechtigungen, Verlängerungen und Updates für Ihre Produkt-Plugins.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Voraussetzungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>WordPress 6.5 oder neuer</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Aktives WooCommerce</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>PHP 7.4 oder neuer</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>MySQL oder MariaDB mit beschreibbarem primärem Datenbankserver</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Zuverlässiger WordPress-Cron; für den Produktionsbetrieb wird ein System-Cron empfohlen</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Für automatische Verlängerungen: offizielles WooCommerce-Stripe-Gateway und Stripe-Konto</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Richten Sie den Lizenzserver mit HTTPS ein. Erstellen Sie vor der Erstinstallation ein Backup und führen Sie die Konfiguration zuerst in einer Testumgebung durch.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">1. Plugin und WooCommerce installieren</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Installieren und aktivieren Sie WooCommerce. Installieren Sie danach das License-Captain-ZIP über <strong>Plugins → Installieren → Plugin hochladen</strong> und aktivieren Sie License Captain.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 1 – Lizenzserver aktiv:</strong> Zeigen Sie die Pluginliste mit aktivem WooCommerce und License Captain. Website-Adresse, Adminname und andere vertrauliche Plugins ausblenden.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">2. Stabile Schlüssel konfigurieren</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vor dem Ausstellen produktiver Lizenzen richten Sie zwei getrennte, zufällige Geheimnisse in der Serverkonfiguration ein: einen Schlüssel für Lizenzschlüssel und einen für verschlüsselte Installationsdaten. Verwenden Sie mindestens 32 zufällige Bytes pro Geheimnis. Speichern Sie die Werte in einer zugriffsgeschützten Schlüsselverwaltung und nicht im Quellcode-Repository.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Beispiel für die Konfiguration in wp-config.php:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>~~~php define( 'WPLC<em>LICENSE</em>KEY<em>SECRET', 'HIER</em>EINEN<em>EIGENEN</em>ZUFAELLIGEN<em>SCHLUESSEL</em>EINTRAGEN' ); define( 'WPLC<em>INSTALLATION</em>ENCRYPTION<em>KEY', 'HIER</em>EINEN<em>ANDEREN</em>ZUFAELLIGEN<em>SCHLUESSEL</em>EINTRAGEN' ); ~~~</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Die Platzhalter müssen durch unterschiedliche, zufällige Geheimnisse ersetzt werden. Veröffentlichen Sie keine Schlüssel in Screenshots, Supportanfragen oder Logs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 2 – Sicherheitshinweis/Diagnose:</strong> Zeigen Sie die License-Captain-Diagnose, in der keine Warnung zum Salt-Fallback angezeigt wird. Geheimnisse, Umgebungsvariablen und Serverpfade dürfen nicht sichtbar sein.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">3. WooCommerce-Produkte als Lizenzen konfigurieren</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wählen Sie ein Produkt oder eine Variante und markieren Sie es als Lizenzprodukt. Definieren Sie Abrechnungsintervall, Laufzeit, Website-Limit, Supportstufe und Entitlements. Der Kauf setzt ein Kundenkonto voraus; prüfen Sie deshalb den WooCommerce-Konto- und Checkout-Ablauf.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 3 – Lizenzprodukt:</strong> Zeigen Sie die Lizenzkonfiguration eines fiktiven Pluginprodukts mit Abrechnungsintervall, Limit und Berechtigungen. Keine echten Lizenzschlüssel oder Kundenbestellungen einblenden.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">4. Verlängerungen einrichten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Manuelle Verlängerungen können über verfügbare Shop-Zahlungsarten abgewickelt werden. Für automatische Verlängerungen verbinden Sie das offizielle WooCommerce-Stripe-Gateway und aktivieren die Einwilligungsoption im Checkout.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Wenn Stripe genutzt wird, richten Sie zusätzlich den in den License-Captain-Einstellungen angezeigten Webhook-Endpunkt in Stripe ein. Der License-Captain-Webhook ist separat vom WooCommerce-Stripe-Webhook und benötigt sein eigenes Signing Secret. Die produktspezifische Dokumentation führt die benötigten Ereignisse und Konfigurationswerte auf.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 4 – Verlängerungs- und Webhookeinstellungen:</strong> Zeigen Sie Testmodus, Status des Stripe-Gateways und die Stelle, an der der Webhook-Endpunkt angezeigt wird. Webhook-Signing-Secret und Live-Schlüssel vollständig verbergen.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">5. Erstes Produkt-Plugin anbinden</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Binden Sie Ihr Produkt-Plugin über die dokumentierte Client-Bibliothek und signierte API an. Konfigurieren Sie Entitlements und erlaubte Updatepakete. Erstellen Sie danach ein Testprodukt, kaufen Sie eine Lizenz im Testmodus und prüfen Sie Aktivierung, Statusanzeige und Updatezugriff.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 5 – Kundenkonto mit Lizenz:</strong> Zeigen Sie eine Testlizenz mit Status, Ablaufdatum und anonymisierter Aktivierung. Lizenzschlüssel und Domain durch unbrauchbare Beispieldaten ersetzen.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">6. Release und Betrieb vorbereiten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Laden Sie ein Releasepaket hoch oder registrieren Sie eine HTTPS-Paketadresse mit Prüfsumme. Testen Sie Download, Update, Rücknahme eines Releases und Cron-/Action-Scheduler-Verarbeitung. Richten Sie Backups und Monitoring ein.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="/license-captain/features/">License Captain Features</a> · <a href="/license-captain/faq/">FAQ</a> · <a href="/dokumentation/">Dokumentation</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Kompatibilitätshinweis:</strong> WooCommerce 8.9 ist die deklarierte Mindestversion. Die dokumentierte CI-Matrix führt außerdem WooCommerce 9.4.3 und 11.2.2 auf. Prüfen Sie vor Veröffentlichung die finale Release-Matrix. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
+<!-- /wp:paragraph -->

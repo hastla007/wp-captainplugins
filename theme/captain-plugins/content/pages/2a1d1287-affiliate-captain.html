@@ -1,0 +1,105 @@
+<!-- wp:paragraph -->
+<p>Affiliate Captain verwaltet Partnerbewerbungen, Links, Attribution, Provisionen und Auszahlungsläufe. Es kann eigenständig oder mit einer optionalen WooCommerce-Integration arbeiten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Voraussetzungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>WordPress 6.3 oder neuer</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>PHP 7.4 oder neuer</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Erweiterungen sodium und dom</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>zip wird für den Programmexport benötigt</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>WooCommerce 8.0 oder neuer nur für die optionale WooCommerce-Integration</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Erstellen Sie ein Backup und richten Sie das Programm zunächst auf einer Staging-Website ein.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">1. Plugin installieren</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Laden Sie das Plugin-Paket aus [Download-Quelle ergänzen] herunter. Installieren Sie es unter <strong>Plugins → Installieren → Plugin hochladen</strong> und aktivieren Sie Affiliate Captain.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">2. Partnerseiten anlegen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Die Einrichtungs-Checkliste führt durch die ersten Schritte. Sie können Bewerbung, Partnerbereich und Begrüßungsseite automatisch anlegen lassen. Alternativ verwenden Sie die bereitgestellten Blöcke oder Shortcodes für die Bewerbungsseite, das Partnerportal und die Begrüßungsseite.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 1 – Einrichtungs-Checkliste:</strong> Zeigen Sie die Affiliate-Captain-Startseite nach Aktivierung mit den empfohlenen Einrichtungsschritten und der Option, die Partnerseiten automatisch anzulegen. Site-URL und Kontodaten anonymisieren.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">3. Regeln und Bedingungen festlegen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Legen Sie Teilnahmebedingungen, Standardprovision, Haltefrist und Mindestbetrag fest. Organisieren Sie Partner bei Bedarf in Gruppen und definieren Sie abweichende Regeln für Partner, Produkte, Kategorien oder SKUs. Testen Sie Referral-Link und Partnercode mit einer Testbestellung.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 2 – Provisionseinstellungen:</strong> Zeigen Sie Standardprovision, Haltefrist und Mindestbetrag mit fiktiven Werten. Keine echten Vertragstexte oder personenbezogenen Daten einblenden.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">4. Auszahlungen vorbereiten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Hinterlegen Sie unter den Auszahlungseinstellungen die Unternehmensangaben und das Firmenkonto für SEPA. Für Gutschriften pflegen Sie Anschrift und die für Ihren Prozess erforderlichen Steuerangaben. Stimmen Sie das Gutschriftverfahren und die Partnerbedingungen fachlich ab.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Für eine produktive Installation sollte ein eigener Verschlüsselungsschlüssel in der Serverkonfiguration liegen. Halten Sie ihn geheim, speichern Sie ihn nicht im Repository und sichern Sie ihn in Ihrer zugriffsgeschützten Schlüsselverwaltung.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 3 – Auszahlungseinstellungen:</strong> Zeigen Sie die Felder für SEPA-Auszahlung und Gutschriftkonfiguration mit ausschließlich erfundenen Daten. IBAN, Steuer-ID und Adresse dürfen keine echten Werte enthalten.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">5. Cache und Reverse Proxy prüfen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Seiten mit Bewerbungsformular und Partnerbegrüßung sowie Seiten, auf denen Partnerparameter erfasst werden, müssen vom Seiten- oder CDN-Cache korrekt behandelt werden. Prüfen Sie die Cache-Regeln, wenn Formulare oder Partnerlinks über ein Widget oder Theme-Template ausgegeben werden. Hinter Cloudflare oder einem Reverse Proxy tragen Sie dessen IP-Bereiche gemäß der Dokumentation ein.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 4 – Missbrauchsschutz:</strong> Zeigen Sie die Einstellungen für Reverse Proxy und Cache-Hinweise. IP-Adressen nur aus reservierten Beispieldokumentationsbereichen verwenden.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">6. Testpartner bis zur Auszahlung begleiten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Legen Sie einen Testpartner an, folgen Sie einem Referral-Link und prüfen Sie die zugeordnete Bestellung. Kontrollieren Sie Provision, Haltefrist, eventuelle Refund-Korrektur, Auszahlungslauf und SEPA-Export in einer Testumgebung.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 5 – Partnerportal und Auszahlungslauf:</strong> Zeigen Sie Testpartnerdaten, eine Beispielprovision und einen Testlauf. Partnername, IBAN, Bestellungen und Beträge müssen fiktiv sein.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p><a href="/affiliate-captain/features/">Affiliate Captain Features</a> · <a href="/affiliate-captain/faq/">FAQ</a> · <a href="/dokumentation/">Dokumentation</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Captain-Pro-Hinweis:</strong> Das Affiliate-Captain-Pro-Add-on benötigt WordPress 6.5+; PHP 7.4+ sowie die erforderlichen PHP-Erweiterungen richten sich nach dem Kern-Plugin. WooCommerce bleibt optional. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
+<!-- /wp:paragraph -->

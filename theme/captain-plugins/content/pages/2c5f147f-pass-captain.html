@@ -1,0 +1,103 @@
+<!-- wp:paragraph -->
+<p>Pass Captain verwaltet Events, Tickets, Servicebuchungen, Wartelisten und Einlass in WordPress. WooCommerce ist optional.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Voraussetzungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>WordPress 6.4 oder neuer</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>PHP 8.2 oder neuer</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>MySQL oder MariaDB in einer unterstützten Version</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>WooCommerce nur, wenn Sie den WooCommerce-Checkout verwenden</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Erstellen Sie vorab ein Backup. Für neue Event- und Zahlungsabläufe empfiehlt sich zunächst eine Staging-Website.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">1. Plugin installieren</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Laden Sie das Pass-Captain-Paket aus [Download-Quelle ergänzen] herunter. Gehen Sie in WordPress zu <strong>Plugins → Installieren → Plugin hochladen</strong>, wählen Sie die ZIP-Datei, installieren und aktivieren Sie das Plugin.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 1 – Pass Captain aktiv:</strong> Zeigen Sie die Pluginverwaltung nach erfolgreicher Aktivierung. Wenn WooCommerce installiert ist, soll außerdem sichtbar sein, dass es eine optionale Integration darstellt.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">2. Eventseite veröffentlichen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Erstellen Sie eine WordPress-Seite für Ihre Events. Fügen Sie den Pass-Captain-Eventblock ein oder nutzen Sie den Shortcode [wp<em>pass</em>captain<em>events]. Für einen Kalender können Sie den Kalenderblock oder [wp</em>pass<em>captain</em>calendar] verwenden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 2 – Eventblock im Editor:</strong> Zeigen Sie den Gutenberg-Editor mit Eventliste oder Kalender und eine Vorschau mit neutralen Beispieldaten. Keine echten Teilnehmer- oder Bestelldaten zeigen.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">3. Event oder Serie einrichten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Legen Sie im Pass-Captain-Bereich ein Event mit Titel, Beschreibung, Ort, Zeit und Kontingent an. Für wiederkehrende Termine erstellen Sie eine Serie und hinterlegen je Termin passende Preisstufen. Bei Platzwahl können Sie einen Saalplan und Teilnehmerfelder ergänzen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 3 – Eventkonfiguration:</strong> Zeigen Sie Termin, Kontingent und Preisstufen eines Beispielseminars. Persönliche Daten und interne Veranstalterinformationen ausblenden.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">4. Reservierung und Zahlung testen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Definieren Sie Reservierungszeit und Verkaufsregeln. Sie können kostenlose Bestellungen anbieten oder Zahlungen über Stripe, PayPal oder Mollie abwickeln. Alternativ lässt sich WooCommerce für den Checkout anbinden. Prüfen Sie im Test die Bestellbestätigung, Ticketzustellung und den Umgang mit Storno oder Erstattung.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 4 – Checkout und Zahlungswahl:</strong> Zeigen Sie eine Testbuchung mit Preis und gewähltem Zahlungsweg. Keine echten Zahlungsdaten oder Transaktionskennungen einblenden.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">5. Ticket und Einlass vorbereiten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Erstellen Sie eine Seite für den Scanner und fügen Sie den Shortcode [wp<em>pass</em>captain_scanner] ein. Weisen Sie berechtigte Mitarbeitende dem Event oder einzelnen Terminen zu. Prüfen Sie QR-/PDF-Ticket, Check-in, Check-out und Wiedereinlass. Für Offlinebetrieb richten Sie den installierbaren Offline-Scanner gemäß der technischen Dokumentation ein.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 5 – Scanneransicht:</strong> Zeigen Sie einen Beispiel-QR-Code und den erfolgreichen Check-in-Status auf einem Testgerät. Der Code muss ungültig oder anonymisiert sein; keine Teilnehmerliste sichtbar lassen.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Servicebuchungen einrichten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Für Kurse oder Verleih definieren Sie Ressourcen, Zeitfenster, Dauer, Puffer und Buchungsregeln. Testen Sie Umbuchung, Stornofrist und Warteliste mit einem ausgebuchten Beispieltermin.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 6 – Ressourcen und Warteliste:</strong> Zeigen Sie eine Ressource mit Verfügbarkeit, Pufferzeit und einer anonymisierten Wartelistenposition.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p><a href="/pass-captain/features/">Features</a> · <a href="/pass-captain/pro/">Pass Captain Pro</a> · <a href="/pass-captain/faq/">FAQ</a> · <a href="/support/">Support</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Captain-Pro-Hinweis:</strong> Das Pass-Captain-Pro-Add-on benötigt WordPress 6.5+; für die Kombination gilt wegen des Kerns weiterhin PHP 8.2+. WooCommerce bleibt optional. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
+<!-- /wp:paragraph -->
