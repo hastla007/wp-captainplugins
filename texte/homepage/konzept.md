@@ -417,7 +417,7 @@ Die Prüfung vom **15.11.2026** bezog Hauptstände, neuere Produktdokumente und 
 
 ---
 
-**Nächster sinnvoller Arbeitsschritt:** Mit den übernommenen Preisen und Produktplänen die vier Produktübersichten sowie ihre Features-, Pro- und FAQ-Unterseiten texten. Screenshot-, Demo- und Kundenbeispiel-Platzhalter bleiben bis zur Bereitstellung echter Medien bestehen.
+**Textentwürfe:** Die Startseite, gemeinsamen Unternehmensseiten sowie die Produkt-, Features-, Pro-/Paket- und FAQ-Seiten liegen als einzelne Markdown-Dateien in `texte/homepage/`. Die Datei `texte/homepage/README.md` enthält Navigation und Seitenübersicht. Screenshot-, Demo- und Kundenbeispiel-Platzhalter bleiben bis zur Bereitstellung echter Medien bestehen.
 
 ## 9. Erweiterung nach dem Expert:innen-Panel
 
