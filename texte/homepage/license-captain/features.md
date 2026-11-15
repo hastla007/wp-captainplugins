@@ -19,9 +19,9 @@ Kunden aktivieren ihre Lizenz für Live-, Staging- oder Entwicklungswebsites. Si
 
 Verfolgen Sie Zustände und Änderungen im Auditverlauf. Kunden verlängern manuell oder nutzen die optionale automatische Stripe-Verlängerung.
 
-## Signierte API und Berechtigungen
+## Server-/Client-Integration
 
-Produkt-Plugins fragen Lizenzstatus und Entitlements über signierte Requests und Responses ab. So können Funktionen und Updatezugriff an den erworbenen Plan gebunden werden.
+Ihre WordPress-Plugins kommunizieren als Client mit License Captain Server und fragen Lizenzstatus, Berechtigungen und Updatezugriff über signierte Requests und Responses ab. Sie können die Client-Integration direkt nach der API-Spezifikation in Ihr Plugin einbauen. Alternativ verwenden Sie ein separates Client-Plugin wie License Captain Client, das wir für die Anbindung unserer eigenen Plugins einsetzen.
 
 ## Updates und Release-Notizen
 
@@ -32,4 +32,4 @@ Verwalten Sie Releases und stellen Sie Updates für Ihre Produkt-Plugins bereit.
 Der Kundenbereich fasst Lizenzen und aktivierte Websites zusammen. Datenschutzexport und -löschung unterstützen die Werkzeuge Ihrer WordPress-Installation.
 
 [Screenshot-Platzhalter: Kundenansicht mit Lizenzstatus, Laufzeit und Website-Aktivierungen zeigen; Lizenzschlüssel und Domains durch Testwerte ersetzen.] · [Screenshot-Platzhalter: Changelog-Block mit Produktname, Releaseversion und sichtbaren Änderungsnotizen zeigen; ausschließlich fiktive Produktdaten verwenden.]  
-[Im Captain-Pro-Paket enthalten](/license-captain/im-paket/)
+[Server-/Client-Integration](/license-captain/im-paket/)
