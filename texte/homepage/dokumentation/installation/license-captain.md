@@ -7,7 +7,7 @@ focus_keyphrase: License Captain installieren
 
 # License Captain als WooCommerce-Lizenzserver einrichten
 
-License Captain nutzt WooCommerce für den Verkauf von Softwarelizenzen und verwaltet Aktivierungen, Berechtigungen, Verlängerungen und Updates für Ihre Produkt-Plugins.
+License Captain Server ist ein separat erhältliches Plugin und nicht in Captain Pro enthalten. Es nutzt WooCommerce für den Verkauf eigener Softwarelizenzen und verwaltet Aktivierungen, Berechtigungen, Verlängerungen und Updates für Ihre Produkt-Plugins.
 
 ## Voraussetzungen
 
@@ -57,7 +57,7 @@ Wenn Stripe genutzt wird, richten Sie zusätzlich den in den License-Captain-Ein
 
 ## 5. Erstes Produkt-Plugin anbinden
 
-Binden Sie Ihr Produkt-Plugin über die dokumentierte Client-Bibliothek und signierte API an. Konfigurieren Sie Entitlements und erlaubte Updatepakete. Erstellen Sie danach ein Testprodukt, kaufen Sie eine Lizenz im Testmodus und prüfen Sie Aktivierung, Statusanzeige und Updatezugriff.
+Jedes zu lizenzierende Plugin benötigt eine Client-Integration, die mit License Captain Server kommuniziert. Sie können die Integration selbst direkt in Ihr WordPress-Plugin programmieren und dabei die API-Spezifikation sowie signierte Requests verwenden. Alternativ können Sie ein separates Client-Plugin wie License Captain Client einsetzen, das wir für unsere eigenen Plugins verwenden. Konfigurieren Sie Entitlements und erlaubte Updatepakete. Erstellen Sie danach ein Testprodukt, kaufen Sie eine Lizenz im Testmodus und prüfen Sie Aktivierung, Statusanzeige und Updatezugriff.
 
 > **Screenshot-Platzhalter 5 – Kundenkonto mit Lizenz:** Zeigen Sie eine Testlizenz mit Status, Ablaufdatum und anonymisierter Aktivierung. Lizenzschlüssel und Domain durch unbrauchbare Beispieldaten ersetzen.
 
