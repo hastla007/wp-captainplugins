@@ -11,7 +11,7 @@ Dieses Verzeichnis enthält die deutschen Website-Texte für Captain Plugins. Da
 - [Voucher Captain](voucher-captain/index.md), [Features](voucher-captain/features.md), [Pro](voucher-captain/pro.md), [FAQ](voucher-captain/faq.md)
 - [Pass Captain](pass-captain/index.md), [Features](pass-captain/features.md), [Pro](pass-captain/pro.md), [FAQ](pass-captain/faq.md)
 - [Affiliate Captain](affiliate-captain/index.md), [Features](affiliate-captain/features.md), [Pro](affiliate-captain/pro.md), [FAQ](affiliate-captain/faq.md)
-- [License Captain](license-captain/index.md), [Features](license-captain/features.md), [Im Paket](license-captain/im-paket.md), [FAQ](license-captain/faq.md)
+- [License Captain](license-captain/index.md), [Features](license-captain/features.md), [Server-/Client-Integration](license-captain/im-paket.md), [FAQ](license-captain/faq.md)
 - [Vergleich](vergleich.md) → /vergleich/
 - [Integrationen](integrationen.md) → /integrationen/
 - [Über uns](ueber.md) → /ueber/
