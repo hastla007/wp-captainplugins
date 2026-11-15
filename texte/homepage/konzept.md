@@ -418,3 +418,85 @@ Die Prüfung vom **15.11.2026** bezog Hauptstände, neuere Produktdokumente und 
 ---
 
 **Nächster sinnvoller Arbeitsschritt:** Mit den übernommenen Preisen und Produktplänen die vier Produktübersichten sowie ihre Features-, Pro- und FAQ-Unterseiten texten. Screenshot-, Demo- und Kundenbeispiel-Platzhalter bleiben bis zur Bereitstellung echter Medien bestehen.
+
+## 9. Erweiterung nach dem Expert:innen-Panel
+
+### Ergebnis der moderierten Debatte
+
+**B2B-Produktmarketing:** Die Produktfamilie braucht eine gemeinsame Dachbotschaft, aber jedes Plugin muss eine klar erkennbare Geschäftsaufgabe lösen. Die Startseite führt zur passenden Lösung; die Produktseiten verkaufen jeweils einen konkreten Arbeitsablauf.
+
+**DACH-Conversion-Copy:** Eine lange Funktionsliste überzeugt erst, wenn der Nutzen zuerst steht. Jede Funktion wird in der Copy deshalb mit einem Ergebnis für den Betrieb verbunden: weniger manuelle Schritte, bessere Übersicht, nachvollziehbare Abläufe oder ein professioneller Auftritt. Keine unbelegten Umsatz- oder Zeitgarantien.
+
+**WordPress-/WooCommerce-Architektur:** Leistungsversprechen werden nach Produktkern, optionaler Integration und Pro-Erweiterung sortiert. WooCommerce-Abhängigkeiten, Zahlungsmethoden, Datenflüsse und Rollen gehören auf Feature- und FAQ-Seiten, nicht versteckt in Fußnoten.
+
+**SEO/Yoast:** Produktübersicht, Feature-Seite, Pro-Seite und FAQ haben unterschiedliche Suchintentionen. Jede URL erhält ein eigenes Keyword-Thema; gleiche Keywords und nahezu identische Absätze auf mehreren Seiten würden die Seiten gegenseitig konkurrieren lassen.
+
+**UX-/Informationsarchitektur:** Besucher sollen auf jeder Seite in kurzer Zeit drei Fragen beantworten können: Passt das Plugin zu meinem Betrieb? Welche Funktionen brauche ich? Was ist mein nächster Schritt? Deshalb folgen Nutzen, Ablauf, Funktionen, Integrationen, Free-/Pro-Abgrenzung, Preis und FAQ in einer konsistenten Reihenfolge.
+
+**B2B-Conversion und Preise:** Die bestehenden Pläne bleiben für diese Textfassung gesetzt. Der Preisvergleich muss aber klar zeigen, dass sich Single, Business und Agency nach Zahl der Live-Websites unterscheiden; License Captain ist enthalten und kein zusätzlicher Preisblock.
+
+**Gemeinsamer Beschluss:** Features werden vollständig berücksichtigt, aber in verständliche Funktionsgruppen gegliedert. Übersichtsseiten verkaufen den Nutzen, Feature-Seiten liefern Tiefe, Pro-Seiten erklären den Upgradegrund, FAQs beseitigen konkrete Kaufbarrieren.
+
+### Zielgruppenbotschaften und Belege
+
+| Produkt | Hauptzielgruppe und Kaufanlass | Zentrale Botschaft | Beleg/Visual im Layout | Primärer CTA |
+|---|---|---|---|---|
+| Voucher Captain | WooCommerce-Shops, Filialunternehmen, Dienstleister; Gutscheine professionell ausstellen und verwalten | „Gutscheine, Geschenkkarten und Guthaben passend zu Ihrer Marke verkaufen und verwalten.“ | Platzhalter für Gutschein-Designer, personalisiertes PDF, Kundenkonto und Einlösung | „Kostenlos starten“; ergänzend „Pro-Funktionen vergleichen“ |
+| Pass Captain | Veranstalter, Seminaranbieter, Vereine, Kurs- und Verleihbetriebe; Verkauf, Buchungen und Einlass koordinieren | „Events, Tickets und Servicebuchungen in WordPress organisieren – vom Termin bis zum Einlass.“ | Platzhalter für Eventkalender, Checkout, Ticket/Wallet und Scanner | „Pass Captain entdecken“ bzw. „Kostenlosen Kern laden“ |
+| Affiliate Captain | Onlinehändler, digitale Anbieter, Abo- und Kursanbieter; Partnerprogramm kontrolliert aufbauen | „Partner gewinnen, Verkäufe nachvollziehen und Provisionen transparent abrechnen.“ | Platzhalter für Partnerportal, Provisionsregel, Refund-Korrektur und Auszahlung | „Partnerprogramm aufbauen“ |
+| License Captain | Plugin-Hersteller, Agenturen und Softwareteams; Lizenzen und Updates über WooCommerce verkaufen | „Lizenzen, Aktivierungen, Verlängerungen und Plugin-Updates zentral steuern.“ | Platzhalter für Lizenzübersicht, Aktivierungslimits, Update- und Changelog-Ansicht | „Im Captain-Pro-Paket enthalten“ |
+
+### Einheitlicher Aufbau der Produkt- und Unterseiten
+
+1. **Hero:** Zielgruppe und Ergebnis in der H1; eine kurze Erklärung, was das Produkt erledigt; primärer CTA und passende Alternative. Keine abstrakten Claims ohne Produktbezug.
+2. **Betriebsproblem:** konkrete Situation aus dem Alltag der Zielgruppe benennen.
+3. **So funktioniert es:** drei bis fünf Schritte vom Start bis zum Ergebnis, mit passendem Screenshot-/Demo-Platzhalter.
+4. **Funktionsgruppen:** je Abschnitt Nutzenüberschrift, kurze Erklärung und die dazugehörigen Features. Die vollständigen technischen Einzelheiten liegen auf der Features-Seite.
+5. **Einsatzfälle:** Beispiele nach Unternehmenstyp und Ablauf, ohne erfundene Kundenreferenzen.
+6. **Integrationen und Voraussetzungen:** WooCommerce optional oder erforderlich, unterstützte Zahlungswege, Datenübergaben und Kompatibilität klar erklären.
+7. **Free-/Pro-Vergleich:** Kernfunktionen und Pro-Funktionen nebeneinander; Pro-Vorteile anhand konkreter Abläufe darstellen.
+8. **Preis und Lizenz:** Jahrespreis, Website-Limit, Supportumfang und Verlängerungsmodell sichtbar und leicht vergleichbar.
+9. **FAQ und Abschluss-CTA:** Einwände beantworten und die nächste Handlung wiederholen.
+
+Die **Features-Seite** gliedert den kompletten Funktionsumfang nach Arbeitsabläufen. Die **Pro-Seite** führt mit Upgrade-Auslösern, konkretem Vergleich und Preis-CTA. Die **FAQ-Seite** beantwortet Produktfragen; dieselben Fragen können als kurze, sichtbare FAQ-Auszüge auf der Übersichtsseite wiederkehren.
+
+### Layout- und UX-Vorgaben
+
+- Einheitliche Kopfzeile mit Produkteinstieg, „Captain Pro“, Preise, Dokumentation und Support; auf Mobilgeräten eine klar erkennbare Navigation und ein gut erreichbarer CTA.
+- Auf Produktseiten eine kurze Funktionsnavigation oder Sprungmarken verwenden. Längere Feature-Listen in verständliche Gruppen mit aufklappbaren Details gliedern.
+- Preisvergleich mit drei klaren Spalten (Single, Business, Agency), Website-Limits, Jahrespreis und enthaltenem License Captain. Dieselben Werte auf Produktseite, Pro-Seite und Checkout verwenden.
+- CTA-Texte an den Status des Angebots binden: kostenloser Download für Kern-Plugins, Planwahl für Captain Pro, „im Paket enthalten“ für License Captain.
+- Screenshots, Demos und Referenzen als klar markierte Layout-Platzhalter führen. Keine generischen Stockbilder als Produktbeweis und keine erfundenen Logos, Bewertungen oder Case Studies.
+- Barrierearme Kontraste, verständliche Linktexte, Tastaturbedienung und mobile Lesbarkeit von Vergleichstabellen und FAQs berücksichtigen.
+
+### Yoast-SEO-Redaktionsbrief
+
+Für jede URL werden in Yoast Fokus-Keyphrase, SEO-Titel, Meta-Description, Social-Vorschau und Indexierungsstatus einzeln gepflegt. Die Fokus-Keyphrase ist ein Redaktionshinweis; Lesbarkeit, Suchintention und echter Seiteninhalt haben Vorrang vor Ampelfarben.
+
+| Seitentyp | Abgrenzung der Suchintention | Redaktioneller Schwerpunkt |
+|---|---|---|
+| Produktübersicht | Lösung und Zielgruppe evaluieren | Nutzen, Hauptablauf, wichtigste Features, Free/Pro und CTA |
+| Features | einzelne Fähigkeiten und Arbeitsabläufe verstehen | Funktionsgruppen, konkrete Beispiele, Integrationen und Voraussetzungen |
+| Pro-Version | Upgrade und Tarif vergleichen | zusätzliche Funktionen, Lizenzlimits, Jahrespreise und Kaufentscheidung |
+| FAQ | konkrete Nutzungs- und Kaufbarrieren klären | präzise Antworten, interne Links auf Features, Preise, Dokumentation und Support |
+| Anwendungsfall | Lösung für eine Branche evaluieren | branchentypischer Ablauf und passende Plugin-Funktionen |
+
+Interne Verlinkung folgt der Kaufreise: Startseite → Produktübersicht → Features/Pro/FAQ → Preis oder Download. FAQ- und Produktdaten werden nur mit passenden, sichtbaren Inhalten ausgezeichnet; strukturierte Daten gelten nicht als Rankingversprechen.
+
+### Umsetzungsplan aus der Debatte
+
+1. Die finale Produktmatrix aus Abschnitt 8 als redaktionelle Quelle für Kern-, Pro- und Integrationsfunktionen fixieren.
+2. Pro Plugin ein kompaktes Faktenblatt mit Zielgruppe, Kaufanlass, Nutzenversprechen, Featuregruppen, Integrationen, Voraussetzungen, CTA und häufigsten Einwänden erstellen.
+3. Für jedes Plugin zuerst die Übersichtsseite schreiben, daraus Features-, Pro- und FAQ-Seiten ableiten und Dopplungen gezielt vermeiden.
+4. Preis-, Lizenz-, Verlängerungs- und Supportangaben auf allen Seiten konsistent ausspielen; fehlende Konditionen als interne Freigabepunkte sammeln.
+5. Layout mit echten Produktabläufen vorbereiten und Platzhalter für Screenshots, Demo und Kundenbeispiele einsetzen.
+6. Yoast-Felder, interne Links, Breadcrumbs, Canonicals, Indexierung und mobile Seitendarstellung bei der Umsetzung prüfen.
+7. Vor dem Verkaufsstart Copy, Shopkatalog und finalen Produktumfang gemeinsam abgleichen; nach Releases die Feature- und FAQ-Seiten aktualisieren.
+
+### Interne Angaben, die vor Veröffentlichung einzusetzen sind
+
+- Finale Netto-/Bruttopreislogik und Steueranzeige für Österreich, Deutschland und die Schweiz.
+- Verlängerung, Kündigung, Widerruf und Supportumfang je Tarif.
+- Konkrete WordPress-, PHP- und WooCommerce-Kompatibilitätsversionen des finalen Releases.
+- Download-, Checkout-, Dokumentations- und Support-URLs.
+- Freigegebene Produkt-Screenshots und Demo-Abläufe; Kundenbeispiele nur nach Zustimmung und Verifikation.
