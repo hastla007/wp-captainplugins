@@ -1,57 +1,75 @@
 ---
 url: /kompatibilitaet/
-seo_title: Systemanforderungen und Integrationen | Captain Plugins
-meta_description: Vergleichen Sie WordPress-, PHP- und WooCommerce-Mindestversionen sowie Integrationen der Captain-Plugins.
-focus_keyphrase: WordPress Plugin Kompatibilität
+seo_title: Systemanforderungen & Integrationen | Captain Plugins
+meta_description: Prüfen Sie WordPress-, PHP- und WooCommerce-Mindestversionen, getestete Umgebungen, Integrationen und Supportumfang der Captain Plugins.
+focus_keyphrase: Captain Plugins Kompatibilität
 ---
 
-# Kompatibilität und Integrationen
+# Kompatibilität, Integrationen und Support
 
-Hier finden Sie die dokumentierten Mindestanforderungen, geprüften Plattformstände und Integrationen für Captain Plugins. Mindestversionen des Kern-Plugins und des Pro-Add-ons können voneinander abweichen. Wenn Sie Kern-Plugin und Pro-Erweiterung gemeinsam einsetzen, gilt die kombinierte Mindestversion.
+Hier finden Sie die in den Produkt-Repositories dokumentierten Mindestversionen, Testumgebungen, Integrationen und Supportstufen. Mindestanforderungen und getestete Versionen sind getrennt ausgewiesen. Wenn Kern-Plugin und Pro-Add-on gemeinsam eingesetzt werden, gilt die höhere Mindestanforderung.
 
 ## Systemanforderungen
 
-| Produkt | WordPress | PHP | WooCommerce | Datenbank und Teststand |
+| Produkt | WordPress mindestens | PHP mindestens | WooCommerce | Weitere Voraussetzungen |
 |---|---:|---:|---|---|
-| Voucher Captain | 6.4+ | 8.1+ mit GD, mbstring und zip | 8.9+ erforderlich | HPOS und klassische Bestellspeicherung; CI-Teststand WordPress 7.1.4, WooCommerce 11.2.2, PHP 8.4, MySQL 8.4 und MariaDB 11.4 |
-| Voucher Captain Pro zusätzlich | 6.5+ | 8.1+ durch den Kern | 8.9+ erforderlich | Pro-Add-on benötigt Voucher Captain; kombinierte Installation mindestens WordPress 6.5 |
-| Pass Captain | 6.4+ | 8.2+ | Optional; 8.2–11.3 freigegeben | MariaDB 10.6/11.4 oder MySQL 8.0/8.4; HPOS und klassische Speicherung geprüft |
-| Pass Captain Pro zusätzlich | 6.5+ | 8.2+ durch den Kern | Optional; bei Nutzung der WooCommerce-Anbindung 8.2–11.3 | Pro-Add-on benötigt Pass Captain; kombinierte Installation mindestens WordPress 6.5 |
-| Affiliate Captain | 6.3+ | 7.4+ mit sodium und dom; zip für Programmausgabe | Optional; 8.0+ und bis 11.3 geprüft | HPOS, Classic- und Blocks-Checkout; Integrationstests mit MariaDB 10.11 und MySQL 8.4 |
-| Affiliate Captain Pro zusätzlich | 6.5+ | 7.4+ durch das Add-on; der Kern benötigt mindestens PHP 7.4 | Optional; 8.0+ bei WooCommerce-Nutzung | Pro-Add-on benötigt Affiliate Captain; kombinierte Installation mindestens WordPress 6.5 |
-| License Captain | 6.5+ | 7.4+ | 8.9+ erforderlich | MySQL 8.0, ein beschreibbarer Primärserver und laufender Cron; HPOS und klassische Speicherung im Teststand |
+| Voucher Captain | 6.4 | 8.1 | 8.9 erforderlich | PHP-Erweiterungen GD, mbstring und zip |
+| Voucher Captain Pro | 6.5 kombiniert | 8.1 | 8.9 erforderlich | Pro-Add-on setzt WP 6.5 voraus; Voucher Captain muss installiert sein |
+| Pass Captain | 6.4 | 8.2 | Optional, ab 8.2 | Ohne WooCommerce nutzbar |
+| Pass Captain Pro | 6.5 kombiniert | 8.2 | Optional, ab 8.2 | Pro-Add-on setzt WP 6.5 voraus; Pass Captain muss installiert sein |
+| Affiliate Captain | 6.3 | 7.4 | Optional, ab 8.0 | PHP-Erweiterungen sodium und dom; zip für Programmausgabe |
+| Affiliate Captain Pro | 6.5 kombiniert | 7.4 | Optional, ab 8.0 | Pro-Add-on setzt WP 6.5 voraus; Affiliate Captain muss installiert sein |
+| License Captain | 6.5 | 7.4 | 8.9 erforderlich | WooCommerce muss aktiv sein; MySQL/MariaDB mit beschreibbarem Primärserver und funktionierendem Cron |
 
-**Hinweis zu getesteten Versionen:** Eine Mindestversion ist nicht automatisch identisch mit jeder getesteten Kombination. Bei License Captain ist WooCommerce 8.9 als Mindestversion deklariert; die dokumentierte CI-Matrix enthält unter anderem 9.4.3 und 11.2.2. Die Reihe 8.9.3 ist als Matrixpunkt aufgeführt, aber ihre erfolgreiche Ausführung muss für den finalen Release belegt sein. Bei der finalen Releasefreigabe werden die hier genannten Matrizen mit den tatsächlich veröffentlichten Versionen abgeglichen.
+License Captain ist Bestandteil der Captain-Pro-Angebote und wird nicht separat berechnet.
 
-Voucher Captain wurde optional zusammen mit Yoast SEO 28.8 getestet. Yoast SEO ist für Voucher Captain nicht erforderlich.
+## Getestete Plattformen
 
-## Integrationen je Produkt
-
-| Produkt | Erforderlich | Optional oder verbunden |
-|---|---|---|
-| Voucher Captain | WooCommerce | HPOS, Blocks-Checkout, WooCommerce Subscriptions, WPML/WCML, WCML/Aelia/WOOCS/CURCY für Mehrwährung, Flexible Product Fields/Checkout Fields; Pass Captain für Gutscheinzahlung, Ticketgutscheine und gemeinsamen Scanner |
-| Pass Captain | WordPress | WooCommerce-Checkout optional; Stripe, PayPal und Mollie; Voucher Captain und Affiliate Captain; SMS über Twilio oder generischen HTTP-Anbieter; iCal, Webhooks, Veranstalter- und Mobile-API; Web- und Offline-Scanner |
-| Affiliate Captain | WordPress | WooCommerce optional; versionierter Integrationsvertrag für Pass Captain, Voucher Captain und weitere Verkaufsquellen; HPOS sowie Classic-/Blocks-Checkout |
-| License Captain | WooCommerce | offizielles WooCommerce-Stripe-Gateway für automatische Verlängerungen; signierte REST-API, Entitlements und Updateauslieferung für Produkt-Plugins; kein WooCommerce-Subscriptions-Produkt als Lizenzprodukt verwenden |
-
-Für Zahlungsdienste benötigen Sie ein eigenes Händlerkonto und die Zugangsdaten des jeweiligen Anbieters. Die Zuordnung optionaler Integrationen und die konkreten Funktionen je Add-on stehen auch auf den Produktseiten.
-
-[Integrationen im Detail](/integrationen/) · [Installationsanleitungen](/dokumentation/installation/) · [Support](/support/)
-
-## Support je Tarif
-
-| Angebot | Supportstufe |
+| Produkt | Dokumentierter Teststand |
 |---|---|
-| Single · 1 Live-Website | Standard |
-| Business · 5 Live-Websites | Standard |
-| Agency · 25 Live-Websites | Priority |
+| Voucher Captain | WordPress 7.1.4, WooCommerce 11.2.2, PHP 8.1 und 8.4; MySQL 8.4 und MariaDB 11.4; HPOS und klassische Speicherung. Yoast SEO 28.8 wird optional mitgetestet. CI prüft außerdem WP 6.4.5 / WooCommerce 8.9.0 / PHP 8.1. |
+| Pass Captain | Die Kompatibilitätsdokumentation führt WordPress 6.4–7.1, PHP 8.2–8.4 und optional WooCommerce 8.2–11.3 auf. Getestet werden MySQL 8.0/8.4, MariaDB 10.6/11.4, HPOS und klassische Speicherung sowie klassischer und Blocks-Checkout. |
+| Affiliate Captain | Plugin-Metadaten deklarieren WordPress 6.3 und PHP 7.4; WooCommerce ist optional. Die dokumentierte Integrationsprüfung umfasst WooCommerce bis 11.3 sowie MariaDB 10.11 und MySQL 8.4. |
+| License Captain | CI-Matrix: WordPress 6.5 mit WooCommerce 8.9.3 oder 9.4.3 auf PHP 7.4 sowie aktuelle WordPress-Version mit WooCommerce 11.2.2 auf PHP 8.3; HPOS und klassische Speicherung, außerdem Multisite-Unterverzeichnis im aktuellen Teststand. |
 
-Die Supportstufe gilt für die jeweilige Captain-Pro-Lizenz. License Captain ist im Angebot enthalten und wird nicht separat berechnet. Die Tarifunterlagen legen keine verbindlichen Antwortzeiten oder einen abschließenden Supportkanal fest; diese Angaben werden erst nach interner Festlegung veröffentlicht.
+**Release-Hinweis:** Eine deklarierte Mindestversion ist nicht automatisch für jede Kombination erfolgreich getestet. License Captain deklariert WooCommerce 8.9 als Minimum; die CI-Matrix führt unter anderem 8.9.3, 9.4.3 und 11.2.2 auf. Der erfolgreiche Lauf für die Mindestlinie muss vor dem finalen Release belegt werden. Teststände sollten zur Veröffentlichung erneut mit den dann aktuellen Versionen abgeglichen werden.
 
-## Dokumentationsquellen
+## Integrationsmatrix
 
-- [Voucher Captain Kompatibilität](https://github.com/hastla007/wp-couponmaster/blob/claude/youthful-bardeen-7ejd7a/COMPATIBILITY.md)
-- [Pass Captain Kompatibilität](https://github.com/hastla007/wp-passmaster/blob/claude/wp-plugin-analysis-todos-kvbfan/docs/COMPATIBILITY.md) und [Supportmodell](https://github.com/hastla007/wp-passmaster/blob/claude/wp-plugin-analysis-todos-kvbfan/docs/SUPPORT.md)
-- [Affiliate Captain Anforderungen](https://github.com/hastla007/wpaffiliatemaster/blob/main/README.md)
-- [License Captain Kompatibilität](https://github.com/hastla007/wp-license/blob/main/docs/COMPATIBILITY.md)
-- [Captain-Pro-Tarife](https://github.com/hastla007/captain-pro/blob/main/docs/TARIFE.md)
+| Integration / Funktion | Voucher Captain | Pass Captain | Affiliate Captain | License Captain |
+|---|---|---|---|---|
+| WooCommerce | Erforderlich: Produkte, Bestellungen, Gutscheine und Einlösung | Optional: Bestellsynchronisierung und Woo-Zahlungsablauf | Optional: WooCommerce-Verkäufe als Provisionsquelle | Erforderlich: Produktkatalog, Lizenzverkauf und Bestellungen |
+| HPOS / klassische Bestellspeicherung | Beides in der CI-Matrix | Beides in Kompatibilitätsmatrix | WooCommerce-Integration für aktuelle Speicherformen | Beides in der CI-Matrix |
+| Checkout Blocks | Unterstützt | In der Kompatibilitätsmatrix aufgeführt | Partnercode-Feld ab WooCommerce 8.9 | Dokumentiert; automatische Verlängerung primär mit offiziellem WooCommerce-Stripe-Gateway |
+| Zahlungen | WooCommerce-Zahlungsablauf | Stripe, PayPal, Mollie oder optional WooCommerce | WooCommerce als Verkaufsquelle; Auszahlungen über Zahlungsanbieter-Add-ons/Anbindungen | Offizielles WooCommerce-Stripe-Gateway für automatische Verlängerung; manuell weitere WooCommerce-Zahlungsarten |
+| Captain-Produkte / APIs | Pass Captain für Ticketgutscheine, Gutscheinzahlung und gemeinsamen Scanner | Voucher Captain, Webhooks, iCal, Veranstalter- und Mobile-API | Versionierter öffentlicher Vertrag für Pass Captain, Voucher Captain und Connector-Add-ons | API für Lizenzprüfung, Berechtigungen und Updates der Produkt-Plugins |
+
+### Weitere Integrationen
+
+- **Voucher Captain:** WooCommerce Subscriptions; WPML/WCML; Aelia Currency Switcher, WOOCS und CURCY; Flexible Product Fields und Flexible Checkout Fields. Yoast SEO ist optional und in der Testumgebung berücksichtigt.
+- **Pass Captain:** SMS über Twilio oder einen generischen HTTP-Dienst; Webhooks, iCal, Partner-API und Mobile-API. WooCommerce bleibt optional.
+- **Affiliate Captain:** versionierter öffentlicher Integrationsvertrag; kompatible Verkaufsquellen nutzen die bereitgestellten Schnittstellen statt direkt auf Plugin-Tabellen zuzugreifen.
+- **License Captain:** WooCommerce-Subscriptions-Produkte dürfen laut Produktdokumentation nicht als Lizenzprodukte zugeordnet werden.
+
+Drittanbieter-Zahlungsdienste benötigen ein eigenes Konto und passende Zugangsdaten.
+
+## Supportumfang je Produkt
+
+| Produkt | Kostenloses Kern-Plugin | Captain-Pro-Plan |
+|---|---|---|
+| Voucher Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support. Agency: Priority-Support. |
+| Pass Captain | Dokumentation und GitHub Issues; Sicherheitsmeldungen über private GitHub Security Advisories | Single und Business: Standard-Support. Agency: Priority-Support. |
+| Affiliate Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support. Agency: Priority-Support. |
+| License Captain | Kein separat bepreistes Kernangebot; als Teil von Captain Pro enthalten | Supportstufe folgt dem jeweiligen Voucher-, Pass- oder Affiliate-Captain-Pro-Plan. |
+
+Die Tarife ordnen **Single (1 Live-Website)** und **Business (5 Live-Websites)** dem Standard-Support zu. **Agency (25 Live-Websites)** enthält Priority-Support. Verbindliche Reaktionszeiten und abschließende kommerzielle Supportkanäle sind in den Tarifunterlagen nicht festgelegt; deshalb werden hier keine Antwortzeitversprechen gemacht.
+
+## Quellen in den Repositories
+
+- [Voucher Captain: Kompatibilität](https://github.com/hastla007/wp-couponmaster/blob/claude/youthful-bardeen-7ejd7a/COMPATIBILITY.md) · [Readme](https://github.com/hastla007/wp-couponmaster/blob/main/README.md)
+- [Pass Captain: Kompatibilität](https://github.com/hastla007/wp-passmaster/blob/claude/wp-plugin-analysis-todos-kvbfan/docs/COMPATIBILITY.md) · [Supportmodell](https://github.com/hastla007/wp-passmaster/blob/claude/wp-plugin-analysis-todos-kvbfan/docs/SUPPORT.md)
+- [Affiliate Captain: Readme](https://github.com/hastla007/wpaffiliatemaster/blob/main/readme.txt) · [Integrationsvertrag](https://github.com/hastla007/wpaffiliatemaster/blob/main/docs/CONTRACT.md)
+- [License Captain: Kompatibilität](https://github.com/hastla007/wp-license/blob/main/docs/COMPATIBILITY.md)
+- [Captain Pro: Tarife](https://github.com/hastla007/captain-pro/blob/main/docs/TARIFE.md)
+
+[Preise](/preise/) · [Integrationen im Detail](/integrationen/) · [Installationsanleitungen](/dokumentation/installation/) · [Support](/support/)
