@@ -4,7 +4,7 @@
 **Ziel:** Firmenkunden, Agenturen, Veranstalter, WooCommerce-Shops und Betreiber eigener Partnerprogramme  
 **Primärmarkt:** DACH, deutschsprachige Website zuerst; englische Fassung in einer zweiten Ausbaustufe
 
-**Arbeitsannahmen für die Website-Texte:** Die Plugins und Captain-Pro-Angebote werden als verkaufsfähig behandelt. Alle Funktionen, die in den aktuellen Produktplänen und Entwicklungsarbeiten enthalten sind, werden als Bestandteil des finalen Releases vor Verkaufsstart angenommen und in der Marketingcopy als Produktumfang beschrieben. Die Jahrespläne und Preise aus `docs/TARIFE.md` gelten vorerst als Preisgrundlage. License Captain ist ohne eigenen Aufpreis enthalten. Screenshots, Demos und Kundenbeispiele erhalten klar gekennzeichnete Platzhalter; es werden keine echten Referenzen erfunden.
+**Arbeitsannahmen für die Website-Texte:** Die Plugins und Captain-Pro-Angebote werden als verkaufsfähig behandelt. Alle Funktionen, die in den aktuellen Produktplänen und Entwicklungsarbeiten enthalten sind, werden als Bestandteil des finalen Releases vor Verkaufsstart angenommen und in der Marketingcopy als Produktumfang beschrieben. Die Jahrespläne und Preise aus `docs/TARIFE.md` gelten vorerst als Preisgrundlage. License Captain Server wird separat verkauft und ist nicht in Captain Pro enthalten. Für unsere Captain-Pro-Produkte verwenden wir intern einen Client zur Lizenzprüfung; diese interne Umsetzung ist kein Kunden-Leistungsversprechen und wird in Kauf- und Pro-Inhalten vor dem Kauf nicht erwähnt. Screenshots, Demos und Kundenbeispiele erhalten klar gekennzeichnete Platzhalter; es werden keine echten Referenzen erfunden.
 
 ## 1. Kurzempfehlung
 
@@ -15,7 +15,7 @@ Die Website sollte als gemeinsame Produktfamilie mit einer klaren Produktübersi
 - **Affiliate Captain** – ein eigenes Partnerprogramm mit nachvollziehbaren Provisionen und Auszahlungen betreiben.
 - **License Captain** – Lizenzverkauf, Aktivierungen und Updates für Anbieter von WordPress-Plugins steuern.
 
-**Captain Pro** ist die gemeinsame Produktlinie der drei kostenpflichtigen Premium-Erweiterungen zu Voucher, Pass und Affiliate Captain. Die Kern-Plugins bleiben kostenlos. Für die Textfassung gelten die Produkte als kaufbar und die in den neueren Pro-Umfangsplänen beschriebenen Funktionen als Verkaufsumfang. License Captain wird ohne separaten Aufpreis zu den Captain-Pro-Produkten mitgeliefert.
+**Captain Pro** ist die gemeinsame Produktlinie der drei kostenpflichtigen Premium-Erweiterungen zu Voucher, Pass und Affiliate Captain. Die Kern-Plugins bleiben kostenlos. Für die Textfassung gelten die Produkte als kaufbar und die in den neueren Pro-Umfangsplänen beschriebenen Funktionen als Verkaufsumfang. License Captain Server ist ein separates Produkt und wird nicht mit Captain Pro mitgeliefert.
 
 ### Vorgeschlagener Markenaufbau
 
@@ -29,7 +29,7 @@ Voucher Captain, Pass Captain und Affiliate Captain erhalten je eine eigenständ
 Eine Seite „Captain Pro“ erklärt die Erweiterungslogik und führt zu den drei separaten Pro-Angeboten mit Preisen, Website-Limits und Funktionsübersichten.
 
 **License Captain**  
-Eine B2B-Seite für WordPress-Plugin-Hersteller: Lizenzverkauf, Website-Aktivierungen, Verlängerungen und Plugin-Updates. License Captain wird bei den Captain-Pro-Angeboten kostenlos mitgeliefert und nicht als separates kostenpflichtiges Produkt positioniert.
+Ein separat erhältliches Server-Plugin für WordPress-Plugin-Hersteller: Lizenzverkauf, Website-Aktivierungen, Verlängerungen und Plugin-Updates über den eigenen WooCommerce-Shop. Die Produktseite erklärt außerdem, wie ein Plugin als Client mit dem Server kommuniziert.
 
 ## 2. Produktanalyse und Positionierung
 
@@ -83,7 +83,7 @@ Eine B2B-Seite für WordPress-Plugin-Hersteller: Lizenzverkauf, Website-Aktivier
 
 **Funktionen im finalen Verkaufsumfang:** WooCommerce-Produkte als Lizenzprodukte konfigurieren; Lizenz je gekaufter Einheit; Aktivierung und Deaktivierung von Live-, Staging- und Entwicklungsinstallationen; Status- und Auditverlauf; manuelle und opt-in-gestützte automatische Verlängerung mit Stripe; Kunden-Lizenzbereich per Shortcode oder Block; signierte REST-API; Entitlements; Adminwerkzeuge; Releaseverwaltung und Updatebereitstellung; Datenschutzexport/-löschung. Produkt-Changelogs können gezielt per Shortcode oder Gutenberg-Block eingebunden werden.
 
-**Angebot:** License Captain ist in den Captain-Pro-Angeboten ohne Aufpreis enthalten. Es verbindet WooCommerce-Lizenzverkauf, Aktivierungsverwaltung, Verlängerungen und Updateauslieferung in einer Lösung. Automatische Verlängerungen laufen über Stripe; manuelle Verlängerungen können mit den verfügbaren Shop-Zahlungsarten bezahlt werden.
+**Angebot:** License Captain Server wird separat verkauft. Er verbindet WooCommerce-Lizenzverkauf, Aktivierungsverwaltung, Verlängerungen und Updateauslieferung. Automatische Verlängerungen laufen über Stripe; manuelle Verlängerungen können mit den verfügbaren Shop-Zahlungsarten bezahlt werden. Ein zu lizenzierendes Plugin kann die Client-Kommunikation direkt nach der API-Spezifikation implementieren oder dafür ein separates Client-Plugin verwenden, wie wir es für unsere Produkte tun. Der Client ist eine Integrationsmethode und kein Captain-Pro-Angebot.
 
 **Positionierungssatz:** „Verwalten Sie Lizenzen und Plugin-Updates über Ihren WooCommerce-Shop – mit Aktivierungsübersicht, Laufzeiten und einer API für Ihre Produkt-Plugins.“
 
@@ -120,7 +120,7 @@ Eine B2B-Seite für WordPress-Plugin-Hersteller: Lizenzverkauf, Website-Aktivier
 2. Vier Produktkarten mit Problem, Kernnutzen, Preis-/Angebotshinweis und passendem CTA.
 3. Use-case-Navigation: „Gutscheine verkaufen“, „Events verwalten“, „Partner gewinnen“, „WordPress-Plugins lizenzieren“.
 4. Produktprinzipien: eigene WordPress-Umgebung, WooCommerce-Integration wo passend, dokumentierte Schnittstellen, klare Datenflüsse.
-5. Kostenlose Kern-Plugins, kostenpflichtige Captain-Pro-Erweiterungen und das kostenlos enthaltene License Captain verständlich erklären.
+5. Kostenlose Kern-Plugins und kostenpflichtige Captain-Pro-Erweiterungen klar erklären; License Captain Server separat als Lizenzserver für Plugin-Anbieter einordnen.
 6. Vertrauensbereich mit Platzhaltern für Screenshots, Demo und Kundenbeispiele; Kompatibilität und Supportdaten sachlich ausweisen.
 7. FAQ und CTA.
 
@@ -136,7 +136,7 @@ Eine B2B-Seite für WordPress-Plugin-Hersteller: Lizenzverkauf, Website-Aktivier
 **SEO-Titel:** Captain Pro – WordPress-Plugins mit Pro-Funktionen erweitern  
 **Meta-Description:** Erweitern Sie Voucher Captain, Pass Captain und Affiliate Captain mit Pro-Funktionen. Vergleichen Sie Jahrespläne für 1, 5 oder 25 Websites.
 
-**Inhalt:** Nutzen des kostenlosen Kern-Plugins erklären; drei Pro-Karten mit Funktionen, Jahrespreisen und Live-Website-Limits; License Captain als ohne Aufpreis enthalten nennen; FAQ „Was bleibt kostenlos?“, „Brauche ich WooCommerce?“, „Wie viele Websites?“; CTA „Plan auswählen“ und „Kostenlosen Kern laden“.
+**Inhalt:** Nutzen des kostenlosen Kern-Plugins erklären; drei Pro-Karten mit Funktionen, Jahrespreisen und Live-Website-Limits; FAQ „Was bleibt kostenlos?“, „Brauche ich WooCommerce?“, „Wie viele Websites?“; CTA „Plan auswählen“ und „Kostenlosen Kern laden“. License Captain Server nicht als PRO-Bestandteil aufführen.
 
 #### 4) Über das Projekt – `/ueber/`
 **Ziel:** Urheberschaft, Produktprinzipien und Entwicklungsphilosophie glaubwürdig darstellen.
@@ -155,7 +155,7 @@ Eine B2B-Seite für WordPress-Plugin-Hersteller: Lizenzverkauf, Website-Aktivier
 | Pass Captain Pro | 169 € / Jahr | 299 € / Jahr | 549 € / Jahr |
 | Affiliate Captain Pro | 229 € / Jahr | 399 € / Jahr | 699 € / Jahr |
 
-Alle Premiumfunktionen des jeweiligen Add-ons sind in jedem Tarif enthalten; die Stufen unterscheiden sich nach Website-Anzahl. Standard-Support ist für Single und Business vorgesehen, Priority für Agency. License Captain ist ohne Aufpreis enthalten. Preisangaben werden vor dem Livegang mit der WooCommerce-Preisdarstellung (Netto/Brutto), Verlängerung, Widerruf und tatsächlichem Shopkatalog abgeglichen.
+Alle Premiumfunktionen des jeweiligen Add-ons sind in jedem Tarif enthalten; die Stufen unterscheiden sich nach Website-Anzahl. Standard-Support ist für Single und Business vorgesehen, Priority für Agency. License Captain Server ist ein separates Angebot und nicht Teil dieser Tarife. Preisangaben werden vor dem Livegang mit der WooCommerce-Preisdarstellung (Netto/Brutto), Verlängerung, Widerruf und tatsächlichem Shopkatalog abgeglichen.
 
 ### B. Produktseiten – Seitenvorlagen und Inhalte
 
@@ -173,7 +173,7 @@ Jede Produktfamilie bekommt eine Übersichtsseite und klar auffindbare Unterseit
 **Inhalte der Unterseiten:**
 
 - **Features:** Funktionsgruppen mit konkretem Nutzen, Screenshots oder kurzen Abläufen, Voraussetzungen und Grenzen. Hauptfunktionen auf der Übersichtsseite anreißen und zur vollständigen Feature-Seite verlinken.
-- **Pro-/Paketseite:** Bei Voucher, Pass und Affiliate Captain die enthaltenen Zusatzfunktionen gegenüber dem kostenlosen Kern nennen und den passenden Single-, Business- und Agency-Plan darstellen. Bei License Captain erklären, dass es ohne Aufpreis mit den Captain-Pro-Plugins enthalten ist; keine eigene kostenpflichtige „License Captain Pro“-Edition erfinden.
+- **Pro-Seiten:** Bei Voucher, Pass und Affiliate Captain die enthaltenen Zusatzfunktionen gegenüber dem kostenlosen Kern nennen und den passenden Single-, Business- und Agency-Plan darstellen. License Captain Server als eigenständiges, separat erhältliches Produkt behandeln; keine Verbindung zu Captain Pro suggerieren.
 - **FAQ:** Je Produkt eigene, sichtbare Antworten zu Installation, WooCommerce-Abhängigkeit, Kompatibilität, Daten, Updates, Lizenzierung und Support. Fragen auf den FAQ-Seiten und passende Kurz-FAQs auf den Produktseiten dürfen sich ergänzen.
 
 
@@ -253,7 +253,7 @@ CTA: „Affiliate Captain kennenlernen“.
 
 **Hero-Entwurf:** „Lizenzen und Updates für Ihre WordPress-Plugins verwalten.“  
 „Nutzen Sie WooCommerce für den Lizenzverkauf und steuern Sie Aktivierungen, Laufzeiten, Verlängerungen und Updatezugriffe zentral.“  
-License Captain wird ohne Aufpreis mit den Captain-Pro-Plugins angeboten; auf der Produktseite steht deshalb „Im Paket enthalten“ statt eines eigenen Kaufpreises.
+License Captain Server wird separat verkauft und erhält einen eigenen Preis- und Kaufpfad. Die Seite erklärt die Integration als Client; sie behauptet keine Inklusivleistung in Captain Pro.
 
 **Abschnitte:**
 1. Zielgruppe: kleine und mittlere Plugin-Hersteller, Agenturen und Softwareteams.
@@ -261,12 +261,12 @@ License Captain wird ohne Aufpreis mit den Captain-Pro-Plugins angeboten; auf de
 3. Funktionen: Aktivierungslimits, Live/Staging/Development, Kundenbereich, Adminverwaltung, signierte API, Updateverwaltung. Neue Inhaltsmodule: Mein-Lizenzen-Übersicht per Shortcode/Block und Produkt-Changelog per Shortcode/Block.
 4. Automatische vs. manuelle Verlängerungen und Zahlungsanbieter klar unterscheiden; PayPal derzeit manuell.
 5. Sicherheit und Betrieb: Schlüsselkonfiguration, HTTPS, Backups, Hostingvoraussetzungen, API-Dokumentation.
-6. Paketumfang und Preis: License Captain ist ohne separaten Aufpreis enthalten.
+6. Angebot und Kaufpfad: License Captain Server wird separat verkauft; Preis und Checkout werden aus dem Shop übernommen.
 7. FAQ: eigener Shop, WooCommerce, Lizenzlaufzeit, Updates, Site-Transfer, Kundenansicht und Release-Notizen.
 
 #### 11–13) Captain Pro-Produktseiten
 
-Je eine Seite: `/voucher-captain-pro/`, `/pass-captain-pro/`, `/affiliate-captain-pro/`. Jede Seite nennt das benötigte kostenlose Kern-Plugin, die zusätzlichen Funktionen, Kompatibilität, Website-Limits, Verlängerungsbedingungen und Support. License Captain ist bei jedem Captain-Pro-Angebot eingeschlossen. Die drei Planpreise lauten wie oben (1/5/25 Websites): Voucher 129/229/399 €, Pass 169/299/549 €, Affiliate 229/399/699 € pro Jahr.
+Je eine Seite: `/voucher-captain-pro/`, `/pass-captain-pro/`, `/affiliate-captain-pro/`. Jede Seite nennt das benötigte kostenlose Kern-Plugin, die zusätzlichen Funktionen, Kompatibilität, Website-Limits, Verlängerungsbedingungen und Support. License Captain Server wird nicht als Bestandteil von Captain Pro erwähnt. Die drei Planpreise lauten wie oben (1/5/25 Websites): Voucher 129/229/399 €, Pass 169/299/549 €, Affiliate 229/399/699 € pro Jahr.
 
 **Voucher Captain Pro – Zielgruppe und Seiteninhalt:** Unternehmen mit mehreren Standorten, hohem Gutscheinaufkommen oder kanalübergreifendem Versand. Hero: „Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert.“ Inhalte: CSV-Massenbestellungen mit Empfängerdaten; individuelle Gutschein-PDFs und Zustelltermine; Apple-/Google-Wallet-Pässe; SMS mit sicherem Link; Kampagnen- und Empfehlungsberichte; Pass-Captain-Anbindung für Ticketgutscheine. CTA: „Voucher Captain Pro auswählen“; Free-Kern bleibt dauerhaft kostenlos.
 
@@ -323,7 +323,7 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 - Schema.org nur passend zur tatsächlichen Seitenart und mit sichtbarem Inhalt; keine Bewertungen, Preise oder Verfügbarkeiten erfinden.
 - Performance, mobile Darstellung, Barrierefreiheit und Core Web Vitals vor Veröffentlichung prüfen.
 - Changelogs und Kompatibilitätsangaben datieren und regelmäßig aktualisieren.
-- Für kostenlose Kern-Plugins Downloadziel und Supportweg direkt sichtbar machen; Pro-Kaufpfad separat führen. License Captain als inklusive Zusatzkomponente ausweisen.
+- Für kostenlose Kern-Plugins Downloadziel und Supportweg direkt sichtbar machen; Pro-Kaufpfad separat führen. License Captain Server mit eigenem Kaufpfad für Plugin-Anbieter ausweisen.
 - Englische Version später mit eigener URL-Struktur und professioneller Übersetzung; keine automatisch duplizierten Seiten.
 
 ### Content-Plan für die erste Ausbauphase
@@ -343,7 +343,7 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 - [ ] Alle Funktionen aus den aktuellen Entwicklungsarbeiten in die finale Verkaufsfassung integrieren und abnehmen.
 - [ ] Voucher-Captain-Free-/Pro-Aufteilung in Code, README, Add-on und Shopkatalog mit dieser Produktmatrix synchronisieren.
 - [ ] Download-, Checkout- und Kauflinks für alle Produkte hinterlegen.
-- [x] Vorläufige Pro-Pläne und Jahrespreise übernehmen: Single/Business/Agency mit 1/5/25 Live-Websites; License Captain ohne Aufpreis.
+- [x] Vorläufige Pro-Pläne und Jahrespreise übernehmen: Single/Business/Agency mit 1/5/25 Live-Websites. License Captain Server separat kalkulieren.
 - [ ] License-Captain-Stripe-, Browser-, Add-on- und Produktionsabnahmen abschließen.
 - [ ] Release-Gates, Mindestversionen und Supportmodell je Produkt final freigeben.
 - [ ] Rechtstexte und Produktbedingungen fachlich prüfen: AGB, Datenschutz, Widerruf, Lizenz-/Verlängerungshinweise sowie Gutschein- und Affiliate-Abrechnung.
@@ -392,7 +392,7 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 |---|---|
 | Finaler Angebotsstand | Die Marketingtexte beschreiben den vollständigen hier definierten Verkaufsumfang. Alle Funktionen aus den aktuellen Entwicklungsarbeiten werden bis zum Verkaufsstart in die finale Version integriert. |
 | Free und Pro | Die in diesem Konzept festgelegte Free-/Pro-Zuordnung ist die redaktionelle Quelle für Website, Produkt-README, Vergleichstabelle und Add-on-Beschreibungen. |
-| License Captain | Kostenlos mit den Pro-Plugins eingeschlossen (Nutzerentscheidung); kein separater Preis. |
+| License Captain Server | Separat erhältliches Server-Plugin für Plugin-Anbieter; eigener Preis und Kaufpfad. |
 | Steuer / Recht / Datenschutz | Technische Funktionen sachlich nennen; keine Compliance- oder Steuerrechtsgarantie geben. |
 | Kompatibilität | Mit konkreten geprüften Versionen und Prüfdatum angeben. |
 | Zeit- oder Umsatzeffekte | Keine garantierten Einsparungen, Verkaufssteigerungen oder ROI versprechen. |
@@ -412,7 +412,7 @@ Die Prüfung vom **15.11.2026** bezog Hauptstände, neuere Produktdokumente und 
 
 - [boatingschool-wp](https://github.com/hastla007/boatingschool-wp) – `theme/konzept.md` ergänzt den passenden B2B-Anwendungsfall: Bootsschulen kaufen Kurs-Zugangscodes in Kontingenten und verteilen sie über ihre Plattform. Der WooCommerce-Adapter ist als Umsetzungspunkt im Projekt-To-do zu berücksichtigen.
 - [wp-captainplugins](https://github.com/hastla007/wp-captainplugins) – zentrales Repository für Website-Texte und Homepage-Konzept. Dieses Konzept ist unter `texte/homepage/konzept.md` abgelegt.
-- [License Captain](https://github.com/hastla007/wp-license) – WooCommerce-Lizenzserver, API, Verlängerungen und Updateverwaltung; aktueller README-Stand enthält außerdem Kundenblöcke/-Shortcodes für Lizenzübersicht und Changelog. Gemäß Nutzerentscheidung kostenlos in Captain Pro enthalten.
+- [License Captain](https://github.com/hastla007/wp-license) – separat erhältlicher WooCommerce-Lizenzserver, API, Verlängerungen und Updateverwaltung. Die Client-Kommunikation kann direkt im eigenen WordPress-Plugin nach der API-Spezifikation umgesetzt oder über ein zusätzliches Client-Plugin wie das von uns eingesetzte License Captain Client angebunden werden.
 - [Pass Captain](https://github.com/hastla007/wp-passmaster) – Event-, Ticket-, Servicebuchungs- und Einlassverwaltung einschließlich der unter PR #26 beschriebenen finalen Erweiterungen.
 - [Voucher Captain](https://github.com/hastla007/wp-couponmaster) – WooCommerce-Gutscheine, Geschenkkarten, PDF-Gestaltung, Zustellung, Einlösung und die im finalen Produktumfang festgelegten Erweiterungen aus PR #15.
 - [Affiliate Captain](https://github.com/hastla007/wpaffiliatemaster) – Partnerprogramm, Attribution, Provisionsledger, Auszahlungsabläufe und Portal; Haupt-README weist Version 0.13.0 und Integrationsvertrag 1.3.0 aus.
@@ -436,7 +436,7 @@ Die Prüfung vom **15.11.2026** bezog Hauptstände, neuere Produktdokumente und 
 
 **UX-/Informationsarchitektur:** Besucher sollen auf jeder Seite in kurzer Zeit drei Fragen beantworten können: Passt das Plugin zu meinem Betrieb? Welche Funktionen brauche ich? Was ist mein nächster Schritt? Deshalb folgen Nutzen, Ablauf, Funktionen, Integrationen, Free-/Pro-Abgrenzung, Preis und FAQ in einer konsistenten Reihenfolge.
 
-**B2B-Conversion und Preise:** Die bestehenden Pläne bleiben für diese Textfassung gesetzt. Der Preisvergleich muss aber klar zeigen, dass sich Single, Business und Agency nach Zahl der Live-Websites unterscheiden; License Captain ist enthalten und kein zusätzlicher Preisblock.
+**B2B-Conversion und Preise:** Die bestehenden Pläne bleiben für diese Textfassung gesetzt. Der Preisvergleich muss aber klar zeigen, dass sich Single, Business und Agency nach Zahl der Live-Websites unterscheiden; License Captain Server ist ein separates Produkt mit eigenem Preis- und Kaufpfad; es gehört nicht zu Captain Pro.
 
 **Gemeinsamer Beschluss:** Features werden vollständig berücksichtigt, aber in verständliche Funktionsgruppen gegliedert. Übersichtsseiten verkaufen den Nutzen, Feature-Seiten liefern Tiefe, Pro-Seiten erklären den Upgradegrund, FAQs beseitigen konkrete Kaufbarrieren.
 
@@ -467,8 +467,8 @@ Die **Features-Seite** gliedert den kompletten Funktionsumfang nach Arbeitsablä
 
 - Einheitliche Kopfzeile mit Produkteinstieg, „Captain Pro“, Preise, Dokumentation und Support; auf Mobilgeräten eine klar erkennbare Navigation und ein gut erreichbarer CTA.
 - Auf Produktseiten eine kurze Funktionsnavigation oder Sprungmarken verwenden. Längere Feature-Listen in verständliche Gruppen mit aufklappbaren Details gliedern.
-- Preisvergleich mit drei klaren Spalten (Single, Business, Agency), Website-Limits, Jahrespreis und enthaltenem License Captain. Dieselben Werte auf Produktseite, Pro-Seite und Checkout verwenden.
-- CTA-Texte an den Status des Angebots binden: kostenloser Download für Kern-Plugins, Planwahl für Captain Pro, „im Paket enthalten“ für License Captain.
+- Preisvergleich mit drei klaren Spalten (Single, Business, Agency), Website-Limits und Jahrespreis. License Captain Server erhält einen separaten Angebotshinweis und wird nicht in Pro-Preise eingerechnet.
+- CTA-Texte an den Status des Angebots binden: kostenloser Download für Kern-Plugins, Planwahl für Captain Pro und eigener Kauf-CTA für License Captain Server.
 - Screenshots, Demos und Referenzen als klar markierte Layout-Platzhalter führen. Keine generischen Stockbilder als Produktbeweis und keine erfundenen Logos, Bewertungen oder Case Studies.
 - Barrierearme Kontraste, verständliche Linktexte, Tastaturbedienung und mobile Lesbarkeit von Vergleichstabellen und FAQs berücksichtigen.
 
