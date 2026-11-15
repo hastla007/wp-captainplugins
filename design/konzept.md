@@ -273,3 +273,29 @@ Das Theme ist bereit für die redaktionelle Befüllung, wenn:
 - Verbindliche Browser-/WordPress-/PHP-Zielmatrix.
 
 Diese Entscheidungen blockieren nicht die Strukturplanung. Sie werden während Designsystem und technischem Scaffold auf Grundlage des realen Logos, Stacks und Shopablaufs abgeschlossen.
+
+
+## 13. Visuelle Designmockups
+
+Die folgenden Bilder übersetzen das Konzept in mögliche Seitenansichten. Sie sind KI-generierte Layoutstudien, keine fertigen Theme-Screenshots und keine tatsächlichen Produktansichten. Produkt-UI, Preise, Navigation und Texte müssen vor einer Umsetzung mit dem aktuellen Shop und den finalen Inhalten abgeglichen werden. Echte Produkt-Screenshots ersetzen die beschrifteten UI-Platzhalter, sobald sie verfügbar sind.
+
+### Startseite – Desktop
+
+![Mockup der Captain-Plugins-Startseite im Desktop-Layout](mockups/homepage-desktop.jpg)
+
+### Startseite – Mobil
+
+![Mockup der Captain-Plugins-Startseite im mobilen Layout](mockups/homepage-mobile.jpg)
+
+### Produktübersicht – Desktop
+
+![Mockup der Produktübersicht mit vier Captain-Plugins](mockups/products-overview-desktop.jpg)
+
+### Voucher Captain – Desktop
+
+![Mockup der Voucher-Captain-Produktseite mit Platzhalter für den Gutschein-Designer](mockups/voucher-captain-desktop.jpg)
+
+### Captain Pro – Preise
+
+![Mockup der Preisübersicht mit den vorläufigen Voucher-Captain-Pro-Jahrespreisen](mockups/captain-pro-pricing-desktop.jpg)
+

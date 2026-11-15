@@ -332,3 +332,33 @@ Die acht Kapitäns-JPEGs in `design/mascot/` werden einzeln gesichtet und für w
 10. Platzhalter und offene Preis-, Checkout-, Support- und Unternehmensangaben vor Livegang auflösen.
 
 **Abnahme:** Alle vorhandenen Seiten lassen sich aus wiederverwendbaren Vorlagen pflegen; Frontend und Editor verwenden dieselben Design-Tokens; Navigation und Komponenten funktionieren mobil und per Tastatur; Inhalte bleiben bei einem Themewechsel erhalten; keine Platzhalter oder unbelegten Referenzen werden versehentlich veröffentlicht.
+
+
+---
+
+## 15. Visuelle Website-Mockups
+
+Diese KI-generierten Bilder veranschaulichen eine mögliche Umsetzung des Website- und Theme-Konzepts. Sie sind Layoutstudien: Die gezeigten Oberflächen sind keine echten Plugin-Screenshots. Produktansichten sind als Platzhalter gedacht. Die Preisgrafik zeigt beispielhaft die vorläufigen Voucher-Captain-Pro-Preise; vor Veröffentlichung gilt der Shop als verbindliche Quelle.
+
+### Startseite
+
+**Desktop**
+
+![Mockup der Captain-Plugins-Startseite im Desktop-Layout](design/mockups/homepage-desktop.jpg)
+
+**Mobil**
+
+![Mockup der Captain-Plugins-Startseite im mobilen Layout](design/mockups/homepage-mobile.jpg)
+
+### Produktübersicht
+
+![Mockup der Produktübersicht mit vier Captain-Plugins](design/mockups/products-overview-desktop.jpg)
+
+### Voucher Captain
+
+![Mockup der Voucher-Captain-Produktseite mit Platzhalter für den Gutschein-Designer](design/mockups/voucher-captain-desktop.jpg)
+
+### Preise und Pläne
+
+![Mockup der Captain-Pro-Preisübersicht mit vorläufigen Voucher-Captain-Pro-Preisen](design/mockups/captain-pro-pricing-desktop.jpg)
+
