@@ -8,7 +8,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Technische Richtung für den ersten Build festgelegt: natives WordPress-Block-Theme ohne zusätzliche Build-Abhängigkeiten.
 - [x] Erste Theme-Struktur, globale Tokens, Templates, Template Parts und Startseiten-Patterns angelegt.
 - [x] Erste wiederverwendbare Produkt-, Feature-, Ablauf-, Preis-, FAQ-, Ressourcen- und Screenshot-Briefing-Patterns ergänzt.
-- [x] Setup-Assistent für optionale Plugin-Installation, geschützten Seitenimport und neun WooCommerce-Produktentwürfe mit License-Captain-Planzuordnung umgesetzt.
+- [x] Setup-Assistent für optionale Plugin-Installation, geschützten Seitenimport und fünfzehn WooCommerce-Produktentwürfe mit Zuordnung zum separat erhältlichen License-Captain-Server umgesetzt.
 - [x] Markdown-Inhalte in editierbare Gutenberg-Seitenvorlagen samt SEO-Basics kompilierbar gemacht.
 - [ ] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
 - [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
@@ -19,7 +19,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [x] `design/konzept.md`, `konzept-website.md`, `texte/homepage/` und `design/` erfassen.
 - [x] Vorhandene Seitenrollen und Navigation als Grundlage übernehmen.
-- [x] Produkte korrekt benennen: Voucher Captain, Pass Captain, Affiliate Captain und License Captain. License Captain Server ist separat erhältlich und nicht in Captain Pro enthalten.
+- [x] Produkte korrekt benennen: sechs kostenlose Kern-Plugins, sechs separate Captain-Pro-Add-ons und License Captain als separat erhältliches Server-Plugin für Plugin-Hersteller.
 - [x] Bestehende Pläne und Preise nicht im Theme fest verdrahten; Preise kommen aus Shop-/Seiteninhalten.
 - [ ] Für jeden Produktbereich finale URLs, Downloadziele, Checkoutziele und Supportwege mit der Website-Konfiguration abgleichen.
 - [ ] Vor Release WordPress-, PHP-, WooCommerce- und Plugin-Mindestversionen anhand der dann freigegebenen Releases bestätigen.
@@ -55,6 +55,9 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Header- und Footer-Template-Parts anlegen.
 - [x] Kleine Theme-CSS-Datei für responsive Layouts und zentrale Komponenten anlegen.
 - [x] Kopfbereich mit Navy-Fläche, hellem Menütext und Gold-CTA an die vorhandenen Website-Mockups angleichen.
+- [x] Startseiten-Hero als zweispaltigen Markenauftritt mit Captain-Illustration und mobil gestapelter Darstellung umsetzen.
+- [x] Startseiten-Produktübersicht als sieben responsive, wiedererkennbare Produktkarten ausgeben.
+- [x] Design-Tokens, Karten, Buttons, Produktseiten, FAQ, Preisübersicht und Medienplatzhalter visuell an die Referenzbilder angleichen.
 - [ ] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen.
 - [ ] Navigationsblock, Menüzustände, Fokusreihenfolge und Tastaturbedienung im echten Browser prüfen.
 - [ ] Theme-Angaben, Textdomain, Übersetzungsdateien und Lizenzhinweise für den Release vervollständigen.
@@ -62,12 +65,12 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 ## Phase 5 – Komponenten und Vorlagen
 
 - [x] Startseiten-Hero-Pattern mit B2B-Versprechen und klarer nächster Handlung bereitstellen.
-- [x] Produktkarten-Pattern für die vier Produkte bereitstellen.
+- [x] Produktkarten-Pattern für die sieben Website-Produkte bereitstellen.
 - [x] Abschluss-CTA-Pattern bereitstellen.
 - [x] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Kompatibilität, FAQ und Ressourcen ergänzen.
 - [x] Inhaltsbereiche nach H2 als breite, abwechselnd hinterlegte Gutenberg-Sektionen komponieren; Startseiten-Einstieg als Hero und Medien-Briefings als redaktionelle Karten ausgeben.
 - [x] FAQ-Seiten in native Details-Blöcke und Preisübersichten in speziell formatierte, responsive Tabellen umwandeln.
-- [ ] Spezifische Pattern-Kompositionen für Features, Pro/Im-Paket, Preise, Vergleich, Lösung, Dokumentation, Support und Changelog in echten WordPress-Seiten abnehmen und bei Bedarf vertiefen.
+- [ ] Spezifische Pattern-Kompositionen für Features, Pro-/Preise, Vergleich, Lösung, Dokumentation, Support und Changelog in echten WordPress-Seiten abnehmen und bei Bedarf vertiefen.
 - [x] Schlanke, barrierearme Brotkrumennavigation für Inhaltsseiten ergänzen; strukturierte Daten bleiben Yoast überlassen.
 - [x] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung mit horizontal scrollbaren Tabellen und nativen Details-Blöcken vorbereiten.
 - [x] Tabellenüberschriften semantisch markieren und scrollbare Tabellenregionen für die Tastatur fokussierbar ausgeben.
@@ -86,7 +89,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [x] Warenkorb- und Checkout-Seitenvorlagen so vorbereiten, dass deren WordPress-Seiteninhalt die WooCommerce-Blöcke enthält.
 - [x] Mein-Konto-Seitentemplate für den WordPress-Seiteninhalt vorbereiten.
-- [x] Assistent für WooCommerce-Produkte und License-Captain-Zuordnungen vorbereiten: neun jährliche Captain-Pro-Produktentwürfe mit bestehender Plan-/Preisstruktur, ohne Steuer- oder Zahlungseinstellungen zu ändern.
+- [x] Assistent für WooCommerce-Produkte und License-Captain-Zuordnungen vorbereiten: fünfzehn jährliche Captain-Pro-Produktentwürfe mit bestehender Plan-/Preisstruktur einschließlich Form und Workflow Captain Pro, ohne Steuer- oder Zahlungseinstellungen zu ändern.
 - [ ] WooCommerce-Katalog, Produktdetail, Warenkorb, Checkout, Bestätigung, Konto und E-Mail-Einstiege mit installierter Shop-Konfiguration durchgehen.
 - [ ] Theme-Styling nur auf unterstützte WooCommerce-Blöcke und öffentliche Klassen anwenden; Block-Markup nicht nachbauen.
 - [ ] Produkt-/Pro-CTA und Preisangaben mit dem tatsächlichen Shop-Katalog abstimmen.
@@ -110,7 +113,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen.
 - [x] Sprunglink zum Hauptinhalt und kontraststarke, doppelt sichtbare Fokusdarstellung in die Theme-Vorlagen integrieren.
 - [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link in einem Screenreader-/Browserdurchlauf abnehmen.
-- [ ] Layout mit und ohne WooCommerce, Yoast sowie den vier Plugins prüfen; degradierte Zustände verständlich halten.
+- [ ] Layout mit und ohne WooCommerce, Yoast sowie den sechs kostenlosen Kern-Plugins und License Captain prüfen; degradierte Zustände verständlich halten.
 - [ ] Ladegewicht, Bildgrößen, Caching-Verhalten und Core Web Vitals mit realistischem Seiteninhalt bewerten.
 - [ ] SEO-Snippets, Social-Previews, Sitemap, robots/noindex und Weiterleitungen in Staging prüfen.
 - [ ] Rechtliche Pflichtseiten, Datenschutz-/Cookie-Einbindung und Formularkonfiguration mit Verantwortlichen abgleichen.
@@ -136,4 +139,4 @@ Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Ste
 
 ## Aktueller Build-Stand
 
-Die Pattern-Bibliothek enthält einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, den Preisentwurf für Single/Business/Agency, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Der Inhaltscompiler baut 46 Markdown-Quellseiten plus notwendige Verzeichnisseiten als importierbare Gutenberg-Inhalte mit Hero-, Abschnitts-, CTA- und Medienkarten; FAQ-Seiten werden als native Details-Akkordeons und Preisübersichten mit semantischen, responsiven Tabellen ausgegeben. Alle 46 Seiten haben SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase; doppelte Fokus-Keyphrases wurden bereinigt und Yoast erhält Social-Titel/-Beschreibung. Platzhalterseiten werden als Entwurf angelegt. Die Preiswerte stammen aus dem aktuellen Konzept und müssen vor Shop-Veröffentlichung mit dem Produktkatalog abgeglichen werden.
+Die Pattern-Bibliothek enthält einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, Preisentwürfe, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Der Inhaltscompiler erzeugt aus 71 Markdown-Quellseiten fünf notwendige Verzeichnisseiten als 76 importierbare Gutenberg-Inhalte mit Hero-, Abschnitts-, CTA- und Medienkarten; FAQ-Seiten werden als native Details-Akkordeons und Preisübersichten mit semantischen, responsiven Tabellen ausgegeben. Alle Inhaltsseiten erhalten SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase; Yoast erhält Social-Titel/-Beschreibung. Platzhalterseiten werden als Entwurf angelegt. Preise werden vor Shop-Veröffentlichung mit dem Produktkatalog abgeglichen.

@@ -1,14 +1,14 @@
 ---
 url: /license-captain/faq/
 seo_title: License Captain FAQ – WordPress-Lizenzen und Updates
-meta_description: Antworten zu License Captain Server, WooCommerce-Lizenzprodukten, Aktivierungen, Verlängerungen, Updates und Client-Integrationen.
+meta_description: Antworten zu License Captain als separat erhältlichem WooCommerce-Lizenzserver für WordPress-Plugin-Hersteller.
 focus_keyphrase: WordPress Lizenzmanager FAQ
 ---
 
 # Fragen zu License Captain
 
-## Ist License Captain Server in Captain Pro enthalten?
-Nein. License Captain Server wird separat verkauft und ist nicht Bestandteil von Voucher Captain Pro, Pass Captain Pro oder Affiliate Captain Pro.
+## Ist License Captain Teil von Captain Pro?
+Nein. License Captain ist ein eigenständiges Server-Plugin, das separat erhältlich ist. Es richtet sich an Unternehmen, die eigene Plugins oder Softwareprodukte lizenzieren und Updates bereitstellen möchten.
 
 ## Benötige ich WooCommerce?
 Ja, WooCommerce dient als Shop für Lizenzprodukte und Bestellungen.
@@ -22,10 +22,13 @@ Sie können Aktivierungen für Live-, Staging- und Entwicklungswebsites verwalte
 ## Sind automatische Verlängerungen verfügbar?
 Ja. Kunden können manuell verlängern oder die optionale Stripe-gestützte automatische Verlängerung nutzen.
 
-## Wie verbindet sich mein Plugin mit dem Server?
-Sie können die Client-Kommunikation direkt nach der API-Spezifikation in Ihr WordPress-Plugin integrieren oder ein separates Client-Plugin wie License Captain Client verwenden.
+## Wie erhalten meine Plugins Updates?
+Produkt-Plugins prüfen Berechtigungen und Updatezugriff über die signierte API. Releases werden zentral verwaltet.
+
+## Muss ich ein bestimmtes Client-Plugin verwenden?
+Nein. License Captain ist der Server. Sie können den API-Client nach der Spezifikation direkt in Ihr WordPress-Produkt integrieren oder ein separates Client-Plugin verwenden bzw. entwickeln. License Captain schreibt keinen bestimmten Integrationsweg vor.
 
 ## Kann ich Release-Notizen anzeigen?
 Ja. Produkt-Changelogs können über Shortcodes und Gutenberg-Blöcke ausgegeben werden.
 
-[Features ansehen](/license-captain/features/) · [Server-/Client-Integration](/license-captain/im-paket/) · [Support](/support/)
+[Features ansehen](/license-captain/features/) · [Preise und Pläne](/license-captain/preise/) · [Support](/support/)

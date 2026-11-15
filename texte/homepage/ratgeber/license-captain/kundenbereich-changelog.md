@@ -28,4 +28,4 @@ Kontrollieren Sie die Darstellung mit unterschiedlichen Lizenzstatus, auf Mobilg
 [Screenshot-Platzhalter: Kundenkonto mit Lizenzstatus und Website-Aktivierungen zeigen; Schlüssel und Domains durch ungültige Beispieldaten ersetzen.]  
 [Screenshot-Platzhalter: sichtbaren Changelog für ein Beispielprodukt mit Releaseversion und drei Testeinträgen zeigen.]
 
-**[License Captain Features ansehen](/license-captain/features/)** · **[Captain Pro im Überblick](/captain-pro/)**
+**[License Captain Features ansehen](/license-captain/features/)** · **[Preise und Pläne](/license-captain/preise/)**

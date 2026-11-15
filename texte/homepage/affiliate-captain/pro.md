@@ -33,7 +33,7 @@ Führen Sie PayPal-Auszahlungen direkt aus dem Partnerprogramm aus und ergänzen
 | Business | 5 | 399 € |
 | Agency | 25 | 699 € |
 
-Alle Pläne enthalten den vollständigen Affiliate-Captain-Pro-Umfang. License Captain Server wird separat angeboten und ist nicht Bestandteil dieses Plans.
+Alle Pläne enthalten den vollständigen Pro-Umfang.
 
 **[Affiliate Captain Pro auswählen]([Checkout-URL])** · [Kostenlosen Kern starten]([Download-URL])
 

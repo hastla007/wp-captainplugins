@@ -25,6 +25,9 @@ PRODUCT_NAMES = {
     "pass-captain": "Pass Captain",
     "affiliate-captain": "Affiliate Captain",
     "license-captain": "License Captain",
+    "review-captain": "Review Captain",
+    "form-captain": "Form Captain",
+    "workflow-captain": "Workflow Captain",
 }
 
 
@@ -238,14 +241,50 @@ def markdown_blocks(markdown: str, page_path: str = "") -> str:
     for kind, children in groups:
         if kind == "hero":
             class_name = "cp-hero"
+            inner = "\n\n".join(children)
+            if not page_path:
+                eyebrow = block("paragraph", '<p class="cp-eyebrow">WordPress-Plugins für Unternehmen</p>', {"className": "cp-eyebrow"})
+                inner = eyebrow + "\n\n" + inner
+                hero_image = block(
+                    "image",
+                    '<figure class="wp-block-image cp-hero__visual"><img src="__CAPTAIN_THEME_URI__/assets/images/captain-hero.jpg" alt="" /></figure>',
+                )
+                copy = block("group", f'<div class="wp-block-group cp-hero__copy">{inner}</div>', {"className": "cp-hero__copy", "layout": {"type": "constrained"}})
+                layout = block("group", f'<div class="wp-block-group cp-hero__layout">{copy}{hero_image}</div>', {"className": "cp-hero__layout", "layout": {"type": "constrained"}})
+                inner = layout
         elif kind == "intro":
             class_name = "cp-content-intro"
         else:
             class_name = "cp-content-section"
             if section_index % 2 == 1:
                 class_name += " cp-content-section--soft"
+            if not page_path and section_index == 0:
+                split_at = next((i for i, item in enumerate(children) if re.match(r'<!-- wp:heading \{"level":3', item)), len(children))
+                intro_items = children[:split_at]
+                feature_items = children[split_at:]
+                cards: list[str] = []
+                current_card: list[str] = []
+                for item in feature_items:
+                    if re.match(r'<!-- wp:heading \{"level":3', item) and current_card:
+                        card_content = "\n\n".join(current_card)
+                        cards.append(block("group", f'<div class="wp-block-group cp-card">{card_content}</div>', {"className": "cp-card", "layout": {"type": "constrained"}}))
+                        current_card = []
+                    current_card.append(item)
+                if current_card:
+                    card_content = "\n\n".join(current_card)
+                    cards.append(block("group", f'<div class="wp-block-group cp-card">{card_content}</div>', {"className": "cp-card", "layout": {"type": "constrained"}}))
+                intro = block("group", '<div class="wp-block-group cp-section__intro">' + "\n\n".join(intro_items) + '</div>', {"className": "cp-section__intro", "layout": {"type": "constrained"}})
+                grid = block("group", '<div class="wp-block-group cp-product-grid">' + "\n\n".join(cards) + '</div>', {"className": "cp-product-grid", "layout": {"type": "constrained"}})
+                content_inner = block("group", '<div class="wp-block-group cp-section__inner">' + intro + grid + '</div>', {"className": "cp-section__inner", "layout": {"type": "constrained"}})
+                inner = content_inner
+                class_name += " cp-home-products"
+                markup = f'<div class="wp-block-group alignfull {class_name}">{inner}</div>'
+                composed.append(block("group", markup, {"align": "full", "className": class_name, "layout": {"type": "constrained"}}))
+                section_index += 1
+                continue
             section_index += 1
-        inner = "\n\n".join(children)
+        if kind != "hero":
+            inner = "\n\n".join(children)
         markup = f'<div class="wp-block-group alignfull {class_name}">{inner}</div>'
         composed.append(block("group", markup, {"align": "full", "className": class_name, "layout": {"type": "constrained"}}))
     return "\n\n".join(composed)
@@ -262,7 +301,7 @@ def title_from_path(path: str) -> str:
 def page_group(path: str) -> str:
     if path.startswith("ratgeber/"):
         return "guides"
-    if path.startswith(("voucher-captain/", "pass-captain/", "affiliate-captain/", "license-captain/", "dokumentation/installation/")):
+    if path.startswith(("voucher-captain/", "pass-captain/", "affiliate-captain/", "license-captain/", "review-captain/", "form-captain/", "workflow-captain/", "dokumentation/installation/")):
         return "products"
     return "core"
 
@@ -316,7 +355,7 @@ def build() -> None:
             "social_description": meta.get("social_description", ""),
             "social_image": meta.get("social_image", ""),
             "has_placeholders": placeholder_present(source := file.read_text(encoding="utf-8")),
-            "source_hash": hashlib.sha256(source.encode("utf-8")).hexdigest(),
+            "source_hash": hashlib.sha256((source + "\n" + markup).encode("utf-8")).hexdigest(),
             "source_file": file.relative_to(ROOT).as_posix(),
         }
 

@@ -12,14 +12,14 @@
       "defaultGradients": false,
       "defaultPalette": false,
       "palette": [
-        { "slug": "ink", "name": "Tiefblau", "color": "#172B3A" },
-        { "slug": "navy", "name": "Captain Navy", "color": "#143B53" },
-        { "slug": "blue-soft", "name": "Helles Blau", "color": "#EAF2F6" },
-        { "slug": "gold", "name": "Gold", "color": "#D5A64A" },
+        { "slug": "ink", "name": "Tiefblau", "color": "#102D43" },
+        { "slug": "navy", "name": "Captain Navy", "color": "#12394F" },
+        { "slug": "blue-soft", "name": "Helles Blau", "color": "#EAF4FA" },
+        { "slug": "gold", "name": "Captain Gold", "color": "#E2AE45" },
         { "slug": "paper", "name": "Weiß", "color": "#FFFFFF" },
-        { "slug": "surface", "name": "Helle Fläche", "color": "#F5F7F8" },
-        { "slug": "muted", "name": "Sekundärtext", "color": "#52616B" },
-        { "slug": "border", "name": "Rahmen", "color": "#D7E0E5" }
+        { "slug": "surface", "name": "Helle Fläche", "color": "#F4F8FA" },
+        { "slug": "muted", "name": "Sekundärtext", "color": "#526779" },
+        { "slug": "border", "name": "Rahmen", "color": "#D7E2EA" }
       ]
     },
     "spacing": {

@@ -23,7 +23,7 @@ Erreichen Sie Empfänger zusätzlich per SMS. Kombinieren Sie den Versandkanal m
 
 ## Im Pro-Plan enthalten
 
-Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen nach den Live-Websites: Single für 1, Business für 5 oder Agency für 25 Websites. License Captain Server ist ein separates Produkt und nicht Bestandteil dieses Plans.
+Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen nach den Live-Websites: Single für 1, Business für 5 oder Agency für 25 Websites.
 
 | Plan | Preis pro Jahr |
 |---|---:|

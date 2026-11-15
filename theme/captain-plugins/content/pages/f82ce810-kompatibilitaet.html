@@ -1,0 +1,51 @@
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
+<p>Die Versionswerte unten sind die im Workflow-Captain-Konzept festgelegten Mindestanforderungen. Das Konzept dokumentiert noch keine ausgeführten Integrationstests. Getestete Kombinationen und Mindestversionen der einzelnen Suite-Provider müssen vor dem Release in einer aktualisierten Matrix veröffentlicht werden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:table -->
+<figure class="wp-block-table"><table><thead><tr><th scope="col">Komponente</th><th scope="col">Vorgesehene Mindestversion</th><th scope="col">Hinweis</th></tr></thead><tbody><tr><td>WordPress</td><td>6.8</td><td>Kostenloser Kern und Pro-Add-on</td></tr><tr><td>PHP</td><td>8.3</td><td>Kostenloser Kern und Pro-Add-on</td></tr><tr><td>WooCommerce</td><td>8.0</td><td>Optional; erforderlich für WooCommerce-Provider</td></tr><tr><td>Captain-Suite-Plugins</td><td>Je Providervertrag</td><td>Erfordert kompatible Kernversion und öffentliche Schnittstelle</td></tr><tr><td>Pro-Erweiterung</td><td>Aktive Pro-Lizenz</td><td>Workflow Captain Pro wird separat angeboten; für Suite-Funktionen müssen die passenden Provider verfügbar sein</td></tr></tbody></table></figure>
+<!-- /wp:table --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">WooCommerce und Bestellmodi</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Das Konzept sieht HPOS sowie klassische und Blocks-Bestellungen als Release-Gates vor. Diese Angabe beschreibt den geplanten Abnahmeumfang, nicht bereits bestätigte Testergebnisse. Die konkrete WooCommerce-Testmatrix wird vor dem Verkaufsstart ergänzt.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Provider-Kompatibilität</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ein Provider meldet seine Vertragsversion und erforderlichen Plugin-Mindeststände. Fehlt ein Plugin, ist der Contract inkompatibel oder eine erforderliche Berechtigung nicht vorhanden, wird der Provider als nicht verfügbar ausgewiesen. Workflows werden nicht auf unbekannte oder geänderte Vertragsfelder umgedeutet.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Betriebsanforderungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Die Ausführung erfolgt lokal auf der WordPress-Website. Mit WooCommerce kommt Action Scheduler zum Einsatz; ohne WooCommerce ist WP-Cron vorgesehen. Für regelmäßige, zeitnahe Läufe empfiehlt das Konzept einen korrekt eingerichteten System-Cron. Queue- und Systemlimits können Läufe verzögern oder sicher ablehnen, verursachen aber keine Task-Kosten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/integrationen/">Integrationen ansehen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/installation/">Installationsanleitung</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/kompatibilitaet/">Systemweite Kompatibilität</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->

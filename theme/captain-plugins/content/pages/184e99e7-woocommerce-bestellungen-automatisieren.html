@@ -1,0 +1,61 @@
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
+<p>Automatisierte Bestellabläufe sparen manuelle Schritte, wenn sie auf verlässlichen Ereignissen und klaren Zuständigkeiten beruhen. Beginnen Sie mit einem eng umrissenen Prozess und testen Sie ihn vor der Aktivierung mit Bestell- und Refund-Szenarien.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Geeignete Startpunkte</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Typische Auslöser sind eine neu angelegte oder bezahlte Bestellung, eine Statusänderung, eine Erstattung oder ein Produktereignis. Die verfügbaren Events hängen von WooCommerce-Version, Bestellmodus und Providervertrag ab. Gastbestellungen benötigen eigene Regeln, wenn keine WordPress-Benutzer-ID vorliegt.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Bedingungen und Daten sparsam wählen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Nutzen Sie Bestellstatus, Produkt, Menge oder Versandart nur dort, wo sie für die Entscheidung gebraucht werden. Zahlungsdaten und Gateway-Secrets gehören nicht in Workflow-Tokens. Empfängeradressen sollen nur für eine dafür vorgesehene Nachricht verwendet werden.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Refunds und doppelte Events behandeln</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Refunds können teilweise oder vollständig erfolgen. Verarbeiten Sie jede Refund-ID höchstens einmal und vermeiden Sie, durch mehrere ähnliche Events dieselbe Geschäftswirkung doppelt auszuführen. Eine sichere Wiederholung benötigt Idempotenz und ein sichtbares Run-Protokoll.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Geschäftslogik beim zuständigen Plugin lassen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ein Workflow kann benachrichtigen, dokumentieren oder einen freigegebenen Service aufrufen. Er sollte keine eigene Provisionsberechnung, Auszahlung, Ticketvergabe oder Gutscheinbuchhaltung ersetzen. Verwenden Sie dafür die öffentliche Schnittstelle des Fachplugins.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Workflow Captain enthält WooCommerce-Provider im kostenlosen Kern; Pro ergänzt Suite-Verbindungen und erweiterte Fehlerkontrolle.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/features/">Workflow Captain Features</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/kompatibilitaet/">Voraussetzungen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/preise/">Preise</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
