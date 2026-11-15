@@ -4,7 +4,7 @@
 **Ziel:** Firmenkunden, Agenturen, Veranstalter, WooCommerce-Shops und Betreiber eigener Partnerprogramme  
 **Primärmarkt:** DACH, deutschsprachige Website zuerst; englische Fassung in einer zweiten Ausbaustufe
 
-**Arbeitsannahmen für die Website-Texte:** Die Plugins und Captain-Pro-Angebote werden als verkaufsfähig behandelt. Alle Funktionen, die in den aktuellen Produktplänen und Entwicklungsarbeiten enthalten sind, werden als Bestandteil des finalen Releases vor Verkaufsstart angenommen und in der Marketingcopy als Produktumfang beschrieben. Die Jahrespläne und Preise aus `docs/TARIFE.md` gelten vorerst als Preisgrundlage. License Captain Server wird separat verkauft und ist nicht in Captain Pro enthalten. Für unsere Captain-Pro-Produkte verwenden wir intern einen Client zur Lizenzprüfung; diese interne Umsetzung ist kein Kunden-Leistungsversprechen und wird in Kauf- und Pro-Inhalten vor dem Kauf nicht erwähnt. Screenshots, Demos und Kundenbeispiele erhalten klar gekennzeichnete Platzhalter; es werden keine echten Referenzen erfunden.
+**Arbeitsannahmen für die Website-Texte:** Die Plugins und Captain-Pro-Angebote werden als verkaufsfähig behandelt. Alle Funktionen, die in den aktuellen Produktplänen und Entwicklungsarbeiten enthalten sind, werden als Bestandteil des finalen Releases vor Verkaufsstart angenommen und in der Marketingcopy als Produktumfang beschrieben. Die Jahrespläne und Preise aus `docs/TARIFE.md` gelten vorerst als Preisgrundlage. License Captain Server wird separat verkauft und ist nicht in Captain Pro enthalten. Im Captain-Pro-Lieferumfang befindet sich nur die Client-Komponente für den internen Lizenzabruf unserer Pro-Erweiterungen. License Captain Server wird nicht mitgeliefert; Käufer benötigen diesen Server nicht für die Nutzung von Captain Pro. Diese interne technische Lizenzierungsarchitektur hat für den Kunden keinen eigenständigen Produktnutzen und wird in öffentlichen Kauf- und Pro-Inhalten vor dem Kauf nicht erwähnt. Screenshots, Demos und Kundenbeispiele erhalten klar gekennzeichnete Platzhalter; es werden keine echten Referenzen erfunden.
 
 ## 1. Kurzempfehlung
 
@@ -168,7 +168,7 @@ Jede Produktfamilie bekommt eine Übersichtsseite und klar auffindbare Unterseit
 | Voucher Captain | `/voucher-captain/` | `/voucher-captain/features/` | `/voucher-captain/pro/` | `/voucher-captain/faq/` |
 | Pass Captain | `/pass-captain/` | `/pass-captain/features/` | `/pass-captain/pro/` | `/pass-captain/faq/` |
 | Affiliate Captain | `/affiliate-captain/` | `/affiliate-captain/features/` | `/affiliate-captain/pro/` | `/affiliate-captain/faq/` |
-| License Captain | `/license-captain/` | `/license-captain/features/` | `/license-captain/im-paket/` | `/license-captain/faq/` |
+| License Captain Server | `/license-captain/` | `/license-captain/features/` | `/license-captain/im-paket/` (Server-/Client-Integration) | `/license-captain/faq/` |
 
 **Inhalte der Unterseiten:**
 
@@ -447,7 +447,7 @@ Die Prüfung vom **15.11.2026** bezog Hauptstände, neuere Produktdokumente und 
 | Voucher Captain | WooCommerce-Shops, Filialunternehmen, Dienstleister; Gutscheine professionell ausstellen und verwalten | „Gutscheine, Geschenkkarten und Guthaben passend zu Ihrer Marke verkaufen und verwalten.“ | Platzhalter für Gutschein-Designer, personalisiertes PDF, Kundenkonto und Einlösung | „Kostenlos starten“; ergänzend „Pro-Funktionen vergleichen“ |
 | Pass Captain | Veranstalter, Seminaranbieter, Vereine, Kurs- und Verleihbetriebe; Verkauf, Buchungen und Einlass koordinieren | „Events, Tickets und Servicebuchungen in WordPress organisieren – vom Termin bis zum Einlass.“ | Platzhalter für Eventkalender, Checkout, Ticket/Wallet und Scanner | „Pass Captain entdecken“ bzw. „Kostenlosen Kern laden“ |
 | Affiliate Captain | Onlinehändler, digitale Anbieter, Abo- und Kursanbieter; Partnerprogramm kontrolliert aufbauen | „Partner gewinnen, Verkäufe nachvollziehen und Provisionen transparent abrechnen.“ | Platzhalter für Partnerportal, Provisionsregel, Refund-Korrektur und Auszahlung | „Partnerprogramm aufbauen“ |
-| License Captain | Plugin-Hersteller, Agenturen und Softwareteams; Lizenzen und Updates über WooCommerce verkaufen | „Lizenzen, Aktivierungen, Verlängerungen und Plugin-Updates zentral steuern.“ | Platzhalter für Lizenzübersicht, Aktivierungslimits, Update- und Changelog-Ansicht | „Im Captain-Pro-Paket enthalten“ |
+| License Captain Server | Plugin-Hersteller, Agenturen und Softwareteams; eigene Plugins über WooCommerce lizenzieren | „Lizenzen, Aktivierungen, Verlängerungen und Plugin-Updates zentral steuern.“ | Platzhalter für Serverübersicht, Aktivierungslimits, Update- und Changelog-Ansicht | „License Captain Server ansehen“ |
 
 ### Einheitlicher Aufbau der Produkt- und Unterseiten
 
