@@ -366,7 +366,7 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 - [x] SEO-Titel, Meta-Descriptions, Fokus-Keyphrases, URL-Slugs und interne Links als Erstfassung einarbeiten.
 - [ ] Yoast SEO installieren und konfigurieren; Sitemap, Breadcrumbs, Indexierung und strukturierte Datenausgabe technisch prüfen.
 - [ ] Suchbegriffe mit Search Console oder Keyworddaten validieren.
-- [ ] Schritt-für-Schritt-Installationsanleitungen ergänzen.
+- [x] Schritt-für-Schritt-Installationsanleitungen für die vier Kern-Plugins und Captain Pro erstellen; Screenshot-Platzhalter enthalten Bildbriefings.
 - [ ] Produktcopy anhand finaler Release-Funktionen und rechtlicher Aussagen freigeben.
 - [ ] Impressum, Datenschutz, AGB und Widerrufsseite mit den erforderlichen Unternehmensdaten und fachlicher Prüfung erstellen.
 

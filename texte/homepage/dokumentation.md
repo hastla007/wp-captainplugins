@@ -9,6 +9,16 @@ focus_keyphrase: WordPress Plugin Dokumentation
 
 Hier finden Sie die Grundlagen für Installation, Einrichtung und Betrieb. Wählen Sie das passende Plugin und folgen Sie der Anleitung für Ihren Shop oder Ihre WordPress-Website.
 
+## Installieren und einrichten
+
+Beginnen Sie mit der [allgemeinen Installationsanleitung](/dokumentation/installation/) oder wählen Sie direkt Ihr Plugin:
+
+- [Voucher Captain installieren](/dokumentation/installation/voucher-captain/)
+- [Pass Captain installieren](/dokumentation/installation/pass-captain/)
+- [Affiliate Captain installieren](/dokumentation/installation/affiliate-captain/)
+- [License Captain installieren](/dokumentation/installation/license-captain/)
+- [Captain-Pro-Erweiterung installieren](/dokumentation/installation/captain-pro/)
+
 ## Produktdokumentation
 
 - **Voucher Captain:** Gutscheinprodukte einrichten, PDF-Vorlagen gestalten, Zustellung konfigurieren, Guthaben verwalten und Codes importieren.

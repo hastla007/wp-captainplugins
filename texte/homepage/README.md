@@ -37,6 +37,15 @@ Je Produktbereich sind drei Ratgeber mit eigener Suchintention angelegt:
 - [plugin-updates-lizenzstatus](ratgeber/license-captain/plugin-updates-lizenzstatus.md)
 - [kundenbereich-changelog](ratgeber/license-captain/kundenbereich-changelog.md)
 
+## Installationsanleitungen
+
+- [Allgemeine Installation](dokumentation/installation/index.md)
+- [Voucher Captain](dokumentation/installation/voucher-captain.md)
+- [Pass Captain](dokumentation/installation/pass-captain.md)
+- [Affiliate Captain](dokumentation/installation/affiliate-captain.md)
+- [License Captain](dokumentation/installation/license-captain.md)
+- [Captain Pro](dokumentation/installation/captain-pro.md)
+
 ## Redaktionelle Platzhalter
 
 Ersetze Platzhalter wie [Download-URL], [Checkout-URL], [Supportkontakt], [Firmenname] oder [Screenshot: …] vor Veröffentlichung. Kundenlogos, Bewertungen, konkrete Erfolgszahlen, rechtliche Zusicherungen und Supportzeiten sind nicht erfunden. Yoast-Titel, Meta-Description und Fokus-Keyphrase stehen am Anfang jeder Seite.
