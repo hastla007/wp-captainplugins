@@ -19,7 +19,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [x] `design/konzept.md`, `konzept-website.md`, `texte/homepage/` und `design/` erfassen.
 - [x] Vorhandene Seitenrollen und Navigation als Grundlage übernehmen.
-- [x] Produkte korrekt benennen: Voucher Captain, Pass Captain, Affiliate Captain und License Captain; License Captain ist in Captain-Pro-Angeboten enthalten.
+- [x] Produkte korrekt benennen: Voucher Captain, Pass Captain, Affiliate Captain und License Captain. License Captain Server ist separat erhältlich und nicht in Captain Pro enthalten.
 - [x] Bestehende Pläne und Preise nicht im Theme fest verdrahten; Preise kommen aus Shop-/Seiteninhalten.
 - [ ] Für jeden Produktbereich finale URLs, Downloadziele, Checkoutziele und Supportwege mit der Website-Konfiguration abgleichen.
 - [ ] Vor Release WordPress-, PHP-, WooCommerce- und Plugin-Mindestversionen anhand der dann freigegebenen Releases bestätigen.
