@@ -15,6 +15,8 @@ Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/capt
 5. Yoast SEO je Seite pflegen; Meta-Tags und strukturierte Daten nicht im Theme duplizieren.
 6. Screenshot-Platzhalter vor Veröffentlichung durch freigegebene echte Produktansichten ersetzen.
 
+Für Produkt-Startseiten die Vorlage **Produktseite**, für Preise und Vergleich **Preisübersicht** und für Dokumentation, FAQ, Support und Kompatibilität **Ressourcen- und Dokumentationsseite** auswählen. Die WooCommerce-Seiten Warenkorb, Checkout und Mein Konto verwenden ihre gleichnamigen Seitentemplates, sofern die WordPress-Seiten diese Slugs haben.
+
 Die vollständige Reihenfolge von der Bestandsaufnahme bis Betrieb und Release steht in [ROADMAP.md](../ROADMAP.md). Designvorgaben stehen in [../design/konzept.md](../design/konzept.md).
 
 Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/mockups/homepage-desktop.jpg), [Produktübersichts-](../design/mockups/products-overview-desktop.jpg) und [Preisplan-Mockups](../design/mockups/captain-pro-pricing-desktop.jpg). Die Mockups dienen als Gestaltungsreferenz; ihre Produktansichten sind keine echten Screenshots.
@@ -25,6 +27,7 @@ Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/m
 - Patterns für Produkt-Heros, Features, Abläufe, Free-/Pro-Vergleich, Preise, Screenshot-Briefings, Kompatibilität, FAQ, Ressourcen und CTAs.
 - Responsive Basisstile, globale Design-Tokens und sichtbare Tastaturfokusse.
 - Warenkorb- und Checkout-Templates, die den Inhalt der dafür angelegten WordPress-Seiten ausgeben.
+- Mein-Konto-Template, das die von WooCommerce bereitgestellten Kontoblöcke und Shortcodes im Seiteninhalt belässt.
 
 Die Pattern-Texte mit eckigen Klammern sind redaktionelle Felder, die beim Einfügen auszufüllen sind. Der Preisvergleich startet mit den aktuellen Konzeptpreisen und enthält einen internen Abgleichhinweis. Screenshot-Platzhalter enthalten ein konkretes Aufnahmebriefing und müssen vor Veröffentlichung ersetzt werden.
 

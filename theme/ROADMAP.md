@@ -77,6 +77,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 ## Phase 7 – Shop und Plugin-Integration
 
 - [x] Warenkorb- und Checkout-Seitenvorlagen so vorbereiten, dass deren WordPress-Seiteninhalt die WooCommerce-Blöcke enthält.
+- [x] Mein-Konto-Seitentemplate für den WordPress-Seiteninhalt vorbereiten.
 - [ ] WooCommerce-Katalog, Produktdetail, Warenkorb, Checkout, Bestätigung, Konto und E-Mail-Einstiege mit installierter Shop-Konfiguration durchgehen.
 - [ ] Theme-Styling nur auf unterstützte WooCommerce-Blöcke und öffentliche Klassen anwenden; Block-Markup nicht nachbauen.
 - [ ] Produkt-/Pro-CTA und Preisangaben mit dem tatsächlichen Shop-Katalog abstimmen.
