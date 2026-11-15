@@ -318,11 +318,21 @@ Mobile Ansichten werden zuerst gestaltet. Karten und Preispläne stapeln sich; T
 
 Die acht Kapitäns-JPEGs in `design/mascot/` werden einzeln gesichtet und für wenige passende Stellen ausgewählt. Produktaufnahmen sind im Repo noch als Platzhalter-Briefings dokumentiert. Sie sollen später echte, anonymisierte Oberflächen zeigen: Gutschein-Designer/PDF, Event und Einlass, Partnerportal/Auszahlung, Lizenzübersicht und Tarifvergleich. Bis diese Bilder freigegeben sind, werden keine UI-Mockups als echte Produktansicht ausgegeben.
 
+### Shop-, Kundenkonto- und Pluginansichten
+
+Das Theme umfasst neben den Marketingseiten auch die WooCommerce-Kaufstrecke und die öffentlich sichtbaren Plugin-Ansichten. Dazu zählen Produkt-/Tarifseiten, Shoparchive, Warenkorb, Checkout, Bestellbestätigung und Kundenkonto. License Captain liefert dynamische Lizenz-, Website-, Download-, Preis- und Changelog-Ansichten; die Darstellung wird über die öffentlichen Blocks und Shortcodes integriert. Voucher-, Pass- und Affiliate-Frontends werden ebenfalls gestalterisch unterstützt, wenn sie öffentlich eingebettet sind. Plugin-Logik und Adminoberflächen bleiben außerhalb des Themes.
+
+Tarife und Checkout-Ziele werden aus WooCommerce bzw. dem License-Captain-Katalog gepflegt und nicht als unabhängige Theme-Daten dupliziert. Das Theme verwendet WooCommerce Blocks und dokumentierte Styleschnittstellen, statt interne Block-Markup-Strukturen vorauszusetzen.
+
+### Mehrsprachigkeit und redaktionelle Steuerung
+
+Deutsch ist die Startsprache; alle Theme-UI-Texte werden mit Textdomain und Übersetzungsdateien für eine spätere englische Fassung vorbereitet. Das Übersetzungsplugin verwaltet Sprachinhalte und Slugs; ein Sprachumschalter erscheint nur bei vorhandener Übersetzung. Im Site Editor dürfen Redakteure Inhalte und freigegebene Patterns bearbeiten. Globale Farben, Typografie, Abstände und Fokuszustände bleiben an das Designsystem in `theme.json` gebunden. Strukturkritische Bereiche wie Header, Preis-/Vergleichsstruktur und Pflichtinformationen erhalten passende Vorlagen oder geschützte Patterns.
+
 ### Theme-To-do
 
 1. Vorhandene Texte, Ziel-URLs und Assets inventarisieren; Mascot, Logo und Bildrechte prüfen.
 2. Finale Farbpalette, Typografie, Produktakzente und responsive Layout-Tokens definieren.
-3. Block-Theme als technische Richtung bestätigen und unterstützte WordPress-/PHP-Versionen festlegen.
+3. Natives Block-Theme als verbindliche Architektur umsetzen; unterstützte WordPress-/PHP-/WooCommerce-Versionen anhand der Plugin-Mindestversionen festlegen.
 4. `theme.json`, Editor-Styles, Header, mobile Navigation, Footer, Breadcrumbs und Seitengerüst erstellen.
 5. Grundtemplates und Patterns für die bestehenden Seitentypen implementieren.
 6. Bestehende Copy übertragen und Preis-/CTA-Daten konsistent aus dem redaktionellen Stand pflegen.
@@ -361,4 +371,46 @@ Diese KI-generierten Bilder veranschaulichen eine mögliche Umsetzung des Websit
 ### Preise und Pläne
 
 ![Mockup der Captain-Pro-Preisübersicht mit vorläufigen Voucher-Captain-Pro-Preisen](design/mockups/captain-pro-pricing-desktop.jpg)
+
+
+
+---
+
+## 16. Shop-, Kundenkonto- und Integrationsumfang des Themes
+
+Die Theme-Architektur ist verbindlich als **natives WordPress-Block-Theme mit Site Editor und `theme.json`** festgelegt. Die frühere offene Wahl zwischen Block- und klassischem Theme entfällt.
+
+Der Umfang geht über die Marketingseiten hinaus: Das Theme gestaltet auch den WooCommerce-Shop und die öffentlich sichtbaren Plugin-Oberflächen. WooCommerce stellt eigene Block-Theme-Vorlagen für Shopansichten bereit; Produktseite, Warenkorb, Checkout und Bestellbestätigung können über Vorlagen und Blocks in das Designsystem eingebunden werden. citeturn331951630search0turn331951630search3
+
+### Zu gestaltende Kauf- und Kundenwege
+
+- Shop-/Produktarchiv, Produkt-/Tarifdetail, Suche sowie Kategorien/Attribute.
+- Warenkorb, Checkout, Bestellbestätigung, Fehler- und Abbruchzustände.
+- Mein Konto: Anmeldung, Passwort zurücksetzen, Bestellungen sowie Lizenz- und Downloadansichten.
+- License-Captain-Seiten für Lizenzen, Aktivierungen/Websites, Verlängerungsstatus, Downloads, Changelogs und Preistabellen.
+- Öffentliche Voucher-Captain-Ansichten für Gutschein-Einlösung und Kundengutscheine.
+- Pass-Captain-Ansichten für Event-/Kalenderausgabe, Tickets und Buchungen.
+- Affiliate-Captain-Ansichten für Partnerbewerbung, Portal und Begrüßungsseite.
+
+Die Darstellung wird über öffentliche WooCommerce-/Plugin-Blocks, Shortcodes und dokumentierte Erweiterungspunkte integriert. Lizenz-, Kauf-, Gutschein-, Event- und Partnerlogik bleibt in den Plugins. Das Theme zielt nicht auf interne HTML-Strukturen von WooCommerce-Blöcken, weil diese laut WooCommerce keine stabile Schnittstelle sind. Warenkorb- und Checkout-Templates müssen den eigentlichen Blockinhalt korrekt ausgeben. citeturn331951630search30turn331951630search4
+
+### Preisquelle und Mehrsprachigkeit
+
+Die Preise und Kaufziele werden aus WooCommerce/License Captain abgeleitet oder vor Veröffentlichung verbindlich mit deren Katalog abgeglichen. Manuell duplizierte Preise in Theme-Optionen werden vermieden. Die License-Captain-Ansichten `wplc_licenses`, `wplc_pricing` und `wplc_changelog` werden gestalterisch integriert.
+
+Das Theme startet mit deutschen Inhalten, erhält aber ab Beginn übersetzbare UI-Texte mit eigener Textdomain. Eine englische Fassung wird über das gewählte Übersetzungsplugin gepflegt. Der Sprachumschalter wird nur angezeigt, wenn eine passende Übersetzung existiert. WordPress empfiehlt, Theme-Texte von Beginn an internationalisierbar anzulegen. citeturn124658436search13
+
+### Redaktion im Site Editor
+
+Globale Farben, Typografie, Layoutbreiten, Abstände und Fokuszustände werden über `theme.json` definiert. Redakteure bearbeiten Seiteninhalte und freigegebene Patterns. Strukturelle Preis-/Vergleichskomponenten, Navigation und rechtliche Pflichtbereiche erhalten klare Vorlagen und können nicht versehentlich uneinheitlich gestaltet werden. Das WordPress-Site-Editor-Modell unterstützt die Bearbeitung von Themebereichen und globalen Styles für Block-Themes. citeturn124658436search1turn124658436search2
+
+### Erweiterte Abnahme- und Releasepunkte
+
+- Mindestversionen aus den Plugin-Repositories für WordPress, WooCommerce und PHP zu einer Theme-Kompatibilitätsmatrix zusammenführen.
+- Frische Installation und Theme-Update auf bestehender Website prüfen; gespeicherte Site-Editor-Anpassungen dürfen nicht zurückgesetzt werden.
+- Produktwahl → Warenkorb → Block- und Classic-Checkout (sofern im Shop eingesetzt) → Bestellbestätigung → Mein Konto → Lizenzaktivierung → Pro-Update durchspielen.
+- Leere und Fehlerzustände testen: leerer Warenkorb, keine Suchtreffer, ungültige/abgelaufene Lizenz, keine Events, fehlende Übersetzung, Formularfehler.
+- Sichtbare Plugin-Frontends auf Mobilgeräten und mit Tastatur/Screenreader abnehmen.
+- Theme-ZIP, Versionierung, Changelog, Staging-Abnahme und Rollbackweg im Theme-Releaseplan festhalten.
+- WooCommerce-Blockvorlagen und globale Styles anhand der offiziellen Dokumentation umsetzen. citeturn331951630search0turn331951630search27turn124658436search30
 
