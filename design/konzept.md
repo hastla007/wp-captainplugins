@@ -209,7 +209,7 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 - [ ] Repo-Inventar mit den bestehenden Textdateien und URLs abgleichen; Seitenentwürfe nicht neu schreiben.
 - [ ] Vorhandenes Logo, Typografie und alle acht Kapitäns-JPEGs sichten; Nutzungsrechte, Auflösung und geeignete Posen erfassen.
 - [ ] Farbpalette mit Kontrastmessung finalisieren; Produktakzente dokumentieren.
-- [ ] Entscheidung festhalten: natives Block-Theme (Empfehlung) oder begründete klassische Theme-Struktur.
+- [x] Architekturentscheidung festhalten: natives Block-Theme mit Site Editor, `theme.json`, HTML-Templates und Template Parts. Mindestversionen für WordPress, PHP und WooCommerce vor dem Scaffold aus der Kompatibilitätsmatrix der Produkte ableiten.
 - [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen.
 - [ ] Release-Quelle für Preise, Checkout-, Download- und Support-URLs bestimmen.
 - [ ] Theme-Dateiname, Textdomain und Repository-Ordner festlegen.
@@ -247,6 +247,7 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 - [ ] Yoast-Breadcrumbs, Metadaten, Canonicals und Sitemap-Zuständigkeit gegen Theme-Ausgabe abgleichen.
 - [ ] Performance und Bildgrößen prüfen; unnötige Assets und Skripte entfernen.
 - [ ] Kompatibilität mit WooCommerce, Yoast SEO und den tatsächlich aktivierten Plugins prüfen; Shop-Funktionen nicht im Theme nachbauen.
+- [ ] WooCommerce-Shopwege und Plugin-Frontends im sauberen Theme sowie nach Update testen (Produkt-/Tarifseite, Warenkorb, Blocks- und Classic-Checkout, Bestätigung, Konto, Lizenzansicht).
 - [ ] README mit Installation, Theme-Konfiguration, Block-Patterns, Design-Tokens und Erweiterungshinweisen anlegen.
 - [ ] Vor Release offene Unternehmens-, Preis-, Support- und Checkout-Angaben vollständig verifizieren.
 
@@ -267,7 +268,7 @@ Das Theme ist bereit für die redaktionelle Befüllung, wenn:
 
 - Finale Markenfarben, Logo-/Wortmarkenvariante und Schriftwahl.
 - Akzentfarben je Produkt und konkrete Iconfamilie.
-- Block-Theme oder klassische Theme-Implementierung nach Abgleich des WordPress-Stacks.
+- Offene Architekturentscheidung ist aufgelöst: Umsetzung als natives WordPress-Block-Theme mit Site Editor und `theme.json`. Vor dem Scaffold bleiben die konkreten Mindestversionen und WooCommerce-Versionen anhand der aktiven Plugin-Repositories festzulegen.
 - Finale Live-URLs, CTA-Ziele, Download-/Checkout-/Supportablauf.
 - Finale Produkt-Screenshots und freigegebene Mascot-Exporte.
 - Verbindliche Browser-/WordPress-/PHP-Zielmatrix.
@@ -299,3 +300,69 @@ Die folgenden Bilder übersetzen das Konzept in mögliche Seitenansichten. Sie s
 
 ![Mockup der Preisübersicht mit den vorläufigen Voucher-Captain-Pro-Jahrespreisen](mockups/captain-pro-pricing-desktop.jpg)
 
+
+
+## 14. Verbindlicher Umfang: Shop, Kundenkonto und Plugin-Frontends
+
+Das Theme wird als natives Block-Theme umgesetzt. Es umfasst die Marketingwebsite und deren Shop-/Kundenoberflächen. Die Fachlogik für Bestellungen, Lizenzen, Events, Gutscheine und Affiliates bleibt in WooCommerce und den jeweiligen Plugins.
+
+### WooCommerce-Vorlagen
+
+Folgende Ansichten gehören zum Design- und Abnahmescope:
+
+- Shop-/Produktübersicht, Produktsuche, Kategorie-/Attributarchive und einzelne Tarif-/Produktseite.
+- Warenkorb, Checkout, Bestellbestätigung und Fehler-/Abbruchzustände.
+- Mein Konto: Anmeldung, Registrierung soweit angeboten, Passwort zurücksetzen, Bestellungen und relevante Lizenz-/Download-Ansichten.
+- Leere Zustände (Warenkorb leer, keine Suchtreffer), Lade-/Verfügbarkeitszustände und verständliche Fehlermeldungen.
+
+Die Theme-Vorlagen verwenden WooCommerce Blocks und deren dokumentierte Gestaltungsoptionen. Wo das Theme die Vorlagen bereitstellt, werden die WooCommerce-Blöcke und der eigentliche Seiteninhalt korrekt gerendert; Checkout- und Warenkorb-Logik wird nicht durch Theme-Code ersetzt. Interne HTML-Strukturen der Blöcke werden nicht als stabile API behandelt. Site-Editor-Anpassungen können Theme-Dateien übersteuern; Update- und Abnahmetests müssen deshalb sowohl saubere Theme-Vorlagen als auch bereits gespeicherte Site-Editor-Anpassungen berücksichtigen.
+
+### License-Captain-Kundenkonto und dynamische Produktdaten
+
+Der Kundenbereich soll die vom Plugin bereitgestellten Ansichten visuell aufnehmen: Lizenzen, Aktivierungen/Websites, Verlängerung und Kündigungsstatus, Downloads/Releases, Changelog sowie Preistabellen. Die Integration wird über die öffentlichen Blocks/Shortcodes gepflegt, darunter `wplc_licenses`, `wplc_pricing` und `wplc_changelog`; das Theme dupliziert diese Funktionen nicht.
+
+Preise, Website-Limits, Supportstufen, Planverfügbarkeit und Checkout-Ziele stammen für kaufbare Angebote aus dem Shop bzw. dem License-Captain-Katalog. In Marketingcopy und Vergleichsseiten angegebene Preiswerte werden vor Release mit dieser Quelle synchronisiert. Theme-Mockups oder statische Karten sind Entwürfe und keine Preisquelle.
+
+### Öffentliche Plugin-Oberflächen
+
+Das Theme soll die folgenden sichtbaren Produktansichten mit konsistenten Farben, Typografie, Abständen, Formularen und Fokuszuständen darstellen, soweit die Plugins dort Blocks, Shortcodes oder öffentliche Templates bereitstellen:
+
+- Voucher Captain: Gutschein-Einlösung und Kundenansicht „Meine Gutscheine“.
+- Pass Captain: Event-/Kalenderausgabe, Ticket- und Buchungsabläufe sowie Scanneransicht, sofern sie öffentlich eingebettet wird.
+- Affiliate Captain: Partnerbewerbung, Partnerportal und Begrüßungs-/Landingpage.
+- License Captain: Mein-Konto-Lizenzübersicht, Aktivierungen, Preise und Changelogs.
+
+Plugin-Adminseiten sind nicht Teil des öffentlichen Themes. Sie bleiben in der WordPress-Adminoberfläche. Fehlende oder nicht freigegebene Frontend-Blöcke werden als Plugin-Arbeit dokumentiert und nicht mit Theme-Hacks nachgebildet.
+
+### Sprachen und Übersetzbarkeit
+
+Deutsch ist die erste Inhaltssprache; das Theme ist von Anfang an übersetzbar und für eine spätere englische Website vorbereitet. Alle Theme-eigenen UI-Texte erhalten eine Textdomain und Übersetzungsdateien. Die Inhalte und Slugs werden vom gewählten Übersetzungsplugin verwaltet. Ein Sprachumschalter erscheint nur, wenn für die aktuelle Seite eine Sprachversion verfügbar ist. Rechts-nach-links-Layout ist kein DACH-Releaseumfang, kann später ergänzt werden.
+
+### Redaktion im Site Editor
+
+Redaktionelle Grenzen werden vor dem Scaffold festgelegt:
+
+- Redakteure können Seiteninhalte, Bilder, Bildunterschriften, CTA-Ziele und freigegebene Inhalts-Patterns bearbeiten.
+- Globale Markenfarben, Typografieskala, Abstandsregeln und Fokuszustände werden über `theme.json` als Designsystem vorgegeben.
+- Kernstruktur von Preisen, Vergleich, Header/Footer und rechtlichen Hinweisen wird durch passende Patterns/Templates konsistent gehalten; nur nötige Variationen werden im Site Editor freigegeben.
+- Style-Varianten (zum Beispiel helle und marineblaue Flächenlayouts) bleiben innerhalb der festgelegten Palette. Kein beliebiges Styling je Seite, das Kontrast oder Markenwiedererkennbarkeit bricht.
+
+### Kompatibilitäts-, Update- und Releaseprüfung
+
+Vor dem Theme-Scaffold wird eine konkrete Testmatrix aus den aktiven Repo-Mindestversionen für WordPress, PHP und WooCommerce festgelegt. Abnahme mindestens auf sauberer Installation und Upgrade einer bestehenden Website:
+
+1. Block-Checkout und Classic-Checkout mit den vom Shop tatsächlich verwendeten Zahlungs- und Lizenzabläufen.
+2. Produktwahl → Warenkorb → Checkout → Bestellbestätigung → Konto → Lizenzaktivierung → Pro-Update.
+3. Öffentliche Frontendansichten der vier Produktfamilien mit dem Theme, inklusive mobil und bei leerem/Fehlerzustand.
+4. Yoast-Breadcrumbs/Metadaten sowie Sprachumschaltung ohne doppelte Ausgabe.
+5. Site-Editor-Änderungen vor und nach Theme-Update; Inhalte bleiben erhalten und Updates setzen keine redaktionellen Anpassungen zurück.
+6. Installierbares Theme-ZIP, Theme-Versionierung, Änderungsprotokoll, Staging-Abnahme und Rollbackweg.
+
+### Technische Referenzen
+
+- [WordPress: Block-Themes und Site Editor](https://developer.wordpress.org/block-editor/how-to-guides/themes/)
+- [WordPress: `theme.json`](https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/)
+- [WordPress: Internationalisierung von Themes](https://developer.wordpress.org/themes/advanced-topics/internationalization/)
+- [WooCommerce: Block-Theme-Templates und Shopvorlagen](https://developer.woocommerce.com/docs/theming/block-theme-development/theming-woo-blocks/)
+- [WooCommerce: Warenkorb- und Checkout-Blöcke gestalten](https://developer.woocommerce.com/docs/theming/block-theme-development/cart-and-checkout/)
+- [WordPress: Theme-Testen](https://developer.wordpress.org/themes/advanced-topics/testing/)
