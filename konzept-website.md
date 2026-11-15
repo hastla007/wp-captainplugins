@@ -380,7 +380,7 @@ Diese KI-generierten Bilder veranschaulichen eine mögliche Umsetzung des Websit
 
 Die Theme-Architektur ist verbindlich als **natives WordPress-Block-Theme mit Site Editor und `theme.json`** festgelegt. Die frühere offene Wahl zwischen Block- und klassischem Theme entfällt.
 
-Der Umfang geht über die Marketingseiten hinaus: Das Theme gestaltet auch den WooCommerce-Shop und die öffentlich sichtbaren Plugin-Oberflächen. WooCommerce stellt eigene Block-Theme-Vorlagen für Shopansichten bereit; Produktseite, Warenkorb, Checkout und Bestellbestätigung können über Vorlagen und Blocks in das Designsystem eingebunden werden. citeturn331951630search0turn331951630search3
+Der Umfang geht über die Marketingseiten hinaus: Das Theme gestaltet auch den WooCommerce-Shop und die öffentlich sichtbaren Plugin-Oberflächen. WooCommerce stellt eigene Block-Theme-Vorlagen für Shopansichten bereit; Produktseite, Warenkorb, Checkout und Bestellbestätigung können über Vorlagen und Blocks in das Designsystem eingebunden werden. [WooCommerce: Store Templates](https://woocommerce.com/document/woocommerce-store-editing/templates/) und [WooCommerce: Block-Theme-Entwicklung](https://developer.woocommerce.com/docs/theming/block-theme-development/theming-woo-blocks/).
 
 ### Zu gestaltende Kauf- und Kundenwege
 
@@ -392,17 +392,17 @@ Der Umfang geht über die Marketingseiten hinaus: Das Theme gestaltet auch den W
 - Pass-Captain-Ansichten für Event-/Kalenderausgabe, Tickets und Buchungen.
 - Affiliate-Captain-Ansichten für Partnerbewerbung, Portal und Begrüßungsseite.
 
-Die Darstellung wird über öffentliche WooCommerce-/Plugin-Blocks, Shortcodes und dokumentierte Erweiterungspunkte integriert. Lizenz-, Kauf-, Gutschein-, Event- und Partnerlogik bleibt in den Plugins. Das Theme zielt nicht auf interne HTML-Strukturen von WooCommerce-Blöcken, weil diese laut WooCommerce keine stabile Schnittstelle sind. Warenkorb- und Checkout-Templates müssen den eigentlichen Blockinhalt korrekt ausgeben. citeturn331951630search30turn331951630search4
+Die Darstellung wird über öffentliche WooCommerce-/Plugin-Blocks, Shortcodes und dokumentierte Erweiterungspunkte integriert. Lizenz-, Kauf-, Gutschein-, Event- und Partnerlogik bleibt in den Plugins. Das Theme zielt nicht auf interne HTML-Strukturen von WooCommerce-Blöcken, weil diese laut WooCommerce keine stabile Schnittstelle sind. Warenkorb- und Checkout-Templates müssen den eigentlichen Blockinhalt korrekt ausgeben. [WooCommerce: Warenkorb/Checkout](https://developer.woocommerce.com/docs/theming/block-theme-development/cart-and-checkout/) und [Migration zu Block-Themes](https://developer.woocommerce.com/docs/theming/block-theme-development/migrating-from-classic-to-block-themes/).
 
 ### Preisquelle und Mehrsprachigkeit
 
 Die Preise und Kaufziele werden aus WooCommerce/License Captain abgeleitet oder vor Veröffentlichung verbindlich mit deren Katalog abgeglichen. Manuell duplizierte Preise in Theme-Optionen werden vermieden. Die License-Captain-Ansichten `wplc_licenses`, `wplc_pricing` und `wplc_changelog` werden gestalterisch integriert.
 
-Das Theme startet mit deutschen Inhalten, erhält aber ab Beginn übersetzbare UI-Texte mit eigener Textdomain. Eine englische Fassung wird über das gewählte Übersetzungsplugin gepflegt. Der Sprachumschalter wird nur angezeigt, wenn eine passende Übersetzung existiert. WordPress empfiehlt, Theme-Texte von Beginn an internationalisierbar anzulegen. citeturn124658436search13
+Das Theme startet mit deutschen Inhalten, erhält aber ab Beginn übersetzbare UI-Texte mit eigener Textdomain. Eine englische Fassung wird über das gewählte Übersetzungsplugin gepflegt. Der Sprachumschalter wird nur angezeigt, wenn eine passende Übersetzung existiert. WordPress empfiehlt, Theme-Texte von Beginn an internationalisierbar anzulegen. [WordPress: Internationalisierung von Themes](https://developer.wordpress.org/themes/advanced-topics/internationalization/).
 
 ### Redaktion im Site Editor
 
-Globale Farben, Typografie, Layoutbreiten, Abstände und Fokuszustände werden über `theme.json` definiert. Redakteure bearbeiten Seiteninhalte und freigegebene Patterns. Strukturelle Preis-/Vergleichskomponenten, Navigation und rechtliche Pflichtbereiche erhalten klare Vorlagen und können nicht versehentlich uneinheitlich gestaltet werden. Das WordPress-Site-Editor-Modell unterstützt die Bearbeitung von Themebereichen und globalen Styles für Block-Themes. citeturn124658436search1turn124658436search2
+Globale Farben, Typografie, Layoutbreiten, Abstände und Fokuszustände werden über `theme.json` definiert. Redakteure bearbeiten Seiteninhalte und freigegebene Patterns. Strukturelle Preis-/Vergleichskomponenten, Navigation und rechtliche Pflichtbereiche erhalten klare Vorlagen und können nicht versehentlich uneinheitlich gestaltet werden. Das WordPress-Site-Editor-Modell unterstützt die Bearbeitung von Themebereichen und globalen Styles für Block-Themes. [WordPress: theme.json](https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/) und [Block-Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/).
 
 ### Erweiterte Abnahme- und Releasepunkte
 
@@ -412,5 +412,5 @@ Globale Farben, Typografie, Layoutbreiten, Abstände und Fokuszustände werden �
 - Leere und Fehlerzustände testen: leerer Warenkorb, keine Suchtreffer, ungültige/abgelaufene Lizenz, keine Events, fehlende Übersetzung, Formularfehler.
 - Sichtbare Plugin-Frontends auf Mobilgeräten und mit Tastatur/Screenreader abnehmen.
 - Theme-ZIP, Versionierung, Changelog, Staging-Abnahme und Rollbackweg im Theme-Releaseplan festhalten.
-- WooCommerce-Blockvorlagen und globale Styles anhand der offiziellen Dokumentation umsetzen. citeturn331951630search0turn331951630search27turn124658436search30
+- WooCommerce-Blockvorlagen und globale Styles anhand der offiziellen Dokumentation umsetzen. [WooCommerce: Store Templates](https://woocommerce.com/document/woocommerce-store-editing/templates/), [globale Styles](https://developer.woocommerce.com/docs/theming/block-theme-development/global-styles/) und [WordPress: Theme-Tests](https://developer.wordpress.org/themes/advanced-topics/testing/).
 
