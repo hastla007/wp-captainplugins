@@ -1,0 +1,117 @@
+# Theme-Bauplan: Captain Plugins
+
+Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung und Veröffentlichung des WordPress-Themes. Es baut auf [dem Designkonzept](../design/konzept.md), dem [Website-Konzept](../konzept-website.md) und den [Website-Texten](../texte/homepage/README.md) auf.
+
+## Status
+
+- [x] Bestehende Konzepte, Seitenentwürfe und Markenmaterial gesichtet.
+- [x] Technische Richtung für den ersten Build festgelegt: natives WordPress-Block-Theme ohne zusätzliche Build-Abhängigkeiten.
+- [x] Erste Theme-Struktur, globale Tokens, Templates, Template Parts und Startseiten-Patterns angelegt.
+- [ ] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
+- [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
+- [ ] Redaktions-, Barrierefreiheits-, Browser- und Performance-Prüfung abschließen.
+- [ ] Release-Paket und Installations-/Betriebsdokumentation erstellen.
+
+## Phase 1 – Anforderungen und Bestand sichern
+
+- [x] `design/konzept.md`, `konzept-website.md`, `texte/homepage/` und `design/` erfassen.
+- [x] Vorhandene Seitenrollen und Navigation als Grundlage übernehmen.
+- [x] Produkte korrekt benennen: Voucher Captain, Pass Captain, Affiliate Captain und License Captain; License Captain ist in Captain-Pro-Angeboten enthalten.
+- [x] Bestehende Pläne und Preise nicht im Theme fest verdrahten; Preise kommen aus Shop-/Seiteninhalten.
+- [ ] Für jeden Produktbereich finale URLs, Downloadziele, Checkoutziele und Supportwege mit der Website-Konfiguration abgleichen.
+- [ ] Vor Release WordPress-, PHP-, WooCommerce- und Plugin-Mindestversionen anhand der dann freigegebenen Releases bestätigen.
+- [ ] Bildrechte und finale Auswahl/Zuschnitte der Kapitänsillustrationen bestätigen; bis dahin keine Illustration als Produkt-UI ausgeben.
+
+## Phase 2 – Plattform- und Inhaltsentscheidungen
+
+- [x] WordPress-Block-Theme mit `theme.json` v3, HTML-Block-Templates und Pattern-Dateien als Startpunkt verwenden.
+- [x] Theme bleibt Präsentationsschicht; Lizenz-, Checkout-, Gutschein-, Ticket- und Affiliate-Logik bleibt in den jeweiligen Plugins.
+- [x] WooCommerce-Seiten über WordPress-Seiteninhalt und unterstützte WooCommerce-Blöcke ausgeben; keine instabilen internen Block-DOM-Strukturen voraussetzen.
+- [x] Kein Theme-eigener Produkt-CPT und kein JavaScript-Framework im ersten Build.
+- [ ] Entscheiden, ob nach Sichtung der realen Produkt-UIs eigene Seitentemplates oder Plugin-Patterns erforderlich sind.
+- [ ] Yoast SEO im redaktionellen Modell nutzen: SEO-Titel, Meta-Beschreibung, kanonische URL, Indexierung und Social-Vorschau je Seite pflegen; das Theme erzeugt keine konkurrierenden Meta-Tags.
+- [ ] Zuständigkeit für Inhalte, SEO-Freigabe, rechtliche Seiten und Preisupdates festlegen.
+
+## Phase 3 – Designsystem und Grundlagen
+
+- [x] Farb-, Typografie-, Layout-, Abstands- und Button-Tokens in `theme.json` und CSS abbilden.
+- [x] Farben und Tokens als Startwerte aus dem Konzept übernehmen und im Site Editor verfügbar machen.
+- [x] Lesebreiten, globale Abstände, Fokusdarstellung, Links, Buttons und Formulargrundlagen definieren.
+- [ ] Farbkontraste aller Kombinationen einschließlich Status- und Produktakzenten nach WCAG prüfen und dokumentieren.
+- [ ] Mobile, Tablet und Desktop anhand vorhandener Mockups abgleichen.
+- [ ] Logo/Markenzeichen und finale Maskottchen-Assets optimiert und mit Alternativtextregeln einbinden.
+- [ ] Editor-Styles mit Frontend-Styles abgleichen, damit bearbeitete Blöcke der Live-Darstellung entsprechen.
+
+## Phase 4 – Theme-Grundgerüst
+
+- [x] Theme-Verzeichnis mit `style.css`, `theme.json`, `functions.php` und README anlegen.
+- [x] Globale Templates für Startseite, Seite, Beitrag, Archiv, Suche und 404 anlegen.
+- [x] Header- und Footer-Template-Parts anlegen.
+- [x] Kleine Theme-CSS-Datei für responsive Layouts und zentrale Komponenten anlegen.
+- [ ] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen.
+- [ ] Navigationsblock, Menüzustände, Fokusreihenfolge und Tastaturbedienung im echten Browser prüfen.
+- [ ] Theme-Angaben, Textdomain, Übersetzungsdateien und Lizenzhinweise für den Release vervollständigen.
+
+## Phase 5 – Komponenten und Vorlagen
+
+- [x] Startseiten-Hero-Pattern mit B2B-Versprechen und klarer nächster Handlung bereitstellen.
+- [x] Produktkarten-Pattern für die vier Produkte bereitstellen.
+- [x] Abschluss-CTA-Pattern bereitstellen.
+- [ ] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Integrationen, FAQ und Ratgeberkarten ergänzen.
+- [ ] Vorlagen/Pattern-Kompositionen für Produktübersicht, einzelne Produktseite, Features, Pro/Im-Paket, FAQ, Preise, Vergleich, Lösung, Dokumentation, Kompatibilität, Support und Changelog anlegen.
+- [ ] Breadcrumb-Lösung bestimmen, bevorzugt über vorhandene WordPress-/Yoast-Funktion statt Theme-eigener Parallelstruktur.
+- [ ] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung festlegen.
+
+## Phase 6 – Seiteninhalte einsetzen
+
+- [ ] Startseite mit `texte/homepage/index.md` und vorhandenem Website-Konzept zusammenführen.
+- [ ] Produktübersicht und Captain-Pro-/Preis-/Vergleichsseiten aus den jeweiligen Markdown-Entwürfen aufbauen.
+- [ ] Für Voucher Captain, Pass Captain, Affiliate Captain und License Captain je Produkt-, Features-, Pro- bzw. Im-Paket- und FAQ-Seiten einpflegen.
+- [ ] Dokumentation, Support, Integrationen, Kompatibilität, Bootsschul-Lösung, Über-uns, globale FAQ und Ratgeberseiten einpflegen.
+- [ ] Screenshot-/Demo-Platzhalter mit dem vorhandenen Aufnahmebriefing und klarer Kennzeichnung in Redaktionsvorschau setzen; vor Livegang durch echte, freigegebene Ansichten ersetzen.
+- [ ] Kundenlogos, Bewertungen, Kennzahlen oder Fallstudien nur nach Beleg und Freigabe einsetzen.
+- [ ] Alle internen Links, CTAs, Downloads, Checkoutziele und Formulare mit realen Zielen verbinden.
+
+## Phase 7 – Shop und Plugin-Integration
+
+- [x] Warenkorb- und Checkout-Seitenvorlagen so vorbereiten, dass deren WordPress-Seiteninhalt die WooCommerce-Blöcke enthält.
+- [ ] WooCommerce-Katalog, Produktdetail, Warenkorb, Checkout, Bestätigung, Konto und E-Mail-Einstiege mit installierter Shop-Konfiguration durchgehen.
+- [ ] Theme-Styling nur auf unterstützte WooCommerce-Blöcke und öffentliche Klassen anwenden; Block-Markup nicht nachbauen.
+- [ ] Produkt-/Pro-CTA und Preisangaben mit dem tatsächlichen Shop-Katalog abstimmen.
+- [ ] Kauf, Lizenzaktivierung, Erneuerung und Supportlinks end-to-end prüfen; Funktionsverantwortung bleibt bei Shop und Plugins.
+- [ ] Login-/Konto-Zustände, Fehlermeldungen und leere Warenkorb-/Suchzustände gestalten.
+
+## Phase 8 – SEO, Mehrsprachigkeit und Redaktion
+
+- [x] Theme-Struktur für semantische Überschriften und redaktionell pflegbare Seiten vorbereitet.
+- [ ] Pro Seite in Yoast eindeutigen SEO-Titel, Meta-Beschreibung, Fokus-Keyphrase und Social-Vorschau pflegen.
+- [ ] Indexierung und Canonicals für Archive, Suche, Pagination und Shopseiten prüfen.
+- [ ] Schema-Ausgabe von Yoast, WooCommerce und weiteren Plugins auf Doppelungen prüfen; strukturierte Daten nicht im Theme duplizieren.
+- [ ] URL-Slugs und Weiterleitungen für geänderte Seitennamen festlegen.
+- [ ] Textdomain und Übersetzungsworkflow aktivieren; deutschsprachige Website-Texte und UI-Strings sauber voneinander trennen.
+- [ ] Redaktionsrollen, Pattern-Freigaben und Pflegeprozess für Preise, Changelog, Kompatibilität und Screenshots dokumentieren.
+
+## Phase 9 – Qualität und Freigabe
+
+- [ ] Alle Seitentypen auf gängigen Desktop-, Tablet- und Mobilansichten manuell prüfen.
+- [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen.
+- [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link prüfen.
+- [ ] Layout mit und ohne WooCommerce, Yoast sowie den vier Plugins prüfen; degradierte Zustände verständlich halten.
+- [ ] Ladegewicht, Bildgrößen, Caching-Verhalten und Core Web Vitals mit realistischem Seiteninhalt bewerten.
+- [ ] SEO-Snippets, Social-Previews, Sitemap, robots/noindex und Weiterleitungen in Staging prüfen.
+- [ ] Rechtliche Pflichtseiten, Datenschutz-/Cookie-Einbindung und Formularkonfiguration mit Verantwortlichen abgleichen.
+- [ ] Redaktionelle Abnahme aller Texte, Preise, Produktversprechen, Screenshots und CTAs einholen.
+
+## Phase 10 – Veröffentlichung und Betrieb
+
+- [ ] Theme-Version, Changelog, Lizenz und Installationspaket erstellen.
+- [ ] Backup und Rückfallweg vor Aktivierung dokumentieren.
+- [ ] Erst in Staging aktivieren und Shop-/Plugin-Regressionen prüfen.
+- [ ] Produktionsaktivierung mit kurzem Smoke-Check für Startseite, Produkte, Preise, Checkout, Support und 404 durchführen.
+- [ ] Monitoring für Fehler, Checkout-Abbrüche, Suchanfragen und wichtige CTA-Klicks konfigurieren, datenschutzgerecht.
+- [ ] Pflegezyklus für WordPress-/WooCommerce-Kompatibilität, Sicherheitsupdates, Barrierefreiheit und Inhalt festlegen.
+- [ ] Nach jedem größeren WordPress-, WooCommerce- oder Produktrelease kritische Seitentypen erneut durchgehen.
+
+## Architektur des ersten Builds
+
+Das Theme ist absichtlich leichtgewichtig. Es stellt globale Gestaltung, Vorlagen und redaktionelle Patterns bereit. Es implementiert keine Lizenzverwaltung, Warenkorblogik, Affiliate-Abrechnung oder Ticket-/Gutscheinprozesse. Diese Funktionen bleiben in den zuständigen Plugins und WooCommerce. Screenshots, Demos und Kundenbeispiele bleiben bis zur Freigabe gekennzeichnete Inhaltsplätze.
