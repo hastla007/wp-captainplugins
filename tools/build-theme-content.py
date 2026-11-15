@@ -45,6 +45,11 @@ def inline(text: str) -> str:
 
     def link(match: re.Match[str]) -> str:
         label, url = match.group(1), html.unescape(match.group(2)).strip()
+        if re.fullmatch(r"\[[^\]]+\]", url):
+            return (
+                '<span class="cp-link-placeholder"><span>' + label + '</span>'
+                '<small>' + html.escape("Linkziel vor Veröffentlichung ergänzen") + '</small></span>'
+            )
         if not re.match(r"^(https?://|mailto:|tel:|/|#|\[)", url, re.I):
             return label
         return f'<a href="{html.escape(url, quote=True)}">{label}</a>'

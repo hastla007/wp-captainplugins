@@ -64,8 +64,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Abschluss-CTA-Pattern bereitstellen.
 - [x] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Kompatibilität, FAQ und Ressourcen ergänzen.
 - [ ] Pattern-Kompositionen für Produktübersicht, einzelne Produktseite, Features, Pro/Im-Paket, FAQ, Preise, Vergleich, Lösung, Dokumentation, Kompatibilität, Support und Changelog je Seitentyp zusammenstellen.
-- [ ] Breadcrumb-Lösung bestimmen, bevorzugt über vorhandene WordPress-/Yoast-Funktion statt Theme-eigener Parallelstruktur.
-- [ ] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung festlegen.
+- [x] Schlanke, barrierearme Brotkrumennavigation für Inhaltsseiten ergänzen; strukturierte Daten bleiben Yoast überlassen.
+- [x] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung mit horizontal scrollbaren Tabellen und nativen Details-Blöcken vorbereiten.
 
 ## Phase 6 – Seiteninhalte einsetzen
 
@@ -122,6 +122,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 Das Theme ist absichtlich leichtgewichtig. Es stellt globale Gestaltung, Vorlagen und redaktionelle Patterns bereit. Es implementiert keine Lizenzverwaltung, Warenkorblogik, Affiliate-Abrechnung oder Ticket-/Gutscheinprozesse. Diese Funktionen bleiben in den zuständigen Plugins und WooCommerce. Screenshots, Demos und Kundenbeispiele bleiben bis zur Freigabe gekennzeichnete Inhaltsplätze.
 
 Der Setup-Assistent ist unter **Design → Einrichtung** verfügbar. Er installiert WooCommerce und Yoast SEO aus wordpress.org, wenn gewünscht. License Captain wird nur aus einer vorgegebenen HTTPS-ZIP installiert und verlangt dafür einen in `wp-config.php` hinterlegten SHA-256-Hash; alternativ ist die manuelle Installation der freigegebenen ZIP vorgesehen. Seiteninhalte sind in drei Gruppen wählbar. Bereits bearbeitete/benutzerdefinierte Seiten bleiben geschützt. Preispläne werden nur bei aktiver WooCommerce- und License-Captain-Installation sowie EUR-Währung als verborgene Produktentwürfe erstellt und zugeordnet. Der Wizard verändert keine Shop-Steuern, Zahlungen, rechtlichen Angaben oder Produktdateien.
+
+Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Stelle sichtbar als redaktionellen Linkziel-Platzhalter. Eine eigene Brotkrumennavigation verbessert die Orientierung auf Inhaltsseiten; strukturierte Breadcrumb-Daten werden nicht dupliziert.
 
 ## Aktueller Build-Stand
 

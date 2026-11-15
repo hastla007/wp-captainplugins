@@ -44,6 +44,29 @@ function captain_plugins_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'captain_plugins_enqueue_styles' );
 
+/** Add a lightweight page breadcrumb; Yoast remains responsible for structured data. */
+function captain_plugins_page_breadcrumb( string $content ): string {
+	if ( is_admin() || is_feed() || ! is_page() || is_front_page() || ! in_the_loop() || ! is_main_query() ) {
+		return $content;
+	}
+	$page = get_post();
+	if ( ! $page instanceof WP_Post ) {
+		return $content;
+	}
+	$items = array();
+	$items[] = '<li><a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html__( 'Startseite', 'captain-plugins' ) . '</a></li>';
+	foreach ( array_reverse( get_post_ancestors( $page ) ) as $ancestor_id ) {
+		$ancestor = get_post( $ancestor_id );
+		if ( $ancestor instanceof WP_Post ) {
+			$items[] = '<li><a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( get_the_title( $ancestor ) ) . '</a></li>';
+		}
+	}
+	$items[] = '<li aria-current="page"><span>' . esc_html( get_the_title( $page ) ) . '</span></li>';
+	$breadcrumb = '<nav class="cp-breadcrumb" aria-label="' . esc_attr__( 'Brotkrumennavigation', 'captain-plugins' ) . '"><ol>' . implode( '', $items ) . '</ol></nav>';
+	return $breadcrumb . $content;
+}
+add_filter( 'the_content', 'captain_plugins_page_breadcrumb', 8 );
+
 function captain_plugins_register_patterns() {
 	$pattern_files = glob( get_theme_file_path( 'patterns/*.php' ) );
 	if ( ! $pattern_files ) {

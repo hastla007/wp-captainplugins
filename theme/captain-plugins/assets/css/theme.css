@@ -111,6 +111,19 @@ a:hover { text-decoration-thickness: 0.13em; }
 .cp-faq .wp-block-details[open] summary { margin-bottom: 0.75rem; }
 .cp-pricing-table { margin-block: 2rem; }
 .cp-pricing-table th:first-child { min-width: 12rem; }
+.cp-breadcrumb { width: min(100% - 2rem, 1160px); margin: 1.25rem auto; color: var(--cp-muted); font-size: 0.9rem; }
+.cp-breadcrumb ol { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.cp-breadcrumb li + li::before { content: "/"; margin-right: 0.45rem; color: #74838c; }
+.cp-breadcrumb [aria-current="page"] { color: var(--cp-ink); font-weight: 650; }
+.cp-link-placeholder { display: inline-flex; flex-wrap: wrap; gap: 0.25rem 0.65rem; align-items: baseline; padding: 0.2rem 0.55rem; border: 1px dashed #8797a1; border-radius: 0.3rem; color: var(--cp-ink); background: var(--cp-surface); }
+.cp-link-placeholder small { color: var(--cp-muted); font-size: 0.78em; font-weight: 500; }
+.wp-block-post-content :where(h2, h3) { scroll-margin-top: 2rem; }
+.wp-block-post-content > h2 { margin-top: clamp(2.5rem, 6vw, 4rem); }
+.wp-block-post-content > h2:first-child { margin-top: 0; }
+.wp-block-post-content :where(ul, ol) { padding-inline-start: 1.4em; }
+.wp-block-post-content li + li { margin-top: 0.35em; }
+.wp-block-post-content blockquote { margin-inline: 0; padding: 0.25rem 1.25rem; border-inline-start: 4px solid var(--cp-gold); color: var(--cp-muted); }
+.wp-block-post-content :where(code, pre) { overflow-wrap: anywhere; }
 
 .wp-block-button__link { transition: background-color 160ms ease, color 160ms ease, transform 160ms ease; }
 .wp-block-button__link:hover { background: #0e2e43; transform: translateY(-1px); }
@@ -128,6 +141,8 @@ input, select, textarea { padding: 0.7rem 0.8rem; }
 	.cp-actions .wp-block-button__link { display: block; text-align: center; }
 	.wp-block-navigation__responsive-container.is-menu-open { padding: 1.5rem; }
 	.cp-pricing-table { margin-inline: -1rem; padding-inline: 1rem; }
+	.cp-breadcrumb { margin-block: 1rem; }
+	.cp-breadcrumb ol { row-gap: 0.35rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
