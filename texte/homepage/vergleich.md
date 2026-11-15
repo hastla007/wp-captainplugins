@@ -14,7 +14,7 @@ Vergleichen Sie die Plugins nach Aufgabe und wählen Sie den passenden Einstieg.
 | Gutscheine und Geschenkkarten verkaufen | Voucher Captain | PDF-Designer, Wunschwert, Zustellung, Guthaben und Einlösung | Erforderlich |
 | Events, Tickets oder Kurse verwalten | Pass Captain | Termine, Buchungen, Zahlungen, Tickets, Wartelisten und Einlass | Optional |
 | Partnerprogramm und Provisionen verwalten | Affiliate Captain | Links, Attribution, Regeln, Refund-Korrekturen und Auszahlungen | Optional |
-| Eigene WordPress-Plugins lizenzieren | License Captain | Lizenzverkauf, Aktivierung, Verlängerung und Updates | Lizenzshop mit WooCommerce; im Captain-Pro-Paket enthalten |
+| Eigene WordPress-Plugins lizenzieren | License Captain Server | Lizenzverkauf, Aktivierung, Verlängerung und Updates | Lizenzshop mit WooCommerce; separat erhältlich |
 
 ## Kostenlos starten oder mit Pro erweitern
 
