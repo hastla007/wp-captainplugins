@@ -21,9 +21,9 @@ Jeder Plan umfasst die Pro-Funktionen des jeweiligen Add-ons. Sie wählen nach d
 [Pass Captain Pro ansehen](/pass-captain/pro/)  
 [Affiliate Captain Pro ansehen](/affiliate-captain/pro/)
 
-## License Captain ist enthalten
+## License Captain Server ist ein separates Produkt
 
-Jedes Captain-Pro-Angebot enthält License Captain ohne separaten Aufpreis. Damit verwalten Sie Lizenzverkauf, Aktivierungen, Verlängerungen und Updates in Ihrem WooCommerce-Shop.
+License Captain Server ist nicht Bestandteil von Captain Pro. Das Server-Plugin wird separat für Anbieter eigener WordPress-Plugins angeboten. Die Captain-Pro-Pläne umfassen die Pro-Funktionen des jeweils gewählten Captain-Add-ons.
 
 ## Welcher Plan passt?
 
