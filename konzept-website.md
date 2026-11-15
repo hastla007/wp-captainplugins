@@ -288,3 +288,47 @@ Die Umsetzung ist konzeptgemäß, wenn:
 ## 13. Vor Livegang zu bestätigende Angaben
 
 Die Text- und Layoutplanung kann mit den vorhandenen Informationen umgesetzt werden. Für die Veröffentlichung sind weiterhin die konkreten Download-/Checkout-/Support-URLs, Unternehmensangaben, finale Netto-/Bruttopreise, Verlängerungs- und Kündigungsbedingungen, Supportzeiten sowie freigegebene Screenshots erforderlich. Diese offenen Werte bleiben als redaktionelle Release-Punkte sichtbar; sie werden nicht durch erfundene Angaben ersetzt.
+
+
+---
+
+## 14. WordPress-Theme-Design und Umsetzung
+
+Das detaillierte Designkonzept liegt in [`design/konzept.md`](design/konzept.md). Es baut auf den vorhandenen Website-Texten, der Seitenstruktur und den acht Kapitänsillustrationen unter `design/mascot/` auf. Dieses Kapitel bindet die Theme-Arbeit in das Website-Konzept ein.
+
+### Gestaltungsrichtung
+
+Das Theme soll als ruhiger, professioneller B2B-Auftritt funktionieren. Klare Typografie, viel Leseraum, konkrete Produktabläufe und echte UI-Aufnahmen bilden den Schwerpunkt. Das Kapitänsmotiv sorgt punktuell für Wiedererkennung; es ersetzt weder Produkt-Screenshots noch Kundenbelege.
+
+Als vorläufige Designbasis schlägt das Detailkonzept Marineblau, helle Flächen, neutrale Textfarben und einen sparsamen warmen Akzent vor. Finale Farbwerte, Produktakzente und Schrift werden nach Sichtung des Logos und Kontrastprüfung festgelegt. Design-Tokens für Farben, Typografie, Abstände, Rahmen und Fokuszustände werden zentral gepflegt.
+
+### Theme-Ansatz und Seitenvorlagen
+
+Empfohlen wird ein leichtgewichtiges natives WordPress-Block-Theme mit `theme.json`, Template Parts und wiederverwendbaren Patterns. Es soll Inhalte im Editor pflegbar halten und standardisierte Layouts bereitstellen. Produkt-/Lizenzlogik bleibt in den Plugins bzw. im Shop und wird nicht im Theme implementiert.
+
+Benötigte Grundvorlagen: Startseite, allgemeine Seite, Ratgeberbeitrag, Archiv, Suche und 404. Wiederverwendbare Patterns: Header/Mobilnavigation, Hero, Produktkarte, Featuregruppe, Workflow, Screenshot mit Bildunterschrift, Free-/Pro-Vergleich, Tarifkarte, Integrationshinweis, FAQ und Abschluss-CTA.
+
+Die bestehenden Texte werden in diese Vorlagen übertragen: Produktübersicht, Voucher Captain, Pass Captain, Affiliate Captain, License Captain, Features, Pro/Im-Paket, FAQs, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Dokumentation, Support, Bootsschulen-Lösung und Ratgeber. Die Copy und URLs werden aus `texte/homepage/README.md` übernommen; das Theme erzeugt keine separaten, widersprüchlichen Versionen.
+
+### Responsive und barrierearme Umsetzung
+
+Mobile Ansichten werden zuerst gestaltet. Karten und Preispläne stapeln sich; Tabellen erhalten eine mobile Kartenansicht oder eine gut beschriftete Scrollfläche. Menü, FAQs, Formulare und Tarifwahl müssen per Touch, Tastatur und assistiver Technik bedienbar sein. Fokuszustände, Kontrast, semantische Landmarken, sichtbare Labels, verständliche Fehler und reduzierte Animationen sind Bestandteil der Komponentenabnahme.
+
+### Vorhandene und noch benötigte Medien
+
+Die acht Kapitäns-JPEGs in `design/mascot/` werden einzeln gesichtet und für wenige passende Stellen ausgewählt. Produktaufnahmen sind im Repo noch als Platzhalter-Briefings dokumentiert. Sie sollen später echte, anonymisierte Oberflächen zeigen: Gutschein-Designer/PDF, Event und Einlass, Partnerportal/Auszahlung, Lizenzübersicht und Tarifvergleich. Bis diese Bilder freigegeben sind, werden keine UI-Mockups als echte Produktansicht ausgegeben.
+
+### Theme-To-do
+
+1. Vorhandene Texte, Ziel-URLs und Assets inventarisieren; Mascot, Logo und Bildrechte prüfen.
+2. Finale Farbpalette, Typografie, Produktakzente und responsive Layout-Tokens definieren.
+3. Block-Theme als technische Richtung bestätigen und unterstützte WordPress-/PHP-Versionen festlegen.
+4. `theme.json`, Editor-Styles, Header, mobile Navigation, Footer, Breadcrumbs und Seitengerüst erstellen.
+5. Grundtemplates und Patterns für die bestehenden Seitentypen implementieren.
+6. Bestehende Copy übertragen und Preis-/CTA-Daten konsistent aus dem redaktionellen Stand pflegen.
+7. Mascot-Varianten exportieren und echte Produkt-Screenshots gemäß den bestehenden Briefings erstellen.
+8. Yoast-Metadaten und Breadcrumb-Ausgabe so abstimmen, dass das Theme keine doppelten SEO-Ausgaben erzeugt.
+9. Responsive, Tastatur-, Screenreader-, Kontrast-, Performance- und Linkprüfung durchführen.
+10. Platzhalter und offene Preis-, Checkout-, Support- und Unternehmensangaben vor Livegang auflösen.
+
+**Abnahme:** Alle vorhandenen Seiten lassen sich aus wiederverwendbaren Vorlagen pflegen; Frontend und Editor verwenden dieselben Design-Tokens; Navigation und Komponenten funktionieren mobil und per Tastatur; Inhalte bleiben bei einem Themewechsel erhalten; keine Platzhalter oder unbelegten Referenzen werden versehentlich veröffentlicht.
