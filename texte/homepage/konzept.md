@@ -329,7 +329,7 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 ### Content-Plan für die erste Ausbauphase
 
 1. Kernseiten und Produktseiten vollständig erstellen.
-2. Je Produkt drei praxisorientierte Ratgeber veröffentlichen, z. B. „WooCommerce-Gutscheine mit Wunschbetrag einrichten“, „Tickets und Einlass für Seminare verwalten“, „Provisionsregeln bei Rückerstattungen gestalten“.
+2. Je Produkt drei praxisorientierte Ratgeber veröffentlichen. Die ersten zwölf redaktionellen Entwürfe liegen unter `texte/homepage/ratgeber/` und sind im README verlinkt.
 3. Integrations-/Kompatibilitätsartikel und bebilderte Anleitungen ergänzen.
 4. Releasebeiträge und Changelog mit jeder stabilen Veröffentlichung aktualisieren.
 5. Funktionscopy auf Basis der übernommenen Produktpläne schreiben; Screenshot-, Demo- und Kundenbeispiel-Slots bis zur Lieferung echter Medien als Platzhalter kennzeichnen.
