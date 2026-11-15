@@ -49,6 +49,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Globale Templates für Startseite, Seite, Beitrag, Archiv, Suche und 404 anlegen.
 - [x] Header- und Footer-Template-Parts anlegen.
 - [x] Kleine Theme-CSS-Datei für responsive Layouts und zentrale Komponenten anlegen.
+- [x] Kopfbereich mit Navy-Fläche, hellem Menütext und Gold-CTA an die vorhandenen Website-Mockups angleichen.
 - [ ] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen.
 - [ ] Navigationsblock, Menüzustände, Fokusreihenfolge und Tastaturbedienung im echten Browser prüfen.
 - [ ] Theme-Angaben, Textdomain, Übersetzungsdateien und Lizenzhinweise für den Release vervollständigen.

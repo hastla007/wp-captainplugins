@@ -28,16 +28,22 @@ a:hover { text-decoration-thickness: 0.13em; }
 .cp-site-header {
 	position: relative;
 	z-index: 2;
-	border-bottom: 1px solid var(--cp-border);
-	background: var(--cp-paper);
+	border-bottom: 1px solid #284e63;
+	background: var(--cp-navy);
 }
 .cp-site-header__inner,
 .cp-site-footer__inner {
 	width: min(100%, 1160px);
 	margin-inline: auto;
 }
-.cp-site-header .wp-block-site-title a { color: var(--cp-navy); text-decoration: none; }
+.cp-site-header .wp-block-site-title a { color: var(--cp-paper); text-decoration: none; }
 .cp-site-header .wp-block-site-title a::before { content: "⚓"; margin-right: 0.45em; color: var(--cp-gold); }
+.cp-site-header .wp-block-navigation-item__content { color: var(--cp-paper); text-decoration: none; }
+.cp-site-header .wp-block-navigation-item__content:hover { color: var(--cp-gold); }
+.cp-site-header .cp-header-cta .wp-block-button__link { color: var(--cp-ink); background: var(--cp-gold); }
+.cp-site-header .cp-header-cta .wp-block-button__link:hover { color: var(--cp-ink); background: #e1b75f; }
+.cp-site-header .wp-block-navigation__responsive-container.is-menu-open { background: var(--cp-paper); }
+.cp-site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content { color: var(--cp-navy); }
 .cp-site-footer { background: var(--cp-navy); color: var(--cp-paper); }
 .cp-site-footer a { color: var(--cp-paper); }
 
@@ -67,7 +73,7 @@ a:hover { text-decoration-thickness: 0.13em; }
 .cp-section__inner { width: min(100% - 2rem, 1160px); margin-inline: auto; }
 .cp-section__intro { max-width: 64ch; margin-bottom: 2rem; }
 .cp-section__intro > :first-child { margin-top: 0; }
-.cp-product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.cp-product-grid { display: grid !important; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1.25rem; }
 .cp-product-grid > .wp-block-column { flex-basis: auto !important; width: auto; }
 .cp-card {
 	box-sizing: border-box;
@@ -117,7 +123,6 @@ a:hover { text-decoration-thickness: 0.13em; }
 input, select, textarea { padding: 0.7rem 0.8rem; }
 
 @media (max-width: 680px) {
-	.cp-product-grid { grid-template-columns: 1fr; }
 	.cp-actions { align-items: stretch; flex-direction: column; }
 	.cp-actions .wp-block-button { width: 100%; }
 	.cp-actions .wp-block-button__link { display: block; text-align: center; }

@@ -17,6 +17,8 @@ Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/capt
 
 Die vollständige Reihenfolge von der Bestandsaufnahme bis Betrieb und Release steht in [ROADMAP.md](../ROADMAP.md). Designvorgaben stehen in [../design/konzept.md](../design/konzept.md).
 
+Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/mockups/homepage-desktop.jpg), [Produktübersichts-](../design/mockups/products-overview-desktop.jpg) und [Preisplan-Mockups](../design/mockups/captain-pro-pricing-desktop.jpg). Die Mockups dienen als Gestaltungsreferenz; ihre Produktansichten sind keine echten Screenshots.
+
 ## Theme-Umfang
 
 - Block-Templates und Template Parts, bearbeitbar im Site Editor.
