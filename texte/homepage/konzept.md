@@ -338,50 +338,53 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 
 ### Phase 1 – Produkt- und Releaseklarheit
 
-- [ ] Produktnamen, Hauptmarke, Domains und Sprachansprache bestätigen.
-- [ ] Den hier festgelegten finalen Kern- und Pro-Umfang als verbindliche Produktmatrix für Entwicklung, QA und Release übernehmen.
-- [ ] Pass-Captain-PR #26 und Voucher-Captain-PR #15 samt Folgearbeiten vollständig in die geplante Verkaufsfassung integrieren.
-- [ ] Voucher Captain: Free-/Pro-Abgrenzung aus diesem Konzept in README, Add-on und Release-Dokumentation einheitlich umsetzen.
-- [ ] „Kostenlos“/„Pro“ und Download-/Kaufpfade für alle vier Kern-Plugins definieren.
-- [x] Finalen Pro-Umfang für die Textgrundlage festhalten: Voucher Firmenbestellungen/Wallet/SMS; Pass E-Rechnung/Kartenterminal/White Label/Warteraum/schreibende API; Affiliate Webhooks/REST/White Label/PayPal-Auszahlungen.
-- [ ] License Captain: offene Stripe-, Browser-, Add-on- und Produktionsabnahmen abschließen.
-- [ ] Release-Gates und tatsächlichen Status der drei Kern-Plugins dokumentieren.
-- [x] Vorläufige Preispläne übernehmen: Single/Business/Agency mit 1/5/25 Live-Websites und den dokumentierten Jahrespreisen; License Captain ohne Aufpreis einschließen.
-- [ ] Rechtliche Prüfung von AGB, Widerruf, Datenschutz, Lizenz-/Verlängerungshinweisen, Gutschein- und Affiliate-Abrechnung einplanen.
+- [ ] Hauptmarke, Domain, finale Schreibweisen und Sprachansprache bestätigen.
+- [x] Finalen Kern- und Pro-Umfang als redaktionelle Produktmatrix für die Texte festlegen.
+- [ ] Alle Funktionen aus den aktuellen Entwicklungsarbeiten in die finale Verkaufsfassung integrieren und abnehmen.
+- [ ] Voucher-Captain-Free-/Pro-Aufteilung in Code, README, Add-on und Shopkatalog mit dieser Produktmatrix synchronisieren.
+- [ ] Download-, Checkout- und Kauflinks für alle Produkte hinterlegen.
+- [x] Vorläufige Pro-Pläne und Jahrespreise übernehmen: Single/Business/Agency mit 1/5/25 Live-Websites; License Captain ohne Aufpreis.
+- [ ] License-Captain-Stripe-, Browser-, Add-on- und Produktionsabnahmen abschließen.
+- [ ] Release-Gates, Mindestversionen und Supportmodell je Produkt final freigeben.
+- [ ] Rechtstexte und Produktbedingungen fachlich prüfen: AGB, Datenschutz, Widerruf, Lizenz-/Verlängerungshinweise sowie Gutschein- und Affiliate-Abrechnung.
 
 ### Phase 2 – Informationsarchitektur und Belege
 
-- [ ] Sitemap und URL-Struktur beschließen.
-- [ ] Pro Produkt Faktenblatt mit Feature-Beleg, Voraussetzungen, Grenzen, Status und CTA erstellen.
-- [ ] Platzhalter für Screenshots, Demos und Kundenbeispiele in Copy/Layout einsetzen; reale Assets später ersetzen.
-- [ ] Kompatibilitätsmatrix und Integrationsstatus aus den aktuellen Release-Dokumenten ableiten.
-- [ ] FAQ-Fragen aus Supportfällen bzw. tatsächlichen Produktabläufen sammeln.
-- [ ] Markenmaterial, Logo, Produkticons und Screenshot-Stil vereinheitlichen.
+- [x] Sitemap, geplante URL-Struktur und Markdown-Seitenhierarchie festhalten.
+- [x] Produktprofile, Zielgruppen, Kernnutzen, Features und Pro-Angebote als Textgrundlage ausarbeiten.
+- [x] Platzhalter für Screenshots, Demos und Kundenbeispiele in den Texten einsetzen.
+- [ ] Kompatibilitätsmatrix und Integrationsstatus mit den finalen Release-Versionen ergänzen.
+- [x] Erste produktspezifische FAQs verfassen.
+- [ ] FAQs mit echten Supportfragen abgleichen.
+- [ ] Logo, Produkticons, Markenfarben und Screenshot-Stil bereitstellen.
 
 ### Phase 3 – Copy und SEO
 
-- [ ] Startseite, Produktübersicht, Captain-Pro-Übersicht sowie alle Produkt-, Features-, Pro- und FAQ-Seiten nach diesem Konzept texten.
-- [ ] Titles, Meta-Descriptions, H1/H2, interne Links und Slugs festlegen.
-- [ ] Yoast SEO installieren und konfigurieren; XML-Sitemap, Breadcrumbs, Indexierung und strukturierte Datenausgabe prüfen.
-- [ ] Keywords mit Search Console oder SEO-Tool validieren und Suchintentionen abgleichen.
-- [ ] FAQ, Installationsanleitungen, Vergleichsseite und Integrationsseite verfassen.
-- [ ] Texte fachlich und rechtlich gegen Funktionen/Release-Status abnehmen.
+- [x] Deutsche Marketingtexte für Startseite, Produkte, Preise, Captain Pro, Support, Dokumentation, Vergleich, Integrationen, übergreifende FAQ und Anwendungsfall Bootsschulen verfassen.
+- [x] Für jedes Produkt Übersicht, Features, Pro-/Paket-Seite und FAQ erstellen.
+- [x] Zwölf SEO-Ratgeberentwürfe mit je drei Artikeln pro Produktbereich anlegen.
+- [x] SEO-Titel, Meta-Descriptions, Fokus-Keyphrases, URL-Slugs und interne Links als Erstfassung einarbeiten.
+- [ ] Yoast SEO installieren und konfigurieren; Sitemap, Breadcrumbs, Indexierung und strukturierte Datenausgabe technisch prüfen.
+- [ ] Suchbegriffe mit Search Console oder Keyworddaten validieren.
+- [ ] Schritt-für-Schritt-Installationsanleitungen ergänzen.
+- [ ] Produktcopy anhand finaler Release-Funktionen und rechtlicher Aussagen freigeben.
+- [ ] Impressum, Datenschutz, AGB und Widerrufsseite mit den erforderlichen Unternehmensdaten und fachlicher Prüfung erstellen.
 
-### Phase 4 – Umsetzung und Qualität
+### Phase 4 – Website-Umsetzung und Qualität
 
-- [ ] Responsive Layout und Navigationsführung umsetzen.
-- [ ] Downloads, Lizenz-/Checkout-Links, Demo und Kontakt-CTAs verknüpfen.
-- [ ] Performance, Barrierefreiheit, mobile Lesbarkeit und Formular-/Checkout-Flows prüfen.
-- [ ] SEO-Technik: Sitemap, Canonical, Robots, strukturierte Daten, Redirects und Analytics/Consent konfigurieren.
-- [ ] Jede Seite auf korrekte Angebotsangaben, Linkziele, Platzhalter, Übersetzungen und Rechtsangaben prüfen.
-- [ ] Preis-, CTA- und Lizenzangaben an den finalen WooCommerce-Katalog anschließen. Die Textfassung behandelt Produkte entsprechend der Nutzerannahme als verkaufsfähig.
+- [ ] Responsive Layout und Navigation umsetzen.
+- [ ] Download-, Lizenz-, Checkout-, Demo- und Kontakt-CTAs mit echten URLs verknüpfen.
+- [ ] Produktbilder, Demos und freigegebene Kundenbeispiele einsetzen.
+- [ ] Mobile Darstellung, Barrierefreiheit, Performance und Formulare prüfen.
+- [ ] Canonicals, Robots, strukturierte Daten, Redirects sowie Analytics/Consent konfigurieren.
+- [ ] Preise, Website-Limits und Lizenzbedingungen mit dem finalen WooCommerce-Katalog abgleichen.
 
 ### Phase 5 – Laufende Verbesserung
 
-- [ ] Search Console und Nutzungsanalyse einrichten, datenschutzkonform.
-- [ ] Suchanfragen, CTR, Downloads, Demo-Anfragen und Pro-Konversion monatlich auswerten.
-- [ ] Produkttexte bei Releases und Kompatibilitätsänderungen aktualisieren.
-- [ ] Ratgeberinhalte nach tatsächlichen Support- und Suchfragen erweitern.
+- [ ] Search Console und datenschutzkonforme Nutzungsanalyse einrichten.
+- [ ] Suchanfragen, Klickrate, Downloads, Demo-Anfragen und Pro-Konversion auswerten.
+- [ ] Produktseiten, Kompatibilitätsangaben, FAQs und Ratgeber bei Releases aktualisieren.
+- [ ] Ratgeber nach tatsächlichen Support- und Suchfragen erweitern.
 
 ## 7. Textregeln und Release-Annahmen
 
