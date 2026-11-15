@@ -55,3 +55,5 @@ Für Kurse oder Verleih definieren Sie Ressourcen, Zeitfenster, Dauer, Puffer un
 > **Screenshot-Platzhalter 6 – Ressourcen und Warteliste:** Zeigen Sie eine Ressource mit Verfügbarkeit, Pufferzeit und einer anonymisierten Wartelistenposition.
 
 [Features](/pass-captain/features/) · [Pass Captain Pro](/pass-captain/pro/) · [FAQ](/pass-captain/faq/) · [Support](/support/)
+
+**Captain-Pro-Hinweis:** Das Pass-Captain-Pro-Add-on benötigt WordPress 6.5+; für die Kombination gilt wegen des Kerns weiterhin PHP 8.2+. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).

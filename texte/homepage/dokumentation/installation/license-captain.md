@@ -66,3 +66,5 @@ Binden Sie Ihr Produkt-Plugin über die dokumentierte Client-Bibliothek und sign
 Laden Sie ein Releasepaket hoch oder registrieren Sie eine HTTPS-Paketadresse mit Prüfsumme. Testen Sie Download, Update, Rücknahme eines Releases und Cron-/Action-Scheduler-Verarbeitung. Richten Sie Backups und Monitoring ein.
 
 [License Captain Features](/license-captain/features/) · [FAQ](/license-captain/faq/) · [Dokumentation](/dokumentation/)
+
+**Kompatibilitätshinweis:** WooCommerce 8.9 ist die deklarierte Mindestversion. Die dokumentierte CI-Matrix führt außerdem WooCommerce 9.4.3 und 11.2.2 auf. Prüfen Sie vor Veröffentlichung die finale Release-Matrix. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).

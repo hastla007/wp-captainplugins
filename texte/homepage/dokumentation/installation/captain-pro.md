@@ -43,3 +43,7 @@ Ihr Plan erlaubt die Nutzung auf 1, 5 oder 25 Live-Websites. Verwalten Sie Aktiv
 [Demo: Pro-Feature nach Aktivierung]
 
 [Preise](/preise/) · [Captain-Pro-Übersicht](/captain-pro/) · [Support](/support/)
+
+## Kompatibilität des Add-ons
+
+Alle Captain-Pro-Add-ons benötigen das jeweilige Kern-Plugin. Die Add-on-Pakete deklarieren WordPress 6.5+; für die kombinierte Installation gelten zusätzlich die PHP- und WooCommerce-Anforderungen des Kern-Plugins. [Kompatibilitätsmatrix öffnen](/kompatibilitaet/).

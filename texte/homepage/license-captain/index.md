@@ -31,3 +31,9 @@ License Captain kostet nicht zusätzlich. Es ergänzt die Captain-Pro-Angebote u
 [Diagramm: Kauf, Lizenz, Aktivierung und Update]
 
 [Features](/license-captain/features/) · [Im Paket enthalten](/license-captain/im-paket/) · [FAQ](/license-captain/faq/)
+
+## Kompatibilität
+
+License Captain benötigt WordPress 6.5+, PHP 7.4+ und aktives WooCommerce ab Version 8.9. Der Betrieb setzt eine MySQL- oder MariaDB-Installation mit einem beschreibbaren Primärserver und zuverlässigem Cron voraus. HPOS und klassische Bestellspeicherung werden unterstützt. Für automatische Verlängerungen ist das offizielle WooCommerce-Stripe-Gateway erforderlich.
+
+License Captain ist in Captain Pro enthalten. [Kompatibilitätsmatrix und geprüfte Plattformstände](/kompatibilitaet/).

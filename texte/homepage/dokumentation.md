@@ -9,6 +9,10 @@ focus_keyphrase: WordPress Plugin Dokumentation
 
 Hier finden Sie die Grundlagen für Installation, Einrichtung und Betrieb. Wählen Sie das passende Plugin und folgen Sie der Anleitung für Ihren Shop oder Ihre WordPress-Website.
 
+## Kompatibilität und Integrationen
+
+Die [Kompatibilitätsmatrix](/kompatibilitaet/) zeigt Mindestversionen, getestete Plattformen und Integrationen pro Produkt.
+
 ## Installieren und einrichten
 
 Beginnen Sie mit der [allgemeinen Installationsanleitung](/dokumentation/installation/) oder wählen Sie direkt Ihr Plugin:

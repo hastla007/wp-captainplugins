@@ -38,3 +38,5 @@ Alle Pläne enthalten den vollständigen Pass-Captain-Pro-Umfang. License Captai
 **[Pass Captain Pro auswählen]([Checkout-URL])** · [Kostenlosen Kern starten]([Download-URL])
 
 [Screenshot-Platzhalter: Ticket mit neutralem Branding sowie Beispielansicht für White Label zeigen; QR-Code, Bestellnummer und Teilnehmerdaten unbrauchbar machen.] · [Demo: E-Rechnung und Kartenterminal]
+
+**Voraussetzungen:** Pass Captain als Kern-Plugin. Die gemeinsame Installation mit Pass Captain Pro benötigt WordPress 6.5+ und PHP 8.2+; WooCommerce bleibt optional. [Kompatibilität](/kompatibilitaet/).

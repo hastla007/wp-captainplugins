@@ -1,25 +1,27 @@
 ---
 url: /integrationen/
 seo_title: Integrationen für Captain Plugins – WooCommerce, Zahlungen und APIs
-meta_description: Erfahren Sie, wie Captain Plugins mit WooCommerce, Zahlungsdiensten und dokumentierten APIs zusammenarbeiten.
+meta_description: Erfahren Sie, wie Captain Plugins mit WooCommerce, Zahlungsdiensten, Voucher- und Pass-Integrationen sowie APIs zusammenarbeiten.
 focus_keyphrase: WooCommerce Plugin Integrationen
 ---
 
 # Ihre Abläufe verbunden
 
-Die Captain-Plugins lassen sich einzeln einsetzen und über klar definierte Integrationen in bestehende WordPress- und WooCommerce-Prozesse einbinden.
+Die Captain-Plugins lassen sich einzeln einsetzen und über dokumentierte Schnittstellen in bestehende WordPress- und WooCommerce-Prozesse einbinden.
 
 ## Integrationen nach Produkt
 
-| Produkt | Verbindung |
+| Produkt | Zentrale Anbindungen |
 |---|---|
-| Voucher Captain | WooCommerce für Produkte, Bestellungen und Gutscheinausgabe; HPOS und Blocks-Checkout; mehrsprachige und Mehrwährungs-Integrationen; Pass Captain für Ticketgutscheine und Gutscheinzahlung |
-| Pass Captain | Optional WooCommerce; direkte Zahlungswege über Stripe, PayPal und Mollie; Kalender/iCal, Webhooks, Veranstalter- und Mobile-API; Voucher Captain |
-| Affiliate Captain | Eigenständig nutzbar; optionale WooCommerce-Integration; versionierter Integrationsvertrag |
-| License Captain | WooCommerce-Produkte als Lizenzangebote; API für Lizenzprüfung und Entitlements; Updateauslieferung für Produkt-Plugins |
+| Voucher Captain | WooCommerce-Produkte, Bestellungen, HPOS und Blocks-Checkout; Mehrsprachigkeit mit WPML/WCML; Mehrwährung über unterstützte Erweiterungen; Gutscheinzahlung, Ticketgutscheine und gemeinsamer Scanner mit Pass Captain |
+| Pass Captain | Direkte Zahlungen mit Stripe, PayPal oder Mollie; optional WooCommerce Classic- oder Blocks-Checkout; Voucher Captain; Affiliate Captain; Twilio oder generischer HTTP-Anbieter für SMS; iCal-Feeds, signierte Webhooks, Veranstalter- und Mobile-API |
+| Affiliate Captain | Eigenständiges Partnerprogramm; WooCommerce optional; versionierter Integrationsvertrag für Verkaufsquellen wie Pass Captain und Voucher Captain sowie weitere kompatible Connectors |
+| License Captain | WooCommerce als Lizenzshop; signierte REST-API für Produkt-Plugins; Entitlements, Lizenzprüfung und Updatebereitstellung; offizielles WooCommerce-Stripe-Gateway für automatische Verlängerungen |
 
-## Integrationen passend zu Ihrem Setup
+## Was Sie für eine Integration benötigen
 
-Prüfen Sie vor der Einrichtung die produktspezifischen Voraussetzungen, unterstützten Versionen und benötigten Zugangsdaten. Integrationen für Zahlungsdienste erfordern ein eigenes Konto beim jeweiligen Anbieter.
+Zahlungsanbieter benötigen ein eigenes Händlerkonto und korrekt konfigurierte Zugangsdaten. Für den WooCommerce-Checkout können je nach Plugin HPOS, klassische Bestellspeicherung und Blocks-Checkout genutzt werden. License Captain nutzt WooCommerce für Lizenzprodukte; WooCommerce-Subscriptions sind nicht als Lizenzprodukt vorgesehen.
 
-[Features ansehen](/produkte/) · [Technische Dokumentation](/dokumentation/) · [Support](/support/)
+Die konkreten Mindestversionen und geprüften Plattformen finden Sie in der [Kompatibilitätsmatrix](/kompatibilitaet/). Eine Schritt-für-Schritt-Einrichtung steht in der [Dokumentation](/dokumentation/installation/).
+
+**[Passendes Plugin finden](/produkte/)** · **[Support](/support/)**

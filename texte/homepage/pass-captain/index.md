@@ -35,3 +35,9 @@ Verwalten Sie Ressourcen, Zeitfenster, Puffer, Umbuchungen, Stornofristen und No
 Ergänzen Sie E-Rechnungen, Kartenterminal, White Label, virtuellen Warteraum und schreibende API-Zugriffe.
 
 [Pass Captain Pro ansehen](/pass-captain/pro/) · [FAQ](/pass-captain/faq/)
+
+## Kompatibilität und Support
+
+Pass Captain benötigt WordPress 6.4+ und PHP 8.2+. WooCommerce ist optional; die freigegebene Integrationsspanne ist 8.2 bis 11.3. Unterstützt werden MySQL 8.0/8.4 und MariaDB 10.6/11.4. Für Pass Captain Pro ist wegen des Add-ons WordPress 6.5+ erforderlich. Stripe, PayPal, Mollie, Voucher Captain, Affiliate Captain, SMS-Anbieter und die Scanner-APIs ergänzen die Plattform.
+
+Single und Business enthalten Standard-Support; Agency enthält Priority-Support. [Alle Systemanforderungen und Integrationen](/kompatibilitaet/).

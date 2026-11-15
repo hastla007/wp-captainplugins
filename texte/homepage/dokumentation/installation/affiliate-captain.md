@@ -56,3 +56,5 @@ Legen Sie einen Testpartner an, folgen Sie einem Referral-Link und prüfen Sie d
 > **Screenshot-Platzhalter 5 – Partnerportal und Auszahlungslauf:** Zeigen Sie Testpartnerdaten, eine Beispielprovision und einen Testlauf. Partnername, IBAN, Bestellungen und Beträge müssen fiktiv sein.
 
 [Affiliate Captain Features](/affiliate-captain/features/) · [FAQ](/affiliate-captain/faq/) · [Dokumentation](/dokumentation/)
+
+**Captain-Pro-Hinweis:** Das Affiliate-Captain-Pro-Add-on benötigt WordPress 6.5+; PHP 7.4+ sowie die erforderlichen PHP-Erweiterungen richten sich nach dem Kern-Plugin. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).

@@ -1,28 +1,38 @@
 ---
 url: /support/
 seo_title: Support für Captain Plugins – Hilfe und Kontakt
-meta_description: Finden Sie Dokumentation, Installationshilfen und Kontaktmöglichkeiten für Voucher Captain, Pass Captain, Affiliate Captain und License Captain.
+meta_description: Finden Sie Dokumentation, Installationshilfen und Supportinformationen zu Voucher, Pass, Affiliate und License Captain.
 focus_keyphrase: WordPress Plugin Support
 ---
 
-# Wir helfen Ihnen beim nächsten Schritt
+# Hilfe für Ihre Captain-Plugins
 
-Finden Sie Antworten zur Installation, Konfiguration, Nutzung und Kompatibilität Ihrer Captain-Plugins.
+Hier finden Sie Anleitungen, Antworten und den passenden Kontaktweg für Ihr Produkt.
 
-## Wählen Sie Ihr Produkt
+## Dokumentation und FAQs
+
+Starten Sie mit den [Installationsanleitungen](/dokumentation/installation/), der [Dokumentation](/dokumentation/) oder der FAQ des jeweiligen Plugins:
 
 - [Voucher Captain: Gutscheine und Geschenkkarten](/voucher-captain/faq/)
 - [Pass Captain: Events, Tickets und Buchungen](/pass-captain/faq/)
 - [Affiliate Captain: Partner und Provisionen](/affiliate-captain/faq/)
 - [License Captain: Lizenzen und Updates](/license-captain/faq/)
 
-## Dokumentation und Fehlerhilfe
+## Support in Captain Pro
 
-Starten Sie mit der [Dokumentation](/dokumentation/) und prüfen Sie die jeweilige FAQ. Beschreiben Sie bei einer Supportanfrage das Plugin, die installierte Version, Ihre WordPress- und WooCommerce-Version sowie die Schritte, mit denen sich das Problem nachvollziehen lässt.
+| Plan | Live-Websites | Supportstufe |
+|---|---:|---|
+| Single | 1 | Standard |
+| Business | 5 | Standard |
+| Agency | 25 | Priority |
 
-## Kontakt
+Die Supportstufe ist Bestandteil der jeweiligen Captain-Pro-Lizenz. License Captain ist ohne Aufpreis enthalten. Für die kostenlosen Kern-Plugins stehen Dokumentation und die jeweils veröffentlichten öffentlichen Supportkanäle zur Verfügung.
 
-[Supportkontakt oder Supportformular ergänzen]  
-[Supportzeiten und Reaktionszeiten erst nach interner Festlegung nennen.]
+## So helfen Sie uns, Ihre Anfrage zu lösen
 
-**[Supportanfrage senden]([Support-URL])**
+Geben Sie in Ihrer Anfrage Produkt und Version, WordPress- und PHP-Version sowie – falls eingesetzt – WooCommerce-Version an. Beschreiben Sie die Schritte, mit denen sich die Frage oder der Fehler nachvollziehen lässt. Senden Sie keine Passwörter, Lizenzschlüssel, Zahlungsdaten oder personenbezogenen Kundendaten.
+
+**[Supportkontakt oder Formular ergänzen: Support-URL]**  
+[Supportkanal und verbindliche Antwortzeiten werden nach interner Festlegung ergänzt.]
+
+[Installationsanleitungen](/dokumentation/installation/) · [Kompatibilität](/kompatibilitaet/) · [Produktübersicht](/produkte/)

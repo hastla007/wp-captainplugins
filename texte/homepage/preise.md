@@ -17,7 +17,7 @@ Die kostenlosen Kern-Plugins können Sie unabhängig von Captain Pro einsetzen. 
 | Pass Captain Pro | 169 € / Jahr | 299 € / Jahr | 549 € / Jahr |
 | Affiliate Captain Pro | 229 € / Jahr | 399 € / Jahr | 699 € / Jahr |
 
-Alle Pläne enthalten den vollständigen Pro-Funktionsumfang des jeweiligen Add-ons. Die Website-Limits beziehen sich auf Live-Websites. Standard-Support ist für Single und Business vorgesehen; Agency enthält Priority-Support.
+Alle Pläne enthalten den vollständigen Pro-Funktionsumfang des jeweiligen Add-ons. Die Website-Limits beziehen sich auf Live-Websites. Single und Business enthalten Standard-Support; Agency enthält Priority-Support. Verbindliche Antwortzeiten und Supportkanal werden in den Tarifunterlagen noch nicht festgelegt.
 
 ## Was ist enthalten?
 

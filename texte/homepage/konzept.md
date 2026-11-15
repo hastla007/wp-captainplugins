@@ -353,7 +353,7 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 - [x] Sitemap, geplante URL-Struktur und Markdown-Seitenhierarchie festhalten.
 - [x] Produktprofile, Zielgruppen, Kernnutzen, Features und Pro-Angebote als Textgrundlage ausarbeiten.
 - [x] Platzhalter für Screenshots, Demos und Kundenbeispiele in den Texten einsetzen.
-- [ ] Kompatibilitätsmatrix und Integrationsstatus mit den finalen Release-Versionen ergänzen.
+- [x] Mindestversionen, geprüfte Plattformstände, Integrationen und Supportstufen je Produkt anhand der Repositories erfassen; vor Veröffentlichung mit der finalen Release-Matrix abgleichen.
 - [x] Erste produktspezifische FAQs verfassen.
 - [ ] FAQs mit echten Supportfragen abgleichen.
 - [ ] Logo, Produkticons, Markenfarben und Screenshot-Stil bereitstellen.

@@ -32,3 +32,9 @@ Verwalten Sie Gutscheine, korrigieren Sie Guthaben und verfolgen Sie Änderungen
 Verarbeiten Sie Firmenbestellungen in großen Mengen, bieten Sie digitale Wallet-Pässe an und versenden Sie Gutscheine per SMS.
 
 [Voucher Captain Pro ansehen](/voucher-captain/pro/) · [Häufige Fragen](/voucher-captain/faq/)
+
+## Kompatibilität und Support
+
+Voucher Captain benötigt WordPress 6.4+, PHP 8.1+ sowie WooCommerce 8.9+; PHP muss GD, mbstring und zip bereitstellen. Die gemeinsame Installation mit Voucher Captain Pro benötigt WordPress 6.5+. HPOS und klassische Bestellspeicherung sind abgedeckt. Optional unterstützt Voucher Captain Yoast SEO, WooCommerce Subscriptions, WPML/WCML, gängige Mehrwährungs-Erweiterungen und Flexible Product Fields/Checkout Fields.
+
+Single und Business enthalten Standard-Support; Agency enthält Priority-Support. [Alle Systemanforderungen und Integrationen](/kompatibilitaet/).

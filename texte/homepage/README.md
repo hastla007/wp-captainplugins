@@ -37,6 +37,11 @@ Je Produktbereich sind drei Ratgeber mit eigener Suchintention angelegt:
 - [plugin-updates-lizenzstatus](ratgeber/license-captain/plugin-updates-lizenzstatus.md)
 - [kundenbereich-changelog](ratgeber/license-captain/kundenbereich-changelog.md)
 
+## Kompatibilität und Support
+
+- [Kompatibilität und Integrationen](kompatibilitaet.md)
+- [Supportübersicht](support.md)
+
 ## Installationsanleitungen
 
 - [Allgemeine Installation](dokumentation/installation/index.md)
