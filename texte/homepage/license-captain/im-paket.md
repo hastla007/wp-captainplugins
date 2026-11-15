@@ -1,24 +1,24 @@
 ---
 url: /license-captain/im-paket/
-seo_title: License Captain ist in Captain Pro enthalten
-meta_description: License Captain ist ohne Aufpreis bei Captain Pro dabei und verwaltet Lizenzen, Aktivierungen, Verlängerungen und Updates Ihrer WordPress-Plugins.
-focus_keyphrase: License Captain Captain Pro enthalten
+seo_title: License Captain: Server-Client-Integration für WordPress-Plugins
+meta_description: License Captain Server ist ein separat erhältliches WordPress-Plugin für Lizenzverkauf, Aktivierungen und Updates. Erfahren Sie, wie die Client-Integration per API oder Client-Plugin funktioniert.
+focus_keyphrase: License Captain Server Client Integration
 ---
 
-# Lizenzverwaltung ist bereits dabei
+# License Captain Server und Client-Integration
 
-Wenn Sie Voucher Captain Pro, Pass Captain Pro oder Affiliate Captain Pro wählen, erhalten Sie License Captain ohne separaten Aufpreis dazu.
+License Captain Server ist ein separat erhältliches Plugin für Ihren WordPress-Lizenzshop. Es ist nicht in Voucher Captain Pro, Pass Captain Pro oder Affiliate Captain Pro enthalten.
 
-## Ein Lizenzshop für Ihre Plugins
+## Die Server-Seite
 
-License Captain nutzt WooCommerce für den Verkauf Ihrer Softwarelizenzen. Definieren Sie Pläne, Laufzeiten, Website-Limits und Berechtigungen passend zu Ihrem Angebot.
+Installieren Sie License Captain Server auf Ihrer eigenen WordPress-Website mit WooCommerce. Dort definieren Sie Lizenzprodukte, Laufzeiten, Website-Limits und Berechtigungen; der Server erstellt und verwaltet Lizenzen und stellt Updates bereit.
 
-## Aktivierungen und Updates verwalten
+## Die Client-Seite
 
-Sehen Sie, auf welchen Websites eine Lizenz aktiv ist, ermöglichen Sie Verlängerungen und stellen Sie Plugin-Updates zentral bereit.
+Jedes Plugin, das Sie lizenzieren möchten, muss mit dem Server kommunizieren. Dafür können Sie die Client-Funktionen selbst direkt in Ihr Plugin integrieren und die API-Spezifikation umsetzen. Oder Sie nutzen ein zusätzliches Client-Plugin, wie License Captain Client, das wir für die Anbindung unserer eigenen Plugins verwenden.
 
-## Was kostet License Captain?
+## Preis und Kauf
 
-License Captain hat keinen zusätzlichen Einzelpreis. Es ist in jedem Captain-Pro-Angebot enthalten. Die Captain-Pro-Pläne unterscheiden sich nach Add-on und Zahl der Live-Websites.
+License Captain Server wird separat verkauft. Den aktuellen Preis und den Kaufbutton finden Sie im Shop. Die Captain-Pro-Pläne sind davon unabhängig und umfassen ausschließlich die Pro-Funktionen des jeweils gewählten Captain-Add-ons.
 
-[Captain Pro vergleichen](/captain-pro/) · [Preise ansehen](/preise/) · [License Captain Features](/license-captain/features/)
+[License Captain Features](/license-captain/features/) · [API-Dokumentation ansehen]([Dokumentations-URL]) · [Captain-Pro-Pläne vergleichen](/captain-pro/)
