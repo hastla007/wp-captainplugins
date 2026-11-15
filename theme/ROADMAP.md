@@ -7,6 +7,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Bestehende Konzepte, Seitenentwürfe und Markenmaterial gesichtet.
 - [x] Technische Richtung für den ersten Build festgelegt: natives WordPress-Block-Theme ohne zusätzliche Build-Abhängigkeiten.
 - [x] Erste Theme-Struktur, globale Tokens, Templates, Template Parts und Startseiten-Patterns angelegt.
+- [x] Erste wiederverwendbare Produkt-, Feature-, Ablauf-, Preis-, FAQ-, Ressourcen- und Screenshot-Briefing-Patterns ergänzt.
 - [ ] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
 - [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
 - [ ] Redaktions-, Barrierefreiheits-, Browser- und Performance-Prüfung abschließen.
@@ -28,7 +29,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Theme bleibt Präsentationsschicht; Lizenz-, Checkout-, Gutschein-, Ticket- und Affiliate-Logik bleibt in den jeweiligen Plugins.
 - [x] WooCommerce-Seiten über WordPress-Seiteninhalt und unterstützte WooCommerce-Blöcke ausgeben; keine instabilen internen Block-DOM-Strukturen voraussetzen.
 - [x] Kein Theme-eigener Produkt-CPT und kein JavaScript-Framework im ersten Build.
-- [ ] Entscheiden, ob nach Sichtung der realen Produkt-UIs eigene Seitentemplates oder Plugin-Patterns erforderlich sind.
+- [x] Erste optionale Seitentemplates für Produkt-, Preis- und Ressourcenseiten angelegt; nach Sichtung der realen Produkt-UIs gegebenenfalls anpassen.
 - [ ] Yoast SEO im redaktionellen Modell nutzen: SEO-Titel, Meta-Beschreibung, kanonische URL, Indexierung und Social-Vorschau je Seite pflegen; das Theme erzeugt keine konkurrierenden Meta-Tags.
 - [ ] Zuständigkeit für Inhalte, SEO-Freigabe, rechtliche Seiten und Preisupdates festlegen.
 
@@ -57,8 +58,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Startseiten-Hero-Pattern mit B2B-Versprechen und klarer nächster Handlung bereitstellen.
 - [x] Produktkarten-Pattern für die vier Produkte bereitstellen.
 - [x] Abschluss-CTA-Pattern bereitstellen.
-- [ ] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Integrationen, FAQ und Ratgeberkarten ergänzen.
-- [ ] Vorlagen/Pattern-Kompositionen für Produktübersicht, einzelne Produktseite, Features, Pro/Im-Paket, FAQ, Preise, Vergleich, Lösung, Dokumentation, Kompatibilität, Support und Changelog anlegen.
+- [x] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Kompatibilität, FAQ und Ressourcen ergänzen.
+- [ ] Pattern-Kompositionen für Produktübersicht, einzelne Produktseite, Features, Pro/Im-Paket, FAQ, Preise, Vergleich, Lösung, Dokumentation, Kompatibilität, Support und Changelog je Seitentyp zusammenstellen.
 - [ ] Breadcrumb-Lösung bestimmen, bevorzugt über vorhandene WordPress-/Yoast-Funktion statt Theme-eigener Parallelstruktur.
 - [ ] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung festlegen.
 
@@ -115,3 +116,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 ## Architektur des ersten Builds
 
 Das Theme ist absichtlich leichtgewichtig. Es stellt globale Gestaltung, Vorlagen und redaktionelle Patterns bereit. Es implementiert keine Lizenzverwaltung, Warenkorblogik, Affiliate-Abrechnung oder Ticket-/Gutscheinprozesse. Diese Funktionen bleiben in den zuständigen Plugins und WooCommerce. Screenshots, Demos und Kundenbeispiele bleiben bis zur Freigabe gekennzeichnete Inhaltsplätze.
+
+## Aktueller Build-Stand
+
+Die Pattern-Bibliothek enthält jetzt einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, den vorhandenen Preisentwurf für Single/Business/Agency, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Platzhalter in eckigen Klammern sind beim Einfügen redaktionell zu ersetzen. Die Preiswerte sind aus dem aktuellen Konzept übernommen und vor Shop-Veröffentlichung mit dem Produktkatalog abzugleichen.

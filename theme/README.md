@@ -20,9 +20,11 @@ Die vollständige Reihenfolge von der Bestandsaufnahme bis Betrieb und Release s
 ## Theme-Umfang
 
 - Block-Templates und Template Parts, bearbeitbar im Site Editor.
-- Startseiten-Patterns für Hero, Produkte und CTA.
+- Patterns für Produkt-Heros, Features, Abläufe, Free-/Pro-Vergleich, Preise, Screenshot-Briefings, Kompatibilität, FAQ, Ressourcen und CTAs.
 - Responsive Basisstile, globale Design-Tokens und sichtbare Tastaturfokusse.
 - Warenkorb- und Checkout-Templates, die den Inhalt der dafür angelegten WordPress-Seiten ausgeben.
+
+Die Pattern-Texte mit eckigen Klammern sind redaktionelle Felder, die beim Einfügen auszufüllen sind. Der Preisvergleich startet mit den aktuellen Konzeptpreisen und enthält einen internen Abgleichhinweis. Screenshot-Platzhalter enthalten ein konkretes Aufnahmebriefing und müssen vor Veröffentlichung ersetzt werden.
 
 ## Nicht im Theme enthalten
 

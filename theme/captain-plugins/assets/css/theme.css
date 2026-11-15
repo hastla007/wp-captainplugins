@@ -85,6 +85,26 @@ a:hover { text-decoration-thickness: 0.13em; }
 .cp-card--featured { border-top: 4px solid var(--cp-gold); }
 .cp-cta-band { padding: clamp(2rem, 5vw, 3.5rem); border-radius: var(--cp-radius); color: var(--cp-paper); background: var(--cp-navy); }
 .cp-cta-band h2, .cp-cta-band p { color: inherit; }
+.cp-media-placeholder,
+.cp-compatibility-note,
+.cp-pricing-note {
+	margin-block: 2rem;
+	padding: clamp(1.25rem, 3vw, 2rem);
+	border: 2px dashed #8797a1;
+	border-radius: var(--cp-radius);
+	background: var(--cp-surface);
+}
+.cp-media-placeholder > :first-child,
+.cp-compatibility-note > :first-child,
+.cp-pricing-note > :first-child { margin-top: 0; }
+.cp-media-placeholder > :last-child,
+.cp-compatibility-note > :last-child,
+.cp-pricing-note > :last-child { margin-bottom: 0; }
+.cp-faq .wp-block-details { padding: 1rem 0; border-bottom: 1px solid var(--cp-border); }
+.cp-faq .wp-block-details summary { color: var(--cp-navy); cursor: pointer; font-weight: 700; }
+.cp-faq .wp-block-details[open] summary { margin-bottom: 0.75rem; }
+.cp-pricing-table { margin-block: 2rem; }
+.cp-pricing-table th:first-child { min-width: 12rem; }
 
 .wp-block-button__link { transition: background-color 160ms ease, color 160ms ease, transform 160ms ease; }
 .wp-block-button__link:hover { background: #0e2e43; transform: translateY(-1px); }
@@ -102,6 +122,7 @@ input, select, textarea { padding: 0.7rem 0.8rem; }
 	.cp-actions .wp-block-button { width: 100%; }
 	.cp-actions .wp-block-button__link { display: block; text-align: center; }
 	.wp-block-navigation__responsive-container.is-menu-open { padding: 1.5rem; }
+	.cp-pricing-table { margin-inline: -1rem; padding-inline: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
