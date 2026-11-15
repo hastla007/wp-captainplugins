@@ -21,7 +21,7 @@ Hier finden Sie die in den Produkt-Repositories dokumentierten Mindestversionen,
 | Affiliate Captain Pro | 6.5 kombiniert | 7.4 | Optional, ab 8.0 | Pro-Add-on setzt WP 6.5 voraus; Affiliate Captain muss installiert sein |
 | License Captain | 6.5 | 7.4 | 8.9 erforderlich | WooCommerce muss aktiv sein; MySQL/MariaDB mit beschreibbarem Primärserver und funktionierendem Cron |
 
-License Captain ist Bestandteil der Captain-Pro-Angebote und wird nicht separat berechnet.
+License Captain Server ist ein separat erhältliches Plugin für Betreiber eines eigenen Lizenzshops.
 
 ## Getestete Plattformen
 
@@ -60,7 +60,7 @@ Drittanbieter-Zahlungsdienste benötigen ein eigenes Konto und passende Zugangsd
 | Voucher Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support. Agency: Priority-Support. |
 | Pass Captain | Dokumentation und GitHub Issues; Sicherheitsmeldungen über private GitHub Security Advisories | Single und Business: Standard-Support. Agency: Priority-Support. |
 | Affiliate Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support. Agency: Priority-Support. |
-| License Captain | Kein separat bepreistes Kernangebot; als Teil von Captain Pro enthalten | Supportstufe folgt dem jeweiligen Voucher-, Pass- oder Affiliate-Captain-Pro-Plan. |
+| License Captain Server | Separates Angebot mit eigenem Preis und Kaufpfad; nicht in Captain Pro enthalten | Supportumfang und Supportstufe werden für License Captain separat ausgewiesen. |
 
 Die Tarife ordnen **Single (1 Live-Website)** und **Business (5 Live-Websites)** dem Standard-Support zu. **Agency (25 Live-Websites)** enthält Priority-Support. Verbindliche Reaktionszeiten und abschließende kommerzielle Supportkanäle sind in den Tarifunterlagen nicht festgelegt; deshalb werden hier keine Antwortzeitversprechen gemacht.
 
