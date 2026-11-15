@@ -20,9 +20,11 @@ Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setu
 
   Ohne Paketquelle kann die freigegebene ZIP manuell über den WordPress-Plugin-Uploader installiert werden.
 - Die Seitengruppen **Website-Grundseiten**, **Produktseiten** und **Ratgeber** sind separat auswählbar. Inhalte werden aus den Markdown-Dateien unter `texte/homepage/` mit `python3 tools/build-theme-content.py` zu editierbaren Gutenberg-Blöcken gebaut.
+- Beim Import erhalten Produkt-Startseiten, Preis-/Vergleichsseiten und Ressourcen passende Block-Templates. Die Produktvorlage zeigt den Seitentitel als gestalteten Einstieg; manuell gewählte Vorlagen bleiben bei späteren Imports erhalten.
 - Bereits vorhandene Seiten werden nicht überschrieben. Das Theme aktualisiert nur eigene, seit dem Import unveränderte Seiten. SEO-Felder werden übernommen, wenn sie leer oder weiterhin unverändert sind.
 - Vollständige Seiten können veröffentlicht werden. Seiten mit Download-, Checkout-, Support-, Screenshot- oder Betreiber-Platzhaltern werden als Entwurf angelegt. Bestehende statische Startseiten bleiben unangetastet.
 - Der Produkt-Schritt legt virtuelle, verborgene **Entwürfe** für die drei Captain-Pro-Produkte und die neun Jahrespläne an. Er verändert keine bestehenden SKUs, Preise, Steuer- oder Zahlungseinstellungen und trägt keine Download-Dateien ein. WooCommerce muss auf EUR stehen; License Captain muss aktiv sein, damit die Pläne zugeordnet werden.
+- Brotkrumen zeigen auf Unterseiten die Orientierung im Seitenbaum. Offene Download-/Checkout-Ziele sind in den importierten Texten als Platzhalter sichtbar und führen nicht zu einem funktionslosen Link.
 - License Captain ZIP, Releases/Downloads, Checkout, Rechtstexte, Steuerkonfiguration, Supportwege und Unternehmensangaben müssen vor dem Verkauf ergänzt und geprüft werden.
 
 Für Produkt-Startseiten die Vorlage **Produktseite**, für Preise und Vergleich **Preisübersicht** und für Dokumentation, FAQ, Support und Kompatibilität **Ressourcen- und Dokumentationsseite** auswählen. Die WooCommerce-Seiten Warenkorb, Checkout und Mein Konto verwenden ihre gleichnamigen Seitentemplates, sofern die WordPress-Seiten diese Slugs haben.

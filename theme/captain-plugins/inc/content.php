@@ -49,6 +49,38 @@ function captain_plugins_content_seo_values( array $entry ): array {
 	);
 }
 
+/** Pick a relevant registered block template for imported page types. */
+function captain_plugins_content_template_slug( array $entry ): string {
+	$path = trim( (string) ( $entry['path'] ?? '' ), '/' );
+	if ( '' === $path ) {
+		return '';
+	}
+	if ( in_array( $path, array( 'voucher-captain', 'pass-captain', 'affiliate-captain', 'license-captain' ), true ) ) {
+		return 'page-product';
+	}
+	if ( in_array( $path, array( 'preise', 'captain-pro' ), true ) ) {
+		return 'page-pricing';
+	}
+	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen' ), true ) ) {
+		return 'page-wide';
+	}
+	return 'page-resource';
+}
+
+/** Assign our template only while the page still uses the default or our prior assignment. */
+function captain_plugins_content_store_template( int $post_id, array $entry ): void {
+	$desired = captain_plugins_content_template_slug( $entry );
+	if ( '' === $desired ) {
+		return;
+	}
+	$current = (string) get_post_meta( $post_id, '_wp_page_template', true );
+	$written = (string) get_post_meta( $post_id, '_cp_page_template_written', true );
+	if ( ( '' === $current && '' === $written ) || ( '' !== $written && $current === $written ) ) {
+		update_post_meta( $post_id, '_wp_page_template', $desired );
+		update_post_meta( $post_id, '_cp_page_template_written', $desired );
+	}
+}
+
 /** Write SEO defaults without replacing fields a site owner has changed. */
 function captain_plugins_content_store_seo( int $post_id, array $entry, bool $force = false ): void {
 	$values = captain_plugins_content_seo_values( $entry );
@@ -90,6 +122,7 @@ function captain_plugins_content_store_meta( int $post_id, array $entry, string 
 	update_post_meta( $post_id, '_cp_content_source', $source_hash );
 	update_post_meta( $post_id, '_cp_content_status', $status );
 	update_post_meta( $post_id, '_cp_content_path', (string) ( $entry['path'] ?? '' ) );
+	captain_plugins_content_store_template( $post_id, $entry );
 	captain_plugins_content_store_seo( $post_id, $entry );
 }
 
@@ -184,6 +217,7 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 			$known   = '1' === get_post_meta( $page_id, '_cp_theme_page', true );
 			$untouched = $known && hash_equals( (string) get_post_meta( $page_id, '_cp_content_hash', true ), captain_plugins_content_page_hash( $page ) );
 			if ( $untouched && $source === $source_hash ) {
+				captain_plugins_content_store_template( $page_id, $entry );
 				captain_plugins_content_store_seo( $page_id, $entry );
 				++$counts['unchanged'];
 				continue;
@@ -238,6 +272,7 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 		$source  = (string) get_post_meta( $page_id, '_cp_content_source', true );
 		$untouched = $known && hash_equals( (string) get_post_meta( $page_id, '_cp_content_hash', true ), captain_plugins_content_page_hash( $page ) );
 		if ( $untouched && $source === $source_hash ) {
+			captain_plugins_content_store_template( $page_id, $entry );
 			captain_plugins_content_store_seo( $page_id, $entry );
 			++$counts['unchanged'];
 			continue;

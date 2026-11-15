@@ -66,6 +66,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [ ] Pattern-Kompositionen für Produktübersicht, einzelne Produktseite, Features, Pro/Im-Paket, FAQ, Preise, Vergleich, Lösung, Dokumentation, Kompatibilität, Support und Changelog je Seitentyp zusammenstellen.
 - [x] Schlanke, barrierearme Brotkrumennavigation für Inhaltsseiten ergänzen; strukturierte Daten bleiben Yoast überlassen.
 - [x] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung mit horizontal scrollbaren Tabellen und nativen Details-Blöcken vorbereiten.
+- [x] Passende Custom Templates beim Import neuen Seiten zuweisen und bestehende manuelle Vorlagenauswahl schützen.
 
 ## Phase 6 – Seiteninhalte einsetzen
 
@@ -123,7 +124,7 @@ Das Theme ist absichtlich leichtgewichtig. Es stellt globale Gestaltung, Vorlage
 
 Der Setup-Assistent ist unter **Design → Einrichtung** verfügbar. Er installiert WooCommerce und Yoast SEO aus wordpress.org, wenn gewünscht. License Captain wird nur aus einer vorgegebenen HTTPS-ZIP installiert und verlangt dafür einen in `wp-config.php` hinterlegten SHA-256-Hash; alternativ ist die manuelle Installation der freigegebenen ZIP vorgesehen. Seiteninhalte sind in drei Gruppen wählbar. Bereits bearbeitete/benutzerdefinierte Seiten bleiben geschützt. Preispläne werden nur bei aktiver WooCommerce- und License-Captain-Installation sowie EUR-Währung als verborgene Produktentwürfe erstellt und zugeordnet. Der Wizard verändert keine Shop-Steuern, Zahlungen, rechtlichen Angaben oder Produktdateien.
 
-Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Stelle sichtbar als redaktionellen Linkziel-Platzhalter. Eine eigene Brotkrumennavigation verbessert die Orientierung auf Inhaltsseiten; strukturierte Breadcrumb-Daten werden nicht dupliziert.
+Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Stelle sichtbar als redaktionellen Linkziel-Platzhalter. Eine eigene Brotkrumennavigation verbessert die Orientierung auf Inhaltsseiten; strukturierte Breadcrumb-Daten werden nicht dupliziert. Der Importer wählt Produkt-, Preis-, Übersichts- und Ressourcen-Templates anhand der importierten URL aus und ersetzt keine später manuell abweichend gewählte Vorlage.
 
 ## Aktueller Build-Stand
 
