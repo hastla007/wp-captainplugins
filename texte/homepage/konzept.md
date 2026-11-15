@@ -276,7 +276,7 @@ Je eine Seite: `/voucher-captain-pro/`, `/pass-captain-pro/`, `/affiliate-captai
 
 ### C. Conversion- und Vertrauensseiten
 
-Für alle fehlenden Medien erhalten Design und Copy eindeutige Platzhalter, zum Beispiel `[Screenshot: Gutschein-PDF-Designer]`, `[Demo-Video: Ticket-Checkout und Einlass]` und `[Kundenbeispiel: Affiliate-Programm im Einsatz]`. Diese Platzhalter markieren spätere Asset-Slots und dürfen nicht wie echte Referenzen wirken.
+Für alle fehlenden Medien erhalten Design und Copy eindeutige Platzhalter, zum Beispiel `[Screenshot-Platzhalter: Gutschein-PDF-Designer mit markiertem Layoutbereich, Elementleiste und PDF-Vorschau zeigen.]`, `[Demo-Video: Ticket-Checkout und Einlass]` und `[Kundenbeispiel: Affiliate-Programm im Einsatz]`. Diese Platzhalter markieren spätere Asset-Slots und dürfen nicht wie echte Referenzen wirken.
 
 #### 14) Vergleich – `/vergleich/`
 Vergleich der vier Kernprodukte nach Geschäftsaufgabe, Abhängigkeit von WooCommerce, Funktionen und Reife-/Verfügbarkeitsstatus. Keine unbelegten Wettbewerbervergleiche oder Leistungszahlen.

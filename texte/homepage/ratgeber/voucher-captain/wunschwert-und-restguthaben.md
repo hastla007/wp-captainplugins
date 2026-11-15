@@ -29,7 +29,7 @@ Testen Sie den Gutschein in einer Beispielbestellung: Erhält der richtige Empf�
 
 Voucher Captain zeigt Gutscheinstatus und Verlauf in der Verwaltung an. Sie können Guthaben prüfen und bei Bedarf korrigieren. Damit behalten Shopteam und Kundschaft den Überblick über offene und bereits genutzte Beträge.
 
-[Screenshot: Konfiguration für Wunschbetrag]  
-[Screenshot: Geschenkkarte mit Restguthaben]
+[Screenshot-Platzhalter: Produktkonfiguration mit Mindestwert, Höchstwert, Schrittweite und Beispielbeträgen zeigen.]  
+[Screenshot-Platzhalter: Kundenansicht einer teilweise genutzten Geschenkkarte mit ursprünglichem und verbleibendem Guthaben zeigen; Testcode verwenden.]
 
 **[Voucher Captain kostenlos herunterladen]([Download-URL])** · [Alle Funktionen ansehen](/voucher-captain/features/)

@@ -33,4 +33,4 @@ Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen na
 
 **[Pro-Plan auswählen]([Checkout-URL])** · [Kostenlosen Kern herunterladen]([Download-URL])
 
-[Screenshot: CSV-Massenbestellung] · [Demo: Wallet-Pass und SMS-Zustellung]
+[Screenshot-Platzhalter: Upload einer anonymisierten CSV-Liste mit Empfängerfeldern und erfolgreicher Vorschau der erzeugten Gutscheine zeigen.] · [Demo: Wallet-Pass und SMS-Zustellung]

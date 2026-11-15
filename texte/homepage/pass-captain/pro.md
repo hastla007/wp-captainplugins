@@ -37,4 +37,4 @@ Alle Pläne enthalten den vollständigen Pass-Captain-Pro-Umfang. License Captai
 
 **[Pass Captain Pro auswählen]([Checkout-URL])** · [Kostenlosen Kern starten]([Download-URL])
 
-[Screenshot: White-Label-Ticket] · [Demo: E-Rechnung und Kartenterminal]
+[Screenshot-Platzhalter: Ticket mit neutralem Branding sowie Beispielansicht für White Label zeigen; QR-Code, Bestellnummer und Teilnehmerdaten unbrauchbar machen.] · [Demo: E-Rechnung und Kartenterminal]

@@ -25,7 +25,7 @@ Kontrollieren Sie Korrekturen im Ledger, bevor Sie einen Auszahlungslauf freigeb
 
 Affiliate Captain stellt Abrechnungsdaten und Gutschriften bereit. Welche steuerlichen Angaben oder Belege erforderlich sind, hängt von Ihrem Geschäftsmodell ab und sollte fachlich geprüft werden.
 
-[Screenshot: Refund-Korrektur im Ledger]  
+[Screenshot-Platzhalter: Ledger mit ursprünglicher Provision und positionsgenauer Refund-Korrektur zeigen; Auftragsnummern und Beträge anonymisieren.]  
 [Demo: Erstattung bis aktualisierte Auszahlung]
 
 **[Affiliate Captain kennenlernen](/affiliate-captain/)** · [Affiliate Captain FAQ](/affiliate-captain/faq/)

@@ -44,7 +44,7 @@ Die Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweitern Sie 
 
 Nutzen Sie die Plugins einzeln oder kombinieren Sie passende Funktionen. WooCommerce ist je nach Produkt erforderlich oder optional. Dokumentierte Integrationen verbinden die Abläufe, die zusammengehören.
 
-[Screenshot: Produktübersicht]  
+[Screenshot-Platzhalter: Zeigen Sie die vier Produktkarten für Gutscheine, Events/Buchungen, Partnerprogramme und Lizenzverwaltung; jede Karte soll Zielgruppe und CTA sichtbar machen.]  
 [Demo: Gutscheinverkauf, Ticketbuchung oder Partnerauszahlung]  
 [Kundenbeispiel: nach Freigabe einsetzen]
 

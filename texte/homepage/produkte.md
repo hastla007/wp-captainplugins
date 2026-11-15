@@ -40,5 +40,5 @@ Verwalten Sie WooCommerce-Lizenzprodukte, Website-Aktivierungen, Verlängerungen
 
 [Features ansehen](/license-captain/features/) · [Im Paket enthalten](/license-captain/im-paket/)
 
-[Screenshot: Plugin-Auswahl und Vergleich]  
+[Screenshot-Platzhalter: Produktvergleich mit den vier Plugins, Einsatzbereich, WooCommerce-Abhängigkeit und passendem CTA zeigen.]  
 [CTA: Alle Preise vergleichen](/preise/)

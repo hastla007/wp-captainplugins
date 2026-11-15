@@ -25,7 +25,7 @@ Eine Warteliste kann frei werdende Plätze der Reihe nach anbieten. Bei Annahme 
 
 Buchungen können mit Tickets, Teilnehmerdaten und Einlassabläufen zusammenarbeiten. Damit verwaltet Ihr Team Kursreservierung und Teilnahme in einer Umgebung.
 
-[Screenshot: Ressourcen und Zeitfenster]  
+[Screenshot-Platzhalter: Ressourcenansicht mit Dauer, Puffer und verfügbaren Zeitfenstern zeigen; keine realen Bucherdaten einblenden.]  
 [Demo: Warteliste für einen ausgebuchten Kurs]
 
 Pass Captain eignet sich für Bootsschulen, Kursanbieter und Verleihbetriebe. Für den Verkauf von Zugangscodes in Kontingenten kann ein separater B2B-Shopablauf ergänzt werden.

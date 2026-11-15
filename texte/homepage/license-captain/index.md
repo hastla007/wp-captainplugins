@@ -27,7 +27,7 @@ Der Kundenbereich zeigt aktive Lizenzen und Websites. Produkt-Changelogs lassen 
 
 License Captain kostet nicht zusätzlich. Es ergänzt die Captain-Pro-Angebote um die Lizenz- und Updateverwaltung für Ihre Plugins.
 
-[Screenshot: Lizenzübersicht und Aktivierungen]  
+[Screenshot-Platzhalter: Lizenzübersicht mit Status, Website-Limit, aktiven Installationen und Updatezugriff zeigen; Schlüssel, E-Mail-Adressen und Domains anonymisieren.]  
 [Diagramm: Kauf, Lizenz, Aktivierung und Update]
 
 [Features](/license-captain/features/) · [Im Paket enthalten](/license-captain/im-paket/) · [FAQ](/license-captain/faq/)

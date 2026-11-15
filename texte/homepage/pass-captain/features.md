@@ -35,5 +35,5 @@ Nutzen Sie Rechnungen und Gutschriften, Erstattungsfreigaben, Regeln für mehrer
 
 WooCommerce ist optional und unterstützt Classic- und Blocks-Checkout sowie HPOS. Steuerprofile bilden Länder- und Steuerklassenkonfigurationen ab; die Steuersätze pflegt der Betreiber.
 
-[Screenshot: Scanner und Check-in] · [Demo: Warteliste]  
+[Screenshot-Platzhalter: Scanneransicht nach erfolgreicher Prüfung eines ungültigen Demotickets zeigen, einschließlich Check-in-Status; QR-Code muss unbrauchbar sein.] · [Demo: Warteliste]  
 [Pass Captain Pro vergleichen](/pass-captain/pro/)

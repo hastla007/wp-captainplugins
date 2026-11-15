@@ -25,7 +25,7 @@ Verwalten Sie Produktversionen und Updatepakete über den Lizenzserver. Kunden m
 
 Changelogs können pro Produkt in Kundenkonten oder auf Dokumentationsseiten eingebunden werden. So sehen Anwender, welche Änderungen ein Release enthält.
 
-[Screenshot: Releaseverwaltung]  
+[Screenshot-Platzhalter: Releaseverwaltung mit Produkt, Version, Paketstatus und Prüfsumme zeigen; Paketadresse und geheime Werte unkenntlich machen.]  
 [Diagramm: Lizenzprüfung und Update]
 
 License Captain ist Teil der Captain-Pro-Angebote und wird ohne zusätzlichen Aufpreis bereitgestellt.

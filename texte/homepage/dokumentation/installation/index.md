@@ -27,5 +27,5 @@ Die folgenden Anleitungen führen Sie durch Installation und Einrichtung der ein
 
 > **Screenshot-Platzhalter – WordPress-Pluginverwaltung:** Zeigen Sie die WordPress-Ansicht „Plugins → Installieren → Plugin hochladen“ mit einer neutralen Testinstallation. Sichtbar sollen Dateiauswahl, Installieren- und Aktivieren-Schritt sein. Keine Kundendaten, privaten URLs oder Schlüssel anzeigen.
 
-[Screenshot: Plugininstallation in WordPress]  
+[Screenshot-Platzhalter: Zeigen Sie Plugins → Installieren → Plugin hochladen mit Dateiauswahl, Installieren- und Aktivieren-Schritt in einer neutralen WordPress-Testinstallation.]  
 [Zur Produktübersicht](/produkte/) · [Support](/support/)

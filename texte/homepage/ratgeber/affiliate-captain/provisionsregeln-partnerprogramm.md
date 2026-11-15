@@ -25,7 +25,7 @@ Definieren Sie, wann Provisionen zur Auszahlung bereitstehen. Haltefristen helfe
 
 Prüfen Sie das Modell anhand typischer Warenkörbe und Sonderfälle. Machen Sie verständlich, welche Verkäufe berücksichtigt werden und wie Änderungen oder Erstattungen in der Abrechnung erscheinen.
 
-[Screenshot: Regel nach Produkt und Partnergruppe]  
+[Screenshot-Platzhalter: Beispielregel mit Produkt, Partnergruppe und Provisionssatz im Regel-Editor zeigen; fiktive Produkte und Partnernamen nutzen.]  
 [Demo: Provision im Partnerportal]
 
 Affiliate Captain bietet Provisionsregeln, Attribution und Auszahlungsläufe in WordPress. WooCommerce ist optional.

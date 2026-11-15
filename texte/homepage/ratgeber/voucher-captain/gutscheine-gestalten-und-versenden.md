@@ -29,7 +29,7 @@ Prüfen Sie, ob variable Angaben im PDF korrekt erscheinen. Testen Sie lange Nam
 
 Gutscheine können in E-Mails, Bestellinformationen und im Mein-Konto-Bereich bereitstehen. Auch Gastkäufe lassen sich über signierte Links bedienen.
 
-[Screenshot: Gutscheinvorlage im Designer]  
+[Screenshot-Platzhalter: Gutscheinvorlage im Designer mit Logo, Empfängername, Wert und QR-Code zeigen; Democode muss unbrauchbar sein.]  
 [Demo: Gutschein personalisieren und Terminversand auswählen]
 
 **[Mit Voucher Captain starten]([Download-URL])** · [Voucher Captain Pro mit Wallet und SMS](/voucher-captain/pro/)

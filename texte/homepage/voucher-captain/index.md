@@ -23,8 +23,8 @@ Erstellen Sie Rabattcodes, Geschenkkarten und Gutscheine für Produkte, Kategori
 
 Verwalten Sie Gutscheine, korrigieren Sie Guthaben und verfolgen Sie Änderungen im Verlauf. Codes lassen sich importieren und Bestellungen im Kundenkonto abrufen.
 
-[Screenshot: Gutscheinprodukt und Empfängerfelder]  
-[Screenshot: PDF-Designer und Gutschein]  
+[Screenshot-Platzhalter: WooCommerce-Gutscheinprodukt mit Wunschwert, Empfängername und Nachricht zeigen; Produktpreis und Daten fiktiv halten.]  
+[Screenshot-Platzhalter: Designer links und fertige PDF-Vorschau rechts zeigen, inklusive Logo, Wert und QR-Code mit ungültigem Testinhalt.]  
 [Demo: Gutschein kaufen und einlösen]
 
 ## Mehr Möglichkeiten mit Captain Pro

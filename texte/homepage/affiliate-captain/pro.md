@@ -37,4 +37,4 @@ Alle Pläne enthalten den vollständigen Pro-Umfang. License Captain ist ohne Au
 
 **[Affiliate Captain Pro auswählen]([Checkout-URL])** · [Kostenlosen Kern starten]([Download-URL])
 
-[Screenshot: White-Label-Portal] · [Demo: Webhook und Auszahlung]
+[Screenshot-Platzhalter: Zeigen Sie das Partnerportal mit angepasstem Firmenlogo, Farben und Navigation; verwenden Sie eine neutrale Demomarke und Testdaten.] · [Demo: Webhook und Auszahlung]

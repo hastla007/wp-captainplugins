@@ -35,5 +35,5 @@ Partner greifen auf Links, Codes, Kampagnen, QR-Codes und Werbemittel zu. Das Po
 
 Affiliate Captain funktioniert eigenständig. WooCommerce ist optional; weitere Integrationen nutzen einen versionierten Vertrag mit dokumentierten Schnittstellen.
 
-[Screenshot: Provisionsregeln] · [Demo: SEPA-Auszahlung]  
+[Screenshot-Platzhalter: Zeigen Sie den Regel-Editor mit einer Beispielregel nach Produkt und Partnergruppe, einschließlich Provisionssatz und Gültigkeitsbedingung; Namen und IDs anonymisieren.] · [Demo: SEPA-Auszahlung]  
 [Affiliate Captain Pro ansehen](/affiliate-captain/pro/)

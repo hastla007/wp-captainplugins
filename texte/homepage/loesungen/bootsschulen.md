@@ -27,7 +27,7 @@ Legen Sie Termine oder Kursserien an, definieren Sie verfügbare Plätze und Buc
 
 Bootsschulen, die Kurszugänge in Kontingenten einkaufen und intern verteilen, können ihren Bestellprozess mit einem B2B-WooCommerce-Shop verbinden. Bestellungen und Codezustellung lassen sich in einen separaten Shop- und Plattformablauf einordnen.
 
-[Screenshot: Kurskalender und Ressourcenverwaltung]  
+[Screenshot-Platzhalter: Kalender mit Beispielkursen, buchbaren Zeitfenstern und einer Ressource zeigen; keine echten Kursteilnehmer oder internen Kontingente abbilden.]  
 [Demo: Buchung und Ticketprüfung]  
 [Kundenbeispiel: Bootsschule, nach Freigabe]
 

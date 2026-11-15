@@ -31,5 +31,5 @@ Verwalten Sie Releases und stellen Sie Updates für Ihre Produkt-Plugins bereit.
 
 Der Kundenbereich fasst Lizenzen und aktivierte Websites zusammen. Datenschutzexport und -löschung unterstützen die Werkzeuge Ihrer WordPress-Installation.
 
-[Screenshot: Kundenbereich „My licenses“] · [Screenshot: Changelog-Block]  
+[Screenshot-Platzhalter: Kundenansicht mit Lizenzstatus, Laufzeit und Website-Aktivierungen zeigen; Lizenzschlüssel und Domains durch Testwerte ersetzen.] · [Screenshot-Platzhalter: Changelog-Block mit Produktname, Releaseversion und sichtbaren Änderungsnotizen zeigen; ausschließlich fiktive Produktdaten verwenden.]  
 [Im Captain-Pro-Paket enthalten](/license-captain/im-paket/)

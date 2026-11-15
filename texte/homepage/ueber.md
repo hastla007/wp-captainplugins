@@ -25,4 +25,4 @@ Wir machen Funktionen verständlich, dokumentieren Integrationen und geben Unter
 
 Wir veröffentlichen keine erfundenen Kundenlogos oder Erfolgszahlen. An dieser Stelle können freigegebene Kundenbeispiele und echte Produktansichten ergänzt werden.
 
-[Screenshot: Plugin-Backend]
+[Screenshot-Platzhalter: aufgeräumte Backend-Übersicht mit mehreren Captain-Plugins zeigen; Testwebsite, keine realen Benutzer- oder Lizenzdaten.]

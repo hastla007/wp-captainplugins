@@ -25,7 +25,7 @@ Lizenzstatus und Übergänge werden nach festen Regeln verwaltet. Der Auditverla
 
 Kunden können manuell verlängern. Für wiederkehrende Zahlungen steht eine optionale Stripe-gestützte automatische Verlängerung bereit.
 
-[Screenshot: WooCommerce-Lizenzprodukt]  
+[Screenshot-Platzhalter: WooCommerce-Produkt mit Lizenzintervall, Website-Limit und Entitlements zeigen; Produkt- und Kundendaten müssen fiktiv sein.]  
 [Diagramm: Kauf bis Website-Aktivierung]
 
 License Captain ist ohne Aufpreis in Captain Pro enthalten.

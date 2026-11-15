@@ -27,7 +27,7 @@ Stellen Sie QR- und PDF-Tickets aus, zeigen Sie mobile Wallet-Pässe an und prü
 
 Verwalten Sie Ressourcen, Zeitfenster, Puffer, Umbuchungen, Stornofristen und No-Shows. Automatische Wartelisten bieten frei werdende Plätze der Reihe nach an.
 
-[Screenshot: Eventkalender und Servicebuchung]  
+[Screenshot-Platzhalter: Eventkalender neben einer Beispiel-Servicebuchung mit Datum, Zeitfenster und verfügbarer Ressource zeigen; Bucherdaten ausblenden.]  
 [Demo: Checkout, Wallet-Ticket und Scanner]
 
 ## Professionalität mit Pass Captain Pro

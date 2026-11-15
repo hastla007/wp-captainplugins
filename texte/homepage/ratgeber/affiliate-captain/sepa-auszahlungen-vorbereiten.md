@@ -27,7 +27,7 @@ Das Partnerportal macht die relevanten Programmdaten sichtbar. Kommunizieren Sie
 
 Affiliate Captain verwaltet den technischen Ablauf; die fachliche Prüfung von Steuer-, Beleg- und Datenschutzpflichten bleibt Teil Ihrer Unternehmensprozesse.
 
-[Screenshot: Auszahlungslauf]  
+[Screenshot-Platzhalter: Auszahlungslauf mit Status, Zahl der Partner und Summenübersicht zeigen; Kontodaten und echte Beträge ausblenden.]  
 [Demo: SEPA-XML-Export]
 
 **[Affiliate Captain testen]([Download-URL])** · [Pro-Auszahlungen ansehen](/affiliate-captain/pro/)

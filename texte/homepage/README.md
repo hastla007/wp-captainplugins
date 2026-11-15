@@ -48,4 +48,4 @@ Je Produktbereich sind drei Ratgeber mit eigener Suchintention angelegt:
 
 ## Redaktionelle Platzhalter
 
-Ersetze Platzhalter wie [Download-URL], [Checkout-URL], [Supportkontakt], [Firmenname] oder [Screenshot: …] vor Veröffentlichung. Kundenlogos, Bewertungen, konkrete Erfolgszahlen, rechtliche Zusicherungen und Supportzeiten sind nicht erfunden. Yoast-Titel, Meta-Description und Fokus-Keyphrase stehen am Anfang jeder Seite.
+Ersetze Platzhalter wie [Download-URL], [Checkout-URL], [Supportkontakt], [Firmenname] oder [Screenshot-Platzhalter: Motiv, Zweck und wichtige sichtbare UI-Elemente direkt am Platzhalter beschreiben; sensible Daten ausblenden.] vor Veröffentlichung. Kundenlogos, Bewertungen, konkrete Erfolgszahlen, rechtliche Zusicherungen und Supportzeiten sind nicht erfunden. Yoast-Titel, Meta-Description und Fokus-Keyphrase stehen am Anfang jeder Seite.

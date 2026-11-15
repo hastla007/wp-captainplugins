@@ -25,7 +25,7 @@ Weisen Sie Mitarbeitende einem Event oder einzelnen Terminen zu. Regeln für Ber
 
 Berichte und Protokolle unterstützen die Übersicht über Buchungen, Einlass und Änderungen. Klären Sie vorab, welche Teamrollen welche Daten sehen und bearbeiten dürfen.
 
-[Screenshot: Warteliste und Nachrückangebot]  
+[Screenshot-Platzhalter: ausgebuchtes Event mit anonymisierten Wartelistenplätzen und zeitlich begrenztem Nachrückangebot zeigen.]  
 [Demo: QR-Ticket am Scanner]
 
 **[Pass Captain für Events ansehen](/pass-captain/)** · [Pass Captain Pro](/pass-captain/pro/)

@@ -25,7 +25,7 @@ Gutscheine lassen sich als PDF versenden. Ergänzend können Wallet-Pässe für 
 
 Prüfen Sie erzeugte Gutscheine und Versandstatus in der Verwaltung. Ein abgestimmter Ablauf für Bestellung, Korrekturen und erneuten Versand hilft, Rückfragen intern schneller zu beantworten.
 
-[Screenshot: CSV-Import für Firmenbestellung]  
+[Screenshot-Platzhalter: CSV-Massenbestellung mit Spalten für Empfänger, Gutscheinwert und Zustelltermin zeigen; nur fiktive Namen und Adressen verwenden.]  
 [Demo: Wallet-Pass auf dem Smartphone]
 
 Voucher Captain Pro ergänzt den kostenlosen Kern um Massenbestellungen, Wallet-Pässe und SMS.

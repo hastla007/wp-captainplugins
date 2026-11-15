@@ -23,7 +23,7 @@ Haltefristen, positionsgenaue Refund-Korrekturen und ein nachvollziehbares Provi
 
 Stellen Sie Kampagnen, QR-Codes und Werbemittel im Partnerportal bereit. Partner sehen ihre eigenen Daten und erhalten keinen Zugriff auf Kundendaten.
 
-[Screenshot: Partnerportal und Kampagne]  
+[Screenshot-Platzhalter: Zeigen Sie das Partnerportal mit einer Beispielkampagne, Referral-Link und Werbemittelbereich; Partnernamen, Links und Statistiken müssen fiktiv sein.]  
 [Demo: Provision, Rückerstattung und Auszahlung]
 
 ## Für weitere Integrationen

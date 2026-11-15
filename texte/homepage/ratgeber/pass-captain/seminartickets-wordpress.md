@@ -25,7 +25,7 @@ Erfassen Sie Teilnehmerfelder und bei Bedarf Einwilligungen. Preisregeln können
 
 Pass Captain stellt QR- und PDF-Tickets aus und unterstützt Apple- und Google-Wallet. Das Team prüft die Tickets mit Web- oder Offline-Scanner. Teilnehmerzuweisung und der erneute Ticketversand lassen sich im Käuferportal verwalten.
 
-[Screenshot: Seminarserie und Preisstufen]  
+[Screenshot-Platzhalter: Seminarserie mit mehreren Terminen, Kontingent und unterschiedlichen Preisstufen zeigen; Veranstalter- und Teilnehmerdaten anonymisieren.]  
 [Demo: Buchung bis Check-in]
 
 **[Pass Captain entdecken](/pass-captain/)** · [Tickets und Events im Funktionsüberblick](/pass-captain/features/)
