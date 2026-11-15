@@ -103,7 +103,7 @@ def cta_buttons(markdown: str) -> str | None:
     return block("buttons", '<div class="wp-block-buttons cp-actions">' + "\n".join(buttons) + "</div>", {"className": "cp-actions"})
 
 
-def markdown_blocks(markdown: str) -> str:
+def markdown_blocks(markdown: str, page_path: str = "") -> str:
     lines = markdown.splitlines()
     out: list[str] = []
     i = 0
@@ -151,7 +151,10 @@ def markdown_blocks(markdown: str) -> str:
                 rows.append(split_table_row(lines[i])); i += 1
             head_html = "<thead><tr>" + "".join('<th scope="col">' + inline(c) + "</th>" for c in header) + "</tr></thead>"
             body_html = "<tbody>" + "".join("<tr>" + "".join("<td>" + inline(c) + "</td>" for c in row) + "</tr>" for row in rows) + "</tbody>"
-            out.append(block("table", "<figure class=\"wp-block-table\"><table>" + head_html + body_html + "</table></figure>"))
+            table_class = "cp-pricing-table" if page_path == "preise" or re.fullmatch(r"(voucher|pass|affiliate)-captain/pro", page_path) else ""
+            table_attrs = {"className": table_class} if table_class else None
+            table_figure_class = "wp-block-table" + (" " + table_class if table_class else "")
+            out.append(block("table", f'<figure class="{table_figure_class}"><table>' + head_html + body_html + "</table></figure>", table_attrs))
             continue
         list_match = re.match(r"^\s*(?:([-+*])\s+|\d+[.)]\s+)(.*)$", line)
         if list_match:
@@ -181,6 +184,39 @@ def markdown_blocks(markdown: str) -> str:
         paragraph.append(line)
         i += 1
     flush_paragraph()
+    # Use native, keyboard-operable Details blocks for question/answer pages.
+    if page_path == "faq" or page_path.endswith("/faq"):
+        intro: list[str] = []
+        details: list[str] = []
+        trailing: list[str] = []
+        question = ""
+        answer: list[str] = []
+
+        def flush_answer() -> None:
+            if not question:
+                return
+            summary = '<summary>' + question + '</summary>'
+            inside = "\n\n".join(answer)
+            details.append(block("details", f'<details class="wp-block-details">{summary}{inside}</details>'))
+            answer.clear()
+
+        for item in out:
+            question_match = re.match(r'<!-- wp:heading \{"level":2\} -->\s*<h2[^>]*>(.*?)</h2>', item, re.S)
+            if question_match:
+                flush_answer()
+                question = question_match.group(1).strip()
+            elif question and item.startswith('<!-- wp:buttons '):
+                trailing.append(item)
+            elif question:
+                answer.append(item)
+            else:
+                intro.append(item)
+        flush_answer()
+        if details:
+            children = "\n\n".join(details + trailing)
+            faq_group = block("group", f'<div class="wp-block-group cp-faq">{children}</div>', {"className": "cp-faq", "layout": {"type": "constrained"}})
+            out = intro + [faq_group]
+
     # Turn the Markdown hierarchy into wide section bands. The home intro becomes
     # the designed hero; other page intros and H2 sections get consistent spacing.
     groups: list[tuple[str, list[str]]] = []
@@ -263,7 +299,7 @@ def build() -> None:
         title = title_match.group(1).strip() if title_match else title_from_path(path)
         if path:
             body = re.sub(r"^#\s+.+?(?:\n+|$)", "", body, count=1, flags=re.M)
-        markup = markdown_blocks(body)
+        markup = markdown_blocks(body, path)
         file_name = entry_file(path)
         (pages_dir / file_name).write_text(markup + ("\n" if markup else ""), encoding="utf-8")
         sources[path] = {
