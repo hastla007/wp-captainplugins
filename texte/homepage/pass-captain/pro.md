@@ -33,7 +33,7 @@ Schreibende API-Zugriffe mit konfigurierbaren Berechtigungsumfängen ermögliche
 | Business | 5 | 299 € |
 | Agency | 25 | 549 € |
 
-Alle Pläne enthalten den vollständigen Pass-Captain-Pro-Umfang. License Captain ist ohne Aufpreis enthalten.
+Alle Pläne enthalten den vollständigen Pass-Captain-Pro-Umfang. License Captain Server wird separat angeboten und ist nicht Bestandteil dieses Plans.
 
 **[Pass Captain Pro auswählen]([Checkout-URL])** · [Kostenlosen Kern starten]([Download-URL])
 
