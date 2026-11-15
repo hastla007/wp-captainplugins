@@ -13,9 +13,9 @@ Ein kommerzielles Plugin benötigt einen klaren Zusammenhang zwischen Kauf, Lize
 
 Ordnen Sie einem Lizenzplan Entitlements zu. Damit bestimmen Sie, welche Produktfunktionen und Leistungen für den jeweiligen Plan verfügbar sind.
 
-## Lizenzprüfung anbinden
+## Client-Integration passend zum Produkt wählen
 
-Ihr Produkt-Plugin fragt den Lizenzstatus und die zugehörigen Berechtigungen über signierte Requests und Responses ab. Nutzen Sie die dokumentierten Schnittstellen und behandeln Sie Fehlerfälle verständlich.
+License Captain stellt die Server-API bereit. Ihr Produkt-Plugin kann den Client nach der dokumentierten Schnittstellenspezifikation direkt integrieren. Alternativ können Sie die Verbindung über ein separates Client-Plugin bereitstellen. In beiden Fällen fragt die Integration Lizenzstatus und Berechtigungen über signierte Requests und Responses ab und behandelt Fehlerfälle verständlich.
 
 ## Releases bereitstellen
 
@@ -28,6 +28,6 @@ Changelogs können pro Produkt in Kundenkonten oder auf Dokumentationsseiten ein
 [Screenshot-Platzhalter: Releaseverwaltung mit Produkt, Version, Paketstatus und Prüfsumme zeigen; Paketadresse und geheime Werte unkenntlich machen.]  
 [Diagramm: Lizenzprüfung und Update]
 
-License Captain ist Teil der Captain-Pro-Angebote und wird ohne zusätzlichen Aufpreis bereitgestellt.
+License Captain ist ein separat erhältlicher Server für Anbieter eigener WordPress-Produkte. Der Server und die Client-Integration sind getrennte Bestandteile Ihrer Produktarchitektur.
 
-**[License Captain kennenlernen](/license-captain/)** · [Technische Dokumentation](/dokumentation/)
+**[License Captain kennenlernen](/license-captain/)** · [Features und Integrationswege](/license-captain/features/) · [Technische Dokumentation](/dokumentation/)

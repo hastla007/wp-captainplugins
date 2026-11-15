@@ -55,7 +55,7 @@ function captain_plugins_setup_plugins(): array {
 	return array(
 		'woocommerce' => array( 'name' => 'WooCommerce', 'dir' => 'woocommerce', 'file' => 'woocommerce/woocommerce.php', 'source' => 'wporg', 'checked' => true, 'description' => __( 'Shop, Warenkorb, Kasse und Produktverwaltung. Für Lizenzprodukte und den Verkauf erforderlich.', 'captain-plugins' ) ),
 		'wordpress-seo' => array( 'name' => 'Yoast SEO', 'dir' => 'wordpress-seo', 'file' => 'wordpress-seo/wp-seo.php', 'source' => 'wporg', 'checked' => false, 'description' => __( 'Optional. Die Textvorlagen enthalten SEO-Titel, Meta-Beschreibungen und Fokus-Keyphrases, die bei aktiver Yoast-Installation übernommen werden.', 'captain-plugins' ) ),
-		'wp-license' => array( 'name' => 'License Captain', 'dir' => 'wp-license', 'file' => 'wp-license/wp-license.php', 'source' => 'custom', 'package' => $custom_source, 'checked' => '' !== $custom_source, 'description' => __( 'Lizenzserver für die Captain-Pro-Produkte. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert.', 'captain-plugins' ) ),
+		'wp-license' => array( 'name' => 'License Captain', 'dir' => 'wp-license', 'file' => 'wp-license/wp-license.php', 'source' => 'custom', 'package' => $custom_source, 'checked' => '' !== $custom_source, 'description' => __( 'Separater WooCommerce-Lizenzserver, mit dem Sie Ihre eigenen WordPress-Produkte lizenzieren. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert.', 'captain-plugins' ) ),
 	);
 }
 
@@ -320,7 +320,7 @@ function captain_plugins_setup_content_card(): void {
 function captain_plugins_setup_product_card(): void {
 	$woocommerce = class_exists( 'WooCommerce' );
 	$license     = class_exists( '\\WPLC\\Catalog\\Catalog' );
-	echo '<section class="card" id="cp-setup-products"><h2>' . esc_html__( '3. WooCommerce-Produkte anlegen', 'captain-plugins' ) . '</h2><p>' . esc_html__( 'Der Assistent kann die neun jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen.', 'captain-plugins' ) . '</p>';
+	echo '<section class="card" id="cp-setup-products"><h2>' . esc_html__( '3. WooCommerce-Produkte anlegen', 'captain-plugins' ) . '</h2><p>' . esc_html__( 'Der Assistent kann die fünfzehn aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; nicht bepreiste Review-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen.', 'captain-plugins' ) . '</p>';
 	echo '<table class="widefat striped"><thead><tr><th>' . esc_html__( 'Lizenzprodukt', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Plan', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Jahrespreis', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Live-Websites', 'captain-plugins' ) . '</th></tr></thead><tbody>';
 	foreach ( captain_plugins_setup_plan_rows() as $row ) {
 		echo '<tr><td>' . esc_html( $row['product_name'] ) . '</td><td>' . esc_html( ucfirst( $row['plan_key'] ) ) . '</td><td>' . esc_html( number_format_i18n( (float) $row['price'], 0 ) . ' € / Jahr' ) . '</td><td>' . absint( $row['limit'] ) . '</td></tr>';
@@ -335,11 +335,11 @@ function captain_plugins_setup_product_card(): void {
 	} elseif ( current_user_can( 'manage_woocommerce' ) ) {
 		echo '<form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '"><input type="hidden" name="action" value="captain_plugins_setup_products">';
 		wp_nonce_field( 'captain_plugins_setup_products' );
-		echo '<p><button class="button button-primary" type="submit">' . esc_html__( 'Neun Produktentwürfe und Lizenzpläne anlegen', 'captain-plugins' ) . '</button></p></form>';
+		echo '<p><button class="button button-primary" type="submit">' . esc_html__( 'Fünfzehn Produktentwürfe und Lizenzpläne anlegen', 'captain-plugins' ) . '</button></p></form>';
 	} else {
 		echo '<p class="notice notice-warning inline"><span>' . esc_html__( 'Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten.', 'captain-plugins' ) . '</span></p>';
 	}
-	echo '<p class="description">' . esc_html__( 'License Captain ist in Captain Pro enthalten und wird nicht als separates Kaufprodukt angelegt. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind.', 'captain-plugins' ) . '</p></section>';
+	echo '<p class="description">' . esc_html__( 'License Captain ist ein separat erhältliches Server-Plugin und nicht Bestandteil von Captain Pro. Aktivieren Sie den Server, wenn Sie die Pro-Jahrespläne dieser Website im License-Captain-Katalog zuordnen möchten. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind.', 'captain-plugins' ) . '</p></section>';
 }
 
 function captain_plugins_setup_page(): void {

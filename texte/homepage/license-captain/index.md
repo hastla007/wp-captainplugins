@@ -7,13 +7,13 @@ focus_keyphrase: WordPress Lizenzmanager Plugin
 
 # Lizenzen und Updates für Ihre WordPress-Plugins verwalten
 
-License Captain Server ist ein separat erhältliches WordPress-Plugin für Softwareteams, Agenturen und Plugin-Hersteller. Nutzen Sie WooCommerce als Lizenzshop und verwalten Sie Lizenzen, Aktivierungen, Laufzeiten, Verlängerungen und Updates auf Ihrer eigenen WordPress-Installation.
+License Captain unterstützt Softwareteams, Agenturen und Plugin-Hersteller beim Verkauf und Betrieb eigener WordPress-Produkte. Nutzen Sie WooCommerce als Lizenzshop und verwalten Sie Aktivierungen, Laufzeiten, Verlängerungen und Updates zentral.
 
-**[License Captain Server kennenlernen](/license-captain/features/)** · **Separat erhältlich**
+**[License Captain entdecken](/license-captain/features/)** · **Eigenständiges Server-Plugin, separat erhältlich**
 
-## Vom Kauf bis zum Update: Server und Client
+## Lizenzserver mit Ihren Produkt-Plugins verbinden
 
-License Captain Server läuft auf der WordPress-Installation des Anbieters und verbindet WooCommerce-Verkäufe mit Lizenzen, Aktivierungen, Berechtigungen und Plugin-Updates. Das zu lizenzierende WordPress-Plugin übernimmt die Client-Seite und fragt den Server über die signierte API ab. Sie können diese Client-Integration direkt in Ihr Plugin nach der API-Spezifikation einbauen oder ein separates Client-Plugin wie License Captain Client verwenden – so binden wir unsere eigenen Plugins an.
+Ordnen Sie WooCommerce-Produkten Lizenzpläne, Website-Limits, Abrechnungsintervalle und Berechtigungen zu. Nach dem Kauf erhält jede erworbene Einheit eine Lizenz. Ihr Produkt-Plugin prüft über eine signierte API, welche Berechtigungen und Updates verfügbar sind. Die Client-Logik können Sie direkt in Ihr Produkt-Plugin integrieren oder über ein separates Client-Plugin bereitstellen.
 
 ## Aktivierungen und Verlängerungen im Blick
 
@@ -23,17 +23,17 @@ Verwalten Sie Live-, Staging- und Entwicklungsinstallationen, verfolgen Sie Stat
 
 Der Kundenbereich zeigt aktive Lizenzen und Websites. Produkt-Changelogs lassen sich direkt in Kundenkonten oder Seiten integrieren.
 
-## Separates Server-Plugin
+## Ihr eigener Lizenzserver für WordPress-Produkte
 
-License Captain Server wird unabhängig von Captain Pro verkauft. Sie erwerben damit die Server-Seite für Ihren eigenen Lizenzshop; Ihr Plugin benötigt zusätzlich eine Client-Integration, die Sie selbst nach der API-Spezifikation entwickeln oder über ein separates Client-Plugin anbinden.
+License Captain ist ein eigenständiges Server-Plugin für Unternehmen, die eigene WordPress-Plugins oder andere Softwareprodukte mit Lizenzen, Website-Aktivierungen und Updates anbieten möchten. Es wird separat erworben und ist nicht Bestandteil von Captain Pro.
 
 [Screenshot-Platzhalter: Lizenzübersicht mit Status, Website-Limit, aktiven Installationen und Updatezugriff zeigen; Schlüssel, E-Mail-Adressen und Domains anonymisieren.]  
 [Diagramm: Kauf, Lizenz, Aktivierung und Update]
 
-[Features](/license-captain/features/) · [Server-/Client-Integration](/license-captain/im-paket/) · [FAQ](/license-captain/faq/)
+[Features](/license-captain/features/) · [Preise und Pläne](/license-captain/preise/) · [FAQ](/license-captain/faq/)
 
 ## Kompatibilität
 
 License Captain benötigt WordPress 6.5+, PHP 7.4+ und aktives WooCommerce ab Version 8.9. Der Betrieb setzt eine MySQL- oder MariaDB-Installation mit einem beschreibbaren Primärserver und zuverlässigem Cron voraus. HPOS und klassische Bestellspeicherung werden unterstützt. Für automatische Verlängerungen ist das offizielle WooCommerce-Stripe-Gateway erforderlich.
 
-License Captain Server ist separat erhältlich. [Kompatibilitätsmatrix und geprüfte Plattformstände](/kompatibilitaet/).
+[Kompatibilitätsmatrix und geprüfte Plattformstände](/kompatibilitaet/).

@@ -134,7 +134,7 @@ Die vollständige URL- und Inhaltsstruktur steht im [Website-Umsetzungskonzept](
 - **Produktübersicht:** Auswahl nach Geschäftsaufgabe, Produktkarten und Vergleichseinstieg.
 - **Produktdetail:** Produkt-Hero, Workflow, wichtigste Features, UI-Bild, Integrationen/Voraussetzungen, Free-/Pro-Verweis, FAQ-Auszug, CTA.
 - **Features:** vollständige Funktionsgruppen mit internen Sprunglinks und UI-Bildbriefings.
-- **Pro-Seiten:** Upgrade-Grund, Kern-/Pro-Abgrenzung und Preis-/Plan-Karten. License Captain Server als separates Produkt mit eigenem Kaufpfad gestalten; niemals als Captain-Pro-Inklusivleistung darstellen.
+- **Pro-Seiten:** Upgrade-Grund, Kern-/Pro-Abgrenzung, Preis-/Plan-Karten. License Captain erhält eine eigene Produkt- und Preisseite als separat erhältlicher Server; Server und Client werden als getrennte Integrationsbausteine erklärt.
 - **Preise/Vergleich:** zugängliche Tarifkarten mit Website-Limits, Jahrespreis, Supportumfang und klarer Planwahl.
 - **Dokumentation/Support/FAQ:** ruhige Lesefläche, Inhaltsnavigation, Links zu Installation, Kompatibilität und Kontakt.
 - **Lösung/Use Case:** branchenspezifischer Ablauf und die tatsächlich passenden Produkte.
@@ -226,8 +226,8 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 ### C. Inhaltsvorlagen aufsetzen
 
 - [ ] Startseite und Produktübersicht aus den bestehenden Markdown-Texten übertragen.
-- [ ] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain und License Captain anwenden.
-- [ ] Unterseiten Features, Pro/Im-Paket und FAQ in einheitliche Templates überführen.
+- [ ] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain anwenden.
+- [ ] Unterseiten Features, Pro-/Preise und FAQ in einheitliche Templates überführen.
 - [ ] Preis-/Vergleichsansicht mit zentralem Tarifinhalt und mobilen Alternativen einrichten.
 - [ ] Dokumentation, Support, Kompatibilität, Integrationen, Bootsschulen-Lösung und Ratgeber-Templates übertragen.
 - [ ] Alle Platzhalter im CMS als interne redaktionelle Aufgaben markieren; keine Platzhalterseiten öffentlich indexieren.
@@ -290,7 +290,11 @@ Die folgenden Bilder übersetzen das Konzept in mögliche Seitenansichten. Sie s
 
 ### Produktübersicht – Desktop
 
-![Mockup der Produktübersicht mit vier Captain-Plugins](mockups/products-overview-desktop.jpg)
+![Aktualisiertes Produktübersichts-Mockup mit allen sieben Website-Produkten](mockups/products-overview-all-plugins.jpg)
+
+Das aktualisierte Mockup zeigt Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain. Es ist eine visuelle Konzeptvorschau; Produkttexte, Download- und Checkout-Ziele werden aus den final freigegebenen Website-Inhalten übernommen.
+
+![Frühere Version des Produktübersichts-Mockups](mockups/products-overview-desktop.jpg)
 
 ### Voucher Captain – Desktop
 
@@ -353,7 +357,7 @@ Vor dem Theme-Scaffold wird eine konkrete Testmatrix aus den aktiven Repo-Mindes
 
 1. Block-Checkout und Classic-Checkout mit den vom Shop tatsächlich verwendeten Zahlungs- und Lizenzabläufen.
 2. Produktwahl → Warenkorb → Checkout → Bestellbestätigung → Konto → Lizenzaktivierung → Pro-Update.
-3. Öffentliche Frontendansichten der vier Produktfamilien mit dem Theme, inklusive mobil und bei leerem/Fehlerzustand.
+3. Öffentliche Frontendansichten der sieben Website-Produkte mit dem Theme, inklusive mobil und bei leerem/Fehlerzustand.
 4. Yoast-Breadcrumbs/Metadaten sowie Sprachumschaltung ohne doppelte Ausgabe.
 5. Site-Editor-Änderungen vor und nach Theme-Update; Inhalte bleiben erhalten und Updates setzen keine redaktionellen Anpassungen zurück.
 6. Installierbares Theme-ZIP, Theme-Versionierung, Änderungsprotokoll, Staging-Abnahme und Rollbackweg.

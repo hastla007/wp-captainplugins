@@ -8,10 +8,10 @@ Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/capt
 
 ## Einrichten
 
-Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setup-Assistenten. Er bietet WooCommerce, Yoast SEO und License Captain zur Installation/Aktivierung an, importiert ausgewählte Inhaltsgruppen und kann die neun vorhandenen Captain-Pro-Jahrespläne als WooCommerce-Entwürfe anlegen.
+Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setup-Assistenten. Er bietet WooCommerce, Yoast SEO und License Captain zur Installation/Aktivierung an, importiert ausgewählte Inhaltsgruppen und kann die fünfzehn vorhandenen Captain-Pro-Jahrespläne (einschließlich Form und Workflow Captain Pro) als WooCommerce-Entwürfe anlegen. Review Captain Pro erhält seine Produktentwürfe, sobald die Preisbeträge im Produktkatalog feststehen.
 
 - WooCommerce und Yoast SEO werden über wordpress.org bezogen. WooCommerce ist optional installierbar, wird aber für Shop und Produktentwürfe benötigt; Yoast bleibt optional.
-- License Captain Server ist ein separat erhältliches Plugin für Betreiber, die selbst einen WooCommerce-Lizenzshop führen; es ist kein Bestandteil der Captain-Pro-Angebote. Der Assistent installiert es nur, wenn der Website-Betreiber es separat erworben und bereitgestellt hat. Das Theme verteilt keine Plugin-ZIP. Für den Assistenten kann eine vertrauenswürdige HTTPS-ZIP samt SHA-256-Prüfsumme über `wp-config.php` konfiguriert werden:
+- License Captain ist ein separat erhältliches Server-Plugin für Anbieter eigener WordPress-Produkte und nicht Bestandteil der Captain-Pro-Angebote. Die Client-Anbindung wird separat umgesetzt: direkt im Produkt-Plugin nach Schnittstellenspezifikation oder über ein eigenständiges Client-Plugin. Das Theme verteilt keine Plugin-ZIP. Für den Assistenten kann eine vertrauenswürdige HTTPS-ZIP samt SHA-256-Prüfsumme über `wp-config.php` konfiguriert werden:
 
   ```php
   define( 'CAPTAIN_LICENSE_PLUGIN_ZIP', 'https://downloads.example.com/wp-license.zip' );
@@ -26,7 +26,7 @@ Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setu
 - FAQ-Seiten werden zu nativen aufklappbaren Details-Blöcken. Preisübersichten bekommen eine eigene Tabellenformatierung; Kopfzellen und Tastatur-Scrollbereich sind zugänglich ausgezeichnet.
 - Bereits vorhandene Seiten werden nicht überschrieben. Das Theme aktualisiert nur eigene, seit dem Import unveränderte Seiten. SEO-Felder werden übernommen, wenn sie leer oder weiterhin unverändert sind.
 - Vollständige Seiten können veröffentlicht werden. Seiten mit Download-, Checkout-, Support-, Screenshot- oder Betreiber-Platzhaltern werden als Entwurf angelegt. Bestehende statische Startseiten bleiben unangetastet.
-- Der Produkt-Schritt legt virtuelle, verborgene **Entwürfe** für die drei Captain-Pro-Produkte und die neun Jahrespläne an. Er verändert keine bestehenden SKUs, Preise, Steuer- oder Zahlungseinstellungen und trägt keine Download-Dateien ein. WooCommerce muss auf EUR stehen; License Captain muss aktiv sein, damit die Pläne zugeordnet werden.
+- Der Produkt-Schritt legt virtuelle, verborgene **Entwürfe** für Voucher, Pass, Affiliate, Form und Workflow Captain Pro mit fünfzehn Jahresplänen an. Er verändert keine bestehenden SKUs, Preise, Steuer- oder Zahlungseinstellungen und trägt keine Download-Dateien ein. WooCommerce muss auf EUR stehen; der separat erhältliche License-Captain-Server muss aktiv sein, damit die Pläne im Lizenzkatalog zugeordnet werden.
 - Brotkrumen zeigen auf Unterseiten die Orientierung im Seitenbaum. Offene Download-/Checkout-Ziele sind in den importierten Texten als Platzhalter sichtbar und führen nicht zu einem funktionslosen Link.
 - Ein Sprunglink führt per Tastatur direkt zum Hauptinhalt. Fokusindikatoren sind deutlich sichtbar; die finalen Kontrast- und Screenreader-Prüfungen brauchen weiterhin eine echte WordPress-Installation.
 - Breite Tabellen sind auf schmalen Ansichten horizontal scrollbar und für Tastaturbedienung fokussierbar; Kopfzellen sind als Spaltenüberschriften markiert.
@@ -37,13 +37,15 @@ Für Produkt-Startseiten die Vorlage **Produktseite**, für Preise und Vergleich
 
 Die vollständige Reihenfolge von der Bestandsaufnahme bis Betrieb und Release steht in [ROADMAP.md](../ROADMAP.md). Designvorgaben stehen in [../design/konzept.md](../design/konzept.md).
 
-Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/mockups/homepage-desktop.jpg), [Produktübersichts-](../design/mockups/products-overview-desktop.jpg) und [Preisplan-Mockups](../design/mockups/captain-pro-pricing-desktop.jpg). Die Mockups dienen als Gestaltungsreferenz; ihre Produktansichten sind keine echten Screenshots.
+Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/mockups/homepage-desktop.jpg), [Produktübersichts-](../design/mockups/products-overview-desktop.jpg), [Voucher-Captain-](../design/mockups/voucher-captain-desktop.jpg) und [Preisplan-Mockups](../design/mockups/captain-pro-pricing-desktop.jpg). Die Startseite nutzt eine mitgelieferte Kapitänsillustration als dekoratives Motiv. Die Mockups dienen als Gestaltungsreferenz; ihre Produktansichten sind keine echten Screenshots.
 
 ## Theme-Umfang
 
 - Block-Templates und Template Parts, bearbeitbar im Site Editor.
 - Patterns für Produkt-Heros, Features, Abläufe, Free-/Pro-Vergleich, Preise, Screenshot-Briefings, Kompatibilität, FAQ, Ressourcen und CTAs.
 - Responsive Basisstile, globale Design-Tokens und sichtbare Tastaturfokusse.
+- Markenorientierter Startseiten-Hero mit Captain-Illustration, zweispaltigem Desktop-Aufbau, CTA-Styling und mobiler Umordnung.
+- Sieben Produktkarten auf der Startseite sowie verfeinerte Produkt-, Preis-, FAQ- und Medienplatzhalter-Komponenten.
 - Warenkorb- und Checkout-Templates, die den Inhalt der dafür angelegten WordPress-Seiten ausgeben.
 - Mein-Konto-Template, das die von WooCommerce bereitgestellten Kontoblöcke und Shortcodes im Seiteninhalt belässt.
 

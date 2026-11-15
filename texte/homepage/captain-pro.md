@@ -1,29 +1,31 @@
 ---
 url: /captain-pro/
 seo_title: Captain Pro – Premium-Erweiterungen für WordPress-Plugins
-meta_description: Erweitern Sie Voucher Captain, Pass Captain und Affiliate Captain mit Pro-Funktionen. Vergleichen Sie die Jahrespläne für 1, 5 oder 25 Websites.
+meta_description: Erweitern Sie Voucher, Pass, Affiliate, Review, Form und Workflow Captain mit professionellen Pro-Funktionen und Lizenzplänen für 1, 5 oder 25 Websites.
 focus_keyphrase: WordPress Plugin Pro Erweiterung
 ---
 
 # Wenn Ihr Betrieb mehr braucht: Captain Pro
 
-Starten Sie mit dem kostenlosen Kern-Plugin. Ergänzen Sie die Funktionen, die Ihr Unternehmen benötigt – vom Gutscheinversand in großer Menge bis zur professionellen Veranstaltungsabrechnung oder automatisierten Partnerintegration.
+Starten Sie mit dem kostenlosen Kern-Plugin. Ergänzen Sie die Funktionen, die Ihr Unternehmen benötigt – von Gutschein- und Eventabläufen über Form-Workflows bis zu Bewertungsanfragen und Partnerintegrationen.
 
-## Drei Erweiterungen. Ein passender Plan.
+## Sechs Erweiterungen. Ein passender Plan.
 
 - **Voucher Captain Pro:** CSV-Massenbestellungen, Wallet-Pässe und SMS-Zustellung für Unternehmen mit hohem Gutscheinaufkommen.
 - **Pass Captain Pro:** E-Rechnungen, Kartenterminal, White Label, virtueller Warteraum und schreibende API für professionelle Event- und Buchungsabläufe.
 - **Affiliate Captain Pro:** Webhooks, erweiterte REST-API, White-Label-Partnerportal und automatische PayPal-Auszahlungen für wachsende Partnerprogramme.
+- **Review Captain Pro:** Plattformverbindungen, Sync, faire Bewertungsanfragen, Projekt-Connector-Management, Social-Proof-Widgets und Auswertungen.
+- **Form Captain Pro:** mehrstufige Formulare, sichere Uploads, verschachtelte Regeln, Webhooks, Integrationsprotokoll und PDF-Ausgaben.
+- **Workflow Captain Pro:** Captain-Suite-Provider, signierte Webhooks, erweiterte Ablauflogik, Queue-Wiederholungen und nachvollziehbare Run-Protokolle.
 
 Jeder Plan umfasst die Pro-Funktionen des jeweiligen Add-ons. Sie wählen nach der Zahl Ihrer Live-Websites.
 
 [Voucher Captain Pro ansehen](/voucher-captain/pro/)  
 [Pass Captain Pro ansehen](/pass-captain/pro/)  
 [Affiliate Captain Pro ansehen](/affiliate-captain/pro/)
-
-## License Captain Server ist ein separates Produkt
-
-License Captain Server ist nicht Bestandteil von Captain Pro. Das Server-Plugin wird separat für Anbieter eigener WordPress-Plugins angeboten. Die Captain-Pro-Pläne umfassen die Pro-Funktionen des jeweils gewählten Captain-Add-ons.
+[Review Captain Pro ansehen](/review-captain/pro/)
+[Form Captain Pro ansehen](/form-captain/pro/)
+[Workflow Captain Pro ansehen](/workflow-captain/pro/)
 
 ## Welcher Plan passt?
 

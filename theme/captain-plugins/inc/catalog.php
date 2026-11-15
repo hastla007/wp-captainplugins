@@ -10,20 +10,23 @@ function captain_plugins_setup_plan_rows(): array {
 		'voucher-captain-pro'   => array( 'name' => 'Voucher Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 129, 'business' => 229, 'agency' => 399 ) ),
 		'pass-captain-pro'      => array( 'name' => 'Pass Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 169, 'business' => 299, 'agency' => 549 ) ),
 		'affiliate-captain-pro' => array( 'name' => 'Affiliate Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 229, 'business' => 399, 'agency' => 699 ) ),
+		'form-captain-pro'      => array( 'name' => 'Form Captain Pro', 'support' => 'standard', 'limits' => array( 'solo' => 1, 'studio' => 5, 'agency' => 25 ), 'prices' => array( 'solo' => 49, 'studio' => 99, 'agency' => 199 ) ),
+		'workflow-captain-pro'  => array( 'name' => 'Workflow Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 129, 'business' => 229, 'agency' => 399 ) ),
 	);
 	$limits = array( 'single' => 1, 'business' => 5, 'agency' => 25 );
 	$rows   = array();
 	foreach ( $products as $product_key => $product ) {
+		$product_limits = array_merge( $limits, (array) ( $product['limits'] ?? array() ) );
 		foreach ( $product['prices'] as $plan_key => $price ) {
 			$rows[] = array(
 				'product_key' => $product_key,
 				'product_name' => $product['name'],
 				'plan_key' => $plan_key,
 				'price' => (string) $price,
-				'limit' => $limits[ $plan_key ],
+				'limit' => $product_limits[ $plan_key ],
 				'support' => 'agency' === $plan_key ? 'priority' : $product['support'],
 				'sku' => 'cp-' . str_replace( '-pro', '', $product_key ) . '-' . $plan_key,
-				'title' => sprintf( '%1$s – %2$s (%3$d %4$s, jährlich)', $product['name'], ucfirst( $plan_key ), $limits[ $plan_key ], 1 === $limits[ $plan_key ] ? 'Website' : 'Websites' ),
+				'title' => sprintf( '%1$s – %2$s (%3$d %4$s, jährlich)', $product['name'], ucfirst( $plan_key ), $product_limits[ $plan_key ], 1 === $product_limits[ $plan_key ] ? 'Website' : 'Websites' ),
 			);
 		}
 	}
@@ -68,7 +71,7 @@ function captain_plugins_setup_license_mapping( WC_Product $product, array $row 
 }
 
 /**
- * Create nine virtual WooCommerce product drafts with corresponding annual license plans.
+ * Create fifteen virtual WooCommerce product drafts with corresponding annual license plans.
  * Existing SKUs are never repurposed or repriced.
  *
  * @return array{created:int,mapped:int,existing:int,skipped:int,errors:int,messages:list<string>}
@@ -108,7 +111,7 @@ function captain_plugins_setup_create_products(): array {
 			$product->set_virtual( true );
 			$product->set_downloadable( false );
 			$product->set_catalog_visibility( 'hidden' );
-			$product->set_short_description( sprintf( __( 'Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. License Captain verwaltet Lizenz und Updates.', 'captain-plugins' ), $row['product_name'], $row['limit'], 'priority' === $row['support'] ? __( 'Priority', 'captain-plugins' ) : __( 'Standard', 'captain-plugins' ) ) );
+			$product->set_short_description( sprintf( __( 'Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit.', 'captain-plugins' ), $row['product_name'], $row['limit'], 'priority' === $row['support'] ? __( 'Priority', 'captain-plugins' ) : __( 'Standard', 'captain-plugins' ) ) );
 			$product_id = $product->save();
 			if ( ! $product_id ) {
 				++$result['errors'];
