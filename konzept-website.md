@@ -7,7 +7,7 @@
 
 Das zentrale Redaktionskonzept liegt in [`texte/homepage/konzept.md`](texte/homepage/konzept.md). Es legt Positionierung, Produktumfang, Zielgruppen, Preise, Seitenintentionen und Yoast-Workflow fest. Die deutschsprachigen Entwürfe sind unter [`texte/homepage/README.md`](texte/homepage/README.md) verzeichnet: Startseite, Produktübersicht, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Support, Dokumentation, Bootsschulen-Lösung, Produktseiten, Features, Pro- bzw. Paket-Seiten, FAQs und Ratgeberartikel. Die bestehenden Entwürfe enthalten bereits beschriebene Platzhalter für Produkt-Screenshots, Demos und Kundenbeispiele.
 
-Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher Captain Pro, Pass Captain Pro und Affiliate Captain Pro sind kostenpflichtig; License Captain wird ohne Aufpreis in Captain-Pro-Angeboten mitgeliefert. Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen.
+Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher Captain Pro, Pass Captain Pro und Affiliate Captain Pro sind kostenpflichtig. License Captain Server ist ein separat erhältliches Produkt für Plugin-Anbieter und nicht in Captain Pro enthalten. Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen.
 
 ### Bildmaterial im Repository
 
@@ -116,7 +116,7 @@ Footer und Breadcrumbs ergänzen die globale Orientierung. Für jede Unterseite 
 2. **Vier Aufgaben-Karten:** Gutscheine, Veranstaltungen/Buchungen, Partnerprogramm, Plugin-Lizenzen. Jede Karte führt auf die richtige Produktseite.
 3. **Auswahlhilfe:** „Was möchten Sie organisieren?“ als kurze, direkt verlinkte Auswahl; kein Formularzwang.
 4. **Produktprinzip:** WordPress-zentrierter Ablauf, WooCommerce-Abhängigkeiten korrekt gekennzeichnet, dokumentierte Integrationen.
-5. **Free und Pro:** kostenlose Kern-Plugins und Pro-Erweiterungen klar trennen; License Captain als enthaltenes Element zeigen.
+5. **Free und Pro:** kostenlose Kern-Plugins und Pro-Erweiterungen klar trennen. License Captain Server als separates Angebot darstellen, nicht als Bestandteil von Captain Pro.
 6. **Belege:** freigegebene UI-Bilder oder Platzhalter. Bis echte Referenzen existieren keine leeren Testimonial-Karten veröffentlichen.
 7. **Häufige Fragen und Abschluss-CTA.**
 
@@ -137,13 +137,13 @@ Einheitliche Dramaturgie, produktspezifische Inhalte:
 7. Free-/Pro-Abgrenzung und Preisanker.
 8. kurze FAQ, Dokumentationslink und Abschluss-CTA.
 
-Die Features-Seite führt alle Fähigkeiten nach Arbeitsablauf gruppiert auf. Die Pro-Seite zeigt zuerst, für wen sich Pro eignet, dann die zusätzlichen Pro-Funktionen, Pläne und CTA. Die FAQ-Seite beantwortet konkrete Produktfragen und verlinkt weiterführende Antworten. License Captain erhält auf „Im Paket“ die Erklärung, dass es in Captain-Pro-Angeboten enthalten ist; es wird keine eigene kostenpflichtige Lizenz erfunden.
+Die Features-Seite führt alle Fähigkeiten nach Arbeitsablauf gruppiert auf. Die Pro-Seite zeigt zuerst, für wen sich Pro eignet, dann die zusätzlichen Pro-Funktionen, Pläne und CTA. Die FAQ-Seite beantwortet konkrete Produktfragen und verlinkt weiterführende Antworten. Die License-Captain-Seite erklärt das separat erhältliche Server-Plugin und die Server-/Client-Integration. Die Pro-Seiten behaupten keine Inklusivleistung von License Captain.
 
 ### Preise und Vergleich
 
 - Drei klar vergleichbare Tarifstufen mit den vorläufigen Jahrespreisen aus `texte/homepage/preise.md`: Voucher Captain Pro 129/229/399 €, Pass Captain Pro 169/299/549 €, Affiliate Captain Pro 229/399/699 € für Single/Business/Agency.
 - Website-Limits (1/5/25 Live-Websites) direkt am Tarifnamen und Preis anzeigen.
-- Deutlich erklären: Kern-Plugins kostenlos; jedes Pro-Add-on enthält dessen vollen Pro-Funktionsumfang; License Captain ohne Aufpreis enthalten.
+- Deutlich erklären: Kern-Plugins kostenlos; jedes Pro-Add-on enthält dessen vollen Pro-Funktionsumfang. License Captain Server separat bepreisen und ausdrücklich von Captain Pro abgrenzen.
 - Standard- bzw. Priority-Support entsprechend der vorhandenen Tariftexte beschriften. Keine Antwortzeit versprechen, solange nicht festgelegt.
 - Preise, Steuerbehandlung, Verlängerung und Checkout-URLs vor Veröffentlichung mit dem Shop synchronisieren. Solange offen, nicht durch Platzhalterpreise im Live-Shop publizieren.
 - Mobil: gestapelte Tarifkarten oder zugänglicher Produktselektor; niemals eine unbeschriftete, abgeschnittene Vergleichstabelle erzwingen.
@@ -163,7 +163,7 @@ Jede Seite hat eine primäre Handlung, die zum Informationsstand und tatsächlic
 | Kostenlose Kern-Plugin-Seite | „Kostenlos herunterladen“ (erst mit echter Download-URL) | „Dokumentation ansehen“ |
 | Produkt-Features | „Kostenlos starten“ oder „Pro-Funktionen ansehen“ | „Kompatibilität prüfen“ |
 | Pro-Seite / Preise | „Plan auswählen“ (mit Checkout-Link je Tarif) | „Alle Pläne vergleichen“ |
-| License Captain | „Im Captain-Pro-Paket enthalten“ | „Funktionsumfang ansehen“ |
+| License Captain | „Server-Plugin ansehen“ | „Integration verstehen“ |
 | Kompatibilität / Integrationen | „Installation ansehen“ | „Passendes Produkt entdecken“ |
 | Dokumentation / Support | „Support kontaktieren“ | „Zu den häufigen Fragen“ |
 | Ratgeber | kontextbezogenes Produkt entdecken | verwandten Ratgeber lesen |
