@@ -11,7 +11,7 @@ Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/capt
 Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setup-Assistenten. Er bietet WooCommerce, Yoast SEO und License Captain zur Installation/Aktivierung an, importiert ausgewählte Inhaltsgruppen und kann die neun vorhandenen Captain-Pro-Jahrespläne als WooCommerce-Entwürfe anlegen.
 
 - WooCommerce und Yoast SEO werden über wordpress.org bezogen. WooCommerce ist optional installierbar, wird aber für Shop und Produktentwürfe benötigt; Yoast bleibt optional.
-- License Captain ist die Lizenzbasis und in den Captain-Pro-Angeboten enthalten. Das Theme verteilt keine Plugin-ZIP. Für den Assistenten kann eine vertrauenswürdige HTTPS-ZIP samt SHA-256-Prüfsumme über `wp-config.php` konfiguriert werden:
+- License Captain Server ist ein separat erhältliches Plugin für Betreiber, die selbst einen WooCommerce-Lizenzshop führen; es ist kein Bestandteil der Captain-Pro-Angebote. Der Assistent installiert es nur, wenn der Website-Betreiber es separat erworben und bereitgestellt hat. Das Theme verteilt keine Plugin-ZIP. Für den Assistenten kann eine vertrauenswürdige HTTPS-ZIP samt SHA-256-Prüfsumme über `wp-config.php` konfiguriert werden:
 
   ```php
   define( 'CAPTAIN_LICENSE_PLUGIN_ZIP', 'https://downloads.example.com/wp-license.zip' );
