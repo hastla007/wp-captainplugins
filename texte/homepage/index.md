@@ -32,11 +32,11 @@ Gewinnen Sie Partner, ordnen Sie Empfehlungen nachvollziehbar zu und verwalten S
 ### Lizenzen und Updates verkaufen
 Verwandeln Sie Ihren WooCommerce-Shop in die zentrale Stelle für Lizenzverkauf, Aktivierungen, Verlängerungen und Plugin-Updates.
 
-[License Captain ansehen](/license-captain/) · **ohne Aufpreis bei Captain Pro enthalten**
+[License Captain Server ansehen](/license-captain/) · **separat erhältlich**
 
 ## Ein klarer Weg vom Kern bis zu Pro
 
-Die Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweitern Sie Voucher Captain, Pass Captain oder Affiliate Captain mit Captain Pro. Die Pro-Pläne unterscheiden sich nach der Zahl der Live-Websites. License Captain ist im Paket enthalten.
+Die Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweitern Sie Voucher Captain, Pass Captain oder Affiliate Captain mit Captain Pro. Die Pro-Pläne unterscheiden sich nach der Zahl der Live-Websites. License Captain Server ist ein separates Produkt für Anbieter eigener WordPress-Plugins.
 
 **[Captain Pro vergleichen](/captain-pro/)** · **[Preise ansehen](/preise/)**
 
