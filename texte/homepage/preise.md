@@ -7,7 +7,7 @@ focus_keyphrase: WordPress Plugin Preise
 
 # Der passende Captain-Pro-Plan für Ihre Websites
 
-Die kostenlosen Kern-Plugins können Sie unabhängig von Captain Pro einsetzen. Wählen Sie eine Pro-Erweiterung und den Plan nach der Zahl Ihrer Live-Websites. License Captain ist ohne Aufpreis enthalten.
+Die kostenlosen Kern-Plugins können Sie unabhängig von Captain Pro einsetzen. Wählen Sie eine Pro-Erweiterung und den Plan nach der Zahl Ihrer Live-Websites. License Captain Server ist ein separates Produkt und nicht in diesen Pro-Plänen enthalten.
 
 ## Jahrespläne
 
@@ -22,11 +22,11 @@ Alle Pläne enthalten den vollständigen Pro-Funktionsumfang des jeweiligen Add-
 ## Was ist enthalten?
 
 - Das passende Captain-Pro-Add-on mit allen dafür vorgesehenen Pro-Funktionen.
-- Updates und Lizenzverwaltung über License Captain.
+
 - Nutzung auf der im Plan angegebenen Zahl an Live-Websites.
 - Support gemäß Tarif.
 
-Die kostenlosen Kern-Plugins bleiben kostenlos. License Captain wird nicht separat berechnet.
+Die kostenlosen Kern-Plugins bleiben kostenlos. License Captain Server wird separat angeboten und muss unabhängig von Captain Pro erworben werden.
 
 [Voucher-Pläne auswählen](/voucher-captain/pro/)  
 [Pass-Pläne auswählen](/pass-captain/pro/)  
