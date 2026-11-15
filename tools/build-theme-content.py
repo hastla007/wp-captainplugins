@@ -83,6 +83,26 @@ def is_table_separator(line: str) -> bool:
     return bool(re.fullmatch(r"\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*", line))
 
 
+def cta_buttons(markdown: str) -> str | None:
+    pattern = re.compile(r"(?:\*\*)?\[([^\]]+)\]\(([^)]+)\)(?:\*\*)?")
+    matches = list(pattern.finditer(markdown))
+    if not matches:
+        return None
+    residue = pattern.sub("", markdown)
+    if re.sub(r"[\s·|•]+", "", residue):
+        return None
+    buttons: list[str] = []
+    for index, match in enumerate(matches):
+        label, url = match.group(1).strip(), match.group(2).strip()
+        if re.fullmatch(r"\[[^\]]+\]", url) or not re.match(r"^(https?://|mailto:|tel:|/|#)", url, re.I):
+            return None
+        style = " is-style-outline" if index else ""
+        button_class = "wp-block-button" + style
+        attrs = {"className": "is-style-outline"} if index else None
+        buttons.append(block("button", f'<div class="{button_class}"><a class="wp-block-button__link wp-element-button" href="{html.escape(url, quote=True)}">{inline(label)}</a></div>', attrs))
+    return block("buttons", '<div class="wp-block-buttons cp-actions">' + "\n".join(buttons) + "</div>", {"className": "cp-actions"})
+
+
 def markdown_blocks(markdown: str) -> str:
     lines = markdown.splitlines()
     out: list[str] = []
@@ -91,7 +111,24 @@ def markdown_blocks(markdown: str) -> str:
 
     def flush_paragraph() -> None:
         if paragraph:
-            out.append(block("paragraph", "<p>" + inline(" ".join(x.strip() for x in paragraph)) + "</p>"))
+            text = " ".join(x.strip() for x in paragraph)
+            ctas = cta_buttons(text)
+            if ctas:
+                out.append(ctas)
+                paragraph.clear()
+                return
+            editorial_pattern = re.compile(r"\[(Screenshot-Platzhalter|Demo|Kundenbeispiel):\s*([^\]]+)\]", re.I)
+            editorial = list(editorial_pattern.finditer(text))
+            if editorial and not editorial_pattern.sub("", text).strip():
+                children = block("heading", '<h3 class="wp-block-heading">Medien für diese Seite</h3>', {"level": 3})
+                for item in editorial:
+                    label = "Screenshot" if item.group(1).lower().startswith("screenshot") else item.group(1).capitalize()
+                    brief = inline(item.group(2))
+                    children += "\n\n" + block("paragraph", f'<p class="cp-media-placeholder__brief"><strong>{html.escape(label)}:</strong> {brief}</p>')
+                children += "\n\n" + block("paragraph", '<p class="cp-media-placeholder__note">Redaktioneller Platzhalter: vor Veröffentlichung durch freigegebene Medien bzw. einen belegten Kundenfall ersetzen.</p>')
+                out.append(block("group", f'<div class="wp-block-group cp-media-placeholder">{children}</div>', {"className": "cp-media-placeholder", "layout": {"type": "constrained"}}))
+            else:
+                out.append(block("paragraph", "<p>" + inline(text) + "</p>"))
             paragraph.clear()
 
     while i < len(lines):
@@ -112,7 +149,7 @@ def markdown_blocks(markdown: str) -> str:
             rows = []
             while i < len(lines) and lines[i].lstrip().startswith("|"):
                 rows.append(split_table_row(lines[i])); i += 1
-            head_html = "<thead><tr>" + "".join("<th>" + inline(c) + "</th>" for c in header) + "</tr></thead>"
+            head_html = "<thead><tr>" + "".join('<th scope="col">' + inline(c) + "</th>" for c in header) + "</tr></thead>"
             body_html = "<tbody>" + "".join("<tr>" + "".join("<td>" + inline(c) + "</td>" for c in row) + "</tr>" for row in rows) + "</tbody>"
             out.append(block("table", "<figure class=\"wp-block-table\"><table>" + head_html + body_html + "</table></figure>"))
             continue
@@ -144,7 +181,38 @@ def markdown_blocks(markdown: str) -> str:
         paragraph.append(line)
         i += 1
     flush_paragraph()
-    return "\n\n".join(out)
+    # Turn the Markdown hierarchy into wide section bands. The home intro becomes
+    # the designed hero; other page intros and H2 sections get consistent spacing.
+    groups: list[tuple[str, list[str]]] = []
+    current: list[str] = []
+    for item in out:
+        heading = re.match(r'<!-- wp:heading \{"level":(\d+)', item)
+        if heading and int(heading.group(1)) == 2 and current:
+            has_h1 = any(re.match(r'<!-- wp:heading \{"level":1', child) for child in current)
+            kind = "hero" if has_h1 else ("intro" if not groups else "section")
+            groups.append((kind, current))
+            current = []
+        current.append(item)
+    if current:
+        has_h1 = any(re.match(r'<!-- wp:heading \{"level":1', item) for item in current)
+        groups.append(("hero" if has_h1 else ("intro" if not groups else "section"), current))
+
+    composed: list[str] = []
+    section_index = 0
+    for kind, children in groups:
+        if kind == "hero":
+            class_name = "cp-hero"
+        elif kind == "intro":
+            class_name = "cp-content-intro"
+        else:
+            class_name = "cp-content-section"
+            if section_index % 2 == 1:
+                class_name += " cp-content-section--soft"
+            section_index += 1
+        inner = "\n\n".join(children)
+        markup = f'<div class="wp-block-group alignfull {class_name}">{inner}</div>'
+        composed.append(block("group", markup, {"align": "full", "className": class_name, "layout": {"type": "constrained"}}))
+    return "\n\n".join(composed)
 
 
 def title_from_path(path: str) -> str:
@@ -208,6 +276,9 @@ def build() -> None:
             "seo_title": meta.get("seo_title", ""),
             "meta_description": meta.get("meta_description", ""),
             "focus_keyphrase": meta.get("focus_keyphrase", ""),
+            "social_title": meta.get("social_title", ""),
+            "social_description": meta.get("social_description", ""),
+            "social_image": meta.get("social_image", ""),
             "has_placeholders": placeholder_present(source := file.read_text(encoding="utf-8")),
             "source_hash": hashlib.sha256(source.encode("utf-8")).hexdigest(),
             "source_file": file.relative_to(ROOT).as_posix(),

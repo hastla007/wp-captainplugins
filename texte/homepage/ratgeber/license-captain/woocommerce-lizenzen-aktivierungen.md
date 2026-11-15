@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/license-captain/woocommerce-lizenzen-aktivierungen/
-seo_title: WordPress-Plugin-Lizenzen und Aktivierungen mit WooCommerce verwalten
+seo_title: WooCommerce-Lizenzverwaltung | License Captain
 meta_description: Richten Sie WooCommerce-Lizenzprodukte ein und verwalten Sie Website-Limits und Aktivierungen mit License Captain.
 focus_keyphrase: WooCommerce Lizenzverwaltung
 ---

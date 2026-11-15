@@ -1,6 +1,6 @@
 ---
 url: /license-captain/features/
-seo_title: License Captain Funktionen – Lizenzverkauf und Plugin-Updates
+seo_title: License Captain: Lizenzverkauf und Updates
 meta_description: Verwalten Sie WooCommerce-Lizenzen, Website-Aktivierungen, Laufzeiten, Entitlements, Kundenübersichten und Plugin-Updates.
 focus_keyphrase: WordPress Lizenzverwaltung
 ---

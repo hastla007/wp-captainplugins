@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/voucher-captain/gutscheine-gestalten-versenden/
-seo_title: WooCommerce-Gutscheine gestalten und zum Wunschtermin versenden
+seo_title: WooCommerce-Gutscheine gestalten und versenden
 meta_description: Gestalten Sie personalisierte PDF-Gutscheine für WooCommerce und planen Sie den Versand an Käufer oder Empfänger.
 focus_keyphrase: WooCommerce Gutschein PDF gestalten
 ---

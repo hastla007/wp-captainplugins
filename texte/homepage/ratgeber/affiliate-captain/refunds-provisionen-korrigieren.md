@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/affiliate-captain/refunds-provisionen-korrigieren/
-seo_title: Rückerstattungen und Affiliate-Provisionen nachvollziehbar korrigieren
+seo_title: Affiliate-Provisionen bei Rückerstattungen korrigieren
 meta_description: Erfahren Sie, wie positionsgenaue Refund-Korrekturen Ihr Partner-Ledger bei Teil- und Vollerstattungen aktuell halten.
 focus_keyphrase: Affiliate Provision Rückerstattung
 ---

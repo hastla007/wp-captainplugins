@@ -9,6 +9,7 @@
 	--cp-border: #d7e0e5;
 	--cp-radius: 0.65rem;
 	--cp-shadow: 0 0.8rem 2rem rgb(23 43 58 / 8%);
+	--cp-focus: #075b82;
 }
 
 html { scroll-behavior: smooth; }
@@ -16,9 +17,12 @@ body { color: var(--cp-ink); }
 a { text-underline-offset: 0.18em; text-decoration-thickness: 0.08em; }
 a:hover { text-decoration-thickness: 0.13em; }
 :where(a, button, input, select, textarea, [tabindex]):focus-visible {
-	outline: 3px solid var(--cp-gold);
+	outline: 3px solid var(--cp-focus);
 	outline-offset: 3px;
+	box-shadow: 0 0 0 6px var(--cp-paper);
 }
+.cp-skip-link { position: fixed; z-index: 1000; inset: 0 auto auto 1rem; transform: translateY(-150%); padding: 0.8rem 1rem; border-radius: 0 0 0.4rem 0.4rem; color: var(--cp-paper); background: var(--cp-navy); font-weight: 700; }
+.cp-skip-link:focus { transform: translateY(0); }
 .wp-site-blocks { overflow-x: clip; }
 .wp-site-blocks > header,
 .wp-site-blocks > footer { padding-inline: clamp(1rem, 4vw, 3rem); }
@@ -53,6 +57,15 @@ a:hover { text-decoration-thickness: 0.13em; }
 	padding-block: clamp(4rem, 9vw, 7.5rem);
 	background: var(--cp-blue-soft);
 }
+.cp-hero > :where(h1, p, .wp-block-buttons, ul, ol, blockquote) { width: min(100% - 2rem, 1160px); margin-inline: auto; }
+.cp-hero > h1 { max-width: min(100% - 2rem, 1160px); }
+.cp-hero > p { max-width: min(100% - 2rem, 1160px); }
+.cp-content-intro { padding-block: clamp(1.75rem, 4vw, 3rem); }
+.cp-content-section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+.cp-content-section--soft { background: var(--cp-surface); }
+.cp-content-section > :where(h2, h3, p, ul, ol, blockquote, figure, .wp-block-group) { width: min(100% - 2rem, 1160px); margin-inline: auto; }
+.cp-content-section > :where(h2, h3) { margin-bottom: 1rem; }
+.cp-content-section > :where(p, ul, ol, blockquote, figure, .wp-block-group) + :where(p, ul, ol, blockquote, figure, .wp-block-group) { margin-top: 1.2rem; }
 .cp-hero__inner { width: min(100% - 2rem, 1160px); margin-inline: auto; }
 .cp-eyebrow {
 	margin: 0 0 1rem;
@@ -63,6 +76,8 @@ a:hover { text-decoration-thickness: 0.13em; }
 	text-transform: uppercase;
 }
 .cp-hero h1 { max-width: 16ch; margin: 0; font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -0.045em; }
+.cp-product-page > .wp-block-post-title { margin: clamp(2.5rem, 7vw, 5rem) auto 1.5rem; padding: clamp(2rem, 5vw, 3.5rem); border-radius: var(--cp-radius); background: var(--cp-blue-soft); font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: -0.04em; }
+.cp-product-page > .wp-block-post-content > :first-child { margin-top: 0; }
 .cp-hero__lead { max-width: 58ch; margin-block: 1.5rem 2rem; color: #334b5b; font-size: clamp(1.1rem, 2vw, 1.3rem); }
 .cp-actions { display: flex; flex-wrap: wrap; gap: 0.85rem; align-items: center; }
 .cp-actions .wp-block-button__link { min-height: 44px; }
@@ -100,6 +115,10 @@ a:hover { text-decoration-thickness: 0.13em; }
 	border-radius: var(--cp-radius);
 	background: var(--cp-surface);
 }
+.cp-media-placeholder { box-sizing: border-box; width: min(100% - 2rem, 1160px); min-height: 12rem; margin-block: 2rem; display: flex; flex-direction: column; justify-content: center; }
+.cp-media-placeholder > :first-child { margin-top: 0; }
+.cp-media-placeholder > :last-child { margin-bottom: 0; }
+.cp-media-placeholder__note { color: var(--cp-muted); font-size: 0.9rem; }
 .cp-media-placeholder > :first-child,
 .cp-compatibility-note > :first-child,
 .cp-pricing-note > :first-child { margin-top: 0; }
@@ -129,6 +148,7 @@ a:hover { text-decoration-thickness: 0.13em; }
 .wp-block-button__link:hover { background: #0e2e43; transform: translateY(-1px); }
 .wp-block-image img { height: auto; border-radius: var(--cp-radius); }
 .wp-block-table { overflow-x: auto; }
+.wp-block-table:focus-visible { outline: 3px solid var(--cp-focus); outline-offset: 3px; box-shadow: 0 0 0 6px var(--cp-paper); }
 .wp-block-table table { min-width: 36rem; border-collapse: collapse; }
 .wp-block-table th, .wp-block-table td { padding: 0.8rem 1rem; border: 1px solid var(--cp-border); text-align: start; }
 .wp-block-table thead { background: var(--cp-blue-soft); }

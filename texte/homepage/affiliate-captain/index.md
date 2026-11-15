@@ -1,6 +1,6 @@
 ---
 url: /affiliate-captain/
-seo_title: Affiliate-Plugin für WordPress und WooCommerce | Affiliate Captain
+seo_title: Affiliate-Plugin für WordPress | Affiliate Captain
 meta_description: Bauen Sie mit Affiliate Captain ein eigenes Partnerprogramm auf und verwalten Sie Attribution, Provisionen, Erstattungen und Auszahlungen.
 focus_keyphrase: Affiliate Plugin WordPress
 ---

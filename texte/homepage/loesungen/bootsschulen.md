@@ -1,6 +1,6 @@
 ---
 url: /loesungen/bootsschulen/
-seo_title: Kursbuchungen und Ticketverwaltung für Bootsschulen | Pass Captain
+seo_title: Kursbuchungen für Bootsschulen | Pass Captain
 meta_description: Organisieren Sie Kurse, Zeitfenster, Teilnehmer, Tickets und Einlass Ihrer Bootsschule mit Pass Captain in WordPress.
 focus_keyphrase: WordPress Buchungsplugin Bootsschule
 ---

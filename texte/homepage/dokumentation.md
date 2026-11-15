@@ -1,6 +1,6 @@
 ---
 url: /dokumentation/
-seo_title: Dokumentation für Captain Plugins – Installation und Einrichtung
+seo_title: Captain Plugins: Dokumentation und Installation
 meta_description: Lesen Sie Anleitungen zu Installation, Einrichtung, Integrationen und Fehlerbehebung für die WordPress-Plugins von Captain.
 focus_keyphrase: WordPress Plugin Dokumentation
 ---

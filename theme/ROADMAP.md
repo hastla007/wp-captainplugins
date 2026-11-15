@@ -33,7 +33,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Kein Theme-eigener Produkt-CPT und kein JavaScript-Framework im ersten Build.
 - [x] Erste optionale Seitentemplates für Produkt-, Preis- und Ressourcenseiten angelegt; nach Sichtung der realen Produkt-UIs gegebenenfalls anpassen.
 - [x] Yoast SEO im Import berücksichtigen: SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase werden ohne Überschreiben eigener Yoast-Werte gesetzt.
-- [ ] Yoast SEO im redaktionellen Modell vervollständigen: kanonische URL, Indexierung und Social-Vorschau je Seite pflegen; das Theme erzeugt keine konkurrierenden Meta-Tags.
+- [x] Yoast-Social-Titel und -Beschreibung aus den SEO-Feldern ableiten und optional individuelle Social-Felder unterstützen.
+- [ ] Yoast SEO im redaktionellen Modell vervollständigen: Canonical URLs und Indexierung je Seitentyp prüfen; das Theme erzeugt keine konkurrierenden Meta-Tags.
 - [ ] Zuständigkeit für Inhalte, SEO-Freigabe, rechtliche Seiten und Preisupdates festlegen.
 
 ## Phase 3 – Designsystem und Grundlagen
@@ -41,6 +42,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Farb-, Typografie-, Layout-, Abstands- und Button-Tokens in `theme.json` und CSS abbilden.
 - [x] Farben und Tokens als Startwerte aus dem Konzept übernehmen und im Site Editor verfügbar machen.
 - [x] Lesebreiten, globale Abstände, Fokusdarstellung, Links, Buttons und Formulargrundlagen definieren.
+- [x] Sprunglink, sichtbare Hochkontrast-Fokusdarstellung und Tastaturfokus für breite Tabellen ergänzen.
 - [ ] Farbkontraste aller Kombinationen einschließlich Status- und Produktakzenten nach WCAG prüfen und dokumentieren.
 - [ ] Mobile, Tablet und Desktop anhand vorhandener Mockups abgleichen.
 - [ ] Logo/Markenzeichen und finale Maskottchen-Assets optimiert und mit Alternativtextregeln einbinden.
@@ -63,16 +65,19 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Produktkarten-Pattern für die vier Produkte bereitstellen.
 - [x] Abschluss-CTA-Pattern bereitstellen.
 - [x] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Kompatibilität, FAQ und Ressourcen ergänzen.
-- [ ] Pattern-Kompositionen für Produktübersicht, einzelne Produktseite, Features, Pro/Im-Paket, FAQ, Preise, Vergleich, Lösung, Dokumentation, Kompatibilität, Support und Changelog je Seitentyp zusammenstellen.
+- [x] Inhaltsbereiche nach H2 als breite, abwechselnd hinterlegte Gutenberg-Sektionen komponieren; Startseiten-Einstieg als Hero und Medien-Briefings als redaktionelle Karten ausgeben.
+- [ ] Spezifische Pattern-Kompositionen für Features, Pro/Im-Paket, Preise, Vergleich, Lösung, Dokumentation, Support und Changelog in echten WordPress-Seiten abnehmen und bei Bedarf vertiefen.
 - [x] Schlanke, barrierearme Brotkrumennavigation für Inhaltsseiten ergänzen; strukturierte Daten bleiben Yoast überlassen.
 - [x] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung mit horizontal scrollbaren Tabellen und nativen Details-Blöcken vorbereiten.
+- [x] Tabellenüberschriften semantisch markieren und scrollbare Tabellenregionen für die Tastatur fokussierbar ausgeben.
 - [x] Passende Custom Templates beim Import neuen Seiten zuweisen und bestehende manuelle Vorlagenauswahl schützen.
 
 ## Phase 6 – Seiteninhalte einsetzen
 
 - [x] Startseite, Produktübersicht, Captain-Pro-/Preis-/Vergleichsseiten, Produkt-Unterseiten, Dokumentation, Support, Integrationen, Kompatibilität, Bootsschul-Lösung, Über-uns, FAQs und Ratgeber aus Markdown in Theme-Inhalte kompilieren.
 - [ ] Importierte Seiten in einer echten WordPress-Installation redaktionell und visuell abnehmen.
-- [ ] Screenshot-/Demo-Platzhalter mit dem vorhandenen Aufnahmebriefing und klarer Kennzeichnung in Redaktionsvorschau setzen; vor Livegang durch echte, freigegebene Ansichten ersetzen.
+- [x] Screenshot-/Demo-/Kundenbeispiel-Platzhalter mit Aufnahmebriefing und klarer Kennzeichnung als Medienkarten in Redaktionsvorschau setzen.
+- [ ] Medienkarten vor Livegang durch echte, freigegebene Ansichten bzw. belegte Kundenbeispiele ersetzen.
 - [ ] Kundenlogos, Bewertungen, Kennzahlen oder Fallstudien nur nach Beleg und Freigabe einsetzen.
 - [ ] Alle internen Links, CTAs, Downloads, Checkoutziele und Formulare mit realen Zielen verbinden.
 
@@ -90,7 +95,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 ## Phase 8 – SEO, Mehrsprachigkeit und Redaktion
 
 - [x] Theme-Struktur für semantische Überschriften und redaktionell pflegbare Seiten vorbereitet.
-- [ ] Pro Seite in Yoast eindeutigen SEO-Titel, Meta-Beschreibung, Fokus-Keyphrase und Social-Vorschau pflegen.
+- [x] Pro Inhaltsseite Yoast-SEO-Titel, Meta-Beschreibung, Fokus-Keyphrase und Social-Titel/-Beschreibung aus den Textmetadaten importieren; doppelte Fokus-Keyphrase der Startseite und Produktübersicht bereinigen.
+- [ ] Social-Bilder und Snippet-Vorschauen pro Seite redaktionell auswählen und in Yoast abnehmen.
 - [ ] Indexierung und Canonicals für Archive, Suche, Pagination und Shopseiten prüfen.
 - [ ] Schema-Ausgabe von Yoast, WooCommerce und weiteren Plugins auf Doppelungen prüfen; strukturierte Daten nicht im Theme duplizieren.
 - [ ] URL-Slugs und Weiterleitungen für geänderte Seitennamen festlegen.
@@ -101,7 +107,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [ ] Alle Seitentypen auf gängigen Desktop-, Tablet- und Mobilansichten manuell prüfen.
 - [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen.
-- [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link prüfen.
+- [x] Sprunglink zum Hauptinhalt und kontraststarke, doppelt sichtbare Fokusdarstellung in die Theme-Vorlagen integrieren.
+- [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link in einem Screenreader-/Browserdurchlauf abnehmen.
 - [ ] Layout mit und ohne WooCommerce, Yoast sowie den vier Plugins prüfen; degradierte Zustände verständlich halten.
 - [ ] Ladegewicht, Bildgrößen, Caching-Verhalten und Core Web Vitals mit realistischem Seiteninhalt bewerten.
 - [ ] SEO-Snippets, Social-Previews, Sitemap, robots/noindex und Weiterleitungen in Staging prüfen.
@@ -128,4 +135,4 @@ Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Ste
 
 ## Aktueller Build-Stand
 
-Die Pattern-Bibliothek enthält jetzt einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, den vorhandenen Preisentwurf für Single/Business/Agency, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Der Inhaltscompiler baut 46 Markdown-Quellseiten plus notwendige Verzeichnisseiten als importierbare Gutenberg-Inhalte. Platzhalterseiten werden als Entwurf angelegt. Platzhalter in eckigen Klammern sind redaktionell zu ersetzen. Die Preiswerte sind aus dem aktuellen Konzept übernommen und vor Shop-Veröffentlichung mit dem Produktkatalog abzugleichen.
+Die Pattern-Bibliothek enthält einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, den Preisentwurf für Single/Business/Agency, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Der Inhaltscompiler baut 46 Markdown-Quellseiten plus notwendige Verzeichnisseiten als importierbare Gutenberg-Inhalte mit Hero-, Abschnitts-, CTA- und Medienkarten. Alle 46 Seiten haben SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase; doppelte Fokus-Keyphrases wurden bereinigt und Yoast erhält Social-Titel/-Beschreibung. Platzhalterseiten werden als Entwurf angelegt. Die Preiswerte stammen aus dem aktuellen Konzept und müssen vor Shop-Veröffentlichung mit dem Produktkatalog abgeglichen werden.

@@ -95,11 +95,21 @@ function captain_plugins_content_store_seo( int $post_id, array $entry, bool $fo
 	update_post_meta( $post_id, '_cp_seo_written', $values );
 
 	if ( defined( 'WPSEO_VERSION' ) ) {
+		$social_title = (string) ( $entry['social_title'] ?? $entry['seo_title'] ?? '' );
+		$social_desc  = (string) ( $entry['social_description'] ?? $entry['meta_description'] ?? '' );
 		$yoast = array(
 			'_yoast_wpseo_title'    => (string) ( $entry['seo_title'] ?? '' ),
 			'_yoast_wpseo_metadesc' => (string) ( $entry['meta_description'] ?? '' ),
 			'_yoast_wpseo_focuskw'  => (string) ( $entry['focus_keyphrase'] ?? '' ),
+			'_yoast_wpseo_opengraph-title' => $social_title,
+			'_yoast_wpseo_opengraph-description' => $social_desc,
+			'_yoast_wpseo_twitter-title' => $social_title,
+			'_yoast_wpseo_twitter-description' => $social_desc,
 		);
+		if ( ! empty( $entry['social_image'] ) ) {
+			$yoast['_yoast_wpseo_opengraph-image'] = esc_url_raw( (string) $entry['social_image'] );
+			$yoast['_yoast_wpseo_twitter-image']   = esc_url_raw( (string) $entry['social_image'] );
+		}
 		$written = get_post_meta( $post_id, '_cp_yoast_written', true );
 		$written = is_array( $written ) ? $written : array();
 		foreach ( $yoast as $key => $value ) {

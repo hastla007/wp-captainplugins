@@ -1,6 +1,6 @@
 ---
 url: /
-seo_title: WordPress-Plugins für Gutscheine, Events und Partnerprogramme | Captain Plugins
+seo_title: WordPress-Plugins für Unternehmen | Captain Plugins
 meta_description: Entdecken Sie WordPress- und WooCommerce-Plugins für Gutscheine, Tickets, Buchungen, Partnerprogramme und Lizenzverwaltung.
 focus_keyphrase: WordPress Plugins für Unternehmen
 ---

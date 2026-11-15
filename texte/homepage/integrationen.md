@@ -1,6 +1,6 @@
 ---
 url: /integrationen/
-seo_title: Integrationen für Captain Plugins – WooCommerce, Zahlungen und APIs
+seo_title: Captain Plugins: Integrationen und APIs
 meta_description: Erfahren Sie, wie Captain Plugins mit WooCommerce, Zahlungsdiensten, Voucher- und Pass-Integrationen sowie APIs zusammenarbeiten.
 focus_keyphrase: WooCommerce Plugin Integrationen
 ---

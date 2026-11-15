@@ -67,6 +67,26 @@ function captain_plugins_page_breadcrumb( string $content ): string {
 }
 add_filter( 'the_content', 'captain_plugins_page_breadcrumb', 8 );
 
+/** Let keyboard users focus and scroll wide core tables without changing stored block markup. */
+function captain_plugins_accessible_table( string $content ): string {
+	if ( false === strpos( $content, 'wp-block-table' ) ) {
+		return $content;
+	}
+	$label = esc_attr__( 'Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen.', 'captain-plugins' );
+	return (string) preg_replace_callback(
+		'/<figure\b([^>]*)>/i',
+		static function ( array $matches ) use ( $label ): string {
+			if ( false === strpos( $matches[1], 'wp-block-table' ) || preg_match( '/\btabindex\s*=/', $matches[1] ) ) {
+				return $matches[0];
+			}
+			return '<figure' . $matches[1] . ' tabindex="0" role="region" aria-label="' . $label . '">';
+		},
+		$content,
+		1
+	);
+}
+add_filter( 'render_block_core/table', 'captain_plugins_accessible_table' );
+
 function captain_plugins_register_patterns() {
 	$pattern_files = glob( get_theme_file_path( 'patterns/*.php' ) );
 	if ( ! $pattern_files ) {

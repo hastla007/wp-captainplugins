@@ -1,6 +1,6 @@
 ---
 url: /vergleich/
-seo_title: WordPress-Plugins vergleichen – Voucher, Pass und Affiliate Captain
+seo_title: WordPress-Plugin-Vergleich | Captain Plugins
 meta_description: Finden Sie das passende Captain-Plugin für Gutscheine, Events, Buchungen, Partnerprogramme oder Lizenzverwaltung.
 focus_keyphrase: WordPress Plugins vergleichen
 ---

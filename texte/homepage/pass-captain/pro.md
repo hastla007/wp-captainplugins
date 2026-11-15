@@ -1,6 +1,6 @@
 ---
 url: /pass-captain/pro/
-seo_title: Pass Captain Pro – E-Rechnung, Kartenterminal und White Label
+seo_title: Pass Captain Pro: E-Rechnung und Kartenterminal
 meta_description: Erweitern Sie Pass Captain mit E-Rechnungen, Kartenterminals, White Label, virtuellem Warteraum und schreibender API.
 focus_keyphrase: WordPress Ticket Plugin Pro
 ---

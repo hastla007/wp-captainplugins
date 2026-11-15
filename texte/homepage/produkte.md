@@ -1,8 +1,8 @@
 ---
 url: /produkte/
-seo_title: WordPress-Plugins für Gutscheine, Events und Affiliate | Captain Plugins
+seo_title: WordPress-Plugins vergleichen | Captain Plugins
 meta_description: Vergleichen Sie Voucher Captain, Pass Captain, Affiliate Captain und License Captain nach Einsatz, Funktionen und WooCommerce-Abhängigkeit.
-focus_keyphrase: WordPress Plugins für Unternehmen
+focus_keyphrase: WordPress-Plugins für Unternehmen vergleichen
 ---
 
 # Das passende WordPress-Plugin für Ihre Aufgabe

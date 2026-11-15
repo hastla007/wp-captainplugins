@@ -1,8 +1,11 @@
-<!-- wp:paragraph -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
 <p>License Captain nutzt WooCommerce für den Verkauf von Softwarelizenzen und verwaltet Aktivierungen, Berechtigungen, Verlängerungen und Updates für Ihre Produkt-Plugins.</p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Voraussetzungen</h2>
 <!-- /wp:heading -->
 
@@ -24,9 +27,11 @@
 
 <!-- wp:paragraph -->
 <p>Richten Sie den Lizenzserver mit HTTPS ein. Erstellen Sie vor der Erstinstallation ein Backup und führen Sie die Konfiguration zuerst in einer Testumgebung durch.</p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">1. Plugin und WooCommerce installieren</h2>
 <!-- /wp:heading -->
 
@@ -36,9 +41,11 @@
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 1 – Lizenzserver aktiv:</strong> Zeigen Sie die Pluginliste mit aktivem WooCommerce und License Captain. Website-Adresse, Adminname und andere vertrauliche Plugins ausblenden.</p></blockquote>
-<!-- /wp:quote -->
+<!-- /wp:quote --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">2. Stabile Schlüssel konfigurieren</h2>
 <!-- /wp:heading -->
 
@@ -60,9 +67,11 @@
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 2 – Sicherheitshinweis/Diagnose:</strong> Zeigen Sie die License-Captain-Diagnose, in der keine Warnung zum Salt-Fallback angezeigt wird. Geheimnisse, Umgebungsvariablen und Serverpfade dürfen nicht sichtbar sein.</p></blockquote>
-<!-- /wp:quote -->
+<!-- /wp:quote --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">3. WooCommerce-Produkte als Lizenzen konfigurieren</h2>
 <!-- /wp:heading -->
 
@@ -72,9 +81,11 @@
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 3 – Lizenzprodukt:</strong> Zeigen Sie die Lizenzkonfiguration eines fiktiven Pluginprodukts mit Abrechnungsintervall, Limit und Berechtigungen. Keine echten Lizenzschlüssel oder Kundenbestellungen einblenden.</p></blockquote>
-<!-- /wp:quote -->
+<!-- /wp:quote --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">4. Verlängerungen einrichten</h2>
 <!-- /wp:heading -->
 
@@ -88,9 +99,11 @@
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 4 – Verlängerungs- und Webhookeinstellungen:</strong> Zeigen Sie Testmodus, Status des Stripe-Gateways und die Stelle, an der der Webhook-Endpunkt angezeigt wird. Webhook-Signing-Secret und Live-Schlüssel vollständig verbergen.</p></blockquote>
-<!-- /wp:quote -->
+<!-- /wp:quote --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">5. Erstes Produkt-Plugin anbinden</h2>
 <!-- /wp:heading -->
 
@@ -100,9 +113,11 @@
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><p><strong>Screenshot-Platzhalter 5 – Kundenkonto mit Lizenz:</strong> Zeigen Sie eine Testlizenz mit Status, Ablaufdatum und anonymisierter Aktivierung. Lizenzschlüssel und Domain durch unbrauchbare Beispieldaten ersetzen.</p></blockquote>
-<!-- /wp:quote -->
+<!-- /wp:quote --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">6. Release und Betrieb vorbereiten</h2>
 <!-- /wp:heading -->
 
@@ -110,10 +125,19 @@
 <p>Laden Sie ein Releasepaket hoch oder registrieren Sie eine HTTPS-Paketadresse mit Prüfsumme. Testen Sie Download, Update, Rücknahme eines Releases und Cron-/Action-Scheduler-Verarbeitung. Richten Sie Backups und Monitoring ein.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><a href="/license-captain/features/">License Captain Features</a> · <a href="/license-captain/faq/">FAQ</a> · <a href="/dokumentation/">Dokumentation</a></p>
-<!-- /wp:paragraph -->
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/license-captain/features/">License Captain Features</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/license-captain/faq/">FAQ</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/dokumentation/">Dokumentation</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
 <p><strong>Kompatibilitätshinweis:</strong> WooCommerce 8.9 ist die deklarierte Mindestversion. Die dokumentierte CI-Matrix führt außerdem WooCommerce 9.4.3 und 11.2.2 auf. Prüfen Sie vor Veröffentlichung die finale Release-Matrix. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
