@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captain Plugins Theme\n"
-"POT-Creation-Date: 2026-11-16 12:19+0000\n"
+"POT-Creation-Date: 2026-11-16 12:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -395,11 +395,11 @@ msgid "Preispläne mit Website-Limits und Redaktionshinweis."
 msgstr ""
 
 #: patterns/product-cards.php:10
-msgid "Produktübersicht – vier Produktkarten"
+msgid "Produktübersicht – Captain-Produktkarten"
 msgstr ""
 
 #: patterns/product-cards.php:12
-msgid "Die vier Produkte der Captain-Plugins-Familie."
+msgid "Alle Produkte der Captain-Plugins-Familie."
 msgstr ""
 
 #: patterns/product-hero.php:10

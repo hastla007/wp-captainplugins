@@ -63,6 +63,7 @@ Geprüft im Browser (16. November 2026): Das Theme setzt keine Cookies, schreibt
 |---|---|
 | `python3 tools/build-theme-content.py` | Website-Texte aus `texte/homepage/` in importierbare Gutenberg-Seiten übersetzen |
 | `python3 tools/make-pot.py` | Übersetzungsvorlage `languages/captain-plugins.pot` erzeugen |
+| `python3 tools/make-translations.py` | Englische Theme-Oberfläche `languages/en_US.po/.mo` aus `tools/translations_en_US.py` bauen; bricht ab, wenn ein neuer String unübersetzt ist |
 | `python3 tools/media-inventory.py` | Liste aller Screenshot-, Demo- und Diagramm-Platzhalter erzeugen |
 | `python3 tools/release-blockers.py` | Bericht `docs/RELEASE-BLOCKER.md` mit allen fehlenden Linkzielen, Betreiberangaben und Vorbehalten je Seite |
 | `php tests/run.php /pfad/zu/wp-load.php` | 30 Integrationstests (Vorlagenzuordnung, Importschutz, SEO-Felder, Titel-Fallback, ausgemusterte Seiten, Social-Bilder, Versionsprüfung, Render-Filter) gegen eine Test-Installation mit aktivem Theme |

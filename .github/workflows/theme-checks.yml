@@ -40,6 +40,7 @@ jobs:
         run: |
           python3 tools/build-theme-content.py
           python3 tools/make-pot.py
+          python3 tools/make-translations.py
           git diff --exit-code -- theme/captain-plugins/content theme/captain-plugins/languages \
             || (echo "::error::Inhalte oder POT nicht neu gebaut – python3 tools/build-theme-content.py und tools/make-pot.py ausführen" && exit 1)
 
