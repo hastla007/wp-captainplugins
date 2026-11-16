@@ -15,7 +15,7 @@ Für Unternehmen, Shops und Agenturen, die Ereignisse zwischen mehreren Captain-
 
 ## Alle Pro-Funktionen in jedem Tarif
 
-- Provider für WP License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain. Jeder Provider erfordert das jeweilige Kernplugin und einen kompatiblen öffentlichen Vertrag.
+- Provider für License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain. Jeder Provider erfordert das jeweilige Kernplugin und einen kompatiblen öffentlichen Vertrag.
 - Erweiterte WooCommerce-Aktionen und Suite-Rezeptvorlagen.
 - Kundenspezifische Connectoren über versionierte SDK-/Providerverträge und separate WordPress-Connector-Plugins.
 - Ein- und ausgehende HMAC-signierte Webhooks mit Timestamp-/Replay-Schutz, Schlüsselrotation, Rate-Limits und Zustellstatus.

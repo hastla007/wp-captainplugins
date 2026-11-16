@@ -21,7 +21,7 @@ Nein. WordPress-Core-Workflows lassen sich ohne WooCommerce nutzen. WooCommerce 
 
 ## Welche Captain-Plugins kann ich verbinden?
 
-Pro sieht Provider für WP License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain vor. Das jeweilige Plugin muss installiert sein und einen kompatiblen öffentlichen Providervertrag bereitstellen. Nicht jeder Provider setzt dieselben Funktionen voraus.
+Pro sieht Provider für License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain vor. Das jeweilige Plugin muss installiert sein und einen kompatiblen öffentlichen Providervertrag bereitstellen. Nicht jeder Provider setzt dieselben Funktionen voraus.
 
 ## Läuft die Automatisierung in einer externen Cloud?
 

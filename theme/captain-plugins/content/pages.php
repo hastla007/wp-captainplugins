@@ -977,7 +977,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "2b58c390e7afe17a086f2c96a56e101481adb973028c868e7335439b79552fc8",
+		"source_hash" => "a7c888853e67c0f684768cf4153a873a39751a1346689ebfa12d8670d5fde29e",
 		"source_file" => "texte/homepage/workflow-captain/faq.md",
 	],
 	[
@@ -994,7 +994,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "c670612c3ee2810c6324c97da20b5f46ab25cbf808e5c2b048596005a955826a",
+		"source_hash" => "7b50cdb0f76688cb1567baf58f3e732b807e6fe936f753f77595b0f383fea3e7",
 		"source_file" => "texte/homepage/workflow-captain/features.md",
 	],
 	[
@@ -1062,7 +1062,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "0062c41327123cd7275ec2a141aa0aa4fb7919ad9d4dd977a83e059c35b5d913",
+		"source_hash" => "9279f3d858bd153310d772d0414732c7133d2943da04d57c65407abc874564dc",
 		"source_file" => "texte/homepage/workflow-captain/pro.md",
 	],
 	[

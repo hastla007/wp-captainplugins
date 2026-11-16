@@ -23,7 +23,7 @@ Workflow Captain bündelt Ereignisse, Bedingungen und Aktionen in nachvollziehba
 
 ## Zusätzliche Funktionen in Workflow Captain Pro
 
-- Provider für WP License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain sowie vertiefte WooCommerce-Aktionen.
+- Provider für License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain sowie vertiefte WooCommerce-Aktionen.
 - Versionierte SDK-/Providerverträge und Starter-Beispiel für separate kundenspezifische Connector-Plugins.
 - Signierte ein- und ausgehende Webhooks mit Replay-Schutz, Rate-Limit und Zustellprotokoll.
 - Erweiterte Bedingungsgruppen, If/Else-Verzweigungen, Freigabeschritte und Event-Korrelation.
