@@ -28,13 +28,17 @@ const paths = ['/', '/produkte/', '/voucher-captain/', '/captain-pro/', '/preise
 			css: !!document.querySelector('link[href*="captain-plugins/assets/css/theme.css"]'),
 			criticalError: document.body.innerText.includes('critical error') || document.body.innerText.includes('kritischer Fehler'),
 		})) : {};
-		check(`${path} lädt`, status === 200, `HTTP ${status}`);
+		check(`${path} lädt`, status === 200, `HTTP ${status || 'keine Verbindung'}`);
 		if (status === 200) check(`${path} vollständig`, info.h1 === 1 && info.header && info.footer && info.css && !info.criticalError, JSON.stringify(info));
 	}
-	const missing = await page.goto(base + '/captain-smoke-check-gibt-es-nicht/', { waitUntil: 'domcontentloaded' });
-	check('404 liefert Status 404', missing.status() === 404, `HTTP ${missing.status()}`);
-	const search = await page.goto(base + '/?s=Gutschein', { waitUntil: 'domcontentloaded' });
-	check('Suche erreichbar', search.status() === 200, `HTTP ${search.status()}`);
+	const statusOf = async (url) => {
+		const response = await page.goto(url, { waitUntil: 'domcontentloaded' }).catch(() => null);
+		return response ? response.status() : 0;
+	};
+	const missing = await statusOf(base + '/captain-smoke-check-gibt-es-nicht/');
+	check('404 liefert Status 404', missing === 404, `HTTP ${missing || 'keine Verbindung'}`);
+	const search = await statusOf(base + '/?s=Gutschein');
+	check('Suche erreichbar', search === 200, `HTTP ${search || 'keine Verbindung'}`);
 	await browser.close();
 	for (const r of results) console.log(`${r.ok ? 'OK  ' : 'FEHLER'} ${r.name}${r.ok ? '' : ' – ' + r.detail}`);
 	const failed = results.filter((r) => !r.ok).length;

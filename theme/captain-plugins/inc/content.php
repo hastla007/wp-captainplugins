@@ -27,7 +27,8 @@ function captain_plugins_content_template( array $entry ): ?string {
 	if ( ! is_readable( $path ) ) {
 		return null;
 	}
-	return trim( (string) file_get_contents( $path ) );
+	// Reads a bundled, validated theme file (not a remote URL); WP_Filesystem is not needed for local reads.
+	return trim( (string) file_get_contents( $path ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 }
 
 function captain_plugins_content_page_hash( WP_Post $page ): string {
@@ -107,8 +108,8 @@ function captain_plugins_content_store_seo( int $post_id, array $entry, bool $fo
 
 	if ( defined( 'WPSEO_VERSION' ) ) {
 		// Manifest fields exist but may be empty strings; fall back to the SEO values in that case.
-		$social_title = (string) ( ( $entry['social_title'] ?? '' ) ?: ( $entry['seo_title'] ?? '' ) );
-		$social_desc  = (string) ( ( $entry['social_description'] ?? '' ) ?: ( $entry['meta_description'] ?? '' ) );
+		$social_title = '' !== (string) ( $entry['social_title'] ?? '' ) ? (string) $entry['social_title'] : (string) ( $entry['seo_title'] ?? '' );
+		$social_desc  = '' !== (string) ( $entry['social_description'] ?? '' ) ? (string) $entry['social_description'] : (string) ( $entry['meta_description'] ?? '' );
 		$yoast = array(
 			'_yoast_wpseo_title'    => (string) ( $entry['seo_title'] ?? '' ),
 			'_yoast_wpseo_metadesc' => (string) ( $entry['meta_description'] ?? '' ),
@@ -158,7 +159,15 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 	$allowed = array( 'core', 'products', 'guides' );
 	$groups  = array_values( array_intersect( $allowed, array_map( 'sanitize_key', $groups ) ) );
 	if ( empty( $groups ) ) {
-		return array( 'created' => 0, 'updated' => 0, 'unchanged' => 0, 'edited' => 0, 'blocked' => 0, 'errors' => 1, 'retired' => 0 );
+		return array(
+			'created' => 0,
+			'updated' => 0,
+			'unchanged' => 0,
+			'edited' => 0,
+			'blocked' => 0,
+			'errors' => 1,
+			'retired' => 0,
+		);
 	}
 	$entries = captain_plugins_content_manifest();
 	$selected = array();
@@ -188,7 +197,14 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 			}
 		}
 	}
-	$counts = array( 'created' => 0, 'updated' => 0, 'unchanged' => 0, 'edited' => 0, 'blocked' => 0, 'errors' => 0 );
+	$counts = array(
+		'created' => 0,
+		'updated' => 0,
+		'unchanged' => 0,
+		'edited' => 0,
+		'blocked' => 0,
+		'errors' => 0,
+	);
 
 	foreach ( $entries as $entry ) {
 		$path = trim( (string) ( $entry['path'] ?? '' ), '/' );
@@ -218,10 +234,20 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 				continue;
 			}
 			if ( ! $page instanceof WP_Post ) {
-				$id = wp_insert_post( wp_slash( array(
-					'post_type' => 'page', 'post_status' => $wanted_status, 'post_title' => $title ?: __( 'Startseite', 'captain-plugins' ),
-					'post_name' => 'startseite', 'post_content' => $template, 'comment_status' => 'closed', 'ping_status' => 'closed',
-				) ), true );
+				$id = wp_insert_post(
+					wp_slash(
+						array(
+							'post_type' => 'page',
+							'post_status' => $wanted_status,
+							'post_title' => '' !== $title ? $title : __( 'Startseite', 'captain-plugins' ),
+							'post_name' => 'startseite',
+							'post_content' => $template,
+							'comment_status' => 'closed',
+							'ping_status' => 'closed',
+						)
+					),
+					true
+				);
 				if ( is_wp_error( $id ) || ! $id ) {
 					++$counts['errors'];
 					continue;
@@ -254,7 +280,17 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 				++$counts['blocked'];
 				continue;
 			}
-			$id = wp_update_post( wp_slash( array( 'ID' => $page_id, 'post_title' => $title, 'post_content' => $template, 'post_status' => $placeholder ? 'draft' : $page->post_status ) ), true );
+			$id = wp_update_post(
+				wp_slash(
+					array(
+						'ID' => $page_id,
+						'post_title' => $title,
+						'post_content' => $template,
+						'post_status' => $placeholder ? 'draft' : $page->post_status,
+					)
+				),
+				true
+			);
 			if ( is_wp_error( $id ) || ! $id ) {
 				++$counts['errors'];
 				continue;
@@ -276,12 +312,22 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 		}
 		$page = get_page_by_path( $path, OBJECT, 'page' );
 		if ( ! $page instanceof WP_Post ) {
-			$id = wp_insert_post( wp_slash( array(
-				'post_type' => 'page', 'post_status' => $wanted_status, 'post_title' => $title,
-				'post_name' => (string) ( $entry['slug'] ?? '' ), 'post_parent' => $parent_id,
-				'post_content' => $template, 'menu_order' => (int) ( $entry['order'] ?? 0 ),
-				'comment_status' => 'closed', 'ping_status' => 'closed',
-			) ), true );
+			$id = wp_insert_post(
+				wp_slash(
+					array(
+						'post_type' => 'page',
+						'post_status' => $wanted_status,
+						'post_title' => $title,
+						'post_name' => (string) ( $entry['slug'] ?? '' ),
+						'post_parent' => $parent_id,
+						'post_content' => $template,
+						'menu_order' => (int) ( $entry['order'] ?? 0 ),
+						'comment_status' => 'closed',
+						'ping_status' => 'closed',
+					)
+				),
+				true
+			);
 			if ( is_wp_error( $id ) || ! $id ) {
 				++$counts['errors'];
 				continue;
@@ -311,10 +357,18 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 		}
 		$old_status = $page->post_status;
 		$status      = $placeholder ? 'draft' : ( 'draft' === $old_status && 'publish' === $wanted_status ? 'publish' : $old_status );
-		$id = wp_update_post( wp_slash( array(
-			'ID' => $page_id, 'post_title' => $title, 'post_content' => $template, 'post_parent' => $parent_id,
-			'post_status' => $status,
-		) ), true );
+		$id = wp_update_post(
+			wp_slash(
+				array(
+					'ID' => $page_id,
+					'post_title' => $title,
+					'post_content' => $template,
+					'post_parent' => $parent_id,
+					'post_status' => $status,
+				)
+			),
+			true
+		);
 		if ( is_wp_error( $id ) || ! $id ) {
 			++$counts['errors'];
 			continue;
@@ -352,7 +406,13 @@ function captain_plugins_content_retire(): int {
 		if ( ! hash_equals( (string) get_post_meta( $page->ID, '_cp_content_hash', true ), captain_plugins_content_page_hash( $page ) ) ) {
 			continue;
 		}
-		$updated = wp_update_post( array( 'ID' => $page->ID, 'post_status' => 'draft' ), true );
+		$updated = wp_update_post(
+			array(
+				'ID' => $page->ID,
+				'post_status' => 'draft',
+			),
+			true
+		);
 		if ( ! is_wp_error( $updated ) ) {
 			update_post_meta( $page->ID, '_cp_content_status', 'retired' );
 			++$retired;

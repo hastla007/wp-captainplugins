@@ -24,7 +24,15 @@ function captain_plugins_setup() {
 	add_theme_support( 'wp-block-styles' );
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'assets/css/theme.css' );
-	add_theme_support( 'custom-logo', array( 'height' => 64, 'width' => 220, 'flex-height' => true, 'flex-width' => true ) );
+	add_theme_support(
+		'custom-logo',
+		array(
+			'height' => 64,
+			'width' => 220,
+			'flex-height' => true,
+			'flex-width' => true,
+		)
+	);
 	add_theme_support( 'woocommerce' );
 
 	register_block_pattern_category(

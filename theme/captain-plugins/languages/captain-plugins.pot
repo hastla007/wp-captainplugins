@@ -3,338 +3,352 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captain Plugins Theme\n"
-"POT-Creation-Date: 2026-11-16 12:35+0000\n"
+"POT-Creation-Date: 2026-11-16 14:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de_DE\n"
 "X-Domain: captain-plugins\n"
 
-#: functions.php:33
+#: functions.php:41
 msgid "Captain Plugins"
 msgstr ""
 
-#: functions.php:87 inc/content.php:222
+#: functions.php:95 inc/content.php:242
 msgid "Startseite"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:103
 msgid "Brotkrumennavigation"
 msgstr ""
 
 #. translators: %s: footer column heading, e.g. "Produkte".
-#: functions.php:146
+#: functions.php:154
 msgid "Footer: %s"
 msgstr ""
 
 #. translators: %s: comma-separated first column headings of a table.
-#: functions.php:172
+#: functions.php:180
 msgid "Tabelle mit den Spalten %s; bei Bedarf horizontal scrollen."
 msgstr ""
 
 #. translators: %s: comma-separated first column headings of a table.
-#: functions.php:173
+#: functions.php:181
 msgid "Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen."
 msgstr ""
 
-#: inc/catalog.php:83
+#: inc/catalog.php:139
 msgid "Für die Produktanlage müssen WooCommerce und License Captain aktiv sein."
 msgstr ""
 
 #. translators: %d: number of product drafts.
-#: inc/catalog.php:88 inc/setup.php:340
+#: inc/catalog.php:144 inc/setup.php:432
 msgid "Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten."
 msgstr ""
 
-#: inc/catalog.php:93
+#: inc/catalog.php:149
 msgid "Die Konzeptpreise sind in Euro. Stelle zuerst die WooCommerce-Währung auf EUR, bevor die Preisentwürfe angelegt werden."
 msgstr ""
 
-#: inc/catalog.php:102
+#. translators: %s: product SKU.
+#: inc/catalog.php:159
 msgid "SKU %s existiert bereits und wurde nicht verändert."
 msgstr ""
 
-#: inc/catalog.php:115
+#: inc/catalog.php:172
 msgid "Priority"
 msgstr ""
 
-#: inc/catalog.php:115
+#: inc/catalog.php:172
 msgid "Standard"
 msgstr ""
 
-#: inc/catalog.php:119
+#. translators: %s: product title.
+#: inc/catalog.php:177
 msgid "WooCommerce konnte „%s“ nicht speichern."
 msgstr ""
 
-#: inc/catalog.php:133
+#. translators: %s: product title.
+#: inc/catalog.php:192
 msgid "Der Lizenzplan für „%s“ ist bereits anders zugeordnet und wurde nicht geändert."
 msgstr ""
 
-#: inc/catalog.php:141
+#. translators: %s: product title.
+#: inc/catalog.php:201
 msgid "„%s“ ist als Entwurf angelegt, aber License Captain hat den Jahresplan nicht übernehmen können."
 msgstr ""
 
 #. translators: 1: product name, 2: number of live websites, 3: support level.
-#: inc/catalog.php:115
+#: inc/catalog.php:172
 msgid "Jahreslizenz für %1$s. %2$d Live-Website; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
 msgid_plural "Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
 msgstr[0] ""
 msgstr[1] ""
 
 #. translators: 1: installed PHP version, 2: required PHP version.
-#: inc/requirements.php:57
+#: inc/requirements.php:69
 msgid "PHP %1$s ist installiert; Captain Plugins setzen PHP %2$s oder neuer voraus."
 msgstr ""
 
 #. translators: 1: installed MariaDB version, 2: required MariaDB version.
-#: inc/requirements.php:62
+#: inc/requirements.php:74
 msgid "MariaDB %1$s ist installiert; empfohlen ist MariaDB %2$s (LTS) oder neuer."
 msgstr ""
 
 #. translators: 1: installed MySQL version, 2: required MySQL version.
-#: inc/requirements.php:65
+#: inc/requirements.php:77
 msgid "MySQL %1$s ist installiert; empfohlen ist MySQL %2$s (LTS) oder neuer."
 msgstr ""
 
-#: inc/requirements.php:78
+#: inc/requirements.php:92
 msgid "Captain Plugins: Server unter den empfohlenen Mindestversionen"
 msgstr ""
 
-#: inc/requirements.php:82
+#: inc/requirements.php:96
 msgid "Die Website funktioniert weiter. Bitte aktualisieren Sie die Serverumgebung über Ihren Hoster."
 msgstr ""
 
-#: inc/setup.php:36 inc/setup.php:349
+#: inc/setup.php:45 inc/setup.php:441
 msgid "Captain Plugins einrichten"
 msgstr ""
 
-#: inc/setup.php:36
+#: inc/setup.php:45
 msgid "Einrichtung"
 msgstr ""
 
-#: inc/setup.php:56
+#: inc/setup.php:72
 msgid "Shop, Warenkorb, Kasse und Produktverwaltung. Für Lizenzprodukte und den Verkauf erforderlich."
 msgstr ""
 
-#: inc/setup.php:57
+#: inc/setup.php:80
 msgid "Optional. Die Textvorlagen enthalten SEO-Titel, Meta-Beschreibungen und Fokus-Keyphrases, die bei aktiver Yoast-Installation übernommen werden."
 msgstr ""
 
-#: inc/setup.php:58
+#: inc/setup.php:89
 msgid "License-Captain-Server für diesen Shop. Er stellt die Lizenzen für die Captain-Pro-Add-ons aus; der Client ist in den Pro-Add-ons enthalten. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert."
 msgstr ""
 
-#: inc/setup.php:102
+#: inc/setup.php:146
 msgid "wordpress.org lieferte keinen Download-Link."
 msgstr ""
 
-#: inc/setup.php:109
+#: inc/setup.php:153
 msgid "Es ist keine sichere Installationsquelle für License Captain hinterlegt."
 msgstr ""
 
-#: inc/setup.php:114
+#: inc/setup.php:158
 msgid "Für eine HTTPS-Downloadquelle muss CAPTAIN_LICENSE_PLUGIN_SHA256 mit dem erwarteten SHA-256-Wert in wp-config.php gesetzt sein."
 msgstr ""
 
-#: inc/setup.php:124
+#: inc/setup.php:168
 msgid "Die Prüfsumme des License-Captain-Pakets stimmt nicht. Es wurde nichts installiert."
 msgstr ""
 
-#: inc/setup.php:129
+#: inc/setup.php:176
 msgid "Die lokale Prüfsumme des License-Captain-Pakets stimmt nicht."
 msgstr ""
 
-#: inc/setup.php:155
+#: inc/setup.php:205
 msgid "WordPress konnte nicht in den Plugin-Ordner schreiben. Prüfe die Dateirechte oder FTP-Zugangsdaten."
 msgstr ""
 
-#: inc/setup.php:158
+#: inc/setup.php:208
 msgid "Im ZIP wurde keine Plugin-Hauptdatei gefunden."
 msgstr ""
 
-#: inc/setup.php:172
+#. translators: %s: plugin name.
+#: inc/setup.php:223
 msgid "%s: Dein Benutzerkonto darf keine Plugins aktivieren."
 msgstr ""
 
-#: inc/setup.php:178
+#. translators: %s: plugin name.
+#: inc/setup.php:230
 msgid "%s konnte nicht installiert werden: Plugin-Installation ist auf dieser Website nicht erlaubt."
 msgstr ""
 
-#: inc/setup.php:184 inc/setup.php:191
+#. translators: 1: plugin name, 2: error message.
+#: inc/setup.php:237 inc/setup.php:245
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/setup.php:200
+#. translators: 1: plugin name, 2: error message.
+#: inc/setup.php:255
 msgid "%1$s konnte nicht installiert werden: %2$s"
 msgstr ""
 
-#: inc/setup.php:203
+#. translators: %s: plugin name.
+#: inc/setup.php:259
 msgid "%s wurde installiert."
 msgstr ""
 
-#: inc/setup.php:207
+#. translators: 1: plugin name, 2: error message.
+#: inc/setup.php:264
 msgid "%1$s konnte nicht aktiviert werden: %2$s"
 msgstr ""
 
-#: inc/setup.php:216
+#. translators: %s: plugin name.
+#: inc/setup.php:274
 msgid "%s wurde aktiviert."
 msgstr ""
 
-#: inc/setup.php:219
+#. translators: %s: plugin name.
+#: inc/setup.php:277
 msgid "Keine Plugins ausgewählt bzw. alle ausgewählten Plugins sind bereits aktiv."
 msgstr ""
 
-#: inc/setup.php:230 inc/setup.php:241 inc/setup.php:347
+#: inc/setup.php:290 inc/setup.php:304 inc/setup.php:439
 msgid "Keine Berechtigung."
 msgstr ""
 
-#: inc/setup.php:247
+#. translators: 1: created, 2: updated, 3: unchanged, 4: kept because edited, 5: protected by placeholders, 6: errors, 7: retired pages.
+#: inc/setup.php:311
 msgid "Seitenabgleich: %1$d neu angelegt, %2$d aktualisiert, %3$d unverändert, %4$d wegen eigener Änderungen geschont, %5$d mit Platzhaltern geschützt, %6$d Fehler, %7$d nicht mehr gelieferte Seiten auf Entwurf gesetzt."
 msgstr ""
 
-#: inc/setup.php:255
+#: inc/setup.php:322
 msgid "Keine Berechtigung zum Verwalten von WooCommerce-Produkten."
 msgstr ""
 
-#: inc/setup.php:260
+#. translators: 1: created, 2: license plans mapped, 3: already set up, 4: skipped, 5: errors.
+#: inc/setup.php:328
 msgid "Produktentwürfe: %1$d angelegt, %2$d Lizenzpläne verknüpft, %3$d bereits eingerichtet, %4$d übersprungen, %5$d Fehler."
 msgstr ""
 
-#: inc/setup.php:270
+#: inc/setup.php:340
 msgid "aktiv"
 msgstr ""
 
-#: inc/setup.php:270
+#: inc/setup.php:341
 msgid "installiert, nicht aktiv"
 msgstr ""
 
-#: inc/setup.php:270
+#: inc/setup.php:342
 msgid "nicht installiert"
 msgstr ""
 
-#: inc/setup.php:276
+#: inc/setup.php:349
 msgid "1. Plugins auswählen"
 msgstr ""
 
-#: inc/setup.php:276
+#: inc/setup.php:349
 msgid "Wähle aus, welche Plugins WordPress installieren und aktivieren soll. WooCommerce ist Voraussetzung für Shop und Lizenzprodukte; Yoast SEO bleibt optional."
 msgstr ""
 
-#: inc/setup.php:279
+#: inc/setup.php:352
 msgid "Plugin"
 msgstr ""
 
-#: inc/setup.php:279
+#: inc/setup.php:352
 msgid "Status"
 msgstr ""
 
-#: inc/setup.php:287
+#: inc/setup.php:360
 msgid "Kein öffentliches wordpress.org-Paket ist hinterlegt. Konfiguriere eine vertrauenswürdige HTTPS-ZIP plus SHA-256 in wp-config.php oder lade die freigegebene ZIP über den WordPress-Plugin-Uploader hoch."
 msgstr ""
 
-#: inc/setup.php:289
+#: inc/setup.php:362
 msgid "Plugin-ZIP hochladen"
 msgstr ""
 
-#: inc/setup.php:292
+#: inc/setup.php:365
 msgid "Installation oder Aktivierung ist für dieses Benutzerkonto bzw. Deployment gesperrt."
 msgstr ""
 
-#: inc/setup.php:296
+#: inc/setup.php:380
 msgid "Auswahl installieren und aktivieren"
 msgstr ""
 
-#: inc/setup.php:296
+#: inc/setup.php:380
 msgid "Reihenfolge: WooCommerce, Yoast SEO, License Captain."
 msgstr ""
 
-#: inc/setup.php:308
+#: inc/setup.php:396
 msgid "2. Website-Texte auswählen"
 msgstr ""
 
-#: inc/setup.php:308
+#: inc/setup.php:396
 msgid "Der Theme-Entwurf enthält Startseite, Produktseiten, Unterseiten, Dokumentation, FAQ, Support, Lösungen und Ratgeber. Eigene Seiten werden nicht ersetzt. Bereits importierte, unveränderte Theme-Seiten können aktualisiert werden; manuell bearbeitete Seiten bleiben erhalten."
 msgstr ""
 
-#: inc/setup.php:311
+#: inc/setup.php:400
 msgid "Startseite und Website-Grundseiten"
 msgstr ""
 
-#: inc/setup.php:311
+#: inc/setup.php:401
 msgid "Produktseiten, Features, Pro und Dokumentation"
 msgstr ""
 
-#: inc/setup.php:311
+#: inc/setup.php:402
 msgid "Ratgeber"
 msgstr ""
 
-#: inc/setup.php:315
+#: inc/setup.php:407
 msgid "Vollständige Vorlagen veröffentlichen; Vorlagen mit Download-, Checkout-, Screenshot- oder Betreiberplatzhaltern automatisch als Entwurf anlegen."
 msgstr ""
 
-#: inc/setup.php:316
+#: inc/setup.php:408
 msgid "SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase werden in Yoast übernommen, wenn Yoast aktiv ist. Ohne Yoast speichert das Theme die Basis-Metadaten. Es werden keine von dir geänderten Text- oder SEO-Felder überschrieben."
 msgstr ""
 
-#: inc/setup.php:317
+#: inc/setup.php:409
 msgid "Ausgewählte Texte übernehmen"
 msgstr ""
 
-#: inc/setup.php:323
+#: inc/setup.php:415
 msgid "3. WooCommerce-Produkte anlegen"
 msgstr ""
 
 #. translators: %d: number of annual plans.
-#: inc/setup.php:323
+#: inc/setup.php:415
 msgid "Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; noch nicht bepreiste Review- und Course-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen."
 msgstr ""
 
-#: inc/setup.php:324
+#: inc/setup.php:416
 msgid "Lizenzprodukt"
 msgstr ""
 
-#: inc/setup.php:324
+#: inc/setup.php:416
 msgid "Plan"
 msgstr ""
 
-#: inc/setup.php:324
+#: inc/setup.php:416
 msgid "Jahrespreis"
 msgstr ""
 
-#: inc/setup.php:324
+#: inc/setup.php:416
 msgid "Live-Websites"
 msgstr ""
 
-#: inc/setup.php:330
+#: inc/setup.php:422
 msgid "Aktiviere zuerst WooCommerce."
 msgstr ""
 
-#: inc/setup.php:332
+#: inc/setup.php:424
 msgid "Aktiviere zuerst License Captain. Der Shop braucht den Lizenzserver, damit Käufer nach dem Kauf einen Lizenzplan erhalten."
 msgstr ""
 
-#: inc/setup.php:334
+#: inc/setup.php:426
 msgid "Die Konzeptbeträge sind Euro-Preise. WooCommerce steht aktuell nicht auf EUR; die Produktentwürfe werden deshalb nicht angelegt."
 msgstr ""
 
 #. translators: %d: number of product drafts.
-#: inc/setup.php:338
+#: inc/setup.php:430
 msgid "%d Produktentwürfe und Lizenzpläne anlegen"
 msgstr ""
 
-#: inc/setup.php:342
+#: inc/setup.php:434
 msgid "Der License-Captain-Server muss aktiv sein, damit die Pro-Jahrespläne dieser Website als Lizenzprodukte zugeordnet werden. Kunden sehen davon nichts: Sie aktivieren ihren Lizenzschlüssel direkt im Pro-Add-on. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind."
 msgstr ""
 
-#: inc/setup.php:349
+#: inc/setup.php:441
 msgid "Wähle die Bausteine für deine Website. Der Assistent verändert bestehende Texte und Shop-Einstellungen nicht stillschweigend."
 msgstr ""
 
-#: inc/setup.php:363
+#: inc/setup.php:455
 msgid "4. Vor dem Verkaufsstart"
 msgstr ""
 
-#: inc/setup.php:363
+#: inc/setup.php:455
 msgid "Ergänze und prüfe Unternehmensangaben, Steuer- und Zahlungsverfahren, Lizenzserver-Schlüssel, Produkt-Releases und Downloads. Dieser Assistent ändert keine Steuer-, Zahlungs-, Vertrags- oder Rechtseinstellungen automatisch."
 msgstr ""
 

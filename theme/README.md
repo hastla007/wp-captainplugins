@@ -66,6 +66,7 @@ Geprüft im Browser (16. November 2026): Das Theme setzt keine Cookies, schreibt
 | `python3 tools/make-translations.py` | Englische Theme-Oberfläche `languages/en_US.po/.mo` aus `tools/translations_en_US.py` bauen; bricht ab, wenn ein neuer String unübersetzt ist |
 | `python3 tools/media-inventory.py` | Liste aller Screenshot-, Demo- und Diagramm-Platzhalter erzeugen |
 | `python3 tools/release-blockers.py` | Bericht `docs/RELEASE-BLOCKER.md` mit allen fehlenden Linkzielen, Betreiberangaben und Vorbehalten je Seite |
+| `composer install && composer lint` | PHPCS mit WordPress-Coding-Standards (Escaping, Nonces, Eingabeprüfung, Datenbank, i18n, Präfixe) und PHP-8.5-Kompatibilität; `composer lint:fix` korrigiert die Formatierung |
 | `php tests/run.php /pfad/zu/wp-load.php` | 30 Integrationstests (Vorlagenzuordnung, Importschutz, SEO-Felder, Titel-Fallback, ausgemusterte Seiten, Social-Bilder, Versionsprüfung, Render-Filter) gegen eine Test-Installation mit aktivem Theme |
 | `tools/build-theme-zip.sh` | Installierbares Theme-ZIP unter `dist/` bauen (inkl. Inhalts- und POT-Neubau und PHP-Lint) |
 

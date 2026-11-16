@@ -26,7 +26,10 @@ function captain_plugins_database_server(): array {
 		$info = (string) $wpdb->db_server_info();
 	}
 	if ( '' === $info || ( defined( 'DB_ENGINE' ) && 'sqlite' === DB_ENGINE ) ) {
-		return array( 'type' => 'other', 'version' => '' );
+		return array(
+			'type' => 'other',
+			'version' => '',
+		);
 	}
 	return captain_plugins_parse_database_server( $info );
 }
@@ -40,9 +43,18 @@ function captain_plugins_parse_database_server( string $info ): array {
 	if ( false !== stripos( $info, 'mariadb' ) && preg_match_all( '/(\d+\.\d+(?:\.\d+)?)/', $info, $all ) ) {
 		// MariaDB may prefix a fake "5.5.5-" for old clients; the real version is the one before "-MariaDB".
 		$version = preg_match( '/(\d+\.\d+(?:\.\d+)?)-MariaDB/i', $info, $match ) ? $match[1] : end( $all[1] );
-		return array( 'type' => 'mariadb', 'version' => $version );
+		return array(
+			'type' => 'mariadb',
+			'version' => $version,
+		);
 	}
-	return preg_match( '/^(\d+\.\d+(?:\.\d+)?)/', $info, $match ) ? array( 'type' => 'mysql', 'version' => $match[1] ) : array( 'type' => 'other', 'version' => '' );
+	return preg_match( '/^(\d+\.\d+(?:\.\d+)?)/', $info, $match ) ? array(
+		'type' => 'mysql',
+		'version' => $match[1],
+	) : array(
+		'type' => 'other',
+		'version' => '',
+	);
 }
 
 /**
@@ -67,17 +79,20 @@ function captain_plugins_requirement_issues(): array {
 	return $issues;
 }
 
-add_action( 'admin_notices', static function (): void {
-	if ( ! current_user_can( 'manage_options' ) ) {
-		return;
+add_action(
+	'admin_notices',
+	static function (): void {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+		$issues = captain_plugins_requirement_issues();
+		if ( empty( $issues ) ) {
+			return;
+		}
+		echo '<div class="notice notice-warning"><p><strong>' . esc_html__( 'Captain Plugins: Server unter den empfohlenen Mindestversionen', 'captain-plugins' ) . '</strong></p><ul style="list-style:disc;padding-left:1.5em">';
+		foreach ( $issues as $issue ) {
+			echo '<li>' . esc_html( $issue ) . '</li>';
+		}
+		echo '</ul><p>' . esc_html__( 'Die Website funktioniert weiter. Bitte aktualisieren Sie die Serverumgebung über Ihren Hoster.', 'captain-plugins' ) . '</p></div>';
 	}
-	$issues = captain_plugins_requirement_issues();
-	if ( empty( $issues ) ) {
-		return;
-	}
-	echo '<div class="notice notice-warning"><p><strong>' . esc_html__( 'Captain Plugins: Server unter den empfohlenen Mindestversionen', 'captain-plugins' ) . '</strong></p><ul style="list-style:disc;padding-left:1.5em">';
-	foreach ( $issues as $issue ) {
-		echo '<li>' . esc_html( $issue ) . '</li>';
-	}
-	echo '</ul><p>' . esc_html__( 'Die Website funktioniert weiter. Bitte aktualisieren Sie die Serverumgebung über Ihren Hoster.', 'captain-plugins' ) . '</p></div>';
-} );
+);

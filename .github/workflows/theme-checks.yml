@@ -21,7 +21,7 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with:
           php-version: "8.5"
-          tools: none
+          tools: composer
 
       - uses: actions/setup-python@v5
         with:
@@ -35,6 +35,11 @@ jobs:
 
       - name: PHP-Syntax aller Theme-Dateien
         run: find theme/captain-plugins -name '*.php' -print0 | xargs -0 -n1 php -l
+
+      - name: WordPress-Coding-Standards und PHP-8.5-Kompatibilität (PHPCS)
+        run: |
+          composer install --no-interaction --no-progress
+          vendor/bin/phpcs -q
 
       - name: Generierte Inhalte sind aktuell
         run: |

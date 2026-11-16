@@ -7,13 +7,62 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function captain_plugins_setup_plan_rows(): array {
 	$products = array(
-		'voucher-captain-pro'   => array( 'name' => 'Voucher Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 129, 'business' => 229, 'agency' => 399 ) ),
-		'pass-captain-pro'      => array( 'name' => 'Pass Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 169, 'business' => 299, 'agency' => 549 ) ),
-		'affiliate-captain-pro' => array( 'name' => 'Affiliate Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 229, 'business' => 399, 'agency' => 699 ) ),
-		'form-captain-pro'      => array( 'name' => 'Form Captain Pro', 'support' => 'standard', 'limits' => array( 'solo' => 1, 'studio' => 5, 'agency' => 25 ), 'prices' => array( 'solo' => 49, 'studio' => 99, 'agency' => 199 ) ),
-		'workflow-captain-pro'  => array( 'name' => 'Workflow Captain Pro', 'support' => 'standard', 'prices' => array( 'single' => 129, 'business' => 229, 'agency' => 399 ) ),
+		'voucher-captain-pro'   => array(
+			'name' => 'Voucher Captain Pro',
+			'support' => 'standard',
+			'prices' => array(
+				'single' => 129,
+				'business' => 229,
+				'agency' => 399,
+			),
+		),
+		'pass-captain-pro'      => array(
+			'name' => 'Pass Captain Pro',
+			'support' => 'standard',
+			'prices' => array(
+				'single' => 169,
+				'business' => 299,
+				'agency' => 549,
+			),
+		),
+		'affiliate-captain-pro' => array(
+			'name' => 'Affiliate Captain Pro',
+			'support' => 'standard',
+			'prices' => array(
+				'single' => 229,
+				'business' => 399,
+				'agency' => 699,
+			),
+		),
+		'form-captain-pro'      => array(
+			'name' => 'Form Captain Pro',
+			'support' => 'standard',
+			'limits' => array(
+				'solo' => 1,
+				'studio' => 5,
+				'agency' => 25,
+			),
+			'prices' => array(
+				'solo' => 49,
+				'studio' => 99,
+				'agency' => 199,
+			),
+		),
+		'workflow-captain-pro'  => array(
+			'name' => 'Workflow Captain Pro',
+			'support' => 'standard',
+			'prices' => array(
+				'single' => 129,
+				'business' => 229,
+				'agency' => 399,
+			),
+		),
 	);
-	$limits = array( 'single' => 1, 'business' => 5, 'agency' => 25 );
+	$limits = array(
+		'single' => 1,
+		'business' => 5,
+		'agency' => 25,
+	);
 	$rows   = array();
 	foreach ( $products as $product_key => $product ) {
 		$product_limits = array_merge( $limits, (array) ( $product['limits'] ?? array() ) );
@@ -77,19 +126,26 @@ function captain_plugins_setup_license_mapping( WC_Product $product, array $row 
  * @return array{created:int,mapped:int,existing:int,skipped:int,errors:int,messages:list<string>}
  */
 function captain_plugins_setup_create_products(): array {
-	$result = array( 'created' => 0, 'mapped' => 0, 'existing' => 0, 'skipped' => 0, 'errors' => 0, 'messages' => array() );
+	$result = array(
+		'created' => 0,
+		'mapped' => 0,
+		'existing' => 0,
+		'skipped' => 0,
+		'errors' => 0,
+		'messages' => array(),
+	);
 	if ( ! class_exists( 'WooCommerce' ) || ! function_exists( 'wc_get_product' ) || ! class_exists( '\\WPLC\\Catalog\\Catalog' ) ) {
-		$result['errors']++;
+		++$result['errors'];
 		$result['messages'][] = __( 'Für die Produktanlage müssen WooCommerce und License Captain aktiv sein.', 'captain-plugins' );
 		return $result;
 	}
 	if ( ! current_user_can( 'manage_woocommerce' ) ) {
-		$result['errors']++;
+		++$result['errors'];
 		$result['messages'][] = __( 'Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten.', 'captain-plugins' );
 		return $result;
 	}
 	if ( 'EUR' !== strtoupper( (string) get_option( 'woocommerce_currency', 'USD' ) ) ) {
-		$result['errors']++;
+		++$result['errors'];
 		$result['messages'][] = __( 'Die Konzeptpreise sind in Euro. Stelle zuerst die WooCommerce-Währung auf EUR, bevor die Preisentwürfe angelegt werden.', 'captain-plugins' );
 		return $result;
 	}
@@ -99,6 +155,7 @@ function captain_plugins_setup_create_products(): array {
 		$product    = $product_id ? wc_get_product( $product_id ) : false;
 		if ( $product && 'captain-plugins-theme-v1' !== (string) $product->get_meta( '_cp_theme_product', true ) ) {
 			++$result['skipped'];
+			/* translators: %s: product SKU. */
 			$result['messages'][] = sprintf( __( 'SKU %s existiert bereits und wurde nicht verändert.', 'captain-plugins' ), $row['sku'] );
 			continue;
 		}
@@ -116,6 +173,7 @@ function captain_plugins_setup_create_products(): array {
 			$product_id = $product->save();
 			if ( ! $product_id ) {
 				++$result['errors'];
+				/* translators: %s: product title. */
 				$result['messages'][] = sprintf( __( 'WooCommerce konnte „%s“ nicht speichern.', 'captain-plugins' ), $row['title'] );
 				continue;
 			}
@@ -130,6 +188,7 @@ function captain_plugins_setup_create_products(): array {
 				++$result['existing'];
 			} else {
 				++$result['skipped'];
+				/* translators: %s: product title. */
 				$result['messages'][] = sprintf( __( 'Der Lizenzplan für „%s“ ist bereits anders zugeordnet und wurde nicht geändert.', 'captain-plugins' ), $row['title'] );
 			}
 			continue;
@@ -138,6 +197,7 @@ function captain_plugins_setup_create_products(): array {
 			++$result['mapped'];
 		} else {
 			++$result['errors'];
+			/* translators: %s: product title. */
 			$result['messages'][] = sprintf( __( '„%s“ ist als Entwurf angelegt, aber License Captain hat den Jahresplan nicht übernehmen können.', 'captain-plugins' ), $row['title'] );
 		}
 	}
