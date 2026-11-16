@@ -10,6 +10,8 @@ Geprüft auf WordPress 7.1.4, WooCommerce 11.3.0, Yoast SEO 28.8 und License Cap
 - Lizenzansicht von License Captain: klassische WooCommerce-Knöpfe im Theme-Design statt Browser-Standard.
 - „Passwort anzeigen“-Knopf zu klein (WCAG 2.5.8).
 - Yoast-Sitemap ohne Warenkorb, Kasse, Konto und Autoren.
+- Bei frischen WooCommerce-Installationen fügte WooCommerce Mini-Warenkorb und Konto-Symbol in den Header ein (Symbol unsichtbar, Menüknopf mobil verschoben, axe-Befund auf allen Seiten); jetzt unterbunden, Konto-Link im Footer.
+- Kein Gravatar-Abruf im Frontend (Datenschutz): lokales Profilbild.
 - Setup-Assistent ergänzt Pro-Funktionen nachträglich, sobald License Captain sie freigibt, und meldet Produkte ohne freigegebene Funktionen.
 
 ### Neu
