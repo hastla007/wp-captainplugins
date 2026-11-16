@@ -6,7 +6,7 @@ Stand: 16. November 2026, Theme-Version 0.6.0. Diese Anleitung deckt Phase 10 de
 
 | Komponente | Mindestens | Hinweis |
 |---|---|---|
-| WordPress | 6.6 | getestet mit 6.7 |
+| WordPress | 6.6 | getestet bis 7.1.4 (mit WooCommerce 11.3, Yoast SEO 28.8, License Captain 0.2.0) |
 | PHP | 8.5 | Entscheidung der Inhaberin vom 16.11.2026. **WordPress aktiviert das Theme auf älterem PHP nicht** („Requires PHP: 8.5“): Produktion und Staging vor dem Theme-Wechsel auf PHP 8.5 umstellen. PHP 8.6 kommt in die Testmatrix. |
 | Datenbank | MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) | ältere Versionen: Warnung im Admin, keine Sperre |
 | WooCommerce | laut Kompatibilitätsmatrix der Plugins | nur für Shop, Konto und Pro-Produkte |
