@@ -17,7 +17,7 @@ require_once get_theme_file_path( 'inc/setup.php' );
 
 function captain_plugins_setup() {
 	load_theme_textdomain( 'captain-plugins', get_template_directory() . '/languages' );
-	add_theme_support( 'title-tag' );
+	// No title-tag support: block templates always print the title; declaring it makes Yoast add a second <title>.
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'responsive-embeds' );
 	add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script', 'navigation-widgets' ) );

@@ -115,10 +115,13 @@ $placeholder = captain_plugins_product_placeholder_html( '<img src="x.png" alt="
 check( 'Platzhalter behält Alt-Text', str_contains( $placeholder, 'alt="Voucher Captain Pro"' ) && str_contains( $placeholder, 'product-placeholder.svg' ), $placeholder );
 $button = captain_plugins_account_url_token( '<a href="{{account_url}}">Konto</a>' );
 check( 'Konto-Platzhalter ersetzt', ! str_contains( $button, '{{account_url}}' ) && str_contains( $button, 'href="http' ), $button );
+check( 'Kein title-tag (sonst doppelter <title> mit Yoast)', ! current_theme_supports( 'title-tag' ) );
+check( 'Yoast-Sitemap ohne Autoren', array() === apply_filters( 'wpseo_sitemap_exclude_author', array( new stdClass() ) ) );
 check( 'Autoren-Sitemap entfernt', false === apply_filters( 'wp_sitemaps_add_provider', new stdClass(), 'users' ) );
 check( 'Seiten-Sitemap bleibt', false !== apply_filters( 'wp_sitemaps_add_provider', new stdClass(), 'posts' ) );
 if ( function_exists( 'wc_get_page_id' ) && wc_get_page_id( 'cart' ) > 0 ) {
 	$args = apply_filters( 'wp_sitemaps_posts_query_args', array(), 'page' );
+	check( 'Warenkorb nicht in der Yoast-Sitemap', in_array( (int) wc_get_page_id( 'cart' ), apply_filters( 'wpseo_exclude_from_sitemap_by_post_ids', array() ), true ) );
 	check( 'Warenkorb nicht in der Sitemap', in_array( (int) wc_get_page_id( 'cart' ), (array) ( $args['post__not_in'] ?? array() ), true ) );
 }
 

@@ -65,3 +65,23 @@ add_filter(
 	10,
 	2
 );
+
+/** Yoast sitemap: same rule as the core sitemap – no cart, checkout or account pages (WooCommerce sets them noindex). */
+add_filter(
+	'wpseo_exclude_from_sitemap_by_post_ids',
+	static function ( $ids ): array {
+		$ids = array_map( 'intval', (array) $ids );
+		if ( function_exists( 'wc_get_page_id' ) ) {
+			foreach ( array( 'cart', 'checkout', 'myaccount' ) as $page ) {
+				$id = (int) wc_get_page_id( $page );
+				if ( $id > 0 ) {
+					$ids[] = $id;
+				}
+			}
+		}
+		return array_values( array_unique( $ids ) );
+	}
+);
+
+/** Yoast sitemap without author archives (no content of their own here; would publish login names). */
+add_filter( 'wpseo_sitemap_exclude_author', static fn(): array => array() );
