@@ -101,9 +101,10 @@ Messwerte der Testinstallation (Lighthouse 12, 16.11.2026): Performance mobil 96
 
 | Was | Empfehlung |
 |---|---|
-| Verfügbarkeit | Externer Uptime-Check der Startseite und von `/preise/` im 5-Minuten-Takt; Alarm per E-Mail. |
+| Verfügbarkeit | **Eingerichtet:** Workflow `.github/workflows/uptime.yml` prüft stündlich Startseite, Preise, Captain Pro, Warenkorb und Kasse (HTTP 200, Antwortzeit, kein „kritischer Fehler“) und das TLS-Zertifikat (≥ 21 Tage). Bei einem Ausfall legt er das Issue „Website nicht verfügbar“ an und schließt es, sobald alles wieder läuft. Aktivieren: Repository-Variable `SITE_URL` (und bei deutschen Shop-Slugs `SHOP_PATHS`, z. B. `/warenkorb/,/kasse/`) setzen und das Repository „beobachten“. Für kürzere Intervalle zusätzlich einen externen Dienst nutzen. |
+| License Captain | **Eingerichtet:** `tools/ops/captain-monitoring.php` als `wp-content/mu-plugins/captain-monitoring.php` ablegen. Es mailt die Gesundheitswarnungen von License Captain (`wplc/health_alert`: offene Verlängerungen, fehlgeschlagene Jobs, Lizenzprodukte ohne Plan …) an `CAPTAIN_MONITORING_EMAIL` bzw. die Admin-Adresse. Diagnose zusätzlich unter *WooCommerce → License diagnostics*. |
 | PHP-Fehler | `WP_DEBUG_LOG` auf Staging; in Produktion Fehlerprotokoll des Hosters täglich prüfen bzw. automatisch melden lassen. `WP_DEBUG_DISPLAY` in Produktion immer aus. |
-| Checkout-Abbrüche | WooCommerce-Berichte (fehlgeschlagene und abgebrochene Bestellungen) wöchentlich prüfen; Zahlungsanbieter-Dashboard für Fehlversuche. |
+| Checkout-Abbrüche | **Eingerichtet** über dasselbe Must-Use-Plugin: täglich um 06:17 eine Mail mit der Zahl fehlgeschlagener, abgebrochener und offener Bestellungen der letzten 24 Stunden (nur Zahlen, keine Kundendaten; Schwelle per Filter `captain_monitoring_order_threshold`). Zahlungsanbieter-Dashboard für Fehlversuche zusätzlich prüfen. |
 | Suchanfragen | WordPress-interne Suche ohne Fremddienst auswerten, z. B. über die Server-Logs (`?s=`) oder ein lokal speicherndes Plugin. |
 | CTA-Klicks | Nur mit Einwilligung und einem datenschutzkonform eingerichteten Analysewerkzeug; das Theme liefert kein Tracking mit. In der Datenschutzerklärung aufführen. |
 | Search Console | Indexierung, Crawling-Fehler und Core Web Vitals monatlich prüfen. |
@@ -140,3 +141,12 @@ Geprüft mit WooCommerce 9.4 und den 15 Captain-Pro-Produkten aus dem Setup-Assi
 - **Kasse für digitale Lizenzen:** Telefon und Lieferadresse sind nicht nötig; unter *WooCommerce → Einstellungen → Allgemein/Versand* bzw. im Checkout-Block die Felder auf das Nötige reduzieren.
 - **E-Mail-Fußzeile:** Standardtext „Built with WooCommerce“ unter *WooCommerce → Einstellungen → E-Mails* ersetzen.
 - **Bekannte WooCommerce-Befunde:** axe meldet `label-content-name-mismatch` am „In den Warenkorb“- und „Entfernen“-Button (Markup von WooCommerce, nicht vom Theme). Die Shop-Übersicht erreicht in Lighthouse rund 63 Punkte, weil WooCommerce dort viele Skripte im Kopf lädt.
+
+## Staging-Nachbau und Ergebnisse (16.11.2026)
+
+Geprüft auf WordPress 7.1.4 (de_DE), WooCommerce 11.3.0, Yoast SEO 28.8 und License Captain 0.2.0 mit MariaDB 10.11; dazu läuft `.github/workflows/staging-php85.yml` bei jedem Push mit PHP 8.5 gegen MySQL- und MariaDB-LTS.
+
+- **Yoast:** genau ein Titel, eine Beschreibung, ein Canonical und ein robots-Tag je Seite; Titel/Beschreibung wie importiert; Social-Bild je Produktbereich; Warenkorb, Kasse, Konto und Suche noindex; Yoast-Sitemap ohne diese Seiten und ohne Autoren (`tools/qa/seo-head.py`). Empfehlung: in Yoast unter *Darstellung in der Suche → Inhaltstypen → Produkte* eine Beschreibungsvorlage mit `%%excerpt%%` setzen und die Organisation (Name, Logo) hinterlegen; die Shop-Seite auf noindex stellen.
+- **License Captain end-to-end:** Kauf (auch als Gast; Pflicht-Zustimmung zum vorzeitigen Lizenzbeginn), Lizenz nach Zahlungseingang, Lizenzansicht im Konto, Aktivierung durch ein Pro-Add-on mit signierter Antwort, Funktionsfreigabe, Websitelimit, Verlängerung über *Jetzt verlängern* und die Bezahlseite (+1 Jahr), Deaktivierung. Wiederholbar mit `php tools/qa/license-e2e.php /pfad/zu/wp-load.php <Lizenzschlüssel>`.
+- **Wichtig für den Verkauf:** License Captain gibt derzeit nur für Affiliate Captain Pro und Pass Captain Pro Pro-Funktionen frei. Voucher, Form, Workflow, Review und Course Captain Pro stehen in dessen Katalog noch auf „geplant“; Käufer bekämen eine Lizenz ohne freigeschaltete Funktion. Der Setup-Assistent meldet das und ergänzt die Funktionen bei einem erneuten Lauf, sobald License Captain sie freigibt.
+- **Datenbank:** License Captain braucht MySQL/MariaDB mit `GET_LOCK` und einem beschreibbaren Primärserver (kein Proxy mit Connection-Multiplexing).
