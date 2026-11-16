@@ -1,36 +1,51 @@
 ---
 url: /preise/
 seo_title: Preise für Captain Pro – WordPress-Plugin-Pläne vergleichen
-meta_description: Vergleichen Sie die Jahrespreise von Voucher Captain Pro, Pass Captain Pro und Affiliate Captain Pro für 1, 5 oder 25 Websites.
+meta_description: Vergleichen Sie Preise und Website-Limits für Voucher, Pass, Affiliate, Review, Form und Workflow Captain Pro.
 focus_keyphrase: WordPress Plugin Preise
 ---
 
 # Der passende Captain-Pro-Plan für Ihre Websites
 
-Die kostenlosen Kern-Plugins können Sie unabhängig von Captain Pro einsetzen. Wählen Sie eine Pro-Erweiterung und den Plan nach der Zahl Ihrer Live-Websites. License Captain ist ohne Aufpreis enthalten.
+Die kostenlosen Kern-Plugins können Sie unabhängig von Captain Pro einsetzen. Wählen Sie eine Pro-Erweiterung und den Plan nach der Zahl Ihrer Live-Websites. License Captain ist ein separates Server-Plugin und nicht in Captain Pro enthalten.
 
 ## Jahrespläne
 
-| Produkt | Single · 1 Website | Business · 5 Websites | Agency · 25 Websites |
+| Produkt | 1 Live-Website | 5 Live-Websites | 25 Live-Websites |
 |---|---:|---:|---:|
 | Voucher Captain Pro | 129 € / Jahr | 229 € / Jahr | 399 € / Jahr |
 | Pass Captain Pro | 169 € / Jahr | 299 € / Jahr | 549 € / Jahr |
 | Affiliate Captain Pro | 229 € / Jahr | 399 € / Jahr | 699 € / Jahr |
+| Form Captain Pro | 49 € / Jahr | 99 € / Jahr | 199 € / Jahr |
+| Workflow Captain Pro | 129 € / Jahr | 229 € / Jahr | 399 € / Jahr |
 
-Alle Pläne enthalten den vollständigen Pro-Funktionsumfang des jeweiligen Add-ons. Die Website-Limits beziehen sich auf Live-Websites. Single und Business enthalten Standard-Support; Agency enthält Priority-Support. Verbindliche Antwortzeiten und Supportkanal werden in den Tarifunterlagen noch nicht festgelegt.
+Alle Pläne enthalten den vollständigen Pro-Funktionsumfang des jeweiligen Add-ons. Die Website-Limits beziehen sich auf Live-Websites. Die Plannamen hängen vom Produkt ab: Single/Business/Agency bei den Suite- und Workflow-Angeboten, Solo/Studio/Agency bei Form und Review. Standard-Support gilt für den kleineren Site-Umfang, Priority-Support für Agency. Verbindliche Antwortzeiten und Supportkanal werden in den Tarifunterlagen noch nicht festgelegt.
 
 ## Was ist enthalten?
 
-- Das passende Captain-Pro-Add-on mit allen dafür vorgesehenen Pro-Funktionen.
-- Updates und Lizenzverwaltung über License Captain.
+- Das passende Captain-Pro-Add-on mit dem vollständigen Pro-Funktionsumfang des Produkts.
+- Updates für das gewählte Pro-Add-on während der aktiven Laufzeit.
 - Nutzung auf der im Plan angegebenen Zahl an Live-Websites.
 - Support gemäß Tarif.
 
-Die kostenlosen Kern-Plugins bleiben kostenlos. License Captain wird nicht separat berechnet.
+Die kostenlosen Kern-Plugins bleiben kostenlos. License Captain wird separat angeboten. Preise und Pläne finden Sie auf der [License-Captain-Produktseite](/license-captain/preise/).
 
 [Voucher-Pläne auswählen](/voucher-captain/pro/)  
 [Pass-Pläne auswählen](/pass-captain/pro/)  
 [Affiliate-Pläne auswählen](/affiliate-captain/pro/)
+[Workflow-Captain-Pläne auswählen](/workflow-captain/pro/)
+
+## Form Captain Pro
+
+Die Form-Captain-Pro-Beträge sind Jahrespreise zzgl. Umsatzsteuer. Die Pläne heißen Solo (1 Live-Website), Studio (5) und Agency (25); in jedem Plan ist der volle Pro-Funktionsumfang enthalten.
+
+[Form Captain Pro auswählen](/form-captain/pro/)
+
+## Review Captain Pro
+
+Review Captain Pro ist mit den Plänen Solo (1 Live-Website), Studio (5) und Agency (25) erhältlich. Alle Pro-Funktionen sind in jedem Plan enthalten; Agency bietet priorisierten Support. Den aktuellen Jahrespreis sehen Sie direkt beim jeweiligen Plan im Shop.
+
+[Review Captain Pro ansehen](/review-captain/pro/)
 
 **[Checkout-Link je Plan ergänzen: Checkout-URL]**
 

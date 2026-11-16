@@ -25,6 +25,9 @@ PRODUCT_NAMES = {
     "pass-captain": "Pass Captain",
     "affiliate-captain": "Affiliate Captain",
     "license-captain": "License Captain",
+    "form-captain": "Form Captain",
+    "review-captain": "Review Captain",
+    "workflow-captain": "Workflow Captain",
 }
 
 
@@ -239,7 +242,7 @@ def markdown_blocks(markdown: str, page_path: str = "") -> str:
     return compose_sections(out, page_path)
 
 
-PRODUCT_SLUGS = ("voucher-captain", "pass-captain", "affiliate-captain", "license-captain")
+PRODUCT_SLUGS = tuple(PRODUCT_NAMES)
 PLAN_NAMES = ("Single", "Business", "Agency")
 HEADING_RE = re.compile(r'<!-- wp:heading \{"level":(\d+)')
 
@@ -586,7 +589,7 @@ def title_from_path(path: str) -> str:
 def page_group(path: str) -> str:
     if path.startswith("ratgeber/"):
         return "guides"
-    if path.startswith(("voucher-captain/", "pass-captain/", "affiliate-captain/", "license-captain/", "dokumentation/installation/")):
+    if path.startswith(tuple(f"{slug}/" for slug in PRODUCT_NAMES) + ("dokumentation/installation/",)):
         return "products"
     return "core"
 

@@ -37,7 +37,7 @@ Laden Sie das gekaufte Add-on aus Ihrem Kundenkonto herunter. Öffnen Sie in Wor
 
 ## 5. Websites und Verlängerung verwalten
 
-Ihr Plan erlaubt die Nutzung auf 1, 5 oder 25 Live-Websites. Verwalten Sie Aktivierungen und Verlängerung im Lizenzbereich. License Captain ist im Angebot enthalten und unterstützt Lizenzverwaltung und Updateversorgung.
+Ihr Plan erlaubt die Nutzung auf 1, 5 oder 25 Live-Websites. Verwalten Sie Aktivierungen und Verlängerung über den von Captain Plugins bereitgestellten Lizenzbereich. Für Captain Pro müssen Sie keinen eigenen Lizenzserver installieren oder erwerben.
 
 [Screenshot-Platzhalter: Zeigen Sie den Planvergleich Single, Business und Agency mit den Limits 1, 5 und 25 Live-Websites sowie dem gewählten Plan; keine persönlichen Lizenzdaten abbilden.]  
 [Demo: Pro-Feature nach Aktivierung]

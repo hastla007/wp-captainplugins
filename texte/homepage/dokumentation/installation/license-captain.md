@@ -57,7 +57,7 @@ Wenn Stripe genutzt wird, richten Sie zusätzlich den in den License-Captain-Ein
 
 ## 5. Erstes Produkt-Plugin anbinden
 
-Binden Sie Ihr Produkt-Plugin über die dokumentierte Client-Bibliothek und signierte API an. Konfigurieren Sie Entitlements und erlaubte Updatepakete. Erstellen Sie danach ein Testprodukt, kaufen Sie eine Lizenz im Testmodus und prüfen Sie Aktivierung, Statusanzeige und Updatezugriff.
+Wählen Sie den Integrationsweg für jedes Produkt-Plugin: Integrieren Sie den API-Client direkt nach der dokumentierten Schnittstellenspezifikation in den Produktcode oder stellen Sie die Verbindung über ein separates Client-Plugin bereit. Der Server und der Client sind getrennte Komponenten; License Captain Server enthält keinen universellen Client für beliebige Produkt-Plugins. Konfigurieren Sie Entitlements und erlaubte Updatepakete. Erstellen Sie danach ein Testprodukt, kaufen Sie eine Lizenz im Testmodus und prüfen Sie Aktivierung, Statusanzeige und Updatezugriff.
 
 > **Screenshot-Platzhalter 5 – Kundenkonto mit Lizenz:** Zeigen Sie eine Testlizenz mit Status, Ablaufdatum und anonymisierter Aktivierung. Lizenzschlüssel und Domain durch unbrauchbare Beispieldaten ersetzen.
 

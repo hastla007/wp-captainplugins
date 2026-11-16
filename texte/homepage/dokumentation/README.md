@@ -6,6 +6,7 @@ Diese Anleitungen führen von den Voraussetzungen bis zu einem ersten geprüften
 - [Voucher Captain installieren](installation/voucher-captain.md)
 - [Pass Captain installieren](installation/pass-captain.md)
 - [Affiliate Captain installieren](installation/affiliate-captain.md)
+- [Workflow Captain installieren](../workflow-captain/installation.md)
 - [License Captain installieren](installation/license-captain.md)
 - [Captain-Pro-Erweiterung installieren](installation/captain-pro.md)
 

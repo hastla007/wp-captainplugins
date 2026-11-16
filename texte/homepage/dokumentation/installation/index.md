@@ -14,6 +14,9 @@ Die folgenden Anleitungen führen Sie durch Installation und Einrichtung der ein
 - [Voucher Captain installieren](/dokumentation/installation/voucher-captain/): WooCommerce-Gutscheine, PDF-Vorlagen und Zustellung einrichten.
 - [Pass Captain installieren](/dokumentation/installation/pass-captain/): Events, Services, Zahlungen, Tickets und Einlass vorbereiten.
 - [Affiliate Captain installieren](/dokumentation/installation/affiliate-captain/): Partnerseiten, Provisionen und Auszahlungen konfigurieren.
+- [Form Captain installieren](/form-captain/installation/): erstes Formular erstellen, Einträge verwalten und E-Mail testen.
+- [Review Captain installieren](/review-captain/installation/): Quellen einrichten, Reviews kuratieren und Widgets veröffentlichen.
+- [Workflow Captain installieren](/workflow-captain/installation/): Provider prüfen, einen Ablauf erstellen und den ersten Dry Run ausführen.
 - [License Captain installieren](/dokumentation/installation/license-captain/): WooCommerce-Lizenzshop, Schlüssel und Updates einrichten.
 - [Captain-Pro-Erweiterung installieren](/dokumentation/installation/captain-pro/): passendes Kern-Plugin, Add-on und Lizenz aktivieren.
 
