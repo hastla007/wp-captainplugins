@@ -1,7 +1,7 @@
 ---
 url: /workflow-captain/pro/
-seo_title: Workflow Captain Pro – Suite-Integrationen und sichere Automationen
-meta_description: Verbinden Sie Captain-Plugins mit signierten Webhooks, erweiterten Workflows, kontrolliertem Replay und nachvollziehbaren Protokollen. Alle Funktionen in jedem Plan.
+seo_title: Workflow Captain Pro – Suite-Integrationen und Webhooks
+meta_description: Verbinden Sie Captain-Plugins mit signierten Webhooks, erweiterten Workflows, kontrolliertem Replay und Protokollen. Alle Funktionen in jedem Plan.
 focus_keyphrase: Workflow Captain Pro
 ---
 

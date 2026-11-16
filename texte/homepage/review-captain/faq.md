@@ -1,6 +1,6 @@
 ---
 url: /review-captain/faq/
-seo_title: Review Captain FAQ – Fragen zu Bewertungen, Plattformen und Datenschutz
+seo_title: Review Captain FAQ: Bewertungen, Plattformen, Datenschutz
 meta_description: Antworten zu Review Captain Free und Pro, Plattformzugängen, fairen Bewertungsanfragen, Connectoren, Datenschutz und Preisen.
 focus_keyphrase: Review Captain FAQ
 ---

@@ -1,6 +1,6 @@
 ---
 url: /workflow-captain/kompatibilitaet/
-seo_title: Workflow Captain Kompatibilität – WordPress, PHP und WooCommerce
+seo_title: Workflow Captain Kompatibilität: WordPress, PHP, Woo
 meta_description: Prüfen Sie die vorgesehenen WordPress-, PHP- und WooCommerce-Anforderungen sowie die Voraussetzungen der Workflow-Captain-Pro-Provider.
 focus_keyphrase: Workflow Captain Kompatibilität
 ---

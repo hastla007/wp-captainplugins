@@ -1,6 +1,6 @@
 ---
 url: /dokumentation/form-captain/
-seo_title: Form Captain Dokumentation – Formulare und Entries einrichten
+seo_title: Form Captain Dokumentation: Formulare einrichten
 meta_description: Dokumentation für Form Captain: Installation, Formulareditor, Felder, E-Mail, Einträge, Export, Datenschutz und Integrationen.
 focus_keyphrase: Form Captain Dokumentation
 ---

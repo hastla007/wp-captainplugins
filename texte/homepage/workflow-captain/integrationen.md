@@ -1,6 +1,6 @@
 ---
 url: /workflow-captain/integrationen/
-seo_title: Workflow Captain Integrationen – WooCommerce, Captain Suite und Webhooks
+seo_title: Workflow Captain Integrationen: WooCommerce und Webhooks
 meta_description: Verbinden Sie WordPress, WooCommerce und Captain-Plugins über versionierte Provider, separate Projekt-Connectoren und signierte Webhooks.
 focus_keyphrase: Workflow Captain Integrationen
 ---

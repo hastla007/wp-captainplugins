@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/review-captain/app-store-bewertungen-auf-website/
-seo_title: App-Store-Bewertungen auf der Website zeigen | Review Captain
+seo_title: App-Store-Bewertungen auf der Website zeigen
 meta_description: Präsentieren Sie Rezensionen eigener Apps aus Apple App Store und Google Play auf Ihrer Website – mit Herkunft, App-Bezug und zulässigem API-Zugang.
 focus_keyphrase: App Store Bewertungen auf Website anzeigen
 ---

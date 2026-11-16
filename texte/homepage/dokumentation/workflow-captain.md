@@ -1,6 +1,6 @@
 ---
 url: /dokumentation/workflow-captain/
-seo_title: Workflow Captain Dokumentation – Workflows einrichten und betreiben
+seo_title: Workflow Captain Dokumentation: Workflows betreiben
 meta_description: Workflow Captain Dokumentation zu Installation, Triggern, Bedingungen, Aktionen, Warteschlange, Protokollen und Integrationen.
 focus_keyphrase: Workflow Captain Dokumentation
 ---

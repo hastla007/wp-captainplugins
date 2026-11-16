@@ -700,9 +700,24 @@ def build() -> None:
             markup += "\n\n" + group_block("cp-content-section", [group_block("cp-card-grid", cards)], "full")
         file_name = entry_file(path)
         (pages_dir / file_name).write_text(markup + "\n", encoding="utf-8")
+        product_name = PRODUCT_NAMES.get(slug, "")
+        if path == "ratgeber":
+            seo = ("Ratgeber für WordPress und WooCommerce | Captain Plugins",
+                   "Anleitungen und Praxiswissen zu Gutscheinen, Events, Partnerprogrammen, Formularen, Bewertungen, Automationen und Lizenzen in WordPress.",
+                   "WordPress Ratgeber")
+        elif product_name:
+            seo = (f"{product_name}: Ratgeber und Anleitungen",
+                   f"Praxisnahe Anleitungen zu {product_name}: Einrichtung, typische Abläufe und Tipps für den Einsatz in WordPress und WooCommerce.",
+                   f"{product_name} Anleitung")
+        elif path == "loesungen":
+            seo = ("Branchenlösungen mit WordPress | Captain Plugins",
+                   "Lösungen für wiederkehrende Geschäftsabläufe: wie Betriebe ihre Buchungen, Gutscheine und Anfragen mit den Captain-Plugins in WordPress abbilden.",
+                   "WordPress Branchenlösungen")
+        else:
+            seo = ("", "", "")
         sources[path] = {
             "path": path, "slug": slug, "parent": "/".join(path.split("/")[:-1]), "title": title,
-            "group": group, "file": file_name, "seo_title": "", "meta_description": "", "focus_keyphrase": "",
+            "group": group, "file": file_name, "seo_title": seo[0], "meta_description": seo[1], "focus_keyphrase": seo[2],
             "has_placeholders": False, "source_hash": hashlib.sha256(markup.encode("utf-8")).hexdigest(),
             "source_file": "generated directory page",
         }

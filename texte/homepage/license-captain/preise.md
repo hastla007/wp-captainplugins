@@ -1,6 +1,6 @@
 ---
 url: /license-captain/preise/
-seo_title: License Captain Preise und Pläne – Lizenzserver für WordPress
+seo_title: License Captain Preise: Lizenzserver und Client
 meta_description: License Captain Preise und Pläne: Lizenzserver für WooCommerce und Client für Ihre WordPress-Plugins in einem Angebot.
 focus_keyphrase: License Captain Preise
 ---

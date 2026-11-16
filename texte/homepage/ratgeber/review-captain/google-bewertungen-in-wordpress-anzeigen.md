@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/review-captain/google-bewertungen-in-wordpress-anzeigen/
-seo_title: Google-Bewertungen in WordPress anzeigen – Quellen sauber einbinden
+seo_title: Google-Bewertungen in WordPress anzeigen
 meta_description: So zeigen Unternehmen Google-Bewertungen in WordPress transparent an: offizieller API-Zugang, Widgets, Profil-Link, Quellenhinweis und Datenschutz.
 focus_keyphrase: Google Bewertungen in WordPress anzeigen
 ---

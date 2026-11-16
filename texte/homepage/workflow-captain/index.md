@@ -1,7 +1,7 @@
 ---
 url: /workflow-captain/
-seo_title: Workflow Captain – WordPress-Automatisierung für Unternehmen
-meta_description: Verbinden Sie WordPress, WooCommerce und Captain-Plugins in nachvollziehbaren Workflows – lokal auf Ihrer Website, mit kostenlosen Kernfunktionen und optionalem Pro.
+seo_title: Workflow Captain – WordPress-Automatisierung
+meta_description: Verbinden Sie WordPress, WooCommerce und Captain-Plugins in nachvollziehbaren Workflows – lokal auf Ihrer Website, kostenlos im Kern, optional mit Pro.
 focus_keyphrase: WordPress Automatisierung Plugin
 ---
 

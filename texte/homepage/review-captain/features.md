@@ -1,6 +1,6 @@
 ---
 url: /review-captain/features/
-seo_title: Review Captain Features – Bewertungen und Testimonials verwalten
+seo_title: Review Captain Features: Bewertungen und Testimonials
 meta_description: Entdecken Sie die Review-Captain-Funktionen: Reviews moderieren, externe Quellen kennzeichnen, Bewertungen einbinden und Anfragen mit Pro automatisieren.
 focus_keyphrase: Review Plugin Features
 ---

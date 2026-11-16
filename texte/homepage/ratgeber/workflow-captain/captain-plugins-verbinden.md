@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/workflow-captain/captain-plugins-verbinden/
-seo_title: Captain-Plugins mit Workflows verbinden – sichere Integrationen
+seo_title: Captain-Plugins mit Workflows sicher verbinden
 meta_description: So verbinden Sie Captain-Plugins über versionierte Provider, klare Datenverantwortung und geprüfte Aktionen in Workflow Captain.
 focus_keyphrase: Captain Plugins verbinden
 ---

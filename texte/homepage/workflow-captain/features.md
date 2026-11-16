@@ -1,6 +1,6 @@
 ---
 url: /workflow-captain/features/
-seo_title: Workflow Captain Features – Workflows für WordPress und WooCommerce
+seo_title: Workflow Captain Features: Automationen für WordPress
 meta_description: Entdecken Sie den visuellen Editor, WordPress- und WooCommerce-Auslöser, Captain-Suite-Provider, Webhooks, Protokolle und sichere Wiederholungen.
 focus_keyphrase: WordPress Workflow Plugin Funktionen
 ---

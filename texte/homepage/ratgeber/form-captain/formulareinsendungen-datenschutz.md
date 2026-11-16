@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/form-captain/formulareinsendungen-datenschutz/
-seo_title: Formulareinsendungen in WordPress datenschutzgerecht verwalten
+seo_title: Formulareinsendungen datenschutzgerecht verwalten
 meta_description: Leitfaden zu Datensparsamkeit, Zugriffsrechten, Aufbewahrung und Löschung von WordPress-Formulareinsendungen.
 focus_keyphrase: Formulareinsendungen Datenschutz WordPress
 ---

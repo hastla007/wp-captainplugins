@@ -11,7 +11,8 @@ add_filter( 'document_title_parts', static function ( array $parts ): array {
 	}
 	$title = (string) get_post_meta( get_queried_object_id(), '_cp_seo_title', true );
 	if ( '' !== $title ) {
-		$parts['title'] = $title;
+		// The stored SEO title is the complete document title (as in Yoast), so WordPress must not append the site name.
+		$parts = array( 'title' => $title );
 	}
 	return $parts;
 } );

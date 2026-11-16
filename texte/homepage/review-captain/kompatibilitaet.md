@@ -1,6 +1,6 @@
 ---
 url: /review-captain/kompatibilitaet/
-seo_title: Review Captain Kompatibilität – WordPress und Review-Plattformen
+seo_title: Review Captain Kompatibilität: WordPress und Plattformen
 meta_description: Erfahren Sie, welche WordPress-, WooCommerce- und Plattformverbindungen Review Captain unterstützt und welche Zugänge für den Sync erforderlich sind.
 focus_keyphrase: Review Captain Kompatibilität
 ---

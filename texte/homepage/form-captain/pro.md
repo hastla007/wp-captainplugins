@@ -1,6 +1,6 @@
 ---
 url: /form-captain/pro/
-seo_title: Form Captain Pro – Mehrstufige WordPress-Formulare und Workflows
+seo_title: Form Captain Pro – mehrstufige Formulare und Workflows
 meta_description: Erweitern Sie WordPress-Formulare um mehrstufige Abläufe, sichere Uploads, komplexe Bedingungen, Webhooks und PDF-Ausgaben.
 focus_keyphrase: Form Captain Pro
 ---

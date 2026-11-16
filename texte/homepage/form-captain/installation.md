@@ -1,6 +1,6 @@
 ---
 url: /form-captain/installation/
-seo_title: Form Captain installieren – Formulare in WordPress einrichten
+seo_title: Form Captain installieren: Formulare einrichten
 meta_description: Installieren Sie Form Captain, wählen Sie eine Formularvorlage, fügen Sie Felder hinzu und testen Sie Ihre erste Einsendung in WordPress.
 focus_keyphrase: Form Captain installieren
 ---

@@ -1,7 +1,7 @@
 ---
 url: /impressum/
 seo_title: Impressum | Captain Plugins
-meta_description: Anbieterkennzeichnung und Kontaktangaben von Captain Plugins.
+meta_description: Impressum von Captain Plugins: Anbieterkennzeichnung, Kontaktangaben, Register- und Steuerinformationen sowie inhaltlich verantwortliche Person.
 focus_keyphrase: Impressum Captain Plugins
 ---
 

@@ -1,6 +1,6 @@
 ---
 url: /form-captain/kompatibilitaet/
-seo_title: Form Captain Kompatibilität – WordPress, WooCommerce und Blöcke
+seo_title: Form Captain Kompatibilität: WordPress und WooCommerce
 meta_description: Prüfen Sie die Form-Captain-Voraussetzungen für WordPress, E-Mail, Gutenberg, WooCommerce und Captain-Suite-Integrationen.
 focus_keyphrase: Form Captain Kompatibilität
 ---

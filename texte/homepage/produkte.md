@@ -1,6 +1,6 @@
 ---
 url: /produkte/
-seo_title: WordPress-Plugins für Unternehmen | Captain Plugins
+seo_title: Captain-Plugins im Überblick: Produkte für WordPress
 meta_description: Vergleichen Sie Voucher, Pass, Affiliate, Form, Review und Workflow Captain sowie License Captain nach Geschäftsaufgabe, Funktionen und Voraussetzungen.
 focus_keyphrase: WordPress-Plugins für Unternehmen vergleichen
 ---

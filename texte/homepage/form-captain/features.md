@@ -1,6 +1,6 @@
 ---
 url: /form-captain/features/
-seo_title: Form Captain Features – Formulare erstellen und Einsendungen verwalten
+seo_title: Form Captain Features: Formulare und Einsendungen
 meta_description: Erstellen Sie WordPress-Formulare mit Vorlagen, Validierung, E-Mail-Benachrichtigungen, sicher gespeicherten Einträgen, CSV-Export und Spamschutz.
 focus_keyphrase: WordPress Formular Features
 ---

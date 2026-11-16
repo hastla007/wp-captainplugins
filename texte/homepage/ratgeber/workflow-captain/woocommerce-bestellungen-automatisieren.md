@@ -1,6 +1,6 @@
 ---
 url: /ratgeber/workflow-captain/woocommerce-bestellungen-automatisieren/
-seo_title: WooCommerce-Bestellungen automatisieren – Trigger und Aktionen
+seo_title: WooCommerce-Bestellungen automatisieren
 meta_description: Planen Sie sichere WooCommerce-Automationen für Bestellungen, Refunds und Statuswechsel mit klaren Regeln, Protokollen und Deduplizierung.
 focus_keyphrase: WooCommerce Bestellungen automatisieren
 ---

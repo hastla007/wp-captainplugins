@@ -1,6 +1,6 @@
 ---
 url: /workflow-captain/installation/
-seo_title: Workflow Captain installieren – erste Automatisierung einrichten
+seo_title: Workflow Captain installieren: erste Automation
 meta_description: Installieren Sie Workflow Captain, prüfen Sie WordPress-Voraussetzungen und erstellen Sie Ihren ersten WordPress- oder WooCommerce-Workflow.
 focus_keyphrase: Workflow Captain installieren
 ---
