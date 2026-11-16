@@ -71,7 +71,12 @@ def main() -> None:
         out.append("")
     target = THEME / "languages" / "captain-plugins.pot"
     target.parent.mkdir(exist_ok=True)
-    target.write_text("\n".join(out), encoding="utf-8")
+    content = "\n".join(out)
+    strip_date = lambda text: re.sub(r'"POT-Creation-Date: [^"]*"\n', "", text)
+    if target.exists() and strip_date(target.read_text(encoding="utf-8")) == strip_date(content):
+        print(f"{len(entries)} Strings, keine Änderung an {target.relative_to(ROOT)}")
+        return
+    target.write_text(content, encoding="utf-8")
     print(f"{len(entries)} Strings nach {target.relative_to(ROOT)} geschrieben")
 
 
