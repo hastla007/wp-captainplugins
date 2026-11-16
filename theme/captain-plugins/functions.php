@@ -105,6 +105,20 @@ function captain_plugins_front_page_hierarchy( array $templates ): array {
 }
 add_filter( 'frontpage_template_hierarchy', 'captain_plugins_front_page_hierarchy' );
 
+/** Name each footer navigation landmark after its column heading so screen readers can tell them apart. */
+function captain_plugins_label_footer_nav( string $content, array $block ): string {
+	if ( 'nav' !== ( $block['attrs']['tagName'] ?? '' ) || false === strpos( (string) ( $block['attrs']['className'] ?? '' ), 'cp-footer-nav' ) || false !== strpos( $content, 'aria-label=' ) ) {
+		return $content;
+	}
+	if ( ! preg_match( '#<h[2-6][^>]*>(.*?)</h[2-6]>#s', $content, $heading ) ) {
+		return $content;
+	}
+	/* translators: %s: footer column heading, e.g. "Produkte". */
+	$label = sprintf( __( 'Footer: %s', 'captain-plugins' ), wp_strip_all_tags( $heading[1] ) );
+	return (string) preg_replace( '/<nav\b/', '<nav aria-label="' . esc_attr( $label ) . '"', $content, 1 );
+}
+add_filter( 'render_block_core/group', 'captain_plugins_label_footer_nav', 10, 2 );
+
 /** Keep the footer copyright year current without a placeholder in the template part. */
 function captain_plugins_copyright_year( string $content, array $block ): string {
 	if ( false === strpos( (string) ( $block['attrs']['className'] ?? '' ), 'cp-copyright' ) ) {
@@ -119,7 +133,15 @@ function captain_plugins_accessible_table( string $content ): string {
 	if ( false === strpos( $content, 'wp-block-table' ) ) {
 		return $content;
 	}
-	$label = esc_attr__( 'Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen.', 'captain-plugins' );
+	// Name each scroll region after its first column headings so several tables on one page stay distinguishable.
+	$columns = array();
+	if ( preg_match_all( '#<th\b[^>]*>(.*?)</th>#s', $content, $cells ) ) {
+		$columns = array_slice( array_filter( array_map( static fn( $cell ) => trim( wp_strip_all_tags( $cell ) ), $cells[1] ) ), 0, 3 );
+	}
+	$label = $columns
+		/* translators: %s: comma-separated first column headings of a table. */
+		? esc_attr( sprintf( __( 'Tabelle mit den Spalten %s; bei Bedarf horizontal scrollen.', 'captain-plugins' ), implode( ', ', $columns ) ) )
+		: esc_attr__( 'Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen.', 'captain-plugins' );
 	return (string) preg_replace_callback(
 		'/<figure\b([^>]*)>/i',
 		static function ( array $matches ) use ( $label ): string {
