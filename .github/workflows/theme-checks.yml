@@ -58,6 +58,9 @@ jobs:
       - name: Preise der Website = Shop-Katalog
         run: python3 tools/price-check.py
 
+      - name: Redaktionsregeln (License-Captain-Sprachregel, SEO-Felder) und Abnahmeliste
+        run: python3 tools/acceptance-list.py
+
       - name: Gutenberg-Blockvalidierung
         working-directory: tools/qa
         run: |

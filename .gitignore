@@ -2,3 +2,4 @@ dist/
 node_modules/
 /vendor/
 tools/qa/.visual/
+__pycache__/

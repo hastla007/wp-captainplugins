@@ -65,4 +65,4 @@ Impressum, Datenschutz, AGB und Widerruf ändert nur die Freigabe-Rolle nach Pr�
 
 ## License-Captain-Sprachregel
 
-License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Auf Seiten für Captain-Pro-Kunden (Pro, Preise, FAQ, Installation) wird License Captain **nicht** erwähnt – auch nicht als „inklusive“ oder „nicht enthalten“. Pro-Kunden aktivieren ihren Lizenzschlüssel im Pro-Add-on.
+License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Auf Seiten für Captain-Pro-Kunden (Pro, Preise, FAQ, Installation) wird License Captain **nicht** als Lizenzierungsweg von Captain Pro erwähnt – auch nicht als „inklusive“, „enthalten“ oder „nicht enthalten“. Pro-Kunden aktivieren ihren Lizenzschlüssel im Pro-Add-on. Erlaubt bleibt License Captain als eigenständiges Produkt, etwa in Produktlisten oder als Integration (z. B. Workflow-Captain-Provider). `python3 tools/acceptance-list.py` prüft die Regel automatisch.
