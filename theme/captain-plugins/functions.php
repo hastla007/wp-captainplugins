@@ -84,6 +84,10 @@ add_action( 'wp_enqueue_scripts', 'captain_plugins_enqueue_styles' );
 
 /** Build the lightweight page breadcrumb; Yoast remains responsible for structured data. */
 function captain_plugins_breadcrumb_markup(): string {
+	$shop_markup = captain_plugins_shop_breadcrumb_items();
+	if ( array() !== $shop_markup ) {
+		return captain_plugins_breadcrumb_nav( $shop_markup );
+	}
 	if ( ! is_page() || is_front_page() ) {
 		return '';
 	}
@@ -100,7 +104,34 @@ function captain_plugins_breadcrumb_markup(): string {
 		}
 	}
 	$items[] = '<li aria-current="page"><span>' . esc_html( get_the_title( $page ) ) . '</span></li>';
+	return captain_plugins_breadcrumb_nav( $items );
+}
+
+/** Wrap breadcrumb list items in the shared navigation markup. */
+function captain_plugins_breadcrumb_nav( array $items ): string {
 	return '<nav class="cp-breadcrumb" aria-label="' . esc_attr__( 'Brotkrumennavigation', 'captain-plugins' ) . '"><ol>' . implode( '', $items ) . '</ol></nav>';
+}
+
+/**
+ * Breadcrumb items for WooCommerce catalog, taxonomy and product views.
+ *
+ * @return list<string>
+ */
+function captain_plugins_shop_breadcrumb_items(): array {
+	if ( ! function_exists( 'is_shop' ) || ! ( is_shop() || is_product_taxonomy() || is_product() ) ) {
+		return array();
+	}
+	$shop_id    = (int) wc_get_page_id( 'shop' );
+	$shop_title = $shop_id > 0 ? get_the_title( $shop_id ) : __( 'Shop', 'captain-plugins' );
+	$items      = array( '<li><a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html__( 'Startseite', 'captain-plugins' ) . '</a></li>' );
+	if ( is_shop() ) {
+		$items[] = '<li aria-current="page"><span>' . esc_html( $shop_title ) . '</span></li>';
+		return $items;
+	}
+	$items[] = '<li><a href="' . esc_url( (string) wc_get_page_permalink( 'shop' ) ) . '">' . esc_html( $shop_title ) . '</a></li>';
+	$current = is_product() ? get_the_title( get_queried_object_id() ) : single_term_title( '', false );
+	$items[] = '<li aria-current="page"><span>' . esc_html( (string) $current ) . '</span></li>';
+	return $items;
 }
 
 /** Print the breadcrumb only once per request. */
@@ -125,6 +156,8 @@ function captain_plugins_breadcrumb_before_title( string $content, array $block 
 	return captain_plugins_take_breadcrumb() . $content;
 }
 add_filter( 'render_block_core/post-title', 'captain_plugins_breadcrumb_before_title', 10, 2 );
+add_filter( 'render_block_core/query-title', 'captain_plugins_breadcrumb_before_title', 10, 2 );
+add_filter( 'render_block_core/heading', 'captain_plugins_breadcrumb_before_title', 10, 2 );
 
 /** Templates without a visible title (product pages) get the breadcrumb at the start of the content. */
 function captain_plugins_page_breadcrumb( string $content ): string {
@@ -204,3 +237,37 @@ function captain_plugins_register_patterns() {
 	}
 }
 add_action( 'init', 'captain_plugins_register_patterns' );
+
+/** Point template buttons with the account token at the WooCommerce account page (support page without a shop). */
+function captain_plugins_account_url_token( string $content ): string {
+	if ( false === strpos( $content, '{{account_url}}' ) ) {
+		return $content;
+	}
+	$url = function_exists( 'wc_get_page_permalink' ) ? (string) wc_get_page_permalink( 'myaccount' ) : '';
+	return str_replace( '{{account_url}}', esc_url( '' !== $url ? $url : home_url( '/support/' ) ), $content );
+}
+add_filter( 'render_block_core/button', 'captain_plugins_account_url_token' );
+
+/** Branded placeholder for products without an image (Captain Pro licenses are virtual products). */
+function captain_plugins_product_placeholder( string $src ): string {
+	unset( $src );
+	return get_theme_file_uri( 'assets/images/product-placeholder.svg' );
+}
+add_filter( 'woocommerce_placeholder_img_src', 'captain_plugins_product_placeholder' );
+
+/** WooCommerce prefers its placeholder attachment; swap that image for the theme placeholder as well. */
+function captain_plugins_product_placeholder_html( string $html, $size = '', $dimensions = array() ): string {
+	unset( $size );
+	// Keep WooCommerce's alt text: the image is often the only content of a product link.
+	$alt    = preg_match( '/\salt="([^"]*)"/', $html, $match ) ? html_entity_decode( $match[1], ENT_QUOTES ) : '';
+	$width  = (int) ( $dimensions['width'] ?? 600 );
+	$height = (int) ( $dimensions['height'] ?? 600 );
+	return sprintf(
+		'<img src="%1$s" alt="%4$s" width="%2$d" height="%3$d" class="woocommerce-placeholder wp-post-image" decoding="async" loading="lazy" />',
+		esc_url( captain_plugins_product_placeholder( '' ) ),
+		$width > 0 ? $width : 600,
+		$height > 0 ? $height : 600,
+		esc_attr( $alt )
+	);
+}
+add_filter( 'woocommerce_placeholder_img', 'captain_plugins_product_placeholder_html', 10, 3 );

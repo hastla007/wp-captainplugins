@@ -166,6 +166,8 @@ function captain_plugins_setup_create_products(): array {
 			$product->set_sku( (string) $row['sku'] );
 			$product->set_regular_price( (string) $row['price'] );
 			$product->set_virtual( true );
+			$product->set_reviews_allowed( false );
+			$product->set_sold_individually( true );
 			$product->set_downloadable( false );
 			$product->set_catalog_visibility( 'hidden' );
 			/* translators: 1: product name, 2: number of live websites, 3: support level. */
@@ -201,5 +203,35 @@ function captain_plugins_setup_create_products(): array {
 			$result['messages'][] = sprintf( __( '„%s“ ist als Entwurf angelegt, aber License Captain hat den Jahresplan nicht übernehmen können.', 'captain-plugins' ), $row['title'] );
 		}
 	}
+	if ( captain_plugins_setup_email_colors() ) {
+		$result['messages'][] = __( 'Die WooCommerce-E-Mails nutzen jetzt die Farben der Website.', 'captain-plugins' );
+	}
 	return $result;
+}
+
+/**
+ * Give WooCommerce e-mails the brand colours, but only where the shop still uses WooCommerce's defaults.
+ *
+ * @return bool Whether at least one colour was changed.
+ */
+function captain_plugins_setup_email_colors(): bool {
+	$colors  = array(
+		'woocommerce_email_base_color'            => array( '#7f54b3', '#720eec', '#143B53' ),
+		'woocommerce_email_background_color'      => array( '#f7f7f7', '#f7f7f7', '#EAF2F6' ),
+		'woocommerce_email_body_background_color' => array( '#ffffff', '#ffffff', '#ffffff' ),
+		'woocommerce_email_text_color'            => array( '#3c3c3c', '#3c3c3c', '#172B3A' ),
+		'woocommerce_email_footer_text_color'     => array( '#3c3c3c', '#3c3c3c', '#52616B' ),
+	);
+	$changed = false;
+	foreach ( $colors as $option => $values ) {
+		$current = strtolower( (string) get_option( $option, '' ) );
+		if ( '' !== $current && $current !== $values[0] && $current !== $values[1] ) {
+			continue;
+		}
+		if ( strtolower( $values[2] ) !== $current ) {
+			update_option( $option, $values[2] );
+			$changed = true;
+		}
+	}
+	return $changed;
 }

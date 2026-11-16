@@ -40,11 +40,15 @@ const sources = process.argv.length > 2
 	: defaultSources();
 
 let total = 0;
+let external = 0;
 const problems = [];
 function walk(list, name) {
 	for (const block of list) {
 		total += 1;
-		if (block.name === 'core/missing') {
+		if (block.name === 'core/missing' && /^woocommerce\//.test(block.attributes.originalName || '')) {
+			// WooCommerce blocks are registered by the plugin, not by this validator; WooCommerce renders and validates them.
+			external += 1;
+		} else if (block.name === 'core/missing') {
 			problems.push(`${name}: unbekannter Block ${block.attributes.originalName}`);
 		} else if (block.name && !block.isValid) {
 			const issue = (block.validationIssues || [])[0];
@@ -57,6 +61,6 @@ for (const { name, source } of sources) {
 	walk(blocks.parse(source.replace(/\{\{[^}]+\}\}/g, '')), name);
 }
 console.error = realError;
-console.log(`${total} Blöcke in ${sources.length} Dateien geprüft, ${problems.length} Fehler`);
+console.log(`${total} Blöcke in ${sources.length} Dateien geprüft, ${problems.length} Fehler${external ? ` (${external} WooCommerce-Blöcke übersprungen, werden vom Plugin gerendert)` : ''}`);
 problems.forEach((line) => console.log('  ' + line));
 process.exit(problems.length ? 1 : 0);
