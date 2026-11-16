@@ -103,6 +103,8 @@ EN = {
     "Platzhalter mit verständlicher Anweisung für eine echte Produktansicht.": "Placeholder with clear instructions for a real product view.",
     "Arbeitsablauf – drei Schritte": "Workflow – three steps",
     "Schrittfolge für einen Produkt- oder Geschäftsprozess.": "Step sequence for a product or business process.",
+    "Shop": "Shop",
+    "Die WooCommerce-E-Mails nutzen jetzt die Farben der Website.": "WooCommerce emails now use the website colours.",
 }
 
 EN_PLURAL = {

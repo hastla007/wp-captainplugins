@@ -1,13 +1,13 @@
 # Betrieb: Installation, Update, Rückfall und Pflege
 
-Stand: 16. November 2026, Theme-Version 0.3.0. Diese Anleitung deckt Phase 10 der [Theme-Roadmap](../theme/ROADMAP.md) ab. Prüfwerkzeuge liegen unter [`tools/qa/`](../tools/qa/README.md).
+Stand: 16. November 2026, Theme-Version 0.5.0. Diese Anleitung deckt Phase 10 der [Theme-Roadmap](../theme/ROADMAP.md) ab. Prüfwerkzeuge liegen unter [`tools/qa/`](../tools/qa/README.md).
 
 ## Voraussetzungen
 
 | Komponente | Mindestens | Hinweis |
 |---|---|---|
 | WordPress | 6.6 | getestet mit 6.7 |
-| PHP | 8.5 | Entscheidung der Inhaberin vom 16.11.2026; PHP 8.6 kommt in die Testmatrix |
+| PHP | 8.5 | Entscheidung der Inhaberin vom 16.11.2026. **WordPress aktiviert das Theme auf älterem PHP nicht** („Requires PHP: 8.5“): Produktion und Staging vor dem Theme-Wechsel auf PHP 8.5 umstellen. PHP 8.6 kommt in die Testmatrix. |
 | Datenbank | MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) | ältere Versionen: Warnung im Admin, keine Sperre |
 | WooCommerce | laut Kompatibilitätsmatrix der Plugins | nur für Shop, Konto und Pro-Produkte |
 | Yoast SEO | aktuelle Version | optional; übernimmt Titel, Beschreibungen, Social-Bilder, Sitemap, Schema |
@@ -38,8 +38,10 @@ Das Skript baut Inhalte und Übersetzungsvorlage neu, prüft alle PHP-Dateien un
    ```bash
    cd tools/qa && npm install
    node validate-blocks.cjs
-   node site-check.cjs --base https://staging.example.com --axe
-   node smoke.cjs --base https://staging.example.com
+   node site-check.cjs --base https://staging.example.com --axe --all-widths --seed /shop/,/warenkorb/,/kasse/,/mein-konto/ --ignore-axe label-content-name-mismatch
+   node smoke.cjs --base https://staging.example.com --shop --shop-paths /shop/,/warenkorb/,/kasse/,/mein-konto/ --product /produkt/<slug>/
+   node keyboard.cjs --base https://staging.example.com
+   node shop-flow.cjs --base https://staging.example.com --cart /warenkorb/ --checkout /kasse/ --account /mein-konto/   # mit --order nur im Testmodus des Shops
    node visual.cjs --base https://staging.example.com   # vorher mit --update auf dem alten Stand Referenzbilder erzeugen
    php seo-fields.php
    ```
@@ -71,7 +73,7 @@ Eine Datenbank-Wiederherstellung verwirft Bestellungen, Lizenzen und Konten, die
 
 ## Cache-Header für statische Dateien
 
-Theme-CSS und -Bilder tragen eine Versionsnummer in der URL (`?ver=0.3.0`) und dürfen deshalb lange zwischengespeichert werden. Lighthouse schätzt die Ersparnis auf rund 145 KB pro Wiederbesuch.
+Theme-CSS und -Bilder tragen eine Versionsnummer in der URL (`?ver=0.5.0`) und dürfen deshalb lange zwischengespeichert werden. Lighthouse schätzt die Ersparnis auf rund 145 KB pro Wiederbesuch.
 
 Apache (`.htaccess`):
 
@@ -126,3 +128,15 @@ Diese Seitentypen erneut durchgehen (automatisch mit `site-check.cjs`, zusätzli
 - Dokumentation/Installation, ein Ratgeberartikel, Suche, 404
 - Warenkorb, Checkout (Blocks und Classic), Bestellbestätigung, Mein Konto inklusive Lizenzansicht
 - Block-Editor: eine Seite öffnen; es darf keine Meldung „Dieser Block enthält unerwarteten oder ungültigen Inhalt“ erscheinen (vorab: `node tools/qa/validate-blocks.cjs`).
+
+## WooCommerce: Hinweise aus dem Shop-Test
+
+Geprüft mit WooCommerce 9.4 und den 15 Captain-Pro-Produkten aus dem Setup-Assistenten (16.11.2026).
+
+- **Shop-Dateien:** Auf Inhaltsseiten ohne Shop-Blöcke lädt das Theme das klassische WooCommerce-CSS und die jQuery-Skripte nicht (Lighthouse Startseite 78 → 94). Abschalten mit `add_filter( 'captain_plugins_trim_shop_assets', '__return_false' );`.
+- **Bestellzuordnung (Order Attribution):** WooCommerce lädt dafür auf allen Seiten `sourcebuster.js` und setzt `sbjs_*`-Cookies. Das Theme ändert das nicht. Entweder in der Datenschutzerklärung aufführen oder unter *WooCommerce → Einstellungen → Erweitert → Funktionen* abschalten.
+- **Leerer Warenkorb:** Die WooCommerce-Vorlage zeigt „Neu im Shop“ mit Produktkacheln. Für einen Lizenz-Shop besser im Editor durch einen Hinweis und einen Link auf `/preise/` ersetzen.
+- **Shop-Übersicht `/shop/`:** Die Pro-Produkte sind im Katalog standardmäßig verborgen, gekauft wird über die Preisseiten. Die Shop-Seite in Yoast auf noindex setzen oder per Weiterleitung auf `/preise/` führen.
+- **Kasse für digitale Lizenzen:** Telefon und Lieferadresse sind nicht nötig; unter *WooCommerce → Einstellungen → Allgemein/Versand* bzw. im Checkout-Block die Felder auf das Nötige reduzieren.
+- **E-Mail-Fußzeile:** Standardtext „Built with WooCommerce“ unter *WooCommerce → Einstellungen → E-Mails* ersetzen.
+- **Bekannte WooCommerce-Befunde:** axe meldet `label-content-name-mismatch` am „In den Warenkorb“- und „Entfernen“-Button (Markup von WooCommerce, nicht vom Theme). Die Shop-Übersicht erreicht in Lighthouse rund 63 Punkte, weil WooCommerce dort viele Skripte im Kopf lädt.

@@ -48,6 +48,7 @@ Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/m
 - Patterns für Produkt-Heros, Produktkarten, Features, Abläufe, Free-/Pro-Vergleich, Preise, Screenshot-Briefings, Kompatibilität, FAQ, Ressourcen und CTAs.
 - Design-Tokens in `theme.json` (Farben, 4–96-px-Abstände, 75rem-Container, Typoskala) und sichtbare Tastaturfokusse; Kontraste sind in `design/konzept.md` dokumentiert.
 - Warenkorb-, Checkout- und Mein-Konto-Templates, die den Seiteninhalt mit den WooCommerce-Blöcken ausgeben; Basisstyles nur auf öffentlichen WooCommerce-Klassen.
+- Eigene Shop-Vorlagen für Katalog, Produktsuche, Produktdetail und Bestellbestätigung (mit „So geht es weiter“ für Lizenzschlüssel und Pro-Add-on), Platzhalterbild in Markenfarben, Brotkrumen „Startseite / Shop / Produkt“. Auf Inhaltsseiten ohne Shop-Blöcke lädt das Theme kein klassisches WooCommerce-CSS und kein jQuery.
 
 ## Social-Vorschaubilder
 
@@ -55,7 +56,7 @@ Unter `captain-plugins/assets/social/` liegen 1200 × 630 Pixel große Vorschaub
 
 ## Datenschutz und externe Ressourcen
 
-Geprüft im Browser (16. November 2026): Das Theme setzt keine Cookies, schreibt nichts in `localStorage`/`sessionStorage` und fragt keine fremden Hosts an. Schriften sind Systemschriften, Icons und Kapitänsbilder liegen im Theme bzw. als Inline-SVG im CSS vor. Der WordPress-Emoji-Loader ist deaktiviert, weil er Inline-JavaScript ausgibt und Grafiken vom WordPress-CDN nachladen kann. Cookies und Dienste von WooCommerce, Zahlungsanbietern und weiteren Plugins sind davon unabhängig in der Datenschutzerklärung zu beschreiben.
+Geprüft im Browser (16. November 2026): Das Theme setzt keine Cookies, schreibt nichts in `localStorage`/`sessionStorage` und fragt keine fremden Hosts an. Schriften sind Systemschriften, Icons und Kapitänsbilder liegen im Theme bzw. als Inline-SVG im CSS vor. Der WordPress-Emoji-Loader ist deaktiviert, weil er Inline-JavaScript ausgibt und Grafiken vom WordPress-CDN nachladen kann. Eigenes JavaScript gibt es nur auf Kasse und Konto: `assets/js/form-errors.js` kennzeichnet Fehler in klassischen WooCommerce-Formularen für Screenreader und speichert nichts. Cookies und Dienste von WooCommerce, Zahlungsanbietern und weiteren Plugins sind davon unabhängig in der Datenschutzerklärung zu beschreiben.
 
 ## Werkzeuge
 
@@ -67,7 +68,7 @@ Geprüft im Browser (16. November 2026): Das Theme setzt keine Cookies, schreibt
 | `python3 tools/media-inventory.py` | Liste aller Screenshot-, Demo- und Diagramm-Platzhalter erzeugen |
 | `python3 tools/release-blockers.py` | Bericht `docs/RELEASE-BLOCKER.md` mit allen fehlenden Linkzielen, Betreiberangaben und Vorbehalten je Seite |
 | `composer install && composer lint` | PHPCS mit WordPress-Coding-Standards (Escaping, Nonces, Eingabeprüfung, Datenbank, i18n, Präfixe) und PHP-8.5-Kompatibilität; `composer lint:fix` korrigiert die Formatierung |
-| `php tests/run.php /pfad/zu/wp-load.php` | 30 Integrationstests (Vorlagenzuordnung, Importschutz, SEO-Felder, Titel-Fallback, ausgemusterte Seiten, Social-Bilder, Versionsprüfung, Render-Filter) gegen eine Test-Installation mit aktivem Theme |
+| `php tests/run.php /pfad/zu/wp-load.php` | 36 Integrationstests (Vorlagenzuordnung, Importschutz, SEO-Felder, Titel-Fallback, ausgemusterte Seiten, Social-Bilder, Versionsprüfung, Render-Filter, Shop-Platzhalter, Sitemap) gegen eine Test-Installation mit aktivem Theme |
 | `tools/build-theme-zip.sh` | Installierbares Theme-ZIP unter `dist/` bauen (inkl. Inhalts- und POT-Neubau und PHP-Lint) |
 
 Die Pattern-Texte mit eckigen Klammern sind redaktionelle Felder, die beim Einfügen auszufüllen sind. Der Preisvergleich startet mit den aktuellen Konzeptpreisen und enthält einen internen Abgleichhinweis. Screenshot-Platzhalter enthalten ein konkretes Aufnahmebriefing und müssen vor Veröffentlichung ersetzt werden.

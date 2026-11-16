@@ -1,5 +1,21 @@
 # Änderungsprotokoll – Captain Plugins Theme
 
+## 0.5.0 – 16. November 2026
+
+### Neu
+- **Shop-Vorlagen** für Katalog, Produktsuche, Produktdetail und Bestellbestätigung mit Seitenkopf, Brotkrumen und Lizenz-Hinweisen („So geht es weiter“); Platzhalterbild in Markenfarben.
+- Setup-Assistent: Lizenzprodukte ohne Bewertungen und einzeln verkäuflich; WooCommerce-E-Mails in Markenfarben, solange die Standardfarben gelten.
+- Klassische WooCommerce-Formulare kennzeichnen Fehler mit `aria-invalid` und verknüpfter Meldung (`assets/js/form-errors.js`, nur Kasse und Konto).
+- 301-Rückfall für entfallene Theme-Seiten, nur wenn sonst ein 404 entstünde.
+- Core-Sitemap ohne Warenkorb, Kasse, Konto und ohne Autoren-Sitemap; Produkte ohne Yoast mit Meta-Beschreibung aus der Kurzbeschreibung.
+- Werkzeuge: `shop-flow.cjs`, `keyboard.cjs`, `price-check.py`, `acceptance-list.py` (Abnahmeliste `docs/ABNAHME.md`, Sprachregel-Prüfung), Smoke-Test mit Shop und Checkout, Site-Check mit 7 Breiten und Shop-Startseiten, Browser-Wahl (Chromium, Firefox, WebKit), Workflow `site-check.yml` gegen Staging/Produktion, 36 Integrationstests.
+
+### Behoben
+- Shopseiten ohne Seitenkopf, Brotkrumen am Header, H1/H3-Sprung im Katalog, Bewertungsformular bei Lizenzprodukten, schmale Felder und lila Zahlungsbox im klassischen Checkout, Kontomenü-Abstände, fehlender Seitenrand und ausgeblendete Bestellnummer mobil.
+- Kein sichtbarer Fokus an WooCommerce-Feldern und Produktbild-Links; zu kleiner Adressschalter im Block-Checkout (WCAG 2.5.8).
+- Menü brach bei 1024 px zweizeilig um; lange Komposita wurden bei 320 px abgeschnitten; Brotkrumen-Trenner am Zeilenanfang.
+- Warenkorb sprang beim Laden (CLS mobil bis 1,4, jetzt unter 0,05); WooCommerce-CSS und jQuery bremsten Inhaltsseiten (Lighthouse Startseite mit WooCommerce 78 → 94).
+
 ## 0.4.0 – 16. November 2026
 
 ### Neu

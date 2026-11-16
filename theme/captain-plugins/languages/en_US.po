@@ -13,26 +13,30 @@ msgstr ""
 msgid "Captain Plugins"
 msgstr "Captain Plugins"
 
-#: functions.php:95 inc/content.php:242
+#: functions.php:142 functions.php:169 inc/content.php:242
 msgid "Startseite"
 msgstr "Home"
 
-#: functions.php:103
+#: functions.php:155
 msgid "Brotkrumennavigation"
 msgstr "Breadcrumb navigation"
 
+#: functions.php:168
+msgid "Shop"
+msgstr "Shop"
+
 #. translators: %s: footer column heading, e.g. "Produkte".
-#: functions.php:154
+#: functions.php:230
 msgid "Footer: %s"
 msgstr "Footer: %s"
 
 #. translators: %s: comma-separated first column headings of a table.
-#: functions.php:180
+#: functions.php:256
 msgid "Tabelle mit den Spalten %s; bei Bedarf horizontal scrollen."
 msgstr "Table with the columns %s; scroll horizontally if needed."
 
 #. translators: %s: comma-separated first column headings of a table.
-#: functions.php:181
+#: functions.php:257
 msgid "Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen."
 msgstr "Table; scroll horizontally to see more columns."
 
@@ -54,31 +58,36 @@ msgstr "The draft prices are in euros. Set the WooCommerce currency to EUR befor
 msgid "SKU %s existiert bereits und wurde nicht verändert."
 msgstr "SKU %s already exists and was left unchanged."
 
-#: inc/catalog.php:172
+#: inc/catalog.php:174
 msgid "Priority"
 msgstr "Priority"
 
-#: inc/catalog.php:172
+#: inc/catalog.php:174
 msgid "Standard"
 msgstr "Standard"
 
 #. translators: %s: product title.
-#: inc/catalog.php:177
+#: inc/catalog.php:179
 msgid "WooCommerce konnte „%s“ nicht speichern."
 msgstr "WooCommerce could not save “%s”."
 
 #. translators: %s: product title.
-#: inc/catalog.php:192
+#: inc/catalog.php:194
 msgid "Der Lizenzplan für „%s“ ist bereits anders zugeordnet und wurde nicht geändert."
 msgstr "The license plan for “%s” is already mapped differently and was left unchanged."
 
 #. translators: %s: product title.
-#: inc/catalog.php:201
+#: inc/catalog.php:203
 msgid "„%s“ ist als Entwurf angelegt, aber License Captain hat den Jahresplan nicht übernehmen können."
 msgstr "“%s” was created as a draft, but License Captain could not store the annual plan."
 
+#. translators: %s: product title.
+#: inc/catalog.php:207
+msgid "Die WooCommerce-E-Mails nutzen jetzt die Farben der Website."
+msgstr "WooCommerce emails now use the website colours."
+
 #. translators: 1: product name, 2: number of live websites, 3: support level.
-#: inc/catalog.php:172
+#: inc/catalog.php:174
 msgid "Jahreslizenz für %1$s. %2$d Live-Website; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
 msgid_plural "Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
 msgstr[0] "Annual license for %1$s. %2$d live website; %3$s support. Pro features and updates while the license is active."

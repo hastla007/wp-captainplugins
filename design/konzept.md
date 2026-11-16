@@ -234,7 +234,7 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 - [ ] Vorhandenes Logo, Typografie und alle acht Kapitäns-JPEGs sichten; Nutzungsrechte, Auflösung und geeignete Posen erfassen.
 - [x] Farbpalette mit Kontrastmessung finalisieren; Produktakzente dokumentieren. *(Kontrasttabelle in Abschnitt 2; Produkte werden über Name und Icon statt über eigene Farben unterschieden.)*
 - [x] Architekturentscheidung festhalten: natives Block-Theme mit Site Editor, `theme.json`, HTML-Templates und Template Parts. Mindestversionen für WordPress, PHP und WooCommerce vor dem Scaffold aus der Kompatibilitätsmatrix der Produkte ableiten.
-- [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen. *(PHP 8.5 und Datenbank-Minima entschieden; WordPress-Zielversion, Deployprozess und Browsermatrix offen.)*
+- [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen. *(PHP 8.5 und Datenbank-Minima entschieden; Vorschlag Browsermatrix: jeweils die letzten zwei Versionen von Chrome, Edge, Firefox, Safari und iOS Safari sowie Firefox ESR – CSS ohne Blocker geprüft. WordPress-Zielversion und Deployprozess offen.)*
 - [ ] Release-Quelle für Preise, Checkout-, Download- und Support-URLs bestimmen.
 - [x] Theme-Dateiname, Textdomain und Repository-Ordner festlegen.
 
@@ -266,12 +266,12 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 
 ### E. Qualitätsprüfung und Übergabe
 
-- [ ] Tastaturbedienung, Fokus, Kontrast, Vergrößerung, Screenreader-Ausgabe und reduzierte Bewegung prüfen.
+- [ ] Tastaturbedienung, Fokus, Kontrast, Vergrößerung, Screenreader-Ausgabe und reduzierte Bewegung prüfen. *(Automatisiert auf 123 Seiten inkl. Shop erledigt, `tools/qa/keyboard.cjs` und `site-check.cjs --axe`; offen nur der Screenreader-Durchlauf von Hand.)*
 - [x] Links, Navigationszustände, CTAs und Breadcrumbs validieren.
 - [ ] Yoast-Breadcrumbs, Metadaten, Canonicals und Sitemap-Zuständigkeit gegen Theme-Ausgabe abgleichen.
 - [x] Performance und Bildgrößen prüfen; unnötige Assets und Skripte entfernen.
 - [ ] Kompatibilität mit WooCommerce, Yoast SEO und den tatsächlich aktivierten Plugins prüfen; Shop-Funktionen nicht im Theme nachbauen.
-- [ ] WooCommerce-Shopwege und Plugin-Frontends im sauberen Theme sowie nach Update testen (Produkt-/Tarifseite, Warenkorb, Blocks- und Classic-Checkout, Bestätigung, Konto, Lizenzansicht).
+- [ ] WooCommerce-Shopwege und Plugin-Frontends im sauberen Theme sowie nach Update testen (Produkt-/Tarifseite, Warenkorb, Blocks- und Classic-Checkout, Bestätigung, Konto, Lizenzansicht). *(Mit WooCommerce 9.4 erledigt bis auf die Lizenzansicht, die den echten License-Captain-Server braucht; `tools/qa/shop-flow.cjs`.)*
 - [x] README mit Installation, Theme-Konfiguration, Block-Patterns, Design-Tokens und Erweiterungshinweisen anlegen.
 - [ ] Vor Release offene Unternehmens-, Preis-, Support- und Checkout-Angaben vollständig verifizieren.
 

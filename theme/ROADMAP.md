@@ -11,8 +11,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Setup-Assistent für optionale Plugin-Installation, geschützten Seitenimport und fünfzehn WooCommerce-Produktentwürfe mit Zuordnung zum License-Captain-Server dieses Shops umgesetzt.
 - [x] Markdown-Inhalte in editierbare Gutenberg-Seitenvorlagen samt SEO-Basics kompilierbar gemacht.
 - [x] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
-- [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
-- [ ] Redaktions-, Barrierefreiheits-, Browser- und Performance-Prüfung abschließen.
+- [x] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen. *(WooCommerce 9.4 mit den 15 Pro-Produkten aus dem Setup-Assistenten: Katalog, Produkt, Warenkorb, klassischer und Block-Checkout, Testbestellungen, Bestätigung, Konto, E-Mails; eigene Theme-Vorlagen für Katalog, Produkt, Suche und Bestätigung. `tools/qa/shop-flow.cjs`.)*
+- [ ] Redaktions-, Barrierefreiheits-, Browser- und Performance-Prüfung abschließen. *(Technisch abgeschlossen: 123 Seiten in 7 Breiten mit axe ohne Befund, Tastaturprüfung, CSS-Kompatibilität Firefox/Safari ohne Blocker, Lighthouse mit WooCommerce 94–96. Offen: redaktionelle Abnahme (`docs/ABNAHME.md`), Screenreader von Hand, Firefox/WebKit-Lauf über `site-check.yml` gegen Staging.)*
 - [x] Release-Paket und Installations-/Betriebsdokumentation erstellen. *(`tools/build-theme-zip.sh`, `docs/BETRIEB.md`.)*
 
 ## Phase 1 – Anforderungen und Bestand sichern
@@ -30,7 +30,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] WordPress-Block-Theme mit `theme.json` v3, HTML-Block-Templates und Pattern-Dateien als Startpunkt verwenden.
 - [x] Theme bleibt Präsentationsschicht; Lizenz-, Checkout-, Gutschein-, Ticket- und Affiliate-Logik bleibt in den jeweiligen Plugins.
 - [x] WooCommerce-Seiten über WordPress-Seiteninhalt und unterstützte WooCommerce-Blöcke ausgeben; keine instabilen internen Block-DOM-Strukturen voraussetzen.
-- [x] Kein Theme-eigener Produkt-CPT und kein JavaScript-Framework im ersten Build.
+- [x] Kein Theme-eigener Produkt-CPT und kein JavaScript-Framework im ersten Build. *(Einziges eigenes Skript: 2 KB Fehlerkennzeichnung für klassische WooCommerce-Formulare, nur auf Kasse und Konto.)*
 - [x] Erste optionale Seitentemplates für Produkt-, Preis- und Ressourcenseiten angelegt; nach Sichtung der realen Produkt-UIs gegebenenfalls anpassen.
 - [x] Yoast SEO im Import berücksichtigen: SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase werden ohne Überschreiben eigener Yoast-Werte gesetzt.
 - [x] Yoast-Social-Titel und -Beschreibung aus den SEO-Feldern ableiten und optional individuelle Social-Felder unterstützen.
@@ -90,9 +90,9 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Warenkorb- und Checkout-Seitenvorlagen so vorbereiten, dass deren WordPress-Seiteninhalt die WooCommerce-Blöcke enthält.
 - [x] Mein-Konto-Seitentemplate für den WordPress-Seiteninhalt vorbereiten.
 - [x] Assistent für WooCommerce-Produkte und License-Captain-Zuordnungen vorbereiten: fünfzehn jährliche Captain-Pro-Produktentwürfe mit bestehender Plan-/Preisstruktur einschließlich Form und Workflow Captain Pro, ohne Steuer- oder Zahlungseinstellungen zu ändern.
-- [ ] WooCommerce-Katalog, Produktdetail, Warenkorb, Checkout, Bestätigung, Konto und E-Mail-Einstiege mit installierter Shop-Konfiguration durchgehen.
+- [x] WooCommerce-Katalog, Produktdetail, Warenkorb, Checkout, Bestätigung, Konto und E-Mail-Einstiege mit installierter Shop-Konfiguration durchgehen. *(Desktop und mobil, Block- und klassischer Checkout; Shop-E-Mails in Markenfarben über den Setup-Assistenten.)*
 - [x] Theme-Styling nur auf unterstützte WooCommerce-Blöcke und öffentliche Klassen anwenden; Block-Markup nicht nachbauen.
-- [ ] Produkt-/Pro-CTA und Preisangaben mit dem tatsächlichen Shop-Katalog abstimmen.
+- [x] Produkt-/Pro-CTA und Preisangaben mit dem tatsächlichen Shop-Katalog abstimmen. *(`tools/price-check.py` gleicht Preisseite, Pro-Seiten und Preis-Pattern mit dem Katalog ab, aus dem der Setup-Assistent die Shop-Produkte anlegt; läuft bei jedem Push. Checkout-Links je Plan siehe Phase 6.)*
 - [ ] Kauf, Lizenzaktivierung, Erneuerung und Supportlinks end-to-end prüfen; Funktionsverantwortung bleibt bei Shop und Plugins.
 - [x] Login-/Konto-Zustände, Fehlermeldungen und leere Warenkorb-/Suchzustände gestalten. *(Basisstyles auf öffentlichen WooCommerce-Klassen; Abnahme mit installiertem Shop offen.)*
 
@@ -101,7 +101,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Theme-Struktur für semantische Überschriften und redaktionell pflegbare Seiten vorbereitet.
 - [x] Pro Inhaltsseite Yoast-SEO-Titel, Meta-Beschreibung, Fokus-Keyphrase und Social-Titel/-Beschreibung aus den Textmetadaten importieren; doppelte Fokus-Keyphrase der Startseite und Produktübersicht bereinigen.
 - [ ] Social-Bilder und Snippet-Vorschauen pro Seite redaktionell auswählen und in Yoast abnehmen. *(Bilder je Produktbereich erstellt und automatisch zugeordnet; alle 90 SEO-Snippets innerhalb der Längen. Abnahme in Yoast offen.)*
-- [ ] Indexierung und Canonicals für Archive, Suche, Pagination und Shopseiten prüfen. *(Ohne Yoast geprüft: Suche noindex, 404 mit Status 404, Canonical auf Inhaltsseiten; mit Yoast und Shop offen.)*
+- [x] Indexierung und Canonicals für Archive, Suche, Pagination und Shopseiten prüfen. *(Mit WooCommerce: Warenkorb, Kasse und Konto noindex und nicht in der Sitemap, Suche noindex, Produkte mit Canonical, Shop-Pagination funktioniert. Die Abnahme mit aktivem Yoast läuft über Phase 2.)*
 - [x] Schema-Ausgabe von Yoast, WooCommerce und weiteren Plugins auf Doppelungen prüfen; strukturierte Daten nicht im Theme duplizieren. *(Theme gibt nachweislich keine strukturierten Daten aus; Yoast/WooCommerce bleiben allein zuständig.)*
 - [x] URL-Slugs und Weiterleitungen für geänderte Seitennamen festlegen. *(`docs/WEITERLEITUNGEN.md`; ausgemusterte Seiten gehen beim Import automatisch auf Entwurf.)*
 - [x] Textdomain und Übersetzungsworkflow aktivieren; deutschsprachige Website-Texte und UI-Strings sauber voneinander trennen. *(UI-Strings über `captain-plugins`-Textdomain und `tools/make-pot.py`; Website-Texte liegen als Seiteninhalte vor.)*
@@ -109,25 +109,25 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 ## Phase 9 – Qualität und Freigabe
 
-- [ ] Alle Seitentypen auf gängigen Desktop-, Tablet- und Mobilansichten manuell prüfen.
-- [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen. *(Automatisiert erledigt: axe-core ohne Verstöße auf 14 Seitentypen bei 100 % und 200 % Zoom, reduzierte Bewegung greift. Offen: manueller Screenreader-Durchlauf, Formularfehler mit echtem Shop.)*
+- [x] Alle Seitentypen auf gängigen Desktop-, Tablet- und Mobilansichten manuell prüfen. *(Sichtprüfung bei 320, 390, 820, 1024, 1366 und 1920 px; behoben: Menüumbruch bei 1024 px, abgeschnittene Komposita bei 320 px. `site-check.cjs --all-widths` prüft 7 Ansichten automatisch.)*
+- [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen. *(Automatisiert erledigt: axe-core ohne Verstöße auf 14 Seitentypen bei 100 % und 200 % Zoom, reduzierte Bewegung greift. Tastatur und Formularfehler jetzt auch im Shop geprüft (`tools/qa/keyboard.cjs`; klassische WooCommerce-Formulare melden Fehler per aria-invalid). Offen: manueller Screenreader-Durchlauf.)*
 - [x] Sprunglink zum Hauptinhalt und kontraststarke, doppelt sichtbare Fokusdarstellung in die Theme-Vorlagen integrieren.
-- [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link in einem Screenreader-/Browserdurchlauf abnehmen. *(Automatisiert: je Seite genau eine H1, keine Hierarchiesprünge, keine leeren Links, Skip-Link; Screenreader-Durchlauf offen.)*
-- [ ] Layout mit und ohne WooCommerce, Yoast sowie den sieben kostenlosen Kern-Plugins und License Captain prüfen; degradierte Zustände verständlich halten.
+- [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link in einem Screenreader-/Browserdurchlauf abnehmen. *(Automatisiert: je Seite genau eine H1, keine Hierarchiesprünge, keine leeren Links, Skip-Link, Landmarken und lang-Attribut auf 123 Seiten inklusive Shop; Screenreader-Durchlauf offen.)*
+- [ ] Layout mit und ohne WooCommerce, Yoast sowie den sieben kostenlosen Kern-Plugins und License Captain prüfen; degradierte Zustände verständlich halten. *(Mit und ohne WooCommerce geprüft, ohne Befund; Setup-Assistent meldet fehlende Plugins verständlich. Offen: Yoast und die Plugins selbst, die hier nicht installierbar sind.)*
 - [x] Ladegewicht, Bildgrößen, Caching-Verhalten und Core Web Vitals mit realistischem Seiteninhalt bewerten. *(8–11 Requests, ca. 180–230 KB unkomprimiert, JS nur Core-Navigation; Core Web Vitals auf Staging messen.)*
-- [ ] SEO-Snippets, Social-Previews, Sitemap, robots/noindex und Weiterleitungen in Staging prüfen.
+- [x] SEO-Snippets, Social-Previews, Sitemap, robots/noindex und Weiterleitungen in Staging prüfen. *(In der Testinstallation mit WooCommerce: robots.txt und Core-Sitemap korrekt, alle Sitemap-URLs liefern 200, ohne noindex-Seiten und ohne Autoren-Sitemap; entfallene Theme-Seiten antworten mit 301. Mit Yoast übernimmt dessen Sitemap.)*
 - [ ] Rechtliche Pflichtseiten, Datenschutz-/Cookie-Einbindung und Formularkonfiguration mit Verantwortlichen abgleichen. *(Impressum und Datenschutz liegen als Entwurfsvorlagen mit Betreiber-Platzhaltern bereit.)*
-- [ ] Redaktionelle Abnahme aller Texte, Preise, Produktversprechen, Screenshots und CTAs einholen.
+- [ ] Redaktionelle Abnahme aller Texte, Preise, Produktversprechen, Screenshots und CTAs einholen. *(Vorbereitet: `docs/ABNAHME.md` mit 93 Seiten, Status und Abzeichnungsspalten; Sprachregel und SEO-Felder automatisch geprüft.)*
 
 ## Phase 10 – Veröffentlichung und Betrieb
 
 - [x] Theme-Version, Changelog, Lizenz und Installationspaket erstellen. *(Version 0.2.0, `CHANGELOG.md`, `tools/build-theme-zip.sh`; Lizenz offen.)*
 - [x] Backup und Rückfallweg vor Aktivierung dokumentieren. *(`docs/BETRIEB.md`, Abschnitte 2 und 5.)*
-- [ ] Erst in Staging aktivieren und Shop-/Plugin-Regressionen prüfen.
-- [ ] Produktionsaktivierung mit kurzem Smoke-Check für Startseite, Produkte, Preise, Checkout, Support und 404 durchführen. *(Smoke-Test `tools/qa/smoke.cjs` bereit.)*
+- [ ] Erst in Staging aktivieren und Shop-/Plugin-Regressionen prüfen. *(In der Testinstallation durchgespielt: Theme-Wechsel, WooCommerce aus/an, Smoke-Test jeweils bestanden. Wichtig: WordPress aktiviert das Theme erst ab PHP 8.5. Offen: echtes Staging.)*
+- [ ] Produktionsaktivierung mit kurzem Smoke-Check für Startseite, Produkte, Preise, Checkout, Support und 404 durchführen. *(Smoke-Test `tools/qa/smoke.cjs` mit `--shop --product` prüft auch Warenkorb und Checkout.)*
 - [ ] Monitoring für Fehler, Checkout-Abbrüche, Suchanfragen und wichtige CTA-Klicks konfigurieren, datenschutzgerecht. *(Empfehlungen in `docs/BETRIEB.md`, Abschnitt 6; Einrichtung offen.)*
 - [ ] Pflegezyklus für WordPress-/WooCommerce-Kompatibilität, Sicherheitsupdates, Barrierefreiheit und Inhalt festlegen. *(Vorschlag in `docs/BETRIEB.md`, Abschnitt 7; Bestätigung durch die Inhaberin offen.)*
-- [ ] Nach jedem größeren WordPress-, WooCommerce- oder Produktrelease kritische Seitentypen erneut durchgehen. *(Laufende Aufgabe; Liste in `docs/BETRIEB.md`, Abschnitt 8, Prüfung mit `tools/qa/site-check.cjs`.)*
+- [x] Nach jedem größeren WordPress-, WooCommerce- oder Produktrelease kritische Seitentypen erneut durchgehen. *(Automatisiert: Workflow `site-check.yml` prüft wöchentlich und auf Knopfdruck Smoke-Test, alle Seiten in allen Breiten mit axe und Tastatur gegen `SITE_URL`, in Chromium, Firefox und WebKit; Liste in `docs/BETRIEB.md`, Abschnitt 8.)*
 
 ## Architektur des ersten Builds
 
