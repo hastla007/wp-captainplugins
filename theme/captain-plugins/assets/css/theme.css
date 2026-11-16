@@ -658,6 +658,13 @@ img { max-width: 100%; height: auto; }
 .cp-order-next ol { padding-left: 1.25rem; }
 .cp-order-next li + li { margin-top: 0.5rem; }
 
+/* Block-Warenkorb: Lade-Platzhalter näher an die echte Höhe (eine Lizenz, keine Express-Zahlung), sonst springt der Footer (CLS). */
+/* WooCommerce lädt das Block-CSS spät; die Mindesthöhe aus theme.css (im <head>) hält den Footer von Anfang an unten. */
+.wp-block-woocommerce-cart, .wp-block-woocommerce-checkout { min-height: 30rem; }
+.wp-block-woocommerce-cart.is-loading .wp-block-woocommerce-cart-order-summary-block { height: auto; min-height: 7em; }
+.wp-block-woocommerce-cart.is-loading :is(.wp-block-woocommerce-cart-express-payment-block, .wp-block-woocommerce-cart-accepted-payment-methods-block) { display: none; }
+.wp-block-woocommerce-cart.is-loading .wp-block-woocommerce-cart-line-items-block { min-height: 9em; }
+
 /* Block-Checkout: kleine Textschalter erreichen die Mindest-Zielgröße 24 × 24 px (WCAG 2.5.8) */
 .wc-block-components-address-form__address_2-toggle { display: inline-block; min-height: 1.5rem; padding-block: 0.25rem; }
 

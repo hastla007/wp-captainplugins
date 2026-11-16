@@ -100,6 +100,31 @@ function captain_plugins_enqueue_form_errors() {
 }
 add_action( 'wp_enqueue_scripts', 'captain_plugins_enqueue_form_errors' );
 
+/**
+ * WooCommerce loads its classic shop CSS and jQuery scripts on every page. Content pages without shop
+ * blocks do not need them; dropping them saves render-blocking requests. Order attribution stays as
+ * configured in WooCommerce. Disable with add_filter( 'captain_plugins_trim_shop_assets', '__return_false' ).
+ */
+function captain_plugins_trim_shop_assets() {
+	if ( ! function_exists( 'is_woocommerce' ) || ! apply_filters( 'captain_plugins_trim_shop_assets', true ) ) {
+		return;
+	}
+	if ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) {
+		return;
+	}
+	$post = get_queried_object();
+	if ( $post instanceof WP_Post && ( str_contains( $post->post_content, '<!-- wp:woocommerce/' ) || has_shortcode( $post->post_content, 'products' ) || has_shortcode( $post->post_content, 'add_to_cart' ) ) ) {
+		return;
+	}
+	foreach ( array( 'woocommerce-general', 'woocommerce-layout', 'woocommerce-smallscreen', 'woocommerce-blocktheme' ) as $style ) {
+		wp_dequeue_style( $style );
+	}
+	foreach ( array( 'woocommerce', 'wc-add-to-cart', 'wc-cart-fragments' ) as $script ) {
+		wp_dequeue_script( $script );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'captain_plugins_trim_shop_assets', 99 );
+
 /** Build the lightweight page breadcrumb; Yoast remains responsible for structured data. */
 function captain_plugins_breadcrumb_markup(): string {
 	$shop_markup = captain_plugins_shop_breadcrumb_items();

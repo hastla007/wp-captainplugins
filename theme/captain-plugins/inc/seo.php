@@ -23,10 +23,14 @@ add_filter(
 add_action(
 	'wp_head',
 	static function (): void {
-		if ( defined( 'WPSEO_VERSION' ) || ! is_singular( 'page' ) ) {
+		if ( defined( 'WPSEO_VERSION' ) || ! is_singular( array( 'page', 'product' ) ) ) {
 			return;
 		}
 		$description = (string) get_post_meta( get_queried_object_id(), '_cp_meta_description', true );
+		if ( '' === $description && is_singular( 'product' ) ) {
+			// Products: the short description (for Captain Pro: plan, sites, support) is the best summary.
+			$description = wp_html_excerpt( wp_strip_all_tags( (string) get_the_excerpt( get_queried_object_id() ) ), 158, '…' );
+		}
 		if ( '' !== $description ) {
 			echo '<meta name="description" content="' . esc_attr( $description ) . '">' . "\n";
 		}
