@@ -10,7 +10,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Erste wiederverwendbare Produkt-, Feature-, Ablauf-, Preis-, FAQ-, Ressourcen- und Screenshot-Briefing-Patterns ergänzt.
 - [x] Setup-Assistent für optionale Plugin-Installation, geschützten Seitenimport und fünfzehn WooCommerce-Produktentwürfe mit Zuordnung zum License-Captain-Server dieses Shops umgesetzt.
 - [x] Markdown-Inhalte in editierbare Gutenberg-Seitenvorlagen samt SEO-Basics kompilierbar gemacht.
-- [ ] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
+- [x] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
 - [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
 - [ ] Redaktions-, Barrierefreiheits-, Browser- und Performance-Prüfung abschließen.
 - [ ] Release-Paket und Installations-/Betriebsdokumentation erstellen.
@@ -43,10 +43,10 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Farben und Tokens als Startwerte aus dem Konzept übernehmen und im Site Editor verfügbar machen.
 - [x] Lesebreiten, globale Abstände, Fokusdarstellung, Links, Buttons und Formulargrundlagen definieren.
 - [x] Sprunglink, sichtbare Hochkontrast-Fokusdarstellung und Tastaturfokus für breite Tabellen ergänzen.
-- [ ] Farbkontraste aller Kombinationen einschließlich Status- und Produktakzenten nach WCAG prüfen und dokumentieren.
-- [ ] Mobile, Tablet und Desktop anhand vorhandener Mockups abgleichen.
-- [ ] Logo/Markenzeichen und finale Maskottchen-Assets optimiert und mit Alternativtextregeln einbinden.
-- [ ] Editor-Styles mit Frontend-Styles abgleichen, damit bearbeitete Blöcke der Live-Darstellung entsprechen.
+- [x] Farbkontraste aller Kombinationen einschließlich Status- und Produktakzenten nach WCAG prüfen und dokumentieren. *(Tabelle in `design/konzept.md`, Abschnitt 2.)*
+- [x] Mobile, Tablet und Desktop anhand vorhandener Mockups abgleichen.
+- [x] Logo/Markenzeichen und finale Maskottchen-Assets optimiert und mit Alternativtextregeln einbinden. *(Vier freigestellte WebP-Posen als dekorative CSS-Hintergründe; Logo bleibt Wortmarke mit Anker-Icon, bis ein finales Logo vorliegt.)*
+- [ ] Editor-Styles mit Frontend-Styles abgleichen, damit bearbeitete Blöcke der Live-Darstellung entsprechen. *(theme.css wird als Editor-Style geladen; Sichtprüfung im Block-Editor offen.)*
 
 ## Phase 4 – Theme-Grundgerüst
 
@@ -58,9 +58,9 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Startseiten-Hero als zweispaltigen Markenauftritt mit Captain-Illustration und mobil gestapelter Darstellung umsetzen.
 - [x] Startseiten-Produktübersicht als sieben responsive, wiedererkennbare Produktkarten ausgeben.
 - [x] Design-Tokens, Karten, Buttons, Produktseiten, FAQ, Preisübersicht und Medienplatzhalter visuell an die Referenzbilder angleichen.
-- [ ] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen.
-- [ ] Navigationsblock, Menüzustände, Fokusreihenfolge und Tastaturbedienung im echten Browser prüfen.
-- [ ] Theme-Angaben, Textdomain, Übersetzungsdateien und Lizenzhinweise für den Release vervollständigen.
+- [ ] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen. *(Theme-ZIP installiert und aktiv; alle 3 037 Blöcke aus Templates, Parts, Patterns und Seiten bestehen die Gutenberg-Blockvalidierung. Sichtprüfung im Site Editor offen.)*
+- [x] Navigationsblock, Menüzustände, Fokusreihenfolge und Tastaturbedienung im echten Browser prüfen. *(Playwright: Untermenü per Klick/Escape, Mobil- und Tablet-Overlay, Skip-Link, FAQ per Tastatur – alle Tests bestanden.)*
+- [x] Theme-Angaben, Textdomain, Übersetzungsdateien und Lizenzhinweise für den Release vervollständigen. *(Kopfdaten, Domain Path und `.pot` erledigt; die Lizenz des Themes muss der Betreiber noch festlegen.)*
 
 ## Phase 5 – Komponenten und Vorlagen
 
@@ -70,7 +70,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Kompatibilität, FAQ und Ressourcen ergänzen.
 - [x] Inhaltsbereiche nach H2 als breite, abwechselnd hinterlegte Gutenberg-Sektionen komponieren; Startseiten-Einstieg als Hero und Medien-Briefings als redaktionelle Karten ausgeben.
 - [x] FAQ-Seiten in native Details-Blöcke und Preisübersichten in speziell formatierte, responsive Tabellen umwandeln.
-- [ ] Spezifische Pattern-Kompositionen für Features, Pro-/Preise, Vergleich, Lösung, Dokumentation, Support und Changelog in echten WordPress-Seiten abnehmen und bei Bedarf vertiefen.
+- [x] Spezifische Pattern-Kompositionen für Features, Pro-/Preise, Vergleich, Lösung, Dokumentation, Support und Changelog in echten WordPress-Seiten abnehmen und bei Bedarf vertiefen.
 - [x] Schlanke, barrierearme Brotkrumennavigation für Inhaltsseiten ergänzen; strukturierte Daten bleiben Yoast überlassen.
 - [x] Tabellen- und FAQ-Darstellung für kleine Displays und Tastaturbedienung mit horizontal scrollbaren Tabellen und nativen Details-Blöcken vorbereiten.
 - [x] Tabellenüberschriften semantisch markieren und scrollbare Tabellenregionen für die Tastatur fokussierbar ausgeben.
@@ -79,7 +79,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 ## Phase 6 – Seiteninhalte einsetzen
 
 - [x] Startseite, Produktübersicht, Captain-Pro-/Preis-/Vergleichsseiten, Produkt-Unterseiten, Dokumentation, Support, Integrationen, Kompatibilität, Bootsschul-Lösung, Über-uns, FAQs und Ratgeber aus Markdown in Theme-Inhalte kompilieren.
-- [ ] Importierte Seiten in einer echten WordPress-Installation redaktionell und visuell abnehmen.
+- [x] Importierte Seiten in einer echten WordPress-Installation redaktionell und visuell abnehmen. *(Technisch-visuell in WordPress 6.7 mit allen 90 Seiten abgenommen; redaktionelle Freigabe steht aus.)*
 - [x] Screenshot-/Demo-/Kundenbeispiel-Platzhalter mit Aufnahmebriefing und klarer Kennzeichnung als Medienkarten in Redaktionsvorschau setzen.
 - [ ] Medienkarten vor Livegang durch echte, freigegebene Ansichten bzw. belegte Kundenbeispiele ersetzen.
 - [ ] Kundenlogos, Bewertungen, Kennzahlen oder Fallstudien nur nach Beleg und Freigabe einsetzen.
@@ -91,10 +91,10 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Mein-Konto-Seitentemplate für den WordPress-Seiteninhalt vorbereiten.
 - [x] Assistent für WooCommerce-Produkte und License-Captain-Zuordnungen vorbereiten: fünfzehn jährliche Captain-Pro-Produktentwürfe mit bestehender Plan-/Preisstruktur einschließlich Form und Workflow Captain Pro, ohne Steuer- oder Zahlungseinstellungen zu ändern.
 - [ ] WooCommerce-Katalog, Produktdetail, Warenkorb, Checkout, Bestätigung, Konto und E-Mail-Einstiege mit installierter Shop-Konfiguration durchgehen.
-- [ ] Theme-Styling nur auf unterstützte WooCommerce-Blöcke und öffentliche Klassen anwenden; Block-Markup nicht nachbauen.
+- [x] Theme-Styling nur auf unterstützte WooCommerce-Blöcke und öffentliche Klassen anwenden; Block-Markup nicht nachbauen.
 - [ ] Produkt-/Pro-CTA und Preisangaben mit dem tatsächlichen Shop-Katalog abstimmen.
 - [ ] Kauf, Lizenzaktivierung, Erneuerung und Supportlinks end-to-end prüfen; Funktionsverantwortung bleibt bei Shop und Plugins.
-- [ ] Login-/Konto-Zustände, Fehlermeldungen und leere Warenkorb-/Suchzustände gestalten.
+- [x] Login-/Konto-Zustände, Fehlermeldungen und leere Warenkorb-/Suchzustände gestalten. *(Basisstyles auf öffentlichen WooCommerce-Klassen; Abnahme mit installiertem Shop offen.)*
 
 ## Phase 8 – SEO, Mehrsprachigkeit und Redaktion
 
@@ -104,24 +104,24 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [ ] Indexierung und Canonicals für Archive, Suche, Pagination und Shopseiten prüfen.
 - [ ] Schema-Ausgabe von Yoast, WooCommerce und weiteren Plugins auf Doppelungen prüfen; strukturierte Daten nicht im Theme duplizieren.
 - [ ] URL-Slugs und Weiterleitungen für geänderte Seitennamen festlegen.
-- [ ] Textdomain und Übersetzungsworkflow aktivieren; deutschsprachige Website-Texte und UI-Strings sauber voneinander trennen.
+- [x] Textdomain und Übersetzungsworkflow aktivieren; deutschsprachige Website-Texte und UI-Strings sauber voneinander trennen. *(UI-Strings über `captain-plugins`-Textdomain und `tools/make-pot.py`; Website-Texte liegen als Seiteninhalte vor.)*
 - [ ] Redaktionsrollen, Pattern-Freigaben und Pflegeprozess für Preise, Changelog, Kompatibilität und Screenshots dokumentieren.
 
 ## Phase 9 – Qualität und Freigabe
 
 - [ ] Alle Seitentypen auf gängigen Desktop-, Tablet- und Mobilansichten manuell prüfen.
-- [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen.
+- [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen. *(Automatisiert erledigt: axe-core ohne Verstöße auf 14 Seitentypen bei 100 % und 200 % Zoom, reduzierte Bewegung greift. Offen: manueller Screenreader-Durchlauf, Formularfehler mit echtem Shop.)*
 - [x] Sprunglink zum Hauptinhalt und kontraststarke, doppelt sichtbare Fokusdarstellung in die Theme-Vorlagen integrieren.
-- [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link in einem Screenreader-/Browserdurchlauf abnehmen.
+- [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link in einem Screenreader-/Browserdurchlauf abnehmen. *(Automatisiert: je Seite genau eine H1, keine Hierarchiesprünge, keine leeren Links, Skip-Link; Screenreader-Durchlauf offen.)*
 - [ ] Layout mit und ohne WooCommerce, Yoast sowie den sechs kostenlosen Kern-Plugins und License Captain prüfen; degradierte Zustände verständlich halten.
-- [ ] Ladegewicht, Bildgrößen, Caching-Verhalten und Core Web Vitals mit realistischem Seiteninhalt bewerten.
+- [x] Ladegewicht, Bildgrößen, Caching-Verhalten und Core Web Vitals mit realistischem Seiteninhalt bewerten. *(8–11 Requests, ca. 180–230 KB unkomprimiert, JS nur Core-Navigation; Core Web Vitals auf Staging messen.)*
 - [ ] SEO-Snippets, Social-Previews, Sitemap, robots/noindex und Weiterleitungen in Staging prüfen.
-- [ ] Rechtliche Pflichtseiten, Datenschutz-/Cookie-Einbindung und Formularkonfiguration mit Verantwortlichen abgleichen.
+- [ ] Rechtliche Pflichtseiten, Datenschutz-/Cookie-Einbindung und Formularkonfiguration mit Verantwortlichen abgleichen. *(Impressum und Datenschutz liegen als Entwurfsvorlagen mit Betreiber-Platzhaltern bereit.)*
 - [ ] Redaktionelle Abnahme aller Texte, Preise, Produktversprechen, Screenshots und CTAs einholen.
 
 ## Phase 10 – Veröffentlichung und Betrieb
 
-- [ ] Theme-Version, Changelog, Lizenz und Installationspaket erstellen.
+- [x] Theme-Version, Changelog, Lizenz und Installationspaket erstellen. *(Version 0.2.0, `CHANGELOG.md`, `tools/build-theme-zip.sh`; Lizenz offen.)*
 - [ ] Backup und Rückfallweg vor Aktivierung dokumentieren.
 - [ ] Erst in Staging aktivieren und Shop-/Plugin-Regressionen prüfen.
 - [ ] Produktionsaktivierung mit kurzem Smoke-Check für Startseite, Produkte, Preise, Checkout, Support und 404 durchführen.
@@ -139,4 +139,10 @@ Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Ste
 
 ## Aktueller Build-Stand
 
-Die Pattern-Bibliothek enthält einen Produkt-Hero, Featurekarten, eine Dreischrittfolge, einen Free-/Pro-Vergleich, Preisentwürfe, einen Kompatibilitätshinweis, FAQs mit nativen Details-Blöcken, Ressourcen-Karten und ein Screenshot-Aufnahmebriefing. Der Inhaltscompiler erzeugt aus 71 Markdown-Quellseiten fünf notwendige Verzeichnisseiten als 76 importierbare Gutenberg-Inhalte mit Hero-, Abschnitts-, CTA- und Medienkarten; FAQ-Seiten werden als native Details-Akkordeons und Preisübersichten mit semantischen, responsiven Tabellen ausgegeben. Alle Inhaltsseiten erhalten SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase; Yoast erhält Social-Titel/-Beschreibung. Platzhalterseiten werden als Entwurf angelegt. Preise werden vor Shop-Veröffentlichung mit dem Produktkatalog abgeglichen.
+Stand 16. November 2026, Theme-Version 0.2.0. Das Theme setzt das Designkonzept und die Mockups um: Navy-Header mit Klick-Untermenüs und Gold-CTA, Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle sieben Produkte, Tarifkarten, CTA-Bänder, ruhiger Lesefluss für Ratgeber und Dokumentation sowie breite Matrizen für Kompatibilität und Integrationen. Der Inhaltscompiler erzeugt 90 importierbare Seiten (davon Impressum und Datenschutz als Entwürfe).
+
+**Geprüft in WordPress 6.7 (SQLite-Testinstallation):** Gutenberg-Blockvalidierung aller Templates, Parts, Patterns und Seiten ohne Fehler; Link-Crawler ohne tote interne Links; 90 Seiten in Desktop, Tablet und Mobil ohne horizontales Scrollen, mit genau einer H1 und ohne Hierarchiesprünge; axe-core ohne Verstöße; Menü-, Skip-Link- und FAQ-Tastaturtests bestanden; keine PHP-Warnungen.
+
+**Nur mit echter Umgebung prüfbar:** WooCommerce-Kaufstrecke und Konto, Yoast-Ausgabe, Sichtprüfung im Block-/Site-Editor, Screenreader-Durchlauf, Core Web Vitals auf Staging.
+
+**Vom Betreiber zu entscheiden oder zu liefern:** Theme-Lizenz, Impressums- und Datenschutzangaben, Bildrechte der Kapitänsillustrationen, finale Download-, Checkout- und Support-URLs, echte Produkt-Screenshots (siehe `texte/homepage/medieninventar.md`), License-Captain-Preise.

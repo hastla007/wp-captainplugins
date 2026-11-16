@@ -33,21 +33,30 @@ Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setu
 - Yoast erhält beim Import SEO-Titel, Meta-Beschreibung, Fokus-Keyphrase sowie Social-Titel und Social-Beschreibung. Individuelle `social_title`- und `social_description`-Felder im Markdown sind möglich; ohne diese werden die SEO-Werte verwendet. Social-Bilder und die finale Snippet-Freigabe bleiben Teil der redaktionellen Veröffentlichung.
 - License Captain ZIP, Releases/Downloads, Checkout, Rechtstexte, Steuerkonfiguration, Supportwege und Unternehmensangaben müssen vor dem Verkauf ergänzt und geprüft werden.
 
-Für Produkt-Startseiten die Vorlage **Produktseite**, für Preise und Vergleich **Preisübersicht** und für Dokumentation, FAQ, Support und Kompatibilität **Ressourcen- und Dokumentationsseite** auswählen. Die WooCommerce-Seiten Warenkorb, Checkout und Mein Konto verwenden ihre gleichnamigen Seitentemplates, sofern die WordPress-Seiten diese Slugs haben.
+Der Import ordnet die Vorlagen automatisch zu: **Produktseite** für alle Produkt-Startseiten (`/…-captain/`), **Preisübersicht** für Preise, Captain Pro und `…/preise/`, **Breite Inhaltsseite** für Produktübersicht, Vergleich, Lösungen, Kompatibilität und Integrationen, sonst **Ressourcen- und Dokumentationsseite** mit Lesespalte. Manuell gewählte Vorlagen bleiben erhalten. Die WooCommerce-Seiten Warenkorb, Checkout und Mein Konto verwenden ihre gleichnamigen Seitentemplates, sofern die WordPress-Seiten diese Slugs haben.
 
-Die vollständige Reihenfolge von der Bestandsaufnahme bis Betrieb und Release steht in [ROADMAP.md](../ROADMAP.md). Designvorgaben stehen in [../design/konzept.md](../design/konzept.md).
+Die vollständige Reihenfolge von der Bestandsaufnahme bis Betrieb und Release steht in [ROADMAP.md](ROADMAP.md), Änderungen pro Version in [CHANGELOG](captain-plugins/CHANGELOG.md). Designvorgaben stehen in [../design/konzept.md](../design/konzept.md).
 
-Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/mockups/homepage-desktop.jpg), [Produktübersichts-](../design/mockups/products-overview-desktop.jpg), [Voucher-Captain-](../design/mockups/voucher-captain-desktop.jpg) und [Preisplan-Mockups](../design/mockups/captain-pro-pricing-desktop.jpg). Die Startseite nutzt eine mitgelieferte Kapitänsillustration als dekoratives Motiv. Die Mockups dienen als Gestaltungsreferenz; ihre Produktansichten sind keine echten Screenshots.
+Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/mockups/homepage-desktop.jpg), [Produktübersichts-](../design/mockups/products-overview-desktop.jpg), [Voucher-Captain-](../design/mockups/voucher-captain-desktop.jpg) und [Preisplan-Mockups](../design/mockups/captain-pro-pricing-desktop.jpg). Vier freigestellte Kapitänsposen (zeigend, Daumen hoch, Fernrohr, verschränkte Arme) liegen als WebP unter `captain-plugins/assets/images/` und werden als dekorative CSS-Hintergründe eingesetzt. Die Mockups dienen als Gestaltungsreferenz; ihre Produktansichten sind keine echten Screenshots.
 
 ## Theme-Umfang
 
-- Block-Templates und Template Parts, bearbeitbar im Site Editor.
-- Patterns für Produkt-Heros, Features, Abläufe, Free-/Pro-Vergleich, Preise, Screenshot-Briefings, Kompatibilität, FAQ, Ressourcen und CTAs.
-- Responsive Basisstile, globale Design-Tokens und sichtbare Tastaturfokusse.
-- Markenorientierter Startseiten-Hero mit Captain-Illustration, zweispaltigem Desktop-Aufbau, CTA-Styling und mobiler Umordnung.
-- Sieben Produktkarten auf der Startseite sowie verfeinerte Produkt-, Preis-, FAQ- und Medienplatzhalter-Komponenten.
-- Warenkorb- und Checkout-Templates, die den Inhalt der dafür angelegten WordPress-Seiten ausgeben.
-- Mein-Konto-Template, das die von WooCommerce bereitgestellten Kontoblöcke und Shortcodes im Seiteninhalt belässt.
+- Block-Templates und Template Parts, bearbeitbar im Site Editor; einheitlicher Seitenkopf mit Brotkrumen.
+- Header mit Klick-Untermenüs, Gold-CTA und Disclosure-Menü bis Tablet-Breite; Footer mit benannten Navigationen.
+- Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle sieben Produkte, Tarifkarten, CTA-Bänder mit Kapitän.
+- Ruhiger Lesefluss für Ratgeber, Dokumentation, Support und FAQ; breite, tastaturbedienbare Tabellen für Matrizen.
+- Patterns für Produkt-Heros, Produktkarten, Features, Abläufe, Free-/Pro-Vergleich, Preise, Screenshot-Briefings, Kompatibilität, FAQ, Ressourcen und CTAs.
+- Design-Tokens in `theme.json` (Farben, 4–96-px-Abstände, 75rem-Container, Typoskala) und sichtbare Tastaturfokusse; Kontraste sind in `design/konzept.md` dokumentiert.
+- Warenkorb-, Checkout- und Mein-Konto-Templates, die den Seiteninhalt mit den WooCommerce-Blöcken ausgeben; Basisstyles nur auf öffentlichen WooCommerce-Klassen.
+
+## Werkzeuge
+
+| Befehl | Zweck |
+|---|---|
+| `python3 tools/build-theme-content.py` | Website-Texte aus `texte/homepage/` in importierbare Gutenberg-Seiten übersetzen |
+| `python3 tools/make-pot.py` | Übersetzungsvorlage `languages/captain-plugins.pot` erzeugen |
+| `python3 tools/media-inventory.py` | Liste aller Screenshot-, Demo- und Diagramm-Platzhalter erzeugen |
+| `tools/build-theme-zip.sh` | Installierbares Theme-ZIP unter `dist/` bauen (inkl. Inhalts- und POT-Neubau und PHP-Lint) |
 
 Die Pattern-Texte mit eckigen Klammern sind redaktionelle Felder, die beim Einfügen auszufüllen sind. Der Preisvergleich startet mit den aktuellen Konzeptpreisen und enthält einen internen Abgleichhinweis. Screenshot-Platzhalter enthalten ein konkretes Aufnahmebriefing und müssen vor Veröffentlichung ersetzt werden.
 
