@@ -11,7 +11,7 @@ Mit Form Captain richten Sie ein Formular direkt in WordPress ein und verwalten 
 
 ## Voraussetzungen
 
-Form Captain setzt WordPress 6.8 oder neuer und PHP 8.3 oder neuer voraus. WooCommerce ist optional (ab Version 8.0), wenn Sie die unterstützten Shop-Ereignisse oder Adapter verwenden. Multisite wird in Version 1.0 nicht unterstützt. Die jeweils getestete Umgebung steht in den Releasehinweisen.
+Form Captain setzt WordPress 6.8 oder neuer und PHP 8.5 oder neuer voraus. WooCommerce ist optional (ab Version 8.0), wenn Sie die unterstützten Shop-Ereignisse oder Adapter verwenden. Multisite wird in Version 1.0 nicht unterstützt. Die jeweils getestete Umgebung steht in den Releasehinweisen.
 
 ## Installation und Ersteinrichtung
 

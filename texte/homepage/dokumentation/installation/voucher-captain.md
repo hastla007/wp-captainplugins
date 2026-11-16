@@ -13,7 +13,8 @@ Voucher Captain erweitert WooCommerce um Gutscheinprodukte, Geschenkkarten, PDF-
 
 - WordPress 6.4 oder neuer
 - WooCommerce 8.9 oder neuer
-- PHP 8.1 oder neuer
+- PHP 8.5 oder neuer
+- MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
 - PHP-Erweiterungen GD, mbstring und zip
 
 Aktivieren Sie zuerst WooCommerce. Erstellen Sie vor der Installation ein Backup und testen Sie den Ablauf möglichst zunächst auf einer Staging-Website.

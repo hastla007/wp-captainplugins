@@ -234,7 +234,7 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 - [ ] Vorhandenes Logo, Typografie und alle acht Kapitäns-JPEGs sichten; Nutzungsrechte, Auflösung und geeignete Posen erfassen.
 - [x] Farbpalette mit Kontrastmessung finalisieren; Produktakzente dokumentieren. *(Kontrasttabelle in Abschnitt 2; Produkte werden über Name und Icon statt über eigene Farben unterschieden.)*
 - [x] Architekturentscheidung festhalten: natives Block-Theme mit Site Editor, `theme.json`, HTML-Templates und Template Parts. Mindestversionen für WordPress, PHP und WooCommerce vor dem Scaffold aus der Kompatibilitätsmatrix der Produkte ableiten.
-- [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen.
+- [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen. *(PHP 8.5 und Datenbank-Minima entschieden; WordPress-Zielversion, Deployprozess und Browsermatrix offen.)*
 - [ ] Release-Quelle für Preise, Checkout-, Download- und Support-URLs bestimmen.
 - [x] Theme-Dateiname, Textdomain und Repository-Ordner festlegen.
 
@@ -295,7 +295,7 @@ Das Theme ist bereit für die redaktionelle Befüllung, wenn:
 - Offene Architekturentscheidung ist aufgelöst: Umsetzung als natives WordPress-Block-Theme mit Site Editor und `theme.json`. Vor dem Scaffold bleiben die konkreten Mindestversionen und WooCommerce-Versionen anhand der aktiven Plugin-Repositories festzulegen.
 - Finale Live-URLs, CTA-Ziele, Download-/Checkout-/Supportablauf.
 - Finale Produkt-Screenshots und freigegebene Mascot-Exporte.
-- Verbindliche Browser-/WordPress-/PHP-Zielmatrix.
+- Verbindliche Browser- und WordPress-Zielmatrix. *(PHP 8.5, MySQL 9.7 LTS und MariaDB 12.3 LTS sind seit 16. November 2026 als Minimum festgelegt.)*
 
 Diese Entscheidungen blockieren nicht die Strukturplanung. Sie werden während Designsystem und technischem Scaffold auf Grundlage des realen Logos, Stacks und Shopablaufs abgeschlossen.
 

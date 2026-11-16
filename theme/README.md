@@ -4,7 +4,7 @@ Erste Umsetzung eines nativen WordPress-Block-Themes für die B2B-Website von Ca
 
 ## Installieren
 
-Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/captain-plugins` kopieren und anschließend im WordPress-Admin aktivieren. Das Theme benötigt WordPress 6.6 oder neuer und PHP 7.4 oder neuer. Für Shopseiten ist WooCommerce erforderlich; die Theme-Aktivierung selbst hängt nicht davon ab.
+Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/captain-plugins` kopieren und anschließend im WordPress-Admin aktivieren. Das Theme benötigt WordPress 6.6 oder neuer und – wie alle Captain-Produkte (Entscheidung vom 16. November 2026) – PHP 8.5 oder neuer sowie MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS). Liegt der Server darunter, zeigt das Theme im Admin eine Warnung, sperrt die Website aber nicht. Für Shopseiten ist WooCommerce erforderlich; die Theme-Aktivierung selbst hängt nicht davon ab.
 
 ## Einrichten
 

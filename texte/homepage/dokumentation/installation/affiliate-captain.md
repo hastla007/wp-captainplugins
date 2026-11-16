@@ -12,7 +12,8 @@ Affiliate Captain verwaltet Partnerbewerbungen, Links, Attribution, Provisionen 
 ## Voraussetzungen
 
 - WordPress 6.3 oder neuer
-- PHP 7.4 oder neuer
+- PHP 8.5 oder neuer
+- MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
 - Erweiterungen sodium und dom
 - zip wird für den Programmexport benötigt
 - WooCommerce 8.0 oder neuer nur für die optionale WooCommerce-Integration
@@ -57,4 +58,4 @@ Legen Sie einen Testpartner an, folgen Sie einem Referral-Link und prüfen Sie d
 
 [Affiliate Captain Features](/affiliate-captain/features/) · [FAQ](/affiliate-captain/faq/) · [Dokumentation](/dokumentation/)
 
-**Captain-Pro-Hinweis:** Das Affiliate-Captain-Pro-Add-on benötigt WordPress 6.5+; PHP 7.4+ sowie die erforderlichen PHP-Erweiterungen richten sich nach dem Kern-Plugin. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).
+**Captain-Pro-Hinweis:** Das Affiliate-Captain-Pro-Add-on benötigt WordPress 6.5+; PHP 8.5+ sowie die erforderlichen PHP-Erweiterungen richten sich nach dem Kern-Plugin. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).

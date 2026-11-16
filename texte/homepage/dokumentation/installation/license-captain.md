@@ -13,8 +13,8 @@ License Captain nutzt WooCommerce für den Verkauf von Softwarelizenzen und verw
 
 - WordPress 6.5 oder neuer
 - Aktives WooCommerce
-- PHP 7.4 oder neuer
-- MySQL oder MariaDB mit beschreibbarem primärem Datenbankserver
+- PHP 8.5 oder neuer
+- MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer mit beschreibbarem primärem Datenbankserver
 - Zuverlässiger WordPress-Cron; für den Produktionsbetrieb wird ein System-Cron empfohlen
 - Für automatische Verlängerungen: offizielles WooCommerce-Stripe-Gateway und Stripe-Konto
 

@@ -35,4 +35,4 @@ Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen na
 
 [Screenshot-Platzhalter: Upload einer anonymisierten CSV-Liste mit Empfängerfeldern und erfolgreicher Vorschau der erzeugten Gutscheine zeigen.] · [Demo: Wallet-Pass und SMS-Zustellung]
 
-**Voraussetzungen:** Voucher Captain als Kern-Plugin; die kombinierte Installation mit dem Pro-Add-on benötigt WordPress 6.5+, PHP 8.1+ und WooCommerce 8.9+. [Kompatibilität](/kompatibilitaet/).
+**Voraussetzungen:** Voucher Captain als Kern-Plugin; die kombinierte Installation mit dem Pro-Add-on benötigt WordPress 6.5+, PHP 8.5+ und WooCommerce 8.9+. [Kompatibilität](/kompatibilitaet/).

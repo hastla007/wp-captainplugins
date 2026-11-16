@@ -11,7 +11,7 @@ Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooComm
 
 ## Voraussetzungen
 
-- WordPress 6.8 oder neuer und PHP 8.3 oder neuer gemäß Produktkonzept.
+- WordPress 6.8 oder neuer und PHP 8.5 oder neuer gemäß Produktkonzept.
 - WooCommerce optional ab Version 8.0 für Shop-Auslöser und -Aktionen.
 - Für Pro: gültige Workflow-Captain-Pro-Lizenz; für Suite-Aktionen das jeweils benötigte Captain-Plugin mit kompatiblem Providervertrag.
 - Vor dem Start ein aktuelles Backup und eine Staging-Umgebung für erste Tests.

@@ -45,6 +45,6 @@ Nein. Freier PHP-/SQL-Code, willkürliche HTTP-Ziele und eine breite native App-
 
 ## Welche Voraussetzungen gelten?
 
-Das Konzept setzt WordPress 6.8+ und PHP 8.3+ voraus. WooCommerce ist optional und ab 8.0 vorgesehen. Die tatsächlich getesteten Versionen und Mindeststände einzelner Suite-Provider müssen vor Veröffentlichung in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/) bestätigt werden.
+Das Konzept setzt WordPress 6.8+ und PHP 8.5+ voraus. WooCommerce ist optional und ab 8.0 vorgesehen. Die tatsächlich getesteten Versionen und Mindeststände einzelner Suite-Provider müssen vor Veröffentlichung in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/) bestätigt werden.
 
 [Installation](/workflow-captain/installation/) · [Features](/workflow-captain/features/) · [Preise](/preise/) · [Support](/support/)

@@ -12,7 +12,8 @@ Die Versionswerte unten sind die im Workflow-Captain-Konzept festgelegten Mindes
 | Komponente | Vorgesehene Mindestversion | Hinweis |
 |---|---:|---|
 | WordPress | 6.8 | Kostenloser Kern und Pro-Add-on |
-| PHP | 8.3 | Kostenloser Kern und Pro-Add-on |
+| PHP | 8.5 | Kostenloser Kern und Pro-Add-on |
+| Datenbank | MySQL 9.7 (LTS) / MariaDB 12.3 (LTS) | Ältere Versionen erzeugen eine Warnung, keine Sperre |
 | WooCommerce | 8.0 | Optional; erforderlich für WooCommerce-Provider |
 | Captain-Suite-Plugins | Je Providervertrag | Erfordert kompatible Kernversion und öffentliche Schnittstelle |
 | Pro-Erweiterung | Aktive Pro-Lizenz | Workflow Captain Pro wird separat angeboten; für Suite-Funktionen müssen die passenden Provider verfügbar sein |

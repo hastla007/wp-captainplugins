@@ -39,4 +39,4 @@ Alle Pläne enthalten den vollständigen Pro-Umfang.
 
 [Screenshot-Platzhalter: Zeigen Sie das Partnerportal mit angepasstem Firmenlogo, Farben und Navigation; verwenden Sie eine neutrale Demomarke und Testdaten.] · [Demo: Webhook und Auszahlung]
 
-**Voraussetzungen:** Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 6.5+ und PHP 7.4+. WooCommerce ist optional. [Kompatibilität](/kompatibilitaet/).
+**Voraussetzungen:** Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 6.5+ und PHP 8.5+. WooCommerce ist optional. [Kompatibilität](/kompatibilitaet/).

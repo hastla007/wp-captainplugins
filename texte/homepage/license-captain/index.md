@@ -34,6 +34,6 @@ Der **License-Captain-Server** läuft als Plugin in Ihrem WooCommerce-Shop: Er e
 
 ## Kompatibilität
 
-License Captain benötigt WordPress 6.5+, PHP 7.4+ und aktives WooCommerce ab Version 8.9. Der Betrieb setzt eine MySQL- oder MariaDB-Installation mit einem beschreibbaren Primärserver und zuverlässigem Cron voraus. HPOS und klassische Bestellspeicherung werden unterstützt. Für automatische Verlängerungen ist das offizielle WooCommerce-Stripe-Gateway erforderlich.
+License Captain benötigt WordPress 6.5+, PHP 8.5+ und aktives WooCommerce ab Version 8.9. Der Betrieb setzt eine MySQL- oder MariaDB-Installation mit einem beschreibbaren Primärserver und zuverlässigem Cron voraus. HPOS und klassische Bestellspeicherung werden unterstützt. Für automatische Verlängerungen ist das offizielle WooCommerce-Stripe-Gateway erforderlich.
 
 [Kompatibilitätsmatrix und geprüfte Plattformstände](/kompatibilitaet/).

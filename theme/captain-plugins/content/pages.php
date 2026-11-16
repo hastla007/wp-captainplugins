@@ -35,7 +35,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "8e7567e4cc41061912eb49b457e91561af0a98be3f9a1e504e3b0ae14ff4f466",
+		"source_hash" => "f9375685fc96dcd2fe0187b831a521448955b792cd96e750f8d013cbe5dd83e8",
 		"source_file" => "texte/homepage/affiliate-captain/index.md",
 	],
 	[
@@ -171,7 +171,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "05aa03c310e480cdfa4aa7ede3172a86c41b25580d81ee5aad37c55409169cda",
+		"source_hash" => "be319a7af1f5b3cd4c284ff547e45530adb3ffe1c0f48d9ccddf68dbf9251dec",
 		"source_file" => "texte/homepage/kompatibilitaet.md",
 	],
 	[
@@ -188,7 +188,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "9f57a779fe7a9c423bb7d32844e9e3bcad5c107cf547d8b8e9c7cf4c8a936fe0",
+		"source_hash" => "1ab68f7723e445b5bfce3e2f0364f5a52a61c98574a47f40e98ad9ba014f826d",
 		"source_file" => "texte/homepage/license-captain/index.md",
 	],
 	[
@@ -219,7 +219,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "1431f922c7dc52ebb9edc1f5e0b561efa9280abdb7807c1133b7e5bbb0374515",
+		"source_hash" => "7c93bf82025be4060feab215fdb2b103f62b6333c3592987deb872d12dc0c4d0",
 		"source_file" => "texte/homepage/pass-captain/index.md",
 	],
 	[
@@ -352,7 +352,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "d4ba8eb83e5c9d09156ebb70e0925290becd1684a4959accb45152018114702e",
+		"source_hash" => "858ace8501d80db2f165653539cca290a74d83fd8128ffad51c2528aa4040585",
 		"source_file" => "texte/homepage/voucher-captain/index.md",
 	],
 	[
@@ -369,7 +369,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "6960978dd49d3cf87850115d4b18268695c0b82e44d83446f7ee6a711b989186",
+		"source_hash" => "889026d6cfa619efa19aff7d382236deeadb1fa57b83048cc22c1c9fd230414f",
 		"source_file" => "texte/homepage/workflow-captain/index.md",
 	],
 	[
@@ -420,7 +420,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "664fbb0e2c26fd653b071fd9c760b70361522c55df926a37c4a4c9953c17d135",
+		"source_hash" => "9a0fba8c81e9c06d18009f0a67295bc512050401af184ecdab93ebf083ea59b9",
 		"source_file" => "texte/homepage/affiliate-captain/pro.md",
 	],
 	[
@@ -539,7 +539,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "a4b8d2788409b4a8fd887643a7ccac2de9e99752906e4e94327bfd86e55d3de8",
+		"source_hash" => "3513fc5340bad1ebedec0c293b7b5bbc52a53b994cb9dc3936cb3cbbfca1c61d",
 		"source_file" => "texte/homepage/form-captain/installation.md",
 	],
 	[
@@ -573,7 +573,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "5e9d5340b9535979ab53a1e304dc1c2b6505aaa2fc23fe7ec9b4ddf22be32282",
+		"source_hash" => "5f44ca04242582a5f42bfd52aaa77bd6ca55f4f657700e75f4ab253dd70de293",
 		"source_file" => "texte/homepage/form-captain/kompatibilitaet.md",
 	],
 	[
@@ -709,7 +709,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "fae4da87533a2d585cec3ffcf5dc77620ef68da53012c26b3d6c8d79956a1308",
+		"source_hash" => "d04c3cf95c857da44b5272d0a3c6ea7bb029269382ee455348029d43294383ef",
 		"source_file" => "texte/homepage/pass-captain/pro.md",
 	],
 	[
@@ -858,7 +858,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "5b4bd91b65e029b2174645269301751dd680c735572939fa56901efe47dbe4b2",
+		"source_hash" => "2507f25137fef5c41d84b99d7a0c82b21d0629ac622b39e5ff49a8de49c65641",
 		"source_file" => "texte/homepage/review-captain/installation.md",
 	],
 	[
@@ -960,7 +960,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "8e7b33e1b9347ade13842e5ef62365ab0b0c76664ec4fbe1db14d23c78f46dee",
+		"source_hash" => "ebe61c34cdc114d83150d08e1a0c2adc369f293dbf94cd066524687cd6f36aeb",
 		"source_file" => "texte/homepage/voucher-captain/pro.md",
 	],
 	[
@@ -977,7 +977,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "9d3ac9802085d21abe2359d1ace1e51376b8a5b68ae43adb6d7e672d3ecaef27",
+		"source_hash" => "2b58c390e7afe17a086f2c96a56e101481adb973028c868e7335439b79552fc8",
 		"source_file" => "texte/homepage/workflow-captain/faq.md",
 	],
 	[
@@ -1011,7 +1011,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "3899b828d08c8e403baa29ddc27b4fe088a3fce8dfdc306ac38e122530b6fbdf",
+		"source_hash" => "b78cdbcdf9c63b828ff1d1aa7ad8081dbc3314802d7af908efba764e20727672",
 		"source_file" => "texte/homepage/workflow-captain/installation.md",
 	],
 	[
@@ -1045,7 +1045,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "925e7871bbff61af3dbbc8bf7e8b8931be21b3cdb1a69289687d887a85f579fd",
+		"source_hash" => "63efe65bfa8f95e1d897812e1466056c57124c6af811ac5ce25c79595d934216",
 		"source_file" => "texte/homepage/workflow-captain/kompatibilitaet.md",
 	],
 	[
@@ -1079,7 +1079,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "efacf612c68dab45419ba30171d01b0cba347418ca1b8d031a71b2057dc19a85",
+		"source_hash" => "05d9f6b390eac13ecc18eb68ae5daed6e7ef9557e78e248360438cfa51de7b4a",
 		"source_file" => "texte/homepage/dokumentation/installation/affiliate-captain.md",
 	],
 	[
@@ -1113,7 +1113,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "b91b9d789f780bb50fc79d481228c7fb11997e3ed24eefd46caf37aba7b812aa",
+		"source_hash" => "1ecc8d8fa1ebdefc4e361e8474964a168bbdde793d19cca697a802904ffd72b3",
 		"source_file" => "texte/homepage/dokumentation/installation/license-captain.md",
 	],
 	[
@@ -1130,7 +1130,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "2e4c2bad8eb2f9bd0f286ed8cbf6d6a186e96f56dd0eb2a10737d5fc12434047",
+		"source_hash" => "db11f4c7948c712e2abb26cb9bb673c70810d39e3a3cd17c55804fc112265cc0",
 		"source_file" => "texte/homepage/dokumentation/installation/pass-captain.md",
 	],
 	[
@@ -1147,7 +1147,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "0efa4299cda1dfa4643bffa513ee604a772f11e1dd79dce9b245867ed44d3c67",
+		"source_hash" => "0dfd00140e395edc3a342e0ea51d62c096b90ee59f48373d4d2c9d262aaca995",
 		"source_file" => "texte/homepage/dokumentation/installation/voucher-captain.md",
 	],
 	[

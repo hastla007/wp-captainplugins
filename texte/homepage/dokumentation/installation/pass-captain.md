@@ -12,8 +12,8 @@ Pass Captain verwaltet Events, Tickets, Servicebuchungen, Wartelisten und Einlas
 ## Voraussetzungen
 
 - WordPress 6.4 oder neuer
-- PHP 8.2 oder neuer
-- MySQL oder MariaDB in einer unterstützten Version
+- PHP 8.5 oder neuer
+- MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
 - WooCommerce nur, wenn Sie den WooCommerce-Checkout verwenden
 
 Erstellen Sie vorab ein Backup. Für neue Event- und Zahlungsabläufe empfiehlt sich zunächst eine Staging-Website.
@@ -56,4 +56,4 @@ Für Kurse oder Verleih definieren Sie Ressourcen, Zeitfenster, Dauer, Puffer un
 
 [Features](/pass-captain/features/) · [Pass Captain Pro](/pass-captain/pro/) · [FAQ](/pass-captain/faq/) · [Support](/support/)
 
-**Captain-Pro-Hinweis:** Das Pass-Captain-Pro-Add-on benötigt WordPress 6.5+; für die Kombination gilt wegen des Kerns weiterhin PHP 8.2+. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).
+**Captain-Pro-Hinweis:** Das Pass-Captain-Pro-Add-on benötigt WordPress 6.5+; für die Kombination gilt wegen des Kerns weiterhin PHP 8.5+. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).

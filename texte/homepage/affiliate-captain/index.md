@@ -34,6 +34,6 @@ Mit Affiliate Captain Pro ergänzen Sie signierte Webhooks, erweiterte REST-API,
 
 ## Kompatibilität und Support
 
-Affiliate Captain benötigt WordPress 6.3+ und PHP 7.4+ mit sodium und dom. zip wird für den Programmexport benötigt. WooCommerce ist optional ab Version 8.0; unterstützt werden HPOS, Classic- und Blocks-Checkout. Das Affiliate-Captain-Pro-Add-on setzt WordPress 6.5+ voraus.
+Affiliate Captain benötigt WordPress 6.3+ und PHP 8.5+ mit sodium und dom. zip wird für den Programmexport benötigt. WooCommerce ist optional ab Version 8.0; unterstützt werden HPOS, Classic- und Blocks-Checkout. Das Affiliate-Captain-Pro-Add-on setzt WordPress 6.5+ voraus.
 
 Single und Business enthalten Standard-Support; Agency enthält Priority-Support. [Alle Systemanforderungen und Integrationen](/kompatibilitaet/).

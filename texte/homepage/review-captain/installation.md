@@ -13,7 +13,7 @@ Richten Sie Review Captain in WordPress ein, wählen Sie Ihre Bewertungsquellen 
 
 Review Captain wird als WordPress-Plugin installiert. Für externe Plattformverbindungen benötigen Sie je nach Quelle ein berechtigtes Unternehmens- oder Entwicklerkonto sowie die erforderlichen API-Freigaben. WooCommerce ist nur erforderlich, wenn Sie WooCommerce-Ereignisse für Bewertungsanfragen nutzen.
 
-Die freigegebenen Mindestversionen von WordPress und PHP sowie die getestete WooCommerce-Version werden in den Produktmetadaten und Releasehinweisen des jeweiligen Releases ausgewiesen.
+Review Captain setzt wie alle Captain-Plugins PHP 8.5 sowie MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) voraus. Die freigegebenen Mindestversionen von WordPress sowie die getestete WooCommerce-Version werden in den Produktmetadaten und Releasehinweisen des jeweiligen Releases ausgewiesen.
 
 ## Einrichtung in wenigen Schritten
 
