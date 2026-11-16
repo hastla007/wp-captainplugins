@@ -69,7 +69,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "538248e05837bb0790c898e382d569fb8e0886c9865223af67448420ff733fd8",
+		"source_hash" => "b7667a92de6e27917d75c528dbf1bc9664aebdb1c96cee7f96c6eb2a9dd0c972",
 		"source_file" => "texte/homepage/datenschutz.md",
 	],
 	[

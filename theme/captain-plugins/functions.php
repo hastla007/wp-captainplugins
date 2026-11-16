@@ -36,6 +36,24 @@ function captain_plugins_setup() {
 }
 add_action( 'after_setup_theme', 'captain_plugins_setup' );
 
+/**
+ * Disable the core emoji loader: it adds inline JavaScript, a sessionStorage entry and may fetch
+ * images from the WordPress CDN (s.w.org). Modern browsers render emoji natively.
+ */
+function captain_plugins_disable_emoji(): void {
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
+	remove_action( 'wp_enqueue_scripts', 'wp_enqueue_emoji_styles' );
+	remove_action( 'admin_enqueue_scripts', 'wp_enqueue_emoji_styles' );
+	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+	add_filter( 'emoji_svg_url', '__return_false' );
+}
+add_action( 'init', 'captain_plugins_disable_emoji' );
+
 function captain_plugins_enqueue_styles() {
 	wp_enqueue_style(
 		'captain-plugins-theme',

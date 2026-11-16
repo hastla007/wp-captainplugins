@@ -31,7 +31,9 @@ focus_keyphrase: Datenschutzerklärung Captain Plugins
 
 ## Cookies, Statistik und eingebundene Dienste
 
-[[Betreiber: eingesetzte Cookies, Einwilligungsverwaltung, Statistik-, Schrift-, Video- oder sonstige Drittdienste; ansonsten ausdrücklich angeben, dass keine eingesetzt werden]]
+Das Website-Theme setzt keine Cookies, nutzt keinen Browser-Speicher und lädt keine Schriften, Skripte oder Bilder von fremden Servern; Schriften sind Systemschriften des jeweiligen Geräts. Die WordPress-Emoji-Einbindung ist deaktiviert.
+
+[[Betreiber: Cookies und Dienste weiterer Plugins ergänzen, z. B. WooCommerce-Sitzungs- und Warenkorb-Cookies, Zahlungsanbieter, Einwilligungsverwaltung, Statistik, eingebettete Videos; nicht eingesetzte Dienste nicht aufführen]]
 
 ## Ihre Rechte
 

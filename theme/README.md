@@ -49,6 +49,10 @@ Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/m
 - Design-Tokens in `theme.json` (Farben, 4–96-px-Abstände, 75rem-Container, Typoskala) und sichtbare Tastaturfokusse; Kontraste sind in `design/konzept.md` dokumentiert.
 - Warenkorb-, Checkout- und Mein-Konto-Templates, die den Seiteninhalt mit den WooCommerce-Blöcken ausgeben; Basisstyles nur auf öffentlichen WooCommerce-Klassen.
 
+## Datenschutz und externe Ressourcen
+
+Geprüft im Browser (16. November 2026): Das Theme setzt keine Cookies, schreibt nichts in `localStorage`/`sessionStorage` und fragt keine fremden Hosts an. Schriften sind Systemschriften, Icons und Kapitänsbilder liegen im Theme bzw. als Inline-SVG im CSS vor. Der WordPress-Emoji-Loader ist deaktiviert, weil er Inline-JavaScript ausgibt und Grafiken vom WordPress-CDN nachladen kann. Cookies und Dienste von WooCommerce, Zahlungsanbietern und weiteren Plugins sind davon unabhängig in der Datenschutzerklärung zu beschreiben.
+
 ## Werkzeuge
 
 | Befehl | Zweck |
