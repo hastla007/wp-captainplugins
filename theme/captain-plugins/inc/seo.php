@@ -33,3 +33,31 @@ add_action(
 	},
 	2
 );
+
+/**
+ * WordPress core sitemap (only used without Yoast): leave out pages that WooCommerce marks noindex
+ * (cart, checkout, account), so the sitemap never contradicts the robots meta tag.
+ */
+add_filter(
+	'wp_sitemaps_posts_query_args',
+	static function ( array $args, string $post_type ): array {
+		if ( 'page' !== $post_type || ! function_exists( 'wc_get_page_id' ) ) {
+			return $args;
+		}
+		$excluded = array_filter( array_map( 'intval', array( wc_get_page_id( 'cart' ), wc_get_page_id( 'checkout' ), wc_get_page_id( 'myaccount' ) ) ), static fn( int $id ): bool => $id > 0 );
+		if ( array() !== $excluded ) {
+			$args['post__not_in'] = array_merge( (array) ( $args['post__not_in'] ?? array() ), $excluded );
+		}
+		return $args;
+	},
+	10,
+	2
+);
+
+/** Core sitemap without author archives: they add no content here and would publish login names. */
+add_filter(
+	'wp_sitemaps_add_provider',
+	static fn( $provider, string $name ) => 'users' === $name ? false : $provider,
+	10,
+	2
+);

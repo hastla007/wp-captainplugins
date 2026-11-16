@@ -110,6 +110,18 @@ check( 'Tabelle fokussierbar und benannt', str_contains( $table, 'tabindex="0"' 
 $year = captain_plugins_copyright_year( '<p class="cp-copyright">© {{year}} Captain Plugins</p>', array( 'attrs' => array( 'className' => 'cp-copyright' ) ) );
 check( 'Copyright-Jahr ersetzt', str_contains( $year, wp_date( 'Y' ) ) && ! str_contains( $year, '{{year}}' ) );
 
+echo "Shop und Sitemap\n";
+$placeholder = captain_plugins_product_placeholder_html( '<img src="x.png" alt="Voucher Captain Pro" width="300" height="300" />', 'thumbnail', array( 'width' => 300, 'height' => 300 ) );
+check( 'Platzhalter behält Alt-Text', str_contains( $placeholder, 'alt="Voucher Captain Pro"' ) && str_contains( $placeholder, 'product-placeholder.svg' ), $placeholder );
+$button = captain_plugins_account_url_token( '<a href="{{account_url}}">Konto</a>' );
+check( 'Konto-Platzhalter ersetzt', ! str_contains( $button, '{{account_url}}' ) && str_contains( $button, 'href="http' ), $button );
+check( 'Autoren-Sitemap entfernt', false === apply_filters( 'wp_sitemaps_add_provider', new stdClass(), 'users' ) );
+check( 'Seiten-Sitemap bleibt', false !== apply_filters( 'wp_sitemaps_add_provider', new stdClass(), 'posts' ) );
+if ( function_exists( 'wc_get_page_id' ) && wc_get_page_id( 'cart' ) > 0 ) {
+	$args = apply_filters( 'wp_sitemaps_posts_query_args', array(), 'page' );
+	check( 'Warenkorb nicht in der Sitemap', in_array( (int) wc_get_page_id( 'cart' ), (array) ( $args['post__not_in'] ?? array() ), true ) );
+}
+
 foreach ( array_reverse( $cleanup ) as $id ) {
 	wp_delete_post( $id, true );
 }

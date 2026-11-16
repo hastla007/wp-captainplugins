@@ -82,6 +82,24 @@ function captain_plugins_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'captain_plugins_enqueue_styles' );
 
+/** Classic WooCommerce forms: expose field errors to assistive technology (checkout and account only). */
+function captain_plugins_enqueue_form_errors() {
+	if ( ! function_exists( 'is_checkout' ) || ! ( is_checkout() || is_account_page() ) ) {
+		return;
+	}
+	wp_enqueue_script(
+		'captain-plugins-form-errors',
+		get_theme_file_uri( 'assets/js/form-errors.js' ),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		array(
+			'in_footer' => true,
+			'strategy'  => 'defer',
+		)
+	);
+}
+add_action( 'wp_enqueue_scripts', 'captain_plugins_enqueue_form_errors' );
+
 /** Build the lightweight page breadcrumb; Yoast remains responsible for structured data. */
 function captain_plugins_breadcrumb_markup(): string {
 	$shop_markup = captain_plugins_shop_breadcrumb_items();

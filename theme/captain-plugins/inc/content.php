@@ -392,6 +392,28 @@ function captain_plugins_content_retired_paths(): array {
 }
 
 /**
+ * Fallback 301 for retired theme pages: only when the old URL would otherwise end in a 404,
+ * so redirects configured in Yoast, a redirect plugin or the server always take precedence.
+ */
+function captain_plugins_content_redirect_retired(): void {
+	if ( ! is_404() ) {
+		return;
+	}
+	$request = isset( $_SERVER['REQUEST_URI'] ) ? (string) wp_unslash( $_SERVER['REQUEST_URI'] ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- only compared against a fixed list.
+	$path    = trim( (string) wp_parse_url( $request, PHP_URL_PATH ), '/' );
+	$home    = trim( (string) wp_parse_url( home_url( '/' ), PHP_URL_PATH ), '/' );
+	if ( '' !== $home && str_starts_with( $path, $home . '/' ) ) {
+		$path = substr( $path, strlen( $home ) + 1 );
+	}
+	$targets = captain_plugins_content_retired_paths();
+	if ( isset( $targets[ $path ] ) ) {
+		wp_safe_redirect( home_url( (string) $targets[ $path ] ), 301, 'Captain Plugins Theme' );
+		exit;
+	}
+}
+add_action( 'template_redirect', 'captain_plugins_content_redirect_retired' );
+
+/**
  * Move untouched, theme-owned copies of retired pages back to draft. Pages edited by people stay as they are.
  *
  * @return int Number of pages moved to draft.

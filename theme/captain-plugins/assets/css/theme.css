@@ -97,6 +97,14 @@ img { max-width: 100%; height: auto; }
 }
 .cp-main-nav .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover { color: var(--cp-navy); background: var(--cp-blue-soft); }
 .cp-header-cta { flex-shrink: 0; }
+.cp-main-nav .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content { white-space: nowrap; }
+/* Tablet quer bis kleiner Laptop: Menü bleibt einzeilig, der doppelte Header-CTA weicht (gleiches Ziel wie „Lösungen“/Vergleich). */
+@media (min-width: 1024px) and (max-width: 1179px) { .cp-site-header .cp-header-cta { display: none; } }
+/* Lange deutsche Komposita („Geschäftsprozesse“) dürfen auf sehr schmalen Displays nicht aus dem Bild laufen. */
+:where(h1, h2, h3, .wp-block-post-title) { overflow-wrap: break-word; }
+:where(h1) { hyphens: auto; -webkit-hyphens: auto; }
+@media (max-width: 480px) { :where(h2) { hyphens: auto; -webkit-hyphens: auto; } }
+@media (max-width: 380px) { .cp-hero h1 { font-size: 1.85rem; } }
 .cp-header-cta .wp-block-button__link { padding: 0.6rem 1.1rem; font-size: 0.95rem; white-space: nowrap; }
 
 /* Overlay menu (mobile and narrow tablets). */
@@ -152,7 +160,7 @@ img { max-width: 100%; height: auto; }
 .cp-eyebrow a { text-decoration: none; }
 .cp-breadcrumb { color: var(--cp-muted); font-size: 0.9rem; }
 .cp-breadcrumb ol { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.5rem; margin: 0; padding: 0; list-style: none; }
-.cp-breadcrumb li + li::before { content: "/"; content: "/" / ""; margin-right: 0.5rem; color: #74838c; } /* second value: no screen-reader output */
+.cp-breadcrumb li:not(:last-child)::after { content: "/"; content: "/" / ""; margin-left: 0.5rem; color: #74838c; } /* second value: no screen-reader output; after the item, so a wrapped line never starts with a slash */
 .cp-breadcrumb a { color: var(--cp-navy); text-decoration: none; }
 .cp-breadcrumb a:hover { text-decoration: underline; }
 .cp-breadcrumb [aria-current="page"] { color: var(--cp-ink); font-weight: 650; }
@@ -257,7 +265,7 @@ img { max-width: 100%; height: auto; }
 .cp-hero > * { margin-block: 0; }
 .cp-hero__text > * { margin-block: 0; }
 .cp-hero__text > * + * { margin-top: 1.25rem; }
-.cp-hero h1 { max-width: 15ch; font-size: clamp(2.4rem, 1.5rem + 3.6vw, 4rem); letter-spacing: -0.035em; text-wrap: balance; }
+.cp-hero h1 { max-width: 15ch; font-size: clamp(2rem, 1.2rem + 3vw, 4rem); letter-spacing: -0.035em; text-wrap: balance; }
 .cp-hero__lead { max-width: 56ch; color: #334b5b; font-size: clamp(1.1rem, 1rem + 0.45vw, 1.3rem); }
 .cp-hero__lead + .cp-hero__lead { margin-top: 0.75rem; font-size: 1.0625rem; }
 .cp-hero .cp-actions { margin-top: 2rem; }
@@ -603,6 +611,10 @@ img { max-width: 100%; height: auto; }
 	outline: 3px solid var(--cp-focus); outline-offset: 2px;
 }
 :where(.woocommerce) .button, :where(.woocommerce) button.button { border-radius: var(--cp-radius-sm); }
+/* WooCommerce setzt bei Feldern und Produktbild-Links outline: 0 – sichtbaren Fokus erzwingen (WCAG 2.4.7). */
+.woocommerce :is(input, select, textarea):focus-visible,
+.wc-block-components-product-image a:focus-visible,
+.wc-block-product a:focus-visible { outline: 3px solid var(--cp-focus) !important; outline-offset: 2px; }
 .cp-main--shop .cp-page-content { box-sizing: border-box; padding-inline: var(--cp-gutter); }
 .woocommerce-account .woocommerce-MyAccount-navigation ul { display: grid; gap: 0.25rem; margin: 0; padding: 0; list-style: none; }
 .woocommerce-account .woocommerce-MyAccount-navigation li { margin: 0; padding: 0; }
