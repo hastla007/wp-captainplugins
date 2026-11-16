@@ -1,0 +1,62 @@
+name: Theme-Prüfung
+
+on:
+  push:
+    paths:
+      - "theme/**"
+      - "texte/**"
+      - "tools/**"
+      - ".github/workflows/theme-checks.yml"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          tools: none
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tools/qa/package-lock.json
+
+      - name: PHP-Syntax aller Theme-Dateien
+        run: find theme/captain-plugins -name '*.php' -print0 | xargs -0 -n1 php -l
+
+      - name: Generierte Inhalte sind aktuell
+        run: |
+          python3 tools/build-theme-content.py
+          python3 tools/make-pot.py
+          git diff --exit-code -- theme/captain-plugins/content theme/captain-plugins/languages \
+            || (echo "::error::Inhalte oder POT nicht neu gebaut – python3 tools/build-theme-content.py und tools/make-pot.py ausführen" && exit 1)
+
+      - name: SEO-Felder
+        run: php tools/qa/seo-fields.php
+
+      - name: Gutenberg-Blockvalidierung
+        working-directory: tools/qa
+        run: |
+          npm ci --no-audit --no-fund
+          node validate-blocks.cjs
+
+      - name: Theme-ZIP bauen
+        run: tools/build-theme-zip.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: captain-plugins-theme
+          path: dist/*.zip
+          retention-days: 14
