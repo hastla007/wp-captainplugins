@@ -290,6 +290,7 @@ function captain_plugins_account_url_token( string $content ): string {
 	return str_replace( '{{account_url}}', esc_url( '' !== $url ? $url : home_url( '/support/' ) ), $content );
 }
 add_filter( 'render_block_core/button', 'captain_plugins_account_url_token' );
+add_filter( 'render_block_core/list-item', 'captain_plugins_account_url_token' );
 
 /** Branded placeholder for products without an image (Captain Pro licenses are virtual products). */
 function captain_plugins_product_placeholder( string $src ): string {
@@ -345,3 +346,21 @@ function captain_plugins_local_avatar( array $args ): array {
 	return $args;
 }
 add_filter( 'pre_get_avatar_data', 'captain_plugins_local_avatar' );
+
+/**
+ * WooCommerce inserts its mini cart and account icon into the header navigation of block themes
+ * (block hooks, on new installs). In this header the account icon is dark on navy, the drawer of the
+ * mini cart hides focusable elements (axe: aria-hidden-focus) and the mobile menu button moves. Licences
+ * are bought from the pricing pages, so the header stays as designed; the footer links the account.
+ */
+function captain_plugins_unhook_shop_header_blocks( $hooked_blocks, $position, $anchor_block, $context ): array {
+	$hooked_blocks = (array) $hooked_blocks;
+	unset( $position );
+	$anchor_block = (string) $anchor_block;
+	$in_header    = $context instanceof WP_Block_Template && 'wp_template_part' === $context->type && 'header' === $context->slug;
+	if ( ! $in_header && 'core/navigation' !== $anchor_block ) {
+		return $hooked_blocks;
+	}
+	return array_values( array_diff( $hooked_blocks, array( 'woocommerce/mini-cart', 'woocommerce/customer-account' ) ) );
+}
+add_filter( 'hooked_block_types', 'captain_plugins_unhook_shop_header_blocks', 20, 4 );

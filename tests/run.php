@@ -121,6 +121,8 @@ $status = captain_plugins_order_status_title( '<div class="wc-block-order-confir
 check( 'Bestellstatus ohne H1 bekommt eine', 1 === substr_count( $status, '<h1' ) );
 check( 'Lizenzplan unvollständig erkannt', ! captain_plugins_setup_mapping_complete( array( 'entitlements_json' => '{"sites.live_limit":1}' ), array( 'pass.write_api' => true ) ) );
 check( 'Lizenzplan vollständig erkannt', captain_plugins_setup_mapping_complete( array( 'entitlements_json' => '{"pass.write_api":true}' ), array( 'pass.write_api' => true ) ) );
+check( 'Kein Mini-Warenkorb/Konto-Symbol im Header', array( 'core/search' ) === captain_plugins_unhook_shop_header_blocks( array( 'woocommerce/mini-cart', 'woocommerce/customer-account', 'core/search' ), 'after', 'core/navigation', null ) );
+check( 'Block Hooks außerhalb des Headers bleiben', array( 'woocommerce/mini-cart' ) === captain_plugins_unhook_shop_header_blocks( array( 'woocommerce/mini-cart' ), 'after', 'core/paragraph', null ) );
 check( 'Kein Gravatar im Frontend', str_contains( (string) get_avatar_url( 'kunde@example.com' ), 'avatar.svg' ) );
 check( 'Kein title-tag (sonst doppelter <title> mit Yoast)', ! current_theme_supports( 'title-tag' ) );
 check( 'Yoast-Sitemap ohne Autoren', array() === apply_filters( 'wpseo_sitemap_exclude_author', array( new stdClass() ) ) );
