@@ -53,6 +53,30 @@ Die folgenden Farbwerte sind ein **Startvorschlag**, kein bestätigtes bestehend
 
 Gold soll für kleine Highlights und nicht für Fließtext auf weißem Hintergrund genutzt werden, sofern die Kontrastprüfung keinen geeigneten Kontrast nachweist. Statusfarben erhalten stets ein Textlabel oder Symbol mit zugänglichem Namen.
 
+**Kontrastprüfung (Stand 16. November 2026, berechnet nach WCAG-Formel für die im Theme verwendeten Kombinationen):**
+
+| Kombination | Art | Kontrast | Anforderung (WCAG 2.2 AA) | Ergebnis |
+|---|---|---:|---:|---|
+| Buttontext Tiefblau auf Gold | Text | 6.50:1 | 4.5:1 | erfüllt |
+| Weiß auf Navy (Header, Footer, Tarifkopf) | Text | 11.80:1 | 4.5:1 | erfüllt |
+| Gold auf Navy (Footer-Überschriften) | Text | 5.27:1 | 4.5:1 | erfüllt |
+| Sekundärtext #C4D4DE auf Navy | Text | 7.76:1 | 4.5:1 | erfüllt |
+| Navy-Link auf Weiß | Text | 11.80:1 | 4.5:1 | erfüllt |
+| Sekundärtext auf Hellblau | Text | 5.65:1 | 4.5:1 | erfüllt |
+| Einleitungstext #334B5B auf Hellblau | Text | 8.06:1 | 4.5:1 | erfüllt |
+| Sekundärtext auf heller Fläche | Text | 5.96:1 | 4.5:1 | erfüllt |
+| Produkt-Icon Navy auf Hellblau | Grafik | 10.41:1 | 3:1 | erfüllt |
+| Haken-Icon #B4842B auf Weiß | Grafik | 3.35:1 | 3:1 | erfüllt |
+| Fokusring #075B82 auf Weiß | Fokus | 7.43:1 | 3:1 | erfüllt |
+| Fokusring Gold auf Navy | Fokus | 5.27:1 | 3:1 | erfüllt |
+| Platzhalter-Rahmen #8797A1 auf Weiß | Rahmen | 3.01:1 | 3:1 | erfüllt |
+| Erfolg #1F6B4F auf Weiß | Text | 6.41:1 | 4.5:1 | erfüllt |
+| Fehler #A73535 auf Weiß | Text | 6.55:1 | 4.5:1 | erfüllt |
+
+Gold wird im Theme nur als Flächenfarbe (Primärbutton mit tiefblauem Text), für Linien/Icons und auf Navy verwendet, nie als Fließtextfarbe auf Weiß. Produkte werden über Namen **und** Icon unterschieden; die Icons sind einfarbig Navy und keine zusätzlichen Produktfarben.
+
+**Umsetzung der Kapitänsillustrationen im Theme:** Aus `design/mascot/` sind vier Posen freigestellt und als WebP unter `theme/captain-plugins/assets/images/` exportiert: zeigend (Startseiten-Hero), Daumen hoch (Abschluss-CTA-Bänder), Fernrohr (404-Seite) und verschränkte Arme (Reserve). Sie werden als rein dekorative CSS-Hintergründe eingebunden und erscheinen deshalb nicht im Barrierefreiheitsbaum (entspricht leerem Alt-Text). Auf Mobilgeräten stehen Text und Haupt-CTA vor der Illustration. Die Bildrechte und finale Auswahl sind weiterhin vom Betreiber zu bestätigen.
+
 **Produktakzente (noch festzulegen):** Ein Akzent je Produktfamilie kann Karten, kleine Linien und Icons differenzieren. Die Farben werden in einer Tokens-Tabelle dokumentiert und auf Text-/UI-Kontrast geprüft; Produktfarben dürfen keine eigenständigen, losgelösten Markenwelten bilden.
 
 **Typografie:** lokal/systemnahes Sans-Serif-Stack als Standard, zum Beispiel `system-ui, -apple-system, "Segoe UI", sans-serif`. Eine zusätzliche Webfont wird nur eingesetzt, wenn ein klarer Markenwert entsteht und Lizenz, Ladeverhalten und Fallback geregelt sind. Fließtext großzügig bemessen und auf Mobilgeräten nicht unter komfortable Lesbarkeit verkleinern. Überschriften erhalten eine klare, responsive Skala; Zeilenlänge im Textbereich begrenzen.

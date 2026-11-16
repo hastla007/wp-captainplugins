@@ -320,7 +320,7 @@ function captain_plugins_setup_content_card(): void {
 function captain_plugins_setup_product_card(): void {
 	$woocommerce = class_exists( 'WooCommerce' );
 	$license     = class_exists( '\\WPLC\\Catalog\\Catalog' );
-	echo '<section class="card" id="cp-setup-products"><h2>' . esc_html__( '3. WooCommerce-Produkte anlegen', 'captain-plugins' ) . '</h2><p>' . esc_html__( 'Der Assistent kann die fünfzehn aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; nicht bepreiste Review-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen.', 'captain-plugins' ) . '</p>';
+	echo '<section class="card" id="cp-setup-products"><h2>' . esc_html__( '3. WooCommerce-Produkte anlegen', 'captain-plugins' ) . '</h2><p>' . esc_html( sprintf( /* translators: %d: number of annual plans. */ __( 'Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; nicht bepreiste Review-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen.', 'captain-plugins' ), count( captain_plugins_setup_plan_rows() ) ) ) . '</p>';
 	echo '<table class="widefat striped"><thead><tr><th>' . esc_html__( 'Lizenzprodukt', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Plan', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Jahrespreis', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Live-Websites', 'captain-plugins' ) . '</th></tr></thead><tbody>';
 	foreach ( captain_plugins_setup_plan_rows() as $row ) {
 		echo '<tr><td>' . esc_html( $row['product_name'] ) . '</td><td>' . esc_html( ucfirst( $row['plan_key'] ) ) . '</td><td>' . esc_html( number_format_i18n( (float) $row['price'], 0 ) . ' € / Jahr' ) . '</td><td>' . absint( $row['limit'] ) . '</td></tr>';
@@ -335,7 +335,7 @@ function captain_plugins_setup_product_card(): void {
 	} elseif ( current_user_can( 'manage_woocommerce' ) ) {
 		echo '<form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '"><input type="hidden" name="action" value="captain_plugins_setup_products">';
 		wp_nonce_field( 'captain_plugins_setup_products' );
-		echo '<p><button class="button button-primary" type="submit">' . esc_html__( 'Fünfzehn Produktentwürfe und Lizenzpläne anlegen', 'captain-plugins' ) . '</button></p></form>';
+		echo '<p><button class="button button-primary" type="submit">' . esc_html( sprintf( /* translators: %d: number of product drafts. */ __( '%d Produktentwürfe und Lizenzpläne anlegen', 'captain-plugins' ), count( captain_plugins_setup_plan_rows() ) ) ) . '</button></p></form>';
 	} else {
 		echo '<p class="notice notice-warning inline"><span>' . esc_html__( 'Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten.', 'captain-plugins' ) . '</span></p>';
 	}

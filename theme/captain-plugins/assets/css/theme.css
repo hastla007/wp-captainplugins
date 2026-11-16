@@ -551,3 +551,21 @@ img { max-width: 100%; height: auto; }
 }
 .cp-compatibility-note > *, .cp-pricing-note > * { margin-block: 0; }
 .cp-compatibility-note > * + *, .cp-pricing-note > * + * { margin-top: 0.75rem; }
+
+/* ---------- Produktübersicht: Zweispalter mit Icon links (Mockup „alle Produkte“) ---------- */
+.cp-main--wide .cp-card-grid--features:has(> .cp-card--icon) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cp-main--wide .cp-card-grid--features:has(> .cp-card--icon) > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+.cp-main--wide .cp-card-grid--features > .cp-card--icon {
+	--cp-pad: clamp(1.25rem, 2.5vw, 1.75rem); --cp-icon-box: 4.5rem;
+	padding-left: calc(var(--cp-pad) + var(--cp-icon-box) + 1.35rem); gap: 0.6rem;
+}
+.cp-main--wide .cp-card-grid--features > .cp-card--icon::before { position: absolute; top: var(--cp-pad); left: var(--cp-pad); width: var(--cp-icon-box); height: var(--cp-icon-box); }
+.cp-main--wide .cp-card-grid--features > .cp-card--icon::after {
+	top: calc(var(--cp-pad) + var(--cp-icon-box) * 0.21); left: calc(var(--cp-pad) + var(--cp-icon-box) * 0.21); width: calc(var(--cp-icon-box) * 0.58); height: calc(var(--cp-icon-box) * 0.58);
+}
+.cp-main--wide .cp-card-grid--features > .cp-card--icon .cp-card__links { margin-top: 0.35rem !important; }
+@media (max-width: 760px) {
+	.cp-main--wide .cp-card-grid--features:has(> .cp-card--icon) { grid-template-columns: minmax(0, 1fr); }
+	.cp-main--wide .cp-card-grid--features > .cp-card--icon { --cp-icon-box: 3.25rem; padding-left: calc(var(--cp-pad) + var(--cp-icon-box) + 1rem); }
+}
+
