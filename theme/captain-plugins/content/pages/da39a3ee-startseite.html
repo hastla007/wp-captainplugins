@@ -1,10 +1,11 @@
-<!-- wp:group {"align":"full","className":"cp-hero","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-hero"><!-- wp:heading {"level":1} -->
+<!-- wp:group {"align":"full","className":"cp-hero cp-hero--home","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-hero cp-hero--home"><!-- wp:group {"className":"cp-hero__text","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-hero__text"><!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading">Geschäftsprozesse in WordPress. Klar organisiert.</h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Mit Captain Plugins verkaufen und verwalten Sie Gutscheine, organisieren Events und Buchungen, bauen Partnerprogramme auf und steuern Softwarelizenzen – direkt in Ihrer WordPress-Umgebung.</p>
+<!-- wp:paragraph {"className":"cp-hero__lead"} -->
+<p class="cp-hero__lead">Mit Captain Plugins verkaufen und verwalten Sie Gutscheine, organisieren Events und Buchungen, bauen Partnerprogramme auf und steuern Softwarelizenzen – direkt in Ihrer WordPress-Umgebung.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->
@@ -15,14 +16,17 @@
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/vergleich/">Welches Plugin passt zu meinem Betrieb?</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Finden Sie die passende Lösung</h2>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:group {"className":"cp-card-grid cp-card-grid--4","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card-grid cp-card-grid--4"><!-- wp:group {"className":"cp-card cp-card--icon cp-card--voucher","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-card--icon cp-card--voucher"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Gutscheine verkaufen und verwalten</h3>
 <!-- /wp:heading -->
 
@@ -30,11 +34,13 @@
 <p>Gestalten Sie personalisierte PDF-Gutscheine und Geschenkkarten, automatisieren Sie die Zustellung und behalten Sie Guthaben, Einlösungen und Aktionen im Blick.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><a href="/voucher-captain/">Voucher Captain ansehen</a> · <span class="cp-link-placeholder"><span>Kostenlos starten</span><small>Linkziel vor Veröffentlichung ergänzen</small></span></p>
-<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"cp-card__links"} -->
+<p class="cp-card__links"><a href="/voucher-captain/">Voucher Captain ansehen</a><br><span class="cp-link-placeholder"><span>Kostenlos starten</span><small>Linkziel vor Veröffentlichung ergänzen</small></span></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:group {"className":"cp-card cp-card--icon cp-card--pass","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-card--icon cp-card--pass"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Events, Tickets und Buchungen organisieren</h3>
 <!-- /wp:heading -->
 
@@ -42,13 +48,13 @@
 <p>Verwalten Sie Termine, Ticketverkauf, Servicebuchungen und Einlass in WordPress. Binden Sie WooCommerce optional ein oder nutzen Sie die unterstützten Zahlungswege.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"className":"cp-actions"} -->
-<div class="wp-block-buttons cp-actions"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/pass-captain/">Pass Captain entdecken</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"cp-card__links"} -->
+<p class="cp-card__links"><a href="/pass-captain/">Pass Captain entdecken</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:group {"className":"cp-card cp-card--icon cp-card--affiliate","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-card--icon cp-card--affiliate"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Ein eigenes Partnerprogramm betreiben</h3>
 <!-- /wp:heading -->
 
@@ -56,13 +62,13 @@
 <p>Gewinnen Sie Partner, ordnen Sie Empfehlungen nachvollziehbar zu und verwalten Sie Provisionen, Erstattungen und Auszahlungen.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"className":"cp-actions"} -->
-<div class="wp-block-buttons cp-actions"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/affiliate-captain/">Affiliate Captain kennenlernen</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
+<!-- wp:paragraph {"className":"cp-card__links"} -->
+<p class="cp-card__links"><a href="/affiliate-captain/">Affiliate Captain kennenlernen</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:group {"className":"cp-card cp-card--icon cp-card--license","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-card--icon cp-card--license"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Lizenzen und Updates verkaufen</h3>
 <!-- /wp:heading -->
 
@@ -70,12 +76,14 @@
 <p>Verwandeln Sie Ihren WooCommerce-Shop in die zentrale Stelle für Lizenzverkauf, Aktivierungen, Verlängerungen und Plugin-Updates.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><a href="/license-captain/">License Captain ansehen</a> · <strong>ohne Aufpreis bei Captain Pro enthalten</strong></p>
+<!-- wp:paragraph {"className":"cp-card__links"} -->
+<p class="cp-card__links"><a href="/license-captain/">License Captain ansehen</a><br><strong>ohne Aufpreis bei Captain Pro enthalten</strong></p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Ein klarer Weg vom Kern bis zu Pro</h2>
 <!-- /wp:heading -->
@@ -94,19 +102,22 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-split"><!-- wp:group {"className":"cp-split__text","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-split__text"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Für Ihren WordPress-Alltag gemacht</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p>Nutzen Sie die Plugins einzeln oder kombinieren Sie passende Funktionen. WooCommerce ist je nach Produkt erforderlich oder optional. Dokumentierte Integrationen verbinden die Abläufe, die zusammengehören.</p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"constrained"}} -->
-<div class="wp-block-group cp-media-placeholder"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Medien für diese Seite</h3>
-<!-- /wp:heading -->
+<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-media-placeholder"><!-- wp:paragraph {"className":"cp-media-placeholder__label"} -->
+<p class="cp-media-placeholder__label">Produktansicht folgt</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Zeigen Sie die vier Produktkarten für Gutscheine, Events/Buchungen, Partnerprogramme und Lizenzverwaltung; jede Karte soll Zielgruppe und CTA sichtbar machen.</p>
@@ -124,10 +135,11 @@
 <p class="cp-media-placeholder__note">Redaktioneller Platzhalter: vor Veröffentlichung durch freigegebene Medien bzw. einen belegten Kundenfall ersetzen.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft cp-content-section--cta","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft cp-content-section--cta"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Fragen vor dem Start?</h2>
 <!-- /wp:heading -->
 

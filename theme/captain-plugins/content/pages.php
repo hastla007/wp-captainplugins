@@ -18,7 +18,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "480f6c3ae250b8adcbb466d02c4cd5ad3391625ba8a2f05a803f26701adab9d4",
+		"source_hash" => "747b8abc1445c92403784dfe5c8753b40324f3b0550ac7ebc9e328119622f6fe",
 		"source_file" => "texte/homepage/index.md",
 	],
 	[
@@ -35,7 +35,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "d0c3b09a2a6c11729b61496b1b2944eab91dc1968becf31aa6c3b07dcd5a397d",
+		"source_hash" => "8e7567e4cc41061912eb49b457e91561af0a98be3f9a1e504e3b0ae14ff4f466",
 		"source_file" => "texte/homepage/affiliate-captain/index.md",
 	],
 	[
@@ -52,7 +52,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "867695159dbbcec6df41bafe2edddf3b81416701d4b914e17d6059b57dd54d2d",
+		"source_hash" => "8d7114780fdb144acb8eeda6fc5da5ad1445e917e91f03de8e5bee8e7437f771",
 		"source_file" => "texte/homepage/captain-pro.md",
 	],
 	[
@@ -69,7 +69,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "b8a5f610f1ac3bd240a5d3f0e35abdbad5239f24fc682fad29e37a4853b9122d",
+		"source_hash" => "c03d0ae32a7be80490b4cb5008111ce5321fa16a3d5c758dbee58d08f89dcfbe",
 		"source_file" => "texte/homepage/dokumentation.md",
 	],
 	[
@@ -86,7 +86,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "0dbe72ffa23f16bd3f4912710c0b4e9830a233c13676a7a6778f157d08179536",
+		"source_hash" => "181da1bdf3472ac4f564c269d1553a2f501239f8e381d5fa3615309a4bf523d0",
 		"source_file" => "texte/homepage/faq.md",
 	],
 	[
@@ -103,7 +103,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "4d8eb60ee154e374b20f777c7ac08b80ba2b9154baae53f39d726399a2dceec5",
+		"source_hash" => "5f64e401939e46703d7acb1d2796ca13c37e436c8fb977b1c4255ab07c3375cc",
 		"source_file" => "texte/homepage/integrationen.md",
 	],
 	[
@@ -120,7 +120,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "fee12c5744000559c63806fbfc3b90041e074859951a0b6487ccfaf84a946c08",
+		"source_hash" => "e72488d884cb2d64f9fda2dfba962bd0ab9c7dc648660e2961b0348a8b6f3c28",
 		"source_file" => "texte/homepage/kompatibilitaet.md",
 	],
 	[
@@ -137,7 +137,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "3f1fd036951e3480f451d37a887f05e375494352ac2586fb22b737bb21be211f",
+		"source_hash" => "2d67779a50ddc105fe46dffff8fec6445008f48e365ebfa837bccb51e34279ad",
 		"source_file" => "texte/homepage/license-captain/index.md",
 	],
 	[
@@ -151,7 +151,7 @@ return [
 		"meta_description" => "",
 		"focus_keyphrase" => "",
 		"has_placeholders" => false,
-		"source_hash" => "629da534a32859dd52ad16ab923525a4c5da44b8bfd297716e7bb6e653db067b",
+		"source_hash" => "2ca59f09b313d771389f29b4d56a75f53f85289df78975402e1a6db37f6f70e9",
 		"source_file" => "generated directory page",
 	],
 	[
@@ -168,7 +168,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "37c39739338d962b1532f814375d7ecac22a24d5e3ef863bd304693b4ac8c35a",
+		"source_hash" => "1431f922c7dc52ebb9edc1f5e0b561efa9280abdb7807c1133b7e5bbb0374515",
 		"source_file" => "texte/homepage/pass-captain/index.md",
 	],
 	[
@@ -185,7 +185,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "7b75e4abf5d2ff12b8d50a29a86eba1c678bdc30237df1c0fcac46832f8e2b54",
+		"source_hash" => "88cfee77a45b0ad3890852f74c22c85f5b61a63a45c4c7e11aeb4eb2cb00e536",
 		"source_file" => "texte/homepage/preise.md",
 	],
 	[
@@ -202,7 +202,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "98abaa3f18fa2f5c25c5fa66dfa814252e1a129e98280da6ed07e35ccba222d9",
+		"source_hash" => "3f3a3e10de0914c0772794f57eff256229eb868dad536a199e86353f78391b03",
 		"source_file" => "texte/homepage/produkte.md",
 	],
 	[
@@ -210,13 +210,13 @@ return [
 		"slug" => "ratgeber",
 		"parent" => "",
 		"title" => "Ratgeber",
-		"group" => "core",
+		"group" => "guides",
 		"file" => "d1b5b6c2-ratgeber.html",
 		"seo_title" => "",
 		"meta_description" => "",
 		"focus_keyphrase" => "",
 		"has_placeholders" => false,
-		"source_hash" => "2e9fec3d7572c5f96850cad8d70bd573297fae427673c69c17645db29123acf8",
+		"source_hash" => "35f6849578e04d699bb916e2601a11f28b2289f9f51f94372d556c912bc01095",
 		"source_file" => "generated directory page",
 	],
 	[
@@ -233,7 +233,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "de5a59da07b9d4dd4f59f6b731d9bfdc6b2f1b3e0db3f5fb7ae1200bbae48608",
+		"source_hash" => "462e6b2451b4e9c041ccc98f0a1daa27653f85af9c4ee8fb53ed173503ec1703",
 		"source_file" => "texte/homepage/support.md",
 	],
 	[
@@ -250,7 +250,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "372198c5c3e18926a6ba79c0ed312dc0c2cc4ecfa645804b0dd1c1320e19f967",
+		"source_hash" => "a9f8cf4cb4f1cfa5c523083c959e2d41ff46b94555853c2e5eaae9ddf2351035",
 		"source_file" => "texte/homepage/ueber.md",
 	],
 	[
@@ -267,7 +267,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "e6d566285f3d57371dbae8fd84d0c7c0bd5e8edda87aad5a7cfd07fa46006062",
+		"source_hash" => "31b0961a769f8eb87da76d88398ab2325d13720413b259d488466c5e58c19558",
 		"source_file" => "texte/homepage/vergleich.md",
 	],
 	[
@@ -284,7 +284,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "b9402e36c5d3114abb38239f86ac84d7b18c79e196c663c6b3473f76b62e0147",
+		"source_hash" => "d4ba8eb83e5c9d09156ebb70e0925290becd1684a4959accb45152018114702e",
 		"source_file" => "texte/homepage/voucher-captain/index.md",
 	],
 	[
@@ -301,7 +301,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "6ab404c8ed951e30774561032c715b2aa747c0ea73e1e7e6aab20ddfb522b4a5",
+		"source_hash" => "6bc92809e0ae9710b3a0482bd235d5f9c2beddd73001879868dded33921f3312",
 		"source_file" => "texte/homepage/affiliate-captain/faq.md",
 	],
 	[
@@ -318,7 +318,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "009b20a4b8f6a0997fac7ebf3c1195b0baf29d9ef42d66f7e70bd07abbc2bb49",
+		"source_hash" => "0e8f6196605505a2fe79b41037a38063e0a088ee9488418bac09b2bd4238e969",
 		"source_file" => "texte/homepage/affiliate-captain/features.md",
 	],
 	[
@@ -335,7 +335,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "96e9c08b7e9a40e1950e504a4ddcf038a4bd992c626ad6c4383f372239d8a1d3",
+		"source_hash" => "aebef47d0070ac444da5df94eeee8fdad67da5695f52597518ab86af3bf2e317",
 		"source_file" => "texte/homepage/affiliate-captain/pro.md",
 	],
 	[
@@ -352,7 +352,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "8e621715e2c6d0c49cda211b104301299a7c8d43495d6ab83a4ac15d2b1a8c5a",
+		"source_hash" => "2a635db4de9cfda536ce05b56f77c590ef37a9a1ad8664165212a5daa912228f",
 		"source_file" => "texte/homepage/dokumentation/installation/index.md",
 	],
 	[
@@ -369,7 +369,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "88ededed80cef0baeb54329221b8ad6b2515d17523bc5536198c1f8c11afabc5",
+		"source_hash" => "6e557a16c83d3d9b6f30a9c6635d14eeb562b1d904d7a689066ed08d150ed6b2",
 		"source_file" => "texte/homepage/license-captain/faq.md",
 	],
 	[
@@ -386,7 +386,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "be5e4e3988171209f85fe80cd43952f053df6b64e4321089356ee6612c070905",
+		"source_hash" => "8f3cd48f7bdc854b7e01bec64c24b2128ebea27ffa5a8d0bec8d24c8164d76fb",
 		"source_file" => "texte/homepage/license-captain/features.md",
 	],
 	[
@@ -403,7 +403,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "db63d2b48b5714cf2f660c5041fa190a6e0fab9bb74c1537cecd3ae288970bca",
+		"source_hash" => "b338689ab5731c4a88a82374107dbf49ec0ac4cf2452709dbfab9d46233aa538",
 		"source_file" => "texte/homepage/license-captain/im-paket.md",
 	],
 	[
@@ -420,7 +420,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "b1478cd5a9c177acf568a7952d63c38736ce584af167627b60d5fd50e2411876",
+		"source_hash" => "1ea0919a6abc867d3e7137a2eba4518b63be3782e0ec7bf6aa0cd66064aab3be",
 		"source_file" => "texte/homepage/loesungen/bootsschulen.md",
 	],
 	[
@@ -437,7 +437,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "20532f7875c4d7e4c26450089651426845c1be8dc70f2fc8146e4fb4dd4fe85d",
+		"source_hash" => "fa985b352cc04511c3639b7475ba04a6a2546a8627feec05bf1239dee18ccf35",
 		"source_file" => "texte/homepage/pass-captain/faq.md",
 	],
 	[
@@ -454,7 +454,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "8cbca37f1416506e9f806022e42c01bd5fc8bb264b841dc5fca05f6e84b3c54b",
+		"source_hash" => "c6ccb3769c1957766d8b9d0069f08b2b8b41a92805423167dd5c76bda426460a",
 		"source_file" => "texte/homepage/pass-captain/features.md",
 	],
 	[
@@ -471,7 +471,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "e9f82f5e99c52f6e02eb5302166a998264cda0e6fe3ae4d206a9c5159ea8c3ba",
+		"source_hash" => "a298e160a2848316a6dd4a435f154f614570ad2360e27117c6714c5194a00424",
 		"source_file" => "texte/homepage/pass-captain/pro.md",
 	],
 	[
@@ -485,7 +485,7 @@ return [
 		"meta_description" => "",
 		"focus_keyphrase" => "",
 		"has_placeholders" => false,
-		"source_hash" => "7564895195063a0d07a9c922c24fd6dcc4772d175523c13b52b26e0b3405d647",
+		"source_hash" => "154377be3c0696f2a4c81077b38508f9229bef38c63f84ce0932c60bde0f9867",
 		"source_file" => "generated directory page",
 	],
 	[
@@ -499,7 +499,7 @@ return [
 		"meta_description" => "",
 		"focus_keyphrase" => "",
 		"has_placeholders" => false,
-		"source_hash" => "1711580b99ec608472f5b976f8c7a08c74c614372af24c1a3eaa9006db371642",
+		"source_hash" => "433a5407a7113eda4c4daee2d6864987346d0247035a2a37cb473b5ffdeddb71",
 		"source_file" => "generated directory page",
 	],
 	[
@@ -513,7 +513,7 @@ return [
 		"meta_description" => "",
 		"focus_keyphrase" => "",
 		"has_placeholders" => false,
-		"source_hash" => "f8c4598f5d426d47d7cb13e76be5be48652deb86d4ab797d966545dfa8a1bf6b",
+		"source_hash" => "95470c2b2367e7a925bcf5a9f19d9175aa954a79214fe0df27c4f3d3bf699e1e",
 		"source_file" => "generated directory page",
 	],
 	[
@@ -527,7 +527,7 @@ return [
 		"meta_description" => "",
 		"focus_keyphrase" => "",
 		"has_placeholders" => false,
-		"source_hash" => "34ca02e3454c14625e7bef2f01f854049a45f9b21a75166190f3c6b2105cd952",
+		"source_hash" => "02dbc2ddbeff385edf918216194e240b08f3f0075e48f00711c33b7e8294c09e",
 		"source_file" => "generated directory page",
 	],
 	[
@@ -544,7 +544,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "ba1bf433f525d65ce0073ef860383a64784c1e2817532efb5fd0a77c74c2013d",
+		"source_hash" => "b588c54cef6e623fbf3d413fe5a52b65448f3c12b1e730813af5b42ed0272b77",
 		"source_file" => "texte/homepage/voucher-captain/faq.md",
 	],
 	[
@@ -561,7 +561,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "92d63721277b245c2c123c49c17aa58df375a1119906154a23862a370d362098",
+		"source_hash" => "314ba47e7d610592b1ba206f745e8697c17cf834f1d0eb8ea972cac1410fb652",
 		"source_file" => "texte/homepage/voucher-captain/features.md",
 	],
 	[
@@ -578,7 +578,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "f5c1b9558fd95e8a08924208763eef450e3c5a6dde6d6eeb25db6209acbc0730",
+		"source_hash" => "8cf576bf291a85542d288351852d67a228735ff836f5b14fdbbfac5d1e2ac650",
 		"source_file" => "texte/homepage/voucher-captain/pro.md",
 	],
 	[
@@ -595,7 +595,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "3c65574138d5489bd1a2a17440445d798cca87cdc505d78b57d7178bc8310bab",
+		"source_hash" => "efacf612c68dab45419ba30171d01b0cba347418ca1b8d031a71b2057dc19a85",
 		"source_file" => "texte/homepage/dokumentation/installation/affiliate-captain.md",
 	],
 	[
@@ -612,7 +612,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "de3982d08bea7e69572b05803bfe652e37fbe7e836faa218e8aad4cb63656fe8",
+		"source_hash" => "6001dda099d89dddac4c9753472ee606afc82069f1a654b3fae46f8fe36f3897",
 		"source_file" => "texte/homepage/dokumentation/installation/captain-pro.md",
 	],
 	[
@@ -629,7 +629,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "24fa23b8d54c47e975ab2b24f3cc39f8676a7f54e66fe9ee11267cd5ec719cf8",
+		"source_hash" => "e5452b92ab54766e3a20e281ba6480db34f5bde9b36466a95b3fc1896d6e0e0b",
 		"source_file" => "texte/homepage/dokumentation/installation/license-captain.md",
 	],
 	[
@@ -646,7 +646,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "167bb42e157757acb059790cf61734821e166e8fede3f13020fb56718b0f7821",
+		"source_hash" => "2e4c2bad8eb2f9bd0f286ed8cbf6d6a186e96f56dd0eb2a10737d5fc12434047",
 		"source_file" => "texte/homepage/dokumentation/installation/pass-captain.md",
 	],
 	[
@@ -663,7 +663,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "cef6543f0f6c90a55ce5283f2af1a5bafd9117db8e2d63b56fa20d814593e5c7",
+		"source_hash" => "0efa4299cda1dfa4643bffa513ee604a772f11e1dd79dce9b245867ed44d3c67",
 		"source_file" => "texte/homepage/dokumentation/installation/voucher-captain.md",
 	],
 	[
@@ -680,7 +680,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "0adefa674bb7048eb4f52512574647ef4a9ce71aedbfd6e33133be316fbb7a77",
+		"source_hash" => "52a83b98413d5f0f704146caa4a24846e85a57dcdf0e4911434b5cda32670a60",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/provisionsregeln-partnerprogramm.md",
 	],
 	[
@@ -697,7 +697,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "313e6296db4f3bc5a566905d4e00fd60f25609e9cb29638e474268872c24320b",
+		"source_hash" => "c69438a4acb8727641238660cc3803a1280e7530480fa7e7cbd1bdcfc5259e08",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/refunds-provisionen-korrigieren.md",
 	],
 	[
@@ -714,7 +714,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "bdc942b83815ddf33e6b4efa33917e55179d154f605c9d846b3facef2dbd59a3",
+		"source_hash" => "1620cfa867ae0cb0feab5076b407f5775db09a01e5782b3966bb9fd81161f6e6",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/sepa-auszahlungen-vorbereiten.md",
 	],
 	[
@@ -731,7 +731,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "2d25d0b39c6b835bfda6d9f5a3734a27a4e94002f188ad98fa783d76b9266875",
+		"source_hash" => "1a5df0b4feae09a3fca57820741eccdd5ea1ac73d759c5149e821725e5b1d37a",
 		"source_file" => "texte/homepage/ratgeber/license-captain/kundenbereich-changelog.md",
 	],
 	[
@@ -748,7 +748,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "d5691065837c9dc40bf79349eefecf08149f30293d0a87f111cb744286f3109a",
+		"source_hash" => "2a49e669429ccdc8ac3757ab9498d8d8899e713227eb1be77ef77038263972b7",
 		"source_file" => "texte/homepage/ratgeber/license-captain/plugin-updates-lizenzstatus.md",
 	],
 	[
@@ -765,7 +765,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "553d750da85350eea51f1186b2c90364352a82083ad2ef464dfcd099cdcd84c7",
+		"source_hash" => "5ffa89cadda5c1183dd8eb276746e2332e2bafd7d8ee1a825a52ee7ecf7a28e5",
 		"source_file" => "texte/homepage/ratgeber/license-captain/woocommerce-lizenzen-aktivierungen.md",
 	],
 	[
@@ -782,7 +782,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "1f16ed65c0d9ab3a212286d0c0f49dfbbf2ce30a59e5debc8b640936f6890650",
+		"source_hash" => "19c8a3b8d9fda924a1d9076c93699c43bd0ffa3b0028bd43d4b1bb7480958699",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/seminartickets-wordpress.md",
 	],
 	[
@@ -799,7 +799,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "e9af3334f1036bd0af6a50fe7ce8d154ecfc8e2ec59db811c430724403e8a056",
+		"source_hash" => "bb19661e149d780b853c61bda04ababf21cdf4dee655b763e0dc6c298bf2d866",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/servicebuchungen-kurse-verleih.md",
 	],
 	[
@@ -816,7 +816,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "4b3f44d0216fdce0949d3fc45eed1487e7d5b711c8dedaefe1b2a8db67ccbf11",
+		"source_hash" => "75053ca6f3f1845c2f71996339f1dfd5d9f4410934964e2144f6ef5de09dc76b",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/warteliste-und-einlass.md",
 	],
 	[
@@ -833,7 +833,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "62d59e95c38f8883a738f2b68df1c6197b9cddce52f131d4df8300292b6228f1",
+		"source_hash" => "cb879e73689738ecc0a4c1210b00408c1086d45c17452cc466c66211aa819e2c",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/firmenbestellungen-csv.md",
 	],
 	[
@@ -850,7 +850,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "69b45578cddfbc4d5bbf24eb9b3e9266796afb2dddd41e2499a4ce93adadb1e5",
+		"source_hash" => "2ea922e2ff1710b16e04a9c70393ad534b3091a63fbc513d4a78720ee985e9f2",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/gutscheine-gestalten-und-versenden.md",
 	],
 	[
@@ -867,7 +867,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "9792d91a7cfd171e2262e01e11e4cff46d1778e0ea92f73b07315d7bb65876e9",
+		"source_hash" => "bcf0553a99ce130d1060735a4fe5342b859bbb3bd027c2c3d03beab82093ad47",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/wunschwert-und-restguthaben.md",
 	],
 ];

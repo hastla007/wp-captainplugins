@@ -95,8 +95,9 @@ function captain_plugins_content_store_seo( int $post_id, array $entry, bool $fo
 	update_post_meta( $post_id, '_cp_seo_written', $values );
 
 	if ( defined( 'WPSEO_VERSION' ) ) {
-		$social_title = (string) ( $entry['social_title'] ?? $entry['seo_title'] ?? '' );
-		$social_desc  = (string) ( $entry['social_description'] ?? $entry['meta_description'] ?? '' );
+		// Manifest fields exist but may be empty strings; fall back to the SEO values in that case.
+		$social_title = (string) ( ( $entry['social_title'] ?? '' ) ?: ( $entry['seo_title'] ?? '' ) );
+		$social_desc  = (string) ( ( $entry['social_description'] ?? '' ) ?: ( $entry['meta_description'] ?? '' ) );
 		$yoast = array(
 			'_yoast_wpseo_title'    => (string) ( $entry['seo_title'] ?? '' ),
 			'_yoast_wpseo_metadesc' => (string) ( $entry['meta_description'] ?? '' ),

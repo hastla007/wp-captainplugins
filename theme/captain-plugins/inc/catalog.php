@@ -37,7 +37,7 @@ function captain_plugins_setup_license_mapping( WC_Product $product, array $row 
 	$group       = substr( (string) $row['product_key'], 0, strpos( (string) $row['product_key'], '-' ) );
 	$entitlements = array();
 	if ( class_exists( '\\WPLC\\Catalog\\EntitlementCatalog' ) && method_exists( '\\WPLC\\Catalog\\EntitlementCatalog', 'all' ) ) {
-		$catalog = \\WPLC\\Catalog\\EntitlementCatalog::all();
+		$catalog = \WPLC\Catalog\EntitlementCatalog::all();
 		foreach ( (array) ( $catalog[ $group ] ?? array() ) as $feature ) {
 			if ( is_array( $feature ) && ! empty( $feature['key'] ) ) {
 				$entitlements[ (string) $feature['key'] ] = true;
@@ -53,7 +53,7 @@ function captain_plugins_setup_license_mapping( WC_Product $product, array $row 
 		'entitlements' => $entitlements,
 		'display_name' => (string) $row['product_name'],
 	);
-	if ( ! \\WPLC\\Catalog\\Catalog::save_mapping( (int) $product->get_id(), 0, $mapping ) ) {
+	if ( ! \WPLC\Catalog\Catalog::save_mapping( (int) $product->get_id(), 0, $mapping ) ) {
 		return false;
 	}
 	$product->update_meta_data( '_wplc_is_license_product', 'yes' );
@@ -108,7 +108,8 @@ function captain_plugins_setup_create_products(): array {
 			$product->set_virtual( true );
 			$product->set_downloadable( false );
 			$product->set_catalog_visibility( 'hidden' );
-			$product->set_short_description( sprintf( __( 'Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. License Captain verwaltet Lizenz und Updates.', 'captain-plugins' ), $row['product_name'], $row['limit'], 'priority' === $row['support'] ? __( 'Priority', 'captain-plugins' ) : __( 'Standard', 'captain-plugins' ) ) );
+			/* translators: 1: product name, 2: number of live websites, 3: support level. */
+			$product->set_short_description( sprintf( _n( 'Jahreslizenz für %1$s. %2$d Live-Website; %3$s-Support. License Captain verwaltet Lizenz und Updates.', 'Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. License Captain verwaltet Lizenz und Updates.', (int) $row['limit'], 'captain-plugins' ), $row['product_name'], $row['limit'], 'priority' === $row['support'] ? __( 'Priority', 'captain-plugins' ) : __( 'Standard', 'captain-plugins' ) ) );
 			$product_id = $product->save();
 			if ( ! $product_id ) {
 				++$result['errors'];
@@ -120,9 +121,9 @@ function captain_plugins_setup_create_products(): array {
 			++$result['created'];
 		}
 
-		$existing = \\WPLC\\Catalog\\Catalog::find_exact_mapping( (int) $product->get_id(), 0 );
+		$existing = method_exists( '\\WPLC\\Catalog\\Catalog', 'find_exact_mapping' ) ? \WPLC\Catalog\Catalog::find_exact_mapping( (int) $product->get_id(), 0 ) : null;
 		if ( $existing ) {
-			if ( (string) $existing['product_key'] === (string) $row['product_key'] && (string) $existing['plan_key'] === (string) $row['plan_key'] ) {
+			if ( is_array( $existing ) && (string) ( $existing['product_key'] ?? '' ) === (string) $row['product_key'] && (string) ( $existing['plan_key'] ?? '' ) === (string) $row['plan_key'] ) {
 				++$result['existing'];
 			} else {
 				++$result['skipped'];
