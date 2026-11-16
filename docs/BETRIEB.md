@@ -12,6 +12,8 @@ Stand: 16. November 2026, Theme-Version 0.3.0. Diese Anleitung deckt Phase 10 de
 | WooCommerce | laut Kompatibilitätsmatrix der Plugins | nur für Shop, Konto und Pro-Produkte |
 | Yoast SEO | aktuelle Version | optional; übernimmt Titel, Beschreibungen, Social-Bilder, Sitemap, Schema |
 
+**Website-Sprache:** Unter *Einstellungen → Allgemein* muss **Deutsch** eingestellt und das deutsche Sprachpaket installiert sein. Sonst liest ein Screenreader die WordPress-Bedienelemente auf Englisch vor („Skip to content“, „Open menu“, „Close menu“, „submenu“) und WooCommerce-Hinweise erscheinen englisch.
+
 ## 1. Paket bauen
 
 ```bash
