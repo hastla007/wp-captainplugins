@@ -230,49 +230,49 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 
 ### A. Vor dem Scaffold
 
-- [ ] Repo-Inventar mit den bestehenden Textdateien und URLs abgleichen; Seitenentwürfe nicht neu schreiben.
+- [x] Repo-Inventar mit den bestehenden Textdateien und URLs abgleichen; Seitenentwürfe nicht neu schreiben.
 - [ ] Vorhandenes Logo, Typografie und alle acht Kapitäns-JPEGs sichten; Nutzungsrechte, Auflösung und geeignete Posen erfassen.
-- [ ] Farbpalette mit Kontrastmessung finalisieren; Produktakzente dokumentieren.
+- [x] Farbpalette mit Kontrastmessung finalisieren; Produktakzente dokumentieren. *(Kontrasttabelle in Abschnitt 2; Produkte werden über Name und Icon statt über eigene Farben unterschieden.)*
 - [x] Architekturentscheidung festhalten: natives Block-Theme mit Site Editor, `theme.json`, HTML-Templates und Template Parts. Mindestversionen für WordPress, PHP und WooCommerce vor dem Scaffold aus der Kompatibilitätsmatrix der Produkte ableiten.
 - [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen.
 - [ ] Release-Quelle für Preise, Checkout-, Download- und Support-URLs bestimmen.
-- [ ] Theme-Dateiname, Textdomain und Repository-Ordner festlegen.
+- [x] Theme-Dateiname, Textdomain und Repository-Ordner festlegen.
 
 ### B. Designsystem und Theme-Grundgerüst
 
-- [ ] CSS-Variablen und `theme.json` für Farben, Typografie, Layoutbreiten, Abstände und UI-Zustände definieren.
+- [x] CSS-Variablen und `theme.json` für Farben, Typografie, Layoutbreiten, Abstände und UI-Zustände definieren.
 - [ ] Editoransicht an Frontend-Stile angleichen.
-- [ ] Header, Desktop-/Mobile-Menü und Footer als Template Parts erstellen.
-- [ ] Globales Seitengerüst inklusive Skip-Link, Breadcrumb-Ausgabe und Hauptinhalt umsetzen.
-- [ ] Basis-Templates für Startseite, Seite, Beitrag, Archiv, Suche und 404 erstellen.
-- [ ] Komponenten-Patterns für Hero, CTA, Feature, Workflow, Screenshot, Preis, Vergleich, FAQ und Ressourcen erstellen.
+- [x] Header, Desktop-/Mobile-Menü und Footer als Template Parts erstellen.
+- [x] Globales Seitengerüst inklusive Skip-Link, Breadcrumb-Ausgabe und Hauptinhalt umsetzen.
+- [x] Basis-Templates für Startseite, Seite, Beitrag, Archiv, Suche und 404 erstellen.
+- [x] Komponenten-Patterns für Hero, CTA, Feature, Workflow, Screenshot, Preis, Vergleich, FAQ und Ressourcen erstellen.
 
 ### C. Inhaltsvorlagen aufsetzen
 
-- [ ] Startseite und Produktübersicht aus den bestehenden Markdown-Texten übertragen.
-- [ ] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain anwenden.
-- [ ] Unterseiten Features, Pro-/Preise und FAQ in einheitliche Templates überführen.
-- [ ] Preis-/Vergleichsansicht mit zentralem Tarifinhalt und mobilen Alternativen einrichten.
-- [ ] Dokumentation, Support, Kompatibilität, Integrationen, Bootsschulen-Lösung und Ratgeber-Templates übertragen.
-- [ ] Alle Platzhalter im CMS als interne redaktionelle Aufgaben markieren; keine Platzhalterseiten öffentlich indexieren.
+- [x] Startseite und Produktübersicht aus den bestehenden Markdown-Texten übertragen.
+- [x] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain anwenden.
+- [x] Unterseiten Features, Pro-/Preise und FAQ in einheitliche Templates überführen.
+- [x] Preis-/Vergleichsansicht mit zentralem Tarifinhalt und mobilen Alternativen einrichten.
+- [x] Dokumentation, Support, Kompatibilität, Integrationen, Bootsschulen-Lösung und Ratgeber-Templates übertragen.
+- [x] Alle Platzhalter im CMS als interne redaktionelle Aufgaben markieren; keine Platzhalterseiten öffentlich indexieren.
 
 ### D. Medien und Feinschliff
 
-- [ ] Maskottchen je Einsatzort auswählen, passend zuschneiden und optimierte Bildvarianten exportieren.
+- [x] Maskottchen je Einsatzort auswählen, passend zuschneiden und optimierte Bildvarianten exportieren. *(Rechte und finale Freigabe weiterhin offen.)*
 - [ ] Produkt-Screenshots gemäß den Bildbriefings in `konzept-website.md` erstellen und Datenschutzprüfung durchführen.
-- [ ] Alt-Texte und Bildunterschriften festlegen; dekorative Bilder als dekorativ behandeln.
-- [ ] Mobile Darstellung, Preisvergleiche, Tabellen, Menüs, Formulare und FAQ bei relevanten Breiten prüfen.
+- [x] Alt-Texte und Bildunterschriften festlegen; dekorative Bilder als dekorativ behandeln.
+- [x] Mobile Darstellung, Preisvergleiche, Tabellen, Menüs, Formulare und FAQ bei relevanten Breiten prüfen.
 - [ ] Visuelle Konsistenz zwischen Frontend und Block-Editor abnehmen.
 
 ### E. Qualitätsprüfung und Übergabe
 
 - [ ] Tastaturbedienung, Fokus, Kontrast, Vergrößerung, Screenreader-Ausgabe und reduzierte Bewegung prüfen.
-- [ ] Links, Navigationszustände, CTAs und Breadcrumbs validieren.
+- [x] Links, Navigationszustände, CTAs und Breadcrumbs validieren.
 - [ ] Yoast-Breadcrumbs, Metadaten, Canonicals und Sitemap-Zuständigkeit gegen Theme-Ausgabe abgleichen.
-- [ ] Performance und Bildgrößen prüfen; unnötige Assets und Skripte entfernen.
+- [x] Performance und Bildgrößen prüfen; unnötige Assets und Skripte entfernen.
 - [ ] Kompatibilität mit WooCommerce, Yoast SEO und den tatsächlich aktivierten Plugins prüfen; Shop-Funktionen nicht im Theme nachbauen.
 - [ ] WooCommerce-Shopwege und Plugin-Frontends im sauberen Theme sowie nach Update testen (Produkt-/Tarifseite, Warenkorb, Blocks- und Classic-Checkout, Bestätigung, Konto, Lizenzansicht).
-- [ ] README mit Installation, Theme-Konfiguration, Block-Patterns, Design-Tokens und Erweiterungshinweisen anlegen.
+- [x] README mit Installation, Theme-Konfiguration, Block-Patterns, Design-Tokens und Erweiterungshinweisen anlegen.
 - [ ] Vor Release offene Unternehmens-, Preis-, Support- und Checkout-Angaben vollständig verifizieren.
 
 ## 11. Abnahmekriterien

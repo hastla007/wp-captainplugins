@@ -425,7 +425,7 @@ Die Keywords sind thematische Arbeitshypothesen, keine Suchvolumen- oder Ranking
 
 ### Phase 4 – Website-Umsetzung und Qualität
 
-- [ ] Responsive Layout und Navigation umsetzen.
+- [x] Responsive Layout und Navigation umsetzen.
 - [ ] Download-, Lizenz-, Checkout-, Demo- und Kontakt-CTAs mit echten URLs verknüpfen.
 - [ ] Produktbilder, Demos und freigegebene Kundenbeispiele einsetzen.
 - [ ] Mobile Darstellung, Barrierefreiheit, Performance und Formulare prüfen.

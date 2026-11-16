@@ -23,6 +23,7 @@ Dieses Verzeichnis enthält die deutschen Website-Texte für Captain Plugins. Da
 - [Impressum](impressum.md) → /impressum/ (Entwurfsvorlage mit Betreiber-Platzhaltern)
 - [Datenschutzerklärung](datenschutz.md) → /datenschutz/ (Entwurfsvorlage mit Betreiber-Platzhaltern)
 - [Übergreifende FAQ](faq.md) → /faq/
+- [Medieninventar](medieninventar.md) – alle Screenshot-, Demo- und Diagramm-Platzhalter (erzeugt mit `tools/media-inventory.py`)
 - [Lösung für Bootsschulen](loesungen/bootsschulen.md) → /loesungen/bootsschulen/
 
 ## SEO-Ratgeberentwürfe

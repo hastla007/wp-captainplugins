@@ -118,7 +118,7 @@ def markdown_blocks(markdown: str, page_path: str = "") -> str:
     def flush_paragraph() -> None:
         if not paragraph:
             return
-        editorial_line = re.compile(r"^\s*(?:\[(?:Screenshot-Platzhalter|Demo|Kundenbeispiel):[^\]]+\][\s·|•]*)+$", re.I)
+        editorial_line = re.compile(r"^\s*(?:\[(?:Screenshot-Platzhalter|Demo|Kundenbeispiel|Diagramm):[^\]]+\][\s·|•]*)+$", re.I)
         runs: list[list[str]] = []
         for line in paragraph:
             kind = editorial_line.match(line) is not None
@@ -139,7 +139,7 @@ def markdown_blocks(markdown: str, page_path: str = "") -> str:
                 out.append(ctas)
                 paragraph.clear()
                 return
-            editorial_pattern = re.compile(r"\[(Screenshot-Platzhalter|Demo|Kundenbeispiel):\s*([^\]]+)\]", re.I)
+            editorial_pattern = re.compile(r"\[(Screenshot-Platzhalter|Demo|Kundenbeispiel|Diagramm):\s*([^\]]+)\]", re.I)
             editorial = list(editorial_pattern.finditer(text))
             if editorial and not re.sub(r"[\s·|•]+", "", editorial_pattern.sub("", text)):
                 children = block("paragraph", '<p class="cp-media-placeholder__label">Produktansicht folgt</p>', {"className": "cp-media-placeholder__label"})

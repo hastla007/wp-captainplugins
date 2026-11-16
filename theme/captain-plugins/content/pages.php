@@ -188,7 +188,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "9c0d205738f9e22c9cb74d4cc400a6ab8d1ffe6c66e0db035fe3a1d930dd954a",
+		"source_hash" => "9f57a779fe7a9c423bb7d32844e9e3bcad5c107cf547d8b8e9c7cf4c8a936fe0",
 		"source_file" => "texte/homepage/license-captain/index.md",
 	],
 	[
@@ -1283,7 +1283,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "27ceec3d2966e5e32e4ac55fc744af4c230c019b0862965d0de85ffd2d144b10",
+		"source_hash" => "b1b9ea222afd85d44ec3221401f2a05ad4ea633b3f8048ff483b7b8e149eea22",
 		"source_file" => "texte/homepage/ratgeber/license-captain/plugin-updates-lizenzstatus.md",
 	],
 	[
@@ -1300,7 +1300,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "4bc3a7538f9c5289d8386f08e482fc5a08ea1dbeff9cb8c3ae6b4911cc818e38",
+		"source_hash" => "8766b640117efee9215912e3a30180aa40ceb9c6e8b16d4a236dccc1eaf8f8e5",
 		"source_file" => "texte/homepage/ratgeber/license-captain/woocommerce-lizenzen-aktivierungen.md",
 	],
 	[

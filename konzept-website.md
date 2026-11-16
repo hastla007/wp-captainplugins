@@ -235,32 +235,32 @@ Yoast SEO wird für Seitentitel, Meta-Descriptions, Social-Vorschau, Canonical/I
 
 ### Phase 1 – Inhalte und Quellen sichern
 
-- [ ] `texte/homepage/README.md` als Inhaltsinventar verwenden und alle Entwürfe den finalen URLs zuordnen.
-- [ ] Produktdaten, Free-/Pro-Grenzen, Kompatibilität und Supportmatrix aus dem bestehenden Produktkonzept übernehmen.
-- [ ] Vorläufige Preispläne übernehmen und Preisquelle/Checkout-Abgleich im Release-To-do festhalten.
-- [ ] Alle Screenshot-Platzhalter in ein Medieninventar übernehmen; benötigte Screenshots nach Produkt und Prozess priorisieren.
+- [x] `texte/homepage/README.md` als Inhaltsinventar verwenden und alle Entwürfe den finalen URLs zuordnen.
+- [x] Produktdaten, Free-/Pro-Grenzen, Kompatibilität und Supportmatrix aus dem bestehenden Produktkonzept übernehmen.
+- [x] Vorläufige Preispläne übernehmen und Preisquelle/Checkout-Abgleich im Release-To-do festhalten.
+- [x] Alle Screenshot-Platzhalter in ein Medieninventar übernehmen; benötigte Screenshots nach Produkt und Prozess priorisieren. *(Siehe [`texte/homepage/medieninventar.md`](texte/homepage/medieninventar.md), erzeugt mit `tools/media-inventory.py`.)*
 - [ ] Die acht Mascot-JPEGs einzeln sichten, Rechte/Originaldateien und Exportvarianten klären.
 
 ### Phase 2 – UI-Grundlage
 
-- [ ] Farb- und Typografietokens nach Prüfung bestehender Markenassets definieren.
-- [ ] Navigation, Footer, Breadcrumbs, Buttonvarianten, Karten, Tabellen und FAQ als wiederverwendbare Komponenten festlegen.
-- [ ] Responsive Verhalten jedes Komponenten-Typs bei schmaler, mittlerer und breiter Darstellung spezifizieren.
-- [ ] Barrierefreiheitsanforderungen in Komponentenabnahme aufnehmen.
+- [x] Farb- und Typografietokens nach Prüfung bestehender Markenassets definieren.
+- [x] Navigation, Footer, Breadcrumbs, Buttonvarianten, Karten, Tabellen und FAQ als wiederverwendbare Komponenten festlegen.
+- [x] Responsive Verhalten jedes Komponenten-Typs bei schmaler, mittlerer und breiter Darstellung spezifizieren.
+- [x] Barrierefreiheitsanforderungen in Komponentenabnahme aufnehmen.
 
 ### Phase 3 – Seitenaufbau
 
-- [ ] Globale Navigation und Footer umsetzen.
-- [ ] Startseite und Produktübersicht als Einstieg und Auswahlhilfe bauen.
-- [ ] Produktvorlage bauen und auf Voucher, Pass, Affiliate sowie License Captain anwenden.
-- [ ] Features-, Pro-/Preise- und FAQ-Seitentypen aufbauen.
-- [ ] Preise, Vergleich, Integrationen, Kompatibilität, Support und Dokumentation ergänzen.
-- [ ] Lösung Bootsschulen und vorhandene Ratgeberseiten in die Ressourcen- bzw. Lösungsnavigation einordnen.
-- [ ] Leere Links, nicht verfügbare Demos und unaufgelöste Platzhalter aus der Navigation fernhalten.
+- [x] Globale Navigation und Footer umsetzen.
+- [x] Startseite und Produktübersicht als Einstieg und Auswahlhilfe bauen.
+- [x] Produktvorlage bauen und auf alle sieben Produkte (Voucher, Pass, Affiliate, Form, Review, Workflow und License Captain) anwenden.
+- [x] Features-, Pro-/Preise- und FAQ-Seitentypen aufbauen.
+- [x] Preise, Vergleich, Integrationen, Kompatibilität, Support und Dokumentation ergänzen.
+- [x] Lösung Bootsschulen und vorhandene Ratgeberseiten in die Ressourcen- bzw. Lösungsnavigation einordnen.
+- [x] Leere Links, nicht verfügbare Demos und unaufgelöste Platzhalter aus der Navigation fernhalten.
 
 ### Phase 4 – Medien und SEO
 
-- [ ] Maskottchen aus den JPEG-Vorlagen geeignet zuschneiden/exportieren und responsive Varianten bereitstellen.
+- [x] Maskottchen aus den JPEG-Vorlagen geeignet zuschneiden/exportieren und responsive Varianten bereitstellen.
 - [ ] Produkt-Screenshots nach Briefing erstellen, anonymisieren, beschriften und freigeben.
 - [ ] Yoast-Felder aus den vorhandenen Redaktionsentwürfen pflegen.
 - [ ] Interne Links, Breadcrumbs, Canonicals, Sitemap und Redirects prüfen.
@@ -269,7 +269,7 @@ Yoast SEO wird für Seitentitel, Meta-Descriptions, Social-Vorschau, Canonical/I
 
 - [ ] Alle CTAs auf echte Download-, Checkout-, Support- und Dokumentationsziele prüfen.
 - [ ] Preis, Steueranzeige, Verlängerung, Website-Limits und Supportbeschriftung im Shop mit Website abgleichen.
-- [ ] Mobilgeräte: Menü, Preisvergleich, Karten, Tabellen, Formulare, Sticky-Elemente und Bilder prüfen.
+- [x] Mobilgeräte: Menü, Preisvergleich, Karten, Tabellen, Formulare, Sticky-Elemente und Bilder prüfen.
 - [ ] Tastaturbedienung, sichtbaren Fokus, Kontrast, Überschriften, Alt-Texte und Formularfehler manuell abnehmen.
 - [ ] Links, Rechtschreibung, Ladezeit, Indexierungsstatus und Social-Vorschau vor Freigabe kontrollieren.
 - [ ] Platzhalter für Screenshots, Kontakt, Preisdetails und Unternehmensangaben vollständig ersetzen oder bewusst ausblenden.
