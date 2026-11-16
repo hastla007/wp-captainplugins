@@ -9,7 +9,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { chromium, devices } = require('playwright');
+const { launch, device } = require('./lib-browser.cjs');
 const { PNG } = require('pngjs');
 const pixelmatch = require('pixelmatch');
 
@@ -25,9 +25,9 @@ Object.values(dirs).forEach((dir) => fs.mkdirSync(dir, { recursive: true }));
 const slug = (p) => (p.replace(/^\/|\/$/g, '').replace(/[^a-z0-9]+/gi, '-') || 'startseite');
 
 (async () => {
-	const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+	const browser = await launch();
 	const results = [];
-	for (const [label, options] of [['desktop', { viewport: { width: 1440, height: 900 } }], ['mobil', { ...devices['iPhone 13'] }]]) {
+	for (const [label, options] of [['desktop', { viewport: { width: 1440, height: 900 } }], ['mobil', device('iPhone 13')]]) {
 		const page = await browser.newPage({ ...options, reducedMotion: 'reduce' });
 		for (const p of paths) {
 			await page.goto(base + p, { waitUntil: 'networkidle' });

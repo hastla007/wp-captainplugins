@@ -8,6 +8,9 @@ on:
       - "tools/**"
       - ".github/workflows/theme-checks.yml"
   pull_request:
+  schedule:
+    # Wöchentlich, damit neue Gutenberg-/Abhängigkeitsstände auch ohne Commit auffallen.
+    - cron: "17 4 * * 1"
 
 permissions:
   contents: read
@@ -51,6 +54,9 @@ jobs:
 
       - name: SEO-Felder
         run: php tools/qa/seo-fields.php
+
+      - name: Preise der Website = Shop-Katalog
+        run: python3 tools/price-check.py
 
       - name: Gutenberg-Blockvalidierung
         working-directory: tools/qa

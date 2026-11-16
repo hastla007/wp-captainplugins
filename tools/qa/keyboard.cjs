@@ -9,7 +9,7 @@
  * With --checkout and --product: an empty checkout submission marks the invalid fields with
  * aria-invalid and names the error text via aria-describedby or a live region.
  */
-const { chromium, devices } = require('playwright');
+const { launch, device } = require('./lib-browser.cjs');
 
 const args = process.argv.slice(2);
 const option = (name, fallback) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : fallback; };
@@ -36,10 +36,10 @@ const focusInfo = () => {
 };
 
 (async () => {
-	const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+	const browser = await launch();
 	const problems = [];
 	let checked = 0;
-	for (const [view, options] of [['Desktop', { viewport: { width: 1440, height: 900 } }], ['Mobil', { ...devices['iPhone 13'] }]]) {
+	for (const [view, options] of [['Desktop', { viewport: { width: 1440, height: 900 } }], ['Mobil', device('iPhone 13')]]) {
 		const page = await browser.newPage(options);
 		for (const p of paths) {
 			await page.goto(base + p, { waitUntil: 'networkidle' });

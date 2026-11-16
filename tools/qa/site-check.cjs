@@ -7,7 +7,7 @@
  * axe-core WCAG 2.2 AA rules. Exit code 1 when anything is found.
  */
 const fs = require('fs');
-const { chromium, devices } = require('playwright');
+const { launch, device } = require('./lib-browser.cjs');
 
 const args = process.argv.slice(2);
 const option = (name, fallback) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : fallback; };
@@ -56,12 +56,12 @@ async function crawl(context) {
 }
 
 (async () => {
-	const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+	const browser = await launch();
 	const context = await browser.newContext();
 	const { pages, broken } = await crawl(context);
 	const problems = [];
 	for (const [url, sources] of broken) problems.push(`Toter Link ${url} (verlinkt auf ${[...sources].slice(0, 3).join(', ')})`);
-	const viewports = [['Desktop', { viewport: { width: 1440, height: 900 } }], ['Tablet', { viewport: { width: 820, height: 1100 } }], ['Mobil', { ...devices['iPhone 13'] }], ['Zoom 200 %', { viewport: { width: 720, height: 900 } }]];
+	const viewports = [['Desktop', { viewport: { width: 1440, height: 900 } }], ['Tablet', { viewport: { width: 820, height: 1100 } }], ['Mobil', device('iPhone 13')], ['Zoom 200 %', { viewport: { width: 720, height: 900 } }]];
 	if (args.includes('--all-widths')) {
 		// Extra widths: smallest phones, tablet landscape right at the navigation breakpoint, large desktop.
 		viewports.push(['Klein 320', { viewport: { width: 320, height: 640 } }], ['Tablet quer', { viewport: { width: 1024, height: 768 } }], ['Breit 1920', { viewport: { width: 1920, height: 1080 } }]);

@@ -8,7 +8,7 @@
  * --product the product is put into the cart and the checkout must show it together with an order
  * button (no order is placed). Exit code 1 on any failure.
  */
-const { chromium } = require('playwright');
+const { launch, device } = require('./lib-browser.cjs');
 
 const args = process.argv.slice(2);
 const option = (name, fallback) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : fallback; };
@@ -19,7 +19,7 @@ const product = option('--product', '');
 const paths = ['/', '/produkte/', '/voucher-captain/', '/captain-pro/', '/preise/', '/license-captain/', '/dokumentation/', '/support/', '/faq/', ...shopPaths, ...extra];
 
 (async () => {
-	const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+	const browser = await launch();
 	const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
 	const results = [];
 	const check = (name, ok, detail = '') => results.push({ name, ok, detail });

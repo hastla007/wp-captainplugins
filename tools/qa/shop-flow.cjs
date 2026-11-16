@@ -11,7 +11,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { chromium } = require('playwright');
+const { launch, device } = require('./lib-browser.cjs');
 
 const args = process.argv.slice(2);
 const option = (name, fallback) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : fallback; };
@@ -27,7 +27,7 @@ const placeOrder = args.includes('--order');
 
 (async () => {
 	fs.mkdirSync(out, { recursive: true });
-	const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+	const browser = await launch();
 	let failures = 0;
 	for (const [view, width, height] of [['desktop', 1366, 900], ['mobil', 390, 844]]) {
 		const context = await browser.newContext({ viewport: { width, height } });
