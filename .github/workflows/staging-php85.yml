@@ -1,0 +1,164 @@
+name: Staging-Test (PHP 8.5, neueste Versionen)
+
+# Baut bei jedem Push auf Theme/Werkzeuge, wöchentlich und auf Knopfdruck eine vollständige Staging-
+# Installation: PHP 8.5, neuestes WordPress, WooCommerce und Yoast SEO, License Captain aus
+# hastla007/wp-license, Datenbank MySQL bzw. MariaDB (jeweils aktuelle LTS). Danach laufen Import,
+# Setup-Assistent, Integrationstests, Kauf mit Lizenz, Lizenzaktivierung, Smoke-Test, SEO-Kopf,
+# Kaufablauf im Browser, Tastaturprüfung und Seiten-Check mit axe.
+
+on:
+  push:
+    paths:
+      - "theme/**"
+      - "tools/**"
+      - "tests/**"
+      - ".github/workflows/staging-php85.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "29 3 * * 2"
+
+permissions:
+  contents: read
+
+jobs:
+  staging:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        db: ["mysql:lts", "mariadb:lts"]
+    services:
+      db:
+        image: ${{ matrix.db }}
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: wpstaging
+          MARIADB_ROOT_PASSWORD: root
+          MARIADB_DATABASE: wpstaging
+        ports: ["3306:3306"]
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot || mariadb-admin ping -h 127.0.0.1 -proot"
+          --health-interval=10s --health-timeout=5s --health-retries=10
+    env:
+      WP: /tmp/wordpress
+      BASE: http://127.0.0.1:8080
+      CHROMIUM_PATH: ""
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          extensions: mysqli, intl, gd, zip, sodium, mbstring
+          tools: wp-cli, composer
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tools/qa/package-lock.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Versionen
+        run: |
+          php -v | head -1
+          mysql -h 127.0.0.1 -uroot -proot -e "SELECT VERSION();"
+
+      - name: WordPress, WooCommerce, Yoast SEO und License Captain installieren
+        run: |
+          mkdir -p "$WP" && cd "$WP"
+          wp core download --locale=de_DE
+          wp config create --dbname=wpstaging --dbuser=root --dbpass=root --dbhost=127.0.0.1 --locale=de_DE
+          wp config set WP_DEBUG true --raw
+          wp config set WP_DEBUG_LOG /tmp/wp-debug.log
+          wp config set WP_DEBUG_DISPLAY false --raw
+          wp config set WPLC_LICENSE_KEY_SECRETS "array( 'ci' => '$(openssl rand -base64 32)' )" --raw
+          wp config set WPLC_LICENSE_KEY_ID ci
+          wp config set WPLC_INSTALLATION_ENCRYPTION_KEYS "array( 'ci' => '$(openssl rand -base64 32)' )" --raw
+          wp config set WPLC_INSTALLATION_ENCRYPTION_KEY_ID ci
+          wp core install --url="$BASE" --title="Captain Plugins" --admin_user=admin --admin_password=admin --admin_email=admin@example.com --skip-email
+          wp rewrite structure '/%postname%/'
+          wp language core install de_DE --activate
+          wp plugin install woocommerce wordpress-seo --activate
+          wp language plugin install woocommerce wordpress-seo de_DE
+          git clone --depth 1 https://github.com/hastla007/wp-license wp-content/plugins/wp-license
+          (cd wp-content/plugins/wp-license && composer dump-autoload --no-dev -o)
+          wp plugin activate wp-license
+          ln -s "$GITHUB_WORKSPACE/theme/captain-plugins" wp-content/themes/captain-plugins
+          wp theme activate captain-plugins
+          wp core version --extra
+          wp plugin list --status=active --fields=name,version
+
+      - name: Inhalte, Pro-Produkte und Testkauf mit Lizenz
+        run: |
+          cd "$WP"
+          wp eval 'do_action( "admin_init" );' --user=admin
+          wp eval-file "$GITHUB_WORKSPACE/tools/ci/staging-setup.php" /tmp/license-key.txt --user=admin
+
+      - name: Webserver starten
+        run: |
+          cd "$WP"
+          php -S 127.0.0.1:8080 "$GITHUB_WORKSPACE/tools/ci/router.php" > /tmp/server.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf "$BASE/" > /dev/null && break; sleep 1; done
+          curl -s -o /dev/null -w "Startseite: %{http_code}\n" "$BASE/"
+
+      - name: Integrationstests (PHP 8.5)
+        run: php tests/run.php "$WP/wp-load.php"
+
+      - name: Lizenzaktivierung end-to-end (License Captain)
+        run: php tools/qa/license-e2e.php "$WP/wp-load.php" "$(cat /tmp/license-key.txt)" pass-captain-pro
+
+      - name: Browser vorbereiten
+        working-directory: tools/qa
+        run: |
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Smoke-Test mit Shop und Checkout
+        working-directory: tools/qa
+        run: |
+          PRODUCT=$(cd "$WP" && wp eval 'echo wp_make_link_relative( get_permalink( wc_get_product_id_by_sku( "cp-pass-captain-single" ) ) );')
+          node smoke.cjs --base "$BASE" --shop --shop-paths "$(cd "$WP" && wp eval 'foreach ( array( "shop", "cart", "checkout", "myaccount" ) as $p ) { echo wp_make_link_relative( wc_get_page_permalink( $p ) ), ","; }')" --product "$PRODUCT"
+
+      - name: SEO-Kopf aller Seiten mit Yoast
+        run: python3 tools/qa/seo-head.py --base "$BASE" --noindex "$(cd "$WP" && wp eval 'foreach ( array( "cart", "checkout", "myaccount" ) as $p ) { echo wp_make_link_relative( wc_get_page_permalink( $p ) ), ","; }')"
+
+      - name: Kaufablauf im Browser (Testbestellung)
+        working-directory: tools/qa
+        run: |
+          node shop-flow.cjs --base "$BASE" --out /tmp/shop-shots --order \
+            --shop "$(cd "$WP" && wp eval 'echo wp_make_link_relative( wc_get_page_permalink( "shop" ) );')" \
+            --cart "$(cd "$WP" && wp eval 'echo wp_make_link_relative( wc_get_page_permalink( "cart" ) );')" \
+            --checkout "$(cd "$WP" && wp eval 'echo wp_make_link_relative( wc_get_page_permalink( "checkout" ) );')" \
+            --account "$(cd "$WP" && wp eval 'echo wp_make_link_relative( wc_get_page_permalink( "myaccount" ) );')"
+
+      - name: Tastatur und Fokus
+        working-directory: tools/qa
+        run: node keyboard.cjs --base "$BASE"
+
+      - name: Alle Seiten mit axe
+        working-directory: tools/qa
+        run: |
+          SEED=$(cd "$WP" && wp eval 'foreach ( array( "shop", "cart", "checkout", "myaccount" ) as $p ) { echo wp_make_link_relative( wc_get_page_permalink( $p ) ), ","; }')
+          node site-check.cjs --base "$BASE" --axe --seed "$SEED" --ignore-axe label-content-name-mismatch
+
+      - name: PHP-Fehlerprotokoll
+        if: always()
+        run: |
+          if [ -s /tmp/wp-debug.log ]; then
+            echo "Einträge aus dem Theme:"; grep -i "captain-plugins" /tmp/wp-debug.log | grep -iv "deprecated" | tail -20 || true
+            if grep -i "captain-plugins" /tmp/wp-debug.log | grep -qi "fatal\|warning\|error"; then echo "::error::PHP-Fehler im Theme"; exit 1; fi
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: staging-${{ strategy.job-index }}
+          path: |
+            /tmp/shop-shots
+            /tmp/wp-debug.log
+            /tmp/server.log
+          retention-days: 7

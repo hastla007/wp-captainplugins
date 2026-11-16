@@ -79,6 +79,11 @@ const placeOrder = args.includes('--order');
 				['#billing-city', 'Wien'], ['#billing_city', 'Wien'],
 				['#billing_phone', '+43 1 234567'],
 			]) await fill(selector, value);
+			// Required consents added by plugins (e.g. License Captain: start of the licence before the withdrawal period ends).
+			for (const box of await page.locator('input[type="checkbox"]').all()) {
+				const label = await box.evaluate((el) => (el.closest('label') || document.querySelector(`label[for="${el.id}"]`) || el.parentElement).textContent || '');
+				if (/widerruf|withdraw|zustimm|einverstanden|consent|agree|terms|agb/i.test(label) && !(await box.isChecked())) await box.check().catch(() => {});
+			}
 			await submit.click();
 			await page.waitForURL(/order-received|bestellung-erhalten/, { timeout: 20000 }).catch(() => {});
 			await shot('6-bestaetigung');
