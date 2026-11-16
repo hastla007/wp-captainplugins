@@ -121,6 +121,7 @@ $status = captain_plugins_order_status_title( '<div class="wc-block-order-confir
 check( 'Bestellstatus ohne H1 bekommt eine', 1 === substr_count( $status, '<h1' ) );
 check( 'Lizenzplan unvollständig erkannt', ! captain_plugins_setup_mapping_complete( array( 'entitlements_json' => '{"sites.live_limit":1}' ), array( 'pass.write_api' => true ) ) );
 check( 'Lizenzplan vollständig erkannt', captain_plugins_setup_mapping_complete( array( 'entitlements_json' => '{"pass.write_api":true}' ), array( 'pass.write_api' => true ) ) );
+check( 'Kein Gravatar im Frontend', str_contains( (string) get_avatar_url( 'kunde@example.com' ), 'avatar.svg' ) );
 check( 'Kein title-tag (sonst doppelter <title> mit Yoast)', ! current_theme_supports( 'title-tag' ) );
 check( 'Yoast-Sitemap ohne Autoren', array() === apply_filters( 'wpseo_sitemap_exclude_author', array( new stdClass() ) ) );
 check( 'Autoren-Sitemap entfernt', false === apply_filters( 'wp_sitemaps_add_provider', new stdClass(), 'users' ) );

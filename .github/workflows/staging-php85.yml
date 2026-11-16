@@ -95,7 +95,6 @@ jobs:
       - name: Inhalte, Pro-Produkte und Testkauf mit Lizenz
         run: |
           cd "$WP"
-          wp eval 'do_action( "admin_init" );' --user=admin
           wp eval-file "$GITHUB_WORKSPACE/tools/ci/staging-setup.php" /tmp/license-key.txt --user=admin
 
       - name: Webserver starten

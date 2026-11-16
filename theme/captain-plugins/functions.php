@@ -330,3 +330,18 @@ function captain_plugins_order_status_title( string $content ): string {
 	return $breadcrumb . $content;
 }
 add_filter( 'render_block_woocommerce/order-confirmation-status', 'captain_plugins_order_status_title' );
+
+/**
+ * No Gravatar on the public site: WooCommerce shows the customer's avatar on the account and order
+ * pages, which would send a hash of the e-mail address to gravatar.com. Use a local image instead.
+ * The admin keeps WordPress' setting. Disable with add_filter( 'captain_plugins_local_avatars', '__return_false' ).
+ */
+function captain_plugins_local_avatar( array $args ): array {
+	if ( is_admin() || ! apply_filters( 'captain_plugins_local_avatars', true ) ) {
+		return $args;
+	}
+	$args['url']          = get_theme_file_uri( 'assets/images/avatar.svg' );
+	$args['found_avatar'] = true;
+	return $args;
+}
+add_filter( 'pre_get_avatar_data', 'captain_plugins_local_avatar' );

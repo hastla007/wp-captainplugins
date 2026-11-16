@@ -34,7 +34,9 @@ const placeOrder = args.includes('--order');
 		const page = await context.newPage();
 		const errors = [];
 		page.on('pageerror', (e) => errors.push(String(e)));
-		page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
+		page.on('console', (m) => m.type() === 'error' && !/^Failed to load resource/.test(m.text()) && errors.push(m.text()));
+		// Failed requests with their address, so an external service (privacy!) or a missing file is named.
+		page.on('requestfailed', (r) => errors.push(`${r.failure() ? r.failure().errorText : 'failed'}: ${r.url().slice(0, 120)} (auf ${page.url().replace(base, '').slice(0, 60)})`));
 		const shot = async (name) => {
 			await page.waitForTimeout(700);
 			await page.screenshot({ path: path.join(out, `${view}-${name}.png`), fullPage: true });
@@ -71,7 +73,7 @@ const placeOrder = args.includes('--order');
 		if (placeOrder && await submit.count()) {
 			const fill = async (selector, value) => { const field = page.locator(selector).first(); if (await field.count() && await field.isEditable()) await field.fill(value); };
 			for (const [selector, value] of [
-				['#email', `test-${view}@example.com`], ['#billing_email', `test-${view}@example.com`],
+				['#email', `test-${view}-${Date.now()}@example.com`], ['#billing_email', `test-${view}-${Date.now()}@example.com`],
 				['#billing-first_name', 'Erika'], ['#billing_first_name', 'Erika'],
 				['#billing-last_name', 'Muster'], ['#billing_last_name', 'Muster'],
 				['#billing-address_1', 'Hauptstraße 1'], ['#billing_address_1', 'Hauptstraße 1'],
