@@ -1,5 +1,23 @@
 # Änderungsprotokoll – Captain Plugins Theme
 
+## 0.3.0 – 16. November 2026
+
+### Neu
+- Mindestversionen PHP 8.5, MySQL 9.7 (LTS), MariaDB 12.3 (LTS) nach Entscheidung der Inhaberin: `Requires PHP: 8.5` und Admin-Warnung bei älterer Umgebung (keine Sperre); Website-Texte angepasst.
+- Social-Vorschaubilder (1200 × 630) für Startseite, sieben Produkte und Captain Pro; der Import übergibt sie an Yoast.
+- Ausgemusterte Seiten (`content/retired.php`): unveränderte alte Kopien gehen beim Import auf Entwurf, z. B. `/license-captain/im-paket/`.
+- QA-Werkzeuge unter `tools/qa/` (Block-Validierung, Site-Check mit axe-core, Smoke-Test, SEO-Feldprüfung).
+- Dokumentation: Betrieb, Redaktion, Weiterleitungen.
+
+### Behoben
+- Ohne Yoast hängte WordPress den Seitennamen an den vollständigen SEO-Titel an.
+- 22 SEO-Titel über 60 Zeichen, zwei zu lange Beschreibungen, doppelter Titel von Startseite und Produktübersicht; Ratgeber- und Lösungsverzeichnisse ohne SEO-Felder.
+- Einheitlich „License Captain“ statt „WP License Captain“.
+
+### Geändert
+- WordPress-Emoji-Loader deaktiviert: keine Inline-Skripte, kein Browser-Speicher, keine Anfragen an das WordPress-CDN.
+- `make-pot.py` schreibt die Übersetzungsvorlage nur bei geänderten Strings.
+
 ## 0.2.0 – 16. November 2026
 
 ### Neu

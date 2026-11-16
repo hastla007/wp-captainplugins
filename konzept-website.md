@@ -262,8 +262,8 @@ Yoast SEO wird für Seitentitel, Meta-Descriptions, Social-Vorschau, Canonical/I
 
 - [x] Maskottchen aus den JPEG-Vorlagen geeignet zuschneiden/exportieren und responsive Varianten bereitstellen.
 - [ ] Produkt-Screenshots nach Briefing erstellen, anonymisieren, beschriften und freigeben.
-- [ ] Yoast-Felder aus den vorhandenen Redaktionsentwürfen pflegen.
-- [ ] Interne Links, Breadcrumbs, Canonicals, Sitemap und Redirects prüfen.
+- [x] Yoast-Felder aus den vorhandenen Redaktionsentwürfen pflegen. *(Alle 90 Seiten mit SEO-Titel, Beschreibung, Keyphrase und Social-Bild; Übernahme durch den Seitenimport.)*
+- [ ] Interne Links, Breadcrumbs, Canonicals, Sitemap und Redirects prüfen. *(Links und Brotkrumen geprüft, Redirects dokumentiert; Canonicals/Sitemap mit Yoast offen.)*
 
 ### Phase 5 – Abnahme und Launch
 

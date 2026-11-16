@@ -13,7 +13,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
 - [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
 - [ ] Redaktions-, Barrierefreiheits-, Browser- und Performance-Prüfung abschließen.
-- [ ] Release-Paket und Installations-/Betriebsdokumentation erstellen.
+- [x] Release-Paket und Installations-/Betriebsdokumentation erstellen. *(`tools/build-theme-zip.sh`, `docs/BETRIEB.md`.)*
 
 ## Phase 1 – Anforderungen und Bestand sichern
 
@@ -22,7 +22,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Produkte korrekt benennen: sechs kostenlose Kern-Plugins, sechs separate Captain-Pro-Add-ons und License Captain als eigenes Produkt (Server und Client) für Plugin-Hersteller; Pro-Add-ons werden intern über License Captain lizenziert, ohne dass Pro-Kunden davon erfahren.
 - [x] Bestehende Pläne und Preise nicht im Theme fest verdrahten; Preise kommen aus Shop-/Seiteninhalten.
 - [ ] Für jeden Produktbereich finale URLs, Downloadziele, Checkoutziele und Supportwege mit der Website-Konfiguration abgleichen.
-- [ ] Vor Release WordPress-, PHP-, WooCommerce- und Plugin-Mindestversionen anhand der dann freigegebenen Releases bestätigen.
+- [ ] Vor Release WordPress-, PHP-, WooCommerce- und Plugin-Mindestversionen anhand der dann freigegebenen Releases bestätigen. *(PHP 8.5, MySQL 9.7 und MariaDB 12.3 am 16.11.2026 entschieden und in Theme und Texten umgesetzt; Bestätigung gegen die finalen Releases offen.)*
 - [ ] Bildrechte und finale Auswahl/Zuschnitte der Kapitänsillustrationen bestätigen; bis dahin keine Illustration als Produkt-UI ausgeben.
 
 ## Phase 2 – Plattform- und Inhaltsentscheidungen
@@ -34,8 +34,8 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Erste optionale Seitentemplates für Produkt-, Preis- und Ressourcenseiten angelegt; nach Sichtung der realen Produkt-UIs gegebenenfalls anpassen.
 - [x] Yoast SEO im Import berücksichtigen: SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase werden ohne Überschreiben eigener Yoast-Werte gesetzt.
 - [x] Yoast-Social-Titel und -Beschreibung aus den SEO-Feldern ableiten und optional individuelle Social-Felder unterstützen.
-- [ ] Yoast SEO im redaktionellen Modell vervollständigen: Canonical URLs und Indexierung je Seitentyp prüfen; das Theme erzeugt keine konkurrierenden Meta-Tags.
-- [ ] Zuständigkeit für Inhalte, SEO-Freigabe, rechtliche Seiten und Preisupdates festlegen.
+- [ ] Yoast SEO im redaktionellen Modell vervollständigen: Canonical URLs und Indexierung je Seitentyp prüfen; das Theme erzeugt keine konkurrierenden Meta-Tags. *(Theme-Seite geprüft: ohne Yoast nur Titel und Beschreibung, keine OG-/Schema-Tags; Prüfung mit aktivem Yoast offen.)*
+- [ ] Zuständigkeit für Inhalte, SEO-Freigabe, rechtliche Seiten und Preisupdates festlegen. *(Rollenmodell in `docs/REDAKTION.md`; Personen benennt die Inhaberin.)*
 
 ## Phase 3 – Designsystem und Grundlagen
 
@@ -83,7 +83,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Screenshot-/Demo-/Kundenbeispiel-Platzhalter mit Aufnahmebriefing und klarer Kennzeichnung als Medienkarten in Redaktionsvorschau setzen.
 - [ ] Medienkarten vor Livegang durch echte, freigegebene Ansichten bzw. belegte Kundenbeispiele ersetzen.
 - [ ] Kundenlogos, Bewertungen, Kennzahlen oder Fallstudien nur nach Beleg und Freigabe einsetzen.
-- [ ] Alle internen Links, CTAs, Downloads, Checkoutziele und Formulare mit realen Zielen verbinden.
+- [ ] Alle internen Links, CTAs, Downloads, Checkoutziele und Formulare mit realen Zielen verbinden. *(Interne Links ohne Fehler; Download-, Checkout- und Supportziele fehlen noch.)*
 
 ## Phase 7 – Shop und Plugin-Integration
 
@@ -100,12 +100,12 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [x] Theme-Struktur für semantische Überschriften und redaktionell pflegbare Seiten vorbereitet.
 - [x] Pro Inhaltsseite Yoast-SEO-Titel, Meta-Beschreibung, Fokus-Keyphrase und Social-Titel/-Beschreibung aus den Textmetadaten importieren; doppelte Fokus-Keyphrase der Startseite und Produktübersicht bereinigen.
-- [ ] Social-Bilder und Snippet-Vorschauen pro Seite redaktionell auswählen und in Yoast abnehmen.
-- [ ] Indexierung und Canonicals für Archive, Suche, Pagination und Shopseiten prüfen.
-- [ ] Schema-Ausgabe von Yoast, WooCommerce und weiteren Plugins auf Doppelungen prüfen; strukturierte Daten nicht im Theme duplizieren.
-- [ ] URL-Slugs und Weiterleitungen für geänderte Seitennamen festlegen.
+- [ ] Social-Bilder und Snippet-Vorschauen pro Seite redaktionell auswählen und in Yoast abnehmen. *(Bilder je Produktbereich erstellt und automatisch zugeordnet; alle 90 SEO-Snippets innerhalb der Längen. Abnahme in Yoast offen.)*
+- [ ] Indexierung und Canonicals für Archive, Suche, Pagination und Shopseiten prüfen. *(Ohne Yoast geprüft: Suche noindex, 404 mit Status 404, Canonical auf Inhaltsseiten; mit Yoast und Shop offen.)*
+- [x] Schema-Ausgabe von Yoast, WooCommerce und weiteren Plugins auf Doppelungen prüfen; strukturierte Daten nicht im Theme duplizieren. *(Theme gibt nachweislich keine strukturierten Daten aus; Yoast/WooCommerce bleiben allein zuständig.)*
+- [x] URL-Slugs und Weiterleitungen für geänderte Seitennamen festlegen. *(`docs/WEITERLEITUNGEN.md`; ausgemusterte Seiten gehen beim Import automatisch auf Entwurf.)*
 - [x] Textdomain und Übersetzungsworkflow aktivieren; deutschsprachige Website-Texte und UI-Strings sauber voneinander trennen. *(UI-Strings über `captain-plugins`-Textdomain und `tools/make-pot.py`; Website-Texte liegen als Seiteninhalte vor.)*
-- [ ] Redaktionsrollen, Pattern-Freigaben und Pflegeprozess für Preise, Changelog, Kompatibilität und Screenshots dokumentieren.
+- [x] Redaktionsrollen, Pattern-Freigaben und Pflegeprozess für Preise, Changelog, Kompatibilität und Screenshots dokumentieren. *(`docs/REDAKTION.md`.)*
 
 ## Phase 9 – Qualität und Freigabe
 
@@ -122,12 +122,12 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 ## Phase 10 – Veröffentlichung und Betrieb
 
 - [x] Theme-Version, Changelog, Lizenz und Installationspaket erstellen. *(Version 0.2.0, `CHANGELOG.md`, `tools/build-theme-zip.sh`; Lizenz offen.)*
-- [ ] Backup und Rückfallweg vor Aktivierung dokumentieren.
+- [x] Backup und Rückfallweg vor Aktivierung dokumentieren. *(`docs/BETRIEB.md`, Abschnitte 2 und 5.)*
 - [ ] Erst in Staging aktivieren und Shop-/Plugin-Regressionen prüfen.
-- [ ] Produktionsaktivierung mit kurzem Smoke-Check für Startseite, Produkte, Preise, Checkout, Support und 404 durchführen.
-- [ ] Monitoring für Fehler, Checkout-Abbrüche, Suchanfragen und wichtige CTA-Klicks konfigurieren, datenschutzgerecht.
-- [ ] Pflegezyklus für WordPress-/WooCommerce-Kompatibilität, Sicherheitsupdates, Barrierefreiheit und Inhalt festlegen.
-- [ ] Nach jedem größeren WordPress-, WooCommerce- oder Produktrelease kritische Seitentypen erneut durchgehen.
+- [ ] Produktionsaktivierung mit kurzem Smoke-Check für Startseite, Produkte, Preise, Checkout, Support und 404 durchführen. *(Smoke-Test `tools/qa/smoke.cjs` bereit.)*
+- [ ] Monitoring für Fehler, Checkout-Abbrüche, Suchanfragen und wichtige CTA-Klicks konfigurieren, datenschutzgerecht. *(Empfehlungen in `docs/BETRIEB.md`, Abschnitt 6; Einrichtung offen.)*
+- [ ] Pflegezyklus für WordPress-/WooCommerce-Kompatibilität, Sicherheitsupdates, Barrierefreiheit und Inhalt festlegen. *(Vorschlag in `docs/BETRIEB.md`, Abschnitt 7; Bestätigung durch die Inhaberin offen.)*
+- [ ] Nach jedem größeren WordPress-, WooCommerce- oder Produktrelease kritische Seitentypen erneut durchgehen. *(Laufende Aufgabe; Liste in `docs/BETRIEB.md`, Abschnitt 8, Prüfung mit `tools/qa/site-check.cjs`.)*
 
 ## Architektur des ersten Builds
 
@@ -139,9 +139,11 @@ Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Ste
 
 ## Aktueller Build-Stand
 
-Stand 16. November 2026, Theme-Version 0.2.0. Das Theme setzt das Designkonzept und die Mockups um: Navy-Header mit Klick-Untermenüs und Gold-CTA, Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle sieben Produkte, Tarifkarten, CTA-Bänder, ruhiger Lesefluss für Ratgeber und Dokumentation sowie breite Matrizen für Kompatibilität und Integrationen. Der Inhaltscompiler erzeugt 90 importierbare Seiten (davon Impressum und Datenschutz als Entwürfe).
+Stand 16. November 2026, Theme-Version 0.3.0. Das Theme setzt das Designkonzept und die Mockups um: Navy-Header mit Klick-Untermenüs und Gold-CTA, Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle sieben Produkte, Tarifkarten, CTA-Bänder, ruhiger Lesefluss für Ratgeber und Dokumentation sowie breite Matrizen für Kompatibilität und Integrationen. Der Inhaltscompiler erzeugt 90 importierbare Seiten (davon Impressum und Datenschutz als Entwürfe).
 
 **Geprüft in WordPress 6.7 (SQLite-Testinstallation):** Gutenberg-Blockvalidierung aller Templates, Parts, Patterns und Seiten ohne Fehler; Link-Crawler ohne tote interne Links; 90 Seiten in Desktop, Tablet und Mobil ohne horizontales Scrollen, mit genau einer H1 und ohne Hierarchiesprünge; axe-core ohne Verstöße; Menü-, Skip-Link- und FAQ-Tastaturtests bestanden; keine PHP-Warnungen.
+
+**Zusätzlich vorhanden:** Betriebsdokumentation (`docs/BETRIEB.md`), Redaktionshandbuch (`docs/REDAKTION.md`), Weiterleitungsliste (`docs/WEITERLEITUNGEN.md`), QA-Werkzeuge (`tools/qa/`), Social-Bilder, Mindestversionen PHP 8.5 / MySQL 9.7 / MariaDB 12.3.
 
 **Nur mit echter Umgebung prüfbar:** WooCommerce-Kaufstrecke und Konto, Yoast-Ausgabe, Sichtprüfung im Block-/Site-Editor, Screenreader-Durchlauf, Core Web Vitals auf Staging.
 
