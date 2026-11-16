@@ -40,6 +40,7 @@ Das Skript baut Inhalte und Übersetzungsvorlage neu, prüft alle PHP-Dateien un
    node validate-blocks.cjs
    node site-check.cjs --base https://staging.example.com --axe
    node smoke.cjs --base https://staging.example.com
+   node visual.cjs --base https://staging.example.com   # vorher mit --update auf dem alten Stand Referenzbilder erzeugen
    php seo-fields.php
    ```
 5. Manuell: Kaufstrecke (Produkt → Warenkorb → Checkout → Bestätigung → Konto → Lizenzaktivierung im Pro-Add-on → Update), Blocks- und Classic-Checkout, Formulare, Menü mit Tastatur, eine Seite mit Screenreader.
