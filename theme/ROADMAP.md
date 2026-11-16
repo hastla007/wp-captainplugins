@@ -8,7 +8,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Technische Richtung für den ersten Build festgelegt: natives WordPress-Block-Theme ohne zusätzliche Build-Abhängigkeiten.
 - [x] Erste Theme-Struktur, globale Tokens, Templates, Template Parts und Startseiten-Patterns angelegt.
 - [x] Erste wiederverwendbare Produkt-, Feature-, Ablauf-, Preis-, FAQ-, Ressourcen- und Screenshot-Briefing-Patterns ergänzt.
-- [x] Setup-Assistent für optionale Plugin-Installation, geschützten Seitenimport und fünfzehn WooCommerce-Produktentwürfe mit Zuordnung zum separat erhältlichen License-Captain-Server umgesetzt.
+- [x] Setup-Assistent für optionale Plugin-Installation, geschützten Seitenimport und fünfzehn WooCommerce-Produktentwürfe mit Zuordnung zum License-Captain-Server dieses Shops umgesetzt.
 - [x] Markdown-Inhalte in editierbare Gutenberg-Seitenvorlagen samt SEO-Basics kompilierbar gemacht.
 - [ ] Inhaltliche und visuelle Anpassung aller Seitentypen mit den finalen Texten.
 - [ ] WooCommerce- und Plugin-Ansichten mit echten Installationen und Produktdaten prüfen.
@@ -19,7 +19,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [x] `design/konzept.md`, `konzept-website.md`, `texte/homepage/` und `design/` erfassen.
 - [x] Vorhandene Seitenrollen und Navigation als Grundlage übernehmen.
-- [x] Produkte korrekt benennen: sechs kostenlose Kern-Plugins, sechs separate Captain-Pro-Add-ons und License Captain als separat erhältliches Server-Plugin für Plugin-Hersteller.
+- [x] Produkte korrekt benennen: sechs kostenlose Kern-Plugins, sechs separate Captain-Pro-Add-ons und License Captain als eigenes Produkt (Server und Client) für Plugin-Hersteller; Pro-Add-ons werden intern über License Captain lizenziert, ohne dass Pro-Kunden davon erfahren.
 - [x] Bestehende Pläne und Preise nicht im Theme fest verdrahten; Preise kommen aus Shop-/Seiteninhalten.
 - [ ] Für jeden Produktbereich finale URLs, Downloadziele, Checkoutziele und Supportwege mit der Website-Konfiguration abgleichen.
 - [ ] Vor Release WordPress-, PHP-, WooCommerce- und Plugin-Mindestversionen anhand der dann freigegebenen Releases bestätigen.

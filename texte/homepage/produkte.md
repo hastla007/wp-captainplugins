@@ -39,7 +39,7 @@ Bauen Sie ein Partnerprogramm mit Regeln, nachvollziehbarer Attribution, Refund-
 
 ## License Captain
 
-Verkaufen Sie Lizenzen für eigene WordPress-Plugins und Softwareprodukte über WooCommerce. Verwalten Sie Website-Aktivierungen, Verlängerungen, Berechtigungen und Updates mit einem eigenständigen Lizenzserver. License Captain ist separat erhältlich und nicht Bestandteil von Captain Pro.
+Verkaufen Sie Lizenzen für eigene WordPress-Plugins und Softwareprodukte über WooCommerce. Verwalten Sie Website-Aktivierungen, Verlängerungen, Berechtigungen und Updates mit einem eigenen Lizenzserver. License Captain besteht aus Server und Client: Der Server läuft in Ihrem Shop, der Client kommt in Ihre Plugins.
 
 [Features ansehen](/license-captain/features/) · [Preise und Pläne](/license-captain/preise/) · [FAQ](/license-captain/faq/)
 

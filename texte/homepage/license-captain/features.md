@@ -21,13 +21,16 @@ Verfolgen Sie Zustände und Änderungen im Auditverlauf. Kunden verlängern manu
 
 ## Signierte API und Berechtigungen
 
-Produkt-Plugins fragen Lizenzstatus und Entitlements über signierte Requests und Responses ab. So können Funktionen und Updatezugriff an den erworbenen Plan gebunden werden.
+Der Client in Ihren Plugins fragt Lizenzstatus und Entitlements über signierte Requests und Responses ab. So können Funktionen und Updatezugriff an den erworbenen Plan gebunden werden.
 
-## Server und Client: zwei Integrationswege
+## Server und Client
 
-License Captain ist der Lizenzserver. Jedes Produkt-Plugin, das Lizenzen prüfen oder Updates beziehen soll, benötigt eine Client-Integration zur signierten API. Entwickler können diese Integration nach der dokumentierten Schnittstellenspezifikation direkt in ihr WordPress-Plugin einbauen. Alternativ lässt sich ein separates Client-Plugin einsetzen oder entwickeln, das die Verbindung für ein oder mehrere Produkt-Plugins übernimmt.
+License Captain besteht aus zwei Bausteinen:
 
-Das License-Captain-Server-Plugin enthält keinen universellen Client für fremde Produkt-Plugins. Die Wahl des Integrationswegs bleibt beim Anbieter des jeweiligen Produkts.
+- **Server:** das Plugin für Ihren WooCommerce-Shop. Es verkauft Lizenzen, verwaltet Aktivierungen, Laufzeiten und Berechtigungen und stellt Releases bereit.
+- **Client:** der Baustein, den Sie in jedes Plugin einbinden, das Sie lizenzieren möchten. Er übernimmt Lizenzaktivierung, Statusprüfung und Updateabruf über die signierte API.
+
+Der Client wird mit Ihrem Plugin ausgeliefert. Ihre Kunden installieren nichts zusätzlich: Sie geben ihren Lizenzschlüssel direkt in Ihrem Plugin ein.
 
 ## Updates und Release-Notizen
 

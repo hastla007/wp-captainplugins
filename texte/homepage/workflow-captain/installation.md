@@ -22,7 +22,7 @@ Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooComm
 2. Installieren und aktivieren Sie Workflow Captain über den freigegebenen Download bzw. die WordPress-Pluginverwaltung.
 3. Öffnen Sie **Workflow Captain** im WordPress-Admin und prüfen Sie den Systemstatus.
 4. Falls benötigt, aktivieren Sie WooCommerce und kontrollieren Sie den Status der Woo-Provider.
-5. Installieren Sie das Pro-Add-on separat und aktivieren Sie die Lizenz über WP License Captain.
+5. Installieren Sie das Pro-Add-on separat und aktivieren Sie Ihren Lizenzschlüssel im Lizenzbereich des Plugins.
 6. Aktivieren Sie nur die Captain-Plugins, deren Provider Sie tatsächlich verwenden möchten.
 
 ## Einen ersten Workflow sicher einrichten

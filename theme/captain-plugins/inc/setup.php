@@ -55,7 +55,7 @@ function captain_plugins_setup_plugins(): array {
 	return array(
 		'woocommerce' => array( 'name' => 'WooCommerce', 'dir' => 'woocommerce', 'file' => 'woocommerce/woocommerce.php', 'source' => 'wporg', 'checked' => true, 'description' => __( 'Shop, Warenkorb, Kasse und Produktverwaltung. Für Lizenzprodukte und den Verkauf erforderlich.', 'captain-plugins' ) ),
 		'wordpress-seo' => array( 'name' => 'Yoast SEO', 'dir' => 'wordpress-seo', 'file' => 'wordpress-seo/wp-seo.php', 'source' => 'wporg', 'checked' => false, 'description' => __( 'Optional. Die Textvorlagen enthalten SEO-Titel, Meta-Beschreibungen und Fokus-Keyphrases, die bei aktiver Yoast-Installation übernommen werden.', 'captain-plugins' ) ),
-		'wp-license' => array( 'name' => 'License Captain', 'dir' => 'wp-license', 'file' => 'wp-license/wp-license.php', 'source' => 'custom', 'package' => $custom_source, 'checked' => '' !== $custom_source, 'description' => __( 'Separater WooCommerce-Lizenzserver, mit dem Sie Ihre eigenen WordPress-Produkte lizenzieren. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert.', 'captain-plugins' ) ),
+		'wp-license' => array( 'name' => 'License Captain', 'dir' => 'wp-license', 'file' => 'wp-license/wp-license.php', 'source' => 'custom', 'package' => $custom_source, 'checked' => '' !== $custom_source, 'description' => __( 'License-Captain-Server für diesen Shop. Er stellt die Lizenzen für die Captain-Pro-Add-ons aus; der Client ist in den Pro-Add-ons enthalten. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert.', 'captain-plugins' ) ),
 	);
 }
 
@@ -339,7 +339,7 @@ function captain_plugins_setup_product_card(): void {
 	} else {
 		echo '<p class="notice notice-warning inline"><span>' . esc_html__( 'Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten.', 'captain-plugins' ) . '</span></p>';
 	}
-	echo '<p class="description">' . esc_html__( 'License Captain ist ein separat erhältliches Server-Plugin und nicht Bestandteil von Captain Pro. Aktivieren Sie den Server, wenn Sie die Pro-Jahrespläne dieser Website im License-Captain-Katalog zuordnen möchten. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind.', 'captain-plugins' ) . '</p></section>';
+	echo '<p class="description">' . esc_html__( 'Der License-Captain-Server muss aktiv sein, damit die Pro-Jahrespläne dieser Website als Lizenzprodukte zugeordnet werden. Kunden sehen davon nichts: Sie aktivieren ihren Lizenzschlüssel direkt im Pro-Add-on. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind.', 'captain-plugins' ) . '</p></section>';
 }
 
 function captain_plugins_setup_page(): void {

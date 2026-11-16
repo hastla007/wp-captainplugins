@@ -27,7 +27,7 @@ Hier finden Sie die in den Produkt-Repositories dokumentierten Mindestversionen,
 | Workflow Captain Pro | 6.8 | 8.3 | Optional, ab 8.0 | Separates Add-on; WP License-/Captain-Pro-Lizenz und kompatible Provider erforderlich |
 | License Captain | 6.5 | 7.4 | 8.9 erforderlich | WooCommerce muss aktiv sein; MySQL/MariaDB mit beschreibbarem Primärserver und funktionierendem Cron |
 
-License Captain ist ein separat erhältliches Server-Plugin. Es setzt WooCommerce voraus und ist nicht Bestandteil der Captain-Pro-Angebote.
+License Captain besteht aus Server und Client. Die Angaben oben gelten für den Server, der WooCommerce voraussetzt. Der Client wird in die zu lizenzierenden Plugins eingebunden.
 
 ## Getestete Plattformen
 
@@ -75,7 +75,7 @@ Drittanbieter-Zahlungsdienste benötigen ein eigenes Konto und passende Zugangsd
 | Form Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Solo/Studio: Standard; Agency: priorisiert. Umfang und Kanal stehen beim Kauf. |
 | Review Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Solo/Studio: Standard; Agency: priorisiert. Umfang und Kanal stehen beim Kauf. |
 | Workflow Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Single/Business: Standard; Agency: Priority. Umfang und Kanal stehen beim Kauf. |
-| License Captain | Separates Server-Plugin; Preise und Supportumfang gemäß eigenem Shopplan | Supportstufe richtet sich nach dem gewählten License-Captain-Plan. |
+| License Captain | Eigenes Produkt (Server und Client); Preise und Supportumfang gemäß License-Captain-Plan | Supportstufe richtet sich nach dem gewählten License-Captain-Plan. |
 
 Die Tarife ordnen **Single (1 Live-Website)** und **Business (5 Live-Websites)** dem Standard-Support zu. **Agency (25 Live-Websites)** enthält Priority-Support. Verbindliche Reaktionszeiten und abschließende kommerzielle Supportkanäle sind in den Tarifunterlagen nicht festgelegt; deshalb werden hier keine Antwortzeitversprechen gemacht.
 

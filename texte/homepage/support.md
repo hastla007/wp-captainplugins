@@ -34,7 +34,7 @@ Starten Sie mit den [Installationsanleitungen](/dokumentation/installation/), de
 | Workflow Captain Single/Business | 1 / 5 | Standard |
 | Workflow Captain Agency | 25 | Priority |
 
-Die Supportstufe ist Bestandteil des jeweiligen Captain-Pro-Plans. License Captain wird als separates Produkt mit dem Supportumfang des gewählten License-Captain-Plans angeboten. Für die kostenlosen Kern-Plugins stehen Dokumentation und die jeweils veröffentlichten öffentlichen Supportkanäle zur Verfügung.
+Die Supportstufe ist Bestandteil des jeweiligen Captain-Pro-Plans. Für License Captain richtet sich der Supportumfang nach dem gewählten License-Captain-Plan. Für die kostenlosen Kern-Plugins stehen Dokumentation und die jeweils veröffentlichten öffentlichen Supportkanäle zur Verfügung.
 
 ## So helfen Sie uns, Ihre Anfrage zu lösen
 

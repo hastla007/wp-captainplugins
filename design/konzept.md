@@ -134,7 +134,7 @@ Die vollständige URL- und Inhaltsstruktur steht im [Website-Umsetzungskonzept](
 - **Produktübersicht:** Auswahl nach Geschäftsaufgabe, Produktkarten und Vergleichseinstieg.
 - **Produktdetail:** Produkt-Hero, Workflow, wichtigste Features, UI-Bild, Integrationen/Voraussetzungen, Free-/Pro-Verweis, FAQ-Auszug, CTA.
 - **Features:** vollständige Funktionsgruppen mit internen Sprunglinks und UI-Bildbriefings.
-- **Pro-Seiten:** Upgrade-Grund, Kern-/Pro-Abgrenzung, Preis-/Plan-Karten. License Captain erhält eine eigene Produkt- und Preisseite als separat erhältlicher Server; Server und Client werden als getrennte Integrationsbausteine erklärt.
+- **Pro-Seiten:** Upgrade-Grund, Kern-/Pro-Abgrenzung, Preis-/Plan-Karten. License Captain wird auf Pro-Seiten nicht erwähnt. Es erhält eigene Produkt- und Preisseiten, die Server (Shop) und Client (im Plugin des Herstellers) als ein Angebot erklären.
 - **Preise/Vergleich:** zugängliche Tarifkarten mit Website-Limits, Jahrespreis, Supportumfang und klarer Planwahl.
 - **Dokumentation/Support/FAQ:** ruhige Lesefläche, Inhaltsnavigation, Links zu Installation, Kompatibilität und Kontakt.
 - **Lösung/Use Case:** branchenspezifischer Ablauf und die tatsächlich passenden Produkte.

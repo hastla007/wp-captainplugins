@@ -1,17 +1,17 @@
 ---
 url: /license-captain/faq/
 seo_title: License Captain FAQ – WordPress-Lizenzen und Updates
-meta_description: Antworten zu License Captain als separat erhältlichem WooCommerce-Lizenzserver für WordPress-Plugin-Hersteller.
+meta_description: Antworten zu License Captain: Lizenzserver für WooCommerce und Client für Ihre WordPress-Plugins.
 focus_keyphrase: WordPress Lizenzmanager FAQ
 ---
 
 # Fragen zu License Captain
 
-## Ist License Captain Teil von Captain Pro?
-Nein. License Captain ist ein eigenständiges Server-Plugin, das separat erhältlich ist. Es richtet sich an Unternehmen, die eigene Plugins oder Softwareprodukte lizenzieren und Updates bereitstellen möchten.
+## Was ist in License Captain enthalten?
+Server und Client. Der Server läuft als Plugin in Ihrem WooCommerce-Shop, der Client wird in Ihre eigenen Plugins eingebunden. License Captain richtet sich an Unternehmen, die eigene Plugins oder Softwareprodukte lizenzieren und Updates bereitstellen möchten.
 
 ## Benötige ich WooCommerce?
-Ja, WooCommerce dient als Shop für Lizenzprodukte und Bestellungen.
+Für den Server ja: WooCommerce dient als Shop für Lizenzprodukte und Bestellungen. Die Websites Ihrer Kunden brauchen kein WooCommerce – dort läuft nur Ihr Plugin mit dem eingebundenen Client.
 
 ## Wie wird eine Lizenz erstellt?
 Nach erfolgreicher Zahlung erhält jede gekaufte Produkteinheit eine Lizenz mit den im Produktplan festgelegten Laufzeiten, Limits und Berechtigungen.
@@ -23,10 +23,10 @@ Sie können Aktivierungen für Live-, Staging- und Entwicklungswebsites verwalte
 Ja. Kunden können manuell verlängern oder die optionale Stripe-gestützte automatische Verlängerung nutzen.
 
 ## Wie erhalten meine Plugins Updates?
-Produkt-Plugins prüfen Berechtigungen und Updatezugriff über die signierte API. Releases werden zentral verwaltet.
+Der Client in Ihrem Plugin prüft Berechtigungen und Updatezugriff über die signierte API. Releases werden zentral verwaltet.
 
-## Muss ich ein bestimmtes Client-Plugin verwenden?
-Nein. License Captain ist der Server. Sie können den API-Client nach der Spezifikation direkt in Ihr WordPress-Produkt integrieren oder ein separates Client-Plugin verwenden bzw. entwickeln. License Captain schreibt keinen bestimmten Integrationsweg vor.
+## Müssen meine Kunden ein zusätzliches Plugin installieren?
+Nein. Der License-Captain-Client wird mit Ihrem Plugin ausgeliefert. Ihre Kunden geben ihren Lizenzschlüssel direkt in Ihrem Plugin ein.
 
 ## Kann ich Release-Notizen anzeigen?
 Ja. Produkt-Changelogs können über Shortcodes und Gutenberg-Blöcke ausgegeben werden.

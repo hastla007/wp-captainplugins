@@ -28,6 +28,6 @@ Kunden können manuell verlängern. Für wiederkehrende Zahlungen steht eine opt
 [Screenshot-Platzhalter: WooCommerce-Produkt mit Lizenzintervall, Website-Limit und Entitlements zeigen; Produkt- und Kundendaten müssen fiktiv sein.]  
 [Diagramm: Kauf bis Website-Aktivierung]
 
-License Captain ist ein separat erhältliches Server-Plugin für Anbieter eigener WordPress-Produkte.
+License Captain besteht aus dem Server für Ihren WooCommerce-Shop und dem Client für Ihre Plugins.
 
 **[License Captain Features ansehen](/license-captain/features/)** · [Preise und Pläne](/license-captain/preise/)

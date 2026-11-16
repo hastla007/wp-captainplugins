@@ -51,7 +51,7 @@ Erstellen Sie Kontakt-, Angebots- und Supportformulare und bearbeiten Sie Einsen
 
 ## Ein klarer Weg vom Kern bis zu Pro
 
-Die sechs Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweitern Sie Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain oder Workflow Captain mit den passenden Pro-Funktionen. License Captain ist ein separates Server-Plugin für Anbieter eigener WordPress-Produkte.
+Die sechs Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweitern Sie Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain oder Workflow Captain mit den passenden Pro-Funktionen.
 
 **[Captain Pro vergleichen](/captain-pro/)** · **[Preise ansehen](/preise/)**
 

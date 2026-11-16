@@ -16,9 +16,6 @@ Das hängt vom Produkt ab. Voucher Captain setzt WooCommerce voraus. Pass Captai
 ## Was ist in Captain Pro enthalten?
 Jeder Pro-Plan umfasst die Funktionen des jeweiligen Add-ons. Die Planstufen unterscheiden sich nach der Zahl der Live-Websites. [Preise ansehen](/preise/)
 
-## Ist License Captain in Captain Pro enthalten?
-Nein. License Captain ist ein separat erhältliches Server-Plugin für Plugin-Hersteller und Softwareanbieter, die eigene Produkte lizenzieren möchten. Es ist nicht Bestandteil eines Captain-Pro-Plans. [License Captain entdecken](/license-captain/)
-
 ## Wie viele Websites sind pro Plan erlaubt?
 Single umfasst 1, Business 5 und Agency 25 Live-Websites.
 

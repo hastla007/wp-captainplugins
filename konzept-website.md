@@ -7,7 +7,7 @@
 
 Das zentrale Redaktionskonzept liegt in [`texte/homepage/konzept.md`](texte/homepage/konzept.md). Es legt Positionierung, Produktumfang, Zielgruppen, Preise, Seitenintentionen und Yoast-Workflow fest. Die deutschsprachigen Entwürfe sind unter [`texte/homepage/README.md`](texte/homepage/README.md) verzeichnet: Startseite, Produktübersicht, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Support, Dokumentation, Bootsschulen-Lösung, Produktseiten, Features, Pro- bzw. Paket-Seiten, FAQs und Ratgeberartikel. Die bestehenden Entwürfe enthalten bereits beschriebene Platzhalter für Produkt-Screenshots, Demos und Kundenbeispiele.
 
-Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher, Pass, Affiliate, Form, Review und Workflow Captain Pro sind kostenpflichtig; License Captain ist ein separat erhältliches Server-Plugin und nicht Bestandteil von Captain Pro. Pro-Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen; License-Captain-Preise stammen aus dem eigenen Shopkatalog.
+Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher, Pass, Affiliate, Form, Review und Workflow Captain Pro sind kostenpflichtig; License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Unsere Pro-Add-ons werden intern darüber lizenziert (der Client steckt unsichtbar im Pro-Plugin); gegenüber Pro-Kunden wird License Captain nicht erwähnt. Pro-Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen; License-Captain-Preise stammen aus dem eigenen Shopkatalog.
 
 ### Bildmaterial im Repository
 
@@ -117,7 +117,7 @@ Footer und Breadcrumbs ergänzen die globale Orientierung. Für jede Unterseite 
 2. **Sieben Aufgaben-Karten:** Gutscheine, Veranstaltungen/Buchungen, Partnerprogramm, Formulare, Bewertungen, Automatisierungen und Plugin-Lizenzen. Jede Karte führt auf die richtige Produktseite.
 3. **Auswahlhilfe:** „Was möchten Sie organisieren?“ als kurze, direkt verlinkte Auswahl; kein Formularzwang.
 4. **Produktprinzip:** WordPress-zentrierter Ablauf, WooCommerce-Abhängigkeiten korrekt gekennzeichnet, dokumentierte Integrationen.
-5. **Free, Pro und License Captain:** kostenlose Kern-Plugins und Pro-Erweiterungen klar trennen; License Captain als separat erhältliches Server-Produkt zeigen.
+5. **Free, Pro und License Captain:** kostenlose Kern-Plugins und Pro-Erweiterungen klar trennen; License Captain als eigenes Produkt (Server und Client) für Plugin-Hersteller zeigen; auf Pro-Seiten nicht erwähnen.
 6. **Belege:** freigegebene UI-Bilder oder Platzhalter. Bis echte Referenzen existieren keine leeren Testimonial-Karten veröffentlichen.
 7. **Häufige Fragen und Abschluss-CTA.**
 
@@ -138,13 +138,13 @@ Einheitliche Dramaturgie, produktspezifische Inhalte:
 7. Free-/Pro-Abgrenzung und Preisanker.
 8. kurze FAQ, Dokumentationslink und Abschluss-CTA.
 
-Die Features-Seite führt alle Fähigkeiten nach Arbeitsablauf gruppiert auf. Die Pro-Seite zeigt zuerst, für wen sich Pro eignet, dann die zusätzlichen Pro-Funktionen, Pläne und CTA. Die FAQ-Seite beantwortet konkrete Produktfragen und verlinkt weiterführende Antworten. License Captain erhält eigene Features-, Preise- und FAQ-Seiten als separat erhältliches Server-Produkt. Die Produktseite erklärt Server und Client als getrennte Integrationsbausteine: direkte API-Client-Integration im Produkt-Plugin oder Anbindung über ein separates Client-Plugin.
+Die Features-Seite führt alle Fähigkeiten nach Arbeitsablauf gruppiert auf. Die Pro-Seite zeigt zuerst, für wen sich Pro eignet, dann die zusätzlichen Pro-Funktionen, Pläne und CTA. Die FAQ-Seite beantwortet konkrete Produktfragen und verlinkt weiterführende Antworten. License Captain erhält eigene Features-, Preise- und FAQ-Seiten als eigenes Produkt aus Server und Clientdukt. Die Produktseite erklärt Server und Client als getrennte Integrationsbausteine: direkte API-Client-Integration im Produkt-Plugin oder Anbindung über ein separates Client-Plugin.
 
 ### Preise und Vergleich
 
 - Pro-Angebote zeigen ihre jeweiligen Jahrespreise und Site-Limits aus `texte/homepage/preise.md`: Voucher Captain Pro 129/229/399 €, Pass Captain Pro 169/299/549 €, Affiliate Captain Pro 229/399/699 €, Form Captain Pro 49/99/199 € (Solo/Studio/Agency) und Workflow Captain Pro 129/229/399 € (Single/Business/Agency) für 1/5/25 Websites. Review Captain Pro wird mit dem Shoppreis dargestellt, bis konkrete Beträge feststehen.
 - Website-Limits (1/5/25 Live-Websites) direkt am Tarifnamen und Preis anzeigen.
-- Deutlich erklären: Kern-Plugins kostenlos; jedes Pro-Add-on enthält dessen vollen Pro-Funktionsumfang; License Captain ist ein separates Server-Produkt und nicht in Captain Pro enthalten.
+- Deutlich erklären: Kern-Plugins kostenlos; jedes Pro-Add-on enthält dessen vollen Pro-Funktionsumfang; License Captain wird auf Pro- und Preisseiten nicht erwähnt.
 - Standard- bzw. Priority-Support entsprechend der vorhandenen Tariftexte beschriften. Keine Antwortzeit versprechen, solange nicht festgelegt.
 - Preise, Steuerbehandlung, Verlängerung und Checkout-URLs vor Veröffentlichung mit dem Shop synchronisieren. Solange offen, nicht durch Platzhalterpreise im Live-Shop publizieren.
 - Mobil: gestapelte Tarifkarten oder zugänglicher Produktselektor; niemals eine unbeschriftete, abgeschnittene Vergleichstabelle erzwingen.
@@ -164,7 +164,7 @@ Jede Seite hat eine primäre Handlung, die zum Informationsstand und tatsächlic
 | Kostenlose Kern-Plugin-Seite | „Kostenlos herunterladen“ (erst mit echter Download-URL) | „Dokumentation ansehen“ |
 | Produkt-Features | „Kostenlos starten“ oder „Pro-Funktionen ansehen“ | „Kompatibilität prüfen“ |
 | Pro-Seite / Preise | „Plan auswählen“ (mit Checkout-Link je Tarif) | „Alle Pläne vergleichen“ |
-| License Captain | „License Captain separat ansehen“ | „Features und Preise vergleichen“ |
+| License Captain | „License Captain ansehen“ | „Features und Preise vergleichen“ |
 | Workflow Captain | „Workflow Captain kostenlos starten“ | „Pro-Integrationen ansehen“ |
 | Kompatibilität / Integrationen | „Installation ansehen“ | „Passendes Produkt entdecken“ |
 | Dokumentation / Support | „Support kontaktieren“ | „Zu den häufigen Fragen“ |

@@ -17,7 +17,7 @@ Vergleichen Sie die Plugins nach Aufgabe und wählen Sie den passenden Einstieg.
 | Kontakt- und Angebotsanfragen bearbeiten | Form Captain | Formulareditor, Entries, Spamschutz und versionierte Connectoren | Nicht erforderlich |
 | Kundenbewertungen in WordPress verwalten | Review Captain | Lokale Reviews, Plattformquellen, faire Anfragen und Connector-Management | Optional; für WooCommerce-Anfragen |
 | Wiederkehrende WordPress-Abläufe automatisieren | Workflow Captain | Visueller Editor, WP-/WooCommerce-Provider, Pro-Suite-Integrationen und Webhooks | Optional |
-| Eigene WordPress-Plugins lizenzieren | License Captain | Separater WooCommerce-Lizenzserver für Lizenzen, Aktivierungen, Verlängerungen und Updates | WooCommerce erforderlich; License Captain separat erhältlich |
+| Eigene WordPress-Plugins lizenzieren | License Captain | Lizenzserver für Ihren WooCommerce-Shop plus Client für Ihre Plugins: Lizenzen, Aktivierungen, Verlängerungen und Updates | WooCommerce für den Server erforderlich |
 
 ## Kostenlos starten oder mit Pro erweitern
 
