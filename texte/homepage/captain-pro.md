@@ -1,15 +1,15 @@
 ---
 url: /captain-pro/
 seo_title: Captain Pro – Premium-Erweiterungen für WordPress-Plugins
-meta_description: Erweitern Sie Voucher, Pass, Affiliate, Review, Form und Workflow Captain mit professionellen Pro-Funktionen und Lizenzplänen für 1, 5 oder 25 Websites.
+meta_description: Erweitern Sie Voucher, Pass, Affiliate, Review, Form, Workflow und Course Captain mit Pro-Funktionen und Lizenzplänen für 1, 5 oder 25 Websites.
 focus_keyphrase: WordPress Plugin Pro Erweiterung
 ---
 
 # Wenn Ihr Betrieb mehr braucht: Captain Pro
 
-Starten Sie mit dem kostenlosen Kern-Plugin. Ergänzen Sie die Funktionen, die Ihr Unternehmen benötigt – von Gutschein- und Eventabläufen über Form-Workflows bis zu Bewertungsanfragen und Partnerintegrationen.
+Starten Sie mit dem kostenlosen Kern-Plugin. Ergänzen Sie die Funktionen, die Ihr Unternehmen benötigt – von Gutschein- und Eventabläufen über Form-Workflows und Online-Kurse bis zu Bewertungsanfragen und Partnerintegrationen.
 
-## Sechs Erweiterungen. Ein passender Plan.
+## Sieben Erweiterungen. Ein passender Plan.
 
 - **Voucher Captain Pro:** CSV-Massenbestellungen, Wallet-Pässe und SMS-Zustellung für Unternehmen mit hohem Gutscheinaufkommen.
 - **Pass Captain Pro:** E-Rechnungen, Kartenterminal, White Label, virtueller Warteraum und schreibende API für professionelle Event- und Buchungsabläufe.
@@ -17,6 +17,7 @@ Starten Sie mit dem kostenlosen Kern-Plugin. Ergänzen Sie die Funktionen, die I
 - **Review Captain Pro:** Plattformverbindungen, Sync, faire Bewertungsanfragen, Projekt-Connector-Management, Social-Proof-Widgets und Auswertungen.
 - **Form Captain Pro:** mehrstufige Formulare, sichere Uploads, verschachtelte Regeln, Webhooks, Integrationsprotokoll und PDF-Ausgaben.
 - **Workflow Captain Pro:** Captain-Suite-Provider, signierte Webhooks, erweiterte Ablauflogik, Queue-Wiederholungen und nachvollziehbare Run-Protokolle.
+- **Course Captain Pro:** Lernpfade, Drip-Inhalte, erweiterte Prüfungen, Zertifikatsdesigner, Gruppenverwaltung, Kohortenauswertungen und Kursverkauf über WooCommerce.
 
 Jeder Plan umfasst die Pro-Funktionen des jeweiligen Add-ons. Sie wählen nach der Zahl Ihrer Live-Websites.
 
@@ -26,6 +27,7 @@ Jeder Plan umfasst die Pro-Funktionen des jeweiligen Add-ons. Sie wählen nach d
 [Review Captain Pro ansehen](/review-captain/pro/)
 [Form Captain Pro ansehen](/form-captain/pro/)
 [Workflow Captain Pro ansehen](/workflow-captain/pro/)
+[Course Captain Pro ansehen](/course-captain/pro/)
 
 ## Welcher Plan passt?
 

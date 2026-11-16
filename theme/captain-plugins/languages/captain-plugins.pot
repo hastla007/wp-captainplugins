@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Captain Plugins Theme\n"
-"POT-Creation-Date: 2026-11-16 12:20+0000\n"
+"POT-Creation-Date: 2026-11-16 12:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -286,7 +286,7 @@ msgstr ""
 
 #. translators: %d: number of annual plans.
 #: inc/setup.php:323
-msgid "Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; nicht bepreiste Review-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen."
+msgid "Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; noch nicht bepreiste Review- und Course-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen."
 msgstr ""
 
 #: inc/setup.php:324

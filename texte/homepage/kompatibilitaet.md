@@ -27,6 +27,8 @@ Hier finden Sie die in den Produkt-Repositories dokumentierten Mindestversionen,
 | Review Captain Pro | Veröffentlichungsversion | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Native Synchronisierung je Plattform nur mit API-/Tarifberechtigung |
 | Workflow Captain | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | WooCommerce nur für Shop-Provider; Captain-Provider verlangen jeweils den kompatiblen Vertrag |
 | Workflow Captain Pro | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Separates Add-on; gültige Pro-Lizenz und kompatible Provider erforderlich |
+| Course Captain | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Nicht erforderlich | Eigenständiges LMS; Multisite in v1.0 nicht zugesagt |
+| Course Captain Pro | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional; für Kursverkauf erforderlich | Separates Add-on; setzt Course Captain voraus |
 | License Captain | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | 8.9 erforderlich | WooCommerce muss aktiv sein; MySQL/MariaDB mit beschreibbarem Primärserver und funktionierendem Cron |
 
 License Captain besteht aus Server und Client. Die Angaben oben gelten für den Server, der WooCommerce voraussetzt. Der Client wird in die zu lizenzierenden Plugins eingebunden.
@@ -43,19 +45,20 @@ License Captain besteht aus Server und Client. Die Angaben oben gelten für den 
 | Form Captain | Produktanforderung: WordPress 6.8 und PHP 8.3; WooCommerce optional ab 8.0. HPOS und klassischer Bestellspeicher werden je Release getestet ausgewiesen. Multisite wird in v1.0 nicht unterstützt. |
 | Review Captain | WordPress-/PHP-Mindestversionen und konkrete Testmatrix stehen in den Releaseangaben. Plattform-APIs setzen separate Zugangsdaten und die jeweiligen Anbieterrechte voraus. |
 | Workflow Captain | Konzeptanforderungen: WordPress 6.8+, PHP 8.3+; WooCommerce 8.0+ optional. HPOS sowie klassische und Blocks-Bestellungen sind Release-Gates; getestete Versionen sind vor Release zu ergänzen. |
+| Course Captain | Konzeptanforderungen: WordPress 6.8+, PHP 8.5+, MySQL 9.7 / MariaDB 12.3; WooCommerce optional. HPOS, klassischer und Block-Checkout sind Release-Gates für den Pro-Kursverkauf; getestete Versionen werden vor Release veröffentlicht. |
 | License Captain | CI-Matrix: WordPress 6.5 mit WooCommerce 8.9.3 oder 9.4.3 auf PHP 7.4 sowie aktuelle WordPress-Version mit WooCommerce 11.2.2 auf PHP 8.3; HPOS und klassische Speicherung, außerdem Multisite-Unterverzeichnis im aktuellen Teststand. |
 
 **Release-Hinweis:** Eine deklarierte Mindestversion ist nicht automatisch für jede Kombination erfolgreich getestet. License Captain deklariert WooCommerce 8.9 als Minimum; die CI-Matrix führt unter anderem 8.9.3, 9.4.3 und 11.2.2 auf. Der erfolgreiche Lauf für die Mindestlinie muss vor dem finalen Release belegt werden. Teststände sollten zur Veröffentlichung erneut mit den dann aktuellen Versionen abgeglichen werden.
 
 ## Integrationsmatrix
 
-| Integration / Funktion | Voucher Captain | Pass Captain | Affiliate Captain | Form Captain | Review Captain | Workflow Captain | License Captain |
-|---|---|---|---|---|---|---|---|
-| WooCommerce | Erforderlich: Produkte, Bestellungen, Gutscheine und Einlösung | Optional: Bestellsynchronisierung und Woo-Zahlungsablauf | Optional: WooCommerce-Verkäufe als Provisionsquelle | Optional für Shopformulare und Shopereignisse | Optional für Produktzuordnung und Bewertungsanfragen | Optional; Woo-Provider im Free-Kern | Erforderlich: Produktkatalog, Lizenzverkauf und Bestellungen |
-| HPOS / klassische Bestellspeicherung | Beides in der CI-Matrix | Beides in Kompatibilitätsmatrix | WooCommerce-Integration für aktuelle Speicherformen | Nach Release-Test ausgewiesen | Nach Release-Test ausgewiesen | Geplantes Release-Gate; Testmatrix folgt | Beides in der CI-Matrix |
-| Checkout Blocks | Unterstützt | In der Kompatibilitätsmatrix aufgeführt | Partnercode-Feld ab WooCommerce 8.9 | Keine Form-Captain-Checkout-Blocks-Integration in v1.0 | Nach Release-Test ausgewiesen | Geplantes Release-Gate; Testmatrix folgt | Dokumentiert; automatische Verlängerung primär mit offiziellem WooCommerce-Stripe-Gateway |
-| Zahlungen | WooCommerce-Zahlungsablauf | Stripe, PayPal, Mollie oder optional WooCommerce | WooCommerce als Verkaufsquelle; Auszahlungen über Zahlungsanbieter-Add-ons/Anbindungen | Keine Zahlungen in Pro v1 | Keine Zahlungsfunktion | Keine eigene Zahlungsabwicklung; nur freigegebene Aktionen | Offizielles WooCommerce-Stripe-Gateway für automatische Verlängerung; manuell weitere WooCommerce-Zahlungsarten |
-| Captain-Produkte / APIs | Pass Captain für Ticketgutscheine, Gutscheinzahlung und gemeinsamen Scanner | Voucher Captain, Webhooks, iCal, Veranstalter- und Mobile-API | Versionierter öffentlicher Vertrag für Pass Captain, Voucher Captain und Connector-Add-ons | Versionierter Vertrag zu Pass, Voucher, Affiliate und Review Captain | Versionierte Ereignisse aus Voucher, Pass, Affiliate und Form Captain | Providervertrag für Core, WooCommerce und Captain Suite; keine direkten Tabellenzugriffe | API für Lizenzprüfung, Berechtigungen und Updates der Produkt-Plugins |
+| Integration / Funktion | Voucher Captain | Pass Captain | Affiliate Captain | Form Captain | Review Captain | Workflow Captain | Course Captain | License Captain |
+|---|---|---|---|---|---|---|---|---|
+| WooCommerce | Erforderlich: Produkte, Bestellungen, Gutscheine und Einlösung | Optional: Bestellsynchronisierung und Woo-Zahlungsablauf | Optional: WooCommerce-Verkäufe als Provisionsquelle | Optional für Shopformulare und Shopereignisse | Optional für Produktzuordnung und Bewertungsanfragen | Optional; Woo-Provider im Free-Kern | Optional: Kursverkauf und Zugänge mit Pro | Erforderlich: Produktkatalog, Lizenzverkauf und Bestellungen |
+| HPOS / klassische Bestellspeicherung | Beides in der CI-Matrix | Beides in Kompatibilitätsmatrix | WooCommerce-Integration für aktuelle Speicherformen | Nach Release-Test ausgewiesen | Nach Release-Test ausgewiesen | Geplantes Release-Gate; Testmatrix folgt | Geplantes Release-Gate; Testmatrix folgt | Beides in der CI-Matrix |
+| Checkout Blocks | Unterstützt | In der Kompatibilitätsmatrix aufgeführt | Partnercode-Feld ab WooCommerce 8.9 | Keine Form-Captain-Checkout-Blocks-Integration in v1.0 | Nach Release-Test ausgewiesen | Geplantes Release-Gate; Testmatrix folgt | Geplantes Release-Gate; Testmatrix folgt | Dokumentiert; automatische Verlängerung primär mit offiziellem WooCommerce-Stripe-Gateway |
+| Zahlungen | WooCommerce-Zahlungsablauf | Stripe, PayPal, Mollie oder optional WooCommerce | WooCommerce als Verkaufsquelle; Auszahlungen über Zahlungsanbieter-Add-ons/Anbindungen | Keine Zahlungen in Pro v1 | Keine Zahlungsfunktion | Keine eigene Zahlungsabwicklung; nur freigegebene Aktionen | Keine eigene Zahlungsabwicklung; Kauf über WooCommerce | Offizielles WooCommerce-Stripe-Gateway für automatische Verlängerung; manuell weitere WooCommerce-Zahlungsarten |
+| Captain-Produkte / APIs | Pass Captain für Ticketgutscheine, Gutscheinzahlung und gemeinsamen Scanner | Voucher Captain, Webhooks, iCal, Veranstalter- und Mobile-API | Versionierter öffentlicher Vertrag für Pass Captain, Voucher Captain und Connector-Add-ons | Versionierter Vertrag zu Pass, Voucher, Affiliate und Review Captain | Versionierte Ereignisse aus Voucher, Pass, Affiliate und Form Captain | Providervertrag für Core, WooCommerce und Captain Suite; keine direkten Tabellenzugriffe | Versionierte Verträge zu Voucher, Pass, Form, Review, Affiliate und Workflow Captain; REST-API | API für Lizenzprüfung, Berechtigungen und Updates der Produkt-Plugins |
 
 ### Weitere Integrationen
 
@@ -63,6 +66,7 @@ License Captain besteht aus Server und Client. Die Angaben oben gelten für den 
 - **Pass Captain:** SMS über Twilio oder einen generischen HTTP-Dienst; Webhooks, iCal, Partner-API und Mobile-API. WooCommerce bleibt optional.
 - **Affiliate Captain:** versionierter öffentlicher Integrationsvertrag; kompatible Verkaufsquellen nutzen die bereitgestellten Schnittstellen statt direkt auf Plugin-Tabellen zuzugreifen.
 - **License Captain:** WooCommerce-Subscriptions-Produkte dürfen laut Produktdokumentation nicht als Lizenzprodukte zugeordnet werden.
+- **Course Captain:** Integrationen mit Voucher, Pass, Form, Review, Affiliate und Workflow Captain nutzen versionierte öffentliche Verträge; jedes Plugin bleibt Eigentümer seiner Daten. Ein Kauf oder Ticket-Check-in erzeugt keinen Lernerfolg.
 - **Form Captain:** Suite-Aktionen nutzen versionierte öffentliche Verträge. Eine Einsendung allein bestätigt keine Buchung, Zahlung, Partnerfreigabe oder öffentliche Review.
 - **Review Captain:** externe Quellen werden nicht gescrapt. API-/Tarifzugang, Quellenhinweise und Anbieterbedingungen bestimmen Synchronisierung und Darstellung.
 - **Workflow Captain:** Ausführung lokal in WordPress; Action Scheduler bei WooCommerce, sonst WP-Cron mit System-Cron-Empfehlung. Die genannten Mindestversionen sind keine bestätigte Testmatrix.
@@ -79,6 +83,7 @@ Drittanbieter-Zahlungsdienste benötigen ein eigenes Konto und passende Zugangsd
 | Form Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Solo/Studio: Standard; Agency: priorisiert. Umfang und Kanal stehen beim Kauf. |
 | Review Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Solo/Studio: Standard; Agency: priorisiert. Umfang und Kanal stehen beim Kauf. |
 | Workflow Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Single/Business: Standard; Agency: Priority. Umfang und Kanal stehen beim Kauf. |
+| Course Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Single/Business: Standard; Agency: Priority. Umfang und Kanal stehen beim Kauf. |
 | License Captain | Eigenes Produkt (Server und Client); Preise und Supportumfang gemäß License-Captain-Plan | Supportstufe richtet sich nach dem gewählten License-Captain-Plan. |
 
 Die Tarife ordnen **Single (1 Live-Website)** und **Business (5 Live-Websites)** dem Standard-Support zu. **Agency (25 Live-Websites)** enthält Priority-Support. Verbindliche Reaktionszeiten und abschließende kommerzielle Supportkanäle sind in den Tarifunterlagen nicht festgelegt; deshalb werden hier keine Antwortzeitversprechen gemacht.
@@ -88,6 +93,7 @@ Die Tarife ordnen **Single (1 Live-Website)** und **Business (5 Live-Websites)**
 - [Voucher Captain: Kompatibilität](https://github.com/hastla007/wp-couponmaster/blob/claude/youthful-bardeen-7ejd7a/COMPATIBILITY.md) · [Readme](https://github.com/hastla007/wp-couponmaster/blob/main/README.md)
 - [Pass Captain: Kompatibilität](https://github.com/hastla007/wp-passmaster/blob/claude/wp-plugin-analysis-todos-kvbfan/docs/COMPATIBILITY.md) · [Supportmodell](https://github.com/hastla007/wp-passmaster/blob/claude/wp-plugin-analysis-todos-kvbfan/docs/SUPPORT.md)
 - [Affiliate Captain: Readme](https://github.com/hastla007/wpaffiliatemaster/blob/main/readme.txt) · [Integrationsvertrag](https://github.com/hastla007/wpaffiliatemaster/blob/main/docs/CONTRACT.md)
+- [Course Captain: Produktkonzept](https://github.com/hastla007/wp-coursemaster/blob/main/konzept.md)
 - [License Captain: Kompatibilität](https://github.com/hastla007/wp-license/blob/main/docs/COMPATIBILITY.md)
 - [Captain Pro: Tarife](https://github.com/hastla007/captain-pro/blob/main/docs/TARIFE.md)
 

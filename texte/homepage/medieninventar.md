@@ -2,13 +2,13 @@
 
 Automatisch erzeugt mit `python3 tools/media-inventory.py`. Jede Zeile ist eine benötigte Aufnahme, Demo oder ein Kundenbeispiel aus den Website-Texten. Priorität: Startseite und Produkt-Startseiten zuerst, dann Features/Pro, danach Dokumentation und Ratgeber. Vor Veröffentlichung gilt: nur Testdaten, keine Lizenzschlüssel, Kundendaten, Bestellnummern oder echte Bankdaten.
 
-**Gesamt:** 97 Einträge.
+**Gesamt:** 112 Einträge.
 
 ## startseite
 
 | Seite | Art | Briefing | Status |
 |---|---|---|---|
-| `/` | Screenshot | Zeigen Sie die sieben Website-Produkte als übersichtliche Karten für Gutscheine, Events/Buchungen, Formulare, Kundenbewertungen, Workflow-Automatisierung, Partnerprogramme und Lizenzverwaltung; jede Karte soll Zielgruppe und CTA sichtbar machen. | offen |
+| `/` | Screenshot | Zeigen Sie die acht Website-Produkte als übersichtliche Karten für Gutscheine, Events/Buchungen, Formulare, Kundenbewertungen, Workflow-Automatisierung, Online-Kurse, Partnerprogramme und Lizenzverwaltung; jede Karte soll Zielgruppe und CTA sichtbar machen. | offen |
 | `/` | Demo | Gutscheinverkauf, Ticketbuchung oder Partnerauszahlung | offen |
 | `/` | Kundenbeispiel | nach Freigabe einsetzen | offen |
 
@@ -22,6 +22,23 @@ Automatisch erzeugt mit `python3 tools/media-inventory.py`. Jede Zeile ist eine 
 | `/affiliate-captain/` | Demo | Provision, Rückerstattung und Auszahlung | offen |
 | `/affiliate-captain/pro/` | Screenshot | Zeigen Sie das Partnerportal mit angepasstem Firmenlogo, Farben und Navigation; verwenden Sie eine neutrale Demomarke und Testdaten. | offen |
 | `/affiliate-captain/pro/` | Demo | Webhook und Auszahlung | offen |
+
+## course-captain
+
+| Seite | Art | Briefing | Status |
+|---|---|---|---|
+| `/course-captain/features/` | Screenshot | Prüfungsauswertung mit Punktzahl, Bestehensgrenze, Themenanalyse und Liste der Fehlerfragen eines fiktiven Lernenden zeigen. | offen |
+| `/course-captain/features/` | Screenshot | Pro-Auswertung einer Lerngruppe mit Fortschritt je Modul und Bestehensquote zeigen; nur fiktive Gruppen- und Personennamen verwenden. | offen |
+| `/course-captain/` | Screenshot | Kurs-Hub mit Modulen, Lektionsfortschritt, Smarttrainer-Einstieg und Prüfungskarte zeigen; ausschließlich einen neutralen Beispielkurs und fiktive Lernende verwenden. | offen |
+| `/course-captain/` | Screenshot | Kurs-Builder im WordPress-Admin mit Modulen, Lektionen und Fragenzuordnung zeigen; keine echten Personen- oder Kundendaten. | offen |
+| `/course-captain/` | Demo | Kurs anlegen, lernen und Prüfung bestehen | offen |
+| `/course-captain/installation/` | Screenshot | Einrichtungsassistent: Startseite des Assistenten mit Lernbereich-Adresse, Standardsprache und Registrierungseinstellung zeigen. Keine echten Website-Adressen oder Admin-Namen. | offen |
+| `/course-captain/installation/` | Screenshot | Kurs-Builder: Kurs mit einem Modul und zwei Lektionen in der Drag-and-drop-Gliederung zeigen; neutralen Beispielkurs verwenden. | offen |
+| `/course-captain/installation/` | Screenshot | Fragenbank: Fragenliste mit Typ, Thema, Schwierigkeitsgrad und Revisionsstand zeigen. | offen |
+| `/course-captain/installation/` | Screenshot | Mein Lernen: Kurskachel mit Fortschritt und Fortsetzen-Schaltfläche aus Sicht eines Testkontos zeigen. | offen |
+| `/course-captain/integrationen/` | Screenshot | Integrationsseite im Admin mit erkannten Plugins, Verbindungsstatus und letzter Synchronisierung zeigen; nur Testdaten verwenden. | offen |
+| `/course-captain/pro/` | Screenshot | Lernpfad-Editor mit drei verknüpften Kursen, Voraussetzungen und Drip-Regel zeigen; Beispielkurse ohne echte Kundennamen verwenden. | offen |
+| `/course-captain/pro/` | Screenshot | Zertifikatsdesigner mit fiktivem Logo, Kursname, Platzhalter-Personennamen und Nachweis-ID zeigen. | offen |
 
 ## dokumentation/workflow-captain
 
@@ -137,6 +154,9 @@ Automatisch erzeugt mit `python3 tools/media-inventory.py`. Jede Zeile ist eine 
 
 | Seite | Art | Briefing | Status |
 |---|---|---|---|
+| `/loesungen/akademien/` | Screenshot | Kurskatalog einer fiktiven Online-Akademie mit drei Kursen, Preis- und Zugangshinweis zeigen; keine echten Kunden- oder Teilnehmerdaten. | offen |
+| `/loesungen/akademien/` | Demo | Kurs kaufen, lernen, Prüfung bestehen, Nachweis erhalten | offen |
+| `/loesungen/akademien/` | Kundenbeispiel | Online-Akademie, nach Freigabe | offen |
 | `/loesungen/bootsschulen/` | Screenshot | Kalender mit Beispielkursen, buchbaren Zeitfenstern und einer Ressource zeigen; keine echten Kursteilnehmer oder internen Kontingente abbilden. | offen |
 | `/loesungen/bootsschulen/` | Demo | Buchung und Ticketprüfung | offen |
 | `/loesungen/bootsschulen/` | Kundenbeispiel | Bootsschule, nach Freigabe | offen |
@@ -145,7 +165,7 @@ Automatisch erzeugt mit `python3 tools/media-inventory.py`. Jede Zeile ist eine 
 
 | Seite | Art | Briefing | Status |
 |---|---|---|---|
-| `/produkte/` | Screenshot | Produktvergleich mit den sieben Website-Produkten, Einsatzbereich, WooCommerce-Abhängigkeit und passendem CTA zeigen. | offen |
+| `/produkte/` | Screenshot | Produktvergleich mit den acht Website-Produkten, Einsatzbereich, WooCommerce-Abhängigkeit und passendem CTA zeigen. | offen |
 
 ## ueber
 

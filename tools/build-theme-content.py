@@ -28,6 +28,7 @@ PRODUCT_NAMES = {
     "form-captain": "Form Captain",
     "review-captain": "Review Captain",
     "workflow-captain": "Workflow Captain",
+    "course-captain": "Course Captain",
 }
 
 

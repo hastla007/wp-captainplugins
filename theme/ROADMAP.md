@@ -19,7 +19,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 
 - [x] `design/konzept.md`, `konzept-website.md`, `texte/homepage/` und `design/` erfassen.
 - [x] Vorhandene Seitenrollen und Navigation als Grundlage übernehmen.
-- [x] Produkte korrekt benennen: sechs kostenlose Kern-Plugins, sechs separate Captain-Pro-Add-ons und License Captain als eigenes Produkt (Server und Client) für Plugin-Hersteller; Pro-Add-ons werden intern über License Captain lizenziert, ohne dass Pro-Kunden davon erfahren.
+- [x] Produkte korrekt benennen: sieben kostenlose Kern-Plugins (inkl. Course Captain seit 16.11.2026), sieben separate Captain-Pro-Add-ons und License Captain als eigenes Produkt (Server und Client) für Plugin-Hersteller; Pro-Add-ons werden intern über License Captain lizenziert, ohne dass Pro-Kunden davon erfahren.
 - [x] Bestehende Pläne und Preise nicht im Theme fest verdrahten; Preise kommen aus Shop-/Seiteninhalten.
 - [ ] Für jeden Produktbereich finale URLs, Downloadziele, Checkoutziele und Supportwege mit der Website-Konfiguration abgleichen.
 - [ ] Vor Release WordPress-, PHP-, WooCommerce- und Plugin-Mindestversionen anhand der dann freigegebenen Releases bestätigen. *(PHP 8.5, MySQL 9.7 und MariaDB 12.3 am 16.11.2026 entschieden und in Theme und Texten umgesetzt; Bestätigung gegen die finalen Releases offen.)*
@@ -56,7 +56,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Kleine Theme-CSS-Datei für responsive Layouts und zentrale Komponenten anlegen.
 - [x] Kopfbereich mit Navy-Fläche, hellem Menütext und Gold-CTA an die vorhandenen Website-Mockups angleichen.
 - [x] Startseiten-Hero als zweispaltigen Markenauftritt mit Captain-Illustration und mobil gestapelter Darstellung umsetzen.
-- [x] Startseiten-Produktübersicht als sieben responsive, wiedererkennbare Produktkarten ausgeben.
+- [x] Startseiten-Produktübersicht als acht responsive, wiedererkennbare Produktkarten ausgeben.
 - [x] Design-Tokens, Karten, Buttons, Produktseiten, FAQ, Preisübersicht und Medienplatzhalter visuell an die Referenzbilder angleichen.
 - [ ] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen. *(Theme-ZIP installiert und aktiv; alle 3 037 Blöcke aus Templates, Parts, Patterns und Seiten bestehen die Gutenberg-Blockvalidierung. Sichtprüfung im Site Editor offen.)*
 - [x] Navigationsblock, Menüzustände, Fokusreihenfolge und Tastaturbedienung im echten Browser prüfen. *(Playwright: Untermenü per Klick/Escape, Mobil- und Tablet-Overlay, Skip-Link, FAQ per Tastatur – alle Tests bestanden.)*
@@ -65,7 +65,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 ## Phase 5 – Komponenten und Vorlagen
 
 - [x] Startseiten-Hero-Pattern mit B2B-Versprechen und klarer nächster Handlung bereitstellen.
-- [x] Produktkarten-Pattern für die sieben Website-Produkte bereitstellen.
+- [x] Produktkarten-Pattern für die acht Website-Produkte bereitstellen.
 - [x] Abschluss-CTA-Pattern bereitstellen.
 - [x] Patterns für Produkt-Hero, Featuregruppen, Workflow, Screenshot mit erklärendem Platzhalter, Free-/Pro-Vergleich, Preispläne, Kompatibilität, FAQ und Ressourcen ergänzen.
 - [x] Inhaltsbereiche nach H2 als breite, abwechselnd hinterlegte Gutenberg-Sektionen komponieren; Startseiten-Einstieg als Hero und Medien-Briefings als redaktionelle Karten ausgeben.
@@ -113,7 +113,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [ ] Tastaturbedienung, sichtbaren Fokus, Screenreader-Namen, Kontraste, Zoom bis 200 %, reduzierte Bewegung und Formularfehlerzustände prüfen. *(Automatisiert erledigt: axe-core ohne Verstöße auf 14 Seitentypen bei 100 % und 200 % Zoom, reduzierte Bewegung greift. Offen: manueller Screenreader-Durchlauf, Formularfehler mit echtem Shop.)*
 - [x] Sprunglink zum Hauptinhalt und kontraststarke, doppelt sichtbare Fokusdarstellung in die Theme-Vorlagen integrieren.
 - [ ] HTML-Semantik, Heading-Hierarchie, Linktexte, Bildalternativen und Skip-Link in einem Screenreader-/Browserdurchlauf abnehmen. *(Automatisiert: je Seite genau eine H1, keine Hierarchiesprünge, keine leeren Links, Skip-Link; Screenreader-Durchlauf offen.)*
-- [ ] Layout mit und ohne WooCommerce, Yoast sowie den sechs kostenlosen Kern-Plugins und License Captain prüfen; degradierte Zustände verständlich halten.
+- [ ] Layout mit und ohne WooCommerce, Yoast sowie den sieben kostenlosen Kern-Plugins und License Captain prüfen; degradierte Zustände verständlich halten.
 - [x] Ladegewicht, Bildgrößen, Caching-Verhalten und Core Web Vitals mit realistischem Seiteninhalt bewerten. *(8–11 Requests, ca. 180–230 KB unkomprimiert, JS nur Core-Navigation; Core Web Vitals auf Staging messen.)*
 - [ ] SEO-Snippets, Social-Previews, Sitemap, robots/noindex und Weiterleitungen in Staging prüfen.
 - [ ] Rechtliche Pflichtseiten, Datenschutz-/Cookie-Einbindung und Formularkonfiguration mit Verantwortlichen abgleichen. *(Impressum und Datenschutz liegen als Entwurfsvorlagen mit Betreiber-Platzhaltern bereit.)*

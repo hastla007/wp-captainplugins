@@ -1,7 +1,7 @@
 ---
 url: /support/
 seo_title: Support für Captain Plugins – Hilfe und Kontakt
-meta_description: Finden Sie Dokumentation, Installationshilfen und Support für Voucher, Pass, Affiliate, Form, Review, Workflow und License Captain.
+meta_description: Finden Sie Dokumentation, Installationshilfen und Support für Voucher, Pass, Affiliate, Form, Review, Workflow, Course und License Captain.
 focus_keyphrase: WordPress Plugin Support
 ---
 
@@ -19,6 +19,7 @@ Starten Sie mit den [Installationsanleitungen](/dokumentation/installation/), de
 - [Form Captain: Formulare und Einträge](/form-captain/faq/)
 - [Review Captain: Bewertungen und Quellen](/review-captain/faq/)
 - [Workflow Captain: Automationen und Integrationen](/workflow-captain/faq/)
+- [Course Captain: Kurse, Prüfungen und Zugänge](/course-captain/faq/)
 - [License Captain: Lizenzen und Updates](/license-captain/faq/)
 
 ## Support in Captain Pro
@@ -33,6 +34,8 @@ Starten Sie mit den [Installationsanleitungen](/dokumentation/installation/), de
 | Form/Review Agency | 25 | Priorisiert |
 | Workflow Captain Single/Business | 1 / 5 | Standard |
 | Workflow Captain Agency | 25 | Priority |
+| Course Captain Single/Business | 1 / 5 | Standard |
+| Course Captain Agency | 25 | Priority |
 
 Die Supportstufe ist Bestandteil des jeweiligen Captain-Pro-Plans. Für License Captain richtet sich der Supportumfang nach dem gewählten License-Captain-Plan. Für die kostenlosen Kern-Plugins stehen Dokumentation und die jeweils veröffentlichten öffentlichen Supportkanäle zur Verfügung.
 

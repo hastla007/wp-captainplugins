@@ -63,7 +63,7 @@ function captain_plugins_content_template_slug( array $entry ): string {
 		return 'page-pricing';
 	}
 	// Overviews and wide comparison matrices need the full content width.
-	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen', 'kompatibilitaet', 'integrationen' ), true ) || preg_match( '#/(kompatibilitaet|integrationen)$#', $path ) ) {
+	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen', 'kompatibilitaet', 'integrationen' ), true ) || preg_match( '#/(kompatibilitaet|integrationen)$#', $path ) || 0 === strpos( $path, 'loesungen/' ) ) {
 		return 'page-wide';
 	}
 	return 'page-resource';

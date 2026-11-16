@@ -285,8 +285,8 @@ msgstr "3. Create WooCommerce products"
 
 #. translators: %d: number of annual plans.
 #: inc/setup.php:323
-msgid "Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; nicht bepreiste Review-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen."
-msgstr "The assistant can create the %d currently defined annual Captain Pro plans as virtual, hidden WooCommerce drafts and map them in License Captain. All Captain Pro editions with defined prices are created; Review Captain plans without a price are excluded. No products are published, no shop taxes are changed and no direct-download files are added."
+msgid "Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; noch nicht bepreiste Review- und Course-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen."
+msgstr "The assistant can create the %d currently defined annual Captain Pro plans as virtual, hidden WooCommerce drafts and map them in License Captain. All Captain Pro editions with defined prices are created; Review Captain and Course Captain plans without a price yet are excluded. No products are published, no shop taxes are changed and no direct-download files are added."
 
 #: inc/setup.php:324
 msgid "Lizenzprodukt"

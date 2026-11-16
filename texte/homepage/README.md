@@ -13,6 +13,7 @@ Dieses Verzeichnis enthält die deutschen Website-Texte für Captain Plugins. Da
 - [Affiliate Captain](affiliate-captain/index.md), [Features](affiliate-captain/features.md), [Pro](affiliate-captain/pro.md), [FAQ](affiliate-captain/faq.md)
 - [Form Captain](form-captain/index.md), [Features](form-captain/features.md), [Pro](form-captain/pro.md), [FAQ](form-captain/faq.md), [Installation](form-captain/installation.md), [Kompatibilität](form-captain/kompatibilitaet.md), [Integrationen](form-captain/integrationen.md)
 - [Review Captain](review-captain/index.md), [Features](review-captain/features.md), [Pro](review-captain/pro.md), [FAQ](review-captain/faq.md), [Installation](review-captain/installation.md), [Kompatibilität](review-captain/kompatibilitaet.md), [Integrationen](review-captain/integrationen.md)
+- [Course Captain](course-captain/index.md), [Features](course-captain/features.md), [Pro](course-captain/pro.md), [FAQ](course-captain/faq.md), [Installation](course-captain/installation.md), [Kompatibilität](course-captain/kompatibilitaet.md), [Integrationen](course-captain/integrationen.md)
 - [Workflow Captain](workflow-captain/index.md), [Features](workflow-captain/features.md), [Pro](workflow-captain/pro.md), [FAQ](workflow-captain/faq.md), [Installation](workflow-captain/installation.md), [Kompatibilität](workflow-captain/kompatibilitaet.md), [Integrationen](workflow-captain/integrationen.md)
 - [License Captain](license-captain/index.md), [Features](license-captain/features.md), [Preise und Pläne](license-captain/preise.md), [FAQ](license-captain/faq.md)
 - [Vergleich](vergleich.md) → /vergleich/
@@ -25,6 +26,7 @@ Dieses Verzeichnis enthält die deutschen Website-Texte für Captain Plugins. Da
 - [Übergreifende FAQ](faq.md) → /faq/
 - [Medieninventar](medieninventar.md) – alle Screenshot-, Demo- und Diagramm-Platzhalter (erzeugt mit `tools/media-inventory.py`)
 - [Lösung für Bootsschulen](loesungen/bootsschulen.md) → /loesungen/bootsschulen/
+- [Lösung für Online-Akademien und Weiterbildung](loesungen/akademien.md) → /loesungen/akademien/
 
 ## SEO-Ratgeberentwürfe
 
@@ -48,6 +50,9 @@ Je Produktbereich sind drei Ratgeber mit eigener Suchintention angelegt:
 - [Google-Bewertungen in WordPress anzeigen](ratgeber/review-captain/google-bewertungen-in-wordpress-anzeigen.md)
 - [App-Store-Bewertungen auf der Website zeigen](ratgeber/review-captain/app-store-bewertungen-auf-website.md)
 - [Bewertungsanfragen fair automatisieren](ratgeber/review-captain/bewertungsanfragen-fair-automatisieren.md)
+- [Online-Kurs in WordPress erstellen](ratgeber/course-captain/online-kurs-wordpress-erstellen.md)
+- [Prüfungsvorbereitung online: Wiederholung mit System](ratgeber/course-captain/pruefungsvorbereitung-wiederholung.md)
+- [Mitarbeiterschulung und Onboarding mit WordPress](ratgeber/course-captain/mitarbeiterschulung-onboarding.md)
 - [WordPress-Automatisierung ohne externe Cloud planen](ratgeber/workflow-captain/wordpress-automatisierung-ohne-cloud.md)
 - [WooCommerce-Bestellungen automatisieren](ratgeber/workflow-captain/woocommerce-bestellungen-automatisieren.md)
 - [Captain-Plugins mit Workflows verbinden](ratgeber/workflow-captain/captain-plugins-verbinden.md)
@@ -65,6 +70,7 @@ Je Produktbereich sind drei Ratgeber mit eigener Suchintention angelegt:
 - [Affiliate Captain](dokumentation/installation/affiliate-captain.md)
 - [Form Captain](form-captain/installation.md)
 - [Review Captain](review-captain/installation.md)
+- [Course Captain](course-captain/installation.md)
 - [Workflow Captain](workflow-captain/installation.md)
 - [License Captain](dokumentation/installation/license-captain.md)
 - [Captain Pro](dokumentation/installation/captain-pro.md)

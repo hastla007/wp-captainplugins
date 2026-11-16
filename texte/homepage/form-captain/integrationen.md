@@ -29,6 +29,10 @@ Ein Partnerbewerbungsformular kann Angaben zur Prüfung erfassen. Eine Übergabe
 
 Mit Review Captain Pro kann ein Formular eine lokale Review zur Moderation übergeben. Feldzuordnung und Herkunft werden ausgewiesen. Neue Bewertungen bleiben pending und unverified; eine Review-Anfrage wird nicht automatisch aus einer Formulareinsendung versendet.
 
+## Course Captain
+
+Anmeldeformulare, Kursbewerbungen, Feedbackbögen und Tutoraufgaben lassen sich mit Course Captain verbinden. Form Captain bleibt Eigentümer der Einsendung; Course Captain vergibt einen Kurszugang erst nach einer geprüften Übergabe. Die Verbindung steht bereit, sobald beide Plugins den passenden Vertrag in kompatibler Version veröffentlichen.
+
 ## Technischer Integrationsstatus
 
 Der öffentliche Form-Captain-Vertrag ermöglicht versionierte Integrationen. Separate WordPress-Connector-Plugins können projektspezifische Aktionen ergänzen, ohne den Form-Captain-Kern zu verändern. Entwicklerdokumentation und ein Referenz-Connector zeigen, wie Aktionen, Feldfreigaben und Wiederholungen umgesetzt werden. Administratoren aktivieren Connectoren ausdrücklich und wählen pro Formular die freigegebenen Felder und Aktionen. Externe Ausführung erfolgt nach dem Speichern des Eintrags; Fehler lassen den Entry bestehen und sind nachvollziehbar.

@@ -11,7 +11,7 @@ Mehrere Plugins in einem Geschäftsprozess einzusetzen, sollte nicht bedeuten, i
 
 ## Das Quellplugin bleibt maßgeblich
 
-Voucher Captain verwaltet Gutscheine, Pass Captain Tickets und Einlass, Affiliate Captain Partner und Provisionen, Form Captain Einsendungen, Review Captain Reviews und License Captain Softwarelizenzen. Workflow Captain koordiniert die freigegebenen Übergaben, berechnet aber keine Fachlogik nach.
+Voucher Captain verwaltet Gutscheine, Pass Captain Tickets und Einlass, Affiliate Captain Partner und Provisionen, Form Captain Einsendungen, Review Captain Reviews, Course Captain Kurse und Lernfortschritt und License Captain Softwarelizenzen. Workflow Captain koordiniert die freigegebenen Übergaben, berechnet aber keine Fachlogik nach.
 
 ## Verträge versionieren
 

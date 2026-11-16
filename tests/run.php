@@ -35,7 +35,7 @@ function make_page( array $args ): int {
 check( 'Theme aktiv', 'captain-plugins' === get_stylesheet(), get_stylesheet() );
 
 echo "Vorlagenzuordnung\n";
-$expect = array( 'voucher-captain' => 'page-product', 'workflow-captain' => 'page-product', 'preise' => 'page-pricing', 'license-captain/preise' => 'page-pricing', 'kompatibilitaet' => 'page-wide', 'form-captain/integrationen' => 'page-wide', 'faq' => 'page-resource', 'ratgeber/voucher-captain/firmenbestellungen-csv' => 'page-resource', '' => '' );
+$expect = array( 'voucher-captain' => 'page-product', 'workflow-captain' => 'page-product', 'preise' => 'page-pricing', 'license-captain/preise' => 'page-pricing', 'kompatibilitaet' => 'page-wide', 'form-captain/integrationen' => 'page-wide', 'loesungen/akademien' => 'page-wide', 'faq' => 'page-resource', 'ratgeber/voucher-captain/firmenbestellungen-csv' => 'page-resource', '' => '' );
 foreach ( $expect as $path => $template ) {
 	$got = captain_plugins_content_template_slug( array( 'path' => $path ) );
 	check( "„/{$path}“ → " . ( $template ?: 'keine' ), $got === $template, $got );

@@ -6,10 +6,10 @@ Automatisch erzeugt mit `python3 tools/release-blockers.py`. Alles hier muss vor
 
 | Art | Anzahl |
 |---|---:|
-| Fehlendes Linkziel | 25 |
+| Fehlendes Linkziel | 30 |
 | Betreiberangabe | 19 |
-| Redaktioneller Vorbehalt | 12 |
-| Medienplatzhalter | 97 |
+| Redaktioneller Vorbehalt | 13 |
+| Medienplatzhalter | 112 |
 
 Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninventar.md).
 
@@ -17,8 +17,8 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 | Ziel | Vorkommen |
 |---|---:|
-| Download-URL | 18 |
-| Checkout-URL | 4 |
+| Download-URL | 22 |
+| Checkout-URL | 5 |
 | License-Captain-Shop-URL | 1 |
 | Checkout-Link je Plan ergänzen: Checkout-URL | 1 |
 | Supportkontakt oder Formular ergänzen: Support-URL | 1 |
@@ -27,6 +27,7 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/`
 
+- **Fehlendes Linkziel:** „Kostenlos starten“ → Download-URL
 - **Fehlendes Linkziel:** „Kostenlos starten“ → Download-URL
 - **Fehlendes Linkziel:** „Kostenlos starten“ → Download-URL
 - **Fehlendes Linkziel:** „Kostenlos starten“ → Download-URL
@@ -39,6 +40,18 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 - **Fehlendes Linkziel:** „Affiliate Captain Pro auswählen“ → Checkout-URL
 - **Fehlendes Linkziel:** „Kostenlosen Kern starten“ → Download-URL
+
+### `/course-captain/`
+
+- **Fehlendes Linkziel:** „Course Captain kostenlos starten“ → Download-URL
+
+### `/course-captain/features/`
+
+- **Fehlendes Linkziel:** „Course Captain kostenlos starten“ → Download-URL
+
+### `/course-captain/pro/`
+
+- **Fehlendes Linkziel:** „Course Captain Pro auswählen“ → Checkout-URL
 
 ### `/datenschutz/`
 
@@ -78,6 +91,7 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 ### `/kompatibilitaet/`
 
 - **Redaktioneller Vorbehalt:** HPOS sowie klassische und Blocks-Bestellungen sind Release-Gates; getestete Versionen sind vor Release zu ergänzen.
+- **Redaktioneller Vorbehalt:** HPOS, klassischer und Block-Checkout sind Release-Gates für den Pro-Kursverkauf; getestete Versionen werden vor Release veröffentlicht.
 - **Redaktioneller Vorbehalt:** Der erfolgreiche Lauf für die Mindestlinie muss vor dem finalen Release belegt werden.
 - **Redaktioneller Vorbehalt:** | Voucher Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support.
 - **Redaktioneller Vorbehalt:** | Affiliate Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support.
@@ -103,6 +117,7 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/produkte/`
 
+- **Fehlendes Linkziel:** „Kostenlos starten“ → Download-URL
 - **Fehlendes Linkziel:** „Kostenlos starten“ → Download-URL
 - **Fehlendes Linkziel:** „Kostenlos starten“ → Download-URL
 

@@ -1,7 +1,7 @@
 ---
 url: /produkte/
 seo_title: Captain-Plugins im Überblick: Produkte für WordPress
-meta_description: Vergleichen Sie Voucher, Pass, Affiliate, Form, Review und Workflow Captain sowie License Captain nach Geschäftsaufgabe, Funktionen und Voraussetzungen.
+meta_description: Vergleichen Sie Voucher, Pass, Affiliate, Form, Review, Workflow und Course Captain sowie License Captain nach Geschäftsaufgabe, Funktionen und Voraussetzungen.
 focus_keyphrase: WordPress-Plugins für Unternehmen vergleichen
 ---
 
@@ -17,6 +17,7 @@ Wählen Sie die Lösung, die zu Ihrem Geschäftsprozess passt. Die Kern-Plugins 
 | Form Captain | Unternehmen, Shops, Veranstalter und Agenturen | Formulare, Entries und versionierte Suite-/Projekt-Connectoren | Nicht erforderlich |
 | Review Captain | Shops, lokale Betriebe, App-Anbieter und Agenturen | Lokale und externe Reviews, faire Anfragen und Connector-Management | Optional; für Shop-Automationen |
 | Workflow Captain | WooCommerce-Shops, Unternehmen und Agenturen | WordPress-/WooCommerce-Workflows, Captain-Integrationen, Webhooks und Run-Protokolle | Optional; für Shop-Provider |
+| Course Captain | Online-Akademien, Coaches, Weiterbildung und Kursanbieter | Kurse, Lektionen, Fragenbank, Smarttrainer, Quiz, Prüfungen und Lernnachweise | Nicht erforderlich; für Kursverkauf mit Pro |
 | License Captain | Plugin-Hersteller, Softwareanbieter und Agenturen | Eigener Lizenzshop, Aktivierungen, Verlängerungen und Updatebereitstellung | Erforderlich für den License-Captain-Lizenzshop |
 
 ## Voucher Captain
@@ -55,11 +56,17 @@ Automatisieren Sie wiederkehrende WordPress- und WooCommerce-Abläufe mit Ereign
 
 [Features ansehen](/workflow-captain/features/) · [Workflow Captain Pro](/workflow-captain/pro/) · [FAQ](/workflow-captain/faq/)
 
+## Course Captain
+
+Bauen Sie Online-Kurse, Schulungen und Prüfungsvorbereitungen mit Modulen, Lektionen, Fragenbank, Smarttrainer, Quiz und Prüfungsmodus auf. Lernende erhalten einen mobilen Lernraum mit Fortschritt und Nachweisen; Course Captain Pro ergänzt Lernpfade, Zertifikatsdesigner, Gruppenverwaltung und Kursverkauf über WooCommerce.
+
+[Features ansehen](/course-captain/features/) · [Course Captain Pro](/course-captain/pro/) · [Kostenlos starten]([Download-URL])
+
 ## License Captain
 
 Verkaufen Sie Lizenzen für eigene WordPress-Plugins und Softwareprodukte über WooCommerce. Verwalten Sie Website-Aktivierungen, Verlängerungen, Berechtigungen und Updates mit einem eigenen Lizenzserver. License Captain besteht aus Server und Client: Der Server läuft in Ihrem Shop, der Client kommt in Ihre Plugins.
 
 [Features ansehen](/license-captain/features/) · [Preise und Pläne](/license-captain/preise/) · [FAQ](/license-captain/faq/)
 
-[Screenshot-Platzhalter: Produktvergleich mit den sieben Website-Produkten, Einsatzbereich, WooCommerce-Abhängigkeit und passendem CTA zeigen.]  
+[Screenshot-Platzhalter: Produktvergleich mit den acht Website-Produkten, Einsatzbereich, WooCommerce-Abhängigkeit und passendem CTA zeigen.]  
 [CTA: Alle Preise vergleichen](/preise/)

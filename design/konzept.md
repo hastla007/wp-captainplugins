@@ -250,7 +250,7 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 ### C. Inhaltsvorlagen aufsetzen
 
 - [x] Startseite und Produktübersicht aus den bestehenden Markdown-Texten übertragen.
-- [x] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain anwenden.
+- [x] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain, Course Captain und License Captain anwenden.
 - [x] Unterseiten Features, Pro-/Preise und FAQ in einheitliche Templates überführen.
 - [x] Preis-/Vergleichsansicht mit zentralem Tarifinhalt und mobilen Alternativen einrichten.
 - [x] Dokumentation, Support, Kompatibilität, Integrationen, Bootsschulen-Lösung und Ratgeber-Templates übertragen.
@@ -314,9 +314,9 @@ Die folgenden Bilder übersetzen das Konzept in mögliche Seitenansichten. Sie s
 
 ### Produktübersicht – Desktop
 
-![Aktualisiertes Produktübersichts-Mockup mit allen sieben Website-Produkten](mockups/products-overview-all-plugins.jpg)
+![Produktübersichts-Mockup mit sieben Website-Produkten (vor Aufnahme von Course Captain)](mockups/products-overview-all-plugins.jpg)
 
-Das aktualisierte Mockup zeigt Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain. Es ist eine visuelle Konzeptvorschau; Produkttexte, Download- und Checkout-Ziele werden aus den final freigegebenen Website-Inhalten übernommen.
+Das Mockup zeigt Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain; Course Captain ist am 16. November 2026 hinzugekommen und im Theme bereits als achte Produktkarte umgesetzt. Es ist eine visuelle Konzeptvorschau; Produkttexte, Download- und Checkout-Ziele werden aus den final freigegebenen Website-Inhalten übernommen.
 
 ![Frühere Version des Produktübersichts-Mockups](mockups/products-overview-desktop.jpg)
 
@@ -381,7 +381,7 @@ Vor dem Theme-Scaffold wird eine konkrete Testmatrix aus den aktiven Repo-Mindes
 
 1. Block-Checkout und Classic-Checkout mit den vom Shop tatsächlich verwendeten Zahlungs- und Lizenzabläufen.
 2. Produktwahl → Warenkorb → Checkout → Bestellbestätigung → Konto → Lizenzaktivierung → Pro-Update.
-3. Öffentliche Frontendansichten der sieben Website-Produkte mit dem Theme, inklusive mobil und bei leerem/Fehlerzustand.
+3. Öffentliche Frontendansichten der acht Website-Produkte mit dem Theme, inklusive mobil und bei leerem/Fehlerzustand.
 4. Yoast-Breadcrumbs/Metadaten sowie Sprachumschaltung ohne doppelte Ausgabe.
 5. Site-Editor-Änderungen vor und nach Theme-Update; Inhalte bleiben erhalten und Updates setzen keine redaktionellen Anpassungen zurück.
 6. Installierbares Theme-ZIP, Theme-Versionierung, Änderungsprotokoll, Staging-Abnahme und Rollbackweg.

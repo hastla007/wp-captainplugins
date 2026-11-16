@@ -16,6 +16,7 @@ const items = [
  ['form-captain','form','Form Captain','Formulare erstellen und Einsendungen verwalten','thumbs'],
  ['review-captain','review','Review Captain','Kundenbewertungen sammeln und zeigen','thumbs'],
  ['workflow-captain','workflow','Workflow Captain','WordPress- und WooCommerce-Abläufe automatisieren','thumbs'],
+ ['course-captain','course','Course Captain','Online-Kurse, Training und Prüfungen in WordPress','thumbs'],
  ['license-captain','license','License Captain','Lizenzen und Updates für Ihre WordPress-Plugins','arms'],
  ['captain-pro','anchor','Captain Pro','Mehr Funktionen für Ihre Captain-Plugins','pointing'],
 ];

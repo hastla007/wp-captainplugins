@@ -17,6 +17,7 @@ Vergleichen Sie die Plugins nach Aufgabe und wählen Sie den passenden Einstieg.
 | Kontakt- und Angebotsanfragen bearbeiten | Form Captain | Formulareditor, Entries, Spamschutz und versionierte Connectoren | Nicht erforderlich |
 | Kundenbewertungen in WordPress verwalten | Review Captain | Lokale Reviews, Plattformquellen, faire Anfragen und Connector-Management | Optional; für WooCommerce-Anfragen |
 | Wiederkehrende WordPress-Abläufe automatisieren | Workflow Captain | Visueller Editor, WP-/WooCommerce-Provider, Pro-Suite-Integrationen und Webhooks | Optional |
+| Online-Kurse, Schulungen und Prüfungsvorbereitung anbieten | Course Captain | Kurs-Builder, Fragenbank, Smarttrainer, Quiz/Prüfung, Gruppen und Lernnachweise | Nicht erforderlich; für Kursverkauf mit Pro |
 | Eigene WordPress-Plugins lizenzieren | License Captain | Lizenzserver für Ihren WooCommerce-Shop plus Client für Ihre Plugins: Lizenzen, Aktivierungen, Verlängerungen und Updates | WooCommerce für den Server erforderlich |
 
 ## Kostenlos starten oder mit Pro erweitern
@@ -28,6 +29,12 @@ Die kostenlosen Kern-Plugins decken die zentralen Arbeitsabläufe ab. Captain Pr
 Workflow Captain Free verbindet WordPress und optional WooCommerce. Pro ergänzt die Captain-Suite-Provider, sichere Webhooks und erweiterte Ablaufsteuerung. Für jeden Suite-Provider muss das jeweilige Fachplugin einen kompatiblen Vertrag bereitstellen.
 
 [Workflow Captain entdecken](/workflow-captain/) · [Workflow Captain Pro](/workflow-captain/pro/)
+
+## Online-Kurse und Schulungen
+
+Course Captain Free enthält Kurs-Builder, Fragenbank, Smarttrainer, Übungs- und Prüfungsmodus, Gruppen-Grundfunktionen und Lernnachweise. Pro ergänzt Lernpfade, Drip-Inhalte, Zertifikatsdesigner, Gruppenverwaltung, Auswertungen und Kursverkauf über WooCommerce.
+
+[Course Captain entdecken](/course-captain/) · [Course Captain Pro](/course-captain/pro/)
 
 ## Formulare oder Bewertungen ergänzen
 

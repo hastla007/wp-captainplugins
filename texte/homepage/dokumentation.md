@@ -23,6 +23,7 @@ Beginnen Sie mit der [allgemeinen Installationsanleitung](/dokumentation/install
 - [Form Captain installieren](/form-captain/installation/)
 - [Review Captain installieren](/review-captain/installation/)
 - [Workflow Captain installieren](/workflow-captain/installation/)
+- [Course Captain installieren](/course-captain/installation/)
 - [License Captain installieren](/dokumentation/installation/license-captain/)
 - [Captain-Pro-Erweiterung installieren](/dokumentation/installation/captain-pro/)
 
@@ -33,6 +34,7 @@ Beginnen Sie mit der [allgemeinen Installationsanleitung](/dokumentation/install
 - **Affiliate Captain:** Partner freischalten, Provisionsregeln definieren, Empfehlungen prüfen und Auszahlungen vorbereiten.
 - **Form Captain:** Formulare erstellen, Entries verwalten und Pro-Workflows sowie Suite-Verbindungen einrichten. [Form-Captain-Dokumentation](/dokumentation/form-captain/)
 - **Review Captain:** Quellen verbinden, Reviews moderieren und Widgets bzw. Bewertungsanfragen einrichten. [Review-Captain-Dokumentation](/dokumentation/review-captain/)
+- **Course Captain:** Kurse, Lektionen und Fragenbank aufbauen, Quizzes und Prüfungen konfigurieren, Zugänge, Gruppen und Nachweise verwalten. [Course-Captain-Dokumentation](/dokumentation/course-captain/)
 - **Workflow Captain:** Trigger und Aktionen verbinden, Workflows testen, Pro-Provider konfigurieren und Runs nachvollziehen. [Workflow-Captain-Dokumentation](/dokumentation/workflow-captain/)
 - **License Captain:** Lizenzprodukte zuordnen, Aktivierungslimits setzen, Verlängerungen steuern und Updates bereitstellen.
 

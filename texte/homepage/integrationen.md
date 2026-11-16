@@ -16,8 +16,9 @@ Die Captain-Plugins lassen sich einzeln einsetzen und über dokumentierte Schnit
 | Voucher Captain | WooCommerce-Produkte, Bestellungen, HPOS und Blocks-Checkout; Mehrsprachigkeit mit WPML/WCML; Mehrwährung über unterstützte Erweiterungen; Gutscheinzahlung, Ticketgutscheine und gemeinsamer Scanner mit Pass Captain |
 | Pass Captain | Direkte Zahlungen mit Stripe, PayPal oder Mollie; optional WooCommerce Classic- oder Blocks-Checkout; Voucher Captain; Affiliate Captain; Twilio oder generischer HTTP-Anbieter für SMS; iCal-Feeds, signierte Webhooks, Veranstalter- und Mobile-API |
 | Affiliate Captain | Eigenständiges Partnerprogramm; WooCommerce optional; versionierter Integrationsvertrag für Verkaufsquellen wie Pass Captain und Voucher Captain sowie weitere kompatible Connectors |
-| Form Captain | Eigenständige Formulare und Entries; WooCommerce optional; versionierte Verbindungen zu Pass, Voucher, Affiliate, Review und Workflow Captain sowie separaten Projekt-Connectoren |
+| Form Captain | Eigenständige Formulare und Entries; WooCommerce optional; versionierte Verbindungen zu Pass, Voucher, Affiliate, Review, Workflow und Course Captain sowie separaten Projekt-Connectoren |
 | Review Captain | Google, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play über offizielle APIs, Widgets, Profil-Links oder manuelle Kuration; faire Anfragen nach bestätigtem Erlebnis; Workflow Captain und Pro-Manager für lokale Projekt-Connectoren |
+| Course Captain | Eigenständiges LMS ohne Pflicht-Plugins; in Pro WooCommerce-Kurszugänge nach bestätigter Zahlung, Kursgutscheine über Voucher Captain, Termine über Pass Captain, Formulare, Kursbewertungen, Provisionen und Workflow-Ereignisse über die jeweiligen Captain-Plugins |
 | Workflow Captain | WordPress Core und WooCommerce im kostenlosen Kern; in Pro Provider für License, Voucher, Pass, Affiliate, Form und Review Captain, signierte Webhooks sowie separate Projekt-Connectoren |
 | License Captain | WooCommerce als Lizenzshop; signierte REST-API für Produkt-Plugins; Entitlements, Lizenzprüfung und Updatebereitstellung; offizielles WooCommerce-Stripe-Gateway für automatische Verlängerungen |
 

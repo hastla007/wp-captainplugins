@@ -8,7 +8,7 @@ Den Ordner `captain-plugins` als ZIP verpacken oder nach `wp-content/themes/capt
 
 ## Einrichten
 
-Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setup-Assistenten. Er bietet WooCommerce, Yoast SEO und License Captain zur Installation/Aktivierung an, importiert ausgewählte Inhaltsgruppen und kann die fünfzehn vorhandenen Captain-Pro-Jahrespläne (einschließlich Form und Workflow Captain Pro) als WooCommerce-Entwürfe anlegen. Review Captain Pro erhält seine Produktentwürfe, sobald die Preisbeträge im Produktkatalog feststehen.
+Nach der Aktivierung führt **Design → Einrichtung** durch den optionalen Setup-Assistenten. Er bietet WooCommerce, Yoast SEO und License Captain zur Installation/Aktivierung an, importiert ausgewählte Inhaltsgruppen und kann die fünfzehn vorhandenen Captain-Pro-Jahrespläne (einschließlich Form und Workflow Captain Pro) als WooCommerce-Entwürfe anlegen. Review Captain Pro und Course Captain Pro erhalten ihre Produktentwürfe, sobald die Preisbeträge im Produktkatalog feststehen.
 
 - WooCommerce und Yoast SEO werden über wordpress.org bezogen. WooCommerce ist optional installierbar, wird aber für Shop und Produktentwürfe benötigt; Yoast bleibt optional.
 - License Captain besteht aus Server und Client. Auf dieser Website läuft der Server, damit die Captain-Pro-Jahrespläne lizenziert werden können; der Client ist in jedem Pro-Add-on enthalten und für Kunden unsichtbar. Zusätzlich wird License Captain (Server und Client) als eigenes Produkt an Plugin-Hersteller verkauft. Das Theme verteilt keine Plugin-ZIP. Für den Assistenten kann eine vertrauenswürdige HTTPS-ZIP samt SHA-256-Prüfsumme über `wp-config.php` konfiguriert werden:
@@ -43,7 +43,7 @@ Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/m
 
 - Block-Templates und Template Parts, bearbeitbar im Site Editor; einheitlicher Seitenkopf mit Brotkrumen.
 - Header mit Klick-Untermenüs, Gold-CTA und Disclosure-Menü bis Tablet-Breite; Footer mit benannten Navigationen.
-- Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle sieben Produkte, Tarifkarten, CTA-Bänder mit Kapitän.
+- Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle acht Produkte, Tarifkarten, CTA-Bänder mit Kapitän.
 - Ruhiger Lesefluss für Ratgeber, Dokumentation, Support und FAQ; breite, tastaturbedienbare Tabellen für Matrizen.
 - Patterns für Produkt-Heros, Produktkarten, Features, Abläufe, Free-/Pro-Vergleich, Preise, Screenshot-Briefings, Kompatibilität, FAQ, Ressourcen und CTAs.
 - Design-Tokens in `theme.json` (Farben, 4–96-px-Abstände, 75rem-Container, Typoskala) und sichtbare Tastaturfokusse; Kontraste sind in `design/konzept.md` dokumentiert.
@@ -51,7 +51,7 @@ Die Theme-Oberfläche orientiert sich an den vorhandenen [Homepage-](../design/m
 
 ## Social-Vorschaubilder
 
-Unter `captain-plugins/assets/social/` liegen 1200 × 630 Pixel große Vorschaubilder für Startseite, alle sieben Produkte und Captain Pro (Neuaufbau: `cd tools/qa && node make-social-images.cjs`). Der Seitenimport trägt bei aktivem Yoast SEO für jede Seite das Bild ihres Produktbereichs als Facebook-/X-Bild ein; eigene Bilder lassen sich im Markdown über `social_image: https://…` oder `social_image: theme:assets/…` festlegen. Bereits von Hand geänderte Yoast-Bilder werden nicht überschrieben.
+Unter `captain-plugins/assets/social/` liegen 1200 × 630 Pixel große Vorschaubilder für Startseite, alle acht Produkte und Captain Pro (Neuaufbau: `cd tools/qa && node make-social-images.cjs`). Der Seitenimport trägt bei aktivem Yoast SEO für jede Seite das Bild ihres Produktbereichs als Facebook-/X-Bild ein; eigene Bilder lassen sich im Markdown über `social_image: https://…` oder `social_image: theme:assets/…` festlegen. Bereits von Hand geänderte Yoast-Bilder werden nicht überschrieben.
 
 ## Datenschutz und externe Ressourcen
 

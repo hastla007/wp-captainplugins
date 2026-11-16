@@ -9,7 +9,7 @@ focus_keyphrase: WordPress Plugins Unternehmen
 
 Captain Plugins entwickelt Lösungen für Unternehmen, die wichtige digitale Abläufe in ihrer eigenen WordPress-Umgebung steuern möchten.
 
-Unsere Plugins unterstützen Geschäftsabläufe rund um Gutscheine, Events, Formulare, Kundenbewertungen, Partnerprogramme und Softwarelizenzen.
+Unsere Plugins unterstützen Geschäftsabläufe rund um Gutscheine, Events, Formulare, Kundenbewertungen, Online-Kurse, Partnerprogramme, Automationen und Softwarelizenzen.
 
 ## Unser Anspruch
 

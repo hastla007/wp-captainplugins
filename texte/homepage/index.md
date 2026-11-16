@@ -44,6 +44,11 @@ Erstellen Sie Kontakt-, Angebots- und Supportformulare und bearbeiten Sie Einsen
 
 [Form Captain ansehen](/form-captain/) · [Kostenlos starten]([Download-URL])
 
+### Course Captain
+Erstellen Sie Online-Kurse mit Lektionen, Fragenbank, Smarttrainer, Quiz und Prüfungen und verfolgen Sie den Lernfortschritt direkt in WordPress.
+
+[Course Captain ansehen](/course-captain/) · [Kostenlos starten]([Download-URL])
+
 ### License Captain
 Verwandeln Sie Ihren WooCommerce-Shop in die zentrale Stelle für Lizenzverkauf, Aktivierungen, Verlängerungen und Plugin-Updates.
 
@@ -51,7 +56,7 @@ Verwandeln Sie Ihren WooCommerce-Shop in die zentrale Stelle für Lizenzverkauf,
 
 ## Ein klarer Weg vom Kern bis zu Pro
 
-Die sechs Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweitern Sie Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain oder Workflow Captain mit den passenden Pro-Funktionen.
+Die sieben Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweitern Sie Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain oder Course Captain mit den passenden Pro-Funktionen.
 
 **[Captain Pro vergleichen](/captain-pro/)** · **[Preise ansehen](/preise/)**
 
@@ -59,7 +64,7 @@ Die sechs Kern-Plugins sind kostenlos. Wenn Ihr Betrieb mehr benötigt, erweiter
 
 Nutzen Sie die Plugins einzeln oder kombinieren Sie passende Funktionen. WooCommerce ist je nach Produkt erforderlich oder optional. Dokumentierte Integrationen verbinden die Abläufe, die zusammengehören.
 
-[Screenshot-Platzhalter: Zeigen Sie die sieben Website-Produkte als übersichtliche Karten für Gutscheine, Events/Buchungen, Formulare, Kundenbewertungen, Workflow-Automatisierung, Partnerprogramme und Lizenzverwaltung; jede Karte soll Zielgruppe und CTA sichtbar machen.]
+[Screenshot-Platzhalter: Zeigen Sie die acht Website-Produkte als übersichtliche Karten für Gutscheine, Events/Buchungen, Formulare, Kundenbewertungen, Workflow-Automatisierung, Online-Kurse, Partnerprogramme und Lizenzverwaltung; jede Karte soll Zielgruppe und CTA sichtbar machen.]
 [Demo: Gutscheinverkauf, Ticketbuchung oder Partnerauszahlung]  
 [Kundenbeispiel: nach Freigabe einsetzen]
 

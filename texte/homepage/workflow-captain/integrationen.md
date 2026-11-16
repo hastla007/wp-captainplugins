@@ -23,6 +23,7 @@ Workflow Captain Pro sieht Provider für folgende Produkte vor:
 - **Form Captain:** Entries und freigegebene Formularfelder nach Feldklasse und Consent-Regel.
 - **Review Captain:** Reviews, Bewertungsanfragen und Moderationsstatus unter Erhalt der Review-Schutzregeln.
 - **License Captain:** sichere Status- und Updatebenachrichtigungen; keine generischen Lizenzänderungen.
+- **Course Captain:** Einschreibung, Lektionsabschluss, bestandene Prüfung, Kursabschluss und ablaufender Zugang; Aktionen wie Einschreiben oder Benachrichtigen, sobald der Providervertrag in beiden Plugins veröffentlicht ist.
 
 Für jede Verbindung müssen das Fachplugin und ein kompatibler Providervertrag vorhanden sein. Die genauen Trigger, Aktionen und Mindestversionen richten sich nach dem veröffentlichten Vertrag. Geschäftslogik und Datenhoheit bleiben beim jeweiligen Fachplugin.
 

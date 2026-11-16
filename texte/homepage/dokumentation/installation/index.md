@@ -17,6 +17,7 @@ Die folgenden Anleitungen führen Sie durch Installation und Einrichtung der ein
 - [Form Captain installieren](/form-captain/installation/): erstes Formular erstellen, Einträge verwalten und E-Mail testen.
 - [Review Captain installieren](/review-captain/installation/): Quellen einrichten, Reviews kuratieren und Widgets veröffentlichen.
 - [Workflow Captain installieren](/workflow-captain/installation/): Provider prüfen, einen Ablauf erstellen und den ersten Dry Run ausführen.
+- [Course Captain installieren](/course-captain/installation/): Lernbereich einrichten, ersten Kurs mit Lektion, Fragen und Quiz veröffentlichen.
 - [License Captain installieren](/dokumentation/installation/license-captain/): WooCommerce-Lizenzshop, Schlüssel und Updates einrichten.
 - [Captain-Pro-Erweiterung installieren](/dokumentation/installation/captain-pro/): passendes Kern-Plugin, Add-on und Lizenz aktivieren.
 

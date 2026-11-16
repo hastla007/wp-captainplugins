@@ -23,6 +23,7 @@ Verbinden Sie Bewertungsanfragen mit vom Quellplugin bestätigter Nutzung oder T
 - **Pass Captain:** Anfrage nach bestätigter Teilnahme oder Check-in; Absage, Erstattung und Nichtteilnahme können offene Anfragen ausschließen.
 - **Affiliate Captain:** Qualitätsauswertungen zu Partnerempfehlungen, ohne Reviews automatisch in Provisionen oder Partnerfreigaben umzuwandeln.
 - **Form Captain:** lokale Review-Einreichung über ein Formular; neue Einträge bleiben bis zur Moderation pending und unverified.
+- **Course Captain:** Anfrage nach bestätigtem Kursabschluss, sobald Course Captain das Ereignis über einen kompatiblen Vertrag bereitstellt; eine Einschreibung oder ein Kauf allein genügt nicht.
 
 Review Captain Pro wird separat lizenziert. Details zur Aktivierung und Verlängerung erhalten Käufer nach dem Kauf im Lizenzbereich.
 

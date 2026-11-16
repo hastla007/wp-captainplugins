@@ -7,7 +7,7 @@
 
 Das zentrale Redaktionskonzept liegt in [`texte/homepage/konzept.md`](texte/homepage/konzept.md). Es legt Positionierung, Produktumfang, Zielgruppen, Preise, Seitenintentionen und Yoast-Workflow fest. Die deutschsprachigen Entwürfe sind unter [`texte/homepage/README.md`](texte/homepage/README.md) verzeichnet: Startseite, Produktübersicht, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Support, Dokumentation, Bootsschulen-Lösung, Produktseiten, Features, Pro- bzw. Paket-Seiten, FAQs und Ratgeberartikel. Die bestehenden Entwürfe enthalten bereits beschriebene Platzhalter für Produkt-Screenshots, Demos und Kundenbeispiele.
 
-Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher, Pass, Affiliate, Form, Review und Workflow Captain Pro sind kostenpflichtig; License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Unsere Pro-Add-ons werden intern darüber lizenziert (der Client steckt unsichtbar im Pro-Plugin); gegenüber Pro-Kunden wird License Captain nicht erwähnt. Pro-Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen; License-Captain-Preise stammen aus dem eigenen Shopkatalog.
+Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher, Pass, Affiliate, Form, Review, Workflow und Course Captain Pro sind kostenpflichtig; License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Unsere Pro-Add-ons werden intern darüber lizenziert (der Client steckt unsichtbar im Pro-Plugin); gegenüber Pro-Kunden wird License Captain nicht erwähnt. Pro-Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen; License-Captain-Preise stammen aus dem eigenen Shopkatalog.
 
 ### Bildmaterial im Repository
 
@@ -71,7 +71,7 @@ Die Website soll wie eine professionelle B2B-Softwaremarke wirken: klar, ruhig u
 
 Empfohlene primäre Navigation:
 
-- **Produkte** – Dropdown mit Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain. Pro Produkt eine kurze Zielgruppenbeschreibung.
+- **Produkte** – Dropdown mit Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain, Course Captain und License Captain. Pro Produkt eine kurze Zielgruppenbeschreibung.
 - **Captain Pro** – erklärt das Premium-Angebot und die Beziehung zum kostenlosen Kern.
 - **Preise** – führt direkt zum Tarifvergleich.
 - **Lösungen** – Bootsschulen sowie später nur belegte Anwendungsfälle.
@@ -114,7 +114,7 @@ Footer und Breadcrumbs ergänzen die globale Orientierung. Für jede Unterseite 
 ### Startseite
 
 1. **Hero:** konkretes B2B-Versprechen, kurze Erklärung der Produktfamilie; CTA „Passende Lösung finden“ und sekundär „Preise ansehen“. Mögliches Visual: eine ausgewählte Kapitänsillustration plus echte Produkt-UI erst nach Verfügbarkeit.
-2. **Sieben Aufgaben-Karten:** Gutscheine, Veranstaltungen/Buchungen, Partnerprogramm, Formulare, Bewertungen, Automatisierungen und Plugin-Lizenzen. Jede Karte führt auf die richtige Produktseite.
+2. **Acht Aufgaben-Karten:** Gutscheine, Veranstaltungen/Buchungen, Partnerprogramm, Formulare, Bewertungen, Automatisierungen, Online-Kurse und Plugin-Lizenzen. Jede Karte führt auf die richtige Produktseite.
 3. **Auswahlhilfe:** „Was möchten Sie organisieren?“ als kurze, direkt verlinkte Auswahl; kein Formularzwang.
 4. **Produktprinzip:** WordPress-zentrierter Ablauf, WooCommerce-Abhängigkeiten korrekt gekennzeichnet, dokumentierte Integrationen.
 5. **Free, Pro und License Captain:** kostenlose Kern-Plugins und Pro-Erweiterungen klar trennen; License Captain als eigenes Produkt (Server und Client) für Plugin-Hersteller zeigen; auf Pro-Seiten nicht erwähnen.
@@ -123,7 +123,7 @@ Footer und Breadcrumbs ergänzen die globale Orientierung. Für jede Unterseite 
 
 ### Produktübersicht
 
-Mit einem kurzen Einstiegsabsatz beginnen, danach sieben Produktkarten für sechs kostenlose Kern-Plugins und License Captain. Eine Auswahlmatrix zeigt Zielgruppe, Kerneinsatz, WooCommerce-Abhängigkeit und Angebot. Am Ende auf Vergleich, Preise, Integrationen und Support verlinken.
+Mit einem kurzen Einstiegsabsatz beginnen, danach acht Produktkarten für sieben kostenlose Kern-Plugins und License Captain. Eine Auswahlmatrix zeigt Zielgruppe, Kerneinsatz, WooCommerce-Abhängigkeit und Angebot. Am Ende auf Vergleich, Preise, Integrationen und Support verlinken.
 
 ### Produktübersicht je Plugin
 
@@ -252,7 +252,7 @@ Yoast SEO wird für Seitentitel, Meta-Descriptions, Social-Vorschau, Canonical/I
 
 - [x] Globale Navigation und Footer umsetzen.
 - [x] Startseite und Produktübersicht als Einstieg und Auswahlhilfe bauen.
-- [x] Produktvorlage bauen und auf alle sieben Produkte (Voucher, Pass, Affiliate, Form, Review, Workflow und License Captain) anwenden.
+- [x] Produktvorlage bauen und auf alle acht Produkte (Voucher, Pass, Affiliate, Form, Review, Workflow, Course und License Captain) anwenden.
 - [x] Features-, Pro-/Preise- und FAQ-Seitentypen aufbauen.
 - [x] Preise, Vergleich, Integrationen, Kompatibilität, Support und Dokumentation ergänzen.
 - [x] Lösung Bootsschulen und vorhandene Ratgeberseiten in die Ressourcen- bzw. Lösungsnavigation einordnen.
@@ -278,7 +278,7 @@ Yoast SEO wird für Seitentitel, Meta-Descriptions, Social-Vorschau, Canonical/I
 
 Die Umsetzung ist konzeptgemäß, wenn:
 
-1. Besucher die sieben Website-Produkte samt Zielgruppe und Free-/Pro-Modell auf der Start- oder Produktübersicht schnell unterscheiden können.
+1. Besucher die acht Website-Produkte samt Zielgruppe und Free-/Pro-Modell auf der Start- oder Produktübersicht schnell unterscheiden können.
 2. Jede Produktseite sowie Features-, Pro-/Paket- und FAQ-Seite von jeder anderen Seite erreichbar ist und einen passenden CTA besitzt.
 3. Desktop- und Mobilnavigation mit Maus, Tastatur und Touch funktioniert.
 4. Inhalte bei schmalen Viewports ohne abgeschnittene Texte oder unerreichbare Tarifinformationen lesbar bleiben.
@@ -310,7 +310,7 @@ Empfohlen wird ein leichtgewichtiges natives WordPress-Block-Theme mit `theme.js
 
 Benötigte Grundvorlagen: Startseite, allgemeine Seite, Ratgeberbeitrag, Archiv, Suche und 404. Wiederverwendbare Patterns: Header/Mobilnavigation, Hero, Produktkarte, Featuregruppe, Workflow, Screenshot mit Bildunterschrift, Free-/Pro-Vergleich, Tarifkarte, Integrationshinweis, FAQ und Abschluss-CTA.
 
-Die bestehenden Texte werden in diese Vorlagen übertragen: Produktübersicht, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain, License Captain, Features, Pro-/Preisseiten, FAQs, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Dokumentation, Support, Bootsschulen-Lösung und Ratgeber. Die Copy und URLs werden aus `texte/homepage/README.md` übernommen; das Theme erzeugt keine separaten, widersprüchlichen Versionen.
+Die bestehenden Texte werden in diese Vorlagen übertragen: Produktübersicht, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain, Course Captain, License Captain, Features, Pro-/Preisseiten, FAQs, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Dokumentation, Support, Bootsschulen-Lösung und Ratgeber. Die Copy und URLs werden aus `texte/homepage/README.md` übernommen; das Theme erzeugt keine separaten, widersprüchlichen Versionen.
 
 ### Responsive und barrierearme Umsetzung
 
@@ -364,7 +364,7 @@ Diese KI-generierten Bilder veranschaulichen eine mögliche Umsetzung des Websit
 
 ### Produktübersicht
 
-![Aktualisiertes Mockup der Produktübersicht mit allen sieben Website-Produkten](design/mockups/products-overview-all-plugins.jpg)
+![Mockup der Produktübersicht mit sieben Website-Produkten (vor Aufnahme von Course Captain)](design/mockups/products-overview-all-plugins.jpg)
 
 ### Voucher Captain
 
