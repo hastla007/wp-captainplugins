@@ -64,6 +64,7 @@ Geprüft im Browser (16. November 2026): Das Theme setzt keine Cookies, schreibt
 | `python3 tools/build-theme-content.py` | Website-Texte aus `texte/homepage/` in importierbare Gutenberg-Seiten übersetzen |
 | `python3 tools/make-pot.py` | Übersetzungsvorlage `languages/captain-plugins.pot` erzeugen |
 | `python3 tools/media-inventory.py` | Liste aller Screenshot-, Demo- und Diagramm-Platzhalter erzeugen |
+| `python3 tools/release-blockers.py` | Bericht `docs/RELEASE-BLOCKER.md` mit allen fehlenden Linkzielen, Betreiberangaben und Vorbehalten je Seite |
 | `tools/build-theme-zip.sh` | Installierbares Theme-ZIP unter `dist/` bauen (inkl. Inhalts- und POT-Neubau und PHP-Lint) |
 
 Die Pattern-Texte mit eckigen Klammern sind redaktionelle Felder, die beim Einfügen auszufüllen sind. Der Preisvergleich startet mit den aktuellen Konzeptpreisen und enthält einen internen Abgleichhinweis. Screenshot-Platzhalter enthalten ein konkretes Aufnahmebriefing und müssen vor Veröffentlichung ersetzt werden.
