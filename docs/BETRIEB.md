@@ -68,6 +68,32 @@ Das Skript baut Inhalte und Übersetzungsvorlage neu, prüft alle PHP-Dateien un
 
 Eine Datenbank-Wiederherstellung verwirft Bestellungen, Lizenzen und Konten, die nach der Sicherung entstanden sind. Sie ist deshalb nur das letzte Mittel.
 
+## Cache-Header für statische Dateien
+
+Theme-CSS und -Bilder tragen eine Versionsnummer in der URL (`?ver=0.3.0`) und dürfen deshalb lange zwischengespeichert werden. Lighthouse schätzt die Ersparnis auf rund 145 KB pro Wiederbesuch.
+
+Apache (`.htaccess`):
+
+```apache
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+```
+
+nginx:
+
+```nginx
+location ~* \.(css|js|webp|jpe?g|png|svg)$ { expires 1y; add_header Cache-Control "public, immutable"; }
+```
+
+Messwerte der Testinstallation (Lighthouse 12, 16.11.2026): Performance mobil 96–98 / Desktop 100, Barrierefreiheit 100, SEO 100, Best Practices 100 nach Favicon-Korrektur; LCP mobil 2,0–2,5 s (simuliertes 4G), CLS 0.
+
 ## 6. Monitoring (datenschutzgerecht)
 
 | Was | Empfehlung |

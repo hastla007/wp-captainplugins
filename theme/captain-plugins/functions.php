@@ -54,6 +54,16 @@ function captain_plugins_disable_emoji(): void {
 }
 add_action( 'init', 'captain_plugins_disable_emoji' );
 
+/** Brand favicon until a site icon is set under Settings → General (that one always wins). */
+function captain_plugins_fallback_favicon(): void {
+	if ( has_site_icon() ) {
+		return;
+	}
+	echo '<link rel="icon" href="' . esc_url( get_theme_file_uri( 'assets/images/favicon.svg' ) ) . '" type="image/svg+xml">' . "\n";
+	echo '<link rel="apple-touch-icon" href="' . esc_url( get_theme_file_uri( 'assets/images/apple-touch-icon.png' ) ) . '">' . "\n";
+}
+add_action( 'wp_head', 'captain_plugins_fallback_favicon', 99 );
+
 function captain_plugins_enqueue_styles() {
 	wp_enqueue_style(
 		'captain-plugins-theme',
