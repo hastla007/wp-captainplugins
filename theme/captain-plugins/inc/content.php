@@ -62,7 +62,8 @@ function captain_plugins_content_template_slug( array $entry ): string {
 	if ( in_array( $path, array( 'preise', 'captain-pro' ), true ) || '/preise' === substr( $path, -7 ) ) {
 		return 'page-pricing';
 	}
-	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen' ), true ) ) {
+	// Overviews and wide comparison matrices need the full content width.
+	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen', 'kompatibilitaet', 'integrationen' ), true ) || preg_match( '#/(kompatibilitaet|integrationen)$#', $path ) ) {
 		return 'page-wide';
 	}
 	return 'page-resource';

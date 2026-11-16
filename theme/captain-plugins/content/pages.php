@@ -454,7 +454,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "beda07fe3681cededad74d155fe87237ba6f8963a912de19354461f36c9fe57b",
+		"source_hash" => "df59037d27e8c242805dec6a655a247acfe11bcfc6bc65631451d7d228ad6d29",
 		"source_file" => "texte/homepage/dokumentation/installation/index.md",
 	],
 	[
@@ -488,7 +488,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "5f3b0c8785faa498b7e6aba8ce60f6e1eb28200af6539772a144f5b2be891789",
+		"source_hash" => "91330d2439be3731fa9565f166fa3a0445601647772253384d00199034e78f0b",
 		"source_file" => "texte/homepage/dokumentation/workflow-captain.md",
 	],
 	[
@@ -1096,7 +1096,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "dde3cbaf5c779ce376013c8007a275a35aca37951ef1e0f961e40c583b55a717",
+		"source_hash" => "2f1cd7a09b6565c77493b72c2ee2a39682662586c9f1dc7540f7e5e107884c25",
 		"source_file" => "texte/homepage/dokumentation/installation/captain-pro.md",
 	],
 	[
@@ -1164,7 +1164,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "52a83b98413d5f0f704146caa4a24846e85a57dcdf0e4911434b5cda32670a60",
+		"source_hash" => "781afc0c554b46346e659af56420fa4593773a868d11e79772b5ed717d6afb9c",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/provisionsregeln-partnerprogramm.md",
 	],
 	[
@@ -1181,7 +1181,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "c69438a4acb8727641238660cc3803a1280e7530480fa7e7cbd1bdcfc5259e08",
+		"source_hash" => "5d6f0ca6325e957c6bcda39ce470008a992baca94f68a16850acff7d4fe7ca9f",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/refunds-provisionen-korrigieren.md",
 	],
 	[
@@ -1198,7 +1198,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "1620cfa867ae0cb0feab5076b407f5775db09a01e5782b3966bb9fd81161f6e6",
+		"source_hash" => "a899c9dc4e6737a27533f4d1d40987d2d13eb94cab89fbc8660f626103ccbe5b",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/sepa-auszahlungen-vorbereiten.md",
 	],
 	[
@@ -1266,7 +1266,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "ed1aa710346e4fc15971c396759021b07ebaee3695436c50d03bc7ddaa85af1d",
+		"source_hash" => "4a2ad8224ba25d610b4a1ee8866719793a770eeb8ef8cbe427032bd97adfd3f2",
 		"source_file" => "texte/homepage/ratgeber/license-captain/kundenbereich-changelog.md",
 	],
 	[
@@ -1283,7 +1283,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "efdd55e0f04cf9bcaa42120f545495985eea91ae28b7b5555d7e3a9c4a7714eb",
+		"source_hash" => "27ceec3d2966e5e32e4ac55fc744af4c230c019b0862965d0de85ffd2d144b10",
 		"source_file" => "texte/homepage/ratgeber/license-captain/plugin-updates-lizenzstatus.md",
 	],
 	[
@@ -1300,7 +1300,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "3a09b308a69f41db1d41694b7a047fa8bed3013e07cc33b4e89ea1aa7d9464fe",
+		"source_hash" => "4bc3a7538f9c5289d8386f08e482fc5a08ea1dbeff9cb8c3ae6b4911cc818e38",
 		"source_file" => "texte/homepage/ratgeber/license-captain/woocommerce-lizenzen-aktivierungen.md",
 	],
 	[
@@ -1317,7 +1317,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "19c8a3b8d9fda924a1d9076c93699c43bd0ffa3b0028bd43d4b1bb7480958699",
+		"source_hash" => "ea719f5ff51ee0a67a4baeafc2367ca68cc1c4abd7a3ace50180d18976d908a5",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/seminartickets-wordpress.md",
 	],
 	[
@@ -1334,7 +1334,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "bb19661e149d780b853c61bda04ababf21cdf4dee655b763e0dc6c298bf2d866",
+		"source_hash" => "a60780c02d6272fbdcb1065b975171218b5fc1082aaed9bec4c1ba9146691d3d",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/servicebuchungen-kurse-verleih.md",
 	],
 	[
@@ -1351,7 +1351,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "75053ca6f3f1845c2f71996339f1dfd5d9f4410934964e2144f6ef5de09dc76b",
+		"source_hash" => "4ef2e86f8f75661a7952e68c5ab57e94a8b96bb887fa745549f470ca20386805",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/warteliste-und-einlass.md",
 	],
 	[
@@ -1419,7 +1419,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "cb879e73689738ecc0a4c1210b00408c1086d45c17452cc466c66211aa819e2c",
+		"source_hash" => "c28812200e810fa839a42d1325f08351089dad9f0ebaf8c95adfe1a4a5e0a58d",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/firmenbestellungen-csv.md",
 	],
 	[
@@ -1436,7 +1436,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "2ea922e2ff1710b16e04a9c70393ad534b3091a63fbc513d4a78720ee985e9f2",
+		"source_hash" => "59d2a46b1301289f3f3a3ab4e085dced7a258fc4c7107770f7e3f1ebc9391c21",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/gutscheine-gestalten-und-versenden.md",
 	],
 	[
@@ -1453,7 +1453,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "bcf0553a99ce130d1060735a4fe5342b859bbb3bd027c2c3d03beab82093ad47",
+		"source_hash" => "9e81601b31607ca1614379dde25260335561b00a26ca39b3a0d3d5ec406bea22",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/wunschwert-und-restguthaben.md",
 	],
 	[
@@ -1487,7 +1487,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "55260b3d98c7f9af21f26038abe99e0f48decaa85979b47ea593e235c820af6c",
+		"source_hash" => "499deccad4fe911d9414e81dbf77e63e5361421897ddf3930bdab9c66f309534",
 		"source_file" => "texte/homepage/ratgeber/workflow-captain/woocommerce-bestellungen-automatisieren.md",
 	],
 	[
@@ -1504,7 +1504,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "26c2be2f42ea2bcc6a915ebee4f6d547c47f93ac2c71ac04a87aadd282a07ef5",
+		"source_hash" => "0d1c90e8906bcd71a54cd647084c324c759d188fe9da83b5e2ccd1f756675c38",
 		"source_file" => "texte/homepage/ratgeber/workflow-captain/wordpress-automatisierung-ohne-cloud.md",
 	],
 ];

@@ -569,3 +569,11 @@ img { max-width: 100%; height: auto; }
 	.cp-main--wide .cp-card-grid--features > .cp-card--icon { --cp-icon-box: 3.25rem; padding-left: calc(var(--cp-pad) + var(--cp-icon-box) + 1rem); }
 }
 
+
+/* ---------- Lesefluss für Ratgeber, Dokumentation, Support und FAQ ---------- */
+:where(.cp-main--resource, .cp-main--single) .cp-content-section { padding-block: clamp(1rem, 2.5vw, 1.75rem); background: none; }
+:where(.cp-main--resource, .cp-main--single) .cp-content-intro + .cp-content-section { padding-top: clamp(2.5rem, 5vw, 3.5rem); }
+:where(.cp-main--resource, .cp-main--single) .cp-page-content > .cp-content-section:last-child { padding-bottom: var(--cp-section-space); }
+:where(.cp-main--resource, .cp-main--single) .cp-content-section > h2 { margin-bottom: 1rem; }
+:where(.cp-main--resource, .cp-main--single) .cp-content-section > h2::after { width: 2.5rem; height: 3px; margin-top: 0.6rem; }
+:where(.cp-main--resource, .cp-main--single) .cp-content-section--cta { margin-top: 1.5rem; padding-block: clamp(2rem, 4vw, 3rem); background: var(--cp-blue-soft); }

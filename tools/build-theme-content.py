@@ -496,6 +496,8 @@ def compose_sections(out: list[str], page_path: str) -> str:
         return [children[0]] + body, spill
 
     def short_section(children: list[str]) -> bool:
+        if page_path.startswith(("ratgeber/", "dokumentation/")):
+            return False
         parts = card_parts(children)
         if parts is None:
             return False
@@ -531,7 +533,9 @@ def compose_sections(out: list[str], page_path: str) -> str:
         if section_index % 2 == 1:
             class_name += " cp-content-section--soft"
         section_index += 1
-        transformed = card_grid(children)
+        # Guides and documentation keep their subsections in the reading column.
+        reading = page_path.startswith(("ratgeber/", "dokumentation/"))
+        transformed = None if reading else card_grid(children)
         if transformed is None:
             transformed = []
             for child in children:
@@ -545,7 +549,7 @@ def compose_sections(out: list[str], page_path: str) -> str:
                         continue
                 transformed.append(child)
             media = [c for c in transformed if is_media(c)]
-            if len(media) == 1 and len(transformed) > 2 and not any(c.startswith(("<!-- wp:table", "<!-- wp:group")) and not is_media(c) for c in transformed):
+            if not reading and len(media) == 1 and len(transformed) > 2 and not any(c.startswith(("<!-- wp:table", "<!-- wp:group")) and not is_media(c) for c in transformed):
                 text = [c for c in transformed if not is_media(c)]
                 transformed = [group_block("cp-split", [group_block("cp-split__text", text), media[0]])]
         if extra:
