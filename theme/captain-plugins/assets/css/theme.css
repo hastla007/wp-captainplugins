@@ -611,6 +611,17 @@ img { max-width: 100%; height: auto; }
 	outline: 3px solid var(--cp-focus); outline-offset: 2px;
 }
 :where(.woocommerce) .button, :where(.woocommerce) button.button { border-radius: var(--cp-radius-sm); }
+/* Klassische WooCommerce-Knöpfe ohne wp-element-button (z. B. Lizenzansicht von License Captain) im Theme-Design:
+   .alt = Hauptaktion in Gold, sonst Rahmen-Knopf in Navy. */
+.woocommerce :is(button.button, a.button, input.button):not(.wp-element-button) {
+	display: inline-flex; align-items: center; justify-content: center; min-height: 2.5rem; padding: 0.5rem 1rem;
+	border: 2px solid var(--cp-navy); border-radius: var(--cp-radius-sm); color: var(--cp-navy); background: var(--cp-paper);
+	font: inherit; font-size: 0.95rem; font-weight: 650; line-height: 1.2; text-align: center; text-decoration: none; cursor: pointer;
+}
+.woocommerce :is(button.button, a.button, input.button).alt:not(.wp-element-button) { border-color: var(--cp-gold); color: var(--cp-ink); background: var(--cp-gold); }
+.woocommerce :is(button.button, a.button, input.button):not(.wp-element-button):hover { color: var(--cp-paper); border-color: var(--cp-navy); background: var(--cp-navy); }
+.wplc-license-key { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.wplc-license-key :is(input, code) { max-width: 100%; }
 /* WooCommerce setzt bei Feldern und Produktbild-Links outline: 0 – sichtbaren Fokus erzwingen (WCAG 2.4.7). */
 .woocommerce :is(input, select, textarea):focus-visible,
 .wc-block-components-product-image a:focus-visible,
@@ -652,6 +663,8 @@ img { max-width: 100%; height: auto; }
 .cp-product-buy__links { padding-top: 1.25rem; border-top: 1px solid var(--cp-border); font-size: 0.95rem; }
 .cp-product-buy .quantity input { min-height: 2.75rem; width: 4.5rem; border: 1px solid var(--cp-border); border-radius: var(--cp-radius-sm); font: inherit; text-align: center; }
 .cp-page-header > .cp-order-status { max-width: var(--cp-wide); font-size: 1.15rem !important; }
+.cp-order-status > * + * { margin-top: 1rem; }
+.cp-order-status > .cp-page-title { font-size: var(--wp--preset--font-size--xx-large, clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem)); }
 .cp-order > * + * { margin-top: 2rem; }
 .cp-order .wc-block-order-confirmation-summary-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem 1.5rem; margin: 0; padding: 1.25rem; border: 1px solid var(--cp-border); border-radius: var(--cp-radius); list-style: none; }
 .cp-order-next { background: var(--cp-blue-soft); }
@@ -667,6 +680,7 @@ img { max-width: 100%; height: auto; }
 
 /* Block-Checkout: kleine Textschalter erreichen die Mindest-Zielgröße 24 × 24 px (WCAG 2.5.8) */
 .wc-block-components-address-form__address_2-toggle { display: inline-block; min-height: 1.5rem; padding-block: 0.25rem; }
+.woocommerce .password-input .show-password-input { width: 1.75rem; height: 1.75rem; top: 50% !important; transform: translateY(-50%); background-position: center; }
 
 /* Klassischer Warenkorb/Checkout und Konto: Felder in Lesegröße, Zahlungsbereich in Markenfarben */
 :where(.woocommerce) :where(input.input-text, select, textarea, .select2-selection) { box-sizing: border-box; min-height: 2.75rem; padding: 0.55rem 0.75rem; border: 1px solid var(--cp-border); border-radius: var(--cp-radius-sm); font: inherit; font-size: 1rem; color: var(--cp-ink); background-color: var(--cp-paper); }

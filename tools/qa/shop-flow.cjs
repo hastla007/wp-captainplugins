@@ -35,7 +35,12 @@ const placeOrder = args.includes('--order');
 		const errors = [];
 		page.on('pageerror', (e) => errors.push(String(e)));
 		page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
-		const shot = async (name) => { await page.waitForTimeout(700); await page.screenshot({ path: path.join(out, `${view}-${name}.png`), fullPage: true }); };
+		const shot = async (name) => {
+			await page.waitForTimeout(700);
+			await page.screenshot({ path: path.join(out, `${view}-${name}.png`), fullPage: true });
+			const h1 = await page.locator('h1:visible').count();
+			if (h1 !== 1) { console.log(`FEHLER ${view}: ${name} hat ${h1} sichtbare H1`); failures += 1; }
+		};
 		const step = (name, ok, detail = '') => { console.log(`${ok ? 'OK  ' : 'FEHLER'} ${view}: ${name}${ok ? '' : ' – ' + detail}`); if (!ok) failures += 1; };
 
 		await page.goto(base + urls.shop, { waitUntil: 'networkidle' });

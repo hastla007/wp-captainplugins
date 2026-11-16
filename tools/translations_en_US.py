@@ -105,6 +105,9 @@ EN = {
     "Schrittfolge für einen Produkt- oder Geschäftsprozess.": "Step sequence for a product or business process.",
     "Shop": "Shop",
     "Die WooCommerce-E-Mails nutzen jetzt die Farben der Website.": "WooCommerce emails now use the website colours.",
+    "Ihre Bestellung": "Your order",
+    "Pro-Funktionen für „%s“ aus dem License-Captain-Katalog ergänzt.": "Added the Pro features for “%s” from the License Captain catalog.",
+    "License Captain bietet für „%s“ derzeit keine freigegebenen Pro-Funktionen an (Katalog noch nicht importiert oder Funktionen erst geplant). Der Plan wird ohne Funktionen angelegt; sobald License Captain sie freigibt, ergänzt ein erneuter Lauf des Assistenten sie.": "License Captain currently offers no released Pro features for “%s” (catalog not imported yet or features only planned). The plan is created without features; once License Captain releases them, running the assistant again adds them.",
 }
 
 EN_PLURAL = {

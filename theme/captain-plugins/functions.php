@@ -314,3 +314,19 @@ function captain_plugins_product_placeholder_html( string $html, $size = '', $di
 	);
 }
 add_filter( 'woocommerce_placeholder_img', 'captain_plugins_product_placeholder_html', 10, 3 );
+
+/**
+ * Order confirmation: the status block is the page title. WooCommerce 10+ prints its own <h1>
+ * ("Order received", "Payment failed" …), older versions only a sentence; then the theme adds the h1.
+ * Either way the page gets the breadcrumb and exactly one h1 in the page header style.
+ */
+function captain_plugins_order_status_title( string $content ): string {
+	$breadcrumb = captain_plugins_take_breadcrumb();
+	if ( str_contains( $content, '<h1>' ) ) {
+		$content = preg_replace( '/<h1>/', '<h1 class="cp-page-title">', $content, 1 );
+	} else {
+		$content = '<h1 class="cp-page-title">' . esc_html__( 'Ihre Bestellung', 'captain-plugins' ) . '</h1>' . $content;
+	}
+	return $breadcrumb . $content;
+}
+add_filter( 'render_block_woocommerce/order-confirmation-status', 'captain_plugins_order_status_title' );

@@ -115,6 +115,12 @@ $placeholder = captain_plugins_product_placeholder_html( '<img src="x.png" alt="
 check( 'Platzhalter behält Alt-Text', str_contains( $placeholder, 'alt="Voucher Captain Pro"' ) && str_contains( $placeholder, 'product-placeholder.svg' ), $placeholder );
 $button = captain_plugins_account_url_token( '<a href="{{account_url}}">Konto</a>' );
 check( 'Konto-Platzhalter ersetzt', ! str_contains( $button, '{{account_url}}' ) && str_contains( $button, 'href="http' ), $button );
+$status = captain_plugins_order_status_title( '<div class="wc-block-order-confirmation-status"><h1>Order received</h1><p>Danke</p></div>' );
+check( 'Bestellstatus: eigene H1 von WooCommerce wird Seitentitel', 1 === substr_count( $status, '<h1' ) && str_contains( $status, 'cp-page-title' ) );
+$status = captain_plugins_order_status_title( '<div class="wc-block-order-confirmation-status"><p>Danke</p></div>' );
+check( 'Bestellstatus ohne H1 bekommt eine', 1 === substr_count( $status, '<h1' ) );
+check( 'Lizenzplan unvollständig erkannt', ! captain_plugins_setup_mapping_complete( array( 'entitlements_json' => '{"sites.live_limit":1}' ), array( 'pass.write_api' => true ) ) );
+check( 'Lizenzplan vollständig erkannt', captain_plugins_setup_mapping_complete( array( 'entitlements_json' => '{"pass.write_api":true}' ), array( 'pass.write_api' => true ) ) );
 check( 'Kein title-tag (sonst doppelter <title> mit Yoast)', ! current_theme_supports( 'title-tag' ) );
 check( 'Yoast-Sitemap ohne Autoren', array() === apply_filters( 'wpseo_sitemap_exclude_author', array( new stdClass() ) ) );
 check( 'Autoren-Sitemap entfernt', false === apply_filters( 'wp_sitemaps_add_provider', new stdClass(), 'users' ) );

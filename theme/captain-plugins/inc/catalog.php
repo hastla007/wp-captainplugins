@@ -82,21 +82,45 @@ function captain_plugins_setup_plan_rows(): array {
 	return $rows;
 }
 
+/**
+ * Pro features (boolean entitlements) License Captain's catalog offers for a product key such as
+ * "voucher-captain-pro". Empty while License Captain has not imported its catalog files yet.
+ *
+ * @return array<string,bool>
+ */
+function captain_plugins_setup_entitlements( string $product_key ): array {
+	$entitlements = array();
+	if ( ! class_exists( '\\WPLC\\Catalog\\EntitlementCatalog' ) || ! method_exists( '\\WPLC\\Catalog\\EntitlementCatalog', 'all' ) ) {
+		return $entitlements;
+	}
+	$group   = substr( $product_key, 0, (int) strpos( $product_key, '-' ) );
+	$catalog = \WPLC\Catalog\EntitlementCatalog::all();
+	foreach ( (array) ( $catalog[ $group ] ?? array() ) as $feature ) {
+		if ( is_array( $feature ) && ! empty( $feature['key'] ) ) {
+			$entitlements[ (string) $feature['key'] ] = true;
+		}
+	}
+	return $entitlements;
+}
+
+/** Whether a stored License Captain plan already grants every catalog feature of its product. */
+function captain_plugins_setup_mapping_complete( array $mapping, array $entitlements ): bool {
+	$stored = json_decode( (string) ( $mapping['entitlements_json'] ?? '' ), true );
+	$stored = is_array( $stored ) ? $stored : (array) ( $mapping['entitlements'] ?? array() );
+	foreach ( array_keys( $entitlements ) as $key ) {
+		if ( empty( $stored[ $key ] ) ) {
+			return false;
+		}
+	}
+	return true;
+}
+
 function captain_plugins_setup_license_mapping( WC_Product $product, array $row ): bool {
 	if ( ! class_exists( '\\WPLC\\Catalog\\Catalog' ) || ! method_exists( '\\WPLC\\Catalog\\Catalog', 'save_mapping' ) ) {
 		return false;
 	}
-	$group       = substr( (string) $row['product_key'], 0, strpos( (string) $row['product_key'], '-' ) );
-	$entitlements = array();
-	if ( class_exists( '\\WPLC\\Catalog\\EntitlementCatalog' ) && method_exists( '\\WPLC\\Catalog\\EntitlementCatalog', 'all' ) ) {
-		$catalog = \WPLC\Catalog\EntitlementCatalog::all();
-		foreach ( (array) ( $catalog[ $group ] ?? array() ) as $feature ) {
-			if ( is_array( $feature ) && ! empty( $feature['key'] ) ) {
-				$entitlements[ (string) $feature['key'] ] = true;
-			}
-		}
-	}
-	$mapping = array(
+	$entitlements = captain_plugins_setup_entitlements( (string) $row['product_key'] );
+	$mapping      = array(
 		'product_key' => (string) $row['product_key'],
 		'plan_key' => (string) $row['plan_key'],
 		'billing_interval' => 'year',
@@ -187,13 +211,25 @@ function captain_plugins_setup_create_products(): array {
 		$existing = method_exists( '\\WPLC\\Catalog\\Catalog', 'find_exact_mapping' ) ? \WPLC\Catalog\Catalog::find_exact_mapping( (int) $product->get_id(), 0 ) : null;
 		if ( $existing ) {
 			if ( is_array( $existing ) && (string) ( $existing['product_key'] ?? '' ) === (string) $row['product_key'] && (string) ( $existing['plan_key'] ?? '' ) === (string) $row['plan_key'] ) {
-				++$result['existing'];
+				$features = captain_plugins_setup_entitlements( (string) $row['product_key'] );
+				// A theme-created plan saved before License Captain had imported its catalog lacks the Pro features: complete it.
+				if ( array() !== $features && ! captain_plugins_setup_mapping_complete( $existing, $features ) && 'captain-plugins-theme-v1' === (string) $product->get_meta( '_cp_theme_product', true ) && captain_plugins_setup_license_mapping( $product, $row ) ) {
+					++$result['mapped'];
+					/* translators: %s: product title. */
+					$result['messages'][] = sprintf( __( 'Pro-Funktionen für „%s“ aus dem License-Captain-Katalog ergänzt.', 'captain-plugins' ), $row['title'] );
+				} else {
+					++$result['existing'];
+				}
 			} else {
 				++$result['skipped'];
 				/* translators: %s: product title. */
 				$result['messages'][] = sprintf( __( 'Der Lizenzplan für „%s“ ist bereits anders zugeordnet und wurde nicht geändert.', 'captain-plugins' ), $row['title'] );
 			}
 			continue;
+		}
+		if ( array() === captain_plugins_setup_entitlements( (string) $row['product_key'] ) ) {
+			/* translators: %s: product title. */
+			$result['messages'][] = sprintf( __( 'License Captain bietet für „%s“ derzeit keine freigegebenen Pro-Funktionen an (Katalog noch nicht importiert oder Funktionen erst geplant). Der Plan wird ohne Funktionen angelegt; sobald License Captain sie freigibt, ergänzt ein erneuter Lauf des Assistenten sie.', 'captain-plugins' ), $row['title'] );
 		}
 		if ( captain_plugins_setup_license_mapping( $product, $row ) ) {
 			++$result['mapped'];

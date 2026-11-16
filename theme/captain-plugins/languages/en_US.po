@@ -40,54 +40,68 @@ msgstr "Table with the columns %s; scroll horizontally if needed."
 msgid "Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen."
 msgstr "Table; scroll horizontally to see more columns."
 
-#: inc/catalog.php:139
+#: functions.php:328
+msgid "Ihre Bestellung"
+msgstr "Your order"
+
+#: inc/catalog.php:163
 msgid "Für die Produktanlage müssen WooCommerce und License Captain aktiv sein."
 msgstr "WooCommerce and License Captain must be active to create products."
 
 #. translators: %d: number of product drafts.
-#: inc/catalog.php:144 inc/setup.php:432
+#: inc/catalog.php:168 inc/setup.php:432
 msgid "Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten."
 msgstr "Your user account is not allowed to manage WooCommerce products."
 
-#: inc/catalog.php:149
+#: inc/catalog.php:173
 msgid "Die Konzeptpreise sind in Euro. Stelle zuerst die WooCommerce-Währung auf EUR, bevor die Preisentwürfe angelegt werden."
 msgstr "The draft prices are in euros. Set the WooCommerce currency to EUR before creating the price drafts."
 
 #. translators: %s: product SKU.
-#: inc/catalog.php:159
+#: inc/catalog.php:183
 msgid "SKU %s existiert bereits und wurde nicht verändert."
 msgstr "SKU %s already exists and was left unchanged."
 
-#: inc/catalog.php:174
+#: inc/catalog.php:198
 msgid "Priority"
 msgstr "Priority"
 
-#: inc/catalog.php:174
+#: inc/catalog.php:198
 msgid "Standard"
 msgstr "Standard"
 
 #. translators: %s: product title.
-#: inc/catalog.php:179
+#: inc/catalog.php:203
 msgid "WooCommerce konnte „%s“ nicht speichern."
 msgstr "WooCommerce could not save “%s”."
 
 #. translators: %s: product title.
-#: inc/catalog.php:194
+#: inc/catalog.php:219
+msgid "Pro-Funktionen für „%s“ aus dem License-Captain-Katalog ergänzt."
+msgstr "Added the Pro features for “%s” from the License Captain catalog."
+
+#. translators: %s: product title.
+#: inc/catalog.php:226
 msgid "Der Lizenzplan für „%s“ ist bereits anders zugeordnet und wurde nicht geändert."
 msgstr "The license plan for “%s” is already mapped differently and was left unchanged."
 
 #. translators: %s: product title.
-#: inc/catalog.php:203
+#: inc/catalog.php:232
+msgid "License Captain bietet für „%s“ derzeit keine freigegebenen Pro-Funktionen an (Katalog noch nicht importiert oder Funktionen erst geplant). Der Plan wird ohne Funktionen angelegt; sobald License Captain sie freigibt, ergänzt ein erneuter Lauf des Assistenten sie."
+msgstr "License Captain currently offers no released Pro features for “%s” (catalog not imported yet or features only planned). The plan is created without features; once License Captain releases them, running the assistant again adds them."
+
+#. translators: %s: product title.
+#: inc/catalog.php:239
 msgid "„%s“ ist als Entwurf angelegt, aber License Captain hat den Jahresplan nicht übernehmen können."
 msgstr "“%s” was created as a draft, but License Captain could not store the annual plan."
 
 #. translators: %s: product title.
-#: inc/catalog.php:207
+#: inc/catalog.php:243
 msgid "Die WooCommerce-E-Mails nutzen jetzt die Farben der Website."
 msgstr "WooCommerce emails now use the website colours."
 
 #. translators: 1: product name, 2: number of live websites, 3: support level.
-#: inc/catalog.php:174
+#: inc/catalog.php:198
 msgid "Jahreslizenz für %1$s. %2$d Live-Website; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
 msgid_plural "Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
 msgstr[0] "Annual license for %1$s. %2$d live website; %3$s support. Pro features and updates while the license is active."
