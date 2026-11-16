@@ -20,6 +20,8 @@ Dieses Verzeichnis enthält die deutschen Website-Texte für Captain Plugins. Da
 - [Über uns](ueber.md) → /ueber/
 - [Dokumentation](dokumentation.md) → /dokumentation/
 - [Support](support.md) → /support/
+- [Impressum](impressum.md) → /impressum/ (Entwurfsvorlage mit Betreiber-Platzhaltern)
+- [Datenschutzerklärung](datenschutz.md) → /datenschutz/ (Entwurfsvorlage mit Betreiber-Platzhaltern)
 - [Übergreifende FAQ](faq.md) → /faq/
 - [Lösung für Bootsschulen](loesungen/bootsschulen.md) → /loesungen/bootsschulen/
 
