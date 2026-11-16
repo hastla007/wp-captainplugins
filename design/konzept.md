@@ -241,7 +241,7 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 ### B. Designsystem und Theme-Grundgerüst
 
 - [x] CSS-Variablen und `theme.json` für Farben, Typografie, Layoutbreiten, Abstände und UI-Zustände definieren.
-- [ ] Editoransicht an Frontend-Stile angleichen.
+- [x] Editoransicht an Frontend-Stile angleichen. *(Geprüft mit `tools/qa/editor-check.cjs`.)*
 - [x] Header, Desktop-/Mobile-Menü und Footer als Template Parts erstellen.
 - [x] Globales Seitengerüst inklusive Skip-Link, Breadcrumb-Ausgabe und Hauptinhalt umsetzen.
 - [x] Basis-Templates für Startseite, Seite, Beitrag, Archiv, Suche und 404 erstellen.
@@ -262,7 +262,7 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 - [ ] Produkt-Screenshots gemäß den Bildbriefings in `konzept-website.md` erstellen und Datenschutzprüfung durchführen.
 - [x] Alt-Texte und Bildunterschriften festlegen; dekorative Bilder als dekorativ behandeln.
 - [x] Mobile Darstellung, Preisvergleiche, Tabellen, Menüs, Formulare und FAQ bei relevanten Breiten prüfen.
-- [ ] Visuelle Konsistenz zwischen Frontend und Block-Editor abnehmen.
+- [x] Visuelle Konsistenz zwischen Frontend und Block-Editor abnehmen. *(Startseite, Produkt-, Preis- und Ratgeberseite im Editor-Canvas verglichen.)*
 
 ### E. Qualitätsprüfung und Übergabe
 

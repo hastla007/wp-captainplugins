@@ -46,7 +46,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Farbkontraste aller Kombinationen einschließlich Status- und Produktakzenten nach WCAG prüfen und dokumentieren. *(Tabelle in `design/konzept.md`, Abschnitt 2.)*
 - [x] Mobile, Tablet und Desktop anhand vorhandener Mockups abgleichen.
 - [x] Logo/Markenzeichen und finale Maskottchen-Assets optimiert und mit Alternativtextregeln einbinden. *(Vier freigestellte WebP-Posen als dekorative CSS-Hintergründe; Logo bleibt Wortmarke mit Anker-Icon, bis ein finales Logo vorliegt.)*
-- [ ] Editor-Styles mit Frontend-Styles abgleichen, damit bearbeitete Blöcke der Live-Darstellung entsprechen. *(theme.css wird als Editor-Style geladen; Sichtprüfung im Block-Editor offen.)*
+- [x] Editor-Styles mit Frontend-Styles abgleichen, damit bearbeitete Blöcke der Live-Darstellung entsprechen. *(Im echten Gutenberg-Editor-Canvas mit Theme-Styles geprüft; Darstellung entspricht dem Frontend – `tools/qa/editor-check.cjs`.)*
 
 ## Phase 4 – Theme-Grundgerüst
 
@@ -58,7 +58,7 @@ Dieses Dokument ist die durchgängige To-do-Liste für die Umsetzung, Prüfung u
 - [x] Startseiten-Hero als zweispaltigen Markenauftritt mit Captain-Illustration und mobil gestapelter Darstellung umsetzen.
 - [x] Startseiten-Produktübersicht als acht responsive, wiedererkennbare Produktkarten ausgeben.
 - [x] Design-Tokens, Karten, Buttons, Produktseiten, FAQ, Preisübersicht und Medienplatzhalter visuell an die Referenzbilder angleichen.
-- [ ] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen. *(Theme-ZIP installiert und aktiv; alle 3 037 Blöcke aus Templates, Parts, Patterns und Seiten bestehen die Gutenberg-Blockvalidierung. Sichtprüfung im Site Editor offen.)*
+- [x] Theme im WordPress-Admin installieren und Site-Editor-Kompatibilität prüfen. *(Theme-ZIP installiert; 3 519 Blöcke aus Templates, Parts, Patterns und Seiten bestehen die Blockvalidierung; Inhalte rendern im Editor-Canvas ohne ungültige Blöcke.)*
 - [x] Navigationsblock, Menüzustände, Fokusreihenfolge und Tastaturbedienung im echten Browser prüfen. *(Playwright: Untermenü per Klick/Escape, Mobil- und Tablet-Overlay, Skip-Link, FAQ per Tastatur – alle Tests bestanden.)*
 - [x] Theme-Angaben, Textdomain, Übersetzungsdateien und Lizenzhinweise für den Release vervollständigen. *(Kopfdaten, Domain Path und `.pot` erledigt; die Lizenz des Themes muss der Betreiber noch festlegen.)*
 
@@ -139,12 +139,14 @@ Seiten mit noch nicht hinterlegten Download-/Checkout-Zielen markieren diese Ste
 
 ## Aktueller Build-Stand
 
-Stand 16. November 2026, Theme-Version 0.3.0. Das Theme setzt das Designkonzept und die Mockups um: Navy-Header mit Klick-Untermenüs und Gold-CTA, Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle sieben Produkte, Tarifkarten, CTA-Bänder, ruhiger Lesefluss für Ratgeber und Dokumentation sowie breite Matrizen für Kompatibilität und Integrationen. Der Inhaltscompiler erzeugt 90 importierbare Seiten (davon Impressum und Datenschutz als Entwürfe).
+Stand 16. November 2026, Theme-Version 0.4.0, acht Website-Produkte einschließlich Course Captain. Das Theme setzt das Designkonzept und die Mockups um: Navy-Header mit Klick-Untermenüs und Gold-CTA, Startseiten-Hero mit Kapitän, Produkt-Hero mit Medienrahmen, Produkt- und Featurekarten mit Icons für alle sieben Produkte, Tarifkarten, CTA-Bänder, ruhiger Lesefluss für Ratgeber und Dokumentation sowie breite Matrizen für Kompatibilität und Integrationen. Der Inhaltscompiler erzeugt 103 importierbare Seiten (davon Impressum und Datenschutz als Entwürfe).
 
 **Geprüft in WordPress 6.7 (SQLite-Testinstallation):** Gutenberg-Blockvalidierung aller Templates, Parts, Patterns und Seiten ohne Fehler; Link-Crawler ohne tote interne Links; 90 Seiten in Desktop, Tablet und Mobil ohne horizontales Scrollen, mit genau einer H1 und ohne Hierarchiesprünge; axe-core ohne Verstöße; Menü-, Skip-Link- und FAQ-Tastaturtests bestanden; keine PHP-Warnungen.
 
 **Zusätzlich vorhanden:** Betriebsdokumentation (`docs/BETRIEB.md`), Redaktionshandbuch (`docs/REDAKTION.md`), Weiterleitungsliste (`docs/WEITERLEITUNGEN.md`), QA-Werkzeuge (`tools/qa/`), Social-Bilder, Mindestversionen PHP 8.5 / MySQL 9.7 / MariaDB 12.3.
 
-**Nur mit echter Umgebung prüfbar:** WooCommerce-Kaufstrecke und Konto, Yoast-Ausgabe, Sichtprüfung im Block-/Site-Editor, Screenreader-Durchlauf, Core Web Vitals auf Staging.
+**Zusätzlich geprüft (0.4.0):** PHPCS ohne Befunde, Lighthouse 96–100, Editor-Canvas ohne ungültige Blöcke, axe ohne Verstöße auf allen 103 Seiten in vier Ansichten, visueller Regressionstest eingerichtet.
+
+**Nur mit echter Umgebung prüfbar:** WooCommerce-Kaufstrecke und Konto, Yoast-Ausgabe mit echtem Plugin, Screenreader-Durchlauf mit NVDA/VoiceOver, Core Web Vitals auf Staging.
 
 **Vom Betreiber zu entscheiden oder zu liefern:** Theme-Lizenz, Impressums- und Datenschutzangaben, Bildrechte der Kapitänsillustrationen, finale Download-, Checkout- und Support-URLs, echte Produkt-Screenshots (siehe `texte/homepage/medieninventar.md`), License-Captain-Preise.

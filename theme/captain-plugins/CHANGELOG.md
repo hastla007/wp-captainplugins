@@ -1,5 +1,20 @@
 # Änderungsprotokoll – Captain Plugins Theme
 
+## 0.4.0 – 16. November 2026
+
+### Neu
+- **Course Captain** als achtes Produkt: Produkt-, Features-, Pro-, FAQ-, Installations-, Kompatibilitäts- und Integrationsseite, Dokumentation, drei Ratgeber, Lösungsseite „Online-Akademien und Weiterbildung“, Kurs-Icon, Menü, Footer, Produktkarte und Social-Bild.
+- Englische Übersetzung der Theme-Oberfläche (`languages/en_US.po/.mo`).
+- Marken-Favicon als Fallback, solange kein Website-Icon gesetzt ist.
+- Pattern-Katalog mit Vorschaubildern (`docs/PATTERNS.md`).
+- Werkzeuge: PHPCS mit WordPress-Coding-Standards und PHP-8.5-Kompatibilität, visueller Regressionstest, Editor-Canvas-Prüfung, Release-Blocker-Bericht, 31 Integrationstests, GitHub-Actions-Workflow.
+
+### Behoben
+- Brotkrumen-Trennzeichen wurden von Screenreadern vorgelesen.
+- Lösungsseiten liefen in der schmalen Lesespalte; zweispaltige Abschnitte hatten keine Abstände zwischen Button-Reihen.
+- Preis-Pattern listete nur drei von fünf bepreisten Pro-Add-ons; Startseiten-Hero-Pattern nannte nicht alle Produktbereiche.
+- Setup-Assistent: Checkbox-Ausgabe über `wp_kses`, Übersetzerhinweise für alle Platzhalter-Texte.
+
 ## 0.3.0 – 16. November 2026
 
 ### Neu
