@@ -1,0 +1,17 @@
+{
+  "name": "captain-plugins-qa",
+  "private": true,
+  "description": "Prüfwerkzeuge für das Captain-Plugins-Theme: Block-Validierung, Seiten-Audit, Barrierefreiheit, Links und Smoke-Test.",
+  "scripts": {
+    "blocks": "node validate-blocks.cjs",
+    "audit": "node site-check.cjs",
+    "smoke": "node smoke.cjs"
+  },
+  "dependencies": {
+    "@wordpress/block-library": "^12.1.0",
+    "@wordpress/blocks": "^17.1.0",
+    "axe-core": "^4.14.0",
+    "jsdom": "^24.1.3",
+    "playwright": "^1.63.0"
+  }
+}
