@@ -55,10 +55,11 @@ function captain_plugins_content_template_slug( array $entry ): string {
 	if ( '' === $path ) {
 		return '';
 	}
-	if ( in_array( $path, array( 'voucher-captain', 'pass-captain', 'affiliate-captain', 'license-captain' ), true ) ) {
+	// Product start pages are top-level "*-captain" pages; their content carries the product hero and H1.
+	if ( preg_match( '/^[a-z]+-captain$/', $path ) ) {
 		return 'page-product';
 	}
-	if ( in_array( $path, array( 'preise', 'captain-pro' ), true ) ) {
+	if ( in_array( $path, array( 'preise', 'captain-pro' ), true ) || '/preise' === substr( $path, -7 ) ) {
 		return 'page-pricing';
 	}
 	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen' ), true ) ) {

@@ -29,11 +29,6 @@ Gewinnen Sie Partner, ordnen Sie Empfehlungen nachvollziehbar zu und verwalten S
 
 [Affiliate Captain kennenlernen](/affiliate-captain/)
 
-### License Captain
-Verwandeln Sie Ihren WooCommerce-Shop in die zentrale Stelle für Lizenzverkauf, Aktivierungen, Verlängerungen und Plugin-Updates.
-
-[License Captain entdecken](/license-captain/) · **Separater Lizenzserver für Plugin-Hersteller**
-
 ### Review Captain
 Führen Sie lokale Erfahrungsberichte und externe Kundenbewertungen aus Bewertungsplattformen und App-Stores nachvollziehbar in WordPress zusammen.
 
@@ -48,6 +43,11 @@ Verbinden Sie WordPress-, WooCommerce- und Captain-Suite-Ereignisse mit Bedingun
 Erstellen Sie Kontakt-, Angebots- und Supportformulare und bearbeiten Sie Einsendungen direkt in Ihrem WordPress-Admin.
 
 [Form Captain ansehen](/form-captain/) · [Kostenlos starten]([Download-URL])
+
+### License Captain
+Verwandeln Sie Ihren WooCommerce-Shop in die zentrale Stelle für Lizenzverkauf, Aktivierungen, Verlängerungen und Plugin-Updates.
+
+[License Captain entdecken](/license-captain/) · **Für Plugin-Hersteller: Server und Client**
 
 ## Ein klarer Weg vom Kern bis zu Pro
 

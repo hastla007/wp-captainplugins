@@ -37,12 +37,6 @@ Bauen Sie ein Partnerprogramm mit Regeln, nachvollziehbarer Attribution, Refund-
 
 [Features ansehen](/affiliate-captain/features/) · [Affiliate Captain Pro](/affiliate-captain/pro/)
 
-## License Captain
-
-Verkaufen Sie Lizenzen für eigene WordPress-Plugins und Softwareprodukte über WooCommerce. Verwalten Sie Website-Aktivierungen, Verlängerungen, Berechtigungen und Updates mit einem eigenen Lizenzserver. License Captain besteht aus Server und Client: Der Server läuft in Ihrem Shop, der Client kommt in Ihre Plugins.
-
-[Features ansehen](/license-captain/features/) · [Preise und Pläne](/license-captain/preise/) · [FAQ](/license-captain/faq/)
-
 ## Form Captain
 
 Erstellen Sie Kontakt-, Angebots- und Supportformulare direkt in WordPress. Einsendungen bleiben im Admin verwaltbar; der kostenlose Kern unterstützt unbegrenzt viele Formulare und Entries. Ein versionierter Connectorvertrag ermöglicht separate Suite- und Projekt-Erweiterungen.
@@ -60,6 +54,12 @@ Verwalten Sie lokale Kundenstimmen und extern veröffentlichte Bewertungen mit k
 Automatisieren Sie wiederkehrende WordPress- und WooCommerce-Abläufe mit Ereignissen, Bedingungen, Aktionen und Zeitplanung. Workflow Captain Pro verbindet zusätzlich die Captain Suite über versionierte Provider, sichere Webhooks und nachvollziehbare Ausführungsprotokolle.
 
 [Features ansehen](/workflow-captain/features/) · [Workflow Captain Pro](/workflow-captain/pro/) · [FAQ](/workflow-captain/faq/)
+
+## License Captain
+
+Verkaufen Sie Lizenzen für eigene WordPress-Plugins und Softwareprodukte über WooCommerce. Verwalten Sie Website-Aktivierungen, Verlängerungen, Berechtigungen und Updates mit einem eigenen Lizenzserver. License Captain besteht aus Server und Client: Der Server läuft in Ihrem Shop, der Client kommt in Ihre Plugins.
+
+[Features ansehen](/license-captain/features/) · [Preise und Pläne](/license-captain/preise/) · [FAQ](/license-captain/faq/)
 
 [Screenshot-Platzhalter: Produktvergleich mit den sieben Website-Produkten, Einsatzbereich, WooCommerce-Abhängigkeit und passendem CTA zeigen.]  
 [CTA: Alle Preise vergleichen](/preise/)

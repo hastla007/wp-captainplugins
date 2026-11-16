@@ -18,7 +18,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "0aa6075bc49369ec69b0b4de6b93803e18f9a5c808ad73486d1c67663f4688b3",
+		"source_hash" => "5e85c00a57671215437903877345294d2caacc719c11e028ada7d0f80d979984",
 		"source_file" => "texte/homepage/index.md",
 	],
 	[
@@ -52,7 +52,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => false,
-		"source_hash" => "c002c311673f6b3928cb856a7726aa8cc167ca6e946aed81358c0321c662ce29",
+		"source_hash" => "c4949fbd21d98fa3a8c710dccdaa9708514b4e63e1e9a906facdc38a26377393",
 		"source_file" => "texte/homepage/captain-pro.md",
 	],
 	[
@@ -202,7 +202,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "d6eacf7da1c3c62884f7bf6070589756b3c59ee3e68a58c1611a3ac496df86a9",
+		"source_hash" => "645da6451a50f576849d7c6cf8b8e244a4e65cc3b9ddfe49beaeedc7ea029e8c",
 		"source_file" => "texte/homepage/preise.md",
 	],
 	[
@@ -219,7 +219,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "06e8e662be3b20ac4a2428c6ddd2a233e2b64067d8b8c59ee09ee5ba08dd9d58",
+		"source_hash" => "3b240ddeec1662bb0c85f76c1cec24a67d57c26b69dd93f3734c8b8c8d132459",
 		"source_file" => "texte/homepage/produkte.md",
 	],
 	[
@@ -556,7 +556,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "4b171b3e89ab34d84727377294b0d52ac5c493e2576c08b11c08e21e61a1ea28",
+		"source_hash" => "a1efa05d0c912177481bba0974a5782abf51719f2ca2ec61232cd02d8ee284f1",
 		"source_file" => "texte/homepage/form-captain/pro.md",
 	],
 	[
@@ -1028,7 +1028,7 @@ return [
 		"social_description" => "",
 		"social_image" => "",
 		"has_placeholders" => true,
-		"source_hash" => "d6a2b27d68c2c188c822dbf1f74afee4f546b66876a0219f45bb749ecd1fdd8f",
+		"source_hash" => "18277c2dcce4faf9c495806565b13cbfc9faaa84b0861a5a8a6d90199245dbc7",
 		"source_file" => "texte/homepage/workflow-captain/pro.md",
 	],
 	[

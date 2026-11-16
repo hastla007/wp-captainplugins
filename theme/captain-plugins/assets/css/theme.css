@@ -33,6 +33,9 @@
 	--cp-icon-check: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.2 4.2L19 7'/%3E%3C/svg%3E");
 	--cp-icon-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E");
 	--cp-icon-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='4.5' width='17' height='15' rx='2'/%3E%3Ccircle cx='9' cy='10' r='1.8'/%3E%3Cpath d='M20.5 16l-5-5-8.5 8.5'/%3E%3C/svg%3E");
+	--cp-icon-form: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='3.5' width='14' height='17' rx='2'/%3E%3Cpath d='M8.5 8h7M8.5 12h7M8.5 16h4'/%3E%3C/svg%3E");
+	--cp-icon-review: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3.8l2.5 5.1 5.6.8-4.05 3.95.95 5.6L12 16.6l-5 2.65.95-5.6L3.9 9.7l5.6-.8z'/%3E%3C/svg%3E");
+	--cp-icon-workflow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='4' width='6' height='5' rx='1.2'/%3E%3Crect x='14.5' y='15' width='6' height='5' rx='1.2'/%3E%3Cpath d='M6.5 9v4.5a2 2 0 0 0 2 2h6M12.5 13.5l2 2-2 2'/%3E%3C/svg%3E");
 	--cp-icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='6.5'/%3E%3Cpath d='M16 16l4.5 4.5'/%3E%3C/svg%3E");
 }
 
@@ -280,6 +283,9 @@ img { max-width: 100%; height: auto; }
 .cp-card--pass, .cp-product-badge--pass, .cp-plan-group--pass { --cp-product-icon: var(--cp-icon-pass); }
 .cp-card--affiliate, .cp-product-badge--affiliate, .cp-plan-group--affiliate { --cp-product-icon: var(--cp-icon-affiliate); }
 .cp-card--license, .cp-product-badge--license, .cp-plan-group--license { --cp-product-icon: var(--cp-icon-license); }
+.cp-card--form, .cp-product-badge--form, .cp-plan-group--form { --cp-product-icon: var(--cp-icon-form); }
+.cp-card--review, .cp-product-badge--review, .cp-plan-group--review { --cp-product-icon: var(--cp-icon-review); }
+.cp-card--workflow, .cp-product-badge--workflow, .cp-plan-group--workflow { --cp-product-icon: var(--cp-icon-workflow); }
 .cp-product-badge::before { content: ""; width: 2.5rem; height: 2.5rem; flex-shrink: 0; background: var(--cp-navy); -webkit-mask: var(--cp-product-icon, var(--cp-icon-anchor)) center / 1.5rem no-repeat; mask: var(--cp-product-icon, var(--cp-icon-anchor)) center / 1.5rem no-repeat; box-shadow: none; }
 .cp-product-badge { position: relative; isolation: isolate; }
 .cp-product-badge::after { content: ""; position: absolute; left: 0; top: 50%; width: 2.5rem; height: 2.5rem; transform: translateY(-50%); border-radius: var(--cp-radius-sm); background: var(--cp-paper); box-shadow: var(--cp-shadow); z-index: -1; }

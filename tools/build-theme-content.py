@@ -173,7 +173,7 @@ def markdown_blocks(markdown: str, page_path: str = "") -> str:
                 rows.append(split_table_row(lines[i])); i += 1
             head_html = "<thead><tr>" + "".join('<th scope="col">' + inline(c) + "</th>" for c in header) + "</tr></thead>"
             body_html = "<tbody>" + "".join("<tr>" + "".join("<td>" + inline(c) + "</td>" for c in row) + "</tr>" for row in rows) + "</tbody>"
-            table_class = "cp-pricing-table" if page_path in ("preise", "captain-pro") or re.fullmatch(r"(voucher|pass|affiliate)-captain/pro", page_path) else ""
+            table_class = "cp-pricing-table" if page_path in ("preise", "captain-pro") or re.fullmatch(r"[a-z]+-captain/pro", page_path) else ""
             table_attrs = {"className": table_class} if table_class else None
             table_figure_class = "wp-block-table" + (" " + table_class if table_class else "")
             out.append(block("table", f'<figure class="{table_figure_class}"><table>' + head_html + body_html + "</table></figure>", table_attrs))
@@ -338,7 +338,10 @@ def card_grid(children: list[str]) -> list[str] | None:
         else:
             lead.append(child)
     # A closing button row after the last card belongs to the section, not the card.
-    if cards and len(cards[-1]) > 1 and cards[-1][-1].startswith("<!-- wp:buttons "):
+    others_have_links = any(
+        any(item.startswith("<!-- wp:buttons ") or is_card_links(item) for item in card[1:]) for card in cards[:-1]
+    )
+    if cards and len(cards[-1]) > 1 and cards[-1][-1].startswith("<!-- wp:buttons ") and not others_have_links:
         trailing.append(cards[-1].pop())
     rendered = []
     for card in cards:
@@ -378,7 +381,12 @@ def plan_card(name: str, sites: str, price: str, extras: list[tuple[str, str]], 
 
 
 def plan_name(cell: str) -> tuple[str, str]:
-    match = re.match(r"^(Single|Business|Agency)\b(?:\s*·\s*(\d+)\s+Websites?)?", plain_text(cell))
+    text = plain_text(cell)
+    only_sites = re.match(r"^(\d+)\s+(?:Live-)?Websites?$", text)
+    if only_sites:
+        count = only_sites.group(1)
+        return f"{count} {'Live-Website' if count == '1' else 'Live-Websites'}", ""
+    match = re.match(r"^(Single|Business|Agency|Solo|Studio)\b(?:\s*·\s*(\d+)\s+Websites?)?", text)
     if not match:
         return "", ""
     count = match.group(2)
@@ -387,7 +395,7 @@ def plan_name(cell: str) -> tuple[str, str]:
 
 
 def support_for(plan: str, page_text: str) -> str:
-    if "Agency enthält Priority-Support" not in page_text:
+    if not re.search(r"Agency enthält Priority-Support|Priority-Support für Agency", page_text):
         return ""
     return "Priority-Support" if plan == "Agency" else "Standard-Support"
 
@@ -410,8 +418,9 @@ def plan_cards(item: str, page_text: str) -> list[str] | None:
                 elif label.lower().startswith("live-website"):
                     sites = f"{value} {'Live-Website' if value == '1' else 'Live-Websites'}"
                 else:
-                    extras.append(("", value))
-            cards.append(plan_card(name, sites, price, extras, support_for(name, page_text)))
+                    extras.append((plain_text(label), value))
+            has_support = any(label.lower() == "support" for label, _ in extras)
+            cards.append(plan_card(name, sites, price, extras, "" if has_support else support_for(name, page_text)))
         return [group_block("cp-plan-grid", cards)]
     # Plans as columns, one row per product (price overview).
     plans = [plan_name(cell) for cell in head[1:]]
@@ -420,7 +429,11 @@ def plan_cards(item: str, page_text: str) -> list[str] | None:
         for row in rows:
             product = plain_text(row[0])
             slug = next((s for s, n in PRODUCT_NAMES.items() if product.startswith(n)), "")
-            cards = [plan_card(name, sites, price, [], support_for(name, page_text)) for (name, sites), price in zip(plans, row[1:])]
+            tiers = ("Single", "Business", "Agency")
+            cards = [
+                plan_card(name, sites, price, [], support_for(tiers[min(index, 2)], page_text))
+                for index, ((name, sites), price) in enumerate(zip(plans, row[1:]))
+            ]
             title = block("heading", f'<h3 class="wp-block-heading cp-plan-group__title">{inline(product)}</h3>', {"level": 3, "className": "cp-plan-group__title"})
             parts = [title, group_block("cp-plan-grid", cards)]
             if slug:
