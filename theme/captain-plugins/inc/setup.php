@@ -244,7 +244,7 @@ add_action( 'admin_post_captain_plugins_setup_content', static function (): void
 	$groups = isset( $_POST['cp_groups'] ) && is_array( $_POST['cp_groups'] ) ? array_map( 'sanitize_key', wp_unslash( $_POST['cp_groups'] ) ) : array();
 	$publish = ! empty( $_POST['cp_publish_pages'] );
 	$counts  = captain_plugins_content_sync( $groups, $publish );
-	$messages = array( array( empty( $counts['errors'] ) ? 'success' : 'warning', sprintf( __( 'Seitenabgleich: %1$d neu angelegt, %2$d aktualisiert, %3$d unverändert, %4$d wegen eigener Änderungen geschont, %5$d mit Platzhaltern geschützt, %6$d Fehler.', 'captain-plugins' ), $counts['created'], $counts['updated'], $counts['unchanged'], $counts['edited'], $counts['blocked'], $counts['errors'] ) ) );
+	$messages = array( array( empty( $counts['errors'] ) ? 'success' : 'warning', sprintf( __( 'Seitenabgleich: %1$d neu angelegt, %2$d aktualisiert, %3$d unverändert, %4$d wegen eigener Änderungen geschont, %5$d mit Platzhaltern geschützt, %6$d Fehler, %7$d nicht mehr gelieferte Seiten auf Entwurf gesetzt.', 'captain-plugins' ), $counts['created'], $counts['updated'], $counts['unchanged'], $counts['edited'], $counts['blocked'], $counts['errors'], $counts['retired'] ?? 0 ) ) );
 	captain_plugins_setup_flash( $messages );
 	wp_safe_redirect( captain_plugins_setup_url() . '#cp-setup-content' );
 	exit;

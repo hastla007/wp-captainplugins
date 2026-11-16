@@ -148,7 +148,7 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 	$allowed = array( 'core', 'products', 'guides' );
 	$groups  = array_values( array_intersect( $allowed, array_map( 'sanitize_key', $groups ) ) );
 	if ( empty( $groups ) ) {
-		return array( 'created' => 0, 'updated' => 0, 'unchanged' => 0, 'edited' => 0, 'blocked' => 0, 'errors' => 1 );
+		return array( 'created' => 0, 'updated' => 0, 'unchanged' => 0, 'edited' => 0, 'blocked' => 0, 'errors' => 1, 'retired' => 0 );
 	}
 	$entries = captain_plugins_content_manifest();
 	$selected = array();
@@ -313,5 +313,40 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 		++$counts['updated'];
 	}
 
+	$counts['retired'] = captain_plugins_content_retire();
 	return $counts;
+}
+
+/** Paths the theme no longer ships, mapped to their recommended redirect target. */
+function captain_plugins_content_retired_paths(): array {
+	$file = get_theme_file_path( 'content/retired.php' );
+	if ( ! is_readable( $file ) ) {
+		return array();
+	}
+	$paths = require $file;
+	return is_array( $paths ) ? $paths : array();
+}
+
+/**
+ * Move untouched, theme-owned copies of retired pages back to draft. Pages edited by people stay as they are.
+ *
+ * @return int Number of pages moved to draft.
+ */
+function captain_plugins_content_retire(): int {
+	$retired = 0;
+	foreach ( array_keys( captain_plugins_content_retired_paths() ) as $path ) {
+		$page = get_page_by_path( (string) $path, OBJECT, 'page' );
+		if ( ! $page instanceof WP_Post || 'publish' !== $page->post_status || '1' !== get_post_meta( $page->ID, '_cp_theme_page', true ) ) {
+			continue;
+		}
+		if ( ! hash_equals( (string) get_post_meta( $page->ID, '_cp_content_hash', true ), captain_plugins_content_page_hash( $page ) ) ) {
+			continue;
+		}
+		$updated = wp_update_post( array( 'ID' => $page->ID, 'post_status' => 'draft' ), true );
+		if ( ! is_wp_error( $updated ) ) {
+			update_post_meta( $page->ID, '_cp_content_status', 'retired' );
+			++$retired;
+		}
+	}
+	return $retired;
 }
