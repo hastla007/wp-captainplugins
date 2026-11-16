@@ -1,6 +1,6 @@
 # Betrieb: Installation, Update, Rückfall und Pflege
 
-Stand: 16. November 2026, Theme-Version 0.5.0. Diese Anleitung deckt Phase 10 der [Theme-Roadmap](../theme/ROADMAP.md) ab. Prüfwerkzeuge liegen unter [`tools/qa/`](../tools/qa/README.md).
+Stand: 16. November 2026, Theme-Version 0.6.0. Diese Anleitung deckt Phase 10 der [Theme-Roadmap](../theme/ROADMAP.md) ab. Prüfwerkzeuge liegen unter [`tools/qa/`](../tools/qa/README.md).
 
 ## Voraussetzungen
 
@@ -73,7 +73,7 @@ Eine Datenbank-Wiederherstellung verwirft Bestellungen, Lizenzen und Konten, die
 
 ## Cache-Header für statische Dateien
 
-Theme-CSS und -Bilder tragen eine Versionsnummer in der URL (`?ver=0.5.0`) und dürfen deshalb lange zwischengespeichert werden. Lighthouse schätzt die Ersparnis auf rund 145 KB pro Wiederbesuch.
+Theme-CSS und -Bilder tragen eine Versionsnummer in der URL (`?ver=0.6.0`) und dürfen deshalb lange zwischengespeichert werden. Lighthouse schätzt die Ersparnis auf rund 145 KB pro Wiederbesuch.
 
 Apache (`.htaccess`):
 

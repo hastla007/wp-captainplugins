@@ -1,5 +1,20 @@
 # Änderungsprotokoll – Captain Plugins Theme
 
+## 0.6.0 – 16. November 2026
+
+Geprüft auf WordPress 7.1.4, WooCommerce 11.3.0, Yoast SEO 28.8 und License Captain 0.2.0 (MariaDB); PHP 8.5 im Workflow `staging-php85.yml`.
+
+### Behoben
+- **Doppelter `<title>` mit Yoast:** Das Block-Theme meldete `title-tag` an; Yoast gab deshalb einen zweiten Titel aus.
+- **Zwei H1 auf der Bestellbestätigung** mit WooCommerce 10+: Die Status-Überschrift von WooCommerce ist jetzt der Seitentitel.
+- Lizenzansicht von License Captain: klassische WooCommerce-Knöpfe im Theme-Design statt Browser-Standard.
+- „Passwort anzeigen“-Knopf zu klein (WCAG 2.5.8).
+- Yoast-Sitemap ohne Warenkorb, Kasse, Konto und Autoren.
+- Setup-Assistent ergänzt Pro-Funktionen nachträglich, sobald License Captain sie freigibt, und meldet Produkte ohne freigegebene Funktionen.
+
+### Neu
+- Werkzeuge: `seo-head.py` (SEO-Kopf aller Seiten), `license-e2e.php` (Lizenzaktivierung), `tools/ci/` und Workflow `staging-php85.yml`, Verfügbarkeits-Check `uptime.yml`, Must-Use-Plugin `tools/ops/captain-monitoring.php`.
+
 ## 0.5.0 – 16. November 2026
 
 ### Neu
