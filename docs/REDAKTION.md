@@ -26,7 +26,7 @@ Grundsatz: Wer schreibt, gibt nicht selbst frei. Preise, Rechtstexte und Produkt
 
 ## Pattern-Freigaben
 
-Freigegebene Block-Patterns (*Captain Plugins* im Pattern-Verzeichnis): Startseiten-Hero, Produkt-Hero, Produktkarten, Featurekarten, Ablauf, Free/Pro-Vergleich, Preisvergleich, Kompatibilitätshinweis, FAQ, Ressourcenkarten, Screenshot-Briefing, Abschluss-CTA.
+Freigegebene Block-Patterns (*Captain Plugins* im Pattern-Verzeichnis; Vorschau und Pflichtfelder im [Pattern-Katalog](PATTERNS.md)): Startseiten-Hero, Produkt-Hero, Produktkarten, Featurekarten, Ablauf, Free/Pro-Vergleich, Preisvergleich, Kompatibilitätshinweis, FAQ, Ressourcenkarten, Screenshot-Briefing, Abschluss-CTA.
 
 - Redaktion darf Patterns einfügen und Texte, Links und Bilder darin ändern.
 - Farben, Schriftgrößen und Abstände kommen aus dem Designsystem; individuelle Farbwerte sind im Editor deaktiviert und sollen nicht über eigenes CSS ersetzt werden.
