@@ -83,6 +83,15 @@ function captain_plugins_content_store_template( int $post_id, array $entry ): v
 	}
 }
 
+/** Resolve "theme:assets/…" to the theme URL of this installation; other values must be absolute URLs. */
+function captain_plugins_content_social_image( string $value ): string {
+	if ( 0 === strpos( $value, 'theme:' ) ) {
+		$relative = ltrim( substr( $value, 6 ), '/' );
+		return is_readable( get_theme_file_path( $relative ) ) ? esc_url_raw( get_theme_file_uri( $relative ) ) : '';
+	}
+	return preg_match( '#^https://#i', $value ) ? esc_url_raw( $value ) : '';
+}
+
 /** Write SEO defaults without replacing fields a site owner has changed. */
 function captain_plugins_content_store_seo( int $post_id, array $entry, bool $force = false ): void {
 	$values = captain_plugins_content_seo_values( $entry );
@@ -109,9 +118,10 @@ function captain_plugins_content_store_seo( int $post_id, array $entry, bool $fo
 			'_yoast_wpseo_twitter-title' => $social_title,
 			'_yoast_wpseo_twitter-description' => $social_desc,
 		);
-		if ( ! empty( $entry['social_image'] ) ) {
-			$yoast['_yoast_wpseo_opengraph-image'] = esc_url_raw( (string) $entry['social_image'] );
-			$yoast['_yoast_wpseo_twitter-image']   = esc_url_raw( (string) $entry['social_image'] );
+		$social_image = captain_plugins_content_social_image( (string) ( $entry['social_image'] ?? '' ) );
+		if ( '' !== $social_image ) {
+			$yoast['_yoast_wpseo_opengraph-image'] = $social_image;
+			$yoast['_yoast_wpseo_twitter-image']   = $social_image;
 		}
 		$written = get_post_meta( $post_id, '_cp_yoast_written', true );
 		$written = is_array( $written ) ? $written : array();

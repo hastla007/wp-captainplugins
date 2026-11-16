@@ -595,6 +595,18 @@ def compose_sections(out: list[str], page_path: str) -> str:
     return "\n\n".join(composed)
 
 
+def default_social_image(path: str) -> str:
+    """Theme-relative social preview image for a page; the importer resolves "theme:" to the theme URL."""
+    parts = [part for part in path.split("/") if part]
+    candidates = parts[:1] + parts[1:2] if parts[:1] in (["ratgeber"], ["dokumentation"]) else parts[:1]
+    for part in reversed(candidates):
+        if part in PRODUCT_NAMES:
+            return f"theme:assets/social/{part}.jpg"
+    if parts[:1] in (["captain-pro"], ["preise"]):
+        return "theme:assets/social/captain-pro.jpg"
+    return "theme:assets/social/startseite.jpg"
+
+
 def title_from_path(path: str) -> str:
     parts = [part for part in path.split("/") if part]
     if not parts:
@@ -659,7 +671,7 @@ def build() -> None:
             "focus_keyphrase": meta.get("focus_keyphrase", ""),
             "social_title": meta.get("social_title", ""),
             "social_description": meta.get("social_description", ""),
-            "social_image": meta.get("social_image", ""),
+            "social_image": meta.get("social_image", "") or default_social_image(path),
             "has_placeholders": placeholder_present(source := file.read_text(encoding="utf-8")),
             # Hash source and generated layout so layout improvements reach untouched imported pages.
             "source_hash": hashlib.sha256((source + "\n" + markup).encode("utf-8")).hexdigest(),
