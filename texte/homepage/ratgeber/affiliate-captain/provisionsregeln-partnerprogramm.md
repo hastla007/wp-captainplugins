@@ -11,7 +11,7 @@ Ein verständliches Provisionsmodell schafft Klarheit für Ihr Team und Ihre Par
 
 ## Mit dem Geschäftsmodell starten
 
-Legen Sie zuerst fest, welche Produkte oder Leistungen Partner empfehlen sollen und wann eine Provision entsteht. Dokumentieren Sie Ausnahmen, zum Beispiel unterschiedliche Sätze für Produktgruppen oder einzelne Partner.
+Legen Sie zuerst fest, welche Produkte oder Leistungen Partner empfehlen sollen und wann eine Provision entsteht. Dokumentieren Sie Ausnahmen, zum Beispiel unterschiedliche Sätze für Produktgruppen oder einzelne Partner. In Affiliate Captain wählen Sie je Regel einen Prozentsatz, einen Festbetrag pro Stück oder einen Ausschluss; ein Ausschluss hat immer Vorrang, sonst gilt die spezifischste Regel.
 
 ## Partner strukturieren
 
