@@ -39,13 +39,14 @@ def main() -> None:
         rel = file.relative_to(THEME).as_posix()
         for regex, kind in ((SIMPLE, "s"), (CONTEXT, "x"), (PLURAL, "n")):
             for match in regex.finditer(text):
-                line = text.count("\n", 0, match.start()) + 1
                 before = text[max(0, match.start() - 300):match.start()]
                 note = COMMENT.findall(before)
                 groups = [unescape(g) for g in match.groups()]
                 key = (kind, *groups)
                 entry = entries.setdefault(key, {"refs": [], "note": ""})
-                entry["refs"].append(f"{rel}:{line}")
+                # File only, no line number: shifted lines must not make the POT (and the CI check) stale.
+                if rel not in entry["refs"]:
+                    entry["refs"].append(rel)
                 if note and not entry["note"]:
                     entry["note"] = " ".join(note[-1].split())
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M+0000")
