@@ -8,7 +8,7 @@ focus_keyphrase: WooCommerce Gutschein FAQ
 # Fragen zu Voucher Captain
 
 ## Benötige ich WooCommerce?
-Ja. Voucher Captain verwaltet Gutscheine auf Basis von WooCommerce-Produkten und Bestellungen.
+Ja. Voucher Captain verwaltet Gutscheine auf Basis von WooCommerce-Produkten und Bestellungen und benötigt WooCommerce 11.2.2 oder neuer sowie WordPress 7.0 oder neuer.
 
 ## Kann ich einen Wunschbetrag anbieten?
 Ja. Sie können Mindest- und Höchstwerte, Schrittweiten und Vorschlagsbeträge konfigurieren.
@@ -26,9 +26,12 @@ Ja. Empfängername, Nachricht und weitere konfigurierbare Felder können im Kauf
 Gutscheine stehen in Bestellbestätigungen und E-Mails bereit. Signierte Links ermöglichen den Zugriff ohne Kundenkonto.
 
 ## Kann ich bestehende Gutscheincodes importieren?
-Ja. Unterstützt werden CSV, XLS, XLSX und ODS.
+Ja. Unterstützt werden CSV, XLS, XLSX und ODS. Bestehende Geschenkkarten mit Restwert übernehmen Sie unter **Gutscheine → Karten importieren**.
+
+## Kann ich Gutscheine im Ladengeschäft einlösen?
+Ja. Der Scanner unter **Gutscheine → Scanner** prüft Gutscheine per Kamera, USB-Scanner oder Codeeingabe und bucht die Einlösung mit Belegnummer und Kasse/Filiale.
 
 ## Was ergänzt Voucher Captain Pro?
-Firmenbestellungen per CSV, Wallet-Pässe für Apple und Google sowie SMS-Zustellung.
+Firmenbestellungen per CSV-Empfängerliste, Wallet-Pässe für Apple und Google, SMS-Zustellung sowie White Label mit eigenem Produktnamen, Logo und Absendernamen.
 
-[Features](/voucher-captain/features/) · [Pro und Preise (in Vorbereitung)](/voucher-captain/pro/) · [Support](/support/)
+[Features](/voucher-captain/features/) · [Pro und Preise](/voucher-captain/pro/) · [Support](/support/)

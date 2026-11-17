@@ -11,8 +11,8 @@ Voucher Captain erweitert WooCommerce um Gutscheinprodukte, Geschenkkarten, PDF-
 
 ## Voraussetzungen
 
-- WordPress 6.4 oder neuer
-- WooCommerce 8.9 oder neuer
+- WordPress 7.0 oder neuer
+- WooCommerce 11.2.2 oder neuer
 - PHP 8.5 oder neuer
 - MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
 - PHP-Erweiterungen GD, mbstring und zip
@@ -55,8 +55,8 @@ Führen Sie eine Testbestellung mit einem Test-Zahlungsweg aus. Prüfen Sie Guts
 
 ## Danach
 
-Wenn der Testablauf passt, können Sie weitere Gutscheinprodukte, Vorlagen und Zustellregeln einrichten. Firmenbestellungen, Wallet-Pässe und SMS-Zustellung finden Sie in [Voucher Captain Pro (in Vorbereitung)](/voucher-captain/pro/).
+Wenn der Testablauf passt, können Sie weitere Gutscheinprodukte, Vorlagen und Zustellregeln einrichten. Firmenbestellungen, Wallet-Pässe, SMS-Zustellung und White Label finden Sie in [Voucher Captain Pro](/voucher-captain/pro/).
 
 [Voucher Captain Features](/voucher-captain/features/) · [FAQ](/voucher-captain/faq/) · [Support](/support/)
 
-**Captain-Pro-Hinweis:** Wenn Sie Voucher Captain Pro (in Vorbereitung) installieren, benötigt die kombinierte Installation mindestens WordPress 6.5+. Die übrigen Anforderungen des Kerns bleiben bestehen. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).
+**Captain-Pro-Hinweis:** Wenn Sie Voucher Captain Pro installieren, gelten für die kombinierte Installation dieselben Mindestversionen wie für den Kern (WordPress 7.0+, WooCommerce 11.2.2+, PHP 8.5+). [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).

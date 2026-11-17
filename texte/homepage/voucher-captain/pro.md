@@ -1,31 +1,33 @@
 ---
 url: /voucher-captain/pro/
-seo_title: Voucher Captain Pro – Massenbestellungen, Wallet und SMS
-meta_description: Erweitern Sie Voucher Captain mit Firmenbestellungen per CSV, Apple- und Google-Wallet-Pässen sowie SMS-Zustellung.
+seo_title: Voucher Captain Pro – Firmenbestellungen, Wallet, SMS und White Label
+meta_description: Erweitern Sie Voucher Captain mit Firmenbestellungen per CSV, Apple- und Google-Wallet-Pässen, SMS-Zustellung und White Label.
 focus_keyphrase: WooCommerce Gutschein Pro
 ---
 
 # Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert
 
-**In Vorbereitung:** Voucher Captain Pro ist noch nicht erhältlich. Diese Seite beschreibt den geplanten Funktionsumfang; Umfang, Preise und Erscheinungstermin können sich bis zur Veröffentlichung ändern. Voucher Captain können Sie bereits kostenlos nutzen.
-
 Voucher Captain Pro richtet sich an Unternehmen mit mehreren Standorten, hohem Gutscheinvolumen oder kanalübergreifendem Versand. Nutzen Sie die kostenlose Basis und ergänzen Sie Funktionen für größere Kampagnen.
 
 ## Firmenbestellungen mit Empfängerliste
 
-Importieren Sie Empfänger- und Personalisierungsdaten gesammelt per CSV. Erstellen Sie Gutscheine für Teams, Filialen, Veranstaltungen oder Geschäftskunden in einem strukturierten Ablauf.
+Unter **Gutscheine → Firmenbestellungen** erfassen Sie die Firma, wählen ein Gutscheinprodukt oder eine Gutscheinart, eine PDF-Vorlage und eine Absenderzeile („Im Namen von {Firma}“) und laden die Empfängerliste als CSV hoch (Name, E-Mail, Betrag, Nachricht; bis zu 500 Empfänger je Liste). Eine Vorschau zeigt alle Fehler, bevor ein Gutschein entsteht. Nach Ihrer Bestätigung stellt Voucher Captain je Zeile einen Gutschein aus und versendet ihn, bei großen Listen im Hintergrund. Die Übersicht zeigt den Status jeder Zeile, wiederholt fehlgeschlagene Zeilen ohne Doppelausstellung und exportiert die Gutscheine als CSV.
 
 ## Gutscheine im Apple- und Google-Wallet
 
-Bieten Sie digitale Wallet-Pässe an, die Empfänger bequem auf ihrem Smartphone aufrufen können. Ihre Marke und die wesentlichen Gutscheinangaben begleiten den mobilen Zugriff.
+Kundinnen und Kunden fügen ihren Gutschein aus der Gutschein-E-Mail, dem Kundenkonto oder den Bestellseiten zu Apple Wallet oder Google Wallet hinzu. Der Pass zeigt Code, Restwert und Ablaufdatum und wird aktualisiert, wenn sich diese ändern. Sie verwenden dafür Ihr eigenes Apple-Pass-Type-Zertifikat und/oder Ihren Google-Wallet-Aussteller.
 
 ## Zustellung per SMS
 
-Erreichen Sie Empfänger zusätzlich per SMS. Kombinieren Sie den Versandkanal mit personalisierten Gutscheinen und abgestimmten Zustellzeitpunkten.
+Nach dem Versand der Gutschein-E-Mail – auch zum gewählten Zustelldatum – erhält der Empfänger den Gutschein-Link zusätzlich per SMS. Als Anbieter stehen seven.io, Twilio und MessageBird zur Verfügung. Die Telefonnummer stammt aus einem Gutscheinfeld oder, mit Einwilligung im Checkout, aus der Rechnungstelefonnummer.
 
-## Geplante Pläne
+## White Label
 
-Alle Voucher-Captain-Pro-Funktionen sollen in jedem Plan enthalten sein. Sie wählen nach den Live-Websites: Single für 1, Business für 5 oder Agency für 25 Websites.
+Ersetzen Sie Produktname, Logo, Menütitel, Menüsymbol und den Absendernamen der Gutschein-E-Mails durch Ihre eigene Marke.
+
+## Pläne
+
+Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen nach den Live-Websites: Single für 1, Business für 5 oder Agency für 25 Websites.
 
 | Plan | Preis pro Jahr |
 |---|---:|
@@ -33,10 +35,8 @@ Alle Voucher-Captain-Pro-Funktionen sollen in jedem Plan enthalten sein. Sie wä
 | Business · 5 Websites | 229 € |
 | Agency · 25 Websites | 399 € |
 
-Die Preise gelten ab Erscheinen; vorher ist kein Kauf möglich.
-
-**[Voucher Captain kostenlos herunterladen]([Download-URL])** · [Verfügbare Captain-Pro-Add-ons](/captain-pro/)
+**[Voucher Captain Pro auswählen]([Checkout-URL])** · [Alle Captain-Pro-Pläne](/preise/) · [Voucher Captain kostenlos herunterladen]([Download-URL])
 
 [Screenshot-Platzhalter: Upload einer anonymisierten CSV-Liste mit Empfängerfeldern und erfolgreicher Vorschau der erzeugten Gutscheine zeigen.] · [Demo: Wallet-Pass und SMS-Zustellung]
 
-**Voraussetzungen:** Voucher Captain als Kern-Plugin; die kombinierte Installation mit dem Pro-Add-on benötigt WordPress 6.5+, PHP 8.5+ und WooCommerce 8.9+. [Kompatibilität](/kompatibilitaet/).
+**Voraussetzungen:** Voucher Captain als Kern-Plugin; die kombinierte Installation mit dem Pro-Add-on benötigt WordPress 7.0+, PHP 8.5+ und WooCommerce 11.2.2+. [Kompatibilität](/kompatibilitaet/).
