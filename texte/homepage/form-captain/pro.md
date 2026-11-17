@@ -7,6 +7,8 @@ focus_keyphrase: Form Captain Pro
 
 # Form Captain Pro: Komplexe Formulare zuverlässig abwickeln
 
+**In Vorbereitung:** Form Captain Pro ist noch nicht erhältlich. Diese Seite beschreibt den geplanten Funktionsumfang; Umfang, Preise und Erscheinungstermin können sich bis zur Veröffentlichung ändern. Form Captain können Sie bereits kostenlos nutzen.
+
 Wenn eine Anfrage mehr als ein paar Felder umfasst, braucht Ihr Team klare Abläufe und vollständige Einträge. Form Captain Pro ergänzt den kostenlosen Formular-Kern um mehrstufige Formulare, geschützte Datei-Uploads, fortgeschrittene Bedingungen, Webhooks und PDF-Ausgaben.
 
 ## Mehrstufige Formulare mit Fortsetzen-Funktion
@@ -35,7 +37,7 @@ Form Captain Pro kann Anfragen über dokumentierte, versionierte Adapter mit den
 
 Mit Workflow Captain verarbeiten Sie freigegebene Entry-Ereignisse nach dem Datenbank-Commit. Zulässige Aktionen umfassen Status- oder Tagänderungen, datenschutzgerechte Anonymisierung/Löschung und genehmigte Übergaben an Suite-Services. Allowlist, Idempotenz und Fehlerstatus schützen den Ablauf; sensible Formulardaten und nicht autorisierte Geschäftsvorgänge bleiben ausgeschlossen.
 
-## Preise, Lizenz und Support
+## Geplante Preise, Lizenz und Support
 
 | Tarif | Jahrespreis zzgl. USt. | Live-Websites | Support |
 |---|---:|---:|---|
@@ -43,10 +45,10 @@ Mit Workflow Captain verarbeiten Sie freigegebene Entry-Ereignisse nach dem Date
 | Studio | 99 € | 5 | Standard |
 | Agency | 199 € | 25 | Priorisiert |
 
-Alle Pläne enthalten denselben Pro-Funktionsumfang, Updates und Support während der aktiven Laufzeit. Je Live-Website ist eine Staging-Aktivierung enthalten; Development-Aktivierungen zählen nicht zum Site-Limit. Es gibt keine Lifetime-Lizenz und keine kostenpflichtigen Einzel-Add-ons.
+Die Preise gelten ab Erscheinen; vorher ist kein Kauf möglich. Alle Pläne sollen denselben Pro-Funktionsumfang enthalten, Updates und Support während der aktiven Laufzeit. Je Live-Website ist eine Staging-Aktivierung enthalten; Development-Aktivierungen zählen nicht zum Site-Limit. Es gibt keine Lifetime-Lizenz und keine kostenpflichtigen Einzel-Add-ons.
 
 Form Captain Free und vorhandene Formulare und Einträge bleiben bei Ablauf einer Pro-Lizenz verfügbar. Pro-Funktionen und Updates stehen gemäß den Bedingungen des gewählten Plans bereit.
 
-[Form Captain Features](/form-captain/features/) · [Preise und Pläne](/preise/) · [FAQ](/form-captain/faq/)
+[Form Captain Features](/form-captain/features/) · [Verfügbare Captain-Pro-Add-ons](/captain-pro/) · [FAQ](/form-captain/faq/)
 
 [Screenshot-Platzhalter: Multi-Step-Formular mit Fortschrittsanzeige, bedingter Benachrichtigungsregel, geschützter Upload-Einstellung und PDF-Vorschau zeigen. Nur synthetische Beispieldaten verwenden.]

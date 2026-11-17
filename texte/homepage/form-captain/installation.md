@@ -28,7 +28,7 @@ WordPress-E-Mail hängt von der Serverkonfiguration ab. Prüfen Sie Absenderdom�
 
 ## Pro-Funktionen aktivieren
 
-Installieren Sie Form Captain Pro separat, aktivieren Sie den mit Ihrem Kauf bereitgestellten Produktschlüssel und prüfen Sie anschließend die Pro-Funktionen. Lizenz- oder Updateprobleme sollen Ihre Formulare und gespeicherten Einträge nicht löschen.
+Installieren Sie Form Captain Pro (in Vorbereitung) separat, aktivieren Sie den mit Ihrem Kauf bereitgestellten Produktschlüssel und prüfen Sie anschließend die Pro-Funktionen. Lizenz- oder Updateprobleme sollen Ihre Formulare und gespeicherten Einträge nicht löschen.
 
 ## Vor dem Livegang testen
 

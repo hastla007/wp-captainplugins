@@ -7,7 +7,7 @@ focus_keyphrase: Captain Pro installieren
 
 # Captain Pro installieren und freischalten
 
-Captain Pro wird als separates Add-on zum passenden kostenlosen Kern-Plugin installiert. Wählen Sie das Add-on, das zu Ihrem Produkt gehört: Voucher Captain Pro, Pass Captain Pro oder Affiliate Captain Pro.
+Captain Pro wird als separates Add-on zum passenden kostenlosen Kern-Plugin installiert. Wählen Sie das Add-on, das zu Ihrem Produkt gehört: Voucher Captain Pro (in Vorbereitung), Pass Captain Pro oder Affiliate Captain Pro.
 
 ## 1. Kern-Plugin installieren
 

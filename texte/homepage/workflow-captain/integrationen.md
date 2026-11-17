@@ -15,7 +15,7 @@ WordPress-Provider verarbeiten ausgewählte Benutzer-, Beitrags- und Kommentarer
 
 ## Captain-Suite-Provider in Pro
 
-Workflow Captain Pro sieht Provider für folgende Produkte vor:
+Workflow Captain Pro (in Vorbereitung) sieht Provider für folgende Produkte vor:
 
 - **Voucher Captain:** Gutscheinstatus, Zustellung und bestätigte Einlösung über freigegebene Services.
 - **Pass Captain:** Ticket-, Einlass-, Wartelisten- und Eventstatus, abhängig vom Providervertrag.
@@ -33,6 +33,6 @@ Pro unterstützt signierte Ein- und Ausgangswebhooks sowie ein versioniertes Pro
 
 Projektbezogene BoatingSchool- oder LearnBoating-Verbindungen sind keine pauschal enthaltenen Standardintegrationen. Sie erfordern ein separates Connector-Plugin, passende Schnittstellen und abgestimmte Datenfreigaben.
 
-[Kompatibilität](/workflow-captain/kompatibilitaet/) · [Workflow Captain Pro](/workflow-captain/pro/) · [Alle Captain-Integrationen](/integrationen/)
+[Kompatibilität](/workflow-captain/kompatibilitaet/) · [Workflow Captain Pro (in Vorbereitung)](/workflow-captain/pro/) · [Alle Captain-Integrationen](/integrationen/)
 
 [Screenshot-Platzhalter: Integrationsübersicht mit WordPress, WooCommerce, Captain-Providern und Webhooks zeigen. Pro-Verträge, Versionsstatus und letzte Verbindung kenntlich machen. Keine echten Endpunkte, Schlüssel oder Payloads zeigen.]

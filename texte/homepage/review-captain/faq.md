@@ -13,7 +13,7 @@ Der kostenlose Kern verwaltet lokale Reviews und manuell ausgewählte externe Be
 
 ## Ist Review Captain kostenlos?
 
-Review Captain Free ist als eigenständig nutzbares Kernplugin verfügbar. Plattform-Synchronisierung, mehrere Profile, Review-Anfragen, erweiterte Widgets und Reports gehören zum separaten Review Captain Pro.
+Review Captain Free ist als eigenständig nutzbares Kernplugin verfügbar. Plattform-Synchronisierung, mehrere Profile, Review-Anfragen, erweiterte Widgets und Reports gehören zum separaten Review Captain Pro (in Vorbereitung).
 
 ## Brauche ich für jede Plattform einen eigenen Zugang?
 

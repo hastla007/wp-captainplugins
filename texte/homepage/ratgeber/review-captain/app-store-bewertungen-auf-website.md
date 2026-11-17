@@ -15,7 +15,7 @@ Zeigen Sie App-Name, Store, Bewertungsdatum und Originalrating. Verlinken Sie au
 
 ## Offizielle Datenwege nutzen
 
-Review Captain Pro synchronisiert Reviews eigener Apps über offizielle Wege, wenn der App-Anbieter Zugriff auf die passende App-Store-Connect- bzw. Play-Console-Ressource hat. Ein Plugin kann keine Reviews beliebiger fremder Apps zuverlässig oder regelkonform abrufen.
+Review Captain Pro (in Vorbereitung) synchronisiert Reviews eigener Apps über offizielle Wege, wenn der App-Anbieter Zugriff auf die passende App-Store-Connect- bzw. Play-Console-Ressource hat. Ein Plugin kann keine Reviews beliebiger fremder Apps zuverlässig oder regelkonform abrufen.
 
 ## Auf der WordPress-Seite ausgeben
 

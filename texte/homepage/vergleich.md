@@ -28,13 +28,13 @@ Die kostenlosen Kern-Plugins decken die zentralen Arbeitsabläufe ab. Captain Pr
 
 Workflow Captain Free verbindet WordPress und optional WooCommerce. Pro ergänzt die Captain-Suite-Provider, sichere Webhooks und erweiterte Ablaufsteuerung. Für jeden Suite-Provider muss das jeweilige Fachplugin einen kompatiblen Vertrag bereitstellen.
 
-[Workflow Captain entdecken](/workflow-captain/) · [Workflow Captain Pro](/workflow-captain/pro/)
+[Workflow Captain entdecken](/workflow-captain/) · [Workflow Captain Pro (in Vorbereitung)](/workflow-captain/pro/)
 
 ## Online-Kurse und Schulungen
 
 Course Captain Free enthält Kurs-Builder, Fragenbank, Smarttrainer, Übungs- und Prüfungsmodus, Gruppen-Grundfunktionen und Lernnachweise. Pro ergänzt Lernpfade, Drip-Inhalte, Zertifikatsdesigner, Gruppenverwaltung, Auswertungen und Kursverkauf über WooCommerce.
 
-[Course Captain entdecken](/course-captain/) · [Course Captain Pro](/course-captain/pro/)
+[Course Captain entdecken](/course-captain/) · [Course Captain Pro (in Vorbereitung)](/course-captain/pro/)
 
 ## Formulare oder Bewertungen ergänzen
 

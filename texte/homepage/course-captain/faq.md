@@ -8,7 +8,7 @@ focus_keyphrase: Course Captain FAQ
 # Häufige Fragen zu Course Captain
 
 ## Ist Course Captain kostenlos?
-Ja. Der Kern ist ein dauerhaft kostenloses Plugin ohne Lizenzprüfung und ohne Begrenzung der Kurse oder Lernenden. Course Captain Pro ist ein separates, kostenpflichtiges Add-on für erweiterte Funktionen.
+Ja. Der Kern ist ein dauerhaft kostenloses Plugin ohne Lizenzprüfung und ohne Begrenzung der Kurse oder Lernenden. Course Captain Pro (in Vorbereitung) ist ein separates, kostenpflichtiges Add-on für erweiterte Funktionen.
 
 ## Für welche Themen eignet sich Course Captain?
 Für jede Fachrichtung: Wissenskurse, Prüfungsvorbereitung, Mitarbeiterschulungen, Onboarding, Sprachkurse, berufliche Fortbildung und Zertifikatsprogramme. Course Captain ist themenneutral aufgebaut.
@@ -49,4 +49,4 @@ Der kostenlose Kern läuft weiter. Kurse, Fortschritte, Ergebnisse und ausgestel
 ## Wird Multisite unterstützt?
 Course Captain v1 ist für einzelne WordPress-Websites ausgelegt. Multisite ist in der ersten Version nicht zugesagt.
 
-[Course Captain kennenlernen](/course-captain/) · [Features](/course-captain/features/) · [Course Captain Pro](/course-captain/pro/)
+[Course Captain kennenlernen](/course-captain/) · [Features](/course-captain/features/) · [Course Captain Pro (in Vorbereitung)](/course-captain/pro/)

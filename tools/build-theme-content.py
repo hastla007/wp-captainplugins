@@ -240,6 +240,8 @@ def markdown_blocks(markdown: str, page_path: str = "") -> str:
             faq_group = block("group", f'<div class="wp-block-group cp-faq">{children}</div>', {"className": "cp-faq", "layout": {"type": "default"}})
             out = intro + [faq_group]
 
+    # Availability notice ("**In Vorbereitung:** …", e.g. a Pro add-on that is not on sale yet) as a highlighted note.
+    out = [with_class(item, "cp-status-note") if item.startswith("<!-- wp:paragraph -->\n<p><strong>In Vorbereitung") else item for item in out]
     return compose_sections(out, page_path)
 
 

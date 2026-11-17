@@ -15,7 +15,7 @@ Diese Anleitung führt von der Installation bis zum ersten veröffentlichten Kur
 - PHP 8.5 oder neuer
 - MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
 - Ein funktionierender E-Mail-Versand für Einladungen und Benachrichtigungen
-- Optional: WooCommerce, wenn Sie Kurse mit Course Captain Pro verkaufen möchten
+- Optional: WooCommerce, wenn Sie Kurse mit Course Captain Pro (in Vorbereitung) verkaufen möchten
 
 ## 1. Plugin installieren
 

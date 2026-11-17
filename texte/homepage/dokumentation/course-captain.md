@@ -11,7 +11,7 @@ Anleitungen für Einrichtung, Kursaufbau, Training und Prüfungen, Zugänge und 
 
 - [Installation und erster Kurs](/course-captain/installation/)
 - [Features: Kurs-Builder, Fragenbank, Smarttrainer und Prüfungen](/course-captain/features/)
-- [Course Captain Pro: Lernpfade, Zertifikate, Gruppen und Kursverkauf](/course-captain/pro/)
+- [Course Captain Pro: Lernpfade, Zertifikate, Gruppen und Kursverkauf (in Vorbereitung)](/course-captain/pro/)
 - [Kompatibilität und Voraussetzungen](/course-captain/kompatibilitaet/)
 - [Integrationen mit WooCommerce und der Captain Suite](/course-captain/integrationen/)
 - [Häufige Fragen](/course-captain/faq/)

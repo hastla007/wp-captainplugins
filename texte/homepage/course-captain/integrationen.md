@@ -11,7 +11,7 @@ Course Captain funktioniert eigenständig. Integrationen sind optional und folge
 
 ## WooCommerce
 
-Mit Course Captain Pro verbinden Sie WooCommerce-Produkte und -Variationen mit Kursen, Lernpfaden und Zugriffsdauern. Nach bestätigter Zahlung wird der Kurszugang freigeschaltet. Erstattung, Storno oder Rücknahme entziehen genau diesen gekauften Zugang; manuelle oder anderweitig bestehende Freigaben bleiben gültig. Lernende sehen ihre Kurse unter **Mein Konto → Meine Kurse**.
+Mit Course Captain Pro (in Vorbereitung) verbinden Sie WooCommerce-Produkte und -Variationen mit Kursen, Lernpfaden und Zugriffsdauern. Nach bestätigter Zahlung wird der Kurszugang freigeschaltet. Erstattung, Storno oder Rücknahme entziehen genau diesen gekauften Zugang; manuelle oder anderweitig bestehende Freigaben bleiben gültig. Lernende sehen ihre Kurse unter **Mein Konto → Meine Kurse**.
 
 ## Voucher Captain
 
@@ -43,4 +43,4 @@ Alle Integrationen nutzen öffentliche, versionierte Schnittstellen und vermeide
 
 [Screenshot-Platzhalter: Integrationsseite im Admin mit erkannten Plugins, Verbindungsstatus und letzter Synchronisierung zeigen; nur Testdaten verwenden.]
 
-[Course Captain Pro](/course-captain/pro/) · [Kompatibilität](/course-captain/kompatibilitaet/) · [Alle Integrationen der Captain Suite](/integrationen/)
+[Course Captain Pro (in Vorbereitung)](/course-captain/pro/) · [Kompatibilität](/course-captain/kompatibilitaet/) · [Alle Integrationen der Captain Suite](/integrationen/)

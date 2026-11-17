@@ -27,7 +27,7 @@ Ein Partnerbewerbungsformular kann Angaben zur Prüfung erfassen. Eine Übergabe
 
 ## Review Captain
 
-Mit Review Captain Pro kann ein Formular eine lokale Review zur Moderation übergeben. Feldzuordnung und Herkunft werden ausgewiesen. Neue Bewertungen bleiben pending und unverified; eine Review-Anfrage wird nicht automatisch aus einer Formulareinsendung versendet.
+Mit Review Captain Pro (in Vorbereitung) kann ein Formular eine lokale Review zur Moderation übergeben. Feldzuordnung und Herkunft werden ausgewiesen. Neue Bewertungen bleiben pending und unverified; eine Review-Anfrage wird nicht automatisch aus einer Formulareinsendung versendet.
 
 ## Course Captain
 

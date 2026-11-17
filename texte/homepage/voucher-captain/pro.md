@@ -7,6 +7,8 @@ focus_keyphrase: WooCommerce Gutschein Pro
 
 # Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert
 
+**In Vorbereitung:** Voucher Captain Pro ist noch nicht erhältlich. Diese Seite beschreibt den geplanten Funktionsumfang; Umfang, Preise und Erscheinungstermin können sich bis zur Veröffentlichung ändern. Voucher Captain können Sie bereits kostenlos nutzen.
+
 Voucher Captain Pro richtet sich an Unternehmen mit mehreren Standorten, hohem Gutscheinvolumen oder kanalübergreifendem Versand. Nutzen Sie die kostenlose Basis und ergänzen Sie Funktionen für größere Kampagnen.
 
 ## Firmenbestellungen mit Empfängerliste
@@ -21,9 +23,9 @@ Bieten Sie digitale Wallet-Pässe an, die Empfänger bequem auf ihrem Smartphone
 
 Erreichen Sie Empfänger zusätzlich per SMS. Kombinieren Sie den Versandkanal mit personalisierten Gutscheinen und abgestimmten Zustellzeitpunkten.
 
-## Im Pro-Plan enthalten
+## Geplante Pläne
 
-Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen nach den Live-Websites: Single für 1, Business für 5 oder Agency für 25 Websites.
+Alle Voucher-Captain-Pro-Funktionen sollen in jedem Plan enthalten sein. Sie wählen nach den Live-Websites: Single für 1, Business für 5 oder Agency für 25 Websites.
 
 | Plan | Preis pro Jahr |
 |---|---:|
@@ -31,7 +33,9 @@ Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen na
 | Business · 5 Websites | 229 € |
 | Agency · 25 Websites | 399 € |
 
-**[Pro-Plan auswählen]([Checkout-URL])** · [Kostenlosen Kern herunterladen]([Download-URL])
+Die Preise gelten ab Erscheinen; vorher ist kein Kauf möglich.
+
+**[Voucher Captain kostenlos herunterladen]([Download-URL])** · [Verfügbare Captain-Pro-Add-ons](/captain-pro/)
 
 [Screenshot-Platzhalter: Upload einer anonymisierten CSV-Liste mit Empfängerfeldern und erfolgreicher Vorschau der erzeugten Gutscheine zeigen.] · [Demo: Wallet-Pass und SMS-Zustellung]
 

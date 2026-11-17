@@ -41,7 +41,7 @@ Kurse können öffentlich, kostenlos nach Anmeldung oder manuell freigeschaltet 
 
 ## Lernnachweise und Zertifikate
 
-Abschlussstatus und eigene Ergebnisse sind immer einsehbar. Nachweise werden mit eindeutiger ID ausgestellt, können widerrufen und online geprüft werden. Course Captain Pro ergänzt einen Zertifikatsdesigner mit eigenen PDF-Vorlagen, Branding und automatischer Ausstellung nach Bedingungen. Ein Anbieterzertifikat ist kein amtlicher Prüfungsnachweis.
+Abschlussstatus und eigene Ergebnisse sind immer einsehbar. Nachweise werden mit eindeutiger ID ausgestellt, können widerrufen und online geprüft werden. Course Captain Pro (in Vorbereitung) ergänzt einen Zertifikatsdesigner mit eigenen PDF-Vorlagen, Branding und automatischer Ausstellung nach Bedingungen. Ein Anbieterzertifikat ist kein amtlicher Prüfungsnachweis.
 
 ## Import, Export und Schnittstellen
 
@@ -57,4 +57,4 @@ Kurse lassen sich als Pakete importieren und exportieren – mit Validierung, Vo
 
 [Screenshot-Platzhalter: Pro-Auswertung einer Lerngruppe mit Fortschritt je Modul und Bestehensquote zeigen; nur fiktive Gruppen- und Personennamen verwenden.]
 
-**[Course Captain kostenlos starten]([Download-URL])** · [Course Captain Pro](/course-captain/pro/) · [Häufige Fragen](/course-captain/faq/)
+**[Course Captain kostenlos starten]([Download-URL])** · [Course Captain Pro (in Vorbereitung)](/course-captain/pro/) · [Häufige Fragen](/course-captain/faq/)

@@ -7,6 +7,8 @@ focus_keyphrase: Review Captain Pro
 
 # Review Captain Pro: Bewertungen in Ihre Abläufe integrieren
 
+**In Vorbereitung:** Review Captain Pro ist noch nicht erhältlich. Diese Seite beschreibt den geplanten Funktionsumfang; Umfang, Preise und Erscheinungstermin können sich bis zur Veröffentlichung ändern. Review Captain können Sie bereits kostenlos nutzen.
+
 Wenn mehrere Profile und Plattformen zusammenkommen, bündelt Review Captain Pro Verbindung, Synchronisierung, Bewertungsanfragen und Ausgabe in einer WordPress-Oberfläche. Sie behalten Herkunft und Status im Blick und steuern, welche Reviews wo erscheinen.
 
 ## Funktionen für Reviews, Anfragen und Social Proof
@@ -39,13 +41,13 @@ Für Buchungs-, Kurs-, CRM- und andere lokale WordPress-Systeme lassen sich sepa
 
 Nutzen Sie mehrere Profile, führen Sie Bewertungen in einer Inbox zusammen und veröffentlichen Sie passende Auswahlen auf den relevanten Seiten. Agenturen können wiederkehrende Abläufe über mehrere Kundenwebsites steuern; Live-Site-Limits und Support folgen dem gewählten Plan.
 
-## Preis- und Lizenzmodell
+## Geplantes Preis- und Lizenzmodell
 
-Verfügbar sind **Solo** für 1, **Studio** für 5 und **Agency** für 25 Live-Websites. Jeder Plan enthält denselben Pro-Funktionsumfang; Agency bietet priorisierten Support. Den aktuellen Jahrespreis sehen Sie direkt beim jeweiligen Plan im Shop.
+Geplant sind **Solo** für 1, **Studio** für 5 und **Agency** für 25 Live-Websites. Jeder Plan soll denselben Pro-Funktionsumfang enthalten; Agency mit priorisiertem Support. Die Jahrespreise werden zum Erscheinen veröffentlicht; vorher ist kein Kauf möglich.
 
 Review Captain Free bleibt kostenlos nutzbar. Bei Ablauf einer Pro-Lizenz bleiben die Kernfunktionen, der Datenzugriff und der Export erhalten; Pro-Funktionen und Updates stehen gemäß den Bedingungen des gewählten Plans bereit.
 
-[Features vergleichen](/review-captain/features/) · [Captain-Pro-Pläne](/preise/) · [Kompatibilität](/review-captain/kompatibilitaet/)
+[Features vergleichen](/review-captain/features/) · [Verfügbare Captain-Pro-Add-ons](/captain-pro/) · [Kompatibilität](/review-captain/kompatibilitaet/)
 
 [Screenshot-Platzhalter: Review-Inbox mit Quellen-, Rating-, Datums- und Statusfiltern sowie separatem Profil-Sync- und Projekt-Connector-Status darstellen. Keine echten Reviews oder Zugangsdaten verwenden.]
 

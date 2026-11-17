@@ -9,7 +9,7 @@ focus_keyphrase: WordPress Automatisierung Plugin
 
 Workflow Captain verbindet Ereignisse aus WordPress, WooCommerce und der Captain Suite mit Bedingungen, Wartezeiten und passenden Aktionen. Erstellen Sie Abläufe visuell und behalten Sie Ausführung, Status und Fehler direkt in Ihrer WordPress-Umgebung im Blick.
 
-Der kostenlose Kern bietet einen produktiven Workflow-Editor für WordPress und WooCommerce – ohne externe Automations-Cloud oder Task-Credits. Workflow Captain Pro ergänzt versionierte Captain-Suite-Integrationen, sichere Webhooks, erweiterte Logik und Werkzeuge für den professionellen Betrieb.
+Der kostenlose Kern bietet einen produktiven Workflow-Editor für WordPress und WooCommerce – ohne externe Automations-Cloud oder Task-Credits. Workflow Captain Pro (in Vorbereitung) ergänzt versionierte Captain-Suite-Integrationen, sichere Webhooks, erweiterte Logik und Werkzeuge für den professionellen Betrieb.
 
 **[Workflow Captain kostenlos starten]([Download-URL])** · [Pro-Funktionen und Pläne ansehen](/workflow-captain/pro/)
 
@@ -44,4 +44,4 @@ Der kostenlose Kern setzt WordPress 6.8+ und PHP 8.5+ voraus. WooCommerce ist op
 
 [Voraussetzungen prüfen](/workflow-captain/kompatibilitaet/) · [Integrationen ansehen](/workflow-captain/integrationen/) · [Installation](/workflow-captain/installation/)
 
-**[Workflow Captain kostenlos herunterladen]([Download-URL])** · [Workflow Captain Pro auswählen](/workflow-captain/pro/)
+**[Workflow Captain kostenlos herunterladen]([Download-URL])** · [Workflow Captain Pro ansehen](/workflow-captain/pro/)

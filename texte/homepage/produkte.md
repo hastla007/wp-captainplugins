@@ -24,7 +24,7 @@ Wählen Sie die Lösung, die zu Ihrem Geschäftsprozess passt. Die Kern-Plugins 
 
 Gestalten und verkaufen Sie Gutscheine mit Wunschwert, Empfängerangaben und individueller Zustellung. Verwalten Sie Restguthaben, Einlösungen, Aktionen und Empfehlungen an einem Ort.
 
-[Features ansehen](/voucher-captain/features/) · [Voucher Captain Pro](/voucher-captain/pro/) · [Kostenlos starten]([Download-URL])
+[Features ansehen](/voucher-captain/features/) · [Voucher Captain Pro (in Vorbereitung)](/voucher-captain/pro/) · [Kostenlos starten]([Download-URL])
 
 ## Pass Captain
 
@@ -42,25 +42,25 @@ Bauen Sie ein Partnerprogramm mit Regeln, nachvollziehbarer Attribution, Refund-
 
 Erstellen Sie Kontakt-, Angebots- und Supportformulare direkt in WordPress. Einsendungen bleiben im Admin verwaltbar; der kostenlose Kern unterstützt unbegrenzt viele Formulare und Entries. Ein versionierter Connectorvertrag ermöglicht separate Suite- und Projekt-Erweiterungen.
 
-[Features ansehen](/form-captain/features/) · [Form Captain Pro](/form-captain/pro/) · [Kostenlos starten]([Download-URL])
+[Features ansehen](/form-captain/features/) · [Form Captain Pro (in Vorbereitung)](/form-captain/pro/) · [Kostenlos starten]([Download-URL])
 
 ## Review Captain
 
-Verwalten Sie lokale Kundenstimmen und extern veröffentlichte Bewertungen mit klarer Quellenzuordnung. Review Captain Pro ergänzt Plattformverbindungen, deduplizierte Anfragen nach bestätigter Nutzung, erweiterte Widgets und Projekt-Connector-Management.
+Verwalten Sie lokale Kundenstimmen und extern veröffentlichte Bewertungen mit klarer Quellenzuordnung. Review Captain Pro (in Vorbereitung) ergänzt Plattformverbindungen, deduplizierte Anfragen nach bestätigter Nutzung, erweiterte Widgets und Projekt-Connector-Management.
 
-[Features ansehen](/review-captain/features/) · [Review Captain Pro](/review-captain/pro/) · [FAQ](/review-captain/faq/)
+[Features ansehen](/review-captain/features/) · [Review Captain Pro (in Vorbereitung)](/review-captain/pro/) · [FAQ](/review-captain/faq/)
 
 ## Workflow Captain
 
-Automatisieren Sie wiederkehrende WordPress- und WooCommerce-Abläufe mit Ereignissen, Bedingungen, Aktionen und Zeitplanung. Workflow Captain Pro verbindet zusätzlich die Captain Suite über versionierte Provider, sichere Webhooks und nachvollziehbare Ausführungsprotokolle.
+Automatisieren Sie wiederkehrende WordPress- und WooCommerce-Abläufe mit Ereignissen, Bedingungen, Aktionen und Zeitplanung. Workflow Captain Pro (in Vorbereitung) verbindet zusätzlich die Captain Suite über versionierte Provider, sichere Webhooks und nachvollziehbare Ausführungsprotokolle.
 
-[Features ansehen](/workflow-captain/features/) · [Workflow Captain Pro](/workflow-captain/pro/) · [FAQ](/workflow-captain/faq/)
+[Features ansehen](/workflow-captain/features/) · [Workflow Captain Pro (in Vorbereitung)](/workflow-captain/pro/) · [FAQ](/workflow-captain/faq/)
 
 ## Course Captain
 
-Bauen Sie Online-Kurse, Schulungen und Prüfungsvorbereitungen mit Modulen, Lektionen, Fragenbank, Smarttrainer, Quiz und Prüfungsmodus auf. Lernende erhalten einen mobilen Lernraum mit Fortschritt und Nachweisen; Course Captain Pro ergänzt Lernpfade, Zertifikatsdesigner, Gruppenverwaltung und Kursverkauf über WooCommerce.
+Bauen Sie Online-Kurse, Schulungen und Prüfungsvorbereitungen mit Modulen, Lektionen, Fragenbank, Smarttrainer, Quiz und Prüfungsmodus auf. Lernende erhalten einen mobilen Lernraum mit Fortschritt und Nachweisen; Course Captain Pro (in Vorbereitung) ergänzt Lernpfade, Zertifikatsdesigner, Gruppenverwaltung und Kursverkauf über WooCommerce.
 
-[Features ansehen](/course-captain/features/) · [Course Captain Pro](/course-captain/pro/) · [Kostenlos starten]([Download-URL])
+[Features ansehen](/course-captain/features/) · [Course Captain Pro (in Vorbereitung)](/course-captain/pro/) · [Kostenlos starten]([Download-URL])
 
 ## License Captain
 

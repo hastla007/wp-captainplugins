@@ -55,8 +55,8 @@ Führen Sie eine Testbestellung mit einem Test-Zahlungsweg aus. Prüfen Sie Guts
 
 ## Danach
 
-Wenn der Testablauf passt, können Sie weitere Gutscheinprodukte, Vorlagen und Zustellregeln einrichten. Firmenbestellungen, Wallet-Pässe und SMS-Zustellung finden Sie in [Voucher Captain Pro](/voucher-captain/pro/).
+Wenn der Testablauf passt, können Sie weitere Gutscheinprodukte, Vorlagen und Zustellregeln einrichten. Firmenbestellungen, Wallet-Pässe und SMS-Zustellung finden Sie in [Voucher Captain Pro (in Vorbereitung)](/voucher-captain/pro/).
 
 [Voucher Captain Features](/voucher-captain/features/) · [FAQ](/voucher-captain/faq/) · [Support](/support/)
 
-**Captain-Pro-Hinweis:** Wenn Sie Voucher Captain Pro installieren, benötigt die kombinierte Installation mindestens WordPress 6.5+. Die übrigen Anforderungen des Kerns bleiben bestehen. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).
+**Captain-Pro-Hinweis:** Wenn Sie Voucher Captain Pro (in Vorbereitung) installieren, benötigt die kombinierte Installation mindestens WordPress 6.5+. Die übrigen Anforderungen des Kerns bleiben bestehen. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).

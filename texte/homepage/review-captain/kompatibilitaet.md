@@ -7,7 +7,7 @@ focus_keyphrase: Review Captain Kompatibilität
 
 # Review Captain: Kompatibilität und Plattformzugänge
 
-Review Captain ist für WordPress-Websites konzipiert. Review Captain Pro verbindet Bewertungsquellen über deren offizielle APIs, OAuth-Verfahren oder freigegebene Widgets. Verfügbare Funktionen hängen vom Anbieterzugang, Kontotyp und der Berechtigung des Websitebetreibers ab.
+Review Captain ist für WordPress-Websites konzipiert. Review Captain Pro (in Vorbereitung) verbindet Bewertungsquellen über deren offizielle APIs, OAuth-Verfahren oder freigegebene Widgets. Verfügbare Funktionen hängen vom Anbieterzugang, Kontotyp und der Berechtigung des Websitebetreibers ab.
 
 ## Kompatibilitätsübersicht
 

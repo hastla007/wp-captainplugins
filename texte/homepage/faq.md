@@ -19,7 +19,7 @@ Jeder Pro-Plan umfasst die Funktionen des jeweiligen Add-ons. Die Planstufen unt
 ## Wie viele Websites sind pro Plan erlaubt?
 Single umfasst 1, Business 5 und Agency 25 Live-Websites.
 
-Form Captain und Review Captain verwenden die Planstufen Solo/Studio/Agency (1/5/25). Workflow Captain und Course Captain verwenden Single/Business/Agency mit 1/5/25 Websites. Die Preise für Form Captain Pro stehen in der [Preisübersicht](/preise/); den aktuellen Review-Captain-Preis sehen Sie im Shop beim jeweiligen Plan.
+Form Captain und Review Captain verwenden die Planstufen Solo/Studio/Agency (1/5/25). Workflow Captain und Course Captain verwenden Single/Business/Agency mit 1/5/25 Websites. Erhältlich sind derzeit Pass Captain Pro und Affiliate Captain Pro; Voucher, Form, Review, Workflow und Course Captain Pro sind in Vorbereitung. Geplante Preise stehen, soweit festgelegt, in der [Preisübersicht](/preise/).
 
 ## Wo finde ich Voraussetzungen und Einrichtung?
 In der [Dokumentation](/dokumentation/) und auf der jeweiligen Produktseite. Die produktspezifischen FAQs beantworten Details zu Gutscheinen, Events, Provisionen, Formularen, Bewertungen, Automationen und Lizenzen.
@@ -33,9 +33,9 @@ Weitere Antworten: [Voucher Captain FAQ](/voucher-captain/faq/) · [Pass Captain
 
 ## Was kann Workflow Captain automatisieren?
 
-Der kostenlose Kern verbindet WordPress und optional WooCommerce mit Bedingungen und Aktionen. Workflow Captain Pro ergänzt versionierte Captain-Provider, signierte Webhooks, erweiterte Verzweigungen und Ausführungsprotokolle. Suite-Aktionen setzen das jeweilige Plugin und einen kompatiblen Vertrag voraus.
+Der kostenlose Kern verbindet WordPress und optional WooCommerce mit Bedingungen und Aktionen. Workflow Captain Pro (in Vorbereitung) ergänzt versionierte Captain-Provider, signierte Webhooks, erweiterte Verzweigungen und Ausführungsprotokolle. Suite-Aktionen setzen das jeweilige Plugin und einen kompatiblen Vertrag voraus.
 
-[Integrationen](/workflow-captain/integrationen/) · [Pro-Funktionen und Preise](/workflow-captain/pro/)
+[Integrationen](/workflow-captain/integrationen/) · [Pro-Funktionen und Preise (in Vorbereitung)](/workflow-captain/pro/)
 
 ## Kann ich mit Captain Plugins Online-Kurse anbieten?
 Ja, mit Course Captain. Der kostenlose Kern enthält Kurs-Builder, Fragenbank, Smarttrainer, Quiz und Prüfungsmodus sowie Lernnachweise. Course Captain Pro ergänzt Lernpfade, Zertifikatsdesigner, Gruppenverwaltung und den Kursverkauf über WooCommerce. [Course Captain ansehen](/course-captain/)

@@ -11,7 +11,7 @@ Review Captain verbindet Bewertungsquellen und bestätigte Kundenerlebnisse in W
 
 ## Bewertungsplattformen
 
-Review Captain Pro unterstützt Verbindungen zu Google Business Profile, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play. Die API-Funktionen hängen von Kontotyp, Profil- oder App-Eigentümerschaft, Freigabe und Tarifrecht ab. Wenn ein API-Zugang nicht verfügbar ist, können Sie ein offizielles Widget, einen Profil-Link oder manuell ausgewählte Reviews verwenden.
+Review Captain Pro (in Vorbereitung) unterstützt Verbindungen zu Google Business Profile, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play. Die API-Funktionen hängen von Kontotyp, Profil- oder App-Eigentümerschaft, Freigabe und Tarifrecht ab. Wenn ein API-Zugang nicht verfügbar ist, können Sie ein offizielles Widget, einen Profil-Link oder manuell ausgewählte Reviews verwenden.
 
 ## WooCommerce
 
@@ -45,6 +45,6 @@ Workflow Captain kann freigegebene Ereignisse wie geplante, versendete oder fehl
 
 Review Captain verwendet keine Scrapes und umgeht keine Anbieterzugänge. Es versendet keine Anfrage ohne geeigneten Auslöser und Einwilligungs-/Rechtsgrundlage, lenkt unzufriedene Kunden nicht von öffentlichen Plattformen weg und veröffentlicht Antworten nicht ohne erforderliche Berechtigungen und Freigaben.
 
-[Kompatibilitätsübersicht](/review-captain/kompatibilitaet/) · [Review Captain Pro](/review-captain/pro/) · [Alle Integrationen](/integrationen/)
+[Kompatibilitätsübersicht](/review-captain/kompatibilitaet/) · [Review Captain Pro (in Vorbereitung)](/review-captain/pro/) · [Alle Integrationen](/integrationen/)
 
 [Screenshot-Platzhalter: Integrationsansicht mit getrennten Bereichen für offizielle Plattformen, Captain-Suite-Adapter, Workflow Captain und kundenspezifische Connectoren zeigen. Connector-Karte mit Fähigkeiten, Vertragsstatus, Testlauf, Queue und bereinigtem Fehler darstellen. Synthetische Daten verwenden; keine Zugangsdaten anzeigen.]

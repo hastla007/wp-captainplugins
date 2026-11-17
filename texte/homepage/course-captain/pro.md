@@ -7,6 +7,8 @@ focus_keyphrase: Course Captain Pro
 
 # Course Captain Pro: Schulungen professionell organisieren und verkaufen
 
+**In Vorbereitung:** Course Captain Pro ist noch nicht erhältlich. Diese Seite beschreibt den geplanten Funktionsumfang; Umfang, Preise und Erscheinungstermin können sich bis zur Veröffentlichung ändern. Course Captain können Sie bereits kostenlos nutzen.
+
 Wenn aus einzelnen Kursen ein Schulungsangebot wird, ergänzt Course Captain Pro den kostenlosen Kern um Lernpfade, zeitgesteuerte Freigaben, erweiterte Prüfungen, gestaltbare Zertifikate, Gruppenverwaltung und Auswertungen. Kurse lassen sich über WooCommerce verkaufen und mit der Captain Suite verbinden.
 
 ## Funktionen für Akademien, Unternehmen und Kursanbieter
@@ -26,7 +28,7 @@ Wenn aus einzelnen Kursen ein Schulungsangebot wird, ergänzt Course Captain Pro
 
 Die Pro-Lizenz gilt für Ihre Website. Ob ein Lernender einen bestimmten Kurs öffnen darf, regelt davon unabhängig Course Captain – über kostenlose, manuelle, gekaufte oder gutscheinbasierte Zugänge. Ihre Lernenden brauchen keine eigene Lizenz.
 
-## Pläne
+## Geplante Pläne
 
 | Plan | Live-Websites | Support |
 |---|---:|---|
@@ -34,9 +36,9 @@ Die Pro-Lizenz gilt für Ihre Website. Ob ein Lernender einen bestimmten Kurs ö
 | Business | 5 | Standard |
 | Agency | 25 | Priority |
 
-Jeder Plan enthält den vollständigen Pro-Funktionsumfang. Den aktuellen Jahrespreis sehen Sie direkt beim jeweiligen Plan im Shop.
+Jeder Plan soll den vollständigen Pro-Funktionsumfang enthalten. Die Jahrespreise werden zum Erscheinen veröffentlicht; vorher ist kein Kauf möglich.
 
-**[Course Captain Pro auswählen]([Checkout-URL])** · [Alle Captain-Pro-Pläne](/preise/)
+**[Course Captain kostenlos herunterladen]([Download-URL])** · [Verfügbare Captain-Pro-Add-ons](/captain-pro/)
 
 ## Wenn die Pro-Lizenz endet
 

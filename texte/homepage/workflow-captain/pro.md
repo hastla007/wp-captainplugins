@@ -7,6 +7,8 @@ focus_keyphrase: Workflow Captain Pro
 
 # Workflow Captain Pro: Ihre Suite, sinnvoll verbunden
 
+**In Vorbereitung:** Workflow Captain Pro ist noch nicht erhältlich. Diese Seite beschreibt den geplanten Funktionsumfang; Umfang, Preise und Erscheinungstermin können sich bis zur Veröffentlichung ändern. Workflow Captain können Sie bereits kostenlos nutzen.
+
 Wenn WordPress- und WooCommerce-Abläufe allein nicht ausreichen, verbindet Workflow Captain Pro die Captain Suite über dokumentierte Provider. Ergänzen Sie Workflows um sichere Webhooks, fortgeschrittene Verzweigungen, Event-Korrelation und Werkzeuge für Betrieb und Fehlerdiagnose.
 
 ## Für wen eignet sich Pro?
@@ -27,7 +29,7 @@ Für Unternehmen, Shops und Agenturen, die Ereignisse zwischen mehreren Captain-
 
 Keine Task-Credits oder monatlichen Run-Limits. Die Tarife unterscheiden sich ausschließlich nach Live-Websites und Supportstufe.
 
-## Jahrespläne
+## Geplante Jahrespläne
 
 | Plan | Jahrespreis | Live-Websites | Support |
 |---|---:|---:|---|
@@ -37,7 +39,9 @@ Keine Task-Credits oder monatlichen Run-Limits. Die Tarife unterscheiden sich au
 
 Die Preise gelten gemäß Konzept pro Jahr und werden im WooCommerce-Shop mit dessen Steuerkonfiguration dargestellt. Verlängerungen erfolgen zum gleichen gespeicherten Preis. Verbindliche Reaktionszeiten werden nicht zugesagt, solange sie nicht im Supportbetrieb festgelegt sind.
 
-**[Workflow Captain Pro auswählen]([Checkout-URL])** · [Alle Captain-Pro-Pläne vergleichen](/preise/)
+Die Preise gelten ab Erscheinen; vorher ist kein Kauf möglich.
+
+**[Workflow Captain kostenlos herunterladen]([Download-URL])** · [Verfügbare Captain-Pro-Add-ons](/captain-pro/)
 
 ## Lizenz- und Ablaufverhalten
 

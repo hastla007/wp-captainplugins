@@ -63,6 +63,25 @@ Freigegebene Block-Patterns (*Captain Plugins* im Pattern-Verzeichnis; Vorschau 
 ### Rechtliche Seiten
 Impressum, Datenschutz, AGB und Widerruf ändert nur die Freigabe-Rolle nach Prüfung durch die Rechts-Rolle. Neue Dienste (Zahlung, Analyse, Einbettungen) vor Aktivierung in der Datenschutzerklärung ergänzen.
 
+## Pro-Add-ons in Vorbereitung
+
+Ein Pro-Add-on wird erst verkauft, wenn sein Code fertig ist und License Captain seine Funktionen freigibt. Bis dahin gilt:
+
+- **Pro-Seite:** Direkt unter der H1 steht ein Absatz, der mit `**In Vorbereitung:**` beginnt. Der Generator gestaltet ihn als Hinweis. Darunter folgen geplanter Funktionsumfang und geplante Pläne, aber kein Kauf-Link. Unten stehen der Download des kostenlosen Kerns und ein Link zu den verfügbaren Add-ons.
+- **Preise, Captain Pro, Kompatibilität und Preis-Pattern:** Das Add-on trägt den Zusatz „(in Vorbereitung)“.
+- **Übrige Seiten:** Die erste Erwähnung im Fließtext und Links auf die Pro-Seite tragen „(in Vorbereitung)“; Link-Texte lauten „ansehen“, nie „auswählen“.
+- **Prüfung:** `python3 tools/price-check.py` meldet eine fehlende Hinweis-Zeile und Kauf-Links bei Add-ons, die in `preise.md` als in Vorbereitung markiert sind.
+
+Stand 17.11.2026: Erhältlich sind Pass Captain Pro und Affiliate Captain Pro. In Vorbereitung sind Voucher, Form, Review, Workflow und Course Captain Pro (siehe [PLUGIN-ABGLEICH.md](PLUGIN-ABGLEICH.md)).
+
+**Wenn ein Add-on erscheint:**
+
+1. Hinweis und alle Zusätze „(in Vorbereitung)“ entfernen (`grep -rn "Vorbereitung" texte/homepage`).
+2. Abschnitte „Geplante …“ umbenennen.
+3. Kauf-CTA wie bei Pass Captain Pro einsetzen.
+4. Preise in `inc/catalog.php` bestätigen.
+5. `tools/build-theme-content.py` und `tools/price-check.py` ausführen.
+
 ## License-Captain-Sprachregel
 
 License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Auf Seiten für Captain-Pro-Kunden (Pro, Preise, FAQ, Installation) wird License Captain **nicht** als Lizenzierungsweg von Captain Pro erwähnt – auch nicht als „inklusive“, „enthalten“ oder „nicht enthalten“. Pro-Kunden aktivieren ihren Lizenzschlüssel im Pro-Add-on. Erlaubt bleibt License Captain als eigenständiges Produkt, etwa in Produktlisten oder als Integration (z. B. Workflow-Captain-Provider). `python3 tools/acceptance-list.py` prüft die Regel automatisch.

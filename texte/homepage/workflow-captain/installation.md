@@ -7,7 +7,7 @@ focus_keyphrase: Workflow Captain installieren
 
 # Workflow Captain installieren und den ersten Ablauf testen
 
-Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooCommerce-Trigger benötigen Sie WooCommerce; für Suite-Funktionen kommen das passende Captain-Plugin und gegebenenfalls Workflow Captain Pro hinzu.
+Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooCommerce-Trigger benötigen Sie WooCommerce; für Suite-Funktionen kommen das passende Captain-Plugin und gegebenenfalls Workflow Captain Pro (in Vorbereitung) hinzu.
 
 ## Voraussetzungen
 

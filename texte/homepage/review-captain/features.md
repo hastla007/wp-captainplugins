@@ -27,7 +27,7 @@ Basisstatistiken beziehen sich auf die ausgewählten bzw. angezeigten Reviews. P
 
 ## Bewertungsanfragen zum passenden Zeitpunkt
 
-Review Captain Pro plant Anfragen nach einem bestätigten Erlebnis – etwa nach einer erfüllten Leistung, tatsächlichen Gutscheinverwendung oder bestätigten Eventteilnahme. Der bloße Kauf, die Gutscheinausstellung oder der Versand reicht nicht. Pro Erlebnis und Empfänger wird höchstens eine Anfrage geplant; Verzögerung, Ruhezeit, Ausschlüsse und Opt-out werden berücksichtigt. Es wird nicht nach Zufriedenheit gefiltert.
+Review Captain Pro (in Vorbereitung) plant Anfragen nach einem bestätigten Erlebnis – etwa nach einer erfüllten Leistung, tatsächlichen Gutscheinverwendung oder bestätigten Eventteilnahme. Der bloße Kauf, die Gutscheinausstellung oder der Versand reicht nicht. Pro Erlebnis und Empfänger wird höchstens eine Anfrage geplant; Verzögerung, Ruhezeit, Ausschlüsse und Opt-out werden berücksichtigt. Es wird nicht nach Zufriedenheit gefiltert.
 
 Eine optionale Erinnerung kann pro Kampagne aktiviert werden; sie ist standardmäßig ausgeschaltet und folgt derselben Deduplizierungs-, Versandberechtigungs- und Opt-out-Regel.
 

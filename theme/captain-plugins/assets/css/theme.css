@@ -59,10 +59,12 @@ img { max-width: 100%; height: auto; }
 /* WordPress core prints the skip link for block themes; match it to the brand. */
 .skip-link.screen-reader-text:focus { z-index: 100000; padding: 0.8rem 1.1rem !important; color: var(--cp-ink) !important; background: var(--cp-gold) !important; font-weight: 700; text-decoration: none; }
 .cp-main > * { margin-block: 0; }
-/* Seitenrand für alles, was nicht volle Breite hat (z. B. Absätze oder Plugin-Shortcodes direkt in der Seite);
-   Blöcke mit voller Breite heben den Rand wieder auf. */
-.cp-page-content { box-sizing: border-box; padding-inline: var(--cp-gutter); }
-.cp-page-content > :is(.alignfull, .cp-breadcrumb-bar) { margin-block: 0; margin-inline: calc(-1 * var(--cp-gutter)) !important; max-width: none; width: auto; }
+/* Seitenrand für Inhalte ohne volle Breite (z. B. Absätze oder Plugin-Shortcodes direkt in der Seite):
+   sie bleiben auch auf schmalen Bildschirmen einen Seitenrand vom Bildschirmrand entfernt. */
+.cp-page-content > .alignfull { margin-block: 0; }
+:where(.cp-main:not(.cp-main--shop)) .cp-page-content > :where(:not(.alignfull):not(.alignwide):not(.cp-breadcrumb-bar)) {
+	box-sizing: border-box; max-width: min(var(--wp--style--global--content-size, var(--cp-text)), calc(100% - 2 * var(--cp-gutter)));
+}
 .cp-page-content > :where(:not(.alignfull):not(.cp-breadcrumb-bar)):first-child { margin-top: var(--cp-section-space); }
 .cp-page-content > :where(:not(.alignfull)):last-child { margin-bottom: var(--cp-section-space); }
 
@@ -635,7 +637,7 @@ img { max-width: 100%; height: auto; }
 .woocommerce :is(input, select, textarea):focus-visible,
 .wc-block-components-product-image a:focus-visible,
 .wc-block-product a:focus-visible { outline: 3px solid var(--cp-focus) !important; outline-offset: 2px; }
-.cp-main--shop .cp-page-content { box-sizing: border-box; }
+.cp-main--shop .cp-page-content { box-sizing: border-box; padding-inline: var(--cp-gutter); }
 .woocommerce-account .woocommerce-MyAccount-navigation ul { display: grid; gap: 0.25rem; margin: 0; padding: 0; list-style: none; }
 .woocommerce-account .woocommerce-MyAccount-navigation li { margin: 0; padding: 0; }
 .woocommerce-account .woocommerce-MyAccount-navigation .is-active a { text-decoration: none; }
@@ -706,3 +708,14 @@ img { max-width: 100%; height: auto; }
 /* Abstand zwischen Elementen im Textteil zweispaltiger Abschnitte (muss nach .cp-split__text > * stehen). */
 .cp-split__text > * + * { margin-top: 1.25rem; }
 .cp-split__text > h2 + * { margin-top: 0; }
+
+/* Verfügbarkeitshinweis „In Vorbereitung“ (z. B. Pro-Add-ons, die noch nicht erhältlich sind). */
+.cp-status-note {
+	position: relative; max-width: var(--cp-text); padding: 0.9rem 1.1rem 0.9rem 3rem;
+	border: 1px solid var(--cp-border); border-inline-start: 4px solid var(--cp-gold); border-radius: var(--cp-radius-sm);
+	color: var(--cp-ink); background: var(--cp-paper); font-size: 1rem; line-height: 1.55;
+}
+.cp-status-note::before {
+	content: ""; position: absolute; top: 1rem; left: 1.05rem; width: 1.25rem; height: 1.25rem;
+	background: var(--cp-navy); -webkit-mask: var(--cp-icon-info) center / contain no-repeat; mask: var(--cp-icon-info) center / contain no-repeat;
+}

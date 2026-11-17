@@ -31,7 +31,7 @@ Honeypot, Mindest-Ausfüllzeit, Rate-Limit und einfache Blocklisten bilden den B
 
 ## Pro-Workflows
 
-Form Captain Pro ergänzt mehrstufige Formulare mit Fortschritt und sicherem Fortsetzen, geschützte Uploads mit Typ- und Größenlimits sowie verschachtelte UND-/ODER-Bedingungen. Steuern Sie Bestätigungen und Benachrichtigungsziele anhand der Antworten. Serverseitige Validierung prüft die Regeln unabhängig von der Browserdarstellung. Ein Integrations- und Fehlerprotokoll macht Übergaben nachvollziehbar und hilft beim gezielten Wiederholen fehlgeschlagener Aktionen.
+Form Captain Pro (in Vorbereitung) ergänzt mehrstufige Formulare mit Fortschritt und sicherem Fortsetzen, geschützte Uploads mit Typ- und Größenlimits sowie verschachtelte UND-/ODER-Bedingungen. Steuern Sie Bestätigungen und Benachrichtigungsziele anhand der Antworten. Serverseitige Validierung prüft die Regeln unabhängig von der Browserdarstellung. Ein Integrations- und Fehlerprotokoll macht Übergaben nachvollziehbar und hilft beim gezielten Wiederholen fehlgeschlagener Aktionen.
 
 Webhooks übertragen freigegebene Felder mit Signatur, Idempotenz, Zeitlimits, Wiederholungen und Ausführungsprotokoll. PDF-Ausgaben nutzen Vorlagen und ausgewählte Entry-Felder. Datei- und PDF-Zugriffe folgen den WordPress-Berechtigungen und Datenschutzregeln.
 

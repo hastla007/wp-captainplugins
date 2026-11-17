@@ -13,7 +13,7 @@ Workflow Captain verbindet WordPress- und WooCommerce-Ereignisse mit Bedingungen
 
 ## Ist Workflow Captain kostenlos?
 
-Ja. Der Kern ist kostenlos und enthält unbegrenzte Workflows und Ausführungen für WordPress und WooCommerce. Workflow Captain Pro ist ein separates, kostenpflichtiges Add-on mit Suite-Integrationen und erweiterten Funktionen.
+Ja. Der Kern ist kostenlos und enthält unbegrenzte Workflows und Ausführungen für WordPress und WooCommerce. Workflow Captain Pro (in Vorbereitung) ist ein separates, kostenpflichtiges Add-on mit Suite-Integrationen und erweiterten Funktionen.
 
 ## Muss WooCommerce installiert sein?
 

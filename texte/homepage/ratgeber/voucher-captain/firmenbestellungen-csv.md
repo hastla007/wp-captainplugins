@@ -7,7 +7,7 @@ focus_keyphrase: Gutscheine für Firmenkunden
 
 # Gutscheine für Firmenkunden gesammelt ausstellen
 
-Wenn Unternehmen Gutscheine an Mitarbeitende, Filialen oder Geschäftspartner verteilen, wird die Einzelbestellung schnell aufwendig. Voucher Captain Pro bündelt die Empfängerdaten in einer CSV-Datei und unterstützt einen strukturierten Massenablauf.
+Wenn Unternehmen Gutscheine an Mitarbeitende, Filialen oder Geschäftspartner verteilen, wird die Einzelbestellung schnell aufwendig. Voucher Captain Pro (in Vorbereitung) bündelt die Empfängerdaten in einer CSV-Datei und unterstützt einen strukturierten Massenablauf.
 
 ## Empfängerliste vorbereiten
 

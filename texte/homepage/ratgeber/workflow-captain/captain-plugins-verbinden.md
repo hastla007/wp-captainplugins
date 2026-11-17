@@ -21,6 +21,6 @@ Jeder Provider sollte seine Ereignisse, Tokens, Pflichtversionen, Berechtigungen
 
 Payloads sollten minimiert und sensible Angaben standardmäßig ausgeschlossen werden. Aktionen mit Außenwirkung benötigen Idempotenz und nachvollziehbare Statusmeldungen. Besonders bei Refunds, Stornos und Opt-outs muss ein Ablauf den aktuellen Geschäftsstatus erneut prüfen.
 
-Workflow Captain Pro bündelt versionierte Provider für die Captain Suite. Die tatsächliche Verfügbarkeit setzt das jeweilige Kernplugin und seinen kompatiblen Providervertrag voraus.
+Workflow Captain Pro (in Vorbereitung) bündelt versionierte Provider für die Captain Suite. Die tatsächliche Verfügbarkeit setzt das jeweilige Kernplugin und seinen kompatiblen Providervertrag voraus.
 
-[Integrationen im Detail](/workflow-captain/integrationen/) · [Pro-Funktionen](/workflow-captain/pro/) · [Dokumentation](/dokumentation/workflow-captain/)
+[Integrationen im Detail](/workflow-captain/integrationen/) · [Pro-Funktionen (in Vorbereitung)](/workflow-captain/pro/) · [Dokumentation](/dokumentation/workflow-captain/)

@@ -7,7 +7,7 @@ focus_keyphrase: Review Captain installieren
 
 # Review Captain installieren und einrichten
 
-Richten Sie Review Captain in WordPress ein, wählen Sie Ihre Bewertungsquellen und veröffentlichen Sie eine passende Review-Ausgabe. Der Kern verwaltet lokale und manuell kuratierte Bewertungen. Review Captain Pro ergänzt Plattformverbindungen, automatisierte Synchronisierung und Bewertungsanfragen.
+Richten Sie Review Captain in WordPress ein, wählen Sie Ihre Bewertungsquellen und veröffentlichen Sie eine passende Review-Ausgabe. Der Kern verwaltet lokale und manuell kuratierte Bewertungen. Review Captain Pro (in Vorbereitung) ergänzt Plattformverbindungen, automatisierte Synchronisierung und Bewertungsanfragen.
 
 ## Voraussetzungen
 

@@ -6,7 +6,7 @@ Automatisch erzeugt mit `python3 tools/release-blockers.py`. Alles hier muss vor
 
 | Art | Anzahl |
 |---|---:|
-| Fehlendes Linkziel | 30 |
+| Fehlendes Linkziel | 29 |
 | Betreiberangabe | 19 |
 | Redaktioneller Vorbehalt | 13 |
 | Medienplatzhalter | 112 |
@@ -17,8 +17,8 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 | Ziel | Vorkommen |
 |---|---:|
-| Download-URL | 22 |
-| Checkout-URL | 5 |
+| Download-URL | 24 |
+| Checkout-URL | 2 |
 | License-Captain-Shop-URL | 1 |
 | Checkout-Link je Plan ergänzen: Checkout-URL | 1 |
 | Supportkontakt oder Formular ergänzen: Support-URL | 1 |
@@ -51,7 +51,7 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/course-captain/pro/`
 
-- **Fehlendes Linkziel:** „Course Captain Pro auswählen“ → Checkout-URL
+- **Fehlendes Linkziel:** „Course Captain kostenlos herunterladen“ → Download-URL
 
 ### `/datenschutz/`
 
@@ -147,8 +147,7 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/voucher-captain/pro/`
 
-- **Fehlendes Linkziel:** „Pro-Plan auswählen“ → Checkout-URL
-- **Fehlendes Linkziel:** „Kostenlosen Kern herunterladen“ → Download-URL
+- **Fehlendes Linkziel:** „Voucher Captain kostenlos herunterladen“ → Download-URL
 
 ### `/workflow-captain/`
 
@@ -166,4 +165,4 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/workflow-captain/pro/`
 
-- **Fehlendes Linkziel:** „Workflow Captain Pro auswählen“ → Checkout-URL
+- **Fehlendes Linkziel:** „Workflow Captain kostenlos herunterladen“ → Download-URL

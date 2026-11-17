@@ -9,7 +9,7 @@ focus_keyphrase: WordPress Formular Plugin
 
 Erstellen und veröffentlichen Sie Kontakt-, Angebots-, Support- und Anmeldeformulare direkt in WordPress. Form Captain speichert Einsendungen als verwaltbare Einträge auf Ihrer Website – ohne Pflichtregistrierung oder künstliche Submission-Grenze im kostenlosen Kern.
 
-Form Captain Free bringt Editor, Formulare, E-Mail-Benachrichtigungen, Einträge, CSV-Export und Spamschutz mit. Form Captain Pro ergänzt mehrstufige Abläufe, sichere Uploads, bedingte Regeln, Webhooks und PDF-Ausgaben. Freigegebene Entry-Ereignisse lassen sich zusätzlich mit Workflow Captain verbinden.
+Form Captain Free bringt Editor, Formulare, E-Mail-Benachrichtigungen, Einträge, CSV-Export und Spamschutz mit. Form Captain Pro (in Vorbereitung) ergänzt mehrstufige Abläufe, sichere Uploads, bedingte Regeln, Webhooks und PDF-Ausgaben. Freigegebene Entry-Ereignisse lassen sich zusätzlich mit Workflow Captain verbinden.
 
 **[Form Captain kostenlos starten]([Download-URL])** · [Pro-Funktionen ansehen](/form-captain/pro/)
 
@@ -35,7 +35,7 @@ Form Captain Pro ergänzt den Kern mit mehrstufigen Formularen und sicherem Fort
 
 Die Pro-Jahrespläne: **Solo 49 €** für 1 Live-Website, **Studio 99 €** für 5 Live-Websites und **Agency 199 €** für 25 Live-Websites, jeweils zzgl. USt. Alle Pläne enthalten denselben Pro-Funktionsumfang; Agency erhält priorisierten Support.
 
-[Features im Detail](/form-captain/features/) · [Form Captain Pro](/form-captain/pro/) · [FAQ](/form-captain/faq/)
+[Features im Detail](/form-captain/features/) · [Form Captain Pro (in Vorbereitung)](/form-captain/pro/) · [FAQ](/form-captain/faq/)
 
 [Screenshot-Platzhalter: Visuellen Formular-Editor mit Vorlagenliste, Feldpalette und Live-Vorschau zeigen. Testdaten verwenden und persönliche Einträge ausblenden.]
 

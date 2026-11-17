@@ -60,7 +60,7 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/voucher-captain/faq/` | Fragen zu Voucher Captain | bereit | – | Zusagen | ☐ | ☐ | ☐ |
 | `/voucher-captain/features/` | Gutscheinverwaltung für den WooCommerce-Alltag | bereit | – | Zusagen, 2 Medien | ☐ | ☐ | ☐ |
 | `/voucher-captain/` | Gutscheine verkaufen, die zu Ihrer Marke passen | blockiert | 1 offen | Zusagen, 3 Medien | ☐ | ☐ | ☐ |
-| `/voucher-captain/pro/` | Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert | blockiert | 2 offen | Preise, 2 Medien | ☐ | ☐ | ☐ |
+| `/voucher-captain/pro/` | Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert | blockiert | 1 offen | Preise, 2 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/faq/` | Häufige Fragen zu Workflow Captain | Vorbehalt | – | Preise | ☐ | ☐ | ☐ |
 | `/workflow-captain/features/` | Workflow Captain Features: Abläufe visuell verbinden | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/` | Wiederkehrende Abläufe. Ein klarer Workflow. | blockiert | 2 offen | 1 Medien | ☐ | ☐ | ☐ |

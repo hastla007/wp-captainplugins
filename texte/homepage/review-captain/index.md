@@ -9,7 +9,7 @@ focus_keyphrase: Kundenbewertungen WordPress Plugin
 
 Führen Sie lokale Erfahrungsberichte und externe Kundenbewertungen an einem Ort zusammen. Review Captain hilft Unternehmen, Bewertungen nachvollziehbar in WordPress zu verwalten und dort zu präsentieren, wo sie bei einer Kaufentscheidung Orientierung geben.
 
-Im kostenlosen Kern sammeln und moderieren Sie eigene Reviews und pflegen ausgewählte externe Stimmen mit Originalquelle. Review Captain Pro ergänzt offizielle Plattformverbindungen, Synchronisierung, faire Bewertungsanfragen, Workflow-Captain-Verbindungen, einen Manager für individuelle Connectoren und erweiterte Social-Proof-Widgets.
+Im kostenlosen Kern sammeln und moderieren Sie eigene Reviews und pflegen ausgewählte externe Stimmen mit Originalquelle. Review Captain Pro (in Vorbereitung) ergänzt offizielle Plattformverbindungen, Synchronisierung, faire Bewertungsanfragen, Workflow-Captain-Verbindungen, einen Manager für individuelle Connectoren und erweiterte Social-Proof-Widgets.
 
 **[Review Captain kostenlos entdecken]([Download-URL])** · [Pro-Funktionen ansehen](/review-captain/pro/)
 
@@ -33,7 +33,7 @@ Review Captain Free verwaltet lokale Reviews, manuell ausgewählte externe Bewer
 
 Die Pro-Pläne decken 1, 5 oder 25 Live-Websites ab. Alle Pro-Funktionen sind in jedem Plan enthalten; Agency bietet priorisierten Support. Die Jahrespreise sehen Sie im Shop.
 
-[Features im Detail](/review-captain/features/) · [Review Captain Pro](/review-captain/pro/) · [Häufige Fragen](/review-captain/faq/)
+[Features im Detail](/review-captain/features/) · [Review Captain Pro (in Vorbereitung)](/review-captain/pro/) · [Häufige Fragen](/review-captain/faq/)
 
 [Screenshot-Platzhalter: Review-Captain-Dashboard mit getrennten Quellen, Rating, Datum, Sync-Status und einer lokalen Projekt-Connector-Karte zeigen. Testprofile und Reviewtexte verwenden; Verbindungstokens und personenbezogene Daten ausblenden.]
 

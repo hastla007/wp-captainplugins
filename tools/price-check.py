@@ -7,6 +7,8 @@ the setup assistant creates the WooCommerce products. Checked against:
   - texte/homepage/<produkt>/pro.md (plan table "Single · 1 Website | 129 €")
   - theme/captain-plugins/patterns/pricing-comparison.php (price comparison pattern)
 Products without a price in the catalogue must not show a euro amount on their Pro page.
+Add-ons marked "(in Vorbereitung)" in preise.md are not on sale yet: their Pro page needs the
+"In Vorbereitung" notice and must not link to the checkout.
 Exit code 1 on any difference. Usage: python3 tools/price-check.py
 """
 import pathlib
@@ -44,13 +46,13 @@ def main():
     pattern = (THEME / 'patterns' / 'pricing-comparison.php').read_text(encoding='utf-8')
     for slug, prices in expected.items():
         name = slug.replace('-', ' ').title() + ' Pro'
-        row = re.search(r'^\|\s*' + re.escape(name) + r'\s*\|(.*)$', overview, re.M)
+        row = re.search(r'^\|\s*' + re.escape(name) + r'(\s*\(in Vorbereitung\))?\s*\|(.*)$', overview, re.M)
         if not row:
             problems.append(f'preise.md: Zeile „{name}“ fehlt')
-        elif euros(row.group(1))[:3] != prices:
-            problems.append(f'preise.md: {name} zeigt {euros(row.group(1))[:3]}, Katalog {prices}')
+        elif euros(row.group(2))[:3] != prices:
+            problems.append(f'preise.md: {name} zeigt {euros(row.group(2))[:3]}, Katalog {prices}')
 
-        cells = re.search(r'<th>' + re.escape(name) + r'</th>(.*?)</tr>', pattern)
+        cells = re.search(r'<th>' + re.escape(name) + r'(?: \(in Vorbereitung\))?</th>(.*?)</tr>', pattern)
         if not cells:
             problems.append(f'Pattern pricing-comparison: Zeile „{name}“ fehlt')
         elif euros(cells.group(1))[:3] != prices:
@@ -65,6 +67,16 @@ def main():
                 problems.append(f'{slug}/pro.md: Plantabelle zeigt {shown[:3]}, Katalog {prices}')
         else:
             problems.append(f'{slug}/pro.md fehlt')
+
+    # Add-ons in preparation: notice on the Pro page, no checkout link.
+    for name in re.findall(r'^(?:\||##)\s*([A-Z][a-z]+ Captain Pro) \(in Vorbereitung\)', overview, re.M):
+        slug = name[:-4].lower().replace(' ', '-')
+        pro = TEXTS / slug / 'pro.md'
+        text = pro.read_text(encoding='utf-8') if pro.exists() else ''
+        if '**In Vorbereitung:**' not in text:
+            problems.append(f'{slug}/pro.md: Hinweis „In Vorbereitung“ fehlt (in preise.md als in Vorbereitung markiert)')
+        if 'Checkout-URL' in text or re.search(r'\]\(/(?:warenkorb|kasse|cart|checkout|shop)/', text):
+            problems.append(f'{slug}/pro.md: Kauf-Link, obwohl das Add-on in Vorbereitung ist')
 
     for pro in sorted(TEXTS.glob('*-captain/pro.md')):
         slug = pro.parent.name

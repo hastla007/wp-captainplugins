@@ -7,7 +7,7 @@ focus_keyphrase: WordPress Workflow Plugin Funktionen
 
 # Workflow Captain Features: Abläufe visuell verbinden
 
-Workflow Captain bündelt Ereignisse, Bedingungen und Aktionen in nachvollziehbaren Workflows. Der kostenlose Kern deckt WordPress und WooCommerce ab. Workflow Captain Pro ergänzt die Captain Suite, externe Webhook-Verbindungen und erweiterte Steuerungs- und Diagnosefunktionen.
+Workflow Captain bündelt Ereignisse, Bedingungen und Aktionen in nachvollziehbaren Workflows. Der kostenlose Kern deckt WordPress und WooCommerce ab. Workflow Captain Pro (in Vorbereitung) ergänzt die Captain Suite, externe Webhook-Verbindungen und erweiterte Steuerungs- und Diagnosefunktionen.
 
 ## Im kostenlosen Kern
 

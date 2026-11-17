@@ -23,6 +23,6 @@ Keine Bewertungen aus Seitenquelltexten scrapen oder Anbieterbeschränkungen umg
 
 ## Bewertungen in WordPress verwalten
 
-Review Captain verbindet lokale Reviews und manuell kuratierte externe Stimmen in einer WordPress-Verwaltung. Review Captain Pro ergänzt offizielle Plattformverbindungen und Sync, sobald der erforderliche Zugang besteht. Quellenlabel und Direktlink bleiben Bestandteil der Darstellung.
+Review Captain verbindet lokale Reviews und manuell kuratierte externe Stimmen in einer WordPress-Verwaltung. Review Captain Pro (in Vorbereitung) ergänzt offizielle Plattformverbindungen und Sync, sobald der erforderliche Zugang besteht. Quellenlabel und Direktlink bleiben Bestandteil der Darstellung.
 
 [Review Captain kennenlernen](/review-captain/) · [Plattformzugänge vergleichen](/review-captain/kompatibilitaet/)

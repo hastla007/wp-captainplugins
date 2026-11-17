@@ -31,4 +31,4 @@ Ja. Unterstützt werden CSV, XLS, XLSX und ODS.
 ## Was ergänzt Voucher Captain Pro?
 Firmenbestellungen per CSV, Wallet-Pässe für Apple und Google sowie SMS-Zustellung.
 
-[Features](/voucher-captain/features/) · [Pro und Preise](/voucher-captain/pro/) · [Support](/support/)
+[Features](/voucher-captain/features/) · [Pro und Preise (in Vorbereitung)](/voucher-captain/pro/) · [Support](/support/)

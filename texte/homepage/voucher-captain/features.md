@@ -34,4 +34,4 @@ Suchen und filtern Sie Gutscheine, korrigieren Sie Guthaben, senden Sie Gutschei
 Voucher Captain arbeitet mit WooCommerce, HPOS und Blocks-Checkout. Unterstützt werden mehrsprachige und gängige Mehrwährungs-Setups. Bei aktivem Pass Captain sind Gutscheinzahlung, Ticketgutscheine und gemeinsamer Scanner Teil des Angebots.
 
 [Screenshot-Platzhalter: gefilterte Gutscheinliste und Detailverlauf eines Testgutscheins zeigen; Codes, Bestellungen und Empfänger anonymisieren.] · [Demo: Codeimport]  
-[Zur Pro-Version](/voucher-captain/pro/)
+[Zur Pro-Version (in Vorbereitung)](/voucher-captain/pro/)

@@ -9,7 +9,7 @@ focus_keyphrase: WordPress LMS Plugin
 
 Mit Course Captain bauen Sie Online-Kurse, Schulungen und Prüfungsvorbereitungen direkt in WordPress auf. Kapitel, Lektionen, Videos, Fragen, Lernkarten, Quizzes und Prüfungen entstehen im WordPress-Admin; Lernende erhalten einen mobilen Lernraum mit Fortschritt, Smarttrainer, Merkliste und Ergebnissen.
 
-Der kostenlose Kern ist ein vollwertiges Lernmanagementsystem ohne künstliche Kurs- oder Teilnehmerlimits. Course Captain Pro ergänzt Lernpfade, zeitgesteuerte Inhalte, erweiterte Prüfungen, einen Zertifikatsdesigner, Gruppenverwaltung, Auswertungen sowie Verbindungen zu WooCommerce und der Captain Suite.
+Der kostenlose Kern ist ein vollwertiges Lernmanagementsystem ohne künstliche Kurs- oder Teilnehmerlimits. Course Captain Pro (in Vorbereitung) ergänzt Lernpfade, zeitgesteuerte Inhalte, erweiterte Prüfungen, einen Zertifikatsdesigner, Gruppenverwaltung, Auswertungen sowie Verbindungen zu WooCommerce und der Captain Suite.
 
 **[Course Captain kostenlos starten]([Download-URL])** · [Pro-Funktionen ansehen](/course-captain/pro/)
 
@@ -43,7 +43,7 @@ Course Captain Free enthält Kurs-Builder, Fragenbank mit Standardfragetypen, Sm
 
 Die Pro-Pläne decken 1, 5 oder 25 Live-Websites ab. Alle Pro-Funktionen sind in jedem Plan enthalten; Agency bietet priorisierten Support. Die Jahrespreise sehen Sie im Shop.
 
-[Features im Detail](/course-captain/features/) · [Course Captain Pro](/course-captain/pro/) · [Häufige Fragen](/course-captain/faq/)
+[Features im Detail](/course-captain/features/) · [Course Captain Pro (in Vorbereitung)](/course-captain/pro/) · [Häufige Fragen](/course-captain/faq/)
 
 ## Ihre Daten bleiben in WordPress
 
