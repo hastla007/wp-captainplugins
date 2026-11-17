@@ -17,7 +17,7 @@ Gliedern Sie Ihre Inhalte in Module und Lektionen, ergänzen Sie Videos, Downloa
 
 ## Kurse verkaufen und Zugänge vergeben
 
-- **Direkt über WooCommerce:** Mit Course Captain Pro (in Vorbereitung) werden Kurse nach bestätigter Zahlung freigeschaltet und bei Erstattung wieder zurückgenommen.
+- **Direkt über WooCommerce:** Mit Course Captain Pro werden Kurse nach bestätigter Zahlung freigeschaltet und bei Erstattung wieder zurückgenommen.
 - **Als Gutschein:** Mit Voucher Captain verkaufen Sie Kursgutscheine; nach der Einlösung vergibt Course Captain den Zugang.
 - **Für Teams:** Gruppen mit Plätzen und Einladungen schalten Unternehmenskunden oder Abteilungen gemeinsam frei.
 - **Über Partner:** Affiliate Captain ordnet Kursverkäufe Partnern zu und berechnet Provisionen nach bestätigter Bestellung.

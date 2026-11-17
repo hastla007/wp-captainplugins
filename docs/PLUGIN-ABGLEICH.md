@@ -29,22 +29,19 @@ Die Website nennt für alle Produkte PHP 8.5 als Mindestversion. Das ist eine be
 
 | Add-on | Website verspricht | Stand im Code (captain-pro 0.1.0) | Bewertung |
 |---|---|---|---|
-| Voucher Captain Pro | CSV-Massenbestellungen, Wallet-Pässe, SMS-Zustellung | Entwicklungsvorschau mit Lizenz-/Update-Mechanik und einer Beispielfunktion; keine der drei Funktionen vorhanden, auch nicht im Kern | in Vorbereitung, kein Kauf |
+| Voucher Captain Pro | CSV-Massenbestellungen, Wallet-Pässe, SMS-Zustellung | Entwicklungsvorschau mit Lizenz-/Update-Mechanik und einer Beispielfunktion; keine der drei Funktionen vorhanden, auch nicht im Kern | bis Release zu bauen |
 | Pass Captain Pro | E-Rechnungen, Kartenterminal, White Label, Warteraum, schreibende API | Code für alle fünf vorhanden (XRechnung/ZUGFeRD, Terminal, White Label, Warteraum, REST); mit Pass Captain 1.4.0 noch inaktiv (Kern-Vertrag fehlt) | Freigabe hängt am Kern-Release |
 | Affiliate Captain Pro | Webhooks, erweiterte REST-API, White-Label-Portal, PayPal-Auszahlungen | Code für alle vier vorhanden | passt |
-| Form Captain Pro | Mehrstufige Formulare, Uploads, Regeln, Webhooks, Protokoll, PDF | kein Add-on vorhanden | in Vorbereitung, kein Kauf |
-| Review Captain Pro | Plattformverbindungen, Sync, Anfragen, Widgets, Auswertungen | kein Add-on vorhanden | in Vorbereitung, kein Kauf |
-| Workflow Captain Pro | Suite-Provider, signierte Webhooks, Ablauflogik, Wiederholungen, Protokolle | kein Add-on vorhanden | in Vorbereitung, kein Kauf |
-| Course Captain Pro | Lernpfade, Drip, Prüfungen, Zertifikatsdesigner, Gruppen, Kohorten, Kursverkauf | kein Add-on vorhanden | in Vorbereitung, kein Kauf |
+| Form Captain Pro | Mehrstufige Formulare, Uploads, Regeln, Webhooks, Protokoll, PDF | kein Add-on vorhanden | bis Release zu bauen |
+| Review Captain Pro | Plattformverbindungen, Sync, Anfragen, Widgets, Auswertungen | kein Add-on vorhanden | bis Release zu bauen |
+| Workflow Captain Pro | Suite-Provider, signierte Webhooks, Ablauflogik, Wiederholungen, Protokolle | kein Add-on vorhanden | bis Release zu bauen |
+| Course Captain Pro | Lernpfade, Drip, Prüfungen, Zertifikatsdesigner, Gruppen, Kohorten, Kursverkauf | kein Add-on vorhanden | bis Release zu bauen |
 
 Der Shop ist bereits abgesichert: Der Setup-Assistent legt nur Pro-Produkte an, deren Funktionen im License-Captain-Katalog freigegeben sind. Derzeit sind das Affiliate und Pass. Die Texte auf /captain-pro/, /preise/, den sieben Pro-Seiten und in der FAQ beschreiben aber alle sieben Add-ons als kaufbar.
 
-**Entschieden am 17.11.2026:** Nicht verfügbare Add-ons erscheinen mit „in Vorbereitung“ und ohne Kauf-Knopf:
+**Entscheidung des Inhabers (17.11.2026):** Alle Kern-Plugins und alle sieben Pro-Add-ons sind zum Release fertig. Die Website beschreibt deshalb den geplanten Release-Umfang (Code, Konzept und To-do), ohne „in Vorbereitung“-Hinweise.
 
-- **Pro-Seiten:** Hinweis unter der H1, geplante Pläne, kein Checkout-Link.
-- **Übrige Seiten:** Zusatz in Preisen, Captain Pro, FAQ, Kompatibilität, Preis-Pattern und auf allen Seiten, die die Add-ons erwähnen.
-- **Prüfung:** `tools/price-check.py` überwacht die Regel.
-- **Ablauf bei Release:** [REDAKTION.md](REDAKTION.md#pro-add-ons-in-vorbereitung).
+Die Spalte „Stand im Code“ zeigt, was bis zum Release noch gebaut werden muss, damit die Texte stimmen. Falls sich ein Add-on verzögert, gibt es den Ablauf „in Vorbereitung“ in [REDAKTION.md](REDAKTION.md#pro-add-ons-in-vorbereitung).
 
 ## Release-Stand der Kern-Plugins
 

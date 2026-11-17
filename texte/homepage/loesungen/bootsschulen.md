@@ -31,7 +31,7 @@ Bootsschulen, die Kurszugänge in Kontingenten einkaufen und intern verteilen, k
 
 Mit Course Captain stellen Sie den Theorieteil Ihrer Kurse direkt auf Ihrer Website bereit: Lektionen mit Text, Bildern und Videos, eine Fragenbank mit Ihren eigenen Fragen und Erklärungen, einen Smarttrainer, der falsch beantwortete und fällige Fragen gezielt wiederholt, und eine Prüfungssimulation mit Zeitlimit und Bestehensgrenze. Fragen und Inhalte pflegen Sie selbst; Course Captain liefert keine fertigen amtlichen Fragenkataloge und ersetzt keine offizielle Prüfung.
 
-Teilnehmende eines gebuchten Kurses können Sie manuell oder über Gruppen freischalten. Mit Course Captain Pro (in Vorbereitung) lassen sich Kurszugänge über WooCommerce verkaufen, Lernpfade bis zum Praxistermin aufbauen und Gutscheine von Voucher Captain einlösen.
+Teilnehmende eines gebuchten Kurses können Sie manuell oder über Gruppen freischalten. Mit Course Captain Pro lassen sich Kurszugänge über WooCommerce verkaufen, Lernpfade bis zum Praxistermin aufbauen und Gutscheine von Voucher Captain einlösen.
 
 [Course Captain entdecken](/course-captain/) · [Prüfungsvorbereitung mit System](/ratgeber/course-captain/pruefungsvorbereitung-wiederholung/)
 

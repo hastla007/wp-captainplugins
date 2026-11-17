@@ -11,22 +11,23 @@ Starten Sie mit dem kostenlosen Kern-Plugin. Ergänzen Sie die Funktionen, die I
 
 ## Sieben Erweiterungen. Ein passender Plan.
 
-Erhältlich sind Pass Captain Pro und Affiliate Captain Pro. Die übrigen fünf Add-ons sind in Vorbereitung und noch nicht kaufbar; ihre Seiten beschreiben den geplanten Funktionsumfang.
-
-- **Voucher Captain Pro (in Vorbereitung):** CSV-Massenbestellungen, Wallet-Pässe und SMS-Zustellung für Unternehmen mit hohem Gutscheinaufkommen.
+- **Voucher Captain Pro:** CSV-Massenbestellungen, Wallet-Pässe und SMS-Zustellung für Unternehmen mit hohem Gutscheinaufkommen.
 - **Pass Captain Pro:** E-Rechnungen, Kartenterminal, White Label, virtueller Warteraum und schreibende API für professionelle Event- und Buchungsabläufe.
 - **Affiliate Captain Pro:** Webhooks, erweiterte REST-API, White-Label-Partnerportal und automatische PayPal-Auszahlungen für wachsende Partnerprogramme.
-- **Review Captain Pro (in Vorbereitung):** Plattformverbindungen, Sync, faire Bewertungsanfragen, Projekt-Connector-Management, Social-Proof-Widgets und Auswertungen.
-- **Form Captain Pro (in Vorbereitung):** mehrstufige Formulare, sichere Uploads, verschachtelte Regeln, Webhooks, Integrationsprotokoll und PDF-Ausgaben.
-- **Workflow Captain Pro (in Vorbereitung):** Captain-Suite-Provider, signierte Webhooks, erweiterte Ablauflogik, Queue-Wiederholungen und nachvollziehbare Run-Protokolle.
-- **Course Captain Pro (in Vorbereitung):** Lernpfade, Drip-Inhalte, erweiterte Prüfungen, Zertifikatsdesigner, Gruppenverwaltung, Kohortenauswertungen und Kursverkauf über WooCommerce.
+- **Review Captain Pro:** Plattformverbindungen, Sync, faire Bewertungsanfragen, Projekt-Connector-Management, Social-Proof-Widgets und Auswertungen.
+- **Form Captain Pro:** mehrstufige Formulare, sichere Uploads, verschachtelte Regeln, Webhooks, Integrationsprotokoll und PDF-Ausgaben.
+- **Workflow Captain Pro:** Captain-Suite-Provider, signierte Webhooks, erweiterte Ablauflogik, Queue-Wiederholungen und nachvollziehbare Run-Protokolle.
+- **Course Captain Pro:** Lernpfade, Drip-Inhalte, erweiterte Prüfungen, Zertifikatsdesigner, Gruppenverwaltung, Kohortenauswertungen und Kursverkauf über WooCommerce.
 
 Jeder Plan umfasst die Pro-Funktionen des jeweiligen Add-ons. Sie wählen nach der Zahl Ihrer Live-Websites.
 
+[Voucher Captain Pro ansehen](/voucher-captain/pro/)  
 [Pass Captain Pro ansehen](/pass-captain/pro/)  
 [Affiliate Captain Pro ansehen](/affiliate-captain/pro/)
-
-In Vorbereitung: [Voucher Captain Pro](/voucher-captain/pro/) · [Review Captain Pro](/review-captain/pro/) · [Form Captain Pro](/form-captain/pro/) · [Workflow Captain Pro](/workflow-captain/pro/) · [Course Captain Pro](/course-captain/pro/)
+[Review Captain Pro ansehen](/review-captain/pro/)
+[Form Captain Pro ansehen](/form-captain/pro/)
+[Workflow Captain Pro ansehen](/workflow-captain/pro/)
+[Course Captain Pro ansehen](/course-captain/pro/)
 
 ## Welcher Plan passt?
 

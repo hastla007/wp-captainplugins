@@ -16,19 +16,19 @@ Hier finden Sie die in den Produkt-Repositories dokumentierten Mindestversionen,
 | Produkt | WordPress mindestens | PHP mindestens | Datenbank mindestens | WooCommerce | Weitere Voraussetzungen |
 |---|---:|---:|---|---|---|
 | Voucher Captain | 6.4 | 8.5 | MySQL 9.7 / MariaDB 12.3 | 8.9 erforderlich | PHP-Erweiterungen GD, mbstring und zip |
-| Voucher Captain Pro (in Vorbereitung) | 6.5 kombiniert | 8.5 | MySQL 9.7 / MariaDB 12.3 | 8.9 erforderlich | Pro-Add-on setzt WP 6.5 voraus; Voucher Captain muss installiert sein |
+| Voucher Captain Pro | 6.5 kombiniert | 8.5 | MySQL 9.7 / MariaDB 12.3 | 8.9 erforderlich | Pro-Add-on setzt WP 6.5 voraus; Voucher Captain muss installiert sein |
 | Pass Captain | 6.4 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.2 | Ohne WooCommerce nutzbar |
 | Pass Captain Pro | 6.5 kombiniert | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.2 | Pro-Add-on setzt WP 6.5 voraus; Pass Captain muss installiert sein |
 | Affiliate Captain | 6.3 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | PHP-Erweiterungen sodium und dom; zip für Programmausgabe |
 | Affiliate Captain Pro | 6.5 kombiniert | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Pro-Add-on setzt WP 6.5 voraus; Affiliate Captain muss installiert sein |
 | Form Captain | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | WooCommerce ist für den Kern nicht erforderlich; keine Multisite-Unterstützung in v1.0 |
-| Form Captain Pro (in Vorbereitung) | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Separates Add-on; setzt Form Captain voraus. WooCommerce- und Suite-Adapter benötigen kompatible Versionen |
+| Form Captain Pro | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Separates Add-on; setzt Form Captain voraus. WooCommerce- und Suite-Adapter benötigen kompatible Versionen |
 | Review Captain | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Externe Plattformverbindungen benötigen berechtigte Anbieterzugänge |
-| Review Captain Pro (in Vorbereitung) | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Native Synchronisierung je Plattform nur mit API-/Tarifberechtigung |
+| Review Captain Pro | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Native Synchronisierung je Plattform nur mit API-/Tarifberechtigung |
 | Workflow Captain | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | WooCommerce nur für Shop-Provider; Captain-Provider verlangen jeweils den kompatiblen Vertrag |
-| Workflow Captain Pro (in Vorbereitung) | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Separates Add-on; gültige Pro-Lizenz und kompatible Provider erforderlich |
+| Workflow Captain Pro | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Separates Add-on; gültige Pro-Lizenz und kompatible Provider erforderlich |
 | Course Captain | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Nicht erforderlich | Eigenständiges LMS; Multisite in v1.0 nicht zugesagt |
-| Course Captain Pro (in Vorbereitung) | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional; für Kursverkauf erforderlich | Separates Add-on; setzt Course Captain voraus |
+| Course Captain Pro | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional; für Kursverkauf erforderlich | Separates Add-on; setzt Course Captain voraus |
 | License Captain | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | 8.9 erforderlich | WooCommerce muss aktiv sein; MySQL/MariaDB mit beschreibbarem Primärserver und funktionierendem Cron |
 
 License Captain besteht aus Server und Client. Die Angaben oben gelten für den Server, der WooCommerce voraussetzt. Der Client wird in die zu lizenzierenden Plugins eingebunden.

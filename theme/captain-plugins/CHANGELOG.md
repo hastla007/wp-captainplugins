@@ -8,14 +8,9 @@ Geprüft mit allen sieben Kern-Plugins (Voucher, Pass, Affiliate, Form, Review, 
 - Absende-Knöpfe der Plugin-Formulare (z. B. „Guthaben prüfen“ in Voucher Captain, „Prüfen“ in Course Captain) erschienen als Browser-Standard; sie übernehmen jetzt das Theme-Design.
 - Inhalte ohne volle Breite (z. B. ein Plugin-Shortcode direkt in einer Seite) lagen mobil bündig am Bildschirmrand; Inhalte ohne volle Breite halten jetzt immer einen Seitenrand ein, Abschnitte mit voller Breite reichen weiterhin bis zum Rand.
 
-### Pro-Add-ons in Vorbereitung
-- Voucher, Form, Review, Workflow und Course Captain Pro erscheinen mit „in Vorbereitung“ und ohne Kauf-Knopf:
-  - Pro-Seiten mit Hinweis unter der H1 und geplanten Plänen;
-  - Zusatz auf Preisen, Captain Pro, FAQ, Kompatibilität, im Preis-Pattern und auf allen Seiten, die die Add-ons erwähnen.
-- Erhältlich bleiben Pass Captain Pro und Affiliate Captain Pro.
+### Pro-Add-ons
 - Generator: Absätze, die mit **In Vorbereitung:** beginnen, werden als Hinweis gestaltet (`.cp-status-note`).
-- `tools/price-check.py` meldet Kauf-Links und fehlende Hinweise bei Add-ons in Vorbereitung.
-- Ablauf zur Freigabe in `docs/REDAKTION.md`.
+- `tools/price-check.py` meldet Kauf-Links und fehlende Hinweise bei Add-ons, die in `preise.md` als „(in Vorbereitung)“ markiert sind. Derzeit ist keines markiert: Alle sieben Add-ons sind zum Release vorgesehen (Ablauf in `docs/REDAKTION.md`).
 
 ### Texte
 - Course Captain verlangt WordPress 7.0 (bisher 6.8 angegeben); Review Captain mit konkreter Mindestversion WordPress 6.5.

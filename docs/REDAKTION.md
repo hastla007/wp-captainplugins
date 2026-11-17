@@ -72,7 +72,7 @@ Ein Pro-Add-on wird erst verkauft, wenn sein Code fertig ist und License Captain
 - **Übrige Seiten:** Die erste Erwähnung im Fließtext und Links auf die Pro-Seite tragen „(in Vorbereitung)“; Link-Texte lauten „ansehen“, nie „auswählen“.
 - **Prüfung:** `python3 tools/price-check.py` meldet eine fehlende Hinweis-Zeile und Kauf-Links bei Add-ons, die in `preise.md` als in Vorbereitung markiert sind.
 
-Stand 17.11.2026: Erhältlich sind Pass Captain Pro und Affiliate Captain Pro. In Vorbereitung sind Voucher, Form, Review, Workflow und Course Captain Pro (siehe [PLUGIN-ABGLEICH.md](PLUGIN-ABGLEICH.md)).
+Stand 17.11.2026: Kein Add-on ist markiert. Der Inhaber geht davon aus, dass alle Kern-Plugins und alle sieben Pro-Add-ons zum Release fertig sind. Die Regel greift nur, falls sich ein Add-on verzögert.
 
 **Wenn ein Add-on erscheint:**
 
