@@ -42,7 +42,7 @@ Nutzen Sie mehrere Profile, führen Sie Bewertungen in einer Inbox zusammen und 
 
 ## Preis- und Lizenzmodell
 
-Verfügbar sind **Solo** für 1, **Studio** für 5 und **Agency** für 25 Live-Websites. Jeder Plan enthält denselben Pro-Funktionsumfang; Agency bietet priorisierten Support. Den aktuellen Jahrespreis sehen Sie direkt beim jeweiligen Plan im Shop.
+Verfügbar sind **Single** für 1, **Business** für 5 und **Agency** für 25 Live-Websites. Jeder Plan enthält denselben Pro-Funktionsumfang; Agency bietet priorisierten Support. Den aktuellen Jahrespreis sehen Sie direkt beim jeweiligen Plan im Shop.
 
 Review Captain Free bleibt kostenlos nutzbar. Bei Ablauf einer Pro-Lizenz werden nur die Pro-Funktionen abgeschaltet; nichts wird gelöscht, Kernfunktionen, Datenzugriff und Export bleiben erhalten. Nach einer Verlängerung stehen die Pro-Funktionen wieder bereit.
 

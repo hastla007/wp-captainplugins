@@ -33,7 +33,7 @@ Form Captain Free unterstützt unbegrenzt viele Formulare und Einsendungen. Der 
 
 Form Captain Pro ergänzt den Kern mit mehrstufigen Formularen und sicherem Fortsetzen, geschützten Datei-Uploads, UND-/ODER-Bedingungsgruppen, gesteuerten Bestätigungen und Benachrichtigungszielen, signierten Webhooks, PDF-Ausgaben aus Einträgen sowie WooCommerce-Käuferfragebögen je Produkt. Eine fehlgeschlagene externe Aktion lässt den gespeicherten Formulareintrag unberührt.
 
-Die Pro-Jahrespläne: **Solo 49 €** für 1 Live-Website, **Studio 99 €** für 5 Live-Websites und **Agency 199 €** für 25 Live-Websites, jeweils zzgl. USt. Alle Pläne enthalten denselben Pro-Funktionsumfang; Agency erhält priorisierten Support.
+Die Pro-Jahrespläne: **Single 59 €** für 1 Live-Website, **Business 129 €** für 5 Live-Websites und **Agency 249 €** für 25 Live-Websites, jeweils zzgl. USt. Alle Pläne enthalten denselben Pro-Funktionsumfang; Agency erhält priorisierten Support.
 
 [Features im Detail](/form-captain/features/) · [Form Captain Pro](/form-captain/pro/) · [FAQ](/form-captain/faq/)
 

@@ -37,15 +37,10 @@ function captain_plugins_setup_plan_rows(): array {
 		'form-captain-pro'      => array(
 			'name' => 'Form Captain Pro',
 			'support' => 'standard',
-			'limits' => array(
-				'solo' => 1,
-				'studio' => 5,
-				'agency' => 25,
-			),
 			'prices' => array(
-				'solo' => 49,
-				'studio' => 99,
-				'agency' => 199,
+				'single' => 59,
+				'business' => 129,
+				'agency' => 249,
 			),
 		),
 		'workflow-captain-pro'  => array(

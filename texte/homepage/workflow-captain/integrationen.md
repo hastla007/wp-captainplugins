@@ -29,7 +29,7 @@ Für jede Verbindung müssen das Fachplugin mit kompatiblem Providervertrag und 
 
 Pro unterstützt signierte Ein- und Ausgangswebhooks und n8n-Verbindungen sowie einen versionierten Vertrag für separate Connector-Plugins. Webhooks verwenden konfigurierte HTTPS-Ziele, HMAC-Signatur mit Zeitfenster, Rate-Limits und Replay-Schutz. Connectoren deklarieren Ereignisse und Datenfelder in einem Manifest; jeder Connector ist ab Werk aus und wird vom Betreiber freigegeben, personenbezogene Felder nur ausdrücklich. Direkte Tabellenzugriffe und freie Codeausführung sind ausgeschlossen.
 
-Projektbezogene BoatingSchool- oder LearnBoating-Verbindungen sind keine pauschal enthaltenen Standardintegrationen. Sie erfordern ein separates Connector-Plugin, passende Schnittstellen und abgestimmte Datenfreigaben.
+Projektbezogene Verbindungen zu eigenen Fachsystemen, etwa einer Lern- oder Buchungsplattform, sind keine pauschal enthaltenen Standardintegrationen. Sie erfordern ein separates Connector-Plugin, passende Schnittstellen und abgestimmte Datenfreigaben.
 
 [Kompatibilität](/workflow-captain/kompatibilitaet/) · [Workflow Captain Pro](/workflow-captain/pro/) · [Alle Captain-Integrationen](/integrationen/)
 

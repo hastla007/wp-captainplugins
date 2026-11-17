@@ -33,7 +33,7 @@ Pro enthält mehrstufige Formulare mit Fortsetzen-Link, geschützte Datei-Upload
 
 ## Was kostet Form Captain Pro?
 
-Solo kostet 49 € pro Jahr für 1 Live-Website, Studio 99 € für 5 Live-Websites und Agency 199 € für 25 Live-Websites, jeweils zzgl. Umsatzsteuer. Alle Pläne enthalten dieselben Pro-Funktionen; Agency enthält priorisierten Support.
+Single kostet 59 € pro Jahr für 1 Live-Website, Business 129 € für 5 Live-Websites und Agency 249 € für 25 Live-Websites, jeweils zzgl. Umsatzsteuer. Alle Pläne enthalten dieselben Pro-Funktionen; Agency enthält priorisierten Support.
 
 ## Benötige ich WooCommerce?
 

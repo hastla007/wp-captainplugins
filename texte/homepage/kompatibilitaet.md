@@ -80,8 +80,8 @@ Drittanbieter-Zahlungsdienste benötigen ein eigenes Konto und passende Zugangsd
 | Voucher Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support. Agency: Priority-Support. |
 | Pass Captain | Dokumentation und GitHub Issues; Sicherheitsmeldungen über private GitHub Security Advisories | Single und Business: Standard-Support. Agency: Priority-Support. |
 | Affiliate Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support. Agency: Priority-Support. |
-| Form Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Solo/Studio: Standard; Agency: priorisiert. Umfang und Kanal stehen beim Kauf. |
-| Review Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Solo/Studio: Standard; Agency: priorisiert. Umfang und Kanal stehen beim Kauf. |
+| Form Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Single/Business: Standard; Agency: Priority. Umfang und Kanal stehen beim Kauf. |
+| Review Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Single/Business: Standard; Agency: Priority. Umfang und Kanal stehen beim Kauf. |
 | Workflow Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Single/Business: Standard; Agency: Priority. Umfang und Kanal stehen beim Kauf. |
 | Course Captain | Dokumentation und veröffentlichte öffentliche Supportkanäle | Single/Business: Standard; Agency: Priority. Umfang und Kanal stehen beim Kauf. |
 | License Captain | Eigenes Produkt (Server und Client); Preise und Supportumfang gemäß License-Captain-Plan | Supportstufe richtet sich nach dem gewählten License-Captain-Plan. |

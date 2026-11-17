@@ -29,11 +29,6 @@ Starten Sie mit den [Installationsanleitungen](/dokumentation/installation/), de
 | Captain Pro Single | 1 | Standard |
 | Captain Pro Business | 5 | Standard |
 | Captain Pro Agency | 25 | Priority |
-| Form/Review Solo | 1 | Standard |
-| Form/Review Studio | 5 | Standard |
-| Form/Review Agency | 25 | Priorisiert |
-| Workflow Captain Single/Business | 1 / 5 | Standard |
-| Workflow Captain Agency | 25 | Priority |
 | Course Captain Single/Business | 1 / 5 | Standard |
 | Course Captain Agency | 25 | Priority |
 

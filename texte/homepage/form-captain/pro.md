@@ -45,9 +45,9 @@ Mit Workflow Captain Pro verarbeiten Sie Ereignisse von Form Captain nach dem Sp
 
 | Tarif | Jahrespreis zzgl. USt. | Live-Websites | Support |
 |---|---:|---:|---|
-| Solo | 49 € | 1 | Standard |
-| Studio | 99 € | 5 | Standard |
-| Agency | 199 € | 25 | Priorisiert |
+| Single | 59 € | 1 | Standard |
+| Business | 129 € | 5 | Standard |
+| Agency | 249 € | 25 | Priorisiert |
 
 Alle Pläne enthalten denselben Pro-Funktionsumfang, Updates und Support während der aktiven Laufzeit. Je Live-Website ist eine Staging-Aktivierung enthalten; Development-Aktivierungen zählen nicht zum Site-Limit. Es gibt keine Lifetime-Lizenz und keine kostenpflichtigen Einzel-Add-ons.
 

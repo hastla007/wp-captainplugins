@@ -53,7 +53,7 @@ Review Captain bietet CSV-Export, WordPress-Datenschutz-Export und -Löschung so
 
 ## Welche Pro-Pläne gibt es?
 
-Solo umfasst 1, Studio 5 und Agency 25 Live-Websites. Jeder Plan enthält dieselben Pro-Funktionen; Agency bietet priorisierten Support. Die aktuellen Preise werden im Shop angezeigt.
+Single umfasst 1, Business 5 und Agency 25 Live-Websites. Jeder Plan enthält dieselben Pro-Funktionen; Agency bietet priorisierten Support. Die aktuellen Preise werden im Shop angezeigt.
 
 ## Kann ich eigene Video- oder Audio-Testimonials veröffentlichen?
 

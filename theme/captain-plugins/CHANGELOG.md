@@ -12,6 +12,11 @@ Geprüft mit allen sieben Kern-Plugins (Voucher, Pass, Affiliate, Form, Review, 
 - Generator: Absätze, die mit **In Vorbereitung:** beginnen, werden als Hinweis gestaltet (`.cp-status-note`).
 - `tools/price-check.py` meldet Kauf-Links und fehlende Hinweise bei Add-ons, die in `preise.md` als „(in Vorbereitung)“ markiert sind. Derzeit ist keines markiert: Alle sieben Add-ons sind zum Release vorgesehen (Ablauf in `docs/REDAKTION.md`).
 
+### Preise und Pläne
+- Form Captain Pro kostet 59 / 129 / 249 € pro Jahr (vorher 49 / 99 / 199 €), im Shop-Katalog, in den Texten und im Preis-Pattern.
+- Einheitliche Plannamen Single / Business / Agency für alle Add-ons (Form und Review hießen Solo / Studio / Agency). Bestehende Form-Produkte mit den SKUs `…-solo` / `…-studio` legt der Setup-Assistent nicht um. In Installationen, die den Assistenten schon ausgeführt haben, diese Produkte löschen und den Assistenten erneut ausführen.
+- `tools/acceptance-list.py` meldet Nennungen der internen Plugins BoatingSchool und LearnBoating.
+
 ### Texte
 - Alle Produkttexte gegen Code, Konzept und To-do des neuesten Entwicklungsstands abgeglichen (Release-Umfang; Bericht in `docs/PLUGIN-ABGLEICH.md`).
 - Mindestversionen suiteweit: WordPress 7.0, PHP 8.5, WooCommerce 11.2.2 (MINVER-1).

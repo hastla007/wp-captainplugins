@@ -120,7 +120,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "3a4c22af706e6f1b9c79049b98345fe5106dd764f507fba716ef167ebffc2ddf",
+		"source_hash" => "f6c69afee3507f68b7a7312a03db377c42a3080ef332708a7932f3342bb242ea",
 		"source_file" => "texte/homepage/faq.md",
 	],
 	[
@@ -137,7 +137,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "6a8907a547f1e63c511539aa165bfd43d638568dac6b9476f666518634cbaf77",
+		"source_hash" => "acd9149ecc06960227f5e36fe284516a70f17797da46b35b869e7f452889b5c3",
 		"source_file" => "texte/homepage/form-captain/index.md",
 	],
 	[
@@ -188,7 +188,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "3bd3dddf6e76f4c2ee28ba66cefa99a2b149d0f2387677b2b2eb45ad5edccc1e",
+		"source_hash" => "f151d19469795f67ad3803bc35af852ed018d1183fd3ae23a5ce773c4cc45ab4",
 		"source_file" => "texte/homepage/kompatibilitaet.md",
 	],
 	[
@@ -253,7 +253,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/captain-pro.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "9cf32a6f6802741133ecabed975f937d36ce86a447b9060e6b78250b459bd5e1",
+		"source_hash" => "ad1373ea74302e58cd93fcb635f8a8b563b0f3843b4af3101b9fc18ac3860330",
 		"source_file" => "texte/homepage/preise.md",
 	],
 	[
@@ -318,7 +318,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "25d11f6d1e43ea41cdc0396e8ab22309f34a7da60e2e6803492a972080741314",
+		"source_hash" => "59922c516b2b34506bc6646ffce5477964002671582957bda79d928698c7aec2",
 		"source_file" => "texte/homepage/support.md",
 	],
 	[
@@ -641,7 +641,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "e96fe65ae30a0f3b95e6190bc3aade419e88918bfa816bc8974b9556cd5f64d4",
+		"source_hash" => "ddfba037847d3e1be8177f36836c8e2d5a7ad81b2be2552380203b892b863b10",
 		"source_file" => "texte/homepage/form-captain/faq.md",
 	],
 	[
@@ -726,7 +726,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "4e4333bab682c95fe832b8aca5298c7cf5da8c32b8c142230b2435d9f773f0f5",
+		"source_hash" => "ac5444f751e57818915f1033d11513405795c66aa05edec36645f1bd663489ee",
 		"source_file" => "texte/homepage/form-captain/pro.md",
 	],
 	[
@@ -991,7 +991,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "ce6dcf6980fa83aebb97aeaf61a8012d96be57fea80bd608bd29d1a3659c1785",
+		"source_hash" => "ad9ae5da07c59cfd5161829bfc9073115ea53c1d7163f77f54f792b64bd61fe7",
 		"source_file" => "texte/homepage/review-captain/faq.md",
 	],
 	[
@@ -1076,7 +1076,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "a08d072977a512d44f0180c458dd672e10e4f23abd0f43fa270a10d42305a7a8",
+		"source_hash" => "72ec983d49ff31eba2ce5be55043c518011584ae83df45682ddcef72c79423c5",
 		"source_file" => "texte/homepage/review-captain/pro.md",
 	],
 	[
@@ -1195,7 +1195,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "8383ad799c530952831a3d91af2036c297daff5107d6fa72e4a3f42dc167aaef",
+		"source_hash" => "3937a58efe2eccc4ce085437fdcfef834257aea65870b596ab095f5b372244ea",
 		"source_file" => "texte/homepage/workflow-captain/integrationen.md",
 	],
 	[

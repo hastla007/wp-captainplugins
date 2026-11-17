@@ -84,15 +84,18 @@ Diese Funktionen beschreibt die Website, weil Konzept oder To-do sie für den Re
   - Verwaltung und Betrieb, Planwechsel, Mitbenutzer ergänzt.
   - Der Client verlangt beim Kunden WordPress 7.0 und PHP 8.5.
 
+## Entschieden am 17.11.2026
+
+- **Form Captain Pro:** 59 / 129 / 249 € pro Jahr zzgl. USt. Website, Shop-Katalog (`inc/catalog.php`) und Preis-Pattern sind umgestellt.
+- **Plannamen:** Alle Add-ons heißen Single / Business / Agency (1 / 5 / 25 Live-Websites), auch Form und Review Captain Pro. Solo/Studio entfällt.
+- **BoatingSchool und LearnBoating:** Das sind interne Plugins des Inhabers (Testkunde). Sie erscheinen nicht auf der Website; `tools/acceptance-list.py` prüft das.
+
 ## Offene Fragen an den Inhaber
 
-1. **Form Captain Pro – Preise:** Die Website und `inc/catalog.php` nennen 49/99/199 €. Konzept §3 (Entscheidung #9 vom 16.11.) und `docs/FORM-PRO.md` nennen 59/129/249 €. Welche gelten?
-2. **Plannamen Review Captain Pro:** Die Website sagt Solo/Studio/Agency, Code und RC-004 sagen single/business/agency. Ist das gewollt?
-3. **Affiliate Captain Pro:** Die Readme nennt zusätzlich Store Credit, Stripe Connect, Leaderboard und Multi-Tier. Der Umfang ist laut To-do nicht entschieden (E5 b). Gehören sie zum Release?
-4. **Pass Captain Pro:** Sollen die geplanten Connectoren für BoatingSchool und LearnBoating als Pro-Funktion auf die Website?
-5. **Course Captain:** Gehören R2-Funktionen (Lernnotizen, Kursvorlagen) und Basisberichte zum Release? Die deutsche Plugin-Übersetzung duzt, die Website siezt.
-6. **Voucher Captain:** Die Kern-Branches widersprechen sich. Gutscheinanfragen für Form Captain gibt es nur auf einem Parallelbranch; die Website nennt sie nicht.
-7. **License Captain:** Lizenzmodell des Servers (PROD-07), Name/Marke (PROD-05), Checkout-Typ für die automatische Verlängerung, deutsches Herstellerhandbuch (PROD-10).
+1. **Affiliate Captain Pro:** Die Readme nennt zusätzlich Store Credit, Stripe Connect, Leaderboard und Multi-Tier. Der Umfang ist laut To-do nicht entschieden (E5 b). Gehören sie zum Release?
+2. **Course Captain:** Gehören R2-Funktionen (Lernnotizen, Kursvorlagen) und Basisberichte zum Release? Die deutsche Plugin-Übersetzung duzt, die Website siezt.
+3. **Voucher Captain:** Die Kern-Branches widersprechen sich. Gutscheinanfragen für Form Captain gibt es nur auf einem Parallelbranch; die Website nennt sie nicht.
+4. **License Captain:** Lizenzmodell des Servers (PROD-07), Name/Marke (PROD-05), Checkout-Typ für die automatische Verlängerung, deutsches Herstellerhandbuch (PROD-10).
 
 ## Frontend-Prüfung im Theme
 

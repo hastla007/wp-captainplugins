@@ -82,6 +82,10 @@ Stand 17.11.2026: Kein Add-on ist markiert. Der Inhaber geht davon aus, dass all
 4. Preise in `inc/catalog.php` bestätigen.
 5. `tools/build-theme-content.py` und `tools/price-check.py` ausführen.
 
+## Interne Plugins
+
+BoatingSchool und LearnBoating sind interne Plugins des Inhabers, die als Testkunde dienen. Sie und ihre Connectoren erscheinen nirgends auf der Website, auch nicht als Beispiel oder Integration (Entscheidung vom 17.11.2026). `tools/acceptance-list.py` meldet jede Nennung.
+
 ## License-Captain-Sprachregel
 
 License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Auf Seiten für Captain-Pro-Kunden (Pro, Preise, FAQ, Installation) wird License Captain **nicht** als Lizenzierungsweg von Captain Pro erwähnt – auch nicht als „inklusive“, „enthalten“ oder „nicht enthalten“. Pro-Kunden aktivieren ihren Lizenzschlüssel im Pro-Add-on. Erlaubt bleibt License Captain als eigenständiges Produkt, etwa in Produktlisten oder als Integration (z. B. Workflow-Captain-Provider). `python3 tools/acceptance-list.py` prüft die Regel automatisch.

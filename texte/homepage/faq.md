@@ -19,7 +19,7 @@ Jeder Pro-Plan umfasst die Funktionen des jeweiligen Add-ons. Die Planstufen unt
 ## Wie viele Websites sind pro Plan erlaubt?
 Single umfasst 1, Business 5 und Agency 25 Live-Websites.
 
-Form Captain und Review Captain verwenden die Planstufen Solo/Studio/Agency (1/5/25). Workflow Captain und Course Captain verwenden Single/Business/Agency mit 1/5/25 Websites. Die Preise für Form Captain Pro stehen in der [Preisübersicht](/preise/); den aktuellen Review-Captain-Preis sehen Sie im Shop beim jeweiligen Plan.
+Alle Pro-Add-ons verwenden die Pläne Single, Business und Agency mit 1, 5 und 25 Live-Websites. Die Preise stehen in der [Preisübersicht](/preise/); bei Review und Course Captain Pro sehen Sie den aktuellen Jahrespreis im Shop beim jeweiligen Plan.
 
 ## Wo finde ich Voraussetzungen und Einrichtung?
 In der [Dokumentation](/dokumentation/) und auf der jeweiligen Produktseite. Die produktspezifischen FAQs beantworten Details zu Gutscheinen, Events, Provisionen, Formularen, Bewertungen, Automationen und Lizenzen.

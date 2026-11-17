@@ -4,10 +4,11 @@
 Run from the repository root: python3 tools/acceptance-list.py
 Writes docs/ABNAHME.md: one row per page with what reviewers must look at (prices, product
 promises, screenshots, open link targets, operator data) and empty sign-off columns for the
-roles in docs/REDAKTION.md. Also checks two editorial rules automatically:
+roles in docs/REDAKTION.md. Also checks three editorial rules automatically:
   - on pages for Captain Pro customers (Pro, prices, FAQ, installation) License Captain never appears as the
     way Captain Pro is licensed or activated (mentions as a separate product are fine)
   - every page has SEO title, meta description and focus keyphrase
+  - the owner's internal plugins (BoatingSchool, LearnBoating) are never named on the website
 Exit code 1 if a rule is broken.
 """
 from __future__ import annotations
@@ -37,6 +38,8 @@ AREAS = [
 ]
 # Pages for Captain Pro customers: License Captain must not appear (docs/REDAKTION.md, Sprachregel).
 LICENSING_CONTEXT = re.compile(r"Lizenzschlüssel|aktivier|inklusive|enthalten|kostenlos dabei|Client|lizenziert|Lizenzierung|im Paket", re.I)
+# Internal plugins the owner uses as a test customer: never on the website (decision 17.11.2026).
+INTERNAL_NAMES = re.compile(r"boating\s*school|learn\s*boating|boatingschool-wp|learnboating", re.I)
 PRO_CUSTOMER_PAGE = re.compile(r"^/(captain-pro|preise|faq|dokumentation/installation)/$|^/(?!license-captain)[a-z]+-captain/(pro|faq|installation)/$")
 
 
@@ -81,6 +84,8 @@ def main() -> int:
         seo_missing = [k for k in ("seo_title", "meta_description", "focus_keyphrase") if not meta.get(k)]
         if seo_missing:
             problems.append(f"{url}: SEO-Feld fehlt ({', '.join(seo_missing)})")
+        for match in INTERNAL_NAMES.finditer(body + " " + " ".join(meta.values())):
+            problems.append(f"{url}: internes Plugin genannt („{match.group(0)}“) – darf nicht auf die Website")
         if PRO_CUSTOMER_PAGE.match(url):
             # Mentions as a separate product (product lists, integrations) are fine; License Captain as the
             # way Captain Pro is licensed or activated is not.
