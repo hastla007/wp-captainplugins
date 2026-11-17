@@ -33,7 +33,7 @@ Weitere Antworten: [Voucher Captain FAQ](/voucher-captain/faq/) · [Pass Captain
 
 ## Was kann Workflow Captain automatisieren?
 
-Der kostenlose Kern verbindet WordPress und optional WooCommerce mit Bedingungen und Aktionen. Workflow Captain Pro ergänzt versionierte Captain-Provider, signierte Webhooks, erweiterte Verzweigungen und Ausführungsprotokolle. Suite-Aktionen setzen das jeweilige Plugin und einen kompatiblen Vertrag voraus.
+Der kostenlose Kern verbindet WordPress und optional WooCommerce mit Bedingungen und Aktionen. Wenn/Sonst-Verzweigungen, Wartezeiten, Zeitpläne und Wiederholungen gehören zum Kern. Workflow Captain Pro ergänzt versionierte Captain-Provider, Freigabeschritte, Event-Korrelation, signierte Webhooks und längere Protokolle. Suite-Aktionen setzen das jeweilige Plugin und einen kompatiblen Vertrag voraus.
 
 [Integrationen](/workflow-captain/integrationen/) · [Pro-Funktionen und Preise](/workflow-captain/pro/)
 

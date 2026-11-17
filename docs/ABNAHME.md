@@ -7,7 +7,7 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 - **Status:** *blockiert* = fehlendes Linkziel oder Betreiberangabe (Details in [RELEASE-BLOCKER.md](RELEASE-BLOCKER.md)), *Vorbehalt* = Text enthält einen Prüfvermerk, *bereit* = inhaltlich abnahmefähig.
 - **Prüfen:** *Preise* = Eurobeträge (mit `python3 tools/price-check.py` gegen den Shop abgeglichen), *Zusagen* = absolute Formulierungen wie „garantiert“, „sofort“, „DSGVO-konform“, die belegt sein müssen, *Medien* = Screenshot-/Demo-Platzhalter.
 - Automatisch geprüft: SEO-Felder vollständig, License Captain auf Seiten für Pro-Kunden nicht als Lizenzierungsweg. Ergebnis: keine Verstöße.
-**93 Seiten:** 66 bereit, 4 mit Vorbehalt, 23 blockiert.
+**93 Seiten:** 67 bereit, 1 mit Vorbehalt, 25 blockiert.
 
 
 ## Startseite und Übersichten
@@ -36,12 +36,12 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/course-captain/kompatibilitaet/` | Course Captain: Kompatibilität und Voraussetzungen | bereit | – | – | ☐ | ☐ | ☐ |
 | `/course-captain/pro/` | Course Captain Pro: Schulungen professionell organisieren und verkaufen | blockiert | 1 offen | 2 Medien | ☐ | ☐ | ☐ |
 | `/form-captain/faq/` | Häufige Fragen zu Form Captain | bereit | – | Preise | ☐ | ☐ | ☐ |
-| `/form-captain/features/` | Form Captain Features: Erstellen, veröffentlichen, bearbeiten | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
+| `/form-captain/features/` | Form Captain Features: Erstellen, veröffentlichen, bearbeiten | bereit | – | Zusagen, 1 Medien | ☐ | ☐ | ☐ |
 | `/form-captain/` | Form Captain: Formulare und Anfragen im eigenen WordPress verwalten | blockiert | 1 offen | Preise, 1 Medien | ☐ | ☐ | ☐ |
 | `/form-captain/installation/` | Form Captain installieren und das erste Formular veröffentlichen | bereit | – | – | ☐ | ☐ | ☐ |
 | `/form-captain/integrationen/` | Form Captain Integrationen | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
 | `/form-captain/kompatibilitaet/` | Form Captain: Kompatibilität und Voraussetzungen | bereit | – | – | ☐ | ☐ | ☐ |
-| `/form-captain/pro/` | Form Captain Pro: Komplexe Formulare zuverlässig abwickeln | bereit | – | Preise, 1 Medien | ☐ | ☐ | ☐ |
+| `/form-captain/pro/` | Form Captain Pro: Komplexe Formulare zuverlässig abwickeln | blockiert | 1 offen | Preise, Zusagen, 1 Medien | ☐ | ☐ | ☐ |
 | `/license-captain/faq/` | Fragen zu License Captain | bereit | – | – | ☐ | ☐ | ☐ |
 | `/license-captain/features/` | Lizenzverwaltung vom Shop bis zur Plugin-Aktualisierung | bereit | – | 2 Medien | ☐ | ☐ | ☐ |
 | `/license-captain/` | Lizenzen und Updates für Ihre WordPress-Plugins verwalten | bereit | – | 2 Medien | ☐ | ☐ | ☐ |
@@ -56,16 +56,16 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/review-captain/installation/` | Review Captain installieren und einrichten | bereit | – | – | ☐ | ☐ | ☐ |
 | `/review-captain/integrationen/` | Review Captain Integrationen | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
 | `/review-captain/kompatibilitaet/` | Review Captain: Kompatibilität und Plattformzugänge | bereit | – | – | ☐ | ☐ | ☐ |
-| `/review-captain/pro/` | Review Captain Pro: Bewertungen in Ihre Abläufe integrieren | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
+| `/review-captain/pro/` | Review Captain Pro: Bewertungen in Ihre Abläufe integrieren | blockiert | 1 offen | 1 Medien | ☐ | ☐ | ☐ |
 | `/voucher-captain/faq/` | Fragen zu Voucher Captain | bereit | – | Zusagen | ☐ | ☐ | ☐ |
 | `/voucher-captain/features/` | Gutscheinverwaltung für den WooCommerce-Alltag | bereit | – | Zusagen, 2 Medien | ☐ | ☐ | ☐ |
 | `/voucher-captain/` | Gutscheine verkaufen, die zu Ihrer Marke passen | blockiert | 1 offen | Zusagen, 3 Medien | ☐ | ☐ | ☐ |
-| `/voucher-captain/pro/` | Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert | blockiert | 1 offen | Preise, 2 Medien | ☐ | ☐ | ☐ |
-| `/workflow-captain/faq/` | Häufige Fragen zu Workflow Captain | Vorbehalt | – | Preise | ☐ | ☐ | ☐ |
+| `/voucher-captain/pro/` | Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert | blockiert | 2 offen | Preise, 2 Medien | ☐ | ☐ | ☐ |
+| `/workflow-captain/faq/` | Häufige Fragen zu Workflow Captain | bereit | – | Preise | ☐ | ☐ | ☐ |
 | `/workflow-captain/features/` | Workflow Captain Features: Abläufe visuell verbinden | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/` | Wiederkehrende Abläufe. Ein klarer Workflow. | blockiert | 2 offen | 1 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/installation/` | Workflow Captain installieren und den ersten Ablauf testen | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
-| `/workflow-captain/integrationen/` | Workflow Captain Integrationen | Vorbehalt | – | 1 Medien | ☐ | ☐ | ☐ |
+| `/workflow-captain/integrationen/` | Workflow Captain Integrationen | bereit | – | Zusagen, 1 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/kompatibilitaet/` | Voraussetzungen und Kompatibilität | bereit | – | – | ☐ | ☐ | ☐ |
 | `/workflow-captain/pro/` | Workflow Captain Pro: Ihre Suite, sinnvoll verbunden | blockiert | 1 offen | Preise, 1 Medien | ☐ | ☐ | ☐ |
 
@@ -87,7 +87,7 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/dokumentation/installation/affiliate-captain/` | Affiliate Captain installieren und das Partnerprogramm einrichten | bereit | – | 5 Medien | ☐ | ☐ | ☐ |
 | `/dokumentation/installation/captain-pro/` | Captain Pro installieren und freischalten | bereit | – | 5 Medien | ☐ | ☐ | ☐ |
 | `/dokumentation/installation/` | Captain Plugins installieren | bereit | – | 2 Medien | ☐ | ☐ | ☐ |
-| `/dokumentation/installation/license-captain/` | License Captain als WooCommerce-Lizenzserver einrichten | Vorbehalt | – | 5 Medien | ☐ | ☐ | ☐ |
+| `/dokumentation/installation/license-captain/` | License Captain als WooCommerce-Lizenzserver einrichten | bereit | – | 5 Medien | ☐ | ☐ | ☐ |
 | `/dokumentation/installation/pass-captain/` | Pass Captain installieren und den ersten Ablauf einrichten | bereit | – | 6 Medien | ☐ | ☐ | ☐ |
 | `/dokumentation/installation/voucher-captain/` | Voucher Captain installieren und den ersten Gutschein einrichten | bereit | – | Zusagen, 5 Medien | ☐ | ☐ | ☐ |
 | `/dokumentation/review-captain/` | Review Captain Dokumentation | bereit | – | – | ☐ | ☐ | ☐ |
@@ -98,7 +98,7 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 
 | Seite | Titel | Status | Linkziele/Betreiber | Prüfen | R | F | G |
 |---|---|---|---|---|:-:|:-:|:-:|
-| `/ratgeber/affiliate-captain/provisionsregeln-partnerprogramm/` | Provisionsregeln für Ihr Partnerprogramm festlegen | bereit | – | 2 Medien | ☐ | ☐ | ☐ |
+| `/ratgeber/affiliate-captain/provisionsregeln-partnerprogramm/` | Provisionsregeln für Ihr Partnerprogramm festlegen | bereit | – | Zusagen, 2 Medien | ☐ | ☐ | ☐ |
 | `/ratgeber/affiliate-captain/refunds-provisionen-korrigieren/` | Rückerstattungen und Affiliate-Provisionen nachvollziehbar korrigieren | bereit | – | 2 Medien | ☐ | ☐ | ☐ |
 | `/ratgeber/affiliate-captain/sepa-auszahlungen-vorbereiten/` | Partnerauszahlungen mit SEPA vorbereiten | blockiert | 1 offen | 2 Medien | ☐ | ☐ | ☐ |
 | `/ratgeber/course-captain/mitarbeiterschulung-onboarding/` | Mitarbeiterschulung und Onboarding mit WordPress organisieren | bereit | – | – | ☐ | ☐ | ☐ |
@@ -120,7 +120,7 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/ratgeber/voucher-captain/gutscheine-gestalten-versenden/` | Gutscheine gestalten und zum passenden Zeitpunkt versenden | blockiert | 1 offen | Zusagen, 2 Medien | ☐ | ☐ | ☐ |
 | `/ratgeber/voucher-captain/wunschwert-restguthaben/` | WooCommerce-Gutscheine mit Wunschwert und Restguthaben anbieten | blockiert | 1 offen | 2 Medien | ☐ | ☐ | ☐ |
 | `/ratgeber/workflow-captain/captain-plugins-verbinden/` | Captain-Plugins mit Workflows verbinden | bereit | – | – | ☐ | ☐ | ☐ |
-| `/ratgeber/workflow-captain/woocommerce-bestellungen-automatisieren/` | WooCommerce-Bestellungen automatisieren | bereit | – | – | ☐ | ☐ | ☐ |
+| `/ratgeber/workflow-captain/woocommerce-bestellungen-automatisieren/` | WooCommerce-Bestellungen automatisieren | bereit | – | Zusagen | ☐ | ☐ | ☐ |
 | `/ratgeber/workflow-captain/wordpress-automatisierung-ohne-cloud/` | WordPress-Automatisierung ohne externe Cloud planen | bereit | – | – | ☐ | ☐ | ☐ |
 
 ## Unternehmen, Support und Recht

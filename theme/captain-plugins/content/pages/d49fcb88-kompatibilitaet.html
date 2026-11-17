@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table><thead><tr><th scope="col">System</th><th scope="col">Verwendung</th><th scope="col">Voraussetzung</th></tr></thead><tbody><tr><td>WordPress</td><td>Formularverwaltung, Editor, Entries und Privacy-Hooks</td><td>Version 6.8 oder neuer</td></tr><tr><td>PHP</td><td>Ausführung des Plugins und Pro-Add-ons</td><td>Version 8.5 oder neuer</td></tr><tr><td>Datenbank</td><td>Speicherung von Formularen und Einsendungen</td><td>MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer; ältere Versionen erzeugen eine Warnung</td></tr><tr><td>Gutenberg / Block-Editor</td><td>Formularblock und Vorschau</td><td>WordPress-Block-Editor; Shortcode als Fallback</td></tr><tr><td>Klassischer Editor</td><td>Formular-Einbettung</td><td>Shortcode</td></tr><tr><td>WooCommerce</td><td>Produktanfragen und optionale Shopkontexte</td><td>Optional ab Version 8.0; HPOS und klassischer Bestellspeicher; Checkout-Blocks-Integration nicht in v1.0</td></tr><tr><td>SMTP-/Mail-Plugins</td><td>Versand von Benachrichtigungen</td><td>Optional; Zustellung hängt vom Mailserver und Anbieter ab</td></tr><tr><td>Captain-Suite-Plugins</td><td>Versionierte Form-Aktionen und Übergaben</td><td>Verfügbarer Adapter und kompatible Vertragsversion</td></tr><tr><td>Multisite</td><td>Netzwerkweite Installation</td><td>In Version 1.0 nicht unterstützt</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><thead><tr><th scope="col">System</th><th scope="col">Verwendung</th><th scope="col">Voraussetzung</th></tr></thead><tbody><tr><td>WordPress</td><td>Formularverwaltung, Editor, Entries und Privacy-Hooks</td><td>Version 7.0 oder neuer</td></tr><tr><td>PHP</td><td>Ausführung des Plugins und Pro-Add-ons</td><td>Version 8.5 oder neuer</td></tr><tr><td>Datenbank</td><td>Speicherung von Formularen und Einsendungen</td><td>MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer; ältere Versionen erzeugen eine Warnung</td></tr><tr><td>Gutenberg / Block-Editor</td><td>Block „Form Captain“ mit Vorschau</td><td>WordPress-Block-Editor; Shortcode als Fallback</td></tr><tr><td>Klassischer Editor</td><td>Formular-Einbettung</td><td>Shortcode <code>[form_captain id=&quot;…&quot;]</code></td></tr><tr><td>WooCommerce</td><td>Käuferfragebögen nach dem Kauf (Pro)</td><td>Optional ab Version 11.2; HPOS und klassischer Bestellspeicher; Bestellungen aus klassischem und Block-Checkout; Zuordnung im klassischen Produkteditor. Der Kern greift nicht in WooCommerce ein</td></tr><tr><td>SMTP-/Mail-Plugins</td><td>Versand von Benachrichtigungen</td><td>Optional; Zustellung hängt vom Mailserver und Anbieter ab</td></tr><tr><td>Captain-Suite-Plugins</td><td>Versionierte Form-Aktionen und Übergaben</td><td>Verfügbarer Adapter und kompatible Vertragsversion</td></tr><tr><td>Multisite</td><td>Netzwerkweite Installation</td><td>In Version 1.0 nicht unterstützt</td></tr></tbody></table></figure>
 <!-- /wp:table --></div>
 <!-- /wp:group -->
 
@@ -20,7 +20,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Formulare verwenden responsives Frontend-Markup und Theme-erbliche Farben. Gutenberg-Block und Shortcode bieten Einbettungswege. Pagebuilder-Integrationen werden nur ausgewiesen, wenn die jeweilige Version praktisch geprüft ist.</p>
+<p>Formulare verwenden responsives Frontend-Markup und übernehmen wahlweise Schrift und Farben des Themes oder einen schlichten Basisstil mit Akzentfarbe. Gutenberg-Block und Shortcode bieten Einbettungswege; Pagebuilder binden Formulare über den Shortcode ein. CSS und JavaScript werden nur auf Seiten mit Formular geladen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Formulare enthalten keinen WordPress-Nonce und sind damit für Seiten-Caches geeignet; die REST-Routen unter <code>/wp-json/form-captain/v1/</code> sollten vom Cache ausgenommen bleiben. Ohne JavaScript werden Formulare über <code>admin-post.php</code> abgesendet.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -30,7 +34,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Der Kern lädt keine verpflichtenden externen Form-Skripte. Captcha und Drittanbieterintegrationen werden ausdrücklich aktiviert und in der Datenschutzhinweis- und Datenflussdokumentation beschrieben. Entries bleiben standardmäßig auf der WordPress-Website.</p>
+<p>Der Kern lädt keine externen Skripte oder Schriften. Captcha-Erweiterungen und Drittanbieterintegrationen werden ausdrücklich aktiviert und in der Datenschutzhinweis- und Datenflussdokumentation beschrieben. Entries bleiben standardmäßig auf der WordPress-Website.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

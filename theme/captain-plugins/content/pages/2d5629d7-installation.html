@@ -1,6 +1,6 @@
 <!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
-<p>Richten Sie Review Captain in WordPress ein, wählen Sie Ihre Bewertungsquellen und veröffentlichen Sie eine passende Review-Ausgabe. Der Kern verwaltet lokale und manuell kuratierte Bewertungen. Review Captain Pro (in Vorbereitung) ergänzt Plattformverbindungen, automatisierte Synchronisierung und Bewertungsanfragen.</p>
+<p>Richten Sie Review Captain in WordPress ein, wählen Sie Ihre Bewertungsquellen und veröffentlichen Sie eine passende Review-Ausgabe. Der Kern verwaltet lokale und manuell kuratierte Bewertungen. Review Captain Pro ergänzt Plattformverbindungen, automatisierte Synchronisierung und Bewertungsanfragen.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Review Captain wird als WordPress-Plugin installiert. Für externe Plattformverbindungen benötigen Sie je nach Quelle ein berechtigtes Unternehmens- oder Entwicklerkonto sowie die erforderlichen API-Freigaben. WooCommerce ist nur erforderlich, wenn Sie WooCommerce-Ereignisse für Bewertungsanfragen nutzen.</p>
+<p>Review Captain wird als WordPress-Plugin installiert. Für externe Plattformverbindungen benötigen Sie je nach Quelle ein berechtigtes Unternehmens- oder Entwicklerkonto sowie die erforderlichen API-Freigaben. WooCommerce ist nur erforderlich, wenn Sie WooCommerce-Ereignisse für Bewertungsanfragen nutzen. Review Captain Pro setzt das aktive kostenlose Plugin Review Captain voraus.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -27,13 +27,17 @@
 <ol class="wp-block-list"><!-- wp:list-item -->
 <li>Installieren und aktivieren Sie Review Captain über den WordPress-Plugin-Installer oder das freigegebene ZIP-Paket.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Legen Sie lokale Reviews und Erfahrungsberichte an oder fügen Sie die Links zu Ihren externen Profilen hinzu.</li>
+<li>Öffnen Sie „Review Captain › Dashboard“ und folgen Sie der Erststart-Checkliste.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Legen Sie lokale Reviews und Erfahrungsberichte an oder hinterlegen Sie unter „Review Captain › Quellen &amp; Profile“ die Links zu Ihren externen Profilen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Prüfen Sie Quellenlabel, Originalbewertung, Datum und Direktlink.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Verbinden Sie in Review Captain Pro die unterstützten Profile und Apps über den jeweiligen offiziellen Anbieterweg.</li>
+<li>Installieren Sie für Pro-Funktionen das Add-on Review Captain Pro, aktivieren Sie die Lizenz und verbinden Sie die unterstützten Profile und Apps über den jeweiligen offiziellen Anbieterweg.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Wählen Sie im Review-Block eine Quelle, ein Layout und die gewünschten Reviews aus.</li>
+<li>Fügen Sie den Block „Bewertungen (Review Captain)“, den Shortcode <code>[review_captain v=&quot;1&quot;]</code> oder das Elementor-Widget ein und wählen Sie Quelle und Layout.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Richten Sie für zuverlässige Hintergrundjobs einen System-Cron ein, der <code>wp review-captain jobs run</code> alle fünf Minuten ausführt.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Prüfen Sie die Darstellung auf Mobilgeräten sowie die Hinweise zu Datenschutz und eingebundenen Drittanbietern.</li>
 <!-- /wp:list-item --></ol>
@@ -46,7 +50,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>OAuth-Tokens und API-Zugangsdaten werden getrennt von Review-Inhalten verwaltet. Der Einrichtungsdialog erklärt erforderliche Kontorechte, zeigt den Verbindungsstatus und ermöglicht erneutes Verbinden oder Widerrufen. Wenn eine native Verbindung für Ihr Konto nicht verfügbar ist, nutzen Sie das offizielle Widget, den Profil-Link oder die manuelle Auswahl.</p>
+<p>OAuth-Tokens und API-Zugangsdaten werden verschlüsselt und getrennt von Review-Inhalten verwaltet. Für Google Business Profile legen Sie ein eigenes Google-Cloud-Projekt an; eine Schritt-für-Schritt-Anleitung führt durch die Freischaltung. Der Einrichtungsdialog erklärt erforderliche Kontorechte, zeigt den Verbindungsstatus und ermöglicht erneutes Verbinden oder Widerrufen. Wenn eine native Verbindung für Ihr Konto nicht verfügbar ist, nutzen Sie das offizielle Widget, den Profil-Link oder die manuelle Auswahl.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -56,7 +60,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Aktivieren Sie automatische Anfragen erst, nachdem Sie das bestätigte Erlebnisereignis, Empfänger, Versandberechtigung, Verzögerung, Sprache, Opt-out und Ruhezeiten geprüft haben. Pro Erlebnis und Empfänger wird höchstens eine Anfrage geplant. Versenden Sie eine Testnachricht und vergewissern Sie sich, dass keine Zielgruppe nach Zufriedenheit unterschiedlich zu öffentlichen Plattformen weitergeleitet wird.</p>
+<p>Aktivieren Sie automatische Anfragen erst, nachdem Sie das bestätigte Erlebnisereignis, Empfänger, Versandberechtigung (bei WooCommerce die ausdrücklich gewählte Versandgrundlage), Verzögerung, Sprache, Opt-out und Ruhezeiten geprüft haben. Pro Erlebnis und Empfänger wird höchstens eine Anfrage geplant. Versenden Sie eine Testnachricht und vergewissern Sie sich, dass keine Zielgruppe nach Zufriedenheit unterschiedlich zu öffentlichen Plattformen weitergeleitet wird.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

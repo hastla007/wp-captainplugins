@@ -32,7 +32,7 @@ Workflow Captain Free verbindet WordPress und optional WooCommerce. Pro ergänzt
 
 ## Online-Kurse und Schulungen
 
-Course Captain Free enthält Kurs-Builder, Fragenbank, Smarttrainer, Übungs- und Prüfungsmodus, Gruppen-Grundfunktionen und Lernnachweise. Pro ergänzt Lernpfade, Drip-Inhalte, Zertifikatsdesigner, Gruppenverwaltung, Auswertungen und Kursverkauf über WooCommerce.
+Course Captain Free enthält Kurs-Builder, Fragenbank, Smarttrainer, Übungs- und Prüfungsmodus, Gruppen-Grundfunktionen und Lernnachweise. Pro ergänzt Lernpfade, erweiterte Drip-Regeln, Lösungserklärungen, Zertifikatsdesigner, Gruppenverwaltung, Auswertungen und Kursverkauf über WooCommerce.
 
 [Course Captain entdecken](/course-captain/) · [Course Captain Pro](/course-captain/pro/)
 

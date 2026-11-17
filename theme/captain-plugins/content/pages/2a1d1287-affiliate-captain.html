@@ -11,7 +11,7 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>WordPress 6.3 oder neuer</li>
+<li>WordPress 7.0 oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>PHP 8.5 oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
@@ -21,7 +21,7 @@
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>zip wird für den Programmexport benötigt</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>WooCommerce 8.0 oder neuer nur für die optionale WooCommerce-Integration</li>
+<li>WooCommerce 11.2.2 oder neuer nur für die optionale WooCommerce-Integration</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -46,7 +46,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Die Einrichtungs-Checkliste führt durch die ersten Schritte. Sie können Bewerbung, Partnerbereich und Begrüßungsseite automatisch anlegen lassen. Alternativ verwenden Sie die bereitgestellten Blöcke oder Shortcodes für die Bewerbungsseite, das Partnerportal und die Begrüßungsseite.</p>
+<p>Die Einrichtungs-Checkliste im <strong>Dashboard</strong> von Affiliate Captain führt durch die ersten Schritte. Mit <strong>Seiten automatisch anlegen</strong> erstellen Sie Bewerbung, Partnerbereich und Landingpage mit den passenden Blöcken. Alternativ verwenden Sie die Blöcke „Partner-Bewerbungsformular“, „Partnerbereich“ und „Partner-Begrüßung“ oder die Shortcodes <code>[wpac_affiliate_registration]</code>, <code>[wpac_affiliate_portal]</code> und <code>[wpac_partner_welcome]</code>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -60,7 +60,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Legen Sie Teilnahmebedingungen, Standardprovision, Haltefrist und Mindestbetrag fest. Organisieren Sie Partner bei Bedarf in Gruppen und definieren Sie abweichende Regeln für Partner, Produkte, Kategorien oder SKUs. Testen Sie Referral-Link und Partnercode mit einer Testbestellung.</p>
+<p>Legen Sie unter <strong>Affiliate Captain → Einstellungen</strong> Teilnahmebedingungen (Seite und Version), Standardprovision, Haltefrist und Mindestbetrag fest. Organisieren Sie Partner bei Bedarf unter <strong>Regeln &amp; Gruppen</strong> in Gruppen und definieren Sie abweichende Regeln für Partner, Produkte, Kategorien, Tags oder SKUs. Testen Sie Referral-Link und Partnercode mit einer Testbestellung.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -74,11 +74,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Hinterlegen Sie unter den Auszahlungseinstellungen die Unternehmensangaben und das Firmenkonto für SEPA. Für Gutschriften pflegen Sie Anschrift und die für Ihren Prozess erforderlichen Steuerangaben. Stimmen Sie das Gutschriftverfahren und die Partnerbedingungen fachlich ab.</p>
+<p>Hinterlegen Sie unter <strong>Einstellungen → Auszahlungen &amp; Gutschriften</strong> die Unternehmensangaben und das Firmenkonto für SEPA. Für Gutschriften pflegen Sie Anschrift und die für Ihren Prozess erforderlichen Steuerangaben. Stimmen Sie das Gutschriftverfahren und die Partnerbedingungen fachlich ab.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Für eine produktive Installation sollte ein eigener Verschlüsselungsschlüssel in der Serverkonfiguration liegen. Halten Sie ihn geheim, speichern Sie ihn nicht im Repository und sichern Sie ihn in Ihrer zugriffsgeschützten Schlüsselverwaltung.</p>
+<p>Für eine produktive Installation sollte ein eigener Schlüssel für die Verschlüsselung der Bankdaten in der <code>wp-config.php</code> liegen (<code>WPAC_ENCRYPTION_KEY</code>, 64 Hex-Zeichen); ohne ihn wird der Schlüssel aus den WordPress-Salts abgeleitet, und ein Salt-Wechsel macht gespeicherte Bankdaten unlesbar. Halten Sie ihn geheim, speichern Sie ihn nicht im Repository und sichern Sie ihn in Ihrer zugriffsgeschützten Schlüsselverwaltung. Legen Sie die Belege mit <code>WPAC_STATEMENT_DIR</code> außerhalb des Webroots ab; auf nginx ist das erforderlich.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -92,7 +92,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Seiten mit Bewerbungsformular und Partnerbegrüßung sowie Seiten, auf denen Partnerparameter erfasst werden, müssen vom Seiten- oder CDN-Cache korrekt behandelt werden. Prüfen Sie die Cache-Regeln, wenn Formulare oder Partnerlinks über ein Widget oder Theme-Template ausgegeben werden. Hinter Cloudflare oder einem Reverse Proxy tragen Sie dessen IP-Bereiche gemäß der Dokumentation ein.</p>
+<p>Seiten mit Bewerbungsformular und Partnerbegrüßung sowie Seiten, auf denen Partnerparameter erfasst werden, müssen vom Seiten- oder CDN-Cache korrekt behandelt werden. Prüfen Sie die Cache-Regeln, wenn Formulare oder Partnerlinks über ein Widget oder Theme-Template ausgegeben werden. Hinter Cloudflare oder einem Reverse Proxy tragen Sie dessen IP-Bereiche unter <strong>Einstellungen → Missbrauchsschutz</strong> ein.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -126,6 +126,6 @@
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
-<p><strong>Captain-Pro-Hinweis:</strong> Das Affiliate-Captain-Pro-Add-on benötigt WordPress 6.5+; PHP 8.5+ sowie die erforderlichen PHP-Erweiterungen richten sich nach dem Kern-Plugin. WooCommerce bleibt optional. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
+<p><strong>Captain-Pro-Hinweis:</strong> Das Affiliate-Captain-Pro-Add-on benötigt WordPress 7.0+; PHP 8.5+ sowie die erforderlichen PHP-Erweiterungen richten sich nach dem Kern-Plugin. WooCommerce bleibt optional. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -11,7 +11,7 @@ Die Werte unten sind die Mindestanforderungen von Workflow Captain und Workflow 
 
 | Komponente | Mindestversion | Hinweis |
 |---|---:|---|
-| WordPress | 6.8 | Kostenloser Kern und Pro-Add-on |
+| WordPress | 7.0 | Kostenloser Kern und Pro-Add-on |
 | PHP | 8.5 | Kostenloser Kern und Pro-Add-on |
 | Datenbank | MySQL 9.7 (LTS) / MariaDB 12.3 (LTS) | Ältere Versionen erzeugen eine Warnung im Website-Zustand, keine Sperre |
 | WooCommerce | 11.2.2 | Optional; erforderlich für die WooCommerce-Auslöser. HPOS und klassische Bestelltabellen |

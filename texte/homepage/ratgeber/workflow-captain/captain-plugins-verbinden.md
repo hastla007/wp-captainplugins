@@ -11,7 +11,7 @@ Mehrere Plugins in einem Geschäftsprozess einzusetzen, sollte nicht bedeuten, i
 
 ## Das Quellplugin bleibt maßgeblich
 
-Voucher Captain verwaltet Gutscheine, Pass Captain Tickets und Einlass, Affiliate Captain Partner und Provisionen, Form Captain Einsendungen, Review Captain Reviews, Course Captain Kurse und Lernfortschritt und License Captain Softwarelizenzen. Workflow Captain koordiniert die freigegebenen Übergaben, berechnet aber keine Fachlogik nach.
+Voucher Captain verwaltet Gutscheine, Pass Captain Tickets und Einlass, Affiliate Captain Partner und Provisionen, Form Captain Einsendungen, Review Captain Reviews. Workflow Captain koordiniert die freigegebenen Übergaben, berechnet aber keine Fachlogik nach.
 
 ## Verträge versionieren
 
@@ -21,6 +21,6 @@ Jeder Provider sollte seine Ereignisse, Tokens, Pflichtversionen, Berechtigungen
 
 Payloads sollten minimiert und sensible Angaben standardmäßig ausgeschlossen werden. Aktionen mit Außenwirkung benötigen Idempotenz und nachvollziehbare Statusmeldungen. Besonders bei Refunds, Stornos und Opt-outs muss ein Ablauf den aktuellen Geschäftsstatus erneut prüfen.
 
-Workflow Captain Pro (in Vorbereitung) bündelt versionierte Provider für die Captain Suite. Die tatsächliche Verfügbarkeit setzt das jeweilige Kernplugin und seinen kompatiblen Providervertrag voraus.
+Workflow Captain Pro bündelt versionierte Provider für Pass, Voucher, Affiliate, Form und Review Captain. Ein Provider meldet sich nur an, wenn das jeweilige Kernplugin einen kompatiblen Providervertrag bereitstellt und dessen Pro-Add-on lizenziert ist. Erstattungen, Stornierungen, Provisionen, Auszahlungen oder Partnerstatus ändert ein Workflow nicht; einzige Aktionen mit Wirkung in einem Fachplugin sind die freigegebenen Gutschein-Aktionen von Voucher Captain.
 
-[Integrationen im Detail](/workflow-captain/integrationen/) · [Pro-Funktionen (in Vorbereitung)](/workflow-captain/pro/) · [Dokumentation](/dokumentation/workflow-captain/)
+[Integrationen im Detail](/workflow-captain/integrationen/) · [Pro-Funktionen](/workflow-captain/pro/) · [Dokumentation](/dokumentation/workflow-captain/)

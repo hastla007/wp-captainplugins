@@ -5,14 +5,14 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--features","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull cp-content-section cp-content-section--features"><!-- wp:group {"className":"cp-card-grid cp-card-grid--features cp-card-grid--4","layout":{"type":"default"}} -->
-<div class="wp-block-group cp-card-grid cp-card-grid--features cp-card-grid--4"><!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--features"><!-- wp:group {"className":"cp-card-grid cp-card-grid--features","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card-grid cp-card-grid--features"><!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-card cp-feature-card"><!-- wp:heading {"level":2,"className":"cp-feature-card__title"} -->
 <h2 class="wp-block-heading cp-feature-card__title">Automatisieren Sie mit Webhooks</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Signierte Webhooks übermitteln relevante Ereignisse kontrolliert an Ihre Systeme und Automatisierungen.</p>
+<p>Signierte Webhooks (HMAC-SHA256) übermitteln Ereignisse zu Partnern, Provisionen und Auszahlungen an bis zu 20 HTTPS-Endpunkte. Fehlgeschlagene Zustellungen werden automatisch wiederholt und protokolliert. Die Ereignisse enthalten nur Kennungen und Status, keine Namen, E-Mail-Adressen oder Bankdaten. Einrichtung unter <strong>Affiliate Captain → Webhooks</strong>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -22,7 +22,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Die erweiterte REST-API bietet zusätzliche Möglichkeiten für individuelle Integrationen und verwaltete Prozesse.</p>
+<p>Die erweiterte REST-API unter <code>/wp-json/affiliate-captain-pro/v1</code> liest und pflegt Partner und Provisionen und liest Auszahlungen. Zugriff haben nur angemeldete WordPress-Benutzer mit der passenden Affiliate-Captain-Berechtigung, etwa über ein Anwendungspasswort; wiederholte Buchungsanfragen werden über einen Idempotency-Key erkannt.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -32,7 +32,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Mit dem White-Label-Partnerportal präsentieren Sie Programm und Materialien unter Ihrer Marke.</p>
+<p>Mit dem White-Label-Partnerportal präsentieren Sie Programm und Materialien unter Ihrer Marke: eigenes Logo, Farben, Kopf- und Fußtext und Tab-Beschriftungen im Partnerbereich sowie eigener Absendername und eigene Texte in den E-Mails an Partner. Die Gutschrift-PDFs bleiben unverändert.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -42,7 +42,17 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Führen Sie PayPal-Auszahlungen direkt aus dem Partnerprogramm aus und ergänzen Sie Ihre bestehenden Auszahlungsläufe.</p>
+<p>Führen Sie PayPal-Auszahlungen über die PayPal-Schnittstelle direkt aus dem Partnerprogramm aus – per Knopf, beim Erstellen einer Auszahlung oder einmal täglich. Der Status wird bei PayPal abgefragt; ein Sandbox-Modus erleichtert den Test. Die Auszahlungen ergänzen Ihre bestehenden Auszahlungsläufe.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-feature-card"><!-- wp:heading {"level":2,"className":"cp-feature-card__title"} -->
+<h2 class="wp-block-heading cp-feature-card__title">Mehrere Partnerprogramme führen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Führen Sie mehrere Partnerprogramme mit eigenem Provisionssatz, eigener Haltefrist, Cookie-Laufzeit, Mindestauszahlung, Attributionsmodell und Bedingungsseite. Berichte lassen sich nach Programm filtern, und Partner sehen ihren Programmnamen.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -129,6 +139,6 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p><strong>Voraussetzungen:</strong> Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 6.5+ und PHP 8.5+. WooCommerce ist optional. <a href="/kompatibilitaet/">Kompatibilität</a>.</p>
+<p><strong>Voraussetzungen:</strong> Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 7.0+ und PHP 8.5+. Den Lizenzschlüssel aktivieren Sie auf der Lizenzseite im Menü <strong>Affiliate Captain</strong>. WooCommerce ist optional. <a href="/kompatibilitaet/">Kompatibilität</a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -35,7 +35,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/affiliate-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "f9375685fc96dcd2fe0187b831a521448955b792cd96e750f8d013cbe5dd83e8",
+		"source_hash" => "4456777597490109703270bf2723cae49f1a800b5ff11afc3e2c1f5f28779a29",
 		"source_file" => "texte/homepage/affiliate-captain/index.md",
 	],
 	[
@@ -52,7 +52,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/captain-pro.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "ad38fc830f6502ab93114546a20779d89a5c30e9ccb5361725cc3094fc83636a",
+		"source_hash" => "1688180e68a07d5b95607dfb7a12d1db11857665da5fde4256226f1bc76f729c",
 		"source_file" => "texte/homepage/captain-pro.md",
 	],
 	[
@@ -69,7 +69,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "4af1fb5e31ca87104da5d04a6fe3b5e40336f217d76bf4956fa7c7333db20e6f",
+		"source_hash" => "5a2ba20961caa567c4a9acc322aa616ae36d5f05af4cb7cebd04f5ad6830788a",
 		"source_file" => "texte/homepage/course-captain/index.md",
 	],
 	[
@@ -120,7 +120,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "2ad1518a19c987f390ce81042ec953ed102b942a0dcd8e3025489139c6ac5a57",
+		"source_hash" => "3a4c22af706e6f1b9c79049b98345fe5106dd764f507fba716ef167ebffc2ddf",
 		"source_file" => "texte/homepage/faq.md",
 	],
 	[
@@ -131,13 +131,13 @@ return [
 		"group" => "core",
 		"file" => "4019323d-form-captain.html",
 		"seo_title" => "Form Captain – WordPress-Formulare und Einträge verwalten",
-		"meta_description" => "Erstellen Sie WordPress-Formulare, verwalten Sie Einsendungen sicher und ergänzen Sie mit Pro Multi-Step, Uploads, Webhooks und PDFs.",
+		"meta_description" => "Erstellen Sie WordPress-Formulare, verwalten Sie Einsendungen sicher und ergänzen Sie mit Pro Multi-Step, Uploads, Webhooks, PDFs und Woo-Fragebögen.",
 		"focus_keyphrase" => "WordPress Formular Plugin",
 		"social_title" => "",
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "c688d625f7ab778d9cc00285204db4a210494fd2517d46b5ebb2bc1f883c5f4a",
+		"source_hash" => "6a8907a547f1e63c511539aa165bfd43d638568dac6b9476f666518634cbaf77",
 		"source_file" => "texte/homepage/form-captain/index.md",
 	],
 	[
@@ -171,7 +171,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "7b9311b0b66bb7f96b6446a30880dfe11517ed133c42ca7a03f2a3a7fa9aa9d6",
+		"source_hash" => "8f095ac6557224a4a82f25447b92172e0f92ef218a3592b12660b49cc032eecb",
 		"source_file" => "texte/homepage/integrationen.md",
 	],
 	[
@@ -188,7 +188,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "123d50202e57259dd85d9db6785658ca6cf8964f24fcdd3186c36e4d3e924a3e",
+		"source_hash" => "3bd3dddf6e76f4c2ee28ba66cefa99a2b149d0f2387677b2b2eb45ad5edccc1e",
 		"source_file" => "texte/homepage/kompatibilitaet.md",
 	],
 	[
@@ -205,7 +205,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/license-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "1ab68f7723e445b5bfce3e2f0364f5a52a61c98574a47f40e98ad9ba014f826d",
+		"source_hash" => "926a619da1812614636d628feb4b967787a0d4f5832c9f7f5ae7c64ea2044624",
 		"source_file" => "texte/homepage/license-captain/index.md",
 	],
 	[
@@ -236,7 +236,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/pass-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "7c93bf82025be4060feab215fdb2b103f62b6333c3592987deb872d12dc0c4d0",
+		"source_hash" => "34f64c5932f681701457e31b01f87b2be75cdef8997d7481c179ac121ce2af08",
 		"source_file" => "texte/homepage/pass-captain/index.md",
 	],
 	[
@@ -253,7 +253,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/captain-pro.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "8ec6978c8e41e082a6e2d35826623d666f08724ec666345f8d4679aa8a5c2164",
+		"source_hash" => "9cf32a6f6802741133ecabed975f937d36ce86a447b9060e6b78250b459bd5e1",
 		"source_file" => "texte/homepage/preise.md",
 	],
 	[
@@ -270,7 +270,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "6a0f75062a619d12f7fff60ea24ff0852dd0d2cf3265303bc9813f5ef7d7b690",
+		"source_hash" => "3884353c365ada3689700641a0498b9d86958343d4136fc0286e8fde8b26dfc1",
 		"source_file" => "texte/homepage/produkte.md",
 	],
 	[
@@ -301,7 +301,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "9eed8660e05f47e13876abc47637f8e9920fb6481dbae89bf65a9df551da2bc0",
+		"source_hash" => "55b526fdb085a0c781ae119253b77481d91bf0b6e0f64583bf3d88626f0fd36c",
 		"source_file" => "texte/homepage/review-captain/index.md",
 	],
 	[
@@ -352,7 +352,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "c481452a2f00b986173cd1629880f4a25b35ffba017775b70aa9a4be06612e79",
+		"source_hash" => "67cd1a2a5d444bbf0970548e8a5a27f5d3f149090b446aa4fb899292ea19bade",
 		"source_file" => "texte/homepage/vergleich.md",
 	],
 	[
@@ -369,7 +369,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/voucher-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "52686d0f1c5d8f44d2d92b2d0e1312e9c2211104c53612c7ff2b2af60aa0a650",
+		"source_hash" => "ebc75915fe49475636cf48a6fe42071bb01002a8db130f43ac985dcadced2bb7",
 		"source_file" => "texte/homepage/voucher-captain/index.md",
 	],
 	[
@@ -386,7 +386,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "9844ac2a2804007f0523741f4de2ddcc3276b043d6c8e8e92e2a3d08ca3f4ba6",
+		"source_hash" => "bfc8381f1f5090318cb78658b2f8ee9a07d417b5ca22a9e8bcd6a674d3f2919b",
 		"source_file" => "texte/homepage/workflow-captain/index.md",
 	],
 	[
@@ -403,7 +403,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/affiliate-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "6bc92809e0ae9710b3a0482bd235d5f9c2beddd73001879868dded33921f3312",
+		"source_hash" => "90182e68d0e77539837352cbb296e46f0d060abacdfb75c723c851e5202e8142",
 		"source_file" => "texte/homepage/affiliate-captain/faq.md",
 	],
 	[
@@ -420,7 +420,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/affiliate-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "0e8f6196605505a2fe79b41037a38063e0a088ee9488418bac09b2bd4238e969",
+		"source_hash" => "006d957677ee6ef08f24f8f1aba661c348508f63fdb49966dec94053c51bb4f8",
 		"source_file" => "texte/homepage/affiliate-captain/features.md",
 	],
 	[
@@ -437,7 +437,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/affiliate-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "9a0fba8c81e9c06d18009f0a67295bc512050401af184ecdab93ebf083ea59b9",
+		"source_hash" => "2f391f89222f27f19985b08f0c5b6b0b68ed144016a25512b38263051099c27b",
 		"source_file" => "texte/homepage/affiliate-captain/pro.md",
 	],
 	[
@@ -454,7 +454,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "9d470916085ae17d6f1bef9eb23cd8e1a45768354e630c5784b0f5c61072535b",
+		"source_hash" => "0281cb63e0a32480d95862ad92eb67305702c7b4eaffd4e3c60937325918d507",
 		"source_file" => "texte/homepage/course-captain/faq.md",
 	],
 	[
@@ -471,7 +471,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "362717e7faf244b6bf9d2613a3d5f06a951698f39460172444a8b1f313ed9ba8",
+		"source_hash" => "cc783f9cc2a1d182392d068b390c0eee659b923a8d2ca6381de47550d0beef49",
 		"source_file" => "texte/homepage/course-captain/features.md",
 	],
 	[
@@ -488,7 +488,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "a56e9bb094bd7a1d60a58f79f3844a2eb5643df10a82fc8d1565ec900153b81b",
+		"source_hash" => "010f8679c6617be424f2102741ea3a0363d589b26dec549203515630fa6788f2",
 		"source_file" => "texte/homepage/course-captain/installation.md",
 	],
 	[
@@ -505,7 +505,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "4bb33d4a2f817bcf09b7a324c23181be0a5e3e22d2a522b6bcd706a3109e6b57",
+		"source_hash" => "bedc27ad7da2d0c7d22215524317c8322f52c0c6f4ee646969c073de0c7653f0",
 		"source_file" => "texte/homepage/course-captain/integrationen.md",
 	],
 	[
@@ -522,7 +522,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "09ad0b6e69c4349024dba669e51047badc959a13db7be43d4d33648edad2dfdc",
+		"source_hash" => "9763f2d64d0764477e53ba18fca4def3de0ea7022e7b4032a00e0148cfc265a8",
 		"source_file" => "texte/homepage/course-captain/kompatibilitaet.md",
 	],
 	[
@@ -539,7 +539,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "89a802342a47eea21f30a58edc8767592cbdcf416e92ec79104f91415b5cd50a",
+		"source_hash" => "af25518679122264b19f46c785afc3930bf7ad5912c5d39fd3fd3e92bcc16cbd",
 		"source_file" => "texte/homepage/course-captain/pro.md",
 	],
 	[
@@ -556,7 +556,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "86fd21d333ac68a0a237f943a06f2a24d6665720c701046ab75b89e8ee7a677a",
+		"source_hash" => "08580c15e409057825adfc45124587a8bcbb446fee0330f17b494eb84c564935",
 		"source_file" => "texte/homepage/dokumentation/course-captain.md",
 	],
 	[
@@ -607,7 +607,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "2f92cc86934117302d10783f6905bed270fe0826600d832da833ab674b9aa28a",
+		"source_hash" => "e73908f6d1cc72dbe866ff0d48dcd48dcd7ce51b9dd93e69930255a9c0d525e4",
 		"source_file" => "texte/homepage/dokumentation/review-captain.md",
 	],
 	[
@@ -624,7 +624,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "3abdbe3a4026b97e964e9be6810d89110fa63d0c2548989e2800dc60d7d2417a",
+		"source_hash" => "f14191690595cf62da551462da884a0b54d2cc72fe4e39cfb7ab8de971b65aa2",
 		"source_file" => "texte/homepage/dokumentation/workflow-captain.md",
 	],
 	[
@@ -641,7 +641,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "59e504cf0cb1d9504243e7b0465819a3544e7b3f25a9bc6b32eec18bb7377a02",
+		"source_hash" => "e96fe65ae30a0f3b95e6190bc3aade419e88918bfa816bc8974b9556cd5f64d4",
 		"source_file" => "texte/homepage/form-captain/faq.md",
 	],
 	[
@@ -658,7 +658,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "d29e08c90370d23062313a3b605659e3e35a0bd503f7d0268bfe5150c3420250",
+		"source_hash" => "844adaaeae0d078313581c81169f83e9c7b84b18accbdf4c52b135f220385575",
 		"source_file" => "texte/homepage/form-captain/features.md",
 	],
 	[
@@ -675,7 +675,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "7268b2abdf48a7c31880ead79d2f54867fbedf1c8c97976e1a59bd21b8dccb4e",
+		"source_hash" => "c50a4f73c259a050ecbb769104a3476860c4e12e725a37025b721c1d7619d089",
 		"source_file" => "texte/homepage/form-captain/installation.md",
 	],
 	[
@@ -692,7 +692,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "6bff2826276a50c017d31e2ec2a86883af1bc135dc83702ff120b2170c73d12a",
+		"source_hash" => "bfae025d5bdbdfee37ac600ae622b69fb74c8d04f13a8f3b5cecfa69cb40e69d",
 		"source_file" => "texte/homepage/form-captain/integrationen.md",
 	],
 	[
@@ -709,7 +709,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "57727344e9ab6c5f249ad75ac3dae27eba707aefbdf75d010312f7cdc997894e",
+		"source_hash" => "d6d33cdd5f7f31e4b13ca487fc4012c1f107bf114e83efc8522a8682b161ba94",
 		"source_file" => "texte/homepage/form-captain/kompatibilitaet.md",
 	],
 	[
@@ -720,13 +720,13 @@ return [
 		"group" => "products",
 		"file" => "ea83712e-pro.html",
 		"seo_title" => "Form Captain Pro – mehrstufige Formulare und Workflows",
-		"meta_description" => "Erweitern Sie WordPress-Formulare um mehrstufige Abläufe, sichere Uploads, komplexe Bedingungen, Webhooks und PDF-Ausgaben.",
+		"meta_description" => "Erweitern Sie WordPress-Formulare um mehrstufige Abläufe, sichere Uploads, UND-/ODER-Regeln, Webhooks, PDF-Ausgaben und WooCommerce-Fragebögen.",
 		"focus_keyphrase" => "Form Captain Pro",
 		"social_title" => "",
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "dd27bffc4efa5d92c82bf2cf14591f83c2a94657e95371fe945ecc00b1a56412",
+		"source_hash" => "4e4333bab682c95fe832b8aca5298c7cf5da8c32b8c142230b2435d9f773f0f5",
 		"source_file" => "texte/homepage/form-captain/pro.md",
 	],
 	[
@@ -743,7 +743,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/license-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "95eaf6c750415a8968169a254831fcb95d2c316081edad2d598db382045e14fb",
+		"source_hash" => "e9650252e8df93a194c99b75a137628a48fcee9fd54de16df633c280be5cc3e8",
 		"source_file" => "texte/homepage/license-captain/faq.md",
 	],
 	[
@@ -760,7 +760,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/license-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "393cce8a63731e3de5becfe10fa095dfe73f84625a874647af6c04a0af0a51a4",
+		"source_hash" => "49d26d518ed2647d6c99dea3009bab79048d339c8db95a33247d0305d1095425",
 		"source_file" => "texte/homepage/license-captain/features.md",
 	],
 	[
@@ -777,7 +777,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/license-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "5962a7314c5c83e6229addce36647c29be99c5cd091479bfd1a6254c3f7d65b4",
+		"source_hash" => "17ccf18754681702c2cd918db062ba83bd4ba64e26f2139fe59c618ac01f0dd5",
 		"source_file" => "texte/homepage/license-captain/preise.md",
 	],
 	[
@@ -794,7 +794,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "a1efd51847efd2b130c942026a7540bf2dc73916f29049ae8fc61be8dcc85caa",
+		"source_hash" => "3d123581468e52aa43fd50d93eef55bc3d3efcb285b448ca8ef99b847992c8a2",
 		"source_file" => "texte/homepage/loesungen/akademien.md",
 	],
 	[
@@ -811,7 +811,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "5d2ae57d4ff268b088d310f376973b2b6d403a0936cf6f8d025ae928c33baf09",
+		"source_hash" => "89c62ff0aab91324eb775390f147e9ffa161cfea563d187db977e6b2bf625ec2",
 		"source_file" => "texte/homepage/loesungen/bootsschulen.md",
 	],
 	[
@@ -828,7 +828,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/pass-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "fa985b352cc04511c3639b7475ba04a6a2546a8627feec05bf1239dee18ccf35",
+		"source_hash" => "888a0d501ab741e4055fab463db7f5a0d8d4101bd630fe9dd740e9154095e590",
 		"source_file" => "texte/homepage/pass-captain/faq.md",
 	],
 	[
@@ -845,7 +845,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/pass-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "c6ccb3769c1957766d8b9d0069f08b2b8b41a92805423167dd5c76bda426460a",
+		"source_hash" => "1dca7c48d39bc36906aaa2072911fe97c44f9629016d1d7fbe0d7607a756cad3",
 		"source_file" => "texte/homepage/pass-captain/features.md",
 	],
 	[
@@ -862,7 +862,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/pass-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "d04c3cf95c857da44b5272d0a3c6ea7bb029269382ee455348029d43294383ef",
+		"source_hash" => "3b5c58158f1829126ac238edb29052a1de83defe069b28cdd1d476ffa9345004",
 		"source_file" => "texte/homepage/pass-captain/pro.md",
 	],
 	[
@@ -991,7 +991,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "3fc461b2402c1e65547b9a5fe34dc15c834d78ad4cc18aed27b9c1ec162a0657",
+		"source_hash" => "ce6dcf6980fa83aebb97aeaf61a8012d96be57fea80bd608bd29d1a3659c1785",
 		"source_file" => "texte/homepage/review-captain/faq.md",
 	],
 	[
@@ -1008,7 +1008,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "b66641804889458fb04c3889d009d2ca80dc8cadd51e1f99c43e1e6cb6f8422c",
+		"source_hash" => "ddd30b7786e69b8f761f868331b6479d2479ad597659e62a06786ca7813c1861",
 		"source_file" => "texte/homepage/review-captain/features.md",
 	],
 	[
@@ -1025,7 +1025,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "94045ff8b6c7022f7f80e3d01af5f8604d8eacfabc7bfafc45d2fffe1c17be44",
+		"source_hash" => "176a56fea2500933735823436b8f8f830297a3159048991132f286a5ac4e7768",
 		"source_file" => "texte/homepage/review-captain/installation.md",
 	],
 	[
@@ -1042,7 +1042,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "cb2a5ff431d624b548b62c085aa63c4d57a632f0f6657f80ca8ddab6b66601b8",
+		"source_hash" => "a4642f43f5350419b5ebe7ac65722f9a252e517a1809d2a79ebbc17bfd539127",
 		"source_file" => "texte/homepage/review-captain/integrationen.md",
 	],
 	[
@@ -1059,7 +1059,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "966bc4150a1669aee6c21e6ec3d730e5415351b91fbc14d5437e7d63488ba27d",
+		"source_hash" => "53c90e8943b8449d4088fb36daef0f4fa4eb2289d139bbb86dca8924eabaa9d3",
 		"source_file" => "texte/homepage/review-captain/kompatibilitaet.md",
 	],
 	[
@@ -1076,7 +1076,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "43b76811d03a5867170be58a8c09e3fbea5c695baf261683ea5d5b2c8487821c",
+		"source_hash" => "a08d072977a512d44f0180c458dd672e10e4f23abd0f43fa270a10d42305a7a8",
 		"source_file" => "texte/homepage/review-captain/pro.md",
 	],
 	[
@@ -1093,7 +1093,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/voucher-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "2b89049da2e8061f28f4915059bba250986f1c18e1af8bedf77d94e66298b4a4",
+		"source_hash" => "8e62651910180611f924ac334eb4c48ec4561dfa73ced3162392aa1bbe72b69a",
 		"source_file" => "texte/homepage/voucher-captain/faq.md",
 	],
 	[
@@ -1104,13 +1104,13 @@ return [
 		"group" => "products",
 		"file" => "2c2f0549-features.html",
 		"seo_title" => "Voucher Captain Funktionen – Gutscheine, PDF und Guthaben",
-		"meta_description" => "Entdecken Sie die Funktionen von Voucher Captain: Wunschwert, PDF-Designer, geplante Zustellung, Restguthaben, Einlösung und Codeimport.",
+		"meta_description" => "Entdecken Sie die Funktionen von Voucher Captain: Wunschwert, PDF-Designer, geplante Zustellung, Restguthaben, Scanner, Aktionen, Kundenguthaben und Codeimport.",
 		"focus_keyphrase" => "WooCommerce Gutschein Funktionen",
 		"social_title" => "",
 		"social_description" => "",
 		"social_image" => "theme:assets/social/voucher-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "05b188bdbe6b5b73c7e17e3d245230e73c66d6d0c3d945eba3483b24e7111414",
+		"source_hash" => "dd99f326fd5638e4c40ad5fca880413c51e66e90b7ab901a6573b25cb7cfa84b",
 		"source_file" => "texte/homepage/voucher-captain/features.md",
 	],
 	[
@@ -1120,14 +1120,14 @@ return [
 		"title" => "Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert",
 		"group" => "products",
 		"file" => "7ae9f186-pro.html",
-		"seo_title" => "Voucher Captain Pro – Massenbestellungen, Wallet und SMS",
-		"meta_description" => "Erweitern Sie Voucher Captain mit Firmenbestellungen per CSV, Apple- und Google-Wallet-Pässen sowie SMS-Zustellung.",
+		"seo_title" => "Voucher Captain Pro – Firmenbestellungen, Wallet, SMS und White Label",
+		"meta_description" => "Erweitern Sie Voucher Captain mit Firmenbestellungen per CSV, Apple- und Google-Wallet-Pässen, SMS-Zustellung und White Label.",
 		"focus_keyphrase" => "WooCommerce Gutschein Pro",
 		"social_title" => "",
 		"social_description" => "",
 		"social_image" => "theme:assets/social/voucher-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "06413beeba1ca30d0594736116b201ebd1109e24ddf7e29e765b90f54a9cf1f2",
+		"source_hash" => "dc455ba2fd69552887d52f2c9b5f27609363f42b58cfb2dc437090b885a44742",
 		"source_file" => "texte/homepage/voucher-captain/pro.md",
 	],
 	[
@@ -1144,7 +1144,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "355f55d1400d1e80b932e15ecdd8d35122cb38a5b71052e18d954f322bcd9859",
+		"source_hash" => "d235de2b418c34d19cd2af8b2efe4b8e043f1e891a37c8707bbbfc7aa7647dd7",
 		"source_file" => "texte/homepage/workflow-captain/faq.md",
 	],
 	[
@@ -1161,7 +1161,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "cbabd18386094a65c2dcc32c379910cecdc6c72dfe70f804b35489d15aad4826",
+		"source_hash" => "743193b70076d1fef802e6cca079c2fb7eafab7e796f18efa8f2ac817f343527",
 		"source_file" => "texte/homepage/workflow-captain/features.md",
 	],
 	[
@@ -1178,7 +1178,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "8289868db912c3abc9f540a74cee63abf51663c3db0078d41bda185722e2ae71",
+		"source_hash" => "e20382ef3d5c99c32889451a2e4f73fed448658dbd3eb3cd990a93bb313d5ed2",
 		"source_file" => "texte/homepage/workflow-captain/installation.md",
 	],
 	[
@@ -1195,7 +1195,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "543af5c2316379169b3205860ff641626f098857d495145d066f2a6646f1df5f",
+		"source_hash" => "8383ad799c530952831a3d91af2036c297daff5107d6fa72e4a3f42dc167aaef",
 		"source_file" => "texte/homepage/workflow-captain/integrationen.md",
 	],
 	[
@@ -1206,13 +1206,13 @@ return [
 		"group" => "products",
 		"file" => "f82ce810-kompatibilitaet.html",
 		"seo_title" => "Workflow Captain Kompatibilität: WordPress, PHP, Woo",
-		"meta_description" => "Prüfen Sie die vorgesehenen WordPress-, PHP- und WooCommerce-Anforderungen sowie die Voraussetzungen der Workflow-Captain-Pro-Provider.",
+		"meta_description" => "Prüfen Sie die WordPress-, PHP- und WooCommerce-Anforderungen sowie die Voraussetzungen der Workflow-Captain-Pro-Provider.",
 		"focus_keyphrase" => "Workflow Captain Kompatibilität",
 		"social_title" => "",
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "d6560fdc0b129b639be3f20a3418955ef7324de245ffe75eeff85dda340b7388",
+		"source_hash" => "9cfbb3fb0fa6debcfc721c9d4bd80ca5b60bcf50e2e555226d1bc4b81a18e5ac",
 		"source_file" => "texte/homepage/workflow-captain/kompatibilitaet.md",
 	],
 	[
@@ -1223,13 +1223,13 @@ return [
 		"group" => "products",
 		"file" => "afbcc4c9-pro.html",
 		"seo_title" => "Workflow Captain Pro – Suite-Integrationen und Webhooks",
-		"meta_description" => "Verbinden Sie Captain-Plugins mit signierten Webhooks, erweiterten Workflows, kontrolliertem Replay und Protokollen. Alle Funktionen in jedem Plan.",
+		"meta_description" => "Verbinden Sie Captain-Plugins, Webhooks, n8n und eigene Connectoren mit erweiterten Workflows und längeren Protokollen. Alle Funktionen in jedem Plan.",
 		"focus_keyphrase" => "Workflow Captain Pro",
 		"social_title" => "",
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "ccac27ec1657a0ec2e65d71a8385af292bca5de6ffb6012039b56be1b7902cff",
+		"source_hash" => "3a12bc3d31a86e724098a0870af5618732062e7b423f0ff528af1d9b4f5b0c76",
 		"source_file" => "texte/homepage/workflow-captain/pro.md",
 	],
 	[
@@ -1246,7 +1246,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "05d9f6b390eac13ecc18eb68ae5daed6e7ef9557e78e248360438cfa51de7b4a",
+		"source_hash" => "b0e44d16ca81184509d491ecc52109e7565f619390461d70f7ae759a0528a996",
 		"source_file" => "texte/homepage/dokumentation/installation/affiliate-captain.md",
 	],
 	[
@@ -1263,7 +1263,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "c4a9397567ffb06c49c362f9db12394bb9c0c750576d1fe84fa5b82b2f56d609",
+		"source_hash" => "bcde9e7c66309df72550971e52091b0aa14e6f365303410b47ba3697f9bca6ce",
 		"source_file" => "texte/homepage/dokumentation/installation/captain-pro.md",
 	],
 	[
@@ -1280,7 +1280,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "1ecc8d8fa1ebdefc4e361e8474964a168bbdde793d19cca697a802904ffd72b3",
+		"source_hash" => "cfb12b1586f8d09b2452435de2d376298a3217ae55b722d378bdae5a89d85a28",
 		"source_file" => "texte/homepage/dokumentation/installation/license-captain.md",
 	],
 	[
@@ -1297,7 +1297,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "db11f4c7948c712e2abb26cb9bb673c70810d39e3a3cd17c55804fc112265cc0",
+		"source_hash" => "5190b8abb356cca3cef5a116e8336295639d8e69a98ecaa6c3ba6462f8ac8075",
 		"source_file" => "texte/homepage/dokumentation/installation/pass-captain.md",
 	],
 	[
@@ -1314,7 +1314,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "f39eb37326cd82733b088e3b60bfc8ba00d44a585a1646cbdf2aa7f868881468",
+		"source_hash" => "42d2a48232525413349396ea1ff77f124c66ccb17e1cb3e82d3ce8244d48be5f",
 		"source_file" => "texte/homepage/dokumentation/installation/voucher-captain.md",
 	],
 	[
@@ -1331,7 +1331,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/affiliate-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "781afc0c554b46346e659af56420fa4593773a868d11e79772b5ed717d6afb9c",
+		"source_hash" => "cac6fc0291c36fb813e8946b6bcecca5b6518364458d6d62bd292d345bc30c01",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/provisionsregeln-partnerprogramm.md",
 	],
 	[
@@ -1348,7 +1348,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/affiliate-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "5d6f0ca6325e957c6bcda39ce470008a992baca94f68a16850acff7d4fe7ca9f",
+		"source_hash" => "f0f98c7ab552ccae69ab74dab7320dc73b7767b53ba55277c74149f87671ad69",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/refunds-provisionen-korrigieren.md",
 	],
 	[
@@ -1365,7 +1365,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/affiliate-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "a899c9dc4e6737a27533f4d1d40987d2d13eb94cab89fbc8660f626103ccbe5b",
+		"source_hash" => "29995c8b1a29988cea06158851f6c92cb3c3033072346e77a10544a37381492b",
 		"source_file" => "texte/homepage/ratgeber/affiliate-captain/sepa-auszahlungen-vorbereiten.md",
 	],
 	[
@@ -1382,7 +1382,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "10fa6e71ac1d86af6aa7a7c3f443905eefa1e51526289b4be1bc865b0fcd2d82",
+		"source_hash" => "e3c5219b29a53cbf0151c4672a8ce7f8cc4255dff48dc0f66aa28d6536038ef6",
 		"source_file" => "texte/homepage/ratgeber/course-captain/mitarbeiterschulung-onboarding.md",
 	],
 	[
@@ -1399,7 +1399,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "8ebbc914990d65d59835c8a7abc3470d548213e804347b09525472e50dee3225",
+		"source_hash" => "ed5fb545746a9687adb2c64df1439bf4d026bfed8db3dee892f4af413a9cf5b8",
 		"source_file" => "texte/homepage/ratgeber/course-captain/online-kurs-wordpress-erstellen.md",
 	],
 	[
@@ -1433,7 +1433,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "fcb150115253e108bdf42a38e5d758c6737cbc4d9e6d778edaa5d2d4554d3d1e",
+		"source_hash" => "8e5a7af3d966accda4f0ce4ca9dc5039fe4b0f90b840c1e41c73880c102d9cdf",
 		"source_file" => "texte/homepage/ratgeber/form-captain/form-plugin-wechseln-und-migration.md",
 	],
 	[
@@ -1450,7 +1450,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/form-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "710c91c18da5922a17aefea9e1592d9117e370adb6aa0bd8074580a53235b884",
+		"source_hash" => "c4a5cee1d5ca08ae519df22ef44025e34e3969c0429db27b42e3067aa76f2339",
 		"source_file" => "texte/homepage/ratgeber/form-captain/formulareinsendungen-datenschutz.md",
 	],
 	[
@@ -1484,7 +1484,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/license-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "4a2ad8224ba25d610b4a1ee8866719793a770eeb8ef8cbe427032bd97adfd3f2",
+		"source_hash" => "df0c1a792844b8de5f56b2ce5acdbcf67d4451eca9798e1dfdf08af8eec59dc3",
 		"source_file" => "texte/homepage/ratgeber/license-captain/kundenbereich-changelog.md",
 	],
 	[
@@ -1501,7 +1501,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/license-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "b1b9ea222afd85d44ec3221401f2a05ad4ea633b3f8048ff483b7b8e149eea22",
+		"source_hash" => "9734bfe77552e24991f4bcec0caed7ed30abe3a2899b9d2031a85c8e785f698e",
 		"source_file" => "texte/homepage/ratgeber/license-captain/plugin-updates-lizenzstatus.md",
 	],
 	[
@@ -1518,7 +1518,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/license-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "8766b640117efee9215912e3a30180aa40ceb9c6e8b16d4a236dccc1eaf8f8e5",
+		"source_hash" => "ecac61050e66a9c7b2a2b8429990d4924b0f19a35795fd02519df16320e9051f",
 		"source_file" => "texte/homepage/ratgeber/license-captain/woocommerce-lizenzen-aktivierungen.md",
 	],
 	[
@@ -1535,7 +1535,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/pass-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "ea719f5ff51ee0a67a4baeafc2367ca68cc1c4abd7a3ace50180d18976d908a5",
+		"source_hash" => "60dc73f5829580a8ae0666108a884aa7212e079d9658cf7801d26b779ce3ccc2",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/seminartickets-wordpress.md",
 	],
 	[
@@ -1552,7 +1552,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/pass-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "a60780c02d6272fbdcb1065b975171218b5fc1082aaed9bec4c1ba9146691d3d",
+		"source_hash" => "59d9295b24f31ae2f45dca0db95ad9eb050e56a1f543409ca174c6bb10d493c2",
 		"source_file" => "texte/homepage/ratgeber/pass-captain/servicebuchungen-kurse-verleih.md",
 	],
 	[
@@ -1586,7 +1586,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "3bbcef58fb01f332e4831fcac27d0fad8bf9b44f56c7ec282af7347b9c05f483",
+		"source_hash" => "a4adefbd0fdcbd8250e2e0198c357f3c732e896c6a3cf10c290fd7c85ba375a9",
 		"source_file" => "texte/homepage/ratgeber/review-captain/app-store-bewertungen-auf-website.md",
 	],
 	[
@@ -1603,7 +1603,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "a3f00d3565039c7eb8529fe01086f7c1eaffd12ecba880e6327a566e328f317d",
+		"source_hash" => "cfff9735ec8bd6b02ecb7d295fdab57d4fb5593816bb0c159fff956cf88bec88",
 		"source_file" => "texte/homepage/ratgeber/review-captain/bewertungsanfragen-fair-automatisieren.md",
 	],
 	[
@@ -1620,7 +1620,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/review-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "12b56589327ca5194116c7b3caa5774d23f62fd76010c25484f95e2eff70072e",
+		"source_hash" => "e912aeeb99c8d3d35321cfd694ca23b29ab3126f5c83d138c587d77e8152970c",
 		"source_file" => "texte/homepage/ratgeber/review-captain/google-bewertungen-in-wordpress-anzeigen.md",
 	],
 	[
@@ -1637,7 +1637,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/voucher-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "9149ea3e61f88d5812bce3a9c3f2a3c178cd78e0b01b6affdaee1c401a794128",
+		"source_hash" => "f3500600c3c13b2aa2f89e7e534298d2c4bc61c221cb2c401ccbf459f9b8f1b7",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/firmenbestellungen-csv.md",
 	],
 	[
@@ -1654,7 +1654,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/voucher-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "dc655ed339b110ecaa86f7139f1fe156429e1fd4b18aff6b361c212e96590969",
+		"source_hash" => "cdf714ce172d52fd20b28c8098369d5b5fc5a670d7b9ca0d7c1fb9fb56ac0a80",
 		"source_file" => "texte/homepage/ratgeber/voucher-captain/gutscheine-gestalten-und-versenden.md",
 	],
 	[
@@ -1688,7 +1688,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "cd11d99380f8c4174cca2885145fc806ce6e4d51d436df7cf4dec5671eee4729",
+		"source_hash" => "53ffb78930f3f45cd202653e2d449e0e9399745bc3d94d94d29e3a67f7f4edc9",
 		"source_file" => "texte/homepage/ratgeber/workflow-captain/captain-plugins-verbinden.md",
 	],
 	[
@@ -1705,7 +1705,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "debf491755471b7885d78660f0a2e69e58d170b82e26bca08daabbc429d7810f",
+		"source_hash" => "46a7291c7dea7c52533b061221fc457c132e23cedb72cba74c5a834e1d9778ed",
 		"source_file" => "texte/homepage/ratgeber/workflow-captain/woocommerce-bestellungen-automatisieren.md",
 	],
 	[
@@ -1722,7 +1722,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/workflow-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "0d1c90e8906bcd71a54cd647084c324c759d188fe9da83b5e2ccd1f756675c38",
+		"source_hash" => "dda1974a0744251c61ca1de902cb7e4e0d600598f8824361778c503191e2fb54",
 		"source_file" => "texte/homepage/ratgeber/workflow-captain/wordpress-automatisierung-ohne-cloud.md",
 	],
 ];

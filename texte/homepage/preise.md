@@ -50,7 +50,7 @@ Review Captain Pro ist mit den Plänen Solo (1 Live-Website), Studio (5) und Age
 
 ## Course Captain Pro
 
-Course Captain Pro ist mit den Plänen Single (1 Live-Website), Business (5) und Agency (25) erhältlich. Alle Pro-Funktionen – Lernpfade, Drip-Inhalte, erweiterte Prüfungen, Zertifikatsdesigner, Gruppenverwaltung, Auswertungen und WooCommerce-Kurszugänge – sind in jedem Plan enthalten; Agency bietet Priority-Support. Den aktuellen Jahrespreis sehen Sie direkt beim jeweiligen Plan im Shop.
+Course Captain Pro ist mit den Plänen Single (1 Live-Website), Business (5) und Agency (25) erhältlich. Alle Pro-Funktionen – Lernpfade, erweiterte Drip-Regeln, Lösungserklärungen, erweiterte Prüfungen, Zertifikatsdesigner, Gruppenverwaltung, Auswertungen und WooCommerce-Kurszugänge – sind in jedem Plan enthalten; Agency bietet Priority-Support. Den aktuellen Jahrespreis sehen Sie direkt beim jeweiligen Plan im Shop.
 
 [Course Captain Pro ansehen](/course-captain/pro/)
 

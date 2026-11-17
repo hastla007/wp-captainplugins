@@ -40,7 +40,7 @@ Workflow Captain richtet sich an Unternehmen, Shopbetreiber und Agenturen, die w
 
 ## Passt Workflow Captain zu Ihrer Website?
 
-Der kostenlose Kern setzt WordPress 6.8+ und PHP 8.5+ voraus. WooCommerce ist optional; die WooCommerce-Auslöser benötigen Version 11.2.2 oder neuer. Die Mindestversionen der Captain-Provider stehen in der Kompatibilitätsübersicht.
+Der kostenlose Kern setzt WordPress 7.0+ und PHP 8.5+ voraus. WooCommerce ist optional; die WooCommerce-Auslöser benötigen Version 11.2.2 oder neuer. Die Mindestversionen der Captain-Provider stehen in der Kompatibilitätsübersicht.
 
 [Voraussetzungen prüfen](/workflow-captain/kompatibilitaet/) · [Integrationen ansehen](/workflow-captain/integrationen/) · [Installation](/workflow-captain/installation/)
 

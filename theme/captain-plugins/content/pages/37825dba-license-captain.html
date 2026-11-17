@@ -11,13 +11,13 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>WordPress 6.5 oder neuer</li>
+<li>WordPress 7.0 oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Aktives WooCommerce</li>
+<li>Aktives WooCommerce 11.2.2 oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>PHP 8.5 oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer mit beschreibbarem primärem Datenbankserver</li>
+<li>MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer mit einem einzigen beschreibbaren primären Datenbankserver (die Verlängerungssperren nutzen <code>GET_LOCK</code>)</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Zuverlässiger WordPress-Cron; für den Produktionsbetrieb wird ein System-Cron empfohlen</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
@@ -36,7 +36,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Installieren und aktivieren Sie WooCommerce. Installieren Sie danach das License-Captain-ZIP über <strong>Plugins → Installieren → Plugin hochladen</strong> und aktivieren Sie License Captain.</p>
+<p>Installieren und aktivieren Sie WooCommerce. Prüfen Sie die Prüfsumme des License-Captain-ZIPs mit der beiliegenden <code>.sha256</code>-Datei. Installieren Sie danach das ZIP über <strong>Plugins → Installieren → Plugin hochladen</strong> und aktivieren Sie License Captain. Die Aktivierung legt die Datenbanktabellen und geplanten Aufgaben an. Unter <strong>WooCommerce → Lizenzeinstellungen</strong> zeigt eine Checkliste „Erste Schritte“, was noch fehlt. In einem Multisite-Netzwerk aktivieren Sie License Captain auf der Shop-Website; jede Website arbeitet als eigener Lizenzserver.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -50,19 +50,31 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Vor dem Ausstellen produktiver Lizenzen richten Sie zwei getrennte, zufällige Geheimnisse in der Serverkonfiguration ein: einen Schlüssel für Lizenzschlüssel und einen für verschlüsselte Installationsdaten. Verwenden Sie mindestens 32 zufällige Bytes pro Geheimnis. Speichern Sie die Werte in einer zugriffsgeschützten Schlüsselverwaltung und nicht im Quellcode-Repository.</p>
+<p>Vor dem Ausstellen der ersten Lizenz richten Sie in wp-config.php getrennte, zufällige Geheimnisse ein: einen Schlüsselring für Lizenzschlüssel, einen für die verschlüsselten Installationsdaten und den Ed25519-Schlüssel, mit dem der Server seine Antworten signiert. Verwenden Sie mindestens 32 zufällige Bytes pro Geheimnis (zum Beispiel aus <code>openssl rand -base64 48</code>), nicht die WordPress-Salts. Speichern Sie die Werte in einer zugriffsgeschützten Schlüsselverwaltung, nicht im Quellcode-Repository, und hinterlegen Sie sie auf jedem Webserver des Shops.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Beispiel für die Konfiguration in wp-config.php:</p>
+<p>Beispiel für einen neuen Shop:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>~~~php define( 'WPLC<em>LICENSE</em>KEY<em>SECRET', 'HIER</em>EINEN<em>EIGENEN</em>ZUFAELLIGEN<em>SCHLUESSEL</em>EINTRAGEN' ); define( 'WPLC<em>INSTALLATION</em>ENCRYPTION<em>KEY', 'HIER</em>EINEN<em>ANDEREN</em>ZUFAELLIGEN<em>SCHLUESSEL</em>EINTRAGEN' ); ~~~</p>
+<p>~~~php define( 'WPLC<em>LICENSE</em>KEY<em>SECRETS', array( '2027-01' =&gt; 'HIER</em>EINEN<em>EIGENEN</em>ZUFAELLIGEN<em>SCHLUESSEL</em>EINTRAGEN', ) ); define( 'WPLC<em>LICENSE</em>KEY_ID', '2027-01' );</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Die Platzhalter müssen durch unterschiedliche, zufällige Geheimnisse ersetzt werden. Veröffentlichen Sie keine Schlüssel in Screenshots, Supportanfragen oder Logs.</p>
+<p>define( 'WPLC<em>INSTALLATION</em>ENCRYPTION<em>KEYS', array( '2027-01' =&gt; 'HIER</em>EINEN<em>ANDEREN</em>ZUFAELLIGEN<em>SCHLUESSEL</em>EINTRAGEN', ) ); define( 'WPLC<em>INSTALLATION</em>ENCRYPTION<em>KEY</em>ID', '2027-01' );</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>define( 'WPLC<em>RESPONSE</em>SIGNING<em>KEY', 'AUSGABE</em>VON<em>wp</em>wplc<em>signing-key</em>--generate' ); ~~~</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Den Wert für <code>WPLC_RESPONSE_SIGNING_KEY</code> erzeugt <code>wp wplc signing-key --generate</code>. Die Schlüsselringe (Arrays) erlauben eine spätere Rotation, ohne ausgegebene Schlüssel oder aktivierte Websites ungültig zu machen; entfernen oder umbenennen Sie keinen Eintrag, solange Lizenzen oder Installationen ihn nutzen. Die Platzhalter müssen durch unterschiedliche, zufällige Geheimnisse ersetzt werden. Veröffentlichen Sie keine Schlüssel in Screenshots, Supportanfragen oder Logs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ohne diese Konstanten leitet License Captain die Schlüssel aus den WordPress-Salts ab und zeigt eine dauerhafte Warnung. Ändern sich die Salts, können ausgegebene Schlüssel nicht mehr angezeigt werden und alle aktivierten Websites müssen neu aktiviert werden.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -76,7 +88,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Wählen Sie ein Produkt oder eine Variante und markieren Sie es als Lizenzprodukt. Definieren Sie Abrechnungsintervall, Laufzeit, Website-Limit, Supportstufe und Entitlements. Der Kauf setzt ein Kundenkonto voraus; prüfen Sie deshalb den WooCommerce-Konto- und Checkout-Ablauf.</p>
+<p>Wählen Sie im klassischen Produkteditor ein Produkt oder eine Variante und markieren Sie es als Lizenzprodukt. Definieren Sie Abrechnungsintervall (monatlich oder jährlich), Limit für Live-Websites, Supportstufe und Entitlements. Viele Pläne lassen sich per CSV importieren; alternativ liefern Sie eine Katalogdatei <code>wplc-catalog.json</code> im Release-Paket mit. Produkte von WooCommerce Subscriptions können nicht als Lizenzprodukte zugeordnet werden. Der Kauf setzt ein Kundenkonto voraus; prüfen Sie deshalb den WooCommerce-Konto- und Checkout-Ablauf.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -94,7 +106,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Wenn Stripe genutzt wird, richten Sie zusätzlich den in den License-Captain-Einstellungen angezeigten Webhook-Endpunkt in Stripe ein. Der License-Captain-Webhook ist separat vom WooCommerce-Stripe-Webhook und benötigt sein eigenes Signing Secret. Die produktspezifische Dokumentation führt die benötigten Ereignisse und Konfigurationswerte auf.</p>
+<p>Wenn Stripe genutzt wird, richten Sie zusätzlich den unter <strong>WooCommerce → Lizenzeinstellungen</strong> angezeigten Webhook-Endpunkt in Stripe ein. Der License-Captain-Webhook ist separat vom WooCommerce-Stripe-Webhook und benötigt sein eigenes Signing Secret, das Sie als <code>WPLC_STRIPE_WEBHOOK_SECRET</code> (für den Testmodus optional <code>WPLC_STRIPE_WEBHOOK_SECRET_TEST</code>) in wp-config.php eintragen. Die produktspezifische Dokumentation führt die benötigten Ereignisse auf. Auf einer Staging-Kopie mit <code>WP_ENVIRONMENT_TYPE</code> = <code>staging</code> pausiert License Captain Abbuchungen automatisch.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -108,7 +120,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Binden Sie den License-Captain-Client in jedes Plugin ein, das Sie lizenzieren möchten, und liefern Sie ihn mit dem Plugin aus. Hinterlegen Sie im Client die Adresse Ihres Lizenzservers und den Produktschlüssel laut Client-Dokumentation. Ihre Kunden aktivieren ihren Lizenzschlüssel anschließend direkt in Ihrem Plugin. Konfigurieren Sie Entitlements und erlaubte Updatepakete. Erstellen Sie danach ein Testprodukt, kaufen Sie eine Lizenz im Testmodus und prüfen Sie Aktivierung, Statusanzeige und Updatezugriff.</p>
+<p>Binden Sie den License-Captain-Client in jedes Plugin ein, das Sie lizenzieren möchten, und liefern Sie ihn mit dem Plugin aus. Kopieren Sie die Client-Bibliothek mit dem mitgelieferten Exportskript unter dem Namensraum Ihres Plugins. Hinterlegen Sie im Client die HTTPS-Adresse Ihres Lizenzservers, den Produktschlüssel aus Ihrem Katalog und den öffentlichen Signaturschlüssel des Servers (Ausgabe von <code>wp wplc signing-key --field=public_key</code>) laut Client-Dokumentation. Der mitgelieferte Vertragstest prüft Aktivierung, Statusprüfung, Updateabruf und Deaktivierung gegen Ihren Server. Ihre Kunden aktivieren ihren Lizenzschlüssel anschließend direkt in Ihrem Plugin. Konfigurieren Sie Entitlements und erlaubte Updatepakete. Erstellen Sie danach ein Testprodukt, kaufen Sie eine Lizenz im Testmodus und prüfen Sie Aktivierung, Statusanzeige und Updatezugriff.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -122,7 +134,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Laden Sie ein Releasepaket hoch oder registrieren Sie eine HTTPS-Paketadresse mit Prüfsumme. Testen Sie Download, Update, Rücknahme eines Releases und Cron-/Action-Scheduler-Verarbeitung. Richten Sie Backups und Monitoring ein.</p>
+<p>Laden Sie ein Releasepaket hoch oder registrieren Sie eine HTTPS-Paketadresse mit Prüfsumme. Für hochgeladene Pakete empfiehlt sich ein Verzeichnis außerhalb des Web-Roots (<code>WPLC_PACKAGE_STORAGE_DIR</code>) oder ein privater S3-kompatibler Bucket. Nehmen Sie die API- und Kontoseiten von Seiten- und CDN-Caches aus. Testen Sie Download, Update, Rücknahme eines Releases und Cron-/Action-Scheduler-Verarbeitung. Richten Sie Backups und Monitoring ein.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->
@@ -138,6 +150,6 @@
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
-<p><strong>Kompatibilitätshinweis:</strong> WooCommerce 8.9 ist die deklarierte Mindestversion. Die dokumentierte CI-Matrix führt außerdem WooCommerce 9.4.3 und 11.2.2 auf. Prüfen Sie vor Veröffentlichung die finale Release-Matrix. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
+<p><strong>Kompatibilitätshinweis:</strong> WordPress 7.0 und WooCommerce 11.2.2 sind die Mindestversionen. Getestet werden WordPress 7.0 mit WooCommerce 11.2.2 sowie die aktuelle WordPress-Version mit WooCommerce 11.3.0, jeweils auf PHP 8.5 mit MySQL 9.7 und MariaDB 12.3, mit HPOS und klassischer Bestellspeicherung sowie in einem Multisite-Netzwerk. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -25,6 +25,6 @@ Ein Ereignis kann doppelt eintreffen oder ein Zielsystem kann vorübergehend nic
 
 Wenn ein Prozess ein anderes System benötigt, kann eine kontrollierte API- oder Webhook-Verbindung sinnvoll sein. Konfigurieren Sie bekannte HTTPS-Ziele, Authentisierung und Feld-Allowlisten. Vermeiden Sie freie URLs und unkontrollierte Payloads.
 
-Workflow Captain bündelt WordPress- und WooCommerce-Abläufe lokal. Pro ergänzt Suite-Provider, signierte Webhooks und versionierte Connectoren.
+Workflow Captain bündelt WordPress- und WooCommerce-Abläufe lokal und ruft selbst keinen externen Dienst auf. Pro ergänzt Suite-Provider, signierte Webhooks, n8n-Verbindungen und versionierte Connectoren.
 
 [Workflow Captain entdecken](/workflow-captain/) · [Integrationen](/workflow-captain/integrationen/) · [Dokumentation](/dokumentation/workflow-captain/)

@@ -11,7 +11,7 @@ Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooComm
 
 ## Voraussetzungen
 
-- WordPress 6.8 oder neuer und PHP 8.5 oder neuer; empfohlen MySQL 9.7 oder MariaDB 12.3 (ältere Datenbankserver erzeugen nur eine Warnung im Website-Zustand).
+- WordPress 7.0 oder neuer und PHP 8.5 oder neuer; empfohlen MySQL 9.7 oder MariaDB 12.3 (ältere Datenbankserver erzeugen nur eine Warnung im Website-Zustand).
 - WooCommerce optional ab Version 11.2.2 für die Bestell-Auslöser.
 - Für Pro: Workflow Captain ab Version 0.2.0 und eine gültige Workflow-Captain-Pro-Lizenz; für Suite-Funktionen das jeweilige Captain-Plugin mit kompatiblem Providervertrag und eine gültige Lizenz seines Pro-Add-ons.
 - Vor dem Start ein aktuelles Backup und eine Staging-Umgebung für erste Tests.

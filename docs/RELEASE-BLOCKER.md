@@ -6,9 +6,9 @@ Automatisch erzeugt mit `python3 tools/release-blockers.py`. Alles hier muss vor
 
 | Art | Anzahl |
 |---|---:|
-| Fehlendes Linkziel | 29 |
+| Fehlendes Linkziel | 32 |
 | Betreiberangabe | 19 |
-| Redaktioneller Vorbehalt | 13 |
+| Redaktioneller Vorbehalt | 6 |
 | Medienplatzhalter | 112 |
 
 Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninventar.md).
@@ -17,8 +17,8 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 | Ziel | Vorkommen |
 |---|---:|
-| Download-URL | 24 |
-| Checkout-URL | 2 |
+| Download-URL | 22 |
+| Checkout-URL | 7 |
 | License-Captain-Shop-URL | 1 |
 | Checkout-Link je Plan ergänzen: Checkout-URL | 1 |
 | Supportkontakt oder Formular ergänzen: Support-URL | 1 |
@@ -51,7 +51,7 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/course-captain/pro/`
 
-- **Fehlendes Linkziel:** „Course Captain kostenlos herunterladen“ → Download-URL
+- **Fehlendes Linkziel:** „Course Captain Pro auswählen“ → Checkout-URL
 
 ### `/datenschutz/`
 
@@ -65,13 +65,13 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 - **Betreiberangabe:** Datum der letzten Aktualisierung
 - **Redaktioneller Vorbehalt:** Die Inhalte in doppelten eckigen Klammern sind vom Betreiber anhand der tatsächlich eingesetzten Dienste zu ergänzen und vor Veröffentlichung rechtlich prüfen zu lassen.
 
-### `/dokumentation/installation/license-captain/`
-
-- **Redaktioneller Vorbehalt:** Prüfen Sie vor Veröffentlichung die finale Release-Matrix.
-
 ### `/form-captain/`
 
 - **Fehlendes Linkziel:** „Form Captain kostenlos starten“ → Download-URL
+
+### `/form-captain/pro/`
+
+- **Fehlendes Linkziel:** „Form Captain Pro auswählen“ → Checkout-URL
 
 ### `/impressum/`
 
@@ -90,9 +90,6 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/kompatibilitaet/`
 
-- **Redaktioneller Vorbehalt:** HPOS sowie klassische und Blocks-Bestellungen sind Release-Gates; getestete Versionen sind vor Release zu ergänzen.
-- **Redaktioneller Vorbehalt:** HPOS, klassischer und Block-Checkout sind Release-Gates für den Pro-Kursverkauf; getestete Versionen werden vor Release veröffentlicht.
-- **Redaktioneller Vorbehalt:** Der erfolgreiche Lauf für die Mindestlinie muss vor dem finalen Release belegt werden.
 - **Redaktioneller Vorbehalt:** | Voucher Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support.
 - **Redaktioneller Vorbehalt:** | Affiliate Captain | Produktdokumentation; konkreten öffentlichen Supportkontakt vor Veröffentlichung ergänzen | Single und Business: Standard-Support.
 
@@ -137,6 +134,10 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 - **Fehlendes Linkziel:** „Review Captain kostenlos entdecken“ → Download-URL
 
+### `/review-captain/pro/`
+
+- **Fehlendes Linkziel:** „Review Captain Pro auswählen“ → Checkout-URL
+
 ### `/support/`
 
 - **Fehlendes Linkziel:** „Supportkontakt oder Formular ergänzen: Support-URL“ → Ziel fehlt
@@ -147,22 +148,14 @@ Medienplatzhalter stehen einzeln im [Medieninventar](../texte/homepage/medieninv
 
 ### `/voucher-captain/pro/`
 
+- **Fehlendes Linkziel:** „Voucher Captain Pro auswählen“ → Checkout-URL
 - **Fehlendes Linkziel:** „Voucher Captain kostenlos herunterladen“ → Download-URL
 
 ### `/workflow-captain/`
 
 - **Fehlendes Linkziel:** „Workflow Captain kostenlos starten“ → Download-URL
 - **Fehlendes Linkziel:** „Workflow Captain kostenlos herunterladen“ → Download-URL
-- **Redaktioneller Vorbehalt:** Konkrete Kompatibilität und Provider-Mindestversionen werden vor Release in der Matrix ausgewiesen.
-
-### `/workflow-captain/faq/`
-
-- **Redaktioneller Vorbehalt:** Die tatsächlich getesteten Versionen und Mindeststände einzelner Suite-Provider müssen vor Veröffentlichung in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/) be
-
-### `/workflow-captain/integrationen/`
-
-- **Redaktioneller Vorbehalt:** 0 vorgesehen; die geprüften Versionen werden vor Release ausgewiesen.
 
 ### `/workflow-captain/pro/`
 
-- **Fehlendes Linkziel:** „Workflow Captain kostenlos herunterladen“ → Download-URL
+- **Fehlendes Linkziel:** „Workflow Captain Pro auswählen“ → Checkout-URL

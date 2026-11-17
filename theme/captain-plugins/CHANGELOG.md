@@ -13,6 +13,9 @@ Geprüft mit allen sieben Kern-Plugins (Voucher, Pass, Affiliate, Form, Review, 
 - `tools/price-check.py` meldet Kauf-Links und fehlende Hinweise bei Add-ons, die in `preise.md` als „(in Vorbereitung)“ markiert sind. Derzeit ist keines markiert: Alle sieben Add-ons sind zum Release vorgesehen (Ablauf in `docs/REDAKTION.md`).
 
 ### Texte
+- Alle Produkttexte gegen Code, Konzept und To-do des neuesten Entwicklungsstands abgeglichen (Release-Umfang; Bericht in `docs/PLUGIN-ABGLEICH.md`).
+- Mindestversionen suiteweit: WordPress 7.0, PHP 8.5, WooCommerce 11.2.2 (MINVER-1).
+- Captain-Pro-Installationsanleitung nennt alle sieben Add-ons.
 - Course Captain verlangt WordPress 7.0 (bisher 6.8 angegeben); Review Captain mit konkreter Mindestversion WordPress 6.5.
 - Neuer Bericht `docs/PLUGIN-ABGLEICH.md`: Versionen, Pro-Funktionen und Release-Stand der Plugins im Vergleich zu den Website-Texten.
 

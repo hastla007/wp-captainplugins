@@ -1,6 +1,6 @@
 <!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
-<p>Workflow Captain nutzt Providerverträge, damit Ereignisse und Aktionen zwischen Plugins nachvollziehbar und versioniert bleiben. Free deckt WordPress Core und WooCommerce ab. Pro ergänzt die Captain Suite, Projekt-Connectoren und signierte Webhooks.</p>
+<p>Workflow Captain nutzt Providerverträge, damit Ereignisse und Aktionen zwischen Plugins nachvollziehbar und versioniert bleiben. Free deckt WordPress Core, WooCommerce und Zeitpläne ab. Pro ergänzt die Captain Suite, eigene Connectoren, signierte Webhooks und n8n.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>WordPress-Provider verarbeiten ausgewählte Benutzer-, Beitrags- und Kommentarereignisse. Der optionale WooCommerce-Provider ergänzt Bestell-, Refund-, Produkt-, Lager- und Couponereignisse sowie freigegebene Bestellaktionen. WooCommerce wird ab Version 8.0 vorgesehen; die geprüften Versionen werden vor Release ausgewiesen.</p>
+<p>Der WordPress-Provider liefert die Auslöser „Benutzer registriert“ und „Beitrag veröffentlicht“ (öffentliche Inhaltstypen). Der optionale WooCommerce-Provider ab WooCommerce 11.2.2 liefert „Bestellung angelegt“, „bezahlt“, „Statuswechsel“, „erstattet“ und „storniert“ – mit HPOS und klassischen Bestelltabellen. Übergeben werden Kennungen, Status, Beträge und Währung, nie Namen, E-Mail-Adressen, Anschriften oder Gutscheincodes. Bestellungen und Inhalte werden von Workflows nicht verändert.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -20,29 +20,25 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Workflow Captain Pro (in Vorbereitung) sieht Provider für folgende Produkte vor:</p>
+<p>Workflow Captain Pro enthält Provider für folgende Produkte:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Voucher Captain:</strong> Gutscheinstatus, Zustellung und bestätigte Einlösung über freigegebene Services.</li>
+<li><strong>Voucher Captain:</strong> Ausstellung, Zustellung und Zustellfehler, Einlösung, Reservierung, Ablauf, Sperre und Reaktivierung, Guthaben und Aufladung. Als Aktionen stehen Ausstellen, Sperren, Reaktivieren und Einlösen bereit; Grenzen und Berechtigungen setzt Voucher Captain durch.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>Pass Captain:</strong> Ticket-, Einlass-, Wartelisten- und Eventstatus, abhängig vom Providervertrag.</li>
+<li><strong>Pass Captain:</strong> Bestellung bezahlt, storniert oder erstattet, Tickets ausgestellt oder widerrufen, Check-in und Check-out, verschobene oder abgesagte Termine und Events, Erstattungen und Belege.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>Affiliate Captain:</strong> Partner- und Provisionsereignisse über die kanonischen Affiliate-Services.</li>
+<li><strong>Affiliate Captain:</strong> Partner, zugeordnete Verkäufe, Provisionen, Auszahlungen, Werbemittel und Code-Anfragen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>Form Captain:</strong> Entries und freigegebene Formularfelder nach Feldklasse und Consent-Regel.</li>
+<li><strong>Form Captain:</strong> Formulare und Einsendungen, Statuswechsel, Löschung, Import, Widerruf der Einwilligung und fehlgeschlagene Benachrichtigungen – nur mit freigegebenen Feldern.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>Review Captain:</strong> Reviews, Bewertungsanfragen und Moderationsstatus unter Erhalt der Review-Schutzregeln.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>License Captain:</strong> sichere Status- und Updatebenachrichtigungen; keine generischen Lizenzänderungen.</li>
-<!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>Course Captain:</strong> Einschreibung, Lektionsabschluss, bestandene Prüfung, Kursabschluss und ablaufender Zugang; Aktionen wie Einschreiben oder Benachrichtigen, sobald der Providervertrag in beiden Plugins veröffentlicht ist.</li>
+<li><strong>Review Captain:</strong> Review angelegt, Status geändert und entfernt; die Review-Schutzregeln bleiben bei Review Captain.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Für jede Verbindung müssen das Fachplugin und ein kompatibler Providervertrag vorhanden sein. Die genauen Trigger, Aktionen und Mindestversionen richten sich nach dem veröffentlichten Vertrag. Geschäftslogik und Datenhoheit bleiben beim jeweiligen Fachplugin.</p>
+<p>Für jede Verbindung müssen das Fachplugin mit kompatiblem Providervertrag und eine gültige Lizenz seines Pro-Add-ons vorhanden sein. Die genauen Mindestversionen stehen in der Kompatibilitätsübersicht. Geschäftslogik und Datenhoheit bleiben beim jeweiligen Fachplugin. Ein Provider für Course Captain ist für eine spätere Version vorgesehen.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -50,11 +46,11 @@
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-split"><!-- wp:group {"className":"cp-split__text","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-split__text"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Webhooks und kundenspezifische Connectoren</h2>
+<h2 class="wp-block-heading">Webhooks, n8n und eigene Connectoren</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Pro unterstützt signierte Ein- und Ausgangswebhooks sowie ein versioniertes Provider-SDK für separate Connector-Plugins. Webhooks verwenden konfigurierte HTTPS-Ziele, Authentisierung, Rate-Limits und Replay-Schutz. Connectoren deklarieren Fähigkeiten und Datenfelder über ihren Vertrag; direkte Tabellenzugriffe und freie Codeausführung sind ausgeschlossen.</p>
+<p>Pro unterstützt signierte Ein- und Ausgangswebhooks und n8n-Verbindungen sowie einen versionierten Vertrag für separate Connector-Plugins. Webhooks verwenden konfigurierte HTTPS-Ziele, HMAC-Signatur mit Zeitfenster, Rate-Limits und Replay-Schutz. Connectoren deklarieren Ereignisse und Datenfelder in einem Manifest; jeder Connector ist ab Werk aus und wird vom Betreiber freigegeben, personenbezogene Felder nur ausdrücklich. Direkte Tabellenzugriffe und freie Codeausführung sind ausgeschlossen.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -66,7 +62,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/kompatibilitaet/">Kompatibilität</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/pro/">Workflow Captain Pro (in Vorbereitung)</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/pro/">Workflow Captain Pro</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/integrationen/">Alle Captain-Integrationen</a></div>

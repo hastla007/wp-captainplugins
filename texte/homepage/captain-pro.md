@@ -11,13 +11,13 @@ Starten Sie mit dem kostenlosen Kern-Plugin. Ergänzen Sie die Funktionen, die I
 
 ## Sieben Erweiterungen. Ein passender Plan.
 
-- **Voucher Captain Pro:** CSV-Massenbestellungen, Wallet-Pässe und SMS-Zustellung für Unternehmen mit hohem Gutscheinaufkommen.
+- **Voucher Captain Pro:** CSV-Massenbestellungen, Wallet-Pässe, SMS-Zustellung und White Label für Unternehmen mit hohem Gutscheinaufkommen.
 - **Pass Captain Pro:** E-Rechnungen, Kartenterminal, White Label, virtueller Warteraum und schreibende API für professionelle Event- und Buchungsabläufe.
-- **Affiliate Captain Pro:** Webhooks, erweiterte REST-API, White-Label-Partnerportal und automatische PayPal-Auszahlungen für wachsende Partnerprogramme.
+- **Affiliate Captain Pro:** Webhooks, erweiterte REST-API, White-Label-Partnerportal und automatische PayPal-Auszahlungen und mehrere Programme für wachsende Partnernetzwerke.
 - **Review Captain Pro:** Plattformverbindungen, Sync, faire Bewertungsanfragen, Projekt-Connector-Management, Social-Proof-Widgets und Auswertungen.
-- **Form Captain Pro:** mehrstufige Formulare, sichere Uploads, verschachtelte Regeln, Webhooks, Integrationsprotokoll und PDF-Ausgaben.
-- **Workflow Captain Pro:** Captain-Suite-Provider, signierte Webhooks, erweiterte Ablauflogik, Queue-Wiederholungen und nachvollziehbare Run-Protokolle.
-- **Course Captain Pro:** Lernpfade, Drip-Inhalte, erweiterte Prüfungen, Zertifikatsdesigner, Gruppenverwaltung, Kohortenauswertungen und Kursverkauf über WooCommerce.
+- **Form Captain Pro:** mehrstufige Formulare, sichere Uploads, UND-/ODER-Regeln mit Routing, Webhooks, PDF-Ausgaben und WooCommerce-Käuferfragebögen.
+- **Workflow Captain Pro:** Captain-Suite-Provider, Event-Korrelation, Freigabeschritte, signierte Webhooks und n8n, eigene Connectoren und längere Protokolle.
+- **Course Captain Pro:** Lernpfade, erweiterte Drip-Regeln (feste Termine, Kampagnen, Gruppen-Drip), Lösungserklärungen, erweiterte Prüfungen, Zertifikatsdesigner, Gruppenverwaltung, Kohortenauswertungen und Kursverkauf über WooCommerce.
 
 Jeder Plan umfasst die Pro-Funktionen des jeweiligen Add-ons. Sie wählen nach der Zahl Ihrer Live-Websites.
 

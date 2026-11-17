@@ -1,6 +1,6 @@
 <!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
-<p>Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooCommerce-Trigger benötigen Sie WooCommerce; für Suite-Funktionen kommen das passende Captain-Plugin und gegebenenfalls Workflow Captain Pro (in Vorbereitung) hinzu.</p>
+<p>Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooCommerce-Auslöser benötigen Sie WooCommerce; für Suite-Funktionen kommen Workflow Captain Pro, das passende Captain-Plugin und dessen Pro-Add-on hinzu.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -11,11 +11,11 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>WordPress 6.8 oder neuer und PHP 8.5 oder neuer gemäß Produktkonzept.</li>
+<li>WordPress 7.0 oder neuer und PHP 8.5 oder neuer; empfohlen MySQL 9.7 oder MariaDB 12.3 (ältere Datenbankserver erzeugen nur eine Warnung im Website-Zustand).</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>WooCommerce optional ab Version 8.0 für Shop-Auslöser und -Aktionen.</li>
+<li>WooCommerce optional ab Version 11.2.2 für die Bestell-Auslöser.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Für Pro: gültige Workflow-Captain-Pro-Lizenz; für Suite-Aktionen das jeweils benötigte Captain-Plugin mit kompatiblem Providervertrag.</li>
+<li>Für Pro: Workflow Captain ab Version 0.2.0 und eine gültige Workflow-Captain-Pro-Lizenz; für Suite-Funktionen das jeweilige Captain-Plugin mit kompatiblem Providervertrag und eine gültige Lizenz seines Pro-Add-ons.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Vor dem Start ein aktuelles Backup und eine Staging-Umgebung für erste Tests.</li>
 <!-- /wp:list-item --></ul>
@@ -33,11 +33,13 @@
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Installieren und aktivieren Sie Workflow Captain über den freigegebenen Download bzw. die WordPress-Pluginverwaltung.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Öffnen Sie <strong>Workflow Captain</strong> im WordPress-Admin und prüfen Sie den Systemstatus.</li>
+<li>Öffnen Sie <strong>Workflow Captain → Einstellungen</strong>, prüfen Sie Grenzen, Aufbewahrung und Rechte und kontrollieren Sie den Status unter <strong>Werkzeuge → Website-Zustand</strong>.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Falls benötigt, aktivieren Sie WooCommerce und kontrollieren Sie den Status der Woo-Provider.</li>
+<li>Falls benötigt, aktivieren Sie WooCommerce und kontrollieren Sie den Provider unter <strong>Workflow Captain → Provider</strong>.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Installieren Sie das Pro-Add-on separat und aktivieren Sie Ihren Lizenzschlüssel im Lizenzbereich des Plugins.</li>
+<li>Ist WP-Cron abgeschaltet, rufen Sie <code>wp workflow-captain process</code> jede Minute per System-Cron auf.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Für Pro: Laden Sie das Pro-Add-on aus Ihrem Kundenkonto hoch, aktivieren Sie es und tragen Sie Ihren Lizenzschlüssel unter <strong>Workflow Captain → Pro-Lizenz</strong> ein.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Aktivieren Sie nur die Captain-Plugins, deren Provider Sie tatsächlich verwenden möchten.</li>
 <!-- /wp:list-item --></ol>
@@ -51,13 +53,13 @@
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li>Legen Sie einen Workflow mit einem WordPress- oder WooCommerce-Ereignis an.</li>
+<li>Legen Sie einen Workflow mit einem WordPress-, WooCommerce- oder Zeitplan-Auslöser an – oder importieren Sie eine Vorlage als Entwurf.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Ergänzen Sie eine einfache Bedingung und eine passende Benachrichtigungs- oder Notizaktion.</li>
+<li>Ergänzen Sie eine einfache Bedingung und eine Nachricht, Markierung oder Notiz.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Prüfen Sie Empfänger, Felder und mögliche Seiteneffekte.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Führen Sie den Dry Run mit Testdaten aus und kontrollieren Sie die redigierte Vorschau.</li>
+<li>Führen Sie den Testlauf mit Beispieldaten aus; er hat keine Seiteneffekte.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Aktivieren Sie den Workflow zunächst in einer Test- oder Staging-Umgebung. Prüfen Sie nach dem echten Ereignis den Run-Status und das Protokoll.</li>
 <!-- /wp:list-item --></ol>
@@ -72,7 +74,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Für einen Captain-Provider müssen beide Seiten bereit sein: das Quellplugin muss einen öffentlichen, kompatiblen Vertrag bereitstellen und die erforderliche Pro-Berechtigung muss aktiv sein. Fehlt die Mindestversion oder der Vertrag, bleibt der Provider als inkompatibel oder nicht verfügbar gekennzeichnet. Er wird nicht stillschweigend durch direkte Datenbankzugriffe ersetzt.</p>
+<p>Für einen Captain-Provider müssen beide Seiten bereit sein: Das Quellplugin muss einen kompatiblen Vertrag bereitstellen, und sowohl Workflow Captain Pro als auch das Pro-Add-on des Produkts müssen lizenziert sein. Fehlt die Mindestversion, der Vertrag oder eine Lizenz, zeigen die Seite <strong>Workflow Captain → Provider</strong> und die Pro-Lizenzseite, warum der Provider nicht angemeldet ist. Er wird nicht stillschweigend durch direkte Datenbankzugriffe ersetzt.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->

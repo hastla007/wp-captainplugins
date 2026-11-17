@@ -1,6 +1,6 @@
 <!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
-<p>Workflow Captain bündelt Ereignisse, Bedingungen und Aktionen in nachvollziehbaren Workflows. Der kostenlose Kern deckt WordPress und WooCommerce ab. Workflow Captain Pro (in Vorbereitung) ergänzt die Captain Suite, externe Webhook-Verbindungen und erweiterte Steuerungs- und Diagnosefunktionen.</p>
+<p>Workflow Captain bündelt Ereignisse, Bedingungen und Aktionen in nachvollziehbaren Workflows. Der kostenlose Kern deckt WordPress und WooCommerce ab. Workflow Captain Pro ergänzt die Captain Suite, externe Webhook- und n8n-Verbindungen, eigene Connectoren, netzwerkweite Multisite-Workflows sowie erweiterte Logik und Protokolle.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -13,21 +13,27 @@
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li>Unbegrenzte Workflows und Ausführungen – keine Task-Credits oder externen Konten.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Visueller Editor mit mehreren Start-Ereignissen und geordneten Aktionen.</li>
+<li>Visueller Editor mit Auslöser, Wenn/Sonst-Bedingungen, Wartezeiten, Aktionen und Ende; per Tastatur bedienbar und mit Listenansicht. Jeder Workflow hat genau einen Auslöser.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Einfache AND/OR-Bedingungen mit Werten aus dem jeweiligen Ereignis.</li>
+<li>Bedingungen mit UND/ODER und einer Gruppenebene (bis 20 Regeln) auf Werten aus dem jeweiligen Ereignis.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>WordPress-Core-Auslöser für Benutzer-, Beitrags- und Kommentarereignisse sowie passende, begrenzte Aktionen.</li>
+<li>WordPress-Auslöser: Benutzer registriert, Beitrag veröffentlicht (öffentliche Inhaltstypen).</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>WooCommerce-Auslöser für Bestellungen, Status, Erstattungen, Produkte und Coupons; WooCommerce bleibt optional.</li>
+<li>WooCommerce-Auslöser (optional, ab WooCommerce 11.2.2, HPOS und klassische Bestelltabellen): Bestellung angelegt, bezahlt, Statuswechsel, erstattet, storniert.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>WooCommerce-Aktionen wie Bestellnotiz, kontrollierte Statusänderung, Kunden-/Adminbenachrichtigung und CRUD-Meta.</li>
+<li>Zeitpläne als Auslöser: täglich, wöchentlich oder monatlich in der Zeitzone der Website.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Testlauf (Dry Run), Aktivieren/Pausieren, Duplizieren, Fehlerstatus und redigierte 30-Tage-Protokolle.</li>
+<li>Aktionen: Nachricht an Betreiber, Nachricht an einen Benutzer, Markierung setzen oder entfernen, Notiz anlegen – mit Platzhaltern aus dem Ereignis. Markierungen und Notizen speichert Workflow Captain selbst; Bestellungen und Inhalte werden nicht verändert.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Basis-Zeitplanung für sofortige, verzögerte oder terminierte Aktionen.</li>
+<li>Testlauf mit Beispieldaten ohne Seiteneffekte, Entwurf und Veröffentlichen mit unveränderlichen Versionen, Duplizieren, Archivieren, Export und Import als JSON, Vorlagen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Entwickler-Registry für Provider mit dokumentiertem Contract.</li>
+<li>Zuverlässige Ausführung: Erkennung doppelter Ereignisse, Wiederholung nach festem Plan, fehlgeschlagene Ereignisse gezielt erneut einreihen, Schleifenschutz, Parallelitätsgrenzen, Notfallpause und „Läufe nacheinander“ je Objekt oder Benutzer.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Laufansicht mit Schritten und redigierten Daten; erledigte Läufe werden nach 30 Tagen gelöscht, fehlgeschlagene Ereignisse nach 90 Tagen (verkürzbar).</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Eigene Rechte für Bearbeiten, Veröffentlichen, Protokolle und Wiederholen, Protokoll der Eingriffe, Website-Zustand, Diagnose-Download und WP-CLI-Befehle.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Entwicklerschnittstelle für Adapter und eingehende Auslöser von Add-ons mit dokumentiertem Vertrag.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
@@ -39,23 +45,23 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Provider für License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain sowie vertiefte WooCommerce-Aktionen.</li>
+<li>Provider für Pass Captain, Voucher Captain, Affiliate Captain, Form Captain und Review Captain; jeweils mit dem Plugin und dessen lizenziertem Pro-Add-on.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Versionierte SDK-/Providerverträge und Starter-Beispiel für separate kundenspezifische Connector-Plugins.</li>
+<li>Die Gutschein-Aktionen von Voucher Captain als Workflow-Schritte: ausstellen, sperren, reaktivieren und einlösen – mit den Grenzen und Berechtigungen des Voucher-Kerns.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Signierte ein- und ausgehende Webhooks mit Replay-Schutz, Rate-Limit und Zustellprotokoll.</li>
+<li>Eigene Connectoren: separate Connector-Plugins nach öffentlichem, versioniertem Vertrag, mit Starter-Beispiel; jeder Connector wird vom Betreiber freigegeben.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Erweiterte Bedingungsgruppen, If/Else-Verzweigungen, Freigabeschritte und Event-Korrelation.</li>
+<li>Signierte ein- und ausgehende Webhooks und n8n-Verbindungen mit Replay-Schutz, Rate-Limit und Zustellstatus.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Geplante Queue-Aktionen mit Abbruchregeln bei Refund, Storno, Widerruf oder geändertem Geschäftsstatus.</li>
+<li>Netzwerkweite Workflows in Multisite: Ein Ereignis einer Website startet Schritte auf freigegebenen Ziel-Websites desselben Netzwerks.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Begrenzte Wiederholungen mit Backoff, Idempotenz, kontrolliertem Replay, Dead-letter-Status und Schrittprotokollen.</li>
+<li>Event-Korrelation über mehrere Ereignisse und Freigabeschritte.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Rezeptvorlagen, Versionshistorie und schema-geprüfter Import/Export.</li>
+<li>Abbruch geplanter Abläufe bei Refund, Storno, Widerruf oder Opt-out.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Erweitertes Rollen-/Capability-Modell, Audit-Historie und Protokollexport.</li>
+<li>Rezeptvorlagen für die Captain Suite.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Konfigurierbare Protokollaufbewahrung bis 365 Tage; Standardwert laut Konzept: 90 Tage.</li>
+<li>Konfigurierbare Protokollaufbewahrung bis 365 Tage (Standard 90 Tage) und CSV-Protokollexport.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
@@ -72,7 +78,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Jeder Suite-Provider benötigt das jeweilige Plugin und einen kompatiblen Vertrag. Hochwirksame Aktionen wie Erstattung, Auszahlung oder Einlass bleiben bei den zuständigen Fachplugins und benötigen deren ausdrücklich freigegebene Services und Berechtigungen.</p>
+<p>Jeder Suite-Provider benötigt das jeweilige Plugin mit kompatiblem Vertrag. Erstattungen, Stornierungen, Einlass, Provisionen, Auszahlungen, Partnerstatus und Lizenzänderungen löst ein Workflow nicht aus; sie bleiben bei den zuständigen Fachplugins. Die Mails der Kern-Plugins bleiben unverändert – ein Workflow verschickt nur zusätzliche Nachrichten.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->

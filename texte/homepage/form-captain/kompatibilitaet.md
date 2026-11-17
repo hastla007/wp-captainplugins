@@ -13,7 +13,7 @@ Form Captain ist ein WordPress-natives Formularplugin. Die genaue Versionsmatrix
 
 | System | Verwendung | Voraussetzung |
 |---|---|---|
-| WordPress | Formularverwaltung, Editor, Entries und Privacy-Hooks | Version 6.8 oder neuer |
+| WordPress | Formularverwaltung, Editor, Entries und Privacy-Hooks | Version 7.0 oder neuer |
 | PHP | Ausführung des Plugins und Pro-Add-ons | Version 8.5 oder neuer |
 | Datenbank | Speicherung von Formularen und Einsendungen | MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer; ältere Versionen erzeugen eine Warnung |
 | Gutenberg / Block-Editor | Block „Form Captain“ mit Vorschau | WordPress-Block-Editor; Shortcode als Fallback |

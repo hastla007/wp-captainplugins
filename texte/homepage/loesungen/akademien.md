@@ -24,19 +24,19 @@ Gliedern Sie Ihre Inhalte in Module und Lektionen, ergänzen Sie Videos, Downloa
 
 ## Live-Termine und Präsenzteile
 
-Viele Programme verbinden Online-Lernen mit Webinaren, Workshops oder Praxistagen. Pass Captain verwaltet Termine, Tickets und Check-in; Course Captain berücksichtigt den Termin im Lernfortschritt.
+Viele Programme verbinden Online-Lernen mit Webinaren, Workshops oder Praxistagen. Pass Captain verwaltet Termine, Tickets und Check-in. Course Captain kann aus einem gültigen Ticket einen Kurs- oder Kohortenzugang ableiten; ein Check-in zählt nicht als Kursabschluss.
 
 [Pass Captain ansehen](/pass-captain/)
 
 ## Anmeldung, Feedback und Bewertungen
 
-Form Captain nimmt Kursbewerbungen, Beratungsanfragen und Feedbackbögen auf. Nach einem bestätigten Kursabschluss kann Review Captain fair um eine Bewertung bitten – ohne Filter nach Zufriedenheit.
+Form Captain nimmt Kursbewerbungen, Beratungsanfragen und Feedbackbögen auf. Nach einem bestätigten Kursabschluss kann Review Captain über einen Projekt-Connector fair um eine Bewertung bitten – ohne Filter nach Zufriedenheit.
 
 [Form Captain ansehen](/form-captain/) · [Review Captain ansehen](/review-captain/)
 
 ## Abläufe automatisieren
 
-Workflow Captain reagiert auf Ereignisse wie Einschreibung, bestandene Prüfung oder ablaufenden Zugang und verschickt Hinweise, Erinnerungen oder stößt Folgeschritte an. Jede Verbindung setzt kompatible Versionen der beteiligten Plugins voraus; die Kurs- und Zugangslogik bleibt bei Course Captain.
+Workflow Captain reagiert auf Ereignisse wie neue Anmeldungen über Form Captain, Ticketkäufe in Pass Captain oder bezahlte WooCommerce-Bestellungen und verschickt Hinweise, Erinnerungen oder stößt Folgeschritte an. Ereignisse aus Course Captain wie Einschreibung, bestandene Prüfung oder beendeter Zugang folgen in einer späteren Version von Workflow Captain. Die Kurs- und Zugangslogik bleibt bei Course Captain.
 
 [Workflow Captain ansehen](/workflow-captain/)
 

@@ -45,6 +45,6 @@ Nein. Freier PHP-/SQL-Code, willkürliche HTTP-Ziele und eine breite native App-
 
 ## Welche Voraussetzungen gelten?
 
-Workflow Captain setzt WordPress 6.8+ und PHP 8.5+ voraus; empfohlen sind MySQL 9.7 oder MariaDB 12.3. WooCommerce ist optional und wird ab Version 11.2.2 unterstützt. Die Mindeststände der einzelnen Suite-Provider stehen in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/).
+Workflow Captain setzt WordPress 7.0+ und PHP 8.5+ voraus; empfohlen sind MySQL 9.7 oder MariaDB 12.3. WooCommerce ist optional und wird ab Version 11.2.2 unterstützt. Die Mindeststände der einzelnen Suite-Provider stehen in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/).
 
 [Installation](/workflow-captain/installation/) · [Features](/workflow-captain/features/) · [Preise](/preise/) · [Support](/support/)

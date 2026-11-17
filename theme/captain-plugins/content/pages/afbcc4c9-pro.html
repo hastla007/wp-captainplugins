@@ -1,10 +1,6 @@
 <!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph {"className":"cp-status-note"} -->
-<p class="cp-status-note"><strong>In Vorbereitung:</strong> Workflow Captain Pro ist noch nicht erhältlich. Diese Seite beschreibt den geplanten Funktionsumfang; Umfang, Preise und Erscheinungstermin können sich bis zur Veröffentlichung ändern. Workflow Captain können Sie bereits kostenlos nutzen.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Wenn WordPress- und WooCommerce-Abläufe allein nicht ausreichen, verbindet Workflow Captain Pro die Captain Suite über dokumentierte Provider. Ergänzen Sie Workflows um sichere Webhooks, fortgeschrittene Verzweigungen, Event-Korrelation und Werkzeuge für Betrieb und Fehlerdiagnose.</p>
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
+<p>Wenn WordPress- und WooCommerce-Abläufe allein nicht ausreichen, verbindet Workflow Captain Pro die Captain Suite über dokumentierte Provider. Ergänzen Sie Workflows um signierte Webhooks und n8n, eigene Connectoren, netzwerkweite Multisite-Abläufe, Event-Korrelation, Freigabeschritte und längere Protokolle.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -14,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Für Unternehmen, Shops und Agenturen, die Ereignisse zwischen mehreren Captain-Plugins koordinieren, wiederkehrende Schritte dokumentieren oder eine externe Website über kontrollierte Webhooks anbinden möchten.</p>
+<p>Für Unternehmen, Shops und Agenturen, die Ereignisse zwischen mehreren Captain-Plugins koordinieren, wiederkehrende Schritte dokumentieren, mehrere Websites eines Multisite-Netzwerks verbinden oder ein externes System über kontrollierte Webhooks anbinden möchten.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -25,25 +21,29 @@
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>Provider für License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain. Jeder Provider erfordert das jeweilige Kernplugin und einen kompatiblen öffentlichen Vertrag.</li>
+<li>Provider für Pass Captain, Voucher Captain, Affiliate Captain, Form Captain und Review Captain. Jeder Provider erfordert das jeweilige Kernplugin mit kompatiblem Vertrag und eine gültige Lizenz seines Pro-Add-ons.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Erweiterte WooCommerce-Aktionen und Suite-Rezeptvorlagen.</li>
+<li>Gutschein-Aktionen von Voucher Captain als Workflow-Schritte: ausstellen, sperren, reaktivieren und einlösen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Kundenspezifische Connectoren über versionierte SDK-/Providerverträge und separate WordPress-Connector-Plugins.</li>
+<li>Suite-Rezeptvorlagen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Ein- und ausgehende HMAC-signierte Webhooks mit Timestamp-/Replay-Schutz, Schlüsselrotation, Rate-Limits und Zustellstatus.</li>
+<li>Eigene Connectoren über einen versionierten Vertrag und separate WordPress-Connector-Plugins; jeder Connector wird vom Betreiber freigegeben.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Event-Korrelation, erweiterte Bedingungsgruppen, If/Else und Freigabeschritte.</li>
+<li>Ein- und ausgehende HMAC-signierte Webhooks und n8n-Verbindungen mit Timestamp-/Replay-Schutz, Schlüsselrotation, Rate-Limits und Zustellstatus.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Geplante Aktionen mit fachgerechtem Abbruch bei Refund, Storno, Widerruf oder Opt-out.</li>
+<li>Netzwerkweite Workflows in Multisite: Ein Ereignis einer Website startet Schritte auf freigegebenen Ziel-Websites; jede teilnehmende Website zählt als eine Website der Lizenz.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Queue mit Leases, begrenztem Retry/Backoff, dedupliziertem Replay und Dead-letter-Status.</li>
+<li>Event-Korrelation über mehrere Ereignisse und Freigabeschritte.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Versionierte Workflows, Vorschau bei Import/Migration, Audit und vollständiges Schrittprotokoll.</li>
+<li>Abbruch geplanter Abläufe bei Refund, Storno, Widerruf oder Opt-out.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Rollensteuerung, Protokollexport und bis zu 365 Tage einstellbare Protokollaufbewahrung.</li>
+<li>Bis zu 365 Tage einstellbare Protokollaufbewahrung (Standard 90 Tage) und CSV-Protokollexport.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Editor, Wenn/Sonst-Bedingungen, Wartezeiten, Zeitpläne, sichere Wiederholung, Versionen, Export/Import und Rechteverwaltung sind bereits im kostenlosen Workflow Captain enthalten.</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>Keine Task-Credits oder monatlichen Run-Limits. Die Tarife unterscheiden sich ausschließlich nach Live-Websites und Supportstufe.</p>
@@ -52,7 +52,7 @@
 
 <!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Geplante Jahrespläne</h2>
+<h2 class="wp-block-heading">Jahrespläne</h2>
 <!-- /wp:heading -->
 
 <!-- wp:group {"className":"cp-plan-grid","layout":{"type":"default"}} -->
@@ -118,19 +118,15 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p>Die Preise gelten gemäß Konzept pro Jahr und werden im WooCommerce-Shop mit dessen Steuerkonfiguration dargestellt. Verlängerungen erfolgen zum gleichen gespeicherten Preis. Verbindliche Reaktionszeiten werden nicht zugesagt, solange sie nicht im Supportbetrieb festgelegt sind.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Die Preise gelten ab Erscheinen; vorher ist kein Kauf möglich.</p>
+<p>Die Preise gelten pro Jahr und werden im WooCommerce-Shop mit dessen Steuerkonfiguration dargestellt. Verlängerungen erfolgen zum gleichen gespeicherten Preis. Verbindliche Reaktionszeiten werden nicht zugesagt, solange sie nicht im Supportbetrieb festgelegt sind.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->
 <div class="wp-block-buttons cp-actions"><!-- wp:button {"className":"cp-button-pending"} -->
-<div class="wp-block-button cp-button-pending"><a class="wp-block-button__link wp-element-button">Workflow Captain kostenlos herunterladen</a></div>
+<div class="wp-block-button cp-button-pending"><a class="wp-block-button__link wp-element-button">Workflow Captain Pro auswählen</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/captain-pro/">Verfügbare Captain-Pro-Add-ons</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/preise/">Alle Captain-Pro-Pläne vergleichen</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
@@ -141,7 +137,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Workflow Captain Free bleibt eigenständig nutzbar. Pro ist ein separates Add-on. Bei Ablauf der Pro-Lizenz bleiben Workflows, Versionen und Protokolle lesbar und exportierbar; neue Pro-Runs starten nicht. Geplante Pro-Aktionen werden pausiert und nach Verlängerung nicht automatisch nachgeholt. Vor einer Wiederaufnahme kann der Betreiber die Abläufe prüfen.</p>
+<p>Workflow Captain Free bleibt eigenständig nutzbar. Pro ist ein separates Add-on und setzt Workflow Captain voraus. Bei Ablauf der Pro-Lizenz werden nur die Pro-Funktionen angehalten: Workflows, Versionen, Protokolle und gespeicherte Ereignisse bleiben lesbar, nichts wird gelöscht. Ereignisse der Captain-Plugins werden in dieser Zeit nicht erfasst und später nicht nachgeholt; geplante Schritte laufen nicht. Nach der Verlängerung geben Sie pausierte Läufe nach einer Vorschau einzeln oder gesammelt frei. Ist der Lizenzserver nicht erreichbar, arbeitet das Add-on bis zu 14 Tage mit der letzten bestätigten Antwort.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -153,7 +149,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Workflow Captain Pro ist keine Cloud-Automationsplattform und enthält keine Bibliothek mit Hunderten nativen Fremd-Apps. Externe Systeme werden über vorher konfigurierte, signierte Webhooks oder separate Connectoren angebunden. Freier PHP-/SQL-Code, beliebige HTTP-Ziele, automatische Auszahlungen, Erstattungen oder unautorisierte Fachaktionen sind ausgeschlossen.</p>
+<p>Workflow Captain Pro ist keine Cloud-Automationsplattform und enthält keine Bibliothek mit Hunderten nativen Fremd-Apps. Externe Systeme werden über vorher konfigurierte, signierte Webhooks, n8n-Verbindungen oder separate Connectoren angebunden. Freier PHP-/SQL-Code, beliebige HTTP-Ziele, Erstattungen, Stornierungen, Provisionen, Auszahlungen und Lizenzänderungen durch Workflows sind ausgeschlossen.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->

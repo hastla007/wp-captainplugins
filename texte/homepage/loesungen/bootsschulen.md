@@ -29,7 +29,7 @@ Bootsschulen, die Kurszugänge in Kontingenten einkaufen und intern verteilen, k
 
 ## Theorie und Prüfungsvorbereitung online
 
-Mit Course Captain stellen Sie den Theorieteil Ihrer Kurse direkt auf Ihrer Website bereit: Lektionen mit Text, Bildern und Videos, eine Fragenbank mit Ihren eigenen Fragen und Erklärungen, einen Smarttrainer, der falsch beantwortete und fällige Fragen gezielt wiederholt, und eine Prüfungssimulation mit Zeitlimit und Bestehensgrenze. Fragen und Inhalte pflegen Sie selbst; Course Captain liefert keine fertigen amtlichen Fragenkataloge und ersetzt keine offizielle Prüfung.
+Mit Course Captain stellen Sie den Theorieteil Ihrer Kurse direkt auf Ihrer Website bereit: Lektionen mit Text, Bildern und Videos, eine Fragenbank mit Ihren eigenen Fragen (Lösungserklärungen mit Course Captain Pro), einen Smarttrainer, der falsch beantwortete und fällige Fragen gezielt wiederholt, und eine Prüfungssimulation mit Zeitlimit und Bestehensgrenze. Fragen und Inhalte pflegen Sie selbst; Course Captain liefert keine fertigen amtlichen Fragenkataloge und ersetzt keine offizielle Prüfung.
 
 Teilnehmende eines gebuchten Kurses können Sie manuell oder über Gruppen freischalten. Mit Course Captain Pro lassen sich Kurszugänge über WooCommerce verkaufen, Lernpfade bis zum Praxistermin aufbauen und Gutscheine von Voucher Captain einlösen.
 
@@ -43,7 +43,7 @@ Mit Form Captain nehmen Sie Beratungs-, Demo- und Kursanfragen direkt auf Ihrer 
 
 ## Wiederkehrende Übergaben automatisieren
 
-Workflow Captain kann freigegebene Ereignisse aus Formularen, Buchungen oder anderen Captain-Plugins in einen nachvollziehbaren Ablauf aufnehmen. Dafür müssen die beteiligten Plugins kompatible Providerverträge bereitstellen. Die Buchungs-, Ticket- und Freigabelogik bleibt bei Pass Captain bzw. dem jeweiligen Fachsystem; projektspezifische Verbindungen zur Lernplattform benötigen weiterhin einen eigenen Connector.
+Workflow Captain Pro kann freigegebene Ereignisse aus Formularen, Buchungen oder anderen Captain-Plugins in einen nachvollziehbaren Ablauf aufnehmen; Ereignisse aus Formularen setzen zusätzlich Form Captain Pro voraus. Die Buchungs-, Ticket- und Freigabelogik bleibt bei Pass Captain bzw. dem jeweiligen Fachsystem; projektspezifische Verbindungen zur Lernplattform benötigen weiterhin einen eigenen Connector.
 
 [Workflow Captain entdecken](/workflow-captain/) · [Captain-Suite-Integrationen ansehen](/workflow-captain/integrationen/)
 

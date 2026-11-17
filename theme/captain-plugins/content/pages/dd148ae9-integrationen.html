@@ -10,7 +10,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Review Captain Pro (in Vorbereitung) unterstützt Verbindungen zu Google Business Profile, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play. Die API-Funktionen hängen von Kontotyp, Profil- oder App-Eigentümerschaft, Freigabe und Tarifrecht ab. Wenn ein API-Zugang nicht verfügbar ist, können Sie ein offizielles Widget, einen Profil-Link oder manuell ausgewählte Reviews verwenden.</p>
+<p>Review Captain Pro unterstützt Verbindungen zu Google Business Profile, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play. Die API-Funktionen hängen von Kontotyp, Profil- oder App-Eigentümerschaft, Freigabe und Tarifrecht ab. Für Google Business Profile nutzen Sie ein eigenes Google-Cloud-Projekt. Wenn ein API-Zugang nicht verfügbar ist, können Sie einen Profil-Link, manuell ausgewählte Reviews oder – für Trustpilot und Trusted Shops/eTrusted – ein offizielles Anbieter-Widget verwenden, das erst nach Klick oder Einwilligung lädt.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -20,28 +20,32 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Verbinden Sie Bewertungsanfragen mit vom Quellplugin bestätigter Nutzung oder Teilnahme und ordnen Sie Bewertungen Produkten zu. Ein Bestellstatus allein genügt nur dann, wenn er im konkreten Ablauf tatsächlich eine erbrachte Leistung bestätigt. Review Captain dedupliziert Anfragen auf ein Erlebnis und einen Empfänger, berücksichtigt Ausschlüsse und Opt-out und protokolliert den Versand.</p>
+<p>Mit Review Captain Pro lösen Sie Bewertungsanfragen über einen von Ihnen festgelegten Bestellstatus aus (Standard: abgeschlossen) und ordnen Bewertungen Produkten zu; mehrere Produkte einer Bestellung landen in einer Anfrage. Wählen Sie einen Status, der im konkreten Ablauf tatsächlich eine erbrachte Leistung bestätigt. Versendet wird erst, wenn Sie eine Versandgrundlage ausdrücklich gewählt haben; Erstattung und Storno stoppen offene Anfragen. HPOS und Block-Checkout werden unterstützt. Review Captain dedupliziert Anfragen auf ein Erlebnis und einen Empfänger, berücksichtigt Ausschlüsse und Opt-out und protokolliert den Versand.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Captain Suite</h2>
+<h2 class="wp-block-heading">Captain Suite (Pro)</h2>
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
 <li><strong>Voucher Captain:</strong> Anfrage nach einer tatsächlichen Gutscheinverwendung, sofern das Ereignis vom Quellplugin bereitgestellt wird.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>Pass Captain:</strong> Anfrage nach bestätigter Teilnahme oder Check-in; Absage, Erstattung und Nichtteilnahme können offene Anfragen ausschließen.</li>
+<li><strong>Pass Captain:</strong> Anfrage nach bestätigtem Check-in bzw. bestätigter Teilnahme, sofern das Ereignis vom Quellplugin bereitgestellt wird; Absage, Erstattung und Nichtteilnahme können offene Anfragen ausschließen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>Affiliate Captain:</strong> Qualitätsauswertungen zu Partnerempfehlungen, ohne Reviews automatisch in Provisionen oder Partnerfreigaben umzuwandeln.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li><strong>Form Captain:</strong> lokale Review-Einreichung über ein Formular; neue Einträge bleiben bis zur Moderation pending und unverified.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li><strong>Course Captain:</strong> Anfrage nach bestätigtem Kursabschluss, sobald Course Captain das Ereignis über einen kompatiblen Vertrag bereitstellt; eine Einschreibung oder ein Kauf allein genügt nicht.</li>
+<li><strong>Workflow Captain:</strong> Empfang der Review-Ereignisse, siehe unten.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Für Kursabschlüsse ist kein eigener Suite-Adapter vorgesehen; Kurs- und Buchungssysteme lassen sich über einen kundenspezifischen Connector anbinden.</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>Review Captain Pro wird separat lizenziert. Details zur Aktivierung und Verlängerung erhalten Käufer nach dem Kauf im Lizenzbereich.</p>
@@ -78,7 +82,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Workflow Captain kann freigegebene Ereignisse wie geplante, versendete oder fehlgeschlagene Anfragen, Moderationsstatus und Opt-out verarbeiten. Über den versionierten Vertrag lassen sich zulässige Anfragen planen oder abbrechen, moderierte Review-Entwürfe anlegen und freigegebene Aggregate lesen. Review Captain bleibt für Versandberechtigung, Einladungsgrenze, Opt-out, Plattformziel und Moderation verantwortlich; Workflow Captain kann diese Regeln nicht umgehen.</p>
+<p>Workflow Captain verarbeitet nach der gemeinsamen Suite-Spezifikation die Ereignisse „Review erstellt“, „Status geändert“ und „Review entfernt“ – ohne Namen, E-Mail-Adressen, Reviewtexte und IP-Adressen. Befehle an Review Captain, etwa zum Planen von Anfragen, gehören nicht zu dieser Anbindung. Review Captain bleibt für Versandberechtigung, Einladungsgrenze, Opt-out, Plattformziel und Moderation verantwortlich; Workflow Captain kann diese Regeln nicht umgehen.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -98,7 +102,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/review-captain/kompatibilitaet/">Kompatibilitätsübersicht</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/review-captain/pro/">Review Captain Pro (in Vorbereitung)</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/review-captain/pro/">Review Captain Pro</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/integrationen/">Alle Integrationen</a></div>
