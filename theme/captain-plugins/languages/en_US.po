@@ -40,7 +40,7 @@ msgstr "Table with the columns %s; scroll horizontally if needed."
 msgid "Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen."
 msgstr "Table; scroll horizontally to see more columns."
 
-#: functions.php:328
+#: functions.php:329
 msgid "Ihre Bestellung"
 msgstr "Your order"
 
