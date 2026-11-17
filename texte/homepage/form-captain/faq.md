@@ -17,7 +17,7 @@ Einträge werden auf der eigenen WordPress-Website in dafür vorgesehenen Tabell
 
 ## Welche Formulare kann ich erstellen?
 
-Sie erstellen Kontakt-, Angebots- und Supportformulare sowie weitere Anfrage-, Newsletter-, Event- und Anmeldeformulare. Die drei Startvorlagen decken Kontakt, Angebot und Support ab; zusätzliche Abläufe gestalten Sie mit dem Editor und den Kernfeldern.
+Sie erstellen Kontakt-, Angebots- und Supportformulare sowie weitere Anfrage-, Event- und Anmeldeformulare. Die drei Startvorlagen decken Kontakt, Angebot und Support ab; zusätzliche Abläufe gestalten Sie mit dem Editor und den Kernfeldern. Eine Newsletter-Anbindung an externe Dienste ist nicht enthalten.
 
 ## Gibt es ein Limit für Formulare oder Einsendungen?
 
@@ -29,7 +29,7 @@ Admin-Benachrichtigungen und optionale Bestätigungen lassen sich im Formular ko
 
 ## Welche Funktionen enthält Form Captain Pro?
 
-Pro enthält mehrstufige Formulare mit sicherem Fortsetzen, geschützte Datei-Uploads, verschachtelte UND-/ODER-Bedingungen, bedingte Bestätigungen und Benachrichtigungsziele, signierte Webhooks mit Wiederholungsprotokoll sowie PDF-Ausgaben aus Einträgen. Suite-Übergaben verwenden dokumentierte Adapter und lösen keine externen Geschäftsaktionen ohne passende Freigabe aus.
+Pro enthält mehrstufige Formulare mit Fortsetzen-Link, geschützte Datei-Uploads, UND-/ODER-Bedingungsgruppen, bedingte Bestätigungen und Benachrichtigungsziele, signierte Webhooks mit automatischen Wiederholungen, PDF-Downloads von Einträgen sowie WooCommerce-Käuferfragebögen je Produkt nach bestätigtem Kauf. Außerdem setzt die Verbindung zu Workflow Captain Pro eine Form-Captain-Pro-Lizenz voraus.
 
 ## Was kostet Form Captain Pro?
 
@@ -37,7 +37,7 @@ Solo kostet 49 € pro Jahr für 1 Live-Website, Studio 99 € für 5 Live-Websi
 
 ## Benötige ich WooCommerce?
 
-Nein. Form Captain ist für eigenständige Formulare gedacht. WooCommerce kann für ausgewählte Shop- und Suite-Abläufe relevant sein, ist aber keine Voraussetzung für den Kern.
+Nein. Form Captain ist für eigenständige Formulare gedacht und greift nicht in WooCommerce ein. WooCommerce (ab Version 11.2) wird nur für die Käuferfragebögen von Form Captain Pro benötigt.
 
 ## Kann ich eigene Systeme anbinden?
 
@@ -45,7 +45,7 @@ Ja. Der versionierte öffentliche Form-Captain-Vertrag ermöglicht separate Word
 
 ## Kann Form Captain mit Workflow Captain arbeiten?
 
-Ja. Workflow Captain kann freigegebene Formulareignisse nach dem Speichern eines Entries verarbeiten. Sensible Felder bleiben standardmäßig ausgeschlossen; ein Workflow-Ausfall verhindert weder die Einsendung noch die Speicherung oder native Benachrichtigung.
+Ja, mit Workflow Captain Pro und einer aktiven Form-Captain-Pro-Lizenz. Workflow Captain verarbeitet Formularereignisse wie einen neuen Eintrag, eine Statusänderung oder einen Benachrichtigungsfehler nach dem Speichern. Freitexte und sensible Felder werden nicht übergeben; ein Workflow-Ausfall verhindert weder die Einsendung noch die Speicherung oder native Benachrichtigung.
 
 ## Funktionieren Suite-Integrationen automatisch?
 
@@ -53,6 +53,6 @@ Nein. Integrationen werden einzeln über dokumentierte Schnittstellen aktiviert.
 
 ## Was passiert bei Lizenzablauf?
 
-Form Captain Free sowie vorhandene Formulare und Einträge bleiben verfügbar. Ablauf oder Deaktivierung der Pro-Lizenz beendet die lizenzgebundenen Pro-Funktionen und Updates gemäß Lizenzvertrag.
+Form Captain Free sowie vorhandene Formulare und Einträge bleiben verfügbar. Ablauf oder Deaktivierung der Pro-Lizenz beendet die lizenzgebundenen Pro-Funktionen und Updates gemäß Lizenzvertrag. Bereits hochgeladene Dateien bleiben abrufbar und löschbar, offene WooCommerce-Fragebögen bleiben beantwortbar, und gespeicherte Pro-Einstellungen werden nicht gelöscht.
 
 [Form Captain Pro ansehen](/form-captain/pro/) · [Dokumentation und Installation](/dokumentation/form-captain/) · [Support](/support/)

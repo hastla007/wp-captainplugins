@@ -11,15 +11,15 @@ Mit Form Captain richten Sie ein Formular direkt in WordPress ein und verwalten 
 
 ## Voraussetzungen
 
-Form Captain setzt WordPress 6.8 oder neuer und PHP 8.5 oder neuer voraus. WooCommerce ist optional (ab Version 8.0), wenn Sie die unterstützten Shop-Ereignisse oder Adapter verwenden. Multisite wird in Version 1.0 nicht unterstützt. Die jeweils getestete Umgebung steht in den Releasehinweisen.
+Form Captain setzt WordPress 6.8 oder neuer und PHP 8.5 oder neuer voraus. WooCommerce ist optional und wird nur für die Käuferfragebögen von Form Captain Pro benötigt (ab Version 11.2). Multisite wird in Version 1.0 nicht unterstützt. Die jeweils getestete Umgebung steht in den Releasehinweisen.
 
 ## Installation und Ersteinrichtung
 
 1. Installieren und aktivieren Sie Form Captain über den WordPress-Plugin-Installer oder das freigegebene ZIP-Paket.
-2. Wählen Sie eine Vorlage für Kontakt, Angebot oder Support.
+2. Folgen Sie der Checkliste „Loslegen“ im Dashboard unter **Form Captain** und wählen Sie eine Vorlage für Kontakt, Angebot oder Support.
 3. Ergänzen Sie Felder, Pflichtangaben, Hilfetexte und Validierungsregeln.
 4. Konfigurieren Sie Admin-Benachrichtigung, optionale Bestätigung und Datenschutz-/Aufbewahrungsregeln.
-5. Fügen Sie das Formular per Gutenberg-Block oder Shortcode in eine Seite ein.
+5. Veröffentlichen Sie das Formular und fügen Sie es mit dem Block „Form Captain“ oder dem Shortcode `[form_captain id="…"]` in eine Seite ein.
 6. Senden Sie eine Testeinsendung ab und prüfen Sie Eintrag, Status und E-Mail-Zustellung.
 
 ## E-Mail-Zustellung prüfen
@@ -28,7 +28,7 @@ WordPress-E-Mail hängt von der Serverkonfiguration ab. Prüfen Sie Absenderdom�
 
 ## Pro-Funktionen aktivieren
 
-Installieren Sie Form Captain Pro (in Vorbereitung) separat, aktivieren Sie den mit Ihrem Kauf bereitgestellten Produktschlüssel und prüfen Sie anschließend die Pro-Funktionen. Lizenz- oder Updateprobleme sollen Ihre Formulare und gespeicherten Einträge nicht löschen.
+Installieren Sie Form Captain Pro separat mit dem ZIP-Paket aus Ihrem Kundenkonto, tragen Sie auf der Lizenzseite im Menü **Form Captain** den mit Ihrem Kauf bereitgestellten Lizenzschlüssel ein und prüfen Sie anschließend die Pro-Funktionen. Für Webhooks aktivieren Sie zusätzlich den Connector „Form Captain Pro: Webhooks“ unter **Form Captain → Integrationen**. Lizenz- oder Updateprobleme löschen Ihre Formulare und gespeicherten Einträge nicht.
 
 ## Vor dem Livegang testen
 

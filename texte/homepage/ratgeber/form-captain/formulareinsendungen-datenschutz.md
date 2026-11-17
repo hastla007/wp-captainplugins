@@ -21,6 +21,6 @@ Begrenzen Sie den Zugriff auf Entries auf zuständige Rollen. Definieren Sie ein
 
 E-Mail-, Captcha-, CRM- und Webhook-Dienste können zusätzliche Daten verarbeiten. Aktivieren Sie sie nur bei Bedarf und dokumentieren Sie den Datenfluss. Ein Captcha- oder Analyseanbieter ist keine unsichtbare Standardabhängigkeit.
 
-Form Captain stellt Entries standardmäßig in der eigenen WordPress-Installation bereit und bietet Werkzeuge für Export, Aufbewahrung und Löschung. Die konkrete rechtliche Bewertung des Formularzwecks bleibt von Ihrer Konfiguration und Ihrem Einsatz abhängig.
+Form Captain stellt Entries standardmäßig in der eigenen WordPress-Installation bereit, speichert keine IP-Adressen und bietet Werkzeuge für Export, Aufbewahrung, Löschung sowie die Erfassung eines Einwilligungswiderrufs. Die konkrete rechtliche Bewertung des Formularzwecks bleibt von Ihrer Konfiguration und Ihrem Einsatz abhängig.
 
 [Form Captain Datenschutzfunktionen](/form-captain/features/) · [Kompatibilität und Datenflüsse](/form-captain/kompatibilitaet/)

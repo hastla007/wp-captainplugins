@@ -16,20 +16,22 @@ Form Captain ist ein WordPress-natives Formularplugin. Die genaue Versionsmatrix
 | WordPress | Formularverwaltung, Editor, Entries und Privacy-Hooks | Version 6.8 oder neuer |
 | PHP | Ausführung des Plugins und Pro-Add-ons | Version 8.5 oder neuer |
 | Datenbank | Speicherung von Formularen und Einsendungen | MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer; ältere Versionen erzeugen eine Warnung |
-| Gutenberg / Block-Editor | Formularblock und Vorschau | WordPress-Block-Editor; Shortcode als Fallback |
-| Klassischer Editor | Formular-Einbettung | Shortcode |
-| WooCommerce | Produktanfragen und optionale Shopkontexte | Optional ab Version 8.0; HPOS und klassischer Bestellspeicher; Checkout-Blocks-Integration nicht in v1.0 |
+| Gutenberg / Block-Editor | Block „Form Captain“ mit Vorschau | WordPress-Block-Editor; Shortcode als Fallback |
+| Klassischer Editor | Formular-Einbettung | Shortcode `[form_captain id="…"]` |
+| WooCommerce | Käuferfragebögen nach dem Kauf (Pro) | Optional ab Version 11.2; HPOS und klassischer Bestellspeicher; Bestellungen aus klassischem und Block-Checkout; Zuordnung im klassischen Produkteditor. Der Kern greift nicht in WooCommerce ein |
 | SMTP-/Mail-Plugins | Versand von Benachrichtigungen | Optional; Zustellung hängt vom Mailserver und Anbieter ab |
 | Captain-Suite-Plugins | Versionierte Form-Aktionen und Übergaben | Verfügbarer Adapter und kompatible Vertragsversion |
 | Multisite | Netzwerkweite Installation | In Version 1.0 nicht unterstützt |
 
 ## Theme und Pagebuilder
 
-Formulare verwenden responsives Frontend-Markup und Theme-erbliche Farben. Gutenberg-Block und Shortcode bieten Einbettungswege. Pagebuilder-Integrationen werden nur ausgewiesen, wenn die jeweilige Version praktisch geprüft ist.
+Formulare verwenden responsives Frontend-Markup und übernehmen wahlweise Schrift und Farben des Themes oder einen schlichten Basisstil mit Akzentfarbe. Gutenberg-Block und Shortcode bieten Einbettungswege; Pagebuilder binden Formulare über den Shortcode ein. CSS und JavaScript werden nur auf Seiten mit Formular geladen.
+
+Formulare enthalten keinen WordPress-Nonce und sind damit für Seiten-Caches geeignet; die REST-Routen unter `/wp-json/form-captain/v1/` sollten vom Cache ausgenommen bleiben. Ohne JavaScript werden Formulare über `admin-post.php` abgesendet.
 
 ## Datenschutz und externe Dienste
 
-Der Kern lädt keine verpflichtenden externen Form-Skripte. Captcha und Drittanbieterintegrationen werden ausdrücklich aktiviert und in der Datenschutzhinweis- und Datenflussdokumentation beschrieben. Entries bleiben standardmäßig auf der WordPress-Website.
+Der Kern lädt keine externen Skripte oder Schriften. Captcha-Erweiterungen und Drittanbieterintegrationen werden ausdrücklich aktiviert und in der Datenschutzhinweis- und Datenflussdokumentation beschrieben. Entries bleiben standardmäßig auf der WordPress-Website.
 
 ## Versions- und Teststatus
 

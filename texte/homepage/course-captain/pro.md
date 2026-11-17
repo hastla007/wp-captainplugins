@@ -7,7 +7,7 @@ focus_keyphrase: Course Captain Pro
 
 # Course Captain Pro: Schulungen professionell organisieren und verkaufen
 
-Wenn aus einzelnen Kursen ein Schulungsangebot wird, ergänzt Course Captain Pro den kostenlosen Kern um Lernpfade, zeitgesteuerte Freigaben, erweiterte Prüfungen, gestaltbare Zertifikate, Gruppenverwaltung und Auswertungen. Kurse lassen sich über WooCommerce verkaufen und mit der Captain Suite verbinden.
+Wenn aus einzelnen Kursen ein Schulungsangebot wird, ergänzt Course Captain Pro den kostenlosen Kern um Lernpfade, erweiterte zeitgesteuerte Freigaben, Lösungserklärungen, erweiterte Prüfungen, gestaltbare Zertifikate, Gruppenverwaltung und Auswertungen. Kurse lassen sich über WooCommerce verkaufen und mit der Captain Suite verbinden.
 
 ## Funktionen für Akademien, Unternehmen und Kursanbieter
 

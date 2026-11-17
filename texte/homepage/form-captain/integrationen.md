@@ -11,11 +11,11 @@ Form Captain speichert eine Einsendung zuerst als WordPress-Eintrag. Optionale I
 
 ## WooCommerce
 
-WooCommerce ergänzt Produktanfragen und ausgewählte Shopkontexte. Der Form-Captain-Kern funktioniert ohne WooCommerce; der optionale Adapter unterstützt HPOS und klassischen Bestellspeicher. Eine Checkout-Blocks-Integration gehört nicht zum ersten Release.
+Der Form-Captain-Kern funktioniert ohne WooCommerce und greift nicht in Warenkorb, Checkout oder Bestellungen ein. Form Captain Pro ergänzt Käuferfragebögen: Sie ordnen einem Produkt ein Formular zu, das Kundinnen und Kunden nach bestätigter Zahlung je Bestellposition ausfüllen. Unterstützt werden HPOS und der klassische Bestellspeicher sowie Bestellungen aus klassischem und Block-Checkout; die Zuordnung erfolgt im klassischen Produkteditor. Checkout-Felder, Zahlungen und Bestellstatus bleiben unverändert.
 
 ## Pass Captain
 
-Veranstalter können ein Form-Captain-Formular als Anmeldung oder für Helfer-/Ausstelleranfragen in den Eventablauf einbinden. Ein Form-Eintrag allein reserviert keinen Platz und stellt kein Ticket aus.
+Veranstalter wählen im Event von Pass Captain ein Form-Captain-Formular als Anmeldung oder für Helfer-/Ausstelleranfragen aus; der Eventbezug wird signiert übergeben. Eine Anfrage erscheint im Event als „zu prüfen“. Ein Form-Eintrag allein reserviert keinen Platz und stellt kein Ticket aus; gebucht wird nur durch Ihr Personal.
 
 ## Voucher Captain
 
@@ -27,21 +27,21 @@ Ein Partnerbewerbungsformular kann Angaben zur Prüfung erfassen. Eine Übergabe
 
 ## Review Captain
 
-Mit Review Captain Pro (in Vorbereitung) kann ein Formular eine lokale Review zur Moderation übergeben. Feldzuordnung und Herkunft werden ausgewiesen. Neue Bewertungen bleiben pending und unverified; eine Review-Anfrage wird nicht automatisch aus einer Formulareinsendung versendet.
+Mit Review Captain Pro kann ein Formular eine lokale Review zur Moderation übergeben. Feldzuordnung und Herkunft werden ausgewiesen. Neue Bewertungen bleiben pending und unverified; eine Review-Anfrage wird nicht automatisch aus einer Formulareinsendung versendet.
 
 ## Course Captain
 
-Anmeldeformulare, Kursbewerbungen, Feedbackbögen und Tutoraufgaben lassen sich mit Course Captain verbinden. Form Captain bleibt Eigentümer der Einsendung; Course Captain vergibt einen Kurszugang erst nach einer geprüften Übergabe. Die Verbindung steht bereit, sobald beide Plugins den passenden Vertrag in kompatibler Version veröffentlichen.
+Anmeldeformulare, Kursbewerbungen, Feedbackbögen und Tutoraufgaben lassen sich mit Course Captain verbinden. Form Captain bleibt Eigentümer der Einsendung; Course Captain vergibt einen Kurszugang erst nach einer geprüften Übergabe.
 
 ## Technischer Integrationsstatus
 
-Der öffentliche Form-Captain-Vertrag ermöglicht versionierte Integrationen. Separate WordPress-Connector-Plugins können projektspezifische Aktionen ergänzen, ohne den Form-Captain-Kern zu verändern. Entwicklerdokumentation und ein Referenz-Connector zeigen, wie Aktionen, Feldfreigaben und Wiederholungen umgesetzt werden. Administratoren aktivieren Connectoren ausdrücklich und wählen pro Formular die freigegebenen Felder und Aktionen. Externe Ausführung erfolgt nach dem Speichern des Eintrags; Fehler lassen den Entry bestehen und sind nachvollziehbar.
+Der öffentliche Form-Captain-Vertrag ermöglicht versionierte Integrationen. Separate WordPress-Connector-Plugins können projektspezifische Aktionen ergänzen, ohne den Form-Captain-Kern zu verändern. Entwicklerdokumentation und ein Referenz-Connector zeigen, wie Aktionen, Feldfreigaben und Wiederholungen umgesetzt werden. Administratoren aktivieren Connectoren unter **Form Captain → Integrationen** ausdrücklich, prüfen sie mit einem Testlauf und wählen pro Formular die freigegebenen Felder und Aktionen. Wird ein Connector deaktiviert, pausieren seine offenen Aufträge und laufen nach erneuter Aktivierung weiter. Externe Ausführung erfolgt nach dem Speichern des Eintrags; Fehler lassen den Entry bestehen und sind nachvollziehbar.
 
-Suite- und Projektverbindungen zeigen Plugin- und Vertragsversion, Feldzuordnung, letzten Lauf, Queue-Status und Fehler. Wiederholungen verwenden Idempotenz, damit sie keine doppelten Geschäftsaktionen auslösen. Kundenspezifische Connectoren sind eigenständige Erweiterungen mit eigener Projekt- und Supportgrenze; Form Captain enthält keine individuelle CRM-, Kurs- oder ERP-Logik.
+Suite- und Projektverbindungen zeigen Plugin- und Vertragsversion, Feldzuordnung, letzten Lauf, Queue-Status und Fehler mit dem nächsten Schritt. Wiederholungen verwenden Idempotenz, damit sie keine doppelten Geschäftsaktionen auslösen. Kundenspezifische Connectoren sind eigenständige Erweiterungen mit eigener Projekt- und Supportgrenze; Form Captain enthält keine individuelle CRM-, Kurs- oder ERP-Logik.
 
 ## Workflow Captain
 
-Verbinden Sie freigegebene Formulareignisse mit Workflow Captain, etwa einen abgeschlossenen Eintrag, eine Statusänderung oder einen Benachrichtigungsfehler. Workflows erhalten nur ausdrücklich freigegebene, nicht sensible Felder und laufen nach dem Speichern des Entries. Sichere Aktionen können Einträge markieren, den Status ändern oder eine genehmigte Suite-Übergabe starten. Zahlungen, Ticket- oder Gutscheinausgabe, Partnerfreigaben und Review-Veröffentlichungen erfordern weiterhin eine eigene, berechtigte Aktion im zuständigen Plugin.
+Mit Workflow Captain Pro und einer aktiven Form-Captain-Pro-Lizenz verbinden Sie Formularereignisse mit Workflows: Formular angelegt oder geändert, Eintrag angelegt, Status geändert oder gelöscht, Einträge importiert, Einwilligung widerrufen und Benachrichtigung fehlgeschlagen. Die Ereignisse entstehen nach dem Speichern. Workflows erhalten keine Freitexte und keine sensiblen Felder, Antworten nur aus ausdrücklich freigegebenen Auswahl-, Zahlen- und Einwilligungsfeldern. Statuswechsel, zusätzliche Benachrichtigungen, Anonymisierung nach Frist und bestätigte Übergaben stellen Sie direkt als Formularaktion in Form Captain ein. Zahlungen, Ticket- oder Gutscheinausgabe, Partnerfreigaben und Review-Veröffentlichungen erfordern weiterhin eine eigene, berechtigte Aktion im zuständigen Plugin.
 
 [Kompatibilität](/form-captain/kompatibilitaet/) · [Review Captain](/review-captain/) · [Alle Captain-Integrationen](/integrationen/)
 
