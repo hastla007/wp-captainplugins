@@ -11,10 +11,10 @@ Pass Captain verwaltet Events, Tickets, Servicebuchungen, Wartelisten und Einlas
 
 ## Voraussetzungen
 
-- WordPress 6.4 oder neuer
+- WordPress 7.0 oder neuer
 - PHP 8.5 oder neuer
 - MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
-- WooCommerce nur, wenn Sie den WooCommerce-Checkout verwenden
+- WooCommerce 11.2.2 oder neuer nur, wenn Sie den WooCommerce-Checkout verwenden
 
 Erstellen Sie vorab ein Backup. Für neue Event- und Zahlungsabläufe empfiehlt sich zunächst eine Staging-Website.
 
@@ -26,7 +26,7 @@ Laden Sie das Pass-Captain-Paket aus [Download-Quelle ergänzen] herunter. Gehen
 
 ## 2. Eventseite veröffentlichen
 
-Erstellen Sie eine WordPress-Seite für Ihre Events. Fügen Sie den Pass-Captain-Eventblock ein oder nutzen Sie den Shortcode [wp_pass_captain_events]. Für einen Kalender können Sie den Kalenderblock oder [wp_pass_captain_calendar] verwenden.
+Erstellen Sie eine WordPress-Seite für Ihre Events. Fügen Sie den Pass-Captain-Eventblock ein oder nutzen Sie den Shortcode [wpcap_events]. Für einen Kalender können Sie den Kalenderblock oder [wpcap_calendar] verwenden. Die älteren Namen [wp_pass_captain_events] und [wp_pass_captain_calendar] funktionieren weiter.
 
 > **Screenshot-Platzhalter 2 – Eventblock im Editor:** Zeigen Sie den Gutenberg-Editor mit Eventliste oder Kalender und eine Vorschau mit neutralen Beispieldaten. Keine echten Teilnehmer- oder Bestelldaten zeigen.
 
@@ -38,22 +38,22 @@ Legen Sie im Pass-Captain-Bereich ein Event mit Titel, Beschreibung, Ort, Zeit u
 
 ## 4. Reservierung und Zahlung testen
 
-Definieren Sie Reservierungszeit und Verkaufsregeln. Sie können kostenlose Bestellungen anbieten oder Zahlungen über Stripe, PayPal oder Mollie abwickeln. Alternativ lässt sich WooCommerce für den Checkout anbinden. Prüfen Sie im Test die Bestellbestätigung, Ticketzustellung und den Umgang mit Storno oder Erstattung.
+Definieren Sie Reservierungszeit und Verkaufsregeln. Sie können kostenlose Bestellungen anbieten oder Zahlungen per Überweisung, Stripe, PayPal oder Mollie abwickeln. Alternativ lässt sich WooCommerce für den Checkout anbinden. Prüfen Sie im Test die Bestellbestätigung, Ticketzustellung und den Umgang mit Storno oder Erstattung.
 
 > **Screenshot-Platzhalter 4 – Checkout und Zahlungswahl:** Zeigen Sie eine Testbuchung mit Preis und gewähltem Zahlungsweg. Keine echten Zahlungsdaten oder Transaktionskennungen einblenden.
 
 ## 5. Ticket und Einlass vorbereiten
 
-Erstellen Sie eine Seite für den Scanner und fügen Sie den Shortcode [wp_pass_captain_scanner] ein. Weisen Sie berechtigte Mitarbeitende dem Event oder einzelnen Terminen zu. Prüfen Sie QR-/PDF-Ticket, Check-in, Check-out und Wiedereinlass. Für Offlinebetrieb richten Sie den installierbaren Offline-Scanner gemäß der technischen Dokumentation ein.
+Erstellen Sie eine Seite für den Scanner und fügen Sie den Shortcode [wpcap_scanner] ein (älterer Name: [wp_pass_captain_scanner]). Scanner-Apps koppeln Sie per QR-Code unter **Pass Captain → Scanner-Geräte**. Weisen Sie berechtigte Mitarbeitende dem Event oder einzelnen Terminen zu. Prüfen Sie QR-/PDF-Ticket, Check-in, Check-out und Wiedereinlass. Für Offlinebetrieb richten Sie den installierbaren Offline-Scanner gemäß der technischen Dokumentation ein.
 
 > **Screenshot-Platzhalter 5 – Scanneransicht:** Zeigen Sie einen Beispiel-QR-Code und den erfolgreichen Check-in-Status auf einem Testgerät. Der Code muss ungültig oder anonymisiert sein; keine Teilnehmerliste sichtbar lassen.
 
 ## Servicebuchungen einrichten
 
-Für Kurse oder Verleih definieren Sie Ressourcen, Zeitfenster, Dauer, Puffer und Buchungsregeln. Testen Sie Umbuchung, Stornofrist und Warteliste mit einem ausgebuchten Beispieltermin.
+Für Kurse oder Verleih definieren Sie Ressourcen, Zeitfenster, Dauer, Puffer und Buchungsregeln. Die öffentliche Buchungsseite binden Sie mit dem Block „Pass Captain Terminbuchung“ oder dem Shortcode [wpcap_service_booking event="ID"] ein. Testen Sie Umbuchung, Stornofrist und Warteliste mit einem ausgebuchten Beispieltermin.
 
 > **Screenshot-Platzhalter 6 – Ressourcen und Warteliste:** Zeigen Sie eine Ressource mit Verfügbarkeit, Pufferzeit und einer anonymisierten Wartelistenposition.
 
 [Features](/pass-captain/features/) · [Pass Captain Pro](/pass-captain/pro/) · [FAQ](/pass-captain/faq/) · [Support](/support/)
 
-**Captain-Pro-Hinweis:** Das Pass-Captain-Pro-Add-on benötigt WordPress 6.5+; für die Kombination gilt wegen des Kerns weiterhin PHP 8.5+. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).
+**Captain-Pro-Hinweis:** Das Pass-Captain-Pro-Add-on benötigt wie der Kern WordPress 7.0+ und PHP 8.5+. WooCommerce bleibt optional. [Vollständige Kompatibilitätsmatrix](/kompatibilitaet/).
