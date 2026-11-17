@@ -18,4 +18,4 @@ Finden Sie Anleitungen für Einrichtung, Profile, Review-Verwaltung, Widgets und
 
 ## Datenschutz und Quellenhinweise
 
-Externe Reviews werden mit Plattformquelle und Originalrating verwaltet. Prüfen Sie Anbieterbedingungen, Datenaufbewahrung, Einwilligung und Löschprozesse vor dem Aktivieren von Sync oder E-Mail-Automationen.
+Externe Reviews werden mit Plattformquelle und Originalrating verwaltet. Der kostenlose Kern stellt keine Verbindung zu externen Diensten her. Standardmäßig bleiben bei der Deinstallation alle Daten erhalten, sofern Sie die Löschoption unter „Einstellungen › Datenschutz & Aufbewahrung“ nicht aktivieren. Prüfen Sie Anbieterbedingungen, Datenaufbewahrung, Einwilligung und Löschprozesse vor dem Aktivieren von Sync oder E-Mail-Automationen.

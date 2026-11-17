@@ -23,7 +23,7 @@ Schreiben Sie zu jeder Lektion zwei bis drei Fragen mit Erklärung. Eine zentral
 
 ## Zugang und Veröffentlichung planen
 
-Entscheiden Sie, ob der Kurs öffentlich, nach kostenloser Anmeldung oder nur für freigeschaltete Personen verfügbar ist. Testen Sie den vollständigen Ablauf mit einem Testkonto auf dem Smartphone, bevor Sie den Kurs bekannt machen.
+Entscheiden Sie, ob sich Lernende kostenlos selbst anmelden oder nur freigeschaltete Personen Zugang erhalten und ob Gäste vorab einen Schnupperbereich sehen. Testen Sie den vollständigen Ablauf mit einem Testkonto auf dem Smartphone, bevor Sie den Kurs bekannt machen.
 
 Course Captain bildet diesen Ablauf direkt im WordPress-Admin ab: Kurs-Builder mit Modulen und Lektionen, Fragenbank, Quiz und Prüfungsmodus. Der kostenlose Kern begrenzt weder Kurse noch Lernende.
 

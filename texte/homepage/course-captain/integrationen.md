@@ -11,7 +11,7 @@ Course Captain funktioniert eigenständig. Integrationen sind optional und folge
 
 ## WooCommerce
 
-Mit Course Captain Pro (in Vorbereitung) verbinden Sie WooCommerce-Produkte und -Variationen mit Kursen, Lernpfaden und Zugriffsdauern. Nach bestätigter Zahlung wird der Kurszugang freigeschaltet. Erstattung, Storno oder Rücknahme entziehen genau diesen gekauften Zugang; manuelle oder anderweitig bestehende Freigaben bleiben gültig. Lernende sehen ihre Kurse unter **Mein Konto → Meine Kurse**.
+Mit Course Captain Pro verbinden Sie WooCommerce-Produkte und -Variationen mit Kursen, Lernpfaden und Zugriffsdauern. Nach bestätigter Zahlung wird der Kurszugang freigeschaltet. Erstattung, Storno oder Rücknahme entziehen genau diesen gekauften Zugang; manuelle oder anderweitig bestehende Freigaben bleiben gültig. Lernende sehen ihre Kurse unter **Mein Konto → Meine Kurse**.
 
 ## Voucher Captain
 
@@ -19,7 +19,7 @@ Kursgutscheine verkaufen und einlösen: Voucher Captain verwaltet Code, Guthaben
 
 ## Pass Captain
 
-Live-Trainings, Workshops und Präsenztermine ergänzen den Online-Kurs. Pass Captain verwaltet Buchung, Ticket und Check-in; Course Captain berücksichtigt den Termin im Lernfortschritt.
+Live-Trainings, Workshops und Präsenztermine ergänzen den Online-Kurs. Pass Captain verwaltet Buchung, Ticket und Check-in; Course Captain kann aus einem gültigen Ticket einen Kurs- oder Kohortenzugang ableiten; Storno oder Erstattung des Tickets beenden nur diesen Zugang. Ein Check-in zählt nicht automatisch als Kursabschluss.
 
 ## Form Captain
 
@@ -35,7 +35,7 @@ Partner werben Kursteilnehmer: Affiliate Captain ordnet Kursverkäufe Partnern z
 
 ## Workflow Captain
 
-Ereignisse wie Einschreibung, Lektionsabschluss, bestandene Prüfung, Kursabschluss oder ablaufender Zugang lösen Workflows aus – etwa Hinweise, Erinnerungen oder Folgeaktionen. Workflow Captain orchestriert, Course Captain bleibt für Status und Ergebnisse zuständig.
+Ereignisse wie Einschreibung, Lektionsabschluss, bestandene Prüfung, Kursabschluss, beendeter Zugang oder ausgestellter Nachweis lösen Workflows aus – etwa Hinweise, Erinnerungen oder Folgeaktionen. Workflow Captain orchestriert, Course Captain bleibt für Status und Ergebnisse zuständig.
 
 ## Technischer Integrationsstatus
 
@@ -43,4 +43,4 @@ Alle Integrationen nutzen öffentliche, versionierte Schnittstellen und vermeide
 
 [Screenshot-Platzhalter: Integrationsseite im Admin mit erkannten Plugins, Verbindungsstatus und letzter Synchronisierung zeigen; nur Testdaten verwenden.]
 
-[Course Captain Pro (in Vorbereitung)](/course-captain/pro/) · [Kompatibilität](/course-captain/kompatibilitaet/) · [Alle Integrationen der Captain Suite](/integrationen/)
+[Course Captain Pro](/course-captain/pro/) · [Kompatibilität](/course-captain/kompatibilitaet/) · [Alle Integrationen der Captain Suite](/integrationen/)

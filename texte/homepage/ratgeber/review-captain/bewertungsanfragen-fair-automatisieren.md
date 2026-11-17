@@ -21,6 +21,6 @@ Leiten Sie zufriedene Kunden nicht zu öffentlichen Plattformen und unzufriedene
 
 Übermitteln Sie nur Angaben, die für die Anfrage nötig sind. Prüfen Sie Sprache, Empfänger, Opt-out, Ausschlusszustände, Versandprotokoll und Anbieterbedingungen. Bei Nutzung eines externen E-Mail-Dienstes muss der Datenfluss transparent sein.
 
-Review Captain Pro (in Vorbereitung) unterstützt Regelsteuerung für geeignete Ereignisse und dokumentiert geplante, gesendete, übersprungene oder fehlgeschlagene Anfragen.
+Review Captain Pro unterstützt Regelsteuerung für geeignete Ereignisse und dokumentiert geplante, gesendete, übersprungene oder fehlgeschlagene Anfragen.
 
-[Review-Anfragen mit Review Captain (in Vorbereitung)](/review-captain/pro/) · [Datenschutz und Support](/support/)
+[Review-Anfragen mit Review Captain](/review-captain/pro/) · [Datenschutz und Support](/support/)

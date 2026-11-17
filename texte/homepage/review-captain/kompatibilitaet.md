@@ -7,20 +7,22 @@ focus_keyphrase: Review Captain Kompatibilität
 
 # Review Captain: Kompatibilität und Plattformzugänge
 
-Review Captain ist für WordPress-Websites konzipiert. Review Captain Pro (in Vorbereitung) verbindet Bewertungsquellen über deren offizielle APIs, OAuth-Verfahren oder freigegebene Widgets. Verfügbare Funktionen hängen vom Anbieterzugang, Kontotyp und der Berechtigung des Websitebetreibers ab.
+Review Captain ist für WordPress-Websites konzipiert. Review Captain Pro verbindet Bewertungsquellen über deren offizielle APIs mit Ihren eigenen Zugängen oder über offizielle Anbieter-Widgets. Verfügbare Funktionen hängen vom Anbieterzugang, Kontotyp und der Berechtigung des Websitebetreibers ab.
 
 ## Kompatibilitätsübersicht
 
 | System oder Quelle | Verwendung | Voraussetzung |
 |---|---|---|
 | WordPress | Core-Plugin, lokale Reviews, Blöcke und Shortcodes | Mindestversion gemäß aktuellem Releasehinweis |
-| WooCommerce | Produktzuordnung und Bewertungsanfragen nach Shop-Ereignissen | Pro; getestete Versionen und Checkout-Modi gemäß Kompatibilitätsmatrix |
-| Google Business Profile | Bewertungen verwalteter Unternehmensstandorte synchronisieren | Pro; berechtigtes und verifiziertes Unternehmensprofil, API-Zugriff |
-| Trustpilot | Bewertungen und offizielle Widgets/Profilangaben verwenden | Pro; API-/Tarifberechtigung oder freigegebener Widgetzugang |
-| Trusted Shops / eTrusted | Review-Kanäle verbinden oder offizielles Widget einsetzen | Pro; berechtigtes Konto und verfügbare API-/Widgetrechte |
+| Elementor | Natives Widget „Review Captain“ (Bewertungen, Formular, Profil-Button) | Elementor aktiv; andere Page-Builder über Shortcode |
+| Yoast SEO | Strukturierte Daten zulässiger lokaler Reviews im Yoast-Graph | Yoast SEO ab 26.0; sonst eigene JSON-LD-Ausgabe |
+| WooCommerce | Produktzuordnung und Bewertungsanfragen nach Shop-Ereignissen | Pro; HPOS sowie klassischer und Block-Checkout; Versionen gemäß Kompatibilitätsmatrix |
+| Google Business Profile | Bewertungen verwalteter Unternehmensstandorte synchronisieren | Pro; verifiziertes Unternehmensprofil, eigenes Google-Cloud-Projekt mit freigeschalteten Business-Profile-APIs |
+| Trustpilot | Bewertungen synchronisieren oder TrustBox einbinden | Pro; API-/Tarifberechtigung oder freigegebener Widgetzugang |
+| Trusted Shops / eTrusted | Review-Kanäle verbinden oder Trustbadge/eTrusted-Widget einsetzen | Pro; berechtigtes Konto und verfügbare API-/Widgetrechte |
 | Apple App Store | Rezensionen eigener Apps anzeigen und synchronisieren | Pro; passende App-Store-Connect-Ressource und API-Berechtigung |
-| Google Play | Rezensionen eigener Apps anzeigen und synchronisieren | Pro; Play-Console-Zugriff auf die App |
-| Captain-Suite-Plugins | Ereignisse und lokale Review-Eingaben verbinden | Pro-Adapter und kompatible, dokumentierte Plugin-Verträge |
+| Google Play | Rezensionen eigener Apps anzeigen und synchronisieren | Pro; Play-Console-Zugriff und Dienstkonto für die App; die API liefert nur aktuelle Rezensionen |
+| Captain-Suite-Plugins | Voucher, Pass, Form, Affiliate und Workflow Captain anbinden | Pro-Adapter und kompatible, dokumentierte Plugin-Verträge |
 
 ## Datenzugriff und Anbieterbedingungen
 

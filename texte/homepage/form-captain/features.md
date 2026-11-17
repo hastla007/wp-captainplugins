@@ -11,33 +11,39 @@ Form Captain unterstützt den gesamten Basisablauf vom Formularentwurf bis zur b
 
 ## Formulare visuell zusammenstellen
 
-Starten Sie mit den drei Vorlagen Kontakt, Angebotsanfrage und Support. Für weitere Einsatzbereiche erstellen Sie eigene Formulare im visuellen Editor mit Feldliste, Reihenfolge, Einstellungen, Vorschau und Speichern. Zu den Feldern zählen Text, Absatz, E-Mail, Telefon, Zahl, Auswahl, Checkbox, Optionsfeld, Datum, Überschrift/Hinweis, versteckte Werte und Einwilligung.
+Starten Sie mit den drei Vorlagen Kontakt, Angebotsanfrage und Support. Für weitere Einsatzbereiche erstellen Sie eigene Formulare unter **Form Captain → Formulare** im visuellen Editor mit Feldpalette, Reihenfolge per Ziehen oder Tastatur, Feldeinstellungen, Vorschau (Desktop/Mobil) und Speichern. Zu den Feldern zählen einzeiliger Text, Absatz, E-Mail, Telefon, Zahl, Auswahlliste (optional mit Mehrfachauswahl), Checkboxen, Optionsfelder, Datum, Überschrift/HTML-Hinweis, versteckte Werte und Einwilligung. Felder lassen sich als „sensibel“ markieren; sie erscheinen dann standardmäßig weder in E-Mails noch in Integrationen.
+
+Formulare durchlaufen die Status Entwurf, veröffentlicht, pausiert und archiviert. Jede Veröffentlichung erzeugt eine feste Version, sodass ältere Einträge mit ihren ursprünglichen Feldern lesbar bleiben. Formulare lassen sich als JSON exportieren und importieren; Einträge sind darin nie enthalten.
 
 ## Validierung und barrierearme Einbettung
 
-Serverseitige Validierung prüft Pflichtfelder und Werte. Einfache bedingte Feldanzeige passt das Formular an Antworten an. Gutenberg-Block und Shortcode ermöglichen die Einbettung in WordPress-Seiten. Responsives Markup orientiert sich an den Theme-Farben und lädt keine zwingenden externen Skripte oder Fonts.
+Serverseitige Validierung prüft Pflichtfelder und Werte. Einfache bedingte Feldanzeige (eine Regel je Feld, z. B. „anzeigen, wenn Feld X gleich Y“) passt das Formular an Antworten an. Der Block „Form Captain“ und der Shortcode `[form_captain id="…"]` ermöglichen die Einbettung in WordPress-Seiten. Formulare funktionieren auch ohne JavaScript und sind für Seiten-Caches geeignet. Responsives, barrierearmes Markup mit sichtbaren Labels und verknüpften Fehlermeldungen orientiert sich an den Theme-Farben und lädt keine externen Skripte oder Fonts.
 
 ## E-Mail-Benachrichtigungen und Bestätigung
 
-Konfigurieren Sie Empfängeradresse, Antwortadresse, Betreff und Feldzuordnung für Admin-Nachrichten. Eine Bestätigung an die absendende Person kann optional aktiviert werden. Form Captain weist auf Absender- und Zustellungsprobleme hin; für zuverlässigen Versand kann ein SMTP-Dienst erforderlich sein.
+Konfigurieren Sie Empfängeradresse, Antwortadresse, Betreff mit Platzhaltern und Feldauswahl für Admin-Nachrichten. Eine Bestätigung an die absendende Person kann optional aktiviert werden. Nach dem Absenden zeigt das Formular eine Meldung oder leitet auf eine Seite Ihrer Website weiter. E-Mails werden nach dem Speichern über eine Warteschlange versendet und bei Fehlern bis zu achtmal wiederholt. Form Captain weist auf Absender- und Zustellungsprobleme hin und bietet eine Testmail; für zuverlässigen Versand kann ein SMTP-Dienst erforderlich sein.
 
 ## Einträge direkt im WordPress-Admin
 
-Einsendungen werden persistent in eigenen Tabellen gespeichert. Suche, Filter, Status (neu, gelesen, archiviert, Spam), Detailansicht, interne Notiz, Papierkorb und CSV-Export unterstützen die tägliche Bearbeitung. Rechte und Berechtigungsprüfung schützen Einträge und Exporte.
+Einsendungen werden persistent in eigenen Tabellen gespeichert. Suche, Filter, Status (neu, gelesen, archiviert, Spam), Sammelaktionen, Detailansicht mit Versandstatus, interne Notizen, Papierkorb und CSV-Export mit Spaltenauswahl unterstützen die tägliche Bearbeitung. Eine Rollen- und Rechte-Matrix legt fest, wer Formulare verwaltet, Einträge liest, bearbeitet, exportiert oder löscht. IP-Adressen werden nicht gespeichert.
+
+Bestehende Formulare aus einem verbreiteten Shortcode-Formularformat übernehmen Sie mit Vorschau und Konvertierungsbericht als Entwurf. Alt-Einträge importieren Sie aus einer CSV-Datei mit Spaltenzuordnung, Trockenlauf und der Möglichkeit, einen Import innerhalb von 7 Tagen rückgängig zu machen.
 
 ## Spamschutz und Datenschutzwerkzeuge
 
-Honeypot, Mindest-Ausfüllzeit, Rate-Limit und einfache Blocklisten bilden den Basisspamschutz. Captcha-Anbieter sind optional und müssen bewusst aktiviert werden. Datenexport, Löschung, Aufbewahrungsregeln und WordPress-Privacy-Hooks unterstützen den verantwortungsvollen Umgang mit Formulardaten.
+Honeypot, Mindest-Ausfüllzeit, Rate-Limit und eine einfache Blockliste für Begriffe und E-Mail-Domains bilden den Basisspamschutz ohne Drittanbieter. Externe Captcha-Anbieter lassen sich über Erweiterungen ergänzen und müssen nach Anzeige von Anbieter und Datenfluss bewusst aktiviert werden. Datenexport, Löschung, Aufbewahrungsfristen (90 Tage, 12 Monate oder manuell), Einwilligungsnachweis und -widerruf sowie die WordPress-Privacy-Werkzeuge unterstützen den verantwortungsvollen Umgang mit Formulardaten.
+
+Systemstatus, Website-Zustand und WP-CLI-Befehle (`wp form-captain`) zeigen Warteschlange, Mailfehler und Cron-Status, ohne Formularinhalte preiszugeben.
 
 ## Pro-Workflows
 
-Form Captain Pro (in Vorbereitung) ergänzt mehrstufige Formulare mit Fortschritt und sicherem Fortsetzen, geschützte Uploads mit Typ- und Größenlimits sowie verschachtelte UND-/ODER-Bedingungen. Steuern Sie Bestätigungen und Benachrichtigungsziele anhand der Antworten. Serverseitige Validierung prüft die Regeln unabhängig von der Browserdarstellung. Ein Integrations- und Fehlerprotokoll macht Übergaben nachvollziehbar und hilft beim gezielten Wiederholen fehlgeschlagener Aktionen.
+Form Captain Pro ergänzt mehrstufige Formulare mit Fortschritt und Fortsetzen-Link, geschützte Uploads mit Typ- und Größenlimits sowie UND-/ODER-Bedingungsgruppen. Steuern Sie Bestätigungen und Benachrichtigungsziele anhand der Antworten. Serverseitige Validierung prüft die Regeln unabhängig von der Browserdarstellung. Für WooCommerce ordnen Sie Produkten einen Käuferfragebogen zu, den Kundinnen und Kunden nach bestätigtem Kauf ausfüllen.
 
-Webhooks übertragen freigegebene Felder mit Signatur, Idempotenz, Zeitlimits, Wiederholungen und Ausführungsprotokoll. PDF-Ausgaben nutzen Vorlagen und ausgewählte Entry-Felder. Datei- und PDF-Zugriffe folgen den WordPress-Berechtigungen und Datenschutzregeln.
+Webhooks übertragen zugeordnete Felder an öffentliche HTTPS-Ziele mit Signatur, Idempotenz, Zeitlimit, Wiederholungen und Jobstatus. Einträge lassen sich als PDF mit festem Layout herunterladen. Datei- und PDF-Zugriffe folgen den WordPress-Berechtigungen und Datenschutzregeln.
 
 ## Schnittstellen statt Datenbankkopplung
 
-Die Suite-Integrationen nutzen versionierte öffentliche Verträge. Form-Einsendungen können über den passenden Adapter mit Pass Captain, Voucher Captain, Affiliate Captain, Review Captain oder Workflow Captain verbunden werden. Workflow-Ereignisse entstehen nach dem Speichern; nur freigegebene, nicht sensible Felder werden weitergegeben. Externe Aktionen erfolgen getrennt von der Speicherung des Eintrags und mit nachvollziehbarem Status; Buchung, Ausgabe, Partnerfreigabe und Review-Veröffentlichung werden nicht allein durch eine Formulareinsendung ausgelöst.
+Die Suite-Integrationen nutzen versionierte öffentliche Verträge. Form-Einsendungen können über den passenden Adapter mit Pass Captain, Voucher Captain, Affiliate Captain oder Review Captain Pro verbunden werden. Workflow Captain Pro erhält mit einer Form-Captain-Pro-Lizenz Ereignisse nach dem Speichern; nur freigegebene, nicht sensible Werte werden weitergegeben. Externe Aktionen erfolgen getrennt von der Speicherung des Eintrags; eine Jobliste unter **Form Captain → Integrationen** zeigt Status und Fehler und erlaubt das gezielte Wiederholen. Eingebaute Aktionen senden eine zusätzliche Admin-Benachrichtigung, setzen den Eintragsstatus, anonymisieren Einträge nach einer Frist oder bereiten eine Übergabe vor, die erst nach manueller Bestätigung ausgeführt wird; Buchung, Ausgabe, Partnerfreigabe und Review-Veröffentlichung werden nicht allein durch eine Formulareinsendung ausgelöst.
 
 [Form Captain Pro vergleichen](/form-captain/pro/) · [Dokumentation](/dokumentation/form-captain/) · [Häufige Fragen](/form-captain/faq/)
 

@@ -11,7 +11,7 @@ Review Captain bringt eigene Kundenstimmen und extern veröffentlichte Bewertung
 
 ## Review-Verwaltung im WordPress-Admin
 
-Behalten Sie Bewertungen mit Quelle, Profil, Bewertungsart, Datum, Sprache und Sichtbarkeit im Blick. Suchen, filtern, moderieren, archivieren oder eine Auswahl für ein Widget vormerken. Ein Review-Datensatz zeigt Originaltext und Herkunft, statt die Quelle hinter einem einheitlichen, nicht nachvollziehbaren Gesamtscore zu verstecken.
+Behalten Sie Bewertungen mit Quelle, Profil, Bewertungsart, Datum, Sprache und Sichtbarkeit im Blick. Suchen, filtern, freigeben, ablehnen oder archivieren Sie Einträge – einzeln oder als Massenaktion mit Pflichtbegründung. Ein Review-Datensatz zeigt Originaltext und Herkunft, statt die Quelle hinter einem einheitlichen, nicht nachvollziehbaren Gesamtscore zu verstecken.
 
 ## Externe Bewertungen transparent kuratieren
 
@@ -19,21 +19,21 @@ Im kostenlosen Kern pflegen Sie Links und ausgewählte Review-Auszüge manuell. 
 
 ## Reviews auf der Website darstellen
 
-Starten Sie mit einem responsiven Grid oder einer Liste. Gutenberg-Block und Shortcode erleichtern die Einbindung in Seiten und Templates. Pro ergänzt unter anderem Karussell, Trustbar, Bewertungs-Badge, Masonry, Produkt- und App-Ratings sowie erweiterte Filter- und Layoutoptionen.
+Starten Sie mit einem responsiven Grid oder einer Liste mit Plattformzusammenfassung, serverseitig gerendert und ohne Pflicht-JavaScript. Die Blöcke „Bewertungen (Review Captain)“ und „Bewertungsformular (Review Captain)“, die Shortcodes `[review_captain v="1"]`, `[review_captain_form]` und `[review_captain_cta]` sowie ein natives Elementor-Widget erleichtern die Einbindung; der Widgets-Bereich enthält einen Shortcode-Generator. Pro ergänzt unter anderem Karussell, Plattform-Bewertungsleiste, Bewertungs-Badge, Masonry, Produkt- und App-Ratings sowie erweiterte Filter- und Layoutoptionen.
 
 ## Bewertungen und Quellen getrennt auswerten
 
-Basisstatistiken beziehen sich auf die ausgewählten bzw. angezeigten Reviews. Pro ergänzt Auswertungen nach Plattform, Zeitraum, Produkt, App, Sprache und Anfrage- oder Antwortstatus. Ratings bleiben auf der Skala der jeweiligen Quelle; plattformübergreifende Kennzahlen werden nicht als einheitlicher Sterneschnitt ausgegeben.
+Basisstatistiken beziehen sich auf die ausgewählten bzw. angezeigten Reviews. Pro ergänzt Auswertungen nach Zeitraum, Plattform, Bewertungsverteilung, Produkt-, App- oder Eventbezug, Moderation und Anfragestatus. Ratings bleiben auf der Skala der jeweiligen Quelle; plattformübergreifende Kennzahlen werden nicht als einheitlicher Sterneschnitt ausgegeben.
 
 ## Bewertungsanfragen zum passenden Zeitpunkt
 
-Review Captain Pro (in Vorbereitung) plant Anfragen nach einem bestätigten Erlebnis – etwa nach einer erfüllten Leistung, tatsächlichen Gutscheinverwendung oder bestätigten Eventteilnahme. Der bloße Kauf, die Gutscheinausstellung oder der Versand reicht nicht. Pro Erlebnis und Empfänger wird höchstens eine Anfrage geplant; Verzögerung, Ruhezeit, Ausschlüsse und Opt-out werden berücksichtigt. Es wird nicht nach Zufriedenheit gefiltert.
+Review Captain Pro plant Anfragen nach einem bestätigten Erlebnis – etwa nach einer erfüllten Leistung, tatsächlichen Gutscheinverwendung oder bestätigten Eventteilnahme. Der bloße Kauf oder die Gutscheinausstellung reicht nicht; bei WooCommerce legen Sie fest, welcher Bestellstatus die erbrachte Leistung bestätigt. Pro Erlebnis und Empfänger wird höchstens eine Anfrage geplant; Verzögerung, Ruhezeit, Ausschlüsse und Opt-out werden berücksichtigt. Es wird nicht nach Zufriedenheit gefiltert.
 
 Eine optionale Erinnerung kann pro Kampagne aktiviert werden; sie ist standardmäßig ausgeschaltet und folgt derselben Deduplizierungs-, Versandberechtigungs- und Opt-out-Regel.
 
 ## Profile und Plattformen verbinden
 
-Review Captain Pro verbindet Profile und Apps aus Google, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play. API-Sync setzt passende Anbieterrechte und Konten voraus. Alternativ lassen sich offizielle Widgets oder Profil-Links verwenden.
+Review Captain Pro verbindet Profile und Apps aus Google, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play. API-Sync setzt passende Anbieterrechte und Konten voraus. Für Google Business Profile nutzen Sie ein eigenes Google-Cloud-Projekt. Alternativ lassen sich Profil-Links und – für Trustpilot und Trusted Shops/eTrusted – offizielle Anbieter-Widgets mit Klick- oder Einwilligungssperre verwenden.
 
 ## Projekt-Connectoren verwalten
 
@@ -41,19 +41,23 @@ Der stabile öffentliche Connectorvertrag, Entwicklerdokumentation und ein Refer
 
 ## Workflow Captain sicher anbinden
 
-Leiten Sie genehmigte Review-Ereignisse und Statusänderungen an Workflow Captain weiter oder nutzen Sie freigegebene Aktionen, um zulässige Anfragen zu planen, abzubrechen und moderierte Review-Entwürfe anzulegen. Review Captain behält Versandberechtigung, Opt-out, Deduplizierung, Plattformziel und Moderation unter eigener Kontrolle.
+Mit Review Captain Pro erhält Workflow Captain die Suite-Ereignisse „Review erstellt“, „Status geändert“ und „Review entfernt“ – ohne Namen, E-Mail-Adressen und Reviewtexte. Review Captain behält Versandberechtigung, Opt-out, Deduplizierung, Plattformziel und Moderation unter eigener Kontrolle.
 
-## Social-Proof-Wall und Testimonial-Studio
+## Zusätzliche Funktionen im Kern
+
+Optional – jeweils standardmäßig ausgeschaltet – aktivieren Sie im kostenlosen Kern Foto-Reviews mit Moderation, Produktfragen und -antworten (`[review_captain_qa]`), ein Formular für mehrere Produkte, interne Tags, das öffentliche Melden von Reviews, die Autorenkorrektur freigegebener Reviews per Einmal-Link (`[review_captain_correction]`, Änderung erst nach Freigabe) sowie Feedback-Links mit QR-Code und WhatsApp-Klick-zum-Chat-Link. Ein CSV-Import mit Prüflauf und Rollback hilft beim Umzug, WP-CLI-Befehle (`wp review-captain`) und eine Diagnose-Seite unterstützen den Betrieb.
+
+## Social-Proof-Wall und Testimonial-Studio (Pro)
 
 Kombinieren Sie Text-, Bild-, Video- und Audio-Erfahrungen mit Zuordnung zu Produkt, Kurs, Event, App oder Seite. Einwilligungs- und Nutzungsrechtsnachweis, manuelle Moderation, Vorschaubilder, Untertitel oder Transkript halten Inhalte prüfbar und zugänglich. Eigene Testimonials bleiben klar von externen Plattform-Reviews getrennt.
 
-## Vertrauenssignale sichtbar machen
+## Vertrauenssignale sichtbar machen (Pro)
 
 Verwalten Sie freigegebene Auszeichnungen und Gütesiegel mit Herausgeber, Ablaufdatum und Verifizierungslink. Ein optionales, minimierbares Trust-Badge zeigt Rating und Quelle, ohne andere Bedienelemente zu überdecken.
 
 ## Datenschutz und verantwortungsvolle Darstellung
 
-Lokale Einreichungen erhalten Spam-Schutz und Moderation. Datenexport, Löschung und Aufbewahrungsregeln gehören zum Produktumfang. Externe Bewertungen werden nicht in Schema-Markup umetikettiert; strukturierte Bewertungsdaten bleiben auf dafür zulässige, lokal abgegebene Reviews beschränkt.
+Lokale Einreichungen erhalten Einwilligung, Honeypot, Rate-Limit und Moderation. CSV-Export mit Formelschutz, WordPress-Datenschutz-Export und -Löschung sowie Aufbewahrungsfristen gehören zum kostenlosen Kern. Der Kern lädt keine Skripte, Schriften oder Bilder von Drittanbietern. Externe Bewertungen werden nicht in Schema-Markup umetikettiert; strukturierte Bewertungsdaten bleiben auf dafür zulässige, lokal abgegebene Reviews beschränkt und fügen sich in den Yoast-SEO-Graph ein.
 
 [Review Captain Pro ansehen](/review-captain/pro/) · [Installation und Voraussetzungen](/review-captain/installation/) · [FAQ](/review-captain/faq/)
 

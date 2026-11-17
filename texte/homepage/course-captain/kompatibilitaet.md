@@ -15,13 +15,13 @@ Course Captain ist ein eigenständiges WordPress-Plugin. Für Kursaufbau, Lernen
 |---|---|---|
 | WordPress | Kurse, Lernraum, Blöcke, REST-API, Datenschutzwerkzeuge | Version 7.0 oder neuer |
 | PHP | Ausführung von Kern und Pro-Add-on | Version 8.5 oder neuer |
-| Datenbank | Fragen, Fortschritt, Prüfungen und Nachweise | MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer; ältere Versionen erzeugen eine Warnung, keine Sperre |
+| Datenbank | Fragen, Fortschritt, Prüfungen und Nachweise | MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer; ältere Versionen ab MariaDB 10.6 / MySQL 8.0 erzeugen eine Warnung im Systemstatus, keine Sperre; InnoDB und JSON-Funktionen erforderlich |
 | Block-Editor | Lektionen, Kurskatalog- und Lernraum-Blöcke | WordPress-Block-Editor; Shortcodes als Fallback |
 | Klassischer Editor | Einbindung von Katalog und Lernraum | Shortcodes |
-| WooCommerce | Kursverkauf mit Course Captain Pro | Optional; HPOS sowie klassischer und Block-Checkout werden für die Freigabe geprüft |
+| WooCommerce | Kursverkauf mit Course Captain Pro | Optional, Version 11.2.2 oder neuer; HPOS sowie klassischer und Block-Checkout werden für die Freigabe geprüft |
 | E-Mail-Versand | Einladungen, Benachrichtigungen | Funktionierender WordPress-Mailversand oder SMTP-Plugin |
 | Captain-Suite-Plugins | Gutscheine, Termine, Formulare, Bewertungen, Provisionen, Automationen | Jeweils kompatible Version mit verfügbarem Integrationsvertrag |
-| Multisite | Netzwerkweite Installation | In Version 1.0 nicht zugesagt |
+| Multisite | Netzwerkweite Installation | Nur Aktivierung je Website; Netzwerkaktivierung gesperrt; netzwerkweiter Betrieb in Version 1.0 nicht zugesagt |
 
 ## Themes und Darstellung
 

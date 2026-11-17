@@ -9,19 +9,19 @@ focus_keyphrase: Workflow Captain FAQ
 
 ## Was macht Workflow Captain?
 
-Workflow Captain verbindet WordPress- und WooCommerce-Ereignisse mit Bedingungen, Zeitplanung und Aktionen. Pro ergänzt Captain-Suite-Provider, Webhooks, erweiterte Logik und Betriebswerkzeuge.
+Workflow Captain verbindet WordPress- und WooCommerce-Ereignisse sowie Zeitpläne mit Bedingungen, Wartezeiten und Aktionen. Pro ergänzt Captain-Suite-Provider, Webhooks und n8n, eigene Connectoren, netzwerkweite Multisite-Workflows, erweiterte Logik und längere Protokolle.
 
 ## Ist Workflow Captain kostenlos?
 
-Ja. Der Kern ist kostenlos und enthält unbegrenzte Workflows und Ausführungen für WordPress und WooCommerce. Workflow Captain Pro (in Vorbereitung) ist ein separates, kostenpflichtiges Add-on mit Suite-Integrationen und erweiterten Funktionen.
+Ja. Der Kern ist kostenlos und enthält unbegrenzte Workflows und Ausführungen für WordPress und WooCommerce. Workflow Captain Pro ist ein separates, kostenpflichtiges Add-on mit Suite-Integrationen und erweiterten Funktionen.
 
 ## Muss WooCommerce installiert sein?
 
-Nein. WordPress-Core-Workflows lassen sich ohne WooCommerce nutzen. WooCommerce wird für WooCommerce-Auslöser und -Aktionen benötigt; laut Konzept ist Version 8.0 oder neuer vorgesehen.
+Nein. Workflows mit WordPress-Auslösern und Zeitplänen lassen sich ohne WooCommerce nutzen. Für die WooCommerce-Auslöser (Bestellung angelegt, bezahlt, Statuswechsel, erstattet, storniert) wird WooCommerce 11.2.2 oder neuer benötigt.
 
 ## Welche Captain-Plugins kann ich verbinden?
 
-Pro sieht Provider für License Captain, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain vor. Das jeweilige Plugin muss installiert sein und einen kompatiblen öffentlichen Providervertrag bereitstellen. Nicht jeder Provider setzt dieselben Funktionen voraus.
+Pro enthält Provider für Voucher Captain, Pass Captain, Affiliate Captain, Form Captain und Review Captain. Das jeweilige Plugin muss installiert sein und einen kompatiblen Providervertrag bereitstellen; zusätzlich braucht jede Automation mit einem Captain-Plugin eine gültige Lizenz von dessen Pro-Add-on (zum Beispiel Pass Captain Pro).
 
 ## Läuft die Automatisierung in einer externen Cloud?
 
@@ -33,18 +33,18 @@ Single kostet 129 € pro Jahr für 1 Live-Website, Business 229 € für 5 und 
 
 ## Enthält Pro Task-Credits oder Ausführungslimits?
 
-Nein. Das Konzept sieht keine Task-Credits oder monatlichen Run-Limits vor. Technische Queue-Schutzgrenzen können Jobs verzögern oder verständlich ablehnen, verursachen aber keine zusätzlichen Kosten.
+Nein. Es gibt keine Task-Credits oder monatlichen Run-Limits. Technische Queue-Schutzgrenzen können Jobs verzögern oder verständlich ablehnen, verursachen aber keine zusätzlichen Kosten.
 
 ## Was passiert bei Lizenzablauf?
 
-Workflows, Versionen und Logs bleiben lesbar und exportierbar. Neue Pro-Runs starten nicht; geplante Pro-Aktionen werden pausiert und später nicht automatisch nachgeholt. Vor einer Wiederaufnahme kann der Betreiber den Status prüfen.
+Die Pro-Funktionen werden angehalten; betroffene Automationen pausieren. Workflows, Versionen, Protokolle und gespeicherte Ereignisse bleiben lesbar, nichts wird gelöscht. Ereignisse der Captain-Plugins werden in dieser Zeit nicht erfasst und später nicht nachgeholt; geplante Schritte laufen nicht. Nach der Verlängerung geben Sie pausierte Läufe nach einer Vorschau einzeln oder gesammelt frei. Workflows, die nur Auslöser und Aktionen des kostenlosen Kerns nutzen, laufen weiter.
 
 ## Kann ich beliebigen PHP-Code oder jede App verbinden?
 
-Nein. Freier PHP-/SQL-Code, willkürliche HTTP-Ziele und eine breite native App-Bibliothek gehören nicht zum V1-Umfang. Eigene Systeme können über versionierte Connectoren und kontrollierte Webhooks angebunden werden.
+Nein. Freier PHP-/SQL-Code, willkürliche HTTP-Ziele und eine breite native App-Bibliothek gehören nicht zum V1-Umfang. Eigene Systeme können mit Pro über versionierte Connectoren, signierte Webhooks oder n8n angebunden werden.
 
 ## Welche Voraussetzungen gelten?
 
-Das Konzept setzt WordPress 6.8+ und PHP 8.5+ voraus. WooCommerce ist optional und ab 8.0 vorgesehen. Die tatsächlich getesteten Versionen und Mindeststände einzelner Suite-Provider müssen vor Veröffentlichung in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/) bestätigt werden.
+Workflow Captain setzt WordPress 6.8+ und PHP 8.5+ voraus; empfohlen sind MySQL 9.7 oder MariaDB 12.3. WooCommerce ist optional und wird ab Version 11.2.2 unterstützt. Die Mindeststände der einzelnen Suite-Provider stehen in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/).
 
 [Installation](/workflow-captain/installation/) · [Features](/workflow-captain/features/) · [Preise](/preise/) · [Support](/support/)

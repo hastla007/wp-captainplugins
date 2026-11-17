@@ -15,7 +15,7 @@ Diese Anleitung führt von der Installation bis zum ersten veröffentlichten Kur
 - PHP 8.5 oder neuer
 - MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
 - Ein funktionierender E-Mail-Versand für Einladungen und Benachrichtigungen
-- Optional: WooCommerce, wenn Sie Kurse mit Course Captain Pro (in Vorbereitung) verkaufen möchten
+- Optional: WooCommerce 11.2.2 oder neuer, wenn Sie Kurse mit Course Captain Pro verkaufen möchten
 
 ## 1. Plugin installieren
 
@@ -25,7 +25,7 @@ Laden Sie Course Captain über [Download-Quelle ergänzen] herunter oder install
 
 ## 2. Lernbereich und Einschreibung festlegen
 
-Wählen Sie die Adresse des Lernbereichs (standardmäßig `/lernen/`) und legen Sie fest, ob sich Besucher selbst registrieren dürfen. Bestimmen Sie die Standard-Einschreibung: öffentlich, kostenlos nach Anmeldung oder nur manuell freigeschaltet. Diese Vorgaben lassen sich je Kurs überschreiben.
+Wählen Sie die Adresse des Lernbereichs (standardmäßig `/lernen/`) und legen Sie fest, ob sich Besucher selbst registrieren dürfen. Bestimmen Sie die Standard-Einschreibung: kostenlose Selbstanmeldung oder nur manuelle Freigabe. Diese Vorgaben lassen sich je Kurs überschreiben.
 
 ## 3. Ersten Kurs anlegen
 
@@ -35,7 +35,7 @@ Wählen Sie die Adresse des Lernbereichs (standardmäßig `/lernen/`) und legen 
 
 ## 4. Fragen und Quiz hinzufügen
 
-Legen Sie unter **Fragenbank** drei bis fünf Fragen an, zum Beispiel Single Choice und Wahr/Falsch, jeweils mit Erklärung. Erstellen Sie unter **Quizzes & Prüfungen** ein Übungsquiz mit diesen Fragen und eine Bestehensgrenze. Die Regelvorschau zeigt, ob der Fragenpool ausreicht.
+Legen Sie unter **Fragenbank** drei bis fünf Fragen an, zum Beispiel Single Choice und Wahr/Falsch. Erklärungstexte zu den Lösungen stehen mit Course Captain Pro zur Verfügung. Erstellen Sie unter **Quizzes & Prüfungen** ein Übungsquiz mit diesen Fragen und eine Bestehensgrenze. Die Regelvorschau zeigt, ob der Fragenpool ausreicht.
 
 > **Screenshot-Platzhalter 3 – Fragenbank:** Fragenliste mit Typ, Thema, Schwierigkeitsgrad und Revisionsstand zeigen.
 
@@ -47,7 +47,7 @@ Führen Sie den Veröffentlichungscheck aus und veröffentlichen Sie den Kurs. M
 
 ## 6. Kurs in Seiten einbinden
 
-Platzieren Sie den Kurskatalog oder „Mein Lernen“ mit den Gutenberg-Blöcken von Course Captain auf beliebigen Seiten. Für klassische Editoren stehen Shortcodes bereit.
+Platzieren Sie den Kurskatalog, einen Link zum Lernbereich oder die Nachweisprüfung mit den Gutenberg-Blöcken von Course Captain auf beliebigen Seiten. Für klassische Editoren stehen Shortcodes für den Lernbereich-Link, den Zugangsstatus und geschützte Inhalte bereit.
 
 ## Pro-Funktionen aktivieren
 

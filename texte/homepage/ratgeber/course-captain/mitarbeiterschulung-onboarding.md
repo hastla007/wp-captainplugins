@@ -25,6 +25,6 @@ Ein Lernnachweis mit eindeutiger ID dokumentiert, wer welchen Kurs wann abgeschl
 
 Führungskräfte und Personalabteilung brauchen keine Einzelantworten, sondern den Stand je Gruppe: Wer hat begonnen, wer abgeschlossen, wo hakt es? Klären Sie vorab mit dem Datenschutz, welche Auswertungen zulässig sind und wie lange Lerndaten aufbewahrt werden.
 
-Course Captain enthält Gruppen mit Plätzen und Einladungen sowie Lernnachweise bereits im kostenlosen Kern. Course Captain Pro (in Vorbereitung) ergänzt delegierte Gruppenverwaltung, zeitgesteuerte Freigaben und Auswertungen je Gruppe.
+Course Captain enthält Gruppen mit Plätzen und Einladungen sowie Lernnachweise sowie die Freigabe von Modulen einige Tage nach Zugangsbeginn bereits im kostenlosen Kern. Course Captain Pro ergänzt delegierte Gruppenverwaltung, feste Freigabetermine und Freigaben je Gruppe sowie Auswertungen je Gruppe.
 
-**[Course Captain entdecken](/course-captain/)** · [Course Captain Pro (in Vorbereitung)](/course-captain/pro/)
+**[Course Captain entdecken](/course-captain/)** · [Course Captain Pro](/course-captain/pro/)

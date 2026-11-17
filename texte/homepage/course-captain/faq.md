@@ -8,16 +8,16 @@ focus_keyphrase: Course Captain FAQ
 # Häufige Fragen zu Course Captain
 
 ## Ist Course Captain kostenlos?
-Ja. Der Kern ist ein dauerhaft kostenloses Plugin ohne Lizenzprüfung und ohne Begrenzung der Kurse oder Lernenden. Course Captain Pro (in Vorbereitung) ist ein separates, kostenpflichtiges Add-on für erweiterte Funktionen.
+Ja. Der Kern ist ein dauerhaft kostenloses Plugin ohne Lizenzprüfung und ohne Begrenzung der Kurse oder Lernenden. Course Captain Pro ist ein separates, kostenpflichtiges Add-on für erweiterte Funktionen.
 
 ## Für welche Themen eignet sich Course Captain?
 Für jede Fachrichtung: Wissenskurse, Prüfungsvorbereitung, Mitarbeiterschulungen, Onboarding, Sprachkurse, berufliche Fortbildung und Zertifikatsprogramme. Course Captain ist themenneutral aufgebaut.
 
 ## Brauche ich WooCommerce?
-Nein. Öffentliche, kostenlose und manuell freigeschaltete Kurse funktionieren ohne WooCommerce. Wer Kurse verkaufen möchte, nutzt den WooCommerce-Adapter von Course Captain Pro.
+Nein. Kurse mit kostenloser Selbstanmeldung, manueller Freigabe oder Gruppenzugang funktionieren ohne WooCommerce. Wer Kurse verkaufen möchte, nutzt den WooCommerce-Adapter von Course Captain Pro.
 
 ## Welche Fragetypen gibt es?
-Im kostenlosen Kern Single Choice, Multiple Choice, Wahr/Falsch, Zuordnung, Sortieren, Lückentext, kurze Textantwort mit Selbsteinschätzung und Lernkarten. Pro ergänzt offene Aufgaben mit Rubrik und Tutor-Feedback, Fragezweige und Fallstudien. Offene Antworten werden nicht automatisch per KI bewertet.
+Im kostenlosen Kern Single Choice, Multiple Choice, Wahr/Falsch, Zahl mit Toleranz, Zuordnung, Sortieren, Lückentext, Freitext mit Musterantwort und Selbsteinschätzung sowie Lernkarten. Pro ergänzt Lösungserklärungen, offene Aufgaben mit Rubrik und Tutor-Feedback, Fragezweige und Fallstudien. Offene Antworten werden nicht automatisch per KI bewertet.
 
 ## Was macht der Smarttrainer?
 Er wählt die nächsten Fragen nach Priorität: neue Fragen, zuletzt falsch beantwortete, fällige Wiederholungen und schwache Themen. Wiederholungen werden zeitlich verteilt, damit Wissen langfristig sitzt.
@@ -26,7 +26,7 @@ Er wählt die nächsten Fragen nach Priorität: neue Fragen, zuletzt falsch bean
 Zeitlimit und Auswertung laufen auf dem Server, Antworten werden automatisch gespeichert. Jede Prüfung speichert die verwendete Fragenversion; spätere Änderungen an Fragen ändern abgeschlossene Ergebnisse nicht.
 
 ## Gibt es Zertifikate?
-Lernnachweise mit Ausstellung, Widerruf und Online-Prüfung gehören zum kostenlosen Kern. Course Captain Pro ergänzt einen Designer für eigene PDF-Zertifikate und die automatische Ausstellung nach Bestehen. Ein Anbieterzertifikat ersetzt keinen amtlichen Prüfungsnachweis.
+Lernnachweise mit automatischer Ausstellung nach Bestehen oder Kursabschluss, Druckansicht, Korrektur, Widerruf und Online-Prüfung gehören zum kostenlosen Kern. Course Captain Pro ergänzt einen Designer für eigene PDF-Zertifikate mit mehreren Vorlagen. Ein Anbieterzertifikat ersetzt keinen amtlichen Prüfungsnachweis.
 
 ## Kann ich Teams und Gruppen schulen?
 Ja. Gruppen mit Plätzen, Einladungen und Zugangsstatus sind kostenlos enthalten. Pro ergänzt delegierte Gruppenverwaltung, Umbuchungen, Massenverwaltung und Gruppenberichte.
@@ -47,6 +47,6 @@ Single für 1, Business für 5 und Agency für 25 Live-Websites. Jeder Plan enth
 Der kostenlose Kern läuft weiter. Kurse, Fortschritte, Ergebnisse und ausgestellte Nachweise bleiben erhalten und exportierbar; neue Pro-Aktionen sind bis zur Verlängerung gesperrt.
 
 ## Wird Multisite unterstützt?
-Course Captain v1 ist für einzelne WordPress-Websites ausgelegt. Multisite ist in der ersten Version nicht zugesagt.
+Course Captain v1 ist für einzelne WordPress-Websites ausgelegt. In einem Multisite-Netzwerk lässt es sich nur je Website aktivieren; die Netzwerkaktivierung ist gesperrt. Eine netzwerkweite Unterstützung ist in Version 1.0 nicht zugesagt.
 
-[Course Captain kennenlernen](/course-captain/) · [Features](/course-captain/features/) · [Course Captain Pro (in Vorbereitung)](/course-captain/pro/)
+[Course Captain kennenlernen](/course-captain/) · [Features](/course-captain/features/) · [Course Captain Pro](/course-captain/pro/)
