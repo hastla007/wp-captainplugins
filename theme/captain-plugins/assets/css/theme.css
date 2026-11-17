@@ -59,7 +59,10 @@ img { max-width: 100%; height: auto; }
 /* WordPress core prints the skip link for block themes; match it to the brand. */
 .skip-link.screen-reader-text:focus { z-index: 100000; padding: 0.8rem 1.1rem !important; color: var(--cp-ink) !important; background: var(--cp-gold) !important; font-weight: 700; text-decoration: none; }
 .cp-main > * { margin-block: 0; }
-.cp-page-content > .alignfull { margin-block: 0; }
+/* Seitenrand für alles, was nicht volle Breite hat (z. B. Absätze oder Plugin-Shortcodes direkt in der Seite);
+   Blöcke mit voller Breite heben den Rand wieder auf. */
+.cp-page-content { box-sizing: border-box; padding-inline: var(--cp-gutter); }
+.cp-page-content > :is(.alignfull, .cp-breadcrumb-bar) { margin-block: 0; margin-inline: calc(-1 * var(--cp-gutter)) !important; max-width: none; width: auto; }
 .cp-page-content > :where(:not(.alignfull):not(.cp-breadcrumb-bar)):first-child { margin-top: var(--cp-section-space); }
 .cp-page-content > :where(:not(.alignfull)):last-child { margin-bottom: var(--cp-section-space); }
 
@@ -613,20 +616,26 @@ img { max-width: 100%; height: auto; }
 :where(.woocommerce) .button, :where(.woocommerce) button.button { border-radius: var(--cp-radius-sm); }
 /* Klassische WooCommerce-Knöpfe ohne wp-element-button (z. B. Lizenzansicht von License Captain) im Theme-Design:
    .alt = Hauptaktion in Gold, sonst Rahmen-Knopf in Navy. */
+/* Gleiches gilt im Hauptinhalt für die Formulare der Captain-Plugins (Voucher, License, Affiliate, Review, Course):
+   klassische .button-Klassen, eigene Absende-Klassen und Absende-Knöpfe ohne Klasse bekommen das Theme-Design. */
+.cp-main :is(button.button, a.button, input.button, .wpac-button, .rc-form__submit):not(.wp-element-button),
+.cp-main :is(form button:not([class]), form input[type="submit"]:not([class])),
 .woocommerce :is(button.button, a.button, input.button):not(.wp-element-button) {
 	display: inline-flex; align-items: center; justify-content: center; min-height: 2.5rem; padding: 0.5rem 1rem;
 	border: 2px solid var(--cp-navy); border-radius: var(--cp-radius-sm); color: var(--cp-navy); background: var(--cp-paper);
 	font: inherit; font-size: 0.95rem; font-weight: 650; line-height: 1.2; text-align: center; text-decoration: none; cursor: pointer;
 }
-.woocommerce :is(button.button, a.button, input.button).alt:not(.wp-element-button) { border-color: var(--cp-gold); color: var(--cp-ink); background: var(--cp-gold); }
-.woocommerce :is(button.button, a.button, input.button):not(.wp-element-button):hover { color: var(--cp-paper); border-color: var(--cp-navy); background: var(--cp-navy); }
+.woocommerce :is(button.button, a.button, input.button).alt:not(.wp-element-button),
+.cp-main :is(.button-primary, .wpac-button, .rc-form__submit, form button[type="submit"], form input[type="submit"]):not(.wp-element-button) { border-color: var(--cp-gold); color: var(--cp-ink); background: var(--cp-gold); }
+.woocommerce :is(button.button, a.button, input.button):not(.wp-element-button):hover,
+.cp-main :is(button.button, a.button, input.button, .wpac-button, .rc-form__submit, form button[type="submit"], form input[type="submit"]):not(.wp-element-button):hover { color: var(--cp-paper); border-color: var(--cp-navy); background: var(--cp-navy); }
 .wplc-license-key { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 .wplc-license-key :is(input, code) { max-width: 100%; }
 /* WooCommerce setzt bei Feldern und Produktbild-Links outline: 0 – sichtbaren Fokus erzwingen (WCAG 2.4.7). */
 .woocommerce :is(input, select, textarea):focus-visible,
 .wc-block-components-product-image a:focus-visible,
 .wc-block-product a:focus-visible { outline: 3px solid var(--cp-focus) !important; outline-offset: 2px; }
-.cp-main--shop .cp-page-content { box-sizing: border-box; padding-inline: var(--cp-gutter); }
+.cp-main--shop .cp-page-content { box-sizing: border-box; }
 .woocommerce-account .woocommerce-MyAccount-navigation ul { display: grid; gap: 0.25rem; margin: 0; padding: 0; list-style: none; }
 .woocommerce-account .woocommerce-MyAccount-navigation li { margin: 0; padding: 0; }
 .woocommerce-account .woocommerce-MyAccount-navigation .is-active a { text-decoration: none; }

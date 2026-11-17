@@ -11,7 +11,7 @@ Diese Anleitung führt von der Installation bis zum ersten veröffentlichten Kur
 
 ## Voraussetzungen
 
-- WordPress 6.8 oder neuer
+- WordPress 7.0 oder neuer
 - PHP 8.5 oder neuer
 - MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer
 - Ein funktionierender E-Mail-Versand für Einladungen und Benachrichtigungen

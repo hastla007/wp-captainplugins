@@ -1,6 +1,6 @@
 # Betrieb: Installation, Update, Rückfall und Pflege
 
-Stand: 16. November 2026, Theme-Version 0.6.0. Diese Anleitung deckt Phase 10 der [Theme-Roadmap](../theme/ROADMAP.md) ab. Prüfwerkzeuge liegen unter [`tools/qa/`](../tools/qa/README.md).
+Stand: 17. November 2026, Theme-Version 0.6.1. Diese Anleitung deckt Phase 10 der [Theme-Roadmap](../theme/ROADMAP.md) ab. Prüfwerkzeuge liegen unter [`tools/qa/`](../tools/qa/README.md).
 
 ## Voraussetzungen
 

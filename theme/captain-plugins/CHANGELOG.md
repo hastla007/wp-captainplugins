@@ -1,5 +1,17 @@
 # Änderungsprotokoll – Captain Plugins Theme
 
+## 0.6.1 – 17. November 2026
+
+Geprüft mit allen sieben Kern-Plugins (Voucher, Pass, Affiliate, Form, Review, Workflow, Course Captain), den Pro-Add-ons Voucher, Pass und Affiliate sowie License Captain auf WordPress 7.1.4, WooCommerce 11.3.0 und Yoast SEO 28.8.
+
+### Behoben
+- Absende-Knöpfe der Plugin-Formulare (z. B. „Guthaben prüfen“ in Voucher Captain, „Prüfen“ in Course Captain) erschienen als Browser-Standard; sie übernehmen jetzt das Theme-Design.
+- Inhalte ohne volle Breite (z. B. ein Plugin-Shortcode direkt in einer Seite) lagen mobil bündig am Bildschirmrand; die Seiteninhalte haben jetzt durchgehend einen Seitenrand, Abschnitte mit voller Breite reichen weiterhin bis zum Rand.
+
+### Texte
+- Course Captain verlangt WordPress 7.0 (bisher 6.8 angegeben); Review Captain mit konkreter Mindestversion WordPress 6.5.
+- Neuer Bericht `docs/PLUGIN-ABGLEICH.md`: Versionen, Pro-Funktionen und Release-Stand der Plugins im Vergleich zu den Website-Texten.
+
 ## 0.6.0 – 16. November 2026
 
 Geprüft auf WordPress 7.1.4, WooCommerce 11.3.0, Yoast SEO 28.8 und License Captain 0.2.0 (MariaDB); PHP 8.5 im Workflow `staging-php85.yml`.

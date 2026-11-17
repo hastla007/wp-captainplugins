@@ -45,4 +45,4 @@ Course Captain Free bleibt voll nutzbar. Kurse, Lektionen, Fragen, Fortschritte,
 [Screenshot-Platzhalter: Lernpfad-Editor mit drei verknüpften Kursen, Voraussetzungen und Drip-Regel zeigen; Beispielkurse ohne echte Kundennamen verwenden.]  
 [Screenshot-Platzhalter: Zertifikatsdesigner mit fiktivem Logo, Kursname, Platzhalter-Personennamen und Nachweis-ID zeigen.]
 
-**Voraussetzungen:** Course Captain als Kern-Plugin, WordPress 6.8+, PHP 8.5+ sowie MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS). Für Kursverkauf ist WooCommerce erforderlich. [Kompatibilität](/course-captain/kompatibilitaet/) · [Häufige Fragen](/course-captain/faq/)
+**Voraussetzungen:** Course Captain als Kern-Plugin, WordPress 7.0+, PHP 8.5+ sowie MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS). Für Kursverkauf ist WooCommerce erforderlich. [Kompatibilität](/course-captain/kompatibilitaet/) · [Häufige Fragen](/course-captain/faq/)

@@ -23,12 +23,12 @@ Hier finden Sie die in den Produkt-Repositories dokumentierten Mindestversionen,
 | Affiliate Captain Pro | 6.5 kombiniert | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Pro-Add-on setzt WP 6.5 voraus; Affiliate Captain muss installiert sein |
 | Form Captain | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | WooCommerce ist für den Kern nicht erforderlich; keine Multisite-Unterstützung in v1.0 |
 | Form Captain Pro | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Separates Add-on; setzt Form Captain voraus. WooCommerce- und Suite-Adapter benötigen kompatible Versionen |
-| Review Captain | Veröffentlichungsversion | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Externe Plattformverbindungen benötigen berechtigte Anbieterzugänge |
-| Review Captain Pro | Veröffentlichungsversion | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Native Synchronisierung je Plattform nur mit API-/Tarifberechtigung |
+| Review Captain | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Externe Plattformverbindungen benötigen berechtigte Anbieterzugänge |
+| Review Captain Pro | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional | Native Synchronisierung je Plattform nur mit API-/Tarifberechtigung |
 | Workflow Captain | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | WooCommerce nur für Shop-Provider; Captain-Provider verlangen jeweils den kompatiblen Vertrag |
 | Workflow Captain Pro | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 8.0 | Separates Add-on; gültige Pro-Lizenz und kompatible Provider erforderlich |
-| Course Captain | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Nicht erforderlich | Eigenständiges LMS; Multisite in v1.0 nicht zugesagt |
-| Course Captain Pro | 6.8 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional; für Kursverkauf erforderlich | Separates Add-on; setzt Course Captain voraus |
+| Course Captain | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Nicht erforderlich | Eigenständiges LMS; Multisite in v1.0 nicht zugesagt |
+| Course Captain Pro | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional; für Kursverkauf erforderlich | Separates Add-on; setzt Course Captain voraus |
 | License Captain | 6.5 | 8.5 | MySQL 9.7 / MariaDB 12.3 | 8.9 erforderlich | WooCommerce muss aktiv sein; MySQL/MariaDB mit beschreibbarem Primärserver und funktionierendem Cron |
 
 License Captain besteht aus Server und Client. Die Angaben oben gelten für den Server, der WooCommerce voraussetzt. Der Client wird in die zu lizenzierenden Plugins eingebunden.
@@ -43,9 +43,9 @@ License Captain besteht aus Server und Client. Die Angaben oben gelten für den 
 | Pass Captain | Die Kompatibilitätsdokumentation führt WordPress 6.4–7.1, PHP 8.2–8.4 und optional WooCommerce 8.2–11.3 auf. Getestet werden MySQL 8.0/8.4, MariaDB 10.6/11.4, HPOS und klassische Speicherung sowie klassischer und Blocks-Checkout. |
 | Affiliate Captain | Plugin-Metadaten deklarieren WordPress 6.3 und PHP 7.4; WooCommerce ist optional. Die dokumentierte Integrationsprüfung umfasst WooCommerce bis 11.3 sowie MariaDB 10.11 und MySQL 8.4. |
 | Form Captain | Produktanforderung: WordPress 6.8 und PHP 8.3; WooCommerce optional ab 8.0. HPOS und klassischer Bestellspeicher werden je Release getestet ausgewiesen. Multisite wird in v1.0 nicht unterstützt. |
-| Review Captain | WordPress-/PHP-Mindestversionen und konkrete Testmatrix stehen in den Releaseangaben. Plattform-APIs setzen separate Zugangsdaten und die jeweiligen Anbieterrechte voraus. |
+| Review Captain | Plugin-Metadaten der Entwicklungsversion 0.1.0-dev: WordPress 6.5 und PHP 8.5; die konkrete Testmatrix folgt mit dem Release. Plattform-APIs setzen separate Zugangsdaten und die jeweiligen Anbieterrechte voraus. |
 | Workflow Captain | Konzeptanforderungen: WordPress 6.8+, PHP 8.3+; WooCommerce 8.0+ optional. HPOS sowie klassische und Blocks-Bestellungen sind Release-Gates; getestete Versionen sind vor Release zu ergänzen. |
-| Course Captain | Konzeptanforderungen: WordPress 6.8+, PHP 8.5+, MySQL 9.7 / MariaDB 12.3; WooCommerce optional. HPOS, klassischer und Block-Checkout sind Release-Gates für den Pro-Kursverkauf; getestete Versionen werden vor Release veröffentlicht. |
+| Course Captain | Plugin-Metadaten der Entwicklungsversion 1.0.0-dev: WordPress 7.0+ (die Website nennt PHP 8.5+ als Suite-Minimum), PHP 8.5+, MySQL 9.7 / MariaDB 12.3; WooCommerce optional. HPOS, klassischer und Block-Checkout sind Release-Gates für den Pro-Kursverkauf; getestete Versionen werden vor Release veröffentlicht. |
 | License Captain | CI-Matrix: WordPress 6.5 mit WooCommerce 8.9.3 oder 9.4.3 auf PHP 7.4 sowie aktuelle WordPress-Version mit WooCommerce 11.2.2 auf PHP 8.3; HPOS und klassische Speicherung, außerdem Multisite-Unterverzeichnis im aktuellen Teststand. |
 
 **Release-Hinweis:** Eine deklarierte Mindestversion ist nicht automatisch für jede Kombination erfolgreich getestet. License Captain deklariert WooCommerce 8.9 als Minimum; die CI-Matrix führt unter anderem 8.9.3, 9.4.3 und 11.2.2 auf. Der erfolgreiche Lauf für die Mindestlinie muss vor dem finalen Release belegt werden. Teststände sollten zur Veröffentlichung erneut mit den dann aktuellen Versionen abgeglichen werden.

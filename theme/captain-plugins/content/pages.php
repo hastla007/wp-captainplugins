@@ -69,7 +69,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "c77dcf2b23e5d0cdf58b686a668138151a5348db8c9ca645e083b4d0030458cc",
+		"source_hash" => "879db899d99fd70cc38d9ba61ffef5b00db1972a5544d349f7979266a0a444ac",
 		"source_file" => "texte/homepage/course-captain/index.md",
 	],
 	[
@@ -188,7 +188,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "80525b79103509a66297870e4a16002fe0bbb14d9e62044b5bf4948af853fbbd",
+		"source_hash" => "21552d2c8c3b0dec7e723c844aed10f648a1df901baad28bb085d1828da878a0",
 		"source_file" => "texte/homepage/kompatibilitaet.md",
 	],
 	[
@@ -488,7 +488,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "4fcd7cfd9618fc274a4edc6bfde1c30a71956ce2fe107226a160466e09044bf9",
+		"source_hash" => "decb040c68aa0ea1c795ed0b1bf184eed09d1e1ab4caacdecccf8a4b2d744cf1",
 		"source_file" => "texte/homepage/course-captain/installation.md",
 	],
 	[
@@ -516,13 +516,13 @@ return [
 		"group" => "products",
 		"file" => "bf56dd83-kompatibilitaet.html",
 		"seo_title" => "Course Captain Kompatibilität: WordPress, PHP, Datenbank",
-		"meta_description" => "Voraussetzungen von Course Captain: WordPress 6.8+, PHP 8.5+, MySQL 9.7 oder MariaDB 12.3, optionales WooCommerce, Themes, Editoren und Teststatus.",
+		"meta_description" => "Voraussetzungen von Course Captain: WordPress 7.0+, PHP 8.5+, MySQL 9.7 oder MariaDB 12.3, optionales WooCommerce, Themes, Editoren und Teststatus.",
 		"focus_keyphrase" => "Course Captain Kompatibilität",
 		"social_title" => "",
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => false,
-		"source_hash" => "d3dea34bb044faa45e817180b10a3fb5f90f4170a424e07c08272cb5aba5cb49",
+		"source_hash" => "09ad0b6e69c4349024dba669e51047badc959a13db7be43d4d33648edad2dfdc",
 		"source_file" => "texte/homepage/course-captain/kompatibilitaet.md",
 	],
 	[
@@ -539,7 +539,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/course-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "eb63c803bc2e03b759207f62add36b141cbfb0b6f69c6863839340dfca99051d",
+		"source_hash" => "ece681d929c74193364787b0af6228398201e57a288578354576eaf49ae7cffb",
 		"source_file" => "texte/homepage/course-captain/pro.md",
 	],
 	[
