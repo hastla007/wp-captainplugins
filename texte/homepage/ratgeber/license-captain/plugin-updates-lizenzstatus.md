@@ -11,15 +11,15 @@ Ein kommerzielles Plugin benötigt einen klaren Zusammenhang zwischen Kauf, Lize
 
 ## Berechtigungen definieren
 
-Ordnen Sie einem Lizenzplan Entitlements zu. Damit bestimmen Sie, welche Produktfunktionen und Leistungen für den jeweiligen Plan verfügbar sind.
+Ordnen Sie einem Lizenzplan Entitlements zu. Damit bestimmen Sie, welche Produktfunktionen und Leistungen für den jeweiligen Plan verfügbar sind. Produkte, Pläne und Funktionsbezeichnungen können Sie als Katalogdatei (`wplc-catalog.json`) mit dem Release-Paket ausliefern; der Shop spielt sie beim Anlegen des Releases ein.
 
 ## Den Client in Ihr Plugin einbinden
 
-Binden Sie den License-Captain-Client in Ihr Plugin ein und liefern Sie ihn mit Ihrem Plugin aus. Der Client fragt Lizenzstatus und Berechtigungen über signierte Requests und Responses bei Ihrem Server ab und behandelt Fehlerfälle verständlich. Ihre Kunden aktivieren den Lizenzschlüssel direkt in Ihrem Plugin.
+Binden Sie den License-Captain-Client in Ihr Plugin ein und liefern Sie ihn mit Ihrem Plugin aus. Der Client fragt Lizenzstatus und Berechtigungen über signierte Requests bei Ihrem Server ab und prüft die Ed25519-Signatur der Antworten gegen den öffentlichen Schlüssel, den Sie im Plugin hinterlegen. Ein Offline-Fenster überbrückt kurze Ausfälle des Servers, Fehlerfälle zeigt er verständlich an. Ihre Kunden aktivieren den Lizenzschlüssel direkt in Ihrem Plugin.
 
 ## Releases bereitstellen
 
-Verwalten Sie Produktversionen und Updatepakete über den Lizenzserver. Kunden mit gültigem Updatezugriff erhalten die für ihr Produkt vorgesehenen Updates.
+Laden Sie Release-ZIPs in einen privaten Speicher oder S3-kompatiblen Bucket oder registrieren Sie eine HTTPS-Paketadresse mit SHA-256-Prüfsumme. Releases lassen sich veröffentlichen und wieder zurückziehen. Kunden mit gültigem Updatezugriff erhalten die Updates in der normalen WordPress-Updateanzeige, geladen über kurzlebige Einmal-Downloadlinks.
 
 ## Release-Notizen sichtbar machen
 

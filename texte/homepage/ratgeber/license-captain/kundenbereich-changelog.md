@@ -11,11 +11,15 @@ Kunden sollten ihre gekauften Lizenzen und die zugehörigen Produktinformationen
 
 ## Lizenzübersicht einbinden
 
-Fügen Sie den Block „My licenses“ oder den Lizenz-Shortcode an der passenden Stelle im Kundenbereich ein. Kunden sehen dort ihre Lizenzinformationen und zugehörige Website-Aktivierungen.
+License Captain ergänzt das WooCommerce-Kundenkonto automatisch um die Seite **Lizenzen**. Dieselbe Liste können Sie mit dem Block „Meine Lizenzen“ oder dem Shortcode `[wplc_licenses]` an jeder anderen Stelle einbinden. Kunden sehen dort Schlüssel, Status, Plan, Laufzeit und aktivierte Websites und können Websites deaktivieren, verlängern, den Plan wechseln, das aktuelle Release herunterladen, Mitbenutzer einladen oder die Lizenz übergeben.
 
 ## Produkt-Release-Notizen ausgeben
 
-Wählen Sie ein Produkt und die gewünschte Zahl von Einträgen. Der Changelog-Block oder Shortcode zeigt Release-Notizen direkt im Kundenbereich oder auf einer Dokumentationsseite.
+Wählen Sie ein Produkt und die gewünschte Zahl von Einträgen. Der Block „Änderungsprotokoll“ oder der Shortcode `[wplc_changelog product="produkt-schluessel" limit="10"]` zeigt Release-Notizen direkt im Kundenbereich oder auf einer Dokumentationsseite.
+
+## Pläne mit Preistabelle anbieten
+
+Der Block „Preistabelle“ oder der Shortcode `[wplc_pricing]` zeigt die Pläne eines Produkts mit Preis, Laufzeit, Website-Limit, Funktionen und Kaufbutton. Aufgeführt werden nur veröffentlichte, kaufbare Produkte mit aktivem Plan.
 
 ## Kundenführung verbessern
 

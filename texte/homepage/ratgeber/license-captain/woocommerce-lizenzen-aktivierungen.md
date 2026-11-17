@@ -11,19 +11,19 @@ Wenn Sie eigene WordPress-Plugins verkaufen, gehören Lizenz, Aktivierung und Up
 
 ## Lizenzplan am Produkt festlegen
 
-Kennzeichnen Sie WooCommerce-Produkte oder Varianten als Lizenzangebote. Definieren Sie Abrechnungsintervall, Laufzeit, Zahl der Websites, Supportstufe und enthaltene Berechtigungen.
+Kennzeichnen Sie WooCommerce-Produkte oder Varianten als Lizenzangebote. Definieren Sie Abrechnungsintervall (monatlich oder jährlich), Zahl der Live-Websites, Supportstufe und enthaltene Berechtigungen. Produkte von WooCommerce Subscriptions lassen sich nicht zuordnen, weil License Captain selbst verlängert.
 
 ## Aktivierungen nachvollziehen
 
-Nach dem Kauf erhält jede gekaufte Einheit eine Lizenz. Kunden aktivieren Websites innerhalb des vorgesehenen Limits. Live-, Staging- und Entwicklungsinstallationen können unterschieden und verwaltet werden.
+Nach dem Kauf erhält jede gekaufte Einheit eine Lizenz. Kunden aktivieren Websites innerhalb des vorgesehenen Limits. Das Limit zählt Live-Websites; je Live-Website ist eine Staging-Website frei, dazu kommen mindestens fünf lokale Entwicklungsinstallationen. Wird das Limit gesenkt, bleiben aktive Websites aktiv, neue Aktivierungen werden aber abgelehnt, bis genug Plätze frei sind.
 
 ## Status und Änderungen prüfen
 
-Lizenzstatus und Übergänge werden nach festen Regeln verwaltet. Der Auditverlauf macht Änderungen nachvollziehbar. Erstattungen oder Zahlungsstreitfälle können den Lizenzstatus beeinflussen.
+Lizenzstatus und Übergänge werden nach festen Regeln verwaltet. Der Auditverlauf macht Änderungen nachvollziehbar. Eine Erstattung widerruft die Lizenz, ein Stripe-Zahlungsstreit sperrt sie.
 
 ## Verlängerungen anbieten
 
-Kunden können manuell verlängern. Für wiederkehrende Zahlungen steht eine optionale Stripe-gestützte automatische Verlängerung bereit.
+Kunden können von 30 Tagen vor bis 30 Tage nach Ablauf manuell mit jeder Shop-Zahlungsart verlängern und behalten ihren Schlüssel. Für wiederkehrende Zahlungen steht eine optionale automatische Verlängerung über das offizielle WooCommerce-Stripe-Gateway bereit, mit Vorabhinweis vor jeder Abbuchung. PayPal-Kunden verlängern manuell.
 
 [Screenshot-Platzhalter: WooCommerce-Produkt mit Lizenzintervall, Website-Limit und Entitlements zeigen; Produkt- und Kundendaten müssen fiktiv sein.]  
 [Diagramm: Kauf bis Website-Aktivierung]

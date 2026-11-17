@@ -20,7 +20,7 @@ Die konkreten Preisstufen und Kaufoptionen richten sich nach dem aktuellen Licen
 ## Was Ihr Kauf umfasst
 
 - Das License-Captain-Server-Plugin für Ihren WooCommerce-Shop.
-- Den License-Captain-Client zum Einbinden in Ihre eigenen Plugins.
+- Die License-Captain-Client-Bibliothek mit Exportskript und Vertragstest zum Einbinden in Ihre eigenen Plugins.
 - Die im gewählten Plan aufgeführten Funktionen und Limits.
 - Updates und Support gemäß den Bedingungen des gewählten Plans.
 
