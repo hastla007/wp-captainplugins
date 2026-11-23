@@ -17,7 +17,7 @@ Legen Sie ein Gutscheinprodukt mit festem Wert oder Wunschbetrag an. Ihre Kundin
 
 ## Für Ihren Shop konfigurierbar
 
-Erstellen Sie Rabattcodes, Geschenkkarten und Gutscheine für Produkte, Kategorien oder bestimmte Empfänger. Passen Sie PDF-Vorlagen an Ihre Marke an und lassen Sie Gutscheine sofort oder zu einem gewählten Datum zustellen. Aktionen mit Bonusgutscheinen, Freunde werben, aufladbare Geschenkkarten und Kundenguthaben sind ebenfalls kostenlos enthalten.
+Erstellen Sie Rabattcodes, Geschenkkarten und Gutscheine für Produkte, Kategorien oder bestimmte Empfänger. Passen Sie PDF-Vorlagen an Ihre Marke an und lassen Sie Gutscheine sofort oder zu einem gewählten Datum zustellen. Aktionen mit Bonusgutscheinen, Freunde werben, aufladbare Geschenkkarten und Kundenguthaben sind ebenfalls kostenlos enthalten. Länderprofile für Deutschland, Österreich, die Schweiz und weitere Länder schlagen passende Einstellungen vor, die Sie prüfen und übernehmen.
 
 ## Behalten Sie Einlösungen im Blick
 

@@ -37,6 +37,22 @@ Der Scanner unter **Gutscheine → Scanner** prüft und löst Gutscheine per Kam
 
 Regelbasierte Warenkorbaktionen, Bonusgutscheine nach bezahlter Bestellung und ein persönlicher Empfehlungscode mit Prämie sind kostenlos enthalten. Geschenkkarten lassen sich über ein Aufladeprodukt aufstocken. Kundenguthaben je Konto nehmen Erstattungen (mit Zustimmung) und manuelle Buchungen auf.
 
+## Einstellungen und Anpassung an Ihr Land
+
+Voucher Captain passt sich an Ihre Abläufe und an Ihr Verkaufsland an. Alle Einstellungen in diesem Abschnitt sind im kostenlosen Plugin enthalten.
+
+- **Länderprofile** für Deutschland, Österreich, die Schweiz, die EU allgemein und weitere Länder schlagen passende Werte vor, etwa für Gültigkeit, Belegnummer am Schalter, Aufbewahrung und Datumsformat. Sie sehen jede Änderung im Vergleich „bisher → neu“ und übernehmen nur, was Sie bestätigen; nichts wird still überschrieben. Werte mit rechtlichem Gewicht sind als geprüft oder ungeprüft gekennzeichnet – die Prüfung für Ihren Shop liegt bei Ihnen.
+- **Gültigkeit und Bedingungen je Land** pflegen Sie in einer übersichtlichen Tabelle. Zusätzlich legen Sie fest, was bei Ablauf geschieht: Der Gutschein verfällt, bleibt für eine Kulanzfrist einlösbar oder läuft nicht ab.
+- **Pflichtangaben und Zustimmung:** Ausstellerangaben, Links zu AGB, Datenschutz und Widerruf sowie ein eigener Rechtstext für PDF und E-Mail, je Sprache. Auf Wunsch fragt ein Zustimmungs-Kästchen am Gutscheinprodukt nach. Die Texte bestimmen Sie selbst.
+- **Ihre Geschäftsregeln als Einstellung:** Erstattung und Storno, Fristen für Empfänger-Korrekturen und erneuten Versand, Aufladung sowie die Zahlungsarten, mit denen Gutscheine gekauft werden dürfen. Ab Werk gilt das bisherige Verhalten.
+- **Aufbewahrung und Anonymisierung** mit eigenen Fristen; der Website-Zustand erinnert Sie, solange keine Frist gesetzt ist.
+- **Fortlaufende Gutscheinnummer** zusätzlich zum Code, zum Beispiel mit Jahreszahl und jährlichem Neustart (ab Werk aus). Das Buchungsjournal exportieren Sie mit eigener Kontenzuordnung auch ohne DATEV.
+- **Kasse und Standorte** in einem eigenen Bereich: Kassenliste, feste Kasse je Mitarbeiter, Tageslimits und Belegnummer. Wer Gutscheine verwalten, scannen oder Guthaben erhöhen darf, weisen Sie den Benutzerrollen direkt zu.
+- **Logo, Akzentfarbe und Test-E-Mail** für die Gutschein-E-Mails.
+- **Einstellungen sichern und übertragen:** Export und Import als JSON-Datei mit Vorschau (Zugangsdaten werden nie exportiert), Zurücksetzen je Bereich oder gesamt, ein Änderungsprotokoll, wer wann was geändert hat, und Befehle für WP-CLI. Bei der Deinstallation entscheiden Sie, ob Ihre Daten erhalten bleiben (Vorgabe) oder gelöscht werden.
+
+Hinweise auf Einstellungen von Voucher Captain Pro erscheinen als schlichte Textzeile am Ende eines Bereichs und lassen sich ausblenden.
+
 ## Schnittstellen
 
 Für Entwickler und andere Plugins stehen eine versionierte PHP-API, die REST-API `vcap/v1`, WP-CLI-Befehle (`wp vcap …`) und dokumentierte Hooks bereit.

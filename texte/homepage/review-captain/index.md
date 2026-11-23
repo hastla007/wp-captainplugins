@@ -29,7 +29,7 @@ Mit Review Captain Pro verbinden Sie Google Business Profile, Trustpilot, Truste
 
 ## Kostenlos starten. Bei Bedarf erweitern.
 
-Review Captain Free verwaltet lokale Reviews, Bewertungsformular, manuell ausgewählte externe Bewertungen, Quellenangaben, Moderation, CSV-Import und -Export, Datenschutzwerkzeuge sowie ein responsives Grundlayout per Block, Shortcode oder Elementor-Widget. Review Captain Pro ergänzt Plattform-Sync, mehrere Profile, faire Bewertungsanfragen, Connector-Management, erweiterte Widgets, Reports, Multimedia-Testimonials und Vertrauenssignale.
+Review Captain Free verwaltet lokale Reviews, Bewertungsformular, manuell ausgewählte externe Bewertungen, Quellenangaben, Moderation, CSV-Import und -Export, Datenschutzwerkzeuge sowie ein responsives Grundlayout per Block, Shortcode oder Elementor-Widget. Länderprofile als Vorschlag, eigene Texte, Fristen und Moderationsregeln sowie Export, Import und Änderungsprotokoll der Einstellungen sind ebenfalls kostenlos. Review Captain Pro ergänzt Plattform-Sync, mehrere Profile, faire Bewertungsanfragen, Connector-Management, erweiterte Widgets, Reports, Multimedia-Testimonials und Vertrauenssignale.
 
 Die Pro-Pläne decken 1, 5 oder 25 Live-Websites ab. Alle Pro-Funktionen sind in jedem Plan enthalten; Agency bietet priorisierten Support. Die Jahrespreise sehen Sie im Shop.
 

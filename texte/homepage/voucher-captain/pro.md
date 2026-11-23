@@ -25,6 +25,14 @@ Nach dem Versand der Gutschein-E-Mail – auch zum gewählten Zustelldatum – e
 
 Ersetzen Sie Produktname, Logo, Menütitel, Menüsymbol und den Absendernamen der Gutschein-E-Mails durch Ihre eigene Marke.
 
+## Einstellungen für die Pro-Funktionen
+
+- **SMS:** Anbieter, Absender, Nachrichtentext, Standardland, Länge der Nachricht, Telefonfeld und Einwilligung im Checkout; dazu, wie viele Tage das SMS-Protokoll aufbewahrt wird.
+- **Wallet:** Farben, Logo und Barcode-Art der Pässe sowie die Aufbewahrungsdauer der registrierten Geräte.
+- **Firmenbestellungen:** Höchstbetrag je Gutschein, Zeilenzahl je Liste, Aufbewahrung der Empfängerlisten sowie Trennzeichen und Zeichensatz der CSV-Dateien.
+
+Die Pro-Einstellungen sind in Export und Import, Zurücksetzen, Änderungsprotokoll und WP-CLI des Kern-Plugins eingebunden; Zugangsdaten und Zertifikate werden nicht exportiert. Mit aktivem Add-on ersetzt die echte Einstellung den Hinweis im Kern-Plugin.
+
 ## Pläne
 
 Alle Voucher-Captain-Pro-Funktionen sind in jedem Plan enthalten. Sie wählen nach den Live-Websites: Single für 1, Business für 5 oder Agency für 25 Websites.

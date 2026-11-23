@@ -31,6 +31,9 @@ Ja. Unterstützt werden CSV, XLS, XLSX und ODS. Bestehende Geschenkkarten mit Re
 ## Kann ich Gutscheine im Ladengeschäft einlösen?
 Ja. Der Scanner unter **Gutscheine → Scanner** prüft Gutscheine per Kamera, USB-Scanner oder Codeeingabe und bucht die Einlösung mit Belegnummer und Kasse/Filiale.
 
+## Kann ich Voucher Captain an mein Land anpassen?
+Ja. Länderprofile für Deutschland, Österreich, die Schweiz, die EU allgemein und weitere Länder schlagen passende Einstellungen vor, etwa für Gültigkeit, Belegnummer und Aufbewahrung. Sie sehen vorher, was sich ändert, und übernehmen nur, was Sie bestätigen. Werte mit rechtlichem Gewicht prüfen Sie für Ihren Shop selbst.
+
 ## Was ergänzt Voucher Captain Pro?
 Firmenbestellungen per CSV-Empfängerliste, Wallet-Pässe für Apple und Google, SMS-Zustellung sowie White Label mit eigenem Produktnamen, Logo und Absendernamen.
 

@@ -49,7 +49,22 @@ Kurse lassen sich als Pakete importieren und exportieren – mit Validierung, Vo
 
 ## Betrieb, Datenschutz und Sicherheit
 
-Ein Einrichtungsassistent führt durch die Grundeinstellungen; Einstellungen lassen sich je Kurs überschreiben. Benachrichtigungen per E-Mail haben Vorlagen und einen Abmeldelink. Datenexport, Löschung und Aufbewahrungsfristen nutzen die Datenschutzwerkzeuge von WordPress. Systemstatus mit Reparaturaktionen, Audit-Protokoll, Kurs-SEO und ein optionales Härtungsmodul für Login und Registrierung gehören zum Kern.
+Ein Einrichtungsassistent führt durch die Grundeinstellungen. Benachrichtigungen per E-Mail haben einen Abmeldelink. Datenexport und Löschung nutzen die Datenschutzwerkzeuge von WordPress. Systemstatus mit Reparaturaktionen, Audit-Protokoll, Kurs-SEO und ein optionales Härtungsmodul für Login und Registrierung gehören zum Kern.
+
+## Einstellungen und Anpassung an Ihr Land
+
+Course Captain passt sich Ihren Abläufen und den Regeln Ihres Landes an. Alle Punkte in diesem Abschnitt gehören zum kostenlosen Kern.
+
+- **Länderprofile:** Für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder schlägt der Einrichtungsassistent passende Werte vor, etwa für Aufbewahrungsfristen, Untertitel und die Adressen des Lernbereichs. Sie sehen jede Änderung vorher und nachher; nichts wird ohne Ihre Bestätigung überschrieben. Werte mit rechtlichem Gewicht prüfen Sie oder Ihre Beratung.
+- **Aufbewahrungsfristen:** Wie lange Antworten, Abgaben, Nachweise und Protokolle gespeichert bleiben, legen Sie je Datenart fest – mit Vorschau, wie viele Datensätze eine Frist betreffen würde. Neue Installationen löschen nichts automatisch, bis Sie Fristen festlegen; der Systemstatus erinnert daran.
+- **Rechtstexte verknüpfen:** Impressum, AGB, Widerrufsbelehrung und Datenschutzerklärung erscheinen auf Wunsch im Lernbereich und in E-Mails. Welche Verweise Sie brauchen, entscheiden Sie.
+- **E-Mail-Texte und Absender:** Betreff und Text jeder Mailart bearbeiten Sie je Sprache, mit Platzhaltern, Vorschau, Testversand und Rückkehr zum Standardtext. Absender und Fußzeile stellen Sie selbst ein.
+- **Erscheinungsbild:** Logo und Akzentfarbe des Lernbereichs mit Kontrastprüfung sowie eigene Beschriftungen der wichtigsten Schaltflächen.
+- **Zertifikate:** Standard-Gültigkeit, Erinnerung vor Ablauf, Papierformat (A4 oder Letter) und Sprache des Nachweises.
+- **Geschäftsregeln statt fester Werte:** Einladungsfristen, Grenzen für Prüfungsstarts und Anmeldeversuche, Abstände der Smarttrainer-Wiederholungen, erlaubte Video-Plattformen und Regeln für Dateiabgaben haben eine sichere Vorgabe und lassen sich anpassen. Zertifikate, Abgaben und Lernkarten können Sie ohne Datenverlust abschalten.
+- **Global, je Kurs und je Prüfung:** Einstellungen gelten für die ganze Website und lassen sich je Kurs oder Prüfung überschreiben. Einzelne Werte sperren Sie gegen Abweichungen; eine Übersicht zeigt, welche Kurse abweichen.
+- **Übertragen, zurücksetzen, nachvollziehen:** Export und Import als Datei mit Vorschau, einschließlich Rollen, Mailtexten und Zertifikatsvorlagen, aber ohne Zugangsdaten. Zurücksetzen je Bereich mit Rückgängig, ein Änderungsprotokoll mit altem und neuem Wert und Befehle für WP-CLI.
+- **Zugriff und Deinstallation:** Die Einstellungen sind über ein eigenes Recht vergeben, nicht nur an Administratoren. Beim Löschen des Plugins bleiben Ihre Daten standardmäßig erhalten; vollständiges Entfernen schalten Sie nur mit ausdrücklicher Bestätigung ein.
 
 ## Pro: Lernpfade, Auswertungen und Integrationen
 

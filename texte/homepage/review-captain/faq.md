@@ -51,6 +51,10 @@ Der kostenlose Kern lädt keine Skripte, Schriften oder Bilder von Drittanbieter
 
 Review Captain bietet CSV-Export, WordPress-Datenschutz-Export und -Löschung sowie einstellbare Aufbewahrungsfristen. Synchronisierte externe Inhalte werden entsprechend den jeweiligen Anbieterbedingungen gespeichert und entfernt. Tokens und API-Schlüssel werden geschützt und nicht in Protokolle geschrieben.
 
+## Kann ich Review Captain an die Regeln meines Landes anpassen?
+
+Ja, im kostenlosen Kern. Länderprofile für Deutschland, Österreich, die Schweiz, die EU allgemein und sonstige Länder schlagen Werte wie Datumsformat, Aufbewahrungsfristen und einen Prüfhinweis-Entwurf vor. Sie sehen die Änderungen vorher und nachher und entscheiden selbst; nichts wird ohne Ihre Bestätigung überschrieben. Die Profile sind Vorschläge und ersetzen keine rechtliche Prüfung – Kennzeichnungspflichten und Einwilligungen prüfen Sie als Betreiber. Texte, Fristen, Moderationsregeln und Rechte passen Sie zusätzlich einzeln an.
+
 ## Welche Pro-Pläne gibt es?
 
 Single umfasst 1, Business 5 und Agency 25 Live-Websites. Jeder Plan enthält dieselben Pro-Funktionen; Agency bietet priorisierten Support. Die aktuellen Preise werden im Shop angezeigt.

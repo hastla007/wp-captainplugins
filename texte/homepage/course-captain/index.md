@@ -47,7 +47,7 @@ Die Pro-Pläne decken 1, 5 oder 25 Live-Websites ab. Alle Pro-Funktionen sind in
 
 ## Ihre Daten bleiben in WordPress
 
-Lernende sind WordPress-Benutzer, Fortschritte und Ergebnisse liegen in Ihrer WordPress-Datenbank. Course Captain funktioniert ohne WooCommerce, ohne andere Captain-Plugins und ohne externen Cloud-Dienst. Endet eine Pro-Lizenz, bleiben Kurse, Fortschritte, Prüfungsergebnisse und Nachweise erhalten.
+Lernende sind WordPress-Benutzer, Fortschritte und Ergebnisse liegen in Ihrer WordPress-Datenbank. Course Captain funktioniert ohne WooCommerce, ohne andere Captain-Plugins und ohne externen Cloud-Dienst. Endet eine Pro-Lizenz, bleiben Kurse, Fortschritte, Prüfungsergebnisse und Nachweise erhalten. Länderprofile für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder schlagen passende Einstellungen vor; Sie sehen jede Änderung vorher und entscheiden selbst.
 
 Course Captain setzt WordPress 7.0+, PHP 8.5+ sowie MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) voraus. WooCommerce ist optional. [Kompatibilität und Voraussetzungen](/course-captain/kompatibilitaet/)
 

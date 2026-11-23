@@ -59,6 +59,21 @@ Verwalten Sie freigegebene Auszeichnungen und Gütesiegel mit Herausgeber, Ablau
 
 Lokale Einreichungen erhalten Einwilligung, Honeypot, Rate-Limit und Moderation. CSV-Export mit Formelschutz, WordPress-Datenschutz-Export und -Löschung sowie Aufbewahrungsfristen gehören zum kostenlosen Kern. Der Kern lädt keine Skripte, Schriften oder Bilder von Drittanbietern. Externe Bewertungen werden nicht in Schema-Markup umetikettiert; strukturierte Bewertungsdaten bleiben auf dafür zulässige, lokal abgegebene Reviews beschränkt und fügen sich in den Yoast-SEO-Graph ein.
 
+## Einstellungen und Anpassung an Ihr Land
+
+Alle hier genannten Einstellungen gehören zum kostenlosen Kern. Review Captain Pro ergänzt nur die Einstellungen seiner eigenen Funktionen.
+
+- **Länderprofile als Vorschlag:** Für Deutschland, Österreich, die Schweiz, die EU allgemein und sonstige Länder schlägt Review Captain passende Werte vor, etwa Datumsformat, Aufbewahrungsfristen und einen Entwurf für den Prüfhinweis. Sie sehen jede Änderung vorher und nachher und übernehmen sie bewusst; nichts wird still überschrieben. Werte mit rechtlicher Bedeutung sind als ungeprüft gekennzeichnet – Kennzeichnungspflichten und Einwilligungen prüfen Sie als Betreiber selbst.
+- **Transparenz an der Bewertung:** Ein eigener Hinweis „So prüfen wir Bewertungen“ erscheint an Widgets und Formular. Die Bezeichnungen der Prüfstufen, etwa „Verifizierter Kauf“, passen Sie an; die Stufe selbst lässt sich nicht verändern.
+- **Eigene Texte und Anrede:** Einwilligungstext, Feldbeschriftungen, Schaltfläche und Hinweis zur E-Mail-Nutzung lassen sich anpassen. Die deutsche Oberfläche folgt der WordPress-Sprache wahlweise mit „du“ oder „Sie“.
+- **Benachrichtigungen nach Ihren Abläufen:** Empfänger, Betreff und Text der Benachrichtigung bei neuen Bewertungen, Meldungen und Fragen bestimmen Sie selbst, ebenso die Gründe, aus denen Besucher eine Bewertung melden können.
+- **Moderationsregeln:** Bewertungen mit bestimmten Wörtern, Links oder E-Mail-Domains werden zur Prüfung zurückgehalten, nie still gelöscht. Dazu kommen Mindest-Ausfüllzeit und ein zuschaltbarer, eingebauter Spamschutz ohne Anfragen an externe Dienste.
+- **Aufbewahrung:** Fristen für Kontaktadressen, freigegebene und abgelehnte Bewertungen, Korrekturvorschläge und Protokolle legen Sie in Tagen fest. Solange keine Frist für Kontaktadressen gesetzt ist, weist der Website-Zustand darauf hin.
+- **Darstellung:** Stern- und Akzentfarbe, Anzeige als Sterne, Zahl oder beides, Nachkommastellen des Durchschnitts, Vorgaben für neue Widgets sowie strukturierte Daten je Inhaltsart und ab einer Mindestzahl von Bewertungen.
+- **Rollen und Rechte:** Moderation, Quellen, Anfragen, Berichte, Vertrauenszeichen, Datenschutz und Einstellungen vergeben Sie je Rolle getrennt – die Einstellungen sind nicht an den Administrator gebunden.
+- **Sichern, übertragen, zurücksetzen:** Export und Import der Einstellungen als JSON-Datei mit Vorschau „bisher/neu“, ohne Zugangsdaten; Wiederherstellen des letzten Stands sowie Zurücksetzen je Reiter oder insgesamt. Für den Betrieb stehen die Einstellungen auch per WP-CLI bereit.
+- **Nachvollziehbar und sauber:** Ein Änderungsprotokoll zeigt, wer wann welchen Wert von alt nach neu geändert hat; sensible Angaben werden gekürzt oder maskiert. Ungültige Eingaben werden am Feld gemeldet statt still korrigiert. Bei der Deinstallation bleiben Ihre Daten standardmäßig erhalten; gelöscht wird nur nach ausdrücklicher Bestätigung. Hinweise auf Pro-Funktionen in den Einstellungen sind ausblendbar.
+
 [Review Captain Pro ansehen](/review-captain/pro/) · [Installation und Voraussetzungen](/review-captain/installation/) · [FAQ](/review-captain/faq/)
 
 [Screenshot-Platzhalter: Widget-Vorschau mit Quellenlabel, Originalrating, Datum und Link zum Originalprofil zeigen. Review-Texte und Profile anonymisieren oder freigeben lassen.]

@@ -28,6 +28,15 @@ Wenn mehrere Profile und Plattformen zusammenkommen, bündelt Review Captain Pro
 - Anbindung an Workflow Captain über die Suite-Ereignisse: Review erstellt, Status geändert, Review entfernt – ohne Namen, E-Mail-Adressen und Reviewtexte. Ein Workflow kann Consent, Opt-out, Deduplizierung und Moderation nicht umgehen.
 - Lizenzverwaltung für 1, 5 oder 25 Live-Websites; jeder Plan enthält denselben Pro-Funktionsumfang.
 
+## Pro-Einstellungen
+
+Die Einstellungen der Pro-Funktionen erscheinen direkt in den Einstellungen von Review Captain, an der Stelle der jeweiligen Funktion. Länderprofile, Export und Import, Änderungsprotokoll und Aufbewahrungsfristen bleiben Teil des kostenlosen Kerns.
+
+- **Bewertungsanfragen:** Absendername und -adresse, Versandzeiten, Tageslimit, Mindestabstand je Empfänger und die optionale Erinnerung; dazu Einladungs-E-Mails mit Logo und Fußzeile, eine deutsche Standardvorlage und eine eigene Aufbewahrungsfrist für Anfragen.
+- **Plattform-Abgleich:** wie oft jede Quelle auf neue Bewertungen geprüft und in welchem Rhythmus sie vollständig abgeglichen wird.
+- **Medien in Erfahrungsberichten:** Video an oder aus und Größenobergrenzen je Medienart.
+- **Auswertungen:** Standard-Zeitraum und Mindestmenge, ab der Werte angezeigt werden (nicht unter fünf).
+
 ## Plattformzugang passend zur Quelle
 
 Review Captain Pro verbindet diese Quellen über offizielle Zugriffspfade mit Ihren eigenen Zugängen. Für Google Business Profile nutzen Sie ein eigenes Google-Cloud-Projekt mit freigeschalteten Business-Profile-APIs; eine geführte Anleitung hilft bei der Einrichtung. Apple App Store und Google Play werden über einen API-Schlüssel bzw. ein Dienstkonto Ihrer eigenen Apps verbunden. Trustpilot und Trusted Shops/eTrusted können je nach Konto und Tarif zusätzliche Freigaben erfordern. Bei eingeschränktem API-Zugang bleiben offizielle Anbieter-Widgets, Profil-Links oder manuelle Kuration verfügbar. Review Captain umgeht keine Tarif- und Plattformrechte.

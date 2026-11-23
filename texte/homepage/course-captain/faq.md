@@ -46,6 +46,9 @@ Single für 1, Business für 5 und Agency für 25 Live-Websites. Jeder Plan enth
 ## Was passiert, wenn meine Pro-Lizenz endet?
 Der kostenlose Kern läuft weiter. Kurse, Fortschritte, Ergebnisse und ausgestellte Nachweise bleiben erhalten und exportierbar; neue Pro-Aktionen sind bis zur Verlängerung gesperrt.
 
+## Kann ich Course Captain an die Regeln meines Landes anpassen?
+Ja. Länderprofile für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder schlagen passende Einstellungen vor, zum Beispiel Aufbewahrungsfristen. Sie sehen jede Änderung vorher und übernehmen nur, was Sie bestätigen. Fristen, Rechtstext-Verweise und E-Mail-Texte stellen Sie selbst ein; rechtlich relevante Werte prüfen Sie oder Ihre Beratung. [Einstellungen im Überblick](/course-captain/features/)
+
 ## Wird Multisite unterstützt?
 Course Captain v1 ist für einzelne WordPress-Websites ausgelegt. In einem Multisite-Netzwerk lässt es sich nur je Website aktivieren; die Netzwerkaktivierung ist gesperrt. Eine netzwerkweite Unterstützung ist in Version 1.0 nicht zugesagt.
 
