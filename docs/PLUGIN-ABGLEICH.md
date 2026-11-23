@@ -102,7 +102,21 @@ Captain Pro hat eine harte Sperre „gebaut, aber vom Inhaber noch nicht freigeg
 
 Nicht zurückgehalten sind Pass, Form und Review Captain Pro sowie die ersten vier Funktionen von Affiliate Captain Pro.
 
-Neu seit 23.11. ist außerdem der Auftrag „Einstellungen der Captain Suite“: Länderprofile, Export/Import, Änderungsprotokoll und Pro-Hinweiszeilen im Kern; Rahmen in captain-pro `docs/settings/README.md`. Diese Funktionen sind noch in Arbeit und auf der Website noch nicht beschrieben.
+Neu seit 23.11. ist außerdem der Auftrag „Einstellungen der Captain Suite“: Länderprofile, Export/Import, Änderungsprotokoll und Pro-Hinweiszeilen im Kern; Rahmen in captain-pro `docs/settings/README.md`. Die Website beschreibt sie seit 23.11. nach dem geplanten Umfang (Entscheidung der Inhaberin):
+- **Übergreifend:** ein Abschnitt auf der Produktübersicht und eine Frage in der FAQ.
+- **Je Produkt:** ein Abschnitt „Einstellungen und Anpassung an Ihr Land“ auf der Features-Seite, Pro-Einstellungen auf der Pro-Seite, je eine FAQ-Frage.
+
+Pro-Einstellungen stehen nur dort, wo es einen bestehenden oder freigegebenen Rechteschlüssel gibt. Nicht aufgenommen, weil Entscheidungen der Inhaberin offen sind:
+- **Voucher:** Restguthaben-Erinnerung, Standorte/Filialabrechnung, Kassen-Anbindung
+- **Pass:** Vorlagen-Designer, Storno-Staffeln, weitere E-Rechnungsformate und QR-Rechnung, Servicegebühr in Prozent
+- **Affiliate:** Buchhaltungs-Export, erweiterte Betrugsregeln
+- **Review:** Händlerantwort, Kennzeichen „gegen Vorteil“
+- **Workflow:** eigenes Nachrichten-Design
+- **Course:** Zustimmung bei Einschreibung, Altersgrenze, Pro-Verkaufseinstellungen (E5)
+- **Form:** mehrere Dateien je Feld, mehrsprachige Formulare
+- **License:** ausgehende Webhooks, Beta-Kanal, White Label/Schlüssel-Präfix, Kündigungsseite
+
+Hinweis aus der Prüfung: Die Voucher-Pro-Seite nennt in der Einleitung „mehrere Standorte“, dafür gibt es keinen freigegebenen Schlüssel.
 
 ## Offene Fragen an den Inhaber
 

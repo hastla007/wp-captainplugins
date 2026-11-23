@@ -12,6 +12,11 @@ Geprüft mit allen sieben Kern-Plugins (Voucher, Pass, Affiliate, Form, Review, 
 - Generator: Absätze, die mit **In Vorbereitung:** beginnen, werden als Hinweis gestaltet (`.cp-status-note`).
 - `tools/price-check.py` meldet Kauf-Links und fehlende Hinweise bei Add-ons, die in `preise.md` als „(in Vorbereitung)“ markiert sind. Derzeit ist keines markiert: Alle sieben Add-ons sind zum Release vorgesehen (Ablauf in `docs/REDAKTION.md`).
 
+### Einstellungen der Suite (Stand 23.11.2026)
+- Produktübersicht und FAQ: Länderprofile als Vorschlag, Geschäftsregeln als Einstellung, Export/Import, Zurücksetzen, Änderungsprotokoll, WP-CLI, Deinstallation mit Wahl.
+- Jedes Produkt mit Abschnitt „Einstellungen und Anpassung an Ihr Land“; Pro-Einstellungen nur zu bestehenden Rechteschlüsseln.
+- Pass Captain Pro setzt Pass Captain 1.6.0 voraus.
+
 ### Preise und Pläne
 - Form Captain Pro kostet 59 / 129 / 249 € pro Jahr (vorher 49 / 99 / 199 €), im Shop-Katalog, in den Texten und im Preis-Pattern.
 - Einheitliche Plannamen Single / Business / Agency für alle Add-ons (Form und Review hießen Solo / Studio / Agency). Bestehende Form-Produkte mit den SKUs `…-solo` / `…-studio` legt der Setup-Assistent nicht um. In Installationen, die den Assistenten schon ausgeführt haben, diese Produkte löschen und den Assistenten erneut ausführen.

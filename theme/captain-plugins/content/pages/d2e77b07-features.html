@@ -58,7 +58,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Honeypot, Mindest-Ausfüllzeit, Rate-Limit und eine einfache Blockliste für Begriffe und E-Mail-Domains bilden den Basisspamschutz ohne Drittanbieter. Externe Captcha-Anbieter lassen sich über Erweiterungen ergänzen und müssen nach Anzeige von Anbieter und Datenfluss bewusst aktiviert werden. Datenexport, Löschung, Aufbewahrungsfristen (90 Tage, 12 Monate oder manuell), Einwilligungsnachweis und -widerruf sowie die WordPress-Privacy-Werkzeuge unterstützen den verantwortungsvollen Umgang mit Formulardaten.</p>
+<p>Honeypot, Mindest-Ausfüllzeit, Rate-Limit und eine einfache Blockliste für Begriffe und E-Mail-Domains bilden den Basisspamschutz ohne Drittanbieter. Externe Captcha-Anbieter lassen sich über Erweiterungen ergänzen und müssen nach Anzeige von Anbieter und Datenfluss bewusst aktiviert werden. Datenexport, Löschung, frei einstellbare Aufbewahrungsfristen, Einwilligungsnachweis und -widerruf sowie die WordPress-Privacy-Werkzeuge unterstützen den verantwortungsvollen Umgang mit Formulardaten.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -68,6 +68,44 @@
 
 <!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Einstellungen und Anpassung an Ihr Land</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Form Captain lässt sich an Ihre Abläufe und die Gepflogenheiten Ihres Landes anpassen. Alle folgenden Einstellungen sind im kostenlosen Kern enthalten; Vorgaben ab Werk ändern bestehendes Verhalten nicht.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Länderprofile als Vorschlag:</strong> Für Deutschland, Österreich, die Schweiz, die EU allgemein und „International“ schlägt Form Captain passende Werte vor, etwa Aufbewahrung, Papierkorb-Frist, CSV-Trennzeichen sowie Postleitzahl- und Telefonformat für neue Felder. Sie sehen jeden Wert vorher und nachher und übernehmen nur, was Sie auswählen; nichts wird still überschrieben. Werte mit rechtlicher Bedeutung sind als ungeprüft gekennzeichnet – Einwilligungs- und Aufbewahrungswerte prüfen Sie als Betreiber selbst.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Aufbewahrung frei wählbar:</strong> Fristen in Tagen, Monaten oder Jahren oder manuelles Löschen, global und je Formular, dazu einstellbare Schonfrist und Vorwarnung vor dem Löschen.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Eingabeformate je Land:</strong> Postleitzahl-Muster für Deutschland, Österreich, die Schweiz oder allgemein, Telefonnummern wahlweise international mit „+“ und eine Mindestalter-Prüfung am Datumsfeld.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Eigene Texte je Formular:</strong> Schaltflächentext, Pflichtfeld-Hinweis und Fehlermeldungen passen Sie je Formular an. Die Bestätigungsmail geht in der Sprache der Seite hinaus, auf der das Formular stand.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>E-Mails mit Ihrem Auftritt:</strong> Logo, Fußzeile etwa für Ihre Firmenangaben, feste Antwortadresse, Format je Formular und ein Test-Versand der echten Bestätigungsmail mit Beispielwerten.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Double-Opt-in je Formular:</strong> Auf Wunsch bestätigt die absendende Person ihre E-Mail-Adresse über einen Link, bevor Aktionen laufen. Gültigkeit des Links und Löschung unbestätigter Einsendungen stellen Sie ein.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Grenzen und Vorgangsnummer:</strong> Formulare öffnen und schließen zu einem Zeitpunkt oder nach einer Höchstzahl an Einsendungen. Eine Vorgangsnummer mit eigenem Präfix und optionalem Jahresneustart steht als Platzhalter in E-Mails bereit.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Spamschutz nach Bedarf:</strong> Ein eingebauter Schutz lässt den Browser eine kleine Rechenaufgabe lösen – ohne externen Dienst. Sendegrenzen sind einstellbar, dieser Schutz lässt sich je Formular verschärfen oder abschalten, und hinter Diensten wie Cloudflare wählen Sie die richtige Quelle der Besucheradresse.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Einstellungen übertragen und nachvollziehen:</strong> Export und Import als JSON-Datei mit Vorschau, ohne Zugangsdaten. Dazu Zurücksetzen je Bereich, ein Änderungsprotokoll (wer hat wann was von welchem auf welchen Wert geändert), WP-CLI-Befehle für Einstellungen und ein eigenes Recht, wer Einstellungen verwalten darf.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Deinstallation nach Ihrer Wahl:</strong> Daten behalten (Vorgabe) oder nach ausdrücklicher Bestätigung vollständig löschen. Hinweise auf Pro-Funktionen in den Einstellungen lassen sich ausblenden.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Einstellungen für Pro-Funktionen wie Uploads, mehrstufige Formulare, PDF, Webhooks und WooCommerce-Fragebögen finden Sie auf der <a href="/form-captain/pro/">Pro-Seite</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Pro-Workflows</h2>
 <!-- /wp:heading -->
 
@@ -76,12 +114,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Webhooks übertragen zugeordnete Felder an öffentliche HTTPS-Ziele mit Signatur, Idempotenz, Zeitlimit, Wiederholungen und Jobstatus. Einträge lassen sich als PDF mit festem Layout herunterladen. Datei- und PDF-Zugriffe folgen den WordPress-Berechtigungen und Datenschutzregeln.</p>
+<p>Webhooks übertragen zugeordnete Felder an öffentliche HTTPS-Ziele mit Signatur, Idempotenz, Zeitlimit, Wiederholungen und Jobstatus. Einträge lassen sich als PDF herunterladen. Datei- und PDF-Zugriffe folgen den WordPress-Berechtigungen und Datenschutzregeln.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull cp-content-section"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-split"><!-- wp:group {"className":"cp-split__text","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-split__text"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Schnittstellen statt Datenbankkopplung</h2>

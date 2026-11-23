@@ -27,9 +27,9 @@
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Testlauf mit Beispieldaten ohne Seiteneffekte, Entwurf und Veröffentlichen mit unveränderlichen Versionen, Duplizieren, Archivieren, Export und Import als JSON, Vorlagen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Zuverlässige Ausführung: Erkennung doppelter Ereignisse, Wiederholung nach festem Plan, fehlgeschlagene Ereignisse gezielt erneut einreihen, Schleifenschutz, Parallelitätsgrenzen, Notfallpause und „Läufe nacheinander“ je Objekt oder Benutzer.</li>
+<li>Zuverlässige Ausführung: Erkennung doppelter Ereignisse, Wiederholung nach einstellbarem Plan, fehlgeschlagene Ereignisse gezielt erneut einreihen, Schleifenschutz, Parallelitätsgrenzen, Notfallpause und „Läufe nacheinander“ je Objekt oder Benutzer.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Laufansicht mit Schritten und redigierten Daten; erledigte Läufe werden nach 30 Tagen gelöscht, fehlgeschlagene Ereignisse nach 90 Tagen (verkürzbar).</li>
+<li>Laufansicht mit Schritten und redigierten Daten; erledigte Läufe werden ab Werk nach 30 Tagen gelöscht, fehlgeschlagene Ereignisse nach 90 Tagen; beide Fristen lassen sich zwischen 1 und 180 Tagen einstellen.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Eigene Rechte für Bearbeiten, Veröffentlichen, Protokolle und Wiederholen, Protokoll der Eingriffe, Website-Zustand, Diagnose-Download und WP-CLI-Befehle.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
@@ -40,6 +40,44 @@
 
 <!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Einstellungen und Betrieb</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Alle folgenden Einstellungen sind im kostenlosen Kern enthalten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Länderprofile</strong> für Deutschland, Österreich, die Schweiz, die EU allgemein und andere Länder: Ein Profil schlägt passende Werte vor, zeigt Vorher und Nachher und überschreibt nichts ohne Ihre Bestätigung. Alle Werte bleiben danach frei änderbar.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Art der Nachricht:</strong> Jede Nachricht an Kunden ist als Vertragsabwicklung oder Werbung gekennzeichnet. Werbung geht ab Werk nur an Empfänger mit erfasster Einwilligung und enthält einen Abmeldelink; abgemeldete Adressen landen auf einer Sperrliste.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Ruhezeit und Sendetage</strong> für die ganze Website sowie eine Höchstzahl an Nachrichten je Empfänger und Tag; Nachrichten außerhalb des Fensters warten bis zum nächsten Sendebeginn.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Absender, Antwortadresse und Fußzeile</strong> mit Platzhaltern für Ihre Impressums- und Datenschutzseite.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Geschäftsregeln statt fester Werte:</strong> Anzahl der Wiederholungen, Schleifentiefe, Aufbewahrungsfristen und die Empfänger von Betreiber-Nachrichten nach Rollen stellen Sie selbst ein.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Testmodus</strong> für die ganze Website: alle Nachrichten an eine Testadresse umleiten oder nur protokollieren, ohne etwas auszuführen.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Export und Import der Einstellungen</strong> als JSON-Datei mit Vorschau der Unterschiede; Zugangsdaten und Schlüssel werden nie exportiert.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Zurücksetzen</strong> je Reiter oder insgesamt, mit Rückgängig-Funktion.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Änderungsprotokoll</strong> mit Zeitpunkt, Person sowie altem und neuem Wert; Einstellungen lassen sich auch per WP-CLI lesen, setzen, exportieren und zurücksetzen.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Deinstallation mit Wahl:</strong> Beim Löschen des Plugins bleiben Ihre Daten ab Werk erhalten; vollständiges Entfernen nur nach ausdrücklicher Bestätigung.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Profilwerte und Vorgaben mit rechtlichem Bezug sind Vorschläge und ersetzen keine Rechtsberatung; prüfen Sie Texte und Einstellungen für Ihren Einsatz. Hinweise auf Pro-Einstellungen erscheinen im Kern nur als dezente Zeile am Ende eines Reiters und sind ausblendbar.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Zusätzliche Funktionen in Workflow Captain Pro</h2>
 <!-- /wp:heading -->
 
@@ -61,13 +99,15 @@
 <!-- /wp:list-item --><!-- wp:list-item -->
 <li>Rezeptvorlagen für die Captain Suite.</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>Konfigurierbare Protokollaufbewahrung bis 365 Tage (Standard 90 Tage) und CSV-Protokollexport.</li>
+<li>Protokollaufbewahrung über die freien 180 Tage hinaus, CSV-Protokollexport und ein längeres Änderungsprotokoll.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Sendefenster und Ruhezeiten je Workflow, Feiertagskalender und Höchstzahlen je Empfänger für einzelne Workflows.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull cp-content-section"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-split"><!-- wp:group {"className":"cp-split__text","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-split__text"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Klare Zuständigkeiten</h2>

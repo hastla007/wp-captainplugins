@@ -17,7 +17,7 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/captain-pro/` | Wenn Ihr Betrieb mehr braucht: Captain Pro | bereit | – | – | ☐ | ☐ | ☐ |
 | `/` | Geschäftsprozesse in WordPress. Klar organisiert. | blockiert | 4 offen | 3 Medien | ☐ | ☐ | ☐ |
 | `/preise/` | Der passende Captain-Pro-Plan für Ihre Websites | blockiert | 1 offen | Preise | ☐ | ☐ | ☐ |
-| `/produkte/` | Das passende WordPress-Plugin für Ihre Aufgabe | blockiert | 3 offen | 1 Medien | ☐ | ☐ | ☐ |
+| `/produkte/` | Das passende WordPress-Plugin für Ihre Aufgabe | blockiert | 3 offen | Zusagen, 1 Medien | ☐ | ☐ | ☐ |
 | `/vergleich/` | Welche Captain-Lösung passt zu Ihrem Unternehmen? | bereit | – | – | ☐ | ☐ | ☐ |
 
 ## Produkte
@@ -47,11 +47,11 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/license-captain/` | Lizenzen und Updates für Ihre WordPress-Plugins verwalten | bereit | – | 2 Medien | ☐ | ☐ | ☐ |
 | `/license-captain/preise/` | License Captain: Preise und Pläne | blockiert | 1 offen | – | ☐ | ☐ | ☐ |
 | `/pass-captain/faq/` | Fragen zu Pass Captain | bereit | – | – | ☐ | ☐ | ☐ |
-| `/pass-captain/features/` | Ein durchgängiger Ablauf für Events und Services | bereit | – | 2 Medien | ☐ | ☐ | ☐ |
+| `/pass-captain/features/` | Ein durchgängiger Ablauf für Events und Services | bereit | – | Zusagen, 2 Medien | ☐ | ☐ | ☐ |
 | `/pass-captain/` | Events und Buchungen direkt in WordPress organisieren | blockiert | 1 offen | 2 Medien | ☐ | ☐ | ☐ |
 | `/pass-captain/pro/` | Mehr Kontrolle für professionelle Ticket- und Serviceabläufe | blockiert | 2 offen | Preise, 2 Medien | ☐ | ☐ | ☐ |
 | `/review-captain/faq/` | Häufige Fragen zu Review Captain | bereit | – | – | ☐ | ☐ | ☐ |
-| `/review-captain/features/` | Review Captain Features: Bewertungen zentral organisieren | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
+| `/review-captain/features/` | Review Captain Features: Bewertungen zentral organisieren | bereit | – | Zusagen, 1 Medien | ☐ | ☐ | ☐ |
 | `/review-captain/` | Review Captain: Kundenstimmen, die Vertrauen schaffen | blockiert | 1 offen | 1 Medien | ☐ | ☐ | ☐ |
 | `/review-captain/installation/` | Review Captain installieren und einrichten | bereit | – | – | ☐ | ☐ | ☐ |
 | `/review-captain/integrationen/` | Review Captain Integrationen | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
@@ -62,7 +62,7 @@ abgehakt wird von den Rollen aus dem [Redaktionshandbuch](REDAKTION.md): **R** =
 | `/voucher-captain/` | Gutscheine verkaufen, die zu Ihrer Marke passen | blockiert | 1 offen | Zusagen, 3 Medien | ☐ | ☐ | ☐ |
 | `/voucher-captain/pro/` | Gutscheinaktionen für Ihr ganzes Unternehmen – zentral gesteuert | blockiert | 2 offen | Preise, 2 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/faq/` | Häufige Fragen zu Workflow Captain | bereit | – | Preise | ☐ | ☐ | ☐ |
-| `/workflow-captain/features/` | Workflow Captain Features: Abläufe visuell verbinden | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
+| `/workflow-captain/features/` | Workflow Captain Features: Abläufe visuell verbinden | bereit | – | Zusagen, 1 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/` | Wiederkehrende Abläufe. Ein klarer Workflow. | blockiert | 2 offen | 1 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/installation/` | Workflow Captain installieren und den ersten Ablauf testen | bereit | – | 1 Medien | ☐ | ☐ | ☐ |
 | `/workflow-captain/integrationen/` | Workflow Captain Integrationen | bereit | – | Zusagen, 1 Medien | ☐ | ☐ | ☐ |
