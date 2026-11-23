@@ -27,7 +27,8 @@ function captain_plugins_content_template( array $entry ): ?string {
 	if ( ! is_readable( $path ) ) {
 		return null;
 	}
-	return trim( (string) file_get_contents( $path ) );
+	// Reads a bundled, validated theme file (not a remote URL); WP_Filesystem is not needed for local reads.
+	return trim( (string) file_get_contents( $path ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 }
 
 function captain_plugins_content_page_hash( WP_Post $page ): string {
@@ -55,13 +56,15 @@ function captain_plugins_content_template_slug( array $entry ): string {
 	if ( '' === $path ) {
 		return '';
 	}
-	if ( in_array( $path, array( 'voucher-captain', 'pass-captain', 'affiliate-captain', 'license-captain' ), true ) ) {
+	// Product start pages are top-level "*-captain" pages; their content carries the product hero and H1.
+	if ( preg_match( '/^[a-z]+-captain$/', $path ) ) {
 		return 'page-product';
 	}
-	if ( in_array( $path, array( 'preise', 'captain-pro' ), true ) ) {
+	if ( in_array( $path, array( 'preise', 'captain-pro' ), true ) || '/preise' === substr( $path, -7 ) ) {
 		return 'page-pricing';
 	}
-	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen' ), true ) ) {
+	// Overviews and wide comparison matrices need the full content width.
+	if ( in_array( $path, array( 'produkte', 'vergleich', 'loesungen', 'kompatibilitaet', 'integrationen' ), true ) || preg_match( '#/(kompatibilitaet|integrationen)$#', $path ) || 0 === strpos( $path, 'loesungen/' ) ) {
 		return 'page-wide';
 	}
 	return 'page-resource';
@@ -81,6 +84,15 @@ function captain_plugins_content_store_template( int $post_id, array $entry ): v
 	}
 }
 
+/** Resolve "theme:assets/…" to the theme URL of this installation; other values must be absolute URLs. */
+function captain_plugins_content_social_image( string $value ): string {
+	if ( 0 === strpos( $value, 'theme:' ) ) {
+		$relative = ltrim( substr( $value, 6 ), '/' );
+		return is_readable( get_theme_file_path( $relative ) ) ? esc_url_raw( get_theme_file_uri( $relative ) ) : '';
+	}
+	return preg_match( '#^https://#i', $value ) ? esc_url_raw( $value ) : '';
+}
+
 /** Write SEO defaults without replacing fields a site owner has changed. */
 function captain_plugins_content_store_seo( int $post_id, array $entry, bool $force = false ): void {
 	$values = captain_plugins_content_seo_values( $entry );
@@ -95,8 +107,9 @@ function captain_plugins_content_store_seo( int $post_id, array $entry, bool $fo
 	update_post_meta( $post_id, '_cp_seo_written', $values );
 
 	if ( defined( 'WPSEO_VERSION' ) ) {
-		$social_title = (string) ( $entry['social_title'] ?? $entry['seo_title'] ?? '' );
-		$social_desc  = (string) ( $entry['social_description'] ?? $entry['meta_description'] ?? '' );
+		// Manifest fields exist but may be empty strings; fall back to the SEO values in that case.
+		$social_title = '' !== (string) ( $entry['social_title'] ?? '' ) ? (string) $entry['social_title'] : (string) ( $entry['seo_title'] ?? '' );
+		$social_desc  = '' !== (string) ( $entry['social_description'] ?? '' ) ? (string) $entry['social_description'] : (string) ( $entry['meta_description'] ?? '' );
 		$yoast = array(
 			'_yoast_wpseo_title'    => (string) ( $entry['seo_title'] ?? '' ),
 			'_yoast_wpseo_metadesc' => (string) ( $entry['meta_description'] ?? '' ),
@@ -106,9 +119,10 @@ function captain_plugins_content_store_seo( int $post_id, array $entry, bool $fo
 			'_yoast_wpseo_twitter-title' => $social_title,
 			'_yoast_wpseo_twitter-description' => $social_desc,
 		);
-		if ( ! empty( $entry['social_image'] ) ) {
-			$yoast['_yoast_wpseo_opengraph-image'] = esc_url_raw( (string) $entry['social_image'] );
-			$yoast['_yoast_wpseo_twitter-image']   = esc_url_raw( (string) $entry['social_image'] );
+		$social_image = captain_plugins_content_social_image( (string) ( $entry['social_image'] ?? '' ) );
+		if ( '' !== $social_image ) {
+			$yoast['_yoast_wpseo_opengraph-image'] = $social_image;
+			$yoast['_yoast_wpseo_twitter-image']   = $social_image;
 		}
 		$written = get_post_meta( $post_id, '_cp_yoast_written', true );
 		$written = is_array( $written ) ? $written : array();
@@ -145,7 +159,15 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 	$allowed = array( 'core', 'products', 'guides' );
 	$groups  = array_values( array_intersect( $allowed, array_map( 'sanitize_key', $groups ) ) );
 	if ( empty( $groups ) ) {
-		return array( 'created' => 0, 'updated' => 0, 'unchanged' => 0, 'edited' => 0, 'blocked' => 0, 'errors' => 1 );
+		return array(
+			'created' => 0,
+			'updated' => 0,
+			'unchanged' => 0,
+			'edited' => 0,
+			'blocked' => 0,
+			'errors' => 1,
+			'retired' => 0,
+		);
 	}
 	$entries = captain_plugins_content_manifest();
 	$selected = array();
@@ -175,7 +197,14 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 			}
 		}
 	}
-	$counts = array( 'created' => 0, 'updated' => 0, 'unchanged' => 0, 'edited' => 0, 'blocked' => 0, 'errors' => 0 );
+	$counts = array(
+		'created' => 0,
+		'updated' => 0,
+		'unchanged' => 0,
+		'edited' => 0,
+		'blocked' => 0,
+		'errors' => 0,
+	);
 
 	foreach ( $entries as $entry ) {
 		$path = trim( (string) ( $entry['path'] ?? '' ), '/' );
@@ -205,10 +234,20 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 				continue;
 			}
 			if ( ! $page instanceof WP_Post ) {
-				$id = wp_insert_post( wp_slash( array(
-					'post_type' => 'page', 'post_status' => $wanted_status, 'post_title' => $title ?: __( 'Startseite', 'captain-plugins' ),
-					'post_name' => 'startseite', 'post_content' => $template, 'comment_status' => 'closed', 'ping_status' => 'closed',
-				) ), true );
+				$id = wp_insert_post(
+					wp_slash(
+						array(
+							'post_type' => 'page',
+							'post_status' => $wanted_status,
+							'post_title' => '' !== $title ? $title : __( 'Startseite', 'captain-plugins' ),
+							'post_name' => 'startseite',
+							'post_content' => $template,
+							'comment_status' => 'closed',
+							'ping_status' => 'closed',
+						)
+					),
+					true
+				);
 				if ( is_wp_error( $id ) || ! $id ) {
 					++$counts['errors'];
 					continue;
@@ -241,7 +280,17 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 				++$counts['blocked'];
 				continue;
 			}
-			$id = wp_update_post( wp_slash( array( 'ID' => $page_id, 'post_title' => $title, 'post_content' => $template, 'post_status' => $placeholder ? 'draft' : $page->post_status ) ), true );
+			$id = wp_update_post(
+				wp_slash(
+					array(
+						'ID' => $page_id,
+						'post_title' => $title,
+						'post_content' => $template,
+						'post_status' => $placeholder ? 'draft' : $page->post_status,
+					)
+				),
+				true
+			);
 			if ( is_wp_error( $id ) || ! $id ) {
 				++$counts['errors'];
 				continue;
@@ -263,12 +312,22 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 		}
 		$page = get_page_by_path( $path, OBJECT, 'page' );
 		if ( ! $page instanceof WP_Post ) {
-			$id = wp_insert_post( wp_slash( array(
-				'post_type' => 'page', 'post_status' => $wanted_status, 'post_title' => $title,
-				'post_name' => (string) ( $entry['slug'] ?? '' ), 'post_parent' => $parent_id,
-				'post_content' => $template, 'menu_order' => (int) ( $entry['order'] ?? 0 ),
-				'comment_status' => 'closed', 'ping_status' => 'closed',
-			) ), true );
+			$id = wp_insert_post(
+				wp_slash(
+					array(
+						'post_type' => 'page',
+						'post_status' => $wanted_status,
+						'post_title' => $title,
+						'post_name' => (string) ( $entry['slug'] ?? '' ),
+						'post_parent' => $parent_id,
+						'post_content' => $template,
+						'menu_order' => (int) ( $entry['order'] ?? 0 ),
+						'comment_status' => 'closed',
+						'ping_status' => 'closed',
+					)
+				),
+				true
+			);
 			if ( is_wp_error( $id ) || ! $id ) {
 				++$counts['errors'];
 				continue;
@@ -298,10 +357,18 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 		}
 		$old_status = $page->post_status;
 		$status      = $placeholder ? 'draft' : ( 'draft' === $old_status && 'publish' === $wanted_status ? 'publish' : $old_status );
-		$id = wp_update_post( wp_slash( array(
-			'ID' => $page_id, 'post_title' => $title, 'post_content' => $template, 'post_parent' => $parent_id,
-			'post_status' => $status,
-		) ), true );
+		$id = wp_update_post(
+			wp_slash(
+				array(
+					'ID' => $page_id,
+					'post_title' => $title,
+					'post_content' => $template,
+					'post_parent' => $parent_id,
+					'post_status' => $status,
+				)
+			),
+			true
+		);
 		if ( is_wp_error( $id ) || ! $id ) {
 			++$counts['errors'];
 			continue;
@@ -310,5 +377,68 @@ function captain_plugins_content_sync( array $groups, bool $publish = true ): ar
 		++$counts['updated'];
 	}
 
+	$counts['retired'] = captain_plugins_content_retire();
 	return $counts;
+}
+
+/** Paths the theme no longer ships, mapped to their recommended redirect target. */
+function captain_plugins_content_retired_paths(): array {
+	$file = get_theme_file_path( 'content/retired.php' );
+	if ( ! is_readable( $file ) ) {
+		return array();
+	}
+	$paths = require $file;
+	return is_array( $paths ) ? $paths : array();
+}
+
+/**
+ * Fallback 301 for retired theme pages: only when the old URL would otherwise end in a 404,
+ * so redirects configured in Yoast, a redirect plugin or the server always take precedence.
+ */
+function captain_plugins_content_redirect_retired(): void {
+	if ( ! is_404() ) {
+		return;
+	}
+	$request = isset( $_SERVER['REQUEST_URI'] ) ? (string) wp_unslash( $_SERVER['REQUEST_URI'] ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- only compared against a fixed list.
+	$path    = trim( (string) wp_parse_url( $request, PHP_URL_PATH ), '/' );
+	$home    = trim( (string) wp_parse_url( home_url( '/' ), PHP_URL_PATH ), '/' );
+	if ( '' !== $home && str_starts_with( $path, $home . '/' ) ) {
+		$path = substr( $path, strlen( $home ) + 1 );
+	}
+	$targets = captain_plugins_content_retired_paths();
+	if ( isset( $targets[ $path ] ) ) {
+		wp_safe_redirect( home_url( (string) $targets[ $path ] ), 301, 'Captain Plugins Theme' );
+		exit;
+	}
+}
+add_action( 'template_redirect', 'captain_plugins_content_redirect_retired' );
+
+/**
+ * Move untouched, theme-owned copies of retired pages back to draft. Pages edited by people stay as they are.
+ *
+ * @return int Number of pages moved to draft.
+ */
+function captain_plugins_content_retire(): int {
+	$retired = 0;
+	foreach ( array_keys( captain_plugins_content_retired_paths() ) as $path ) {
+		$page = get_page_by_path( (string) $path, OBJECT, 'page' );
+		if ( ! $page instanceof WP_Post || 'publish' !== $page->post_status || '1' !== get_post_meta( $page->ID, '_cp_theme_page', true ) ) {
+			continue;
+		}
+		if ( ! hash_equals( (string) get_post_meta( $page->ID, '_cp_content_hash', true ), captain_plugins_content_page_hash( $page ) ) ) {
+			continue;
+		}
+		$updated = wp_update_post(
+			array(
+				'ID' => $page->ID,
+				'post_status' => 'draft',
+			),
+			true
+		);
+		if ( ! is_wp_error( $updated ) ) {
+			update_post_meta( $page->ID, '_cp_content_status', 'retired' );
+			++$retired;
+		}
+	}
+	return $retired;
 }

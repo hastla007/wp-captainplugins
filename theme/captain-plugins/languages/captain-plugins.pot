@@ -1,0 +1,472 @@
+# Copyright (C) Captain Plugins
+# This file is distributed under the same license as the Captain Plugins theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Captain Plugins Theme\n"
+"POT-Creation-Date: 2026-11-17 05:33+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"X-Domain: captain-plugins\n"
+
+#: functions.php
+msgid "Captain Plugins"
+msgstr ""
+
+#: functions.php inc/content.php
+msgid "Startseite"
+msgstr ""
+
+#: functions.php
+msgid "Brotkrumennavigation"
+msgstr ""
+
+#: functions.php
+msgid "Shop"
+msgstr ""
+
+#. translators: %s: footer column heading, e.g. "Produkte".
+#: functions.php
+msgid "Footer: %s"
+msgstr ""
+
+#. translators: %s: comma-separated first column headings of a table.
+#: functions.php
+msgid "Tabelle mit den Spalten %s; bei Bedarf horizontal scrollen."
+msgstr ""
+
+#. translators: %s: comma-separated first column headings of a table.
+#: functions.php
+msgid "Tabelle; bei Bedarf horizontal scrollen, um weitere Spalten zu sehen."
+msgstr ""
+
+#: functions.php
+msgid "Ihre Bestellung"
+msgstr ""
+
+#: inc/catalog.php
+msgid "Für die Produktanlage müssen WooCommerce und License Captain aktiv sein."
+msgstr ""
+
+#. translators: %d: number of product drafts.
+#: inc/catalog.php inc/setup.php
+msgid "Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten."
+msgstr ""
+
+#: inc/catalog.php
+msgid "Die Konzeptpreise sind in Euro. Stelle zuerst die WooCommerce-Währung auf EUR, bevor die Preisentwürfe angelegt werden."
+msgstr ""
+
+#. translators: %s: product SKU.
+#: inc/catalog.php
+msgid "SKU %s existiert bereits und wurde nicht verändert."
+msgstr ""
+
+#: inc/catalog.php
+msgid "Priority"
+msgstr ""
+
+#: inc/catalog.php
+msgid "Standard"
+msgstr ""
+
+#. translators: %s: product title.
+#: inc/catalog.php
+msgid "WooCommerce konnte „%s“ nicht speichern."
+msgstr ""
+
+#. translators: %s: product title.
+#: inc/catalog.php
+msgid "Pro-Funktionen für „%s“ aus dem License-Captain-Katalog ergänzt."
+msgstr ""
+
+#. translators: %s: product title.
+#: inc/catalog.php
+msgid "Der Lizenzplan für „%s“ ist bereits anders zugeordnet und wurde nicht geändert."
+msgstr ""
+
+#. translators: %s: product title.
+#: inc/catalog.php
+msgid "License Captain bietet für „%s“ derzeit keine freigegebenen Pro-Funktionen an (Katalog noch nicht importiert oder Funktionen erst geplant). Der Plan wird ohne Funktionen angelegt; sobald License Captain sie freigibt, ergänzt ein erneuter Lauf des Assistenten sie."
+msgstr ""
+
+#. translators: %s: product title.
+#: inc/catalog.php
+msgid "„%s“ ist als Entwurf angelegt, aber License Captain hat den Jahresplan nicht übernehmen können."
+msgstr ""
+
+#. translators: %s: product title.
+#: inc/catalog.php
+msgid "Die WooCommerce-E-Mails nutzen jetzt die Farben der Website."
+msgstr ""
+
+#. translators: 1: product name, 2: number of live websites, 3: support level.
+#: inc/catalog.php
+msgid "Jahreslizenz für %1$s. %2$d Live-Website; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
+msgid_plural "Jahreslizenz für %1$s. %2$d Live-Websites; %3$s-Support. Pro-Funktionen und Updates während der aktiven Laufzeit."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: installed PHP version, 2: required PHP version.
+#: inc/requirements.php
+msgid "PHP %1$s ist installiert; Captain Plugins setzen PHP %2$s oder neuer voraus."
+msgstr ""
+
+#. translators: 1: installed MariaDB version, 2: required MariaDB version.
+#: inc/requirements.php
+msgid "MariaDB %1$s ist installiert; empfohlen ist MariaDB %2$s (LTS) oder neuer."
+msgstr ""
+
+#. translators: 1: installed MySQL version, 2: required MySQL version.
+#: inc/requirements.php
+msgid "MySQL %1$s ist installiert; empfohlen ist MySQL %2$s (LTS) oder neuer."
+msgstr ""
+
+#: inc/requirements.php
+msgid "Captain Plugins: Server unter den empfohlenen Mindestversionen"
+msgstr ""
+
+#: inc/requirements.php
+msgid "Die Website funktioniert weiter. Bitte aktualisieren Sie die Serverumgebung über Ihren Hoster."
+msgstr ""
+
+#: inc/setup.php
+msgid "Captain Plugins einrichten"
+msgstr ""
+
+#: inc/setup.php
+msgid "Einrichtung"
+msgstr ""
+
+#: inc/setup.php
+msgid "Shop, Warenkorb, Kasse und Produktverwaltung. Für Lizenzprodukte und den Verkauf erforderlich."
+msgstr ""
+
+#: inc/setup.php
+msgid "Optional. Die Textvorlagen enthalten SEO-Titel, Meta-Beschreibungen und Fokus-Keyphrases, die bei aktiver Yoast-Installation übernommen werden."
+msgstr ""
+
+#: inc/setup.php
+msgid "License-Captain-Server für diesen Shop. Er stellt die Lizenzen für die Captain-Pro-Add-ons aus; der Client ist in den Pro-Add-ons enthalten. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert."
+msgstr ""
+
+#: inc/setup.php
+msgid "wordpress.org lieferte keinen Download-Link."
+msgstr ""
+
+#: inc/setup.php
+msgid "Es ist keine sichere Installationsquelle für License Captain hinterlegt."
+msgstr ""
+
+#: inc/setup.php
+msgid "Für eine HTTPS-Downloadquelle muss CAPTAIN_LICENSE_PLUGIN_SHA256 mit dem erwarteten SHA-256-Wert in wp-config.php gesetzt sein."
+msgstr ""
+
+#: inc/setup.php
+msgid "Die Prüfsumme des License-Captain-Pakets stimmt nicht. Es wurde nichts installiert."
+msgstr ""
+
+#: inc/setup.php
+msgid "Die lokale Prüfsumme des License-Captain-Pakets stimmt nicht."
+msgstr ""
+
+#: inc/setup.php
+msgid "WordPress konnte nicht in den Plugin-Ordner schreiben. Prüfe die Dateirechte oder FTP-Zugangsdaten."
+msgstr ""
+
+#: inc/setup.php
+msgid "Im ZIP wurde keine Plugin-Hauptdatei gefunden."
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/setup.php
+msgid "%s: Dein Benutzerkonto darf keine Plugins aktivieren."
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/setup.php
+msgid "%s konnte nicht installiert werden: Plugin-Installation ist auf dieser Website nicht erlaubt."
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/setup.php
+msgid "%1$s: %2$s"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/setup.php
+msgid "%1$s konnte nicht installiert werden: %2$s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/setup.php
+msgid "%s wurde installiert."
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/setup.php
+msgid "%1$s konnte nicht aktiviert werden: %2$s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/setup.php
+msgid "%s wurde aktiviert."
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/setup.php
+msgid "Keine Plugins ausgewählt bzw. alle ausgewählten Plugins sind bereits aktiv."
+msgstr ""
+
+#: inc/setup.php
+msgid "Keine Berechtigung."
+msgstr ""
+
+#. translators: 1: created, 2: updated, 3: unchanged, 4: kept because edited, 5: protected by placeholders, 6: errors, 7: retired pages.
+#: inc/setup.php
+msgid "Seitenabgleich: %1$d neu angelegt, %2$d aktualisiert, %3$d unverändert, %4$d wegen eigener Änderungen geschont, %5$d mit Platzhaltern geschützt, %6$d Fehler, %7$d nicht mehr gelieferte Seiten auf Entwurf gesetzt."
+msgstr ""
+
+#: inc/setup.php
+msgid "Keine Berechtigung zum Verwalten von WooCommerce-Produkten."
+msgstr ""
+
+#. translators: 1: created, 2: license plans mapped, 3: already set up, 4: skipped, 5: errors.
+#: inc/setup.php
+msgid "Produktentwürfe: %1$d angelegt, %2$d Lizenzpläne verknüpft, %3$d bereits eingerichtet, %4$d übersprungen, %5$d Fehler."
+msgstr ""
+
+#: inc/setup.php
+msgid "aktiv"
+msgstr ""
+
+#: inc/setup.php
+msgid "installiert, nicht aktiv"
+msgstr ""
+
+#: inc/setup.php
+msgid "nicht installiert"
+msgstr ""
+
+#: inc/setup.php
+msgid "1. Plugins auswählen"
+msgstr ""
+
+#: inc/setup.php
+msgid "Wähle aus, welche Plugins WordPress installieren und aktivieren soll. WooCommerce ist Voraussetzung für Shop und Lizenzprodukte; Yoast SEO bleibt optional."
+msgstr ""
+
+#: inc/setup.php
+msgid "Plugin"
+msgstr ""
+
+#: inc/setup.php
+msgid "Status"
+msgstr ""
+
+#: inc/setup.php
+msgid "Kein öffentliches wordpress.org-Paket ist hinterlegt. Konfiguriere eine vertrauenswürdige HTTPS-ZIP plus SHA-256 in wp-config.php oder lade die freigegebene ZIP über den WordPress-Plugin-Uploader hoch."
+msgstr ""
+
+#: inc/setup.php
+msgid "Plugin-ZIP hochladen"
+msgstr ""
+
+#: inc/setup.php
+msgid "Installation oder Aktivierung ist für dieses Benutzerkonto bzw. Deployment gesperrt."
+msgstr ""
+
+#: inc/setup.php
+msgid "Auswahl installieren und aktivieren"
+msgstr ""
+
+#: inc/setup.php
+msgid "Reihenfolge: WooCommerce, Yoast SEO, License Captain."
+msgstr ""
+
+#: inc/setup.php
+msgid "2. Website-Texte auswählen"
+msgstr ""
+
+#: inc/setup.php
+msgid "Der Theme-Entwurf enthält Startseite, Produktseiten, Unterseiten, Dokumentation, FAQ, Support, Lösungen und Ratgeber. Eigene Seiten werden nicht ersetzt. Bereits importierte, unveränderte Theme-Seiten können aktualisiert werden; manuell bearbeitete Seiten bleiben erhalten."
+msgstr ""
+
+#: inc/setup.php
+msgid "Startseite und Website-Grundseiten"
+msgstr ""
+
+#: inc/setup.php
+msgid "Produktseiten, Features, Pro und Dokumentation"
+msgstr ""
+
+#: inc/setup.php
+msgid "Ratgeber"
+msgstr ""
+
+#: inc/setup.php
+msgid "Vollständige Vorlagen veröffentlichen; Vorlagen mit Download-, Checkout-, Screenshot- oder Betreiberplatzhaltern automatisch als Entwurf anlegen."
+msgstr ""
+
+#: inc/setup.php
+msgid "SEO-Titel, Meta-Beschreibung und Fokus-Keyphrase werden in Yoast übernommen, wenn Yoast aktiv ist. Ohne Yoast speichert das Theme die Basis-Metadaten. Es werden keine von dir geänderten Text- oder SEO-Felder überschrieben."
+msgstr ""
+
+#: inc/setup.php
+msgid "Ausgewählte Texte übernehmen"
+msgstr ""
+
+#: inc/setup.php
+msgid "3. WooCommerce-Produkte anlegen"
+msgstr ""
+
+#. translators: %d: number of annual plans.
+#: inc/setup.php
+msgid "Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; noch nicht bepreiste Review- und Course-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen."
+msgstr ""
+
+#: inc/setup.php
+msgid "Lizenzprodukt"
+msgstr ""
+
+#: inc/setup.php
+msgid "Plan"
+msgstr ""
+
+#: inc/setup.php
+msgid "Jahrespreis"
+msgstr ""
+
+#: inc/setup.php
+msgid "Live-Websites"
+msgstr ""
+
+#: inc/setup.php
+msgid "Aktiviere zuerst WooCommerce."
+msgstr ""
+
+#: inc/setup.php
+msgid "Aktiviere zuerst License Captain. Der Shop braucht den Lizenzserver, damit Käufer nach dem Kauf einen Lizenzplan erhalten."
+msgstr ""
+
+#: inc/setup.php
+msgid "Die Konzeptbeträge sind Euro-Preise. WooCommerce steht aktuell nicht auf EUR; die Produktentwürfe werden deshalb nicht angelegt."
+msgstr ""
+
+#. translators: %d: number of product drafts.
+#: inc/setup.php
+msgid "%d Produktentwürfe und Lizenzpläne anlegen"
+msgstr ""
+
+#: inc/setup.php
+msgid "Der License-Captain-Server muss aktiv sein, damit die Pro-Jahrespläne dieser Website als Lizenzprodukte zugeordnet werden. Kunden sehen davon nichts: Sie aktivieren ihren Lizenzschlüssel direkt im Pro-Add-on. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind."
+msgstr ""
+
+#: inc/setup.php
+msgid "Wähle die Bausteine für deine Website. Der Assistent verändert bestehende Texte und Shop-Einstellungen nicht stillschweigend."
+msgstr ""
+
+#: inc/setup.php
+msgid "4. Vor dem Verkaufsstart"
+msgstr ""
+
+#: inc/setup.php
+msgid "Ergänze und prüfe Unternehmensangaben, Steuer- und Zahlungsverfahren, Lizenzserver-Schlüssel, Produkt-Releases und Downloads. Dieser Assistent ändert keine Steuer-, Zahlungs-, Vertrags- oder Rechtseinstellungen automatisch."
+msgstr ""
+
+#: patterns/closing-cta.php
+msgid "Abschluss – Produkte vergleichen"
+msgstr ""
+
+#: patterns/closing-cta.php
+msgid "Abschlussbereich mit einer klaren nächsten Handlung."
+msgstr ""
+
+#: patterns/compatibility-note.php
+msgid "Voraussetzungen und Kompatibilität"
+msgstr ""
+
+#: patterns/compatibility-note.php
+msgid "Hinweisbereich mit Link zur aktuellen Kompatibilitätsmatrix."
+msgstr ""
+
+#: patterns/faq.php
+msgid "FAQ – häufige Fragen"
+msgstr ""
+
+#: patterns/faq.php
+msgid "FAQ-Gruppe mit nativen Details-Blöcken."
+msgstr ""
+
+#: patterns/feature-grid.php
+msgid "Features – Nutzenkarten"
+msgstr ""
+
+#: patterns/feature-grid.php
+msgid "Drei Karten für priorisierte Funktionen und deren Nutzen."
+msgstr ""
+
+#: patterns/free-pro.php
+msgid "Kostenlos und Pro – Vergleich"
+msgstr ""
+
+#: patterns/free-pro.php
+msgid "Gegenüberstellung von Kern-Plugin und Pro-Add-on."
+msgstr ""
+
+#: patterns/home-hero.php
+msgid "Startseite – Hero"
+msgstr ""
+
+#: patterns/home-hero.php
+msgid "Klarer Einstieg in die Captain-Plugins-Produktfamilie."
+msgstr ""
+
+#: patterns/pricing-comparison.php
+msgid "Preise – Planvergleich"
+msgstr ""
+
+#: patterns/pricing-comparison.php
+msgid "Preispläne mit Website-Limits und Redaktionshinweis."
+msgstr ""
+
+#: patterns/product-cards.php
+msgid "Produktübersicht – Captain-Produktkarten"
+msgstr ""
+
+#: patterns/product-cards.php
+msgid "Alle Produkte der Captain-Plugins-Familie."
+msgstr ""
+
+#: patterns/product-hero.php
+msgid "Produktseite – Hero"
+msgstr ""
+
+#: patterns/product-hero.php
+msgid "Einstiegsbereich für eine Produktseite. Produktname, Nutzen und CTA anpassen."
+msgstr ""
+
+#: patterns/resource-cards.php
+msgid "Ressourcen – Einstiegskarten"
+msgstr ""
+
+#: patterns/resource-cards.php
+msgid "Einstieg zu Dokumentation, Kompatibilität, FAQ und Support."
+msgstr ""
+
+#: patterns/screenshot-brief.php
+msgid "Medien – Screenshot-Platzhalter mit Briefing"
+msgstr ""
+
+#: patterns/screenshot-brief.php
+msgid "Platzhalter mit verständlicher Anweisung für eine echte Produktansicht."
+msgstr ""
+
+#: patterns/workflow.php
+msgid "Arbeitsablauf – drei Schritte"
+msgstr ""
+
+#: patterns/workflow.php
+msgid "Schrittfolge für einen Produkt- oder Geschäftsprozess."
+msgstr ""

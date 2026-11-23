@@ -1,0 +1,71 @@
+name: Verfügbarkeit (Produktion)
+
+# Stündlicher Check von außen gegen die Repository-Variable SITE_URL (ohne Variable passiert nichts):
+# Startseite, Preise, Captain Pro, Warenkorb und Kasse erreichbar (HTTP 200, Antwortzeit), kein
+# „kritischer Fehler“, TLS-Zertifikat noch mindestens 21 Tage gültig. Bei einem Fehler wird ein Issue
+# „Website nicht verfügbar“ angelegt bzw. kommentiert; GitHub benachrichtigt dann alle, die das
+# Repository beobachten. Ist alles wieder in Ordnung, wird das Issue geschlossen.
+# Shop-Pfade optional über die Variable SHOP_PATHS (z. B. "/warenkorb/,/kasse/").
+
+on:
+  schedule:
+    - cron: "11 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      BASE: ${{ vars.SITE_URL }}
+      SHOP: ${{ vars.SHOP_PATHS || '/cart/,/checkout/' }}
+    steps:
+      - name: Seiten und Zertifikat prüfen
+        id: probe
+        if: env.BASE != ''
+        run: |
+          set +e
+          report=""; failed=0
+          for path in / /preise/ /captain-pro/ $(echo "$SHOP" | tr ',' ' '); do
+            out=$(curl -s -L -o /tmp/page.html -w "%{http_code} %{time_total}" --max-time 30 "${BASE%/}$path")
+            code=${out%% *}; time=${out##* }
+            if [ "$code" != "200" ] || grep -qi "critical error\|kritischer Fehler" /tmp/page.html; then
+              failed=1; report="$report\n- ❌ $path: HTTP $code"
+            elif awk "BEGIN{exit !($time > 5)}"; then
+              report="$report\n- ⚠️ $path: langsam (${time}s)"
+            else
+              report="$report\n- ✅ $path: ${time}s"
+            fi
+          done
+          host=$(echo "$BASE" | sed -E 's#^https?://([^/]+).*#\1#')
+          if echo "$BASE" | grep -q '^https://'; then
+            end=$(echo | openssl s_client -servername "$host" -connect "$host:443" 2>/dev/null | openssl x509 -noout -enddate | cut -d= -f2)
+            days=$(( ( $(date -d "$end" +%s) - $(date +%s) ) / 86400 ))
+            if [ "$days" -lt 21 ]; then failed=1; report="$report\n- ❌ TLS-Zertifikat läuft in $days Tagen ab"; else report="$report\n- ✅ TLS-Zertifikat noch $days Tage gültig"; fi
+          fi
+          echo -e "Prüfung $(date -u '+%Y-%m-%d %H:%M UTC') gegen $BASE:$report" | tee /tmp/report.md
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
+
+      - name: Issue anlegen, kommentieren oder schließen
+        if: env.BASE != ''
+        uses: actions/github-script@v7
+        env:
+          FAILED: ${{ steps.probe.outputs.failed }}
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('/tmp/report.md', 'utf8');
+            const title = 'Website nicht verfügbar';
+            const { data: open } = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'uptime' });
+            const issue = open.find((i) => i.title === title);
+            if (process.env.FAILED === '1') {
+              if (issue) await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, body });
+              else await github.rest.issues.create({ owner: context.repo.owner, repo: context.repo.repo, title, body, labels: ['uptime'] });
+              core.setFailed('Website-Prüfung fehlgeschlagen');
+            } else if (issue) {
+              await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, body: 'Wieder erreichbar.\n\n' + body });
+              await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, state: 'closed' });
+            }

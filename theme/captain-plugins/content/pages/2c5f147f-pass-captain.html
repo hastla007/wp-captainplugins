@@ -1,23 +1,23 @@
-<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
 <p>Pass Captain verwaltet Events, Tickets, Servicebuchungen, Wartelisten und Einlass in WordPress. WooCommerce ist optional.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Voraussetzungen</h2>
 <!-- /wp:heading -->
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li>WordPress 6.4 oder neuer</li>
+<li>WordPress 7.0 oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>PHP 8.2 oder neuer</li>
+<li>PHP 8.5 oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>MySQL oder MariaDB in einer unterstützten Version</li>
+<li>MySQL 9.7 (LTS) oder MariaDB 12.3 (LTS) oder neuer</li>
 <!-- /wp:list-item --><!-- wp:list-item -->
-<li>WooCommerce nur, wenn Sie den WooCommerce-Checkout verwenden</li>
+<li>WooCommerce 11.2.2 oder neuer nur, wenn Sie den WooCommerce-Checkout verwenden</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -26,7 +26,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">1. Plugin installieren</h2>
 <!-- /wp:heading -->
@@ -40,13 +40,13 @@
 <!-- /wp:quote --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">2. Eventseite veröffentlichen</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Erstellen Sie eine WordPress-Seite für Ihre Events. Fügen Sie den Pass-Captain-Eventblock ein oder nutzen Sie den Shortcode [wp<em>pass</em>captain<em>events]. Für einen Kalender können Sie den Kalenderblock oder [wp</em>pass<em>captain</em>calendar] verwenden.</p>
+<p>Erstellen Sie eine WordPress-Seite für Ihre Events. Fügen Sie den Pass-Captain-Eventblock ein oder nutzen Sie den Shortcode [wpcap<em>events]. Für einen Kalender können Sie den Kalenderblock oder [wpcap</em>calendar] verwenden. Die älteren Namen [wp<em>pass</em>captain<em>events] und [wp</em>pass<em>captain</em>calendar] funktionieren weiter.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -54,7 +54,7 @@
 <!-- /wp:quote --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">3. Event oder Serie einrichten</h2>
 <!-- /wp:heading -->
@@ -68,13 +68,13 @@
 <!-- /wp:quote --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">4. Reservierung und Zahlung testen</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Definieren Sie Reservierungszeit und Verkaufsregeln. Sie können kostenlose Bestellungen anbieten oder Zahlungen über Stripe, PayPal oder Mollie abwickeln. Alternativ lässt sich WooCommerce für den Checkout anbinden. Prüfen Sie im Test die Bestellbestätigung, Ticketzustellung und den Umgang mit Storno oder Erstattung.</p>
+<p>Definieren Sie Reservierungszeit und Verkaufsregeln. Sie können kostenlose Bestellungen anbieten oder Zahlungen per Überweisung, Stripe, PayPal oder Mollie abwickeln. Alternativ lässt sich WooCommerce für den Checkout anbinden. Prüfen Sie im Test die Bestellbestätigung, Ticketzustellung und den Umgang mit Storno oder Erstattung.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -82,13 +82,13 @@
 <!-- /wp:quote --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">5. Ticket und Einlass vorbereiten</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Erstellen Sie eine Seite für den Scanner und fügen Sie den Shortcode [wp<em>pass</em>captain_scanner] ein. Weisen Sie berechtigte Mitarbeitende dem Event oder einzelnen Terminen zu. Prüfen Sie QR-/PDF-Ticket, Check-in, Check-out und Wiedereinlass. Für Offlinebetrieb richten Sie den installierbaren Offline-Scanner gemäß der technischen Dokumentation ein.</p>
+<p>Erstellen Sie eine Seite für den Scanner und fügen Sie den Shortcode [wpcap<em>scanner] ein (älterer Name: [wp</em>pass<em>captain</em>scanner]). Scanner-Apps koppeln Sie per QR-Code unter <strong>Pass Captain → Scanner-Geräte</strong>. Weisen Sie berechtigte Mitarbeitende dem Event oder einzelnen Terminen zu. Prüfen Sie QR-/PDF-Ticket, Check-in, Check-out und Wiedereinlass. Für Offlinebetrieb richten Sie den installierbaren Offline-Scanner gemäß der technischen Dokumentation ein.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -96,13 +96,13 @@
 <!-- /wp:quote --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Servicebuchungen einrichten</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Für Kurse oder Verleih definieren Sie Ressourcen, Zeitfenster, Dauer, Puffer und Buchungsregeln. Testen Sie Umbuchung, Stornofrist und Warteliste mit einem ausgebuchten Beispieltermin.</p>
+<p>Für Kurse oder Verleih definieren Sie Ressourcen, Zeitfenster, Dauer, Puffer und Buchungsregeln. Die öffentliche Buchungsseite binden Sie mit dem Block „Pass Captain Terminbuchung“ oder dem Shortcode [wpcap<em>service</em>booking event="ID"] ein. Testen Sie Umbuchung, Stornofrist und Warteliste mit einem ausgebuchten Beispieltermin.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:quote -->
@@ -125,6 +125,6 @@
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph -->
-<p><strong>Captain-Pro-Hinweis:</strong> Das Pass-Captain-Pro-Add-on benötigt WordPress 6.5+; für die Kombination gilt wegen des Kerns weiterhin PHP 8.2+. WooCommerce bleibt optional. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
+<p><strong>Captain-Pro-Hinweis:</strong> Das Pass-Captain-Pro-Add-on benötigt wie der Kern WordPress 7.0+ und PHP 8.5+. WooCommerce bleibt optional. <a href="/kompatibilitaet/">Vollständige Kompatibilitätsmatrix</a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

@@ -1,40 +1,40 @@
-<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
 <p>Ein kommerzielles Plugin benötigt einen klaren Zusammenhang zwischen Kauf, Lizenz und Updatezugriff. License Captain verwaltet diese Informationen zentral und stellt eine signierte API für Ihre Produkt-Plugins bereit.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Berechtigungen definieren</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Ordnen Sie einem Lizenzplan Entitlements zu. Damit bestimmen Sie, welche Produktfunktionen und Leistungen für den jeweiligen Plan verfügbar sind.</p>
+<p>Ordnen Sie einem Lizenzplan Entitlements zu. Damit bestimmen Sie, welche Produktfunktionen und Leistungen für den jeweiligen Plan verfügbar sind. Produkte, Pläne und Funktionsbezeichnungen können Sie als Katalogdatei (<code>wplc-catalog.json</code>) mit dem Release-Paket ausliefern; der Shop spielt sie beim Anlegen des Releases ein.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Lizenzprüfung anbinden</h2>
+<h2 class="wp-block-heading">Den Client in Ihr Plugin einbinden</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Ihr Produkt-Plugin fragt den Lizenzstatus und die zugehörigen Berechtigungen über signierte Requests und Responses ab. Nutzen Sie die dokumentierten Schnittstellen und behandeln Sie Fehlerfälle verständlich.</p>
+<p>Binden Sie den License-Captain-Client in Ihr Plugin ein und liefern Sie ihn mit Ihrem Plugin aus. Der Client fragt Lizenzstatus und Berechtigungen über signierte Requests bei Ihrem Server ab und prüft die Ed25519-Signatur der Antworten gegen den öffentlichen Schlüssel, den Sie im Plugin hinterlegen. Ein Offline-Fenster überbrückt kurze Ausfälle des Servers, Fehlerfälle zeigt er verständlich an. Ihre Kunden aktivieren den Lizenzschlüssel direkt in Ihrem Plugin.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Releases bereitstellen</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Verwalten Sie Produktversionen und Updatepakete über den Lizenzserver. Kunden mit gültigem Updatezugriff erhalten die für ihr Produkt vorgesehenen Updates.</p>
+<p>Laden Sie Release-ZIPs in einen privaten Speicher oder S3-kompatiblen Bucket oder registrieren Sie eine HTTPS-Paketadresse mit SHA-256-Prüfsumme. Releases lassen sich veröffentlichen und wieder zurückziehen. Kunden mit gültigem Updatezugriff erhalten die Updates in der normalen WordPress-Updateanzeige, geladen über kurzlebige Einmal-Downloadlinks.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Release-Notizen sichtbar machen</h2>
 <!-- /wp:heading -->
@@ -43,17 +43,34 @@
 <p>Changelogs können pro Produkt in Kundenkonten oder auf Dokumentationsseiten eingebunden werden. So sehen Anwender, welche Änderungen ein Release enthält.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>[Screenshot-Platzhalter: Releaseverwaltung mit Produkt, Version, Paketstatus und Prüfsumme zeigen; Paketadresse und geheime Werte unkenntlich machen.] [Diagramm: Lizenzprüfung und Update]</p>
+<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-media-placeholder"><!-- wp:paragraph {"className":"cp-media-placeholder__label"} -->
+<p class="cp-media-placeholder__label">Produktansicht folgt</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>License Captain ist Teil der Captain-Pro-Angebote und wird ohne zusätzlichen Aufpreis bereitgestellt.</p>
+<p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Releaseverwaltung mit Produkt, Version, Paketstatus und Prüfsumme zeigen; Paketadresse und geheime Werte unkenntlich machen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__brief"><strong>Diagramm:</strong> Lizenzprüfung und Update</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__note">Redaktioneller Platzhalter: vor Veröffentlichung durch freigegebene Medien bzw. einen belegten Kundenfall ersetzen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>License Captain liefert beide Bausteine: den Server für Ihren WooCommerce-Shop und den Client, den Sie in Ihre Plugins einbinden.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->
 <div class="wp-block-buttons cp-actions"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/license-captain/">License Captain kennenlernen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/license-captain/features/">Features und Integrationswege</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/dokumentation/">Technische Dokumentation</a></div>

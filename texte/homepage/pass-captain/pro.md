@@ -11,19 +11,19 @@ Pass Captain Pro ergänzt den kostenlosen Kern für Veranstaltungsorte, Veransta
 
 ## E-Rechnungen für Geschäftskunden
 
-Erstellen Sie E-Rechnungen mit Unterstützung für XRechnung und ZUGFeRD. Integrieren Sie die Rechnungsabläufe in Ihren Ticket- und Buchungsprozess.
+Erstellen Sie E-Rechnungen nach EN 16931 als XRechnung (UBL oder CII) oder als ZUGFeRD-PDF für Rechnungen, Korrekturen und Veranstalterabrechnungen von Pass Captain. Die E-Rechnung hängt an der Ticketmail und steht im Bestellportal zum Download bereit.
 
 ## Kartenzahlung vor Ort
 
-Verbinden Sie Stripe Terminal oder SumUp für Kartenzahlungen am Veranstaltungsort. So begleiten Ihre Online- und Vor-Ort-Abläufe denselben Eventbetrieb.
+Verbinden Sie Kartenlesegeräte von Stripe Terminal oder SumUp mit der Abendkasse von Pass Captain, mit Status, Abbruch und Erstattung. So laufen Online- und Vor-Ort-Verkauf im selben Eventbetrieb.
 
 ## Ihr Markenauftritt
 
-White-Label-Funktionen passen Tickets und Portale an Ihre Marke an. Bei hoher Nachfrage unterstützt ein virtueller Warteraum die geordnete Teilnahme am Checkout.
+Mit White Label ersetzen Sie Namen und Logo von Pass Captain durch Ihre eigenen, etwa auf Ticketseite, Bestellportal und Scanner, und passen Menütitel, Menüsymbol und Absendernamen der Mails an. Bei hoher Nachfrage lässt ein virtueller Warteraum Käufer der gewählten Events in fester Reihenfolge und im eingestellten Tempo in den Checkout (Warteseite per Shortcode [pass_captain_waiting_room]).
 
 ## API für eigene Abläufe
 
-Schreibende API-Zugriffe mit konfigurierbaren Berechtigungsumfängen ermöglichen individuelle Integrationen und verwaltete Workflows.
+Die schreibende REST-API nutzt die API-Schlüssel von Pass Captain mit eigenen Schreibrechten: Bestellungen anlegen, Tickets stornieren oder neu ausstellen sowie Check-ins erfassen und zurücknehmen, jeweils auf ein Event begrenzt.
 
 ## Jahrespläne
 
@@ -33,10 +33,10 @@ Schreibende API-Zugriffe mit konfigurierbaren Berechtigungsumfängen ermögliche
 | Business | 5 | 299 € |
 | Agency | 25 | 549 € |
 
-Alle Pläne enthalten den vollständigen Pass-Captain-Pro-Umfang. License Captain Server wird separat angeboten und ist nicht Bestandteil dieses Plans.
+Alle Pläne enthalten den vollständigen Pass-Captain-Pro-Umfang.
 
 **[Pass Captain Pro auswählen]([Checkout-URL])** · [Kostenlosen Kern starten]([Download-URL])
 
 [Screenshot-Platzhalter: Ticket mit neutralem Branding sowie Beispielansicht für White Label zeigen; QR-Code, Bestellnummer und Teilnehmerdaten unbrauchbar machen.] · [Demo: E-Rechnung und Kartenterminal]
 
-**Voraussetzungen:** Pass Captain als Kern-Plugin. Die gemeinsame Installation mit Pass Captain Pro benötigt WordPress 6.5+ und PHP 8.2+; WooCommerce bleibt optional. [Kompatibilität](/kompatibilitaet/).
+**Voraussetzungen:** Pass Captain als Kern-Plugin. Pass Captain Pro benötigt wie der Kern WordPress 7.0+ und PHP 8.5+; WooCommerce bleibt optional. Den Lizenzschlüssel aus Ihrem Kundenkonto aktivieren Sie auf der Lizenzseite des Add-ons im Menü **Pass Captain**. [Kompatibilität](/kompatibilitaet/).

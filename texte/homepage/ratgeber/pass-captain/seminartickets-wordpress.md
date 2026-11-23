@@ -15,7 +15,7 @@ Erstellen Sie einen Einzeltermin oder eine Serie. Für wiederkehrende Seminare k
 
 ## Ticketverkauf einrichten
 
-Legen Sie Kontingente und Reservierungszeiten fest. Bieten Sie kostenlose oder bezahlte Tickets an. Zahlungen können über Stripe, PayPal oder Mollie laufen oder optional über WooCommerce abgewickelt werden.
+Legen Sie Kontingente und Reservierungszeiten fest. Bieten Sie kostenlose oder bezahlte Tickets an. Zahlungen können per Überweisung, Stripe, PayPal oder Mollie laufen oder optional über WooCommerce abgewickelt werden.
 
 ## Angaben und Preise passend konfigurieren
 

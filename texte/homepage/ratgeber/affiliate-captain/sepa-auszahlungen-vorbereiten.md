@@ -15,7 +15,7 @@ Prüfen Sie Haltefristen, offene Refund-Korrekturen und Mindestbeträge, bevor S
 
 ## Auszahlungslauf erstellen
 
-Fassen Sie freigegebene Partnerbeträge in einem Lauf zusammen. Kontrollieren Sie die Empfängerdaten und Beträge, bevor Sie den SEPA-Export erstellen.
+Fassen Sie freigegebene Partnerbeträge in einem Lauf zusammen. Kontrollieren Sie die Empfängerdaten und Beträge, bevor Sie den SEPA-Export erstellen. Die SEPA-XML-Datei (pain.001) gilt für Euro-Zahlungen; für andere Währungen erstellt Affiliate Captain eine Überweisungsliste (CSV). Nach der Überweisung markieren Sie die Auszahlungen als bezahlt, und Partner sehen das Datum im Partnerbereich.
 
 ## Datei prüfen und dokumentieren
 

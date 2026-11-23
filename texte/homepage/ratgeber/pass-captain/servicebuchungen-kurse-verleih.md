@@ -19,7 +19,7 @@ Zeigen Sie Verfügbarkeiten und Konditionen so an, dass Interessierte vor der Bu
 
 ## Ausgebuchte Zeitfenster weiter nutzen
 
-Eine Warteliste kann frei werdende Plätze der Reihe nach anbieten. Bei Annahme erhält die Person ein zeitlich begrenztes Angebot und kann die Buchung abschließen.
+Eine Warteliste kann frei werdende Plätze der Reihe nach anbieten. Die nächste Person erhält ein zeitlich begrenztes Angebot, das den Platz bis zur Annahme freihält; nimmt sie an, schließt sie die Buchung ab.
 
 ## Tickets und Servicepässe verbinden
 

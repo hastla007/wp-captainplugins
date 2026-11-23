@@ -13,11 +13,11 @@ Pass Captain begleitet Ihren Ablauf vom ersten Termin bis zum Einlass. Verwalten
 
 ## Für Events, Kurse und Verleih
 
-Erstellen Sie Einzeltermine oder Serien, definieren Sie Preisstufen und veröffentlichen Sie Kalender über Blöcke, Shortcodes oder iCal. Bieten Sie Reservierungen, Sitzplatzwahl und Teilnehmerfelder an.
+Erstellen Sie Einzeltermine oder Serien, definieren Sie Preisstufen und veröffentlichen Sie Kalender über Blöcke, Shortcodes oder iCal. Bieten Sie Reservierungen, Sitzplatzwahl, Teilnehmerfelder, Festival- und Mitgliedspässe sowie Gästelisten an.
 
 ## Verkauf nach Ihrem Setup
 
-Nehmen Sie Zahlungen über Stripe, PayPal oder Mollie an oder binden Sie WooCommerce optional ein. Regeln für Frühbucher, Zeitfenster, Kampagnen und Käuferlimits helfen, den Verkauf passend zu steuern.
+Nehmen Sie Zahlungen per Überweisung (mit GiroCode), Stripe, PayPal oder Mollie an, verkaufen Sie an der Abendkasse oder binden Sie WooCommerce optional ein. Regeln für Frühbucher, Zeitfenster, Kampagnen und Käuferlimits helfen, den Verkauf passend zu steuern.
 
 ## Tickets und Einlass im Griff
 
@@ -38,6 +38,6 @@ Ergänzen Sie E-Rechnungen, Kartenterminal, White Label, virtuellen Warteraum un
 
 ## Kompatibilität und Support
 
-Pass Captain benötigt WordPress 6.4+ und PHP 8.2+. WooCommerce ist optional; die freigegebene Integrationsspanne ist 8.2 bis 11.3. Unterstützt werden MySQL 8.0/8.4 und MariaDB 10.6/11.4. Für Pass Captain Pro ist wegen des Add-ons WordPress 6.5+ erforderlich. Stripe, PayPal, Mollie, Voucher Captain, Affiliate Captain, SMS-Anbieter und die Scanner-APIs ergänzen die Plattform.
+Pass Captain benötigt WordPress 7.0+ und PHP 8.5+ sowie MySQL 9.7 oder MariaDB 12.3 oder neuer. WooCommerce ist optional; die freigegebene Integrationsspanne ist 11.2.2 bis 11.3. Für Pass Captain Pro gelten dieselben Mindestversionen. Stripe, PayPal, Mollie, Voucher Captain, Affiliate Captain, SMS-Anbieter und die Scanner-APIs ergänzen die Plattform.
 
 Single und Business enthalten Standard-Support; Agency enthält Priority-Support. [Alle Systemanforderungen und Integrationen](/kompatibilitaet/).

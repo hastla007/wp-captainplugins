@@ -1,44 +1,62 @@
-<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-intro"><!-- wp:group {"className":"cp-faq","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:group {"className":"cp-faq","layout":{"type":"default"}} -->
 <div class="wp-block-group cp-faq"><!-- wp:details -->
-<details class="wp-block-details"><summary>Ist License Captain ein kostenpflichtiges Produkt?</summary><!-- wp:paragraph -->
-<p>License Captain ist ohne Aufpreis in den Captain-Pro-Angeboten enthalten.</p>
+<details class="wp-block-details"><summary>Was ist in License Captain enthalten?</summary><!-- wp:paragraph -->
+<p>Server und Client. Der Server läuft als Plugin in Ihrem WooCommerce-Shop, der Client wird in Ihre eigenen Plugins eingebunden. License Captain richtet sich an Unternehmen, die eigene Plugins oder Softwareprodukte lizenzieren und Updates bereitstellen möchten.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Benötige ich WooCommerce?</summary><!-- wp:paragraph -->
-<p>Ja, WooCommerce dient als Shop für Lizenzprodukte und Bestellungen.</p>
+<p>Für den Server ja: WooCommerce dient als Shop für Lizenzprodukte und Bestellungen. Der Server setzt WooCommerce 11.2.2 oder neuer voraus. Die Websites Ihrer Kunden brauchen kein WooCommerce – dort läuft nur Ihr Plugin mit dem eingebundenen Client (WordPress 7.0+, PHP 8.5+).</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Wie wird eine Lizenz erstellt?</summary><!-- wp:paragraph -->
-<p>Nach erfolgreicher Zahlung erhält jede gekaufte Produkteinheit eine Lizenz mit den im Produktplan festgelegten Laufzeiten, Limits und Berechtigungen.</p>
+<p>Nach erfolgreicher Zahlung erhält jede gekaufte Produkteinheit eine Lizenz mit dem im Produktplan festgelegten Abrechnungsintervall, Website-Limit und den Berechtigungen. Der Kauf setzt ein Kundenkonto voraus.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Kann ich eine Website wechseln?</summary><!-- wp:paragraph -->
-<p>Sie können Aktivierungen für Live-, Staging- und Entwicklungswebsites verwalten und nicht mehr benötigte Aktivierungen deaktivieren.</p>
+<p>Ja. Kunden deaktivieren nicht mehr benötigte Websites im Kundenkonto und geben damit einen Platz frei; nach einem Domainumzug überträgt der Client die Aktivierung auf die neue Adresse. Das Limit zählt Live-Websites; je Live-Website ist eine Staging-Website frei, dazu kommen mindestens fünf lokale Entwicklungsinstallationen.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Sind automatische Verlängerungen verfügbar?</summary><!-- wp:paragraph -->
-<p>Ja. Kunden können manuell verlängern oder die optionale Stripe-gestützte automatische Verlängerung nutzen.</p>
+<p>Ja. Kunden können manuell mit jeder Shop-Zahlungsart verlängern oder im Checkout die automatische Verlängerung über das offizielle WooCommerce-Stripe-Gateway wählen. Vor jeder Abbuchung erhalten sie einen Hinweis. Eine automatische Verlängerung über PayPal wird nicht angeboten; PayPal-Kunden verlängern manuell.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Wie erhalten meine Plugins Updates?</summary><!-- wp:paragraph -->
-<p>Produkt-Plugins prüfen Berechtigungen und Updatezugriff über die signierte API. Releases werden zentral verwaltet.</p>
+<p>Sie laden Releases im Shop hoch oder registrieren eine HTTPS-Paketadresse mit Prüfsumme. Der Client in Ihrem Plugin fragt über die signierte API nach Updates und bindet sie in die normale WordPress-Updateanzeige ein; lizenzierte Installationen erhalten kurzlebige Einmal-Downloadlinks.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Müssen meine Kunden ein zusätzliches Plugin installieren?</summary><!-- wp:paragraph -->
+<p>Nein. Der License-Captain-Client wird mit Ihrem Plugin ausgeliefert. Ihre Kunden geben ihren Lizenzschlüssel direkt in Ihrem Plugin ein.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
 <!-- wp:details -->
 <details class="wp-block-details"><summary>Kann ich Release-Notizen anzeigen?</summary><!-- wp:paragraph -->
-<p>Ja. Produkt-Changelogs können über Shortcodes und Gutenberg-Blöcke ausgegeben werden.</p>
+<p>Ja. Produkt-Changelogs können über den Shortcode <code>[wplc_changelog]</code> oder den Block „Änderungsprotokoll“ ausgegeben werden. Für Lizenzliste und Preistabelle gibt es ebenfalls Shortcode und Block.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Funktioniert License Captain mit WooCommerce Subscriptions?</summary><!-- wp:paragraph -->
+<p>License Captain verlängert Lizenzen selbst. Produkte von WooCommerce Subscriptions lassen sich nicht als Lizenzprodukte zuordnen.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details"><summary>Läuft der Server in einem Multisite-Netzwerk?</summary><!-- wp:paragraph -->
+<p>Ja, jede Website des Netzwerks ist dabei ein eigener, unabhängiger Lizenzserver mit eigenen Lizenzen, Releases und API-Endpunkten. Vorgesehen ist der Betrieb auf der einen Shop-Website.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
@@ -47,7 +65,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/license-captain/features/">Features ansehen</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/license-captain/im-paket/">Im Paket enthalten</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/license-captain/preise/">Preise und Pläne</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
 <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/support/">Support</a></div>

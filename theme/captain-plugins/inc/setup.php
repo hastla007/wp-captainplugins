@@ -11,30 +11,40 @@ function captain_plugins_setup_url( array $args = array() ): string {
 	return add_query_arg( array_merge( array( 'page' => CAPTAIN_PLUGINS_SETUP_PAGE ), $args ), admin_url( 'themes.php' ) );
 }
 
-add_action( 'after_switch_theme', static function (): void {
-	if ( ( defined( 'WP_CLI' ) && WP_CLI ) || ! is_admin() || ! current_user_can( 'switch_themes' ) ) {
-		return;
+add_action(
+	'after_switch_theme',
+	static function (): void {
+		if ( ( defined( 'WP_CLI' ) && WP_CLI ) || ! is_admin() || ! current_user_can( 'switch_themes' ) ) {
+			return;
+		}
+		set_transient( 'captain_plugins_setup_redirect', get_current_user_id(), 10 * MINUTE_IN_SECONDS );
 	}
-	set_transient( 'captain_plugins_setup_redirect', get_current_user_id(), 10 * MINUTE_IN_SECONDS );
-} );
+);
 
-add_action( 'admin_init', static function (): void {
-	$user_id = absint( get_transient( 'captain_plugins_setup_redirect' ) );
-	if ( ! $user_id || $user_id !== get_current_user_id() || wp_doing_ajax() || wp_doing_cron() || is_network_admin() || ! current_user_can( 'manage_options' ) || 'GET' !== ( $_SERVER['REQUEST_METHOD'] ?? 'GET' ) ) {
-		return;
-	}
-	if ( CAPTAIN_PLUGINS_SETUP_PAGE === sanitize_key( (string) ( $_GET['page'] ?? '' ) ) ) {
+add_action(
+	'admin_init',
+	static function (): void {
+		$user_id = absint( get_transient( 'captain_plugins_setup_redirect' ) );
+		if ( ! $user_id || get_current_user_id() !== $user_id || wp_doing_ajax() || wp_doing_cron() || is_network_admin() || ! current_user_can( 'manage_options' ) || 'GET' !== ( $_SERVER['REQUEST_METHOD'] ?? 'GET' ) ) {
+			return;
+		}
+		// Read-only comparison of the current admin page; no state is changed from request data.
+		if ( CAPTAIN_PLUGINS_SETUP_PAGE === sanitize_key( (string) wp_unslash( $_GET['page'] ?? '' ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+			delete_transient( 'captain_plugins_setup_redirect' );
+			return;
+		}
 		delete_transient( 'captain_plugins_setup_redirect' );
-		return;
+		wp_safe_redirect( captain_plugins_setup_url() );
+		exit;
 	}
-	delete_transient( 'captain_plugins_setup_redirect' );
-	wp_safe_redirect( captain_plugins_setup_url() );
-	exit;
-} );
+);
 
-add_action( 'admin_menu', static function (): void {
-	add_theme_page( __( 'Captain Plugins einrichten', 'captain-plugins' ), __( 'Einrichtung', 'captain-plugins' ), 'manage_options', CAPTAIN_PLUGINS_SETUP_PAGE, 'captain_plugins_setup_page' );
-} );
+add_action(
+	'admin_menu',
+	static function (): void {
+		add_theme_page( __( 'Captain Plugins einrichten', 'captain-plugins' ), __( 'Einrichtung', 'captain-plugins' ), 'manage_options', CAPTAIN_PLUGINS_SETUP_PAGE, 'captain_plugins_setup_page' );
+	}
+);
 
 function captain_plugins_setup_plugin_source(): string {
 	$source = defined( 'CAPTAIN_LICENSE_PLUGIN_ZIP' ) ? trim( (string) CAPTAIN_LICENSE_PLUGIN_ZIP ) : '';
@@ -53,9 +63,31 @@ function captain_plugins_setup_plugin_source(): string {
 function captain_plugins_setup_plugins(): array {
 	$custom_source = captain_plugins_setup_plugin_source();
 	return array(
-		'woocommerce' => array( 'name' => 'WooCommerce', 'dir' => 'woocommerce', 'file' => 'woocommerce/woocommerce.php', 'source' => 'wporg', 'checked' => true, 'description' => __( 'Shop, Warenkorb, Kasse und Produktverwaltung. Für Lizenzprodukte und den Verkauf erforderlich.', 'captain-plugins' ) ),
-		'wordpress-seo' => array( 'name' => 'Yoast SEO', 'dir' => 'wordpress-seo', 'file' => 'wordpress-seo/wp-seo.php', 'source' => 'wporg', 'checked' => false, 'description' => __( 'Optional. Die Textvorlagen enthalten SEO-Titel, Meta-Beschreibungen und Fokus-Keyphrases, die bei aktiver Yoast-Installation übernommen werden.', 'captain-plugins' ) ),
-		'wp-license' => array( 'name' => 'License Captain', 'dir' => 'wp-license', 'file' => 'wp-license/wp-license.php', 'source' => 'custom', 'package' => $custom_source, 'checked' => '' !== $custom_source, 'description' => __( 'Lizenzserver für die Captain-Pro-Produkte. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert.', 'captain-plugins' ) ),
+		'woocommerce' => array(
+			'name' => 'WooCommerce',
+			'dir' => 'woocommerce',
+			'file' => 'woocommerce/woocommerce.php',
+			'source' => 'wporg',
+			'checked' => true,
+			'description' => __( 'Shop, Warenkorb, Kasse und Produktverwaltung. Für Lizenzprodukte und den Verkauf erforderlich.', 'captain-plugins' ),
+		),
+		'wordpress-seo' => array(
+			'name' => 'Yoast SEO',
+			'dir' => 'wordpress-seo',
+			'file' => 'wordpress-seo/wp-seo.php',
+			'source' => 'wporg',
+			'checked' => false,
+			'description' => __( 'Optional. Die Textvorlagen enthalten SEO-Titel, Meta-Beschreibungen und Fokus-Keyphrases, die bei aktiver Yoast-Installation übernommen werden.', 'captain-plugins' ),
+		),
+		'wp-license' => array(
+			'name' => 'License Captain',
+			'dir' => 'wp-license',
+			'file' => 'wp-license/wp-license.php',
+			'source' => 'custom',
+			'package' => $custom_source,
+			'checked' => '' !== $custom_source,
+			'description' => __( 'License-Captain-Server für diesen Shop. Er stellt die Lizenzen für die Captain-Pro-Add-ons aus; der Client ist in den Pro-Add-ons enthalten. Die Plugin-ZIP wird aus Sicherheitsgründen nicht im Theme mitgeliefert.', 'captain-plugins' ),
+		),
 	);
 }
 
@@ -94,7 +126,19 @@ function captain_plugins_setup_plugin_rows(): array {
 
 function captain_plugins_setup_wporg_package( string $slug ) {
 	require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
-	$api = plugins_api( 'plugin_information', array( 'slug' => $slug, 'fields' => array( 'sections' => false, 'short_description' => false, 'icons' => false, 'banners' => false, 'reviews' => false ) ) );
+	$api = plugins_api(
+		'plugin_information',
+		array(
+			'slug' => $slug,
+			'fields' => array(
+				'sections' => false,
+				'short_description' => false,
+				'icons' => false,
+				'banners' => false,
+				'reviews' => false,
+			),
+		)
+	);
 	if ( is_wp_error( $api ) ) {
 		return $api;
 	}
@@ -123,12 +167,18 @@ function captain_plugins_setup_custom_package() {
 			wp_delete_file( $file );
 			return new WP_Error( 'captain_setup_checksum_mismatch', __( 'Die Prüfsumme des License-Captain-Pakets stimmt nicht. Es wurde nichts installiert.', 'captain-plugins' ) );
 		}
-		return array( 'file' => $file, 'temporary' => true );
+		return array(
+			'file' => $file,
+			'temporary' => true,
+		);
 	}
 	if ( '' !== $expected && ! hash_equals( $expected, strtolower( (string) hash_file( 'sha256', $source ) ) ) ) {
 		return new WP_Error( 'captain_setup_checksum_mismatch', __( 'Die lokale Prüfsumme des License-Captain-Pakets stimmt nicht.', 'captain-plugins' ) );
 	}
-	return array( 'file' => $source, 'temporary' => false );
+	return array(
+		'file' => $source,
+		'temporary' => false,
+	);
 }
 
 function captain_plugins_setup_install_package( string $package ) {
@@ -169,18 +219,21 @@ function captain_plugins_setup_install_plugins( array $keys ): array {
 			continue;
 		}
 		if ( ! current_user_can( 'activate_plugins' ) ) {
+			/* translators: %s: plugin name. */
 			$messages[] = array( 'error', sprintf( __( '%s: Dein Benutzerkonto darf keine Plugins aktivieren.', 'captain-plugins' ), $row['name'] ) );
 			continue;
 		}
 		$file = (string) $row['installed_file'];
 		if ( '' === $file ) {
 			if ( ! wp_is_file_mod_allowed( 'captain_plugins_setup' ) || ! current_user_can( 'install_plugins' ) ) {
+				/* translators: %s: plugin name. */
 				$messages[] = array( 'error', sprintf( __( '%s konnte nicht installiert werden: Plugin-Installation ist auf dieser Website nicht erlaubt.', 'captain-plugins' ), $row['name'] ) );
 				continue;
 			}
 			if ( 'wporg' === $row['source'] ) {
 				$package = captain_plugins_setup_wporg_package( (string) $row['dir'] );
 				if ( is_wp_error( $package ) ) {
+					/* translators: 1: plugin name, 2: error message. */
 					$messages[] = array( 'error', sprintf( __( '%1$s: %2$s', 'captain-plugins' ), $row['name'], $package->get_error_message() ) );
 					continue;
 				}
@@ -188,6 +241,7 @@ function captain_plugins_setup_install_plugins( array $keys ): array {
 			} else {
 				$package = captain_plugins_setup_custom_package();
 				if ( is_wp_error( $package ) ) {
+					/* translators: 1: plugin name, 2: error message. */
 					$messages[] = array( 'error', sprintf( __( '%1$s: %2$s', 'captain-plugins' ), $row['name'], $package->get_error_message() ) );
 					continue;
 				}
@@ -197,13 +251,16 @@ function captain_plugins_setup_install_plugins( array $keys ): array {
 				}
 			}
 			if ( is_wp_error( $file ) ) {
+				/* translators: 1: plugin name, 2: error message. */
 				$messages[] = array( 'error', sprintf( __( '%1$s konnte nicht installiert werden: %2$s', 'captain-plugins' ), $row['name'], $file->get_error_message() ) );
 				continue;
 			}
+			/* translators: %s: plugin name. */
 			$messages[] = array( 'success', sprintf( __( '%s wurde installiert.', 'captain-plugins' ), $row['name'] ) );
 		}
 		$activated = activate_plugin( $file );
 		if ( is_wp_error( $activated ) && 'unexpected_output' !== $activated->get_error_code() ) {
+			/* translators: 1: plugin name, 2: error message. */
 			$messages[] = array( 'error', sprintf( __( '%1$s konnte nicht aktiviert werden: %2$s', 'captain-plugins' ), $row['name'], $activated->get_error_message() ) );
 			continue;
 		}
@@ -213,6 +270,7 @@ function captain_plugins_setup_install_plugins( array $keys ): array {
 		if ( 'wordpress-seo' === $key && class_exists( 'WPSEO_Options' ) && method_exists( 'WPSEO_Options', 'set' ) ) {
 			WPSEO_Options::set( 'should_redirect_after_install_free', false );
 		}
+		/* translators: %s: plugin name. */
 		$messages[] = array( 'success', sprintf( __( '%s wurde aktiviert.', 'captain-plugins' ), $row['name'] ) );
 	}
 	if ( empty( $messages ) ) {
@@ -225,49 +283,64 @@ function captain_plugins_setup_flash( array $messages ): void {
 	set_transient( 'captain_plugins_setup_flash_' . get_current_user_id(), $messages, 5 * MINUTE_IN_SECONDS );
 }
 
-add_action( 'admin_post_captain_plugins_setup_plugins', static function (): void {
-	if ( ! current_user_can( 'manage_options' ) ) {
-		wp_die( esc_html__( 'Keine Berechtigung.', 'captain-plugins' ), '', array( 'response' => 403 ) );
+add_action(
+	'admin_post_captain_plugins_setup_plugins',
+	static function (): void {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Keine Berechtigung.', 'captain-plugins' ), '', array( 'response' => 403 ) );
+		}
+		check_admin_referer( 'captain_plugins_setup_plugins' );
+		$selected = isset( $_POST['cp_plugins'] ) && is_array( $_POST['cp_plugins'] ) ? array_map( 'sanitize_key', wp_unslash( $_POST['cp_plugins'] ) ) : array();
+		captain_plugins_setup_flash( captain_plugins_setup_install_plugins( $selected ) );
+		wp_safe_redirect( captain_plugins_setup_url() . '#cp-setup-plugins' );
+		exit;
 	}
-	check_admin_referer( 'captain_plugins_setup_plugins' );
-	$selected = isset( $_POST['cp_plugins'] ) && is_array( $_POST['cp_plugins'] ) ? array_map( 'sanitize_key', wp_unslash( $_POST['cp_plugins'] ) ) : array();
-	captain_plugins_setup_flash( captain_plugins_setup_install_plugins( $selected ) );
-	wp_safe_redirect( captain_plugins_setup_url() . '#cp-setup-plugins' );
-	exit;
-} );
+);
 
-add_action( 'admin_post_captain_plugins_setup_content', static function (): void {
-	if ( ! current_user_can( 'manage_options' ) ) {
-		wp_die( esc_html__( 'Keine Berechtigung.', 'captain-plugins' ), '', array( 'response' => 403 ) );
+add_action(
+	'admin_post_captain_plugins_setup_content',
+	static function (): void {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Keine Berechtigung.', 'captain-plugins' ), '', array( 'response' => 403 ) );
+		}
+		check_admin_referer( 'captain_plugins_setup_content' );
+		$groups = isset( $_POST['cp_groups'] ) && is_array( $_POST['cp_groups'] ) ? array_map( 'sanitize_key', wp_unslash( $_POST['cp_groups'] ) ) : array();
+		$publish = ! empty( $_POST['cp_publish_pages'] );
+		$counts  = captain_plugins_content_sync( $groups, $publish );
+		/* translators: 1: created, 2: updated, 3: unchanged, 4: kept because edited, 5: protected by placeholders, 6: errors, 7: retired pages. */
+		$messages = array( array( empty( $counts['errors'] ) ? 'success' : 'warning', sprintf( __( 'Seitenabgleich: %1$d neu angelegt, %2$d aktualisiert, %3$d unverändert, %4$d wegen eigener Änderungen geschont, %5$d mit Platzhaltern geschützt, %6$d Fehler, %7$d nicht mehr gelieferte Seiten auf Entwurf gesetzt.', 'captain-plugins' ), $counts['created'], $counts['updated'], $counts['unchanged'], $counts['edited'], $counts['blocked'], $counts['errors'], $counts['retired'] ?? 0 ) ) );
+		captain_plugins_setup_flash( $messages );
+		wp_safe_redirect( captain_plugins_setup_url() . '#cp-setup-content' );
+		exit;
 	}
-	check_admin_referer( 'captain_plugins_setup_content' );
-	$groups = isset( $_POST['cp_groups'] ) && is_array( $_POST['cp_groups'] ) ? array_map( 'sanitize_key', wp_unslash( $_POST['cp_groups'] ) ) : array();
-	$publish = ! empty( $_POST['cp_publish_pages'] );
-	$counts  = captain_plugins_content_sync( $groups, $publish );
-	$messages = array( array( empty( $counts['errors'] ) ? 'success' : 'warning', sprintf( __( 'Seitenabgleich: %1$d neu angelegt, %2$d aktualisiert, %3$d unverändert, %4$d wegen eigener Änderungen geschont, %5$d mit Platzhaltern geschützt, %6$d Fehler.', 'captain-plugins' ), $counts['created'], $counts['updated'], $counts['unchanged'], $counts['edited'], $counts['blocked'], $counts['errors'] ) ) );
-	captain_plugins_setup_flash( $messages );
-	wp_safe_redirect( captain_plugins_setup_url() . '#cp-setup-content' );
-	exit;
-} );
+);
 
-add_action( 'admin_post_captain_plugins_setup_products', static function (): void {
-	if ( ! current_user_can( 'manage_options' ) || ! current_user_can( 'manage_woocommerce' ) ) {
-		wp_die( esc_html__( 'Keine Berechtigung zum Verwalten von WooCommerce-Produkten.', 'captain-plugins' ), '', array( 'response' => 403 ) );
+add_action(
+	'admin_post_captain_plugins_setup_products',
+	static function (): void {
+		if ( ! current_user_can( 'manage_options' ) || ! current_user_can( 'manage_woocommerce' ) ) {
+			wp_die( esc_html__( 'Keine Berechtigung zum Verwalten von WooCommerce-Produkten.', 'captain-plugins' ), '', array( 'response' => 403 ) );
+		}
+		check_admin_referer( 'captain_plugins_setup_products' );
+		$result = captain_plugins_setup_create_products();
+		$messages = array();
+		/* translators: 1: created, 2: license plans mapped, 3: already set up, 4: skipped, 5: errors. */
+		$messages[] = array( empty( $result['errors'] ) ? 'success' : 'warning', sprintf( __( 'Produktentwürfe: %1$d angelegt, %2$d Lizenzpläne verknüpft, %3$d bereits eingerichtet, %4$d übersprungen, %5$d Fehler.', 'captain-plugins' ), $result['created'], $result['mapped'], $result['existing'], $result['skipped'], $result['errors'] ) );
+		foreach ( $result['messages'] as $message ) {
+			$messages[] = array( 'info', $message );
+		}
+		captain_plugins_setup_flash( $messages );
+		wp_safe_redirect( captain_plugins_setup_url() . '#cp-setup-products' );
+		exit;
 	}
-	check_admin_referer( 'captain_plugins_setup_products' );
-	$result = captain_plugins_setup_create_products();
-	$messages = array();
-	$messages[] = array( empty( $result['errors'] ) ? 'success' : 'warning', sprintf( __( 'Produktentwürfe: %1$d angelegt, %2$d Lizenzpläne verknüpft, %3$d bereits eingerichtet, %4$d übersprungen, %5$d Fehler.', 'captain-plugins' ), $result['created'], $result['mapped'], $result['existing'], $result['skipped'], $result['errors'] ) );
-	foreach ( $result['messages'] as $message ) {
-		$messages[] = array( 'info', $message );
-	}
-	captain_plugins_setup_flash( $messages );
-	wp_safe_redirect( captain_plugins_setup_url() . '#cp-setup-products' );
-	exit;
-} );
+);
 
 function captain_plugins_setup_status_label( string $status ): string {
-	$labels = array( 'active' => __( 'aktiv', 'captain-plugins' ), 'installed' => __( 'installiert, nicht aktiv', 'captain-plugins' ), 'missing' => __( 'nicht installiert', 'captain-plugins' ) );
+	$labels = array(
+		'active' => __( 'aktiv', 'captain-plugins' ),
+		'installed' => __( 'installiert, nicht aktiv', 'captain-plugins' ),
+		'missing' => __( 'nicht installiert', 'captain-plugins' ),
+	);
 	return $labels[ $status ] ?? $status;
 }
 
@@ -291,14 +364,29 @@ function captain_plugins_setup_plugin_card(): void {
 		} elseif ( ! $enabled && 'active' !== $row['status'] ) {
 			$extra = esc_html__( 'Installation oder Aktivierung ist für dieses Benutzerkonto bzw. Deployment gesperrt.', 'captain-plugins' );
 		}
-		echo '<tr><td>' . $checkbox . '</td><td><label for="cp-plugin-' . esc_attr( $key ) . '"><strong>' . esc_html( $row['name'] ) . '</strong></label><br><span class="description">' . esc_html( $row['description'] ) . '</span>' . ( '' !== $extra ? '<br><small>' . wp_kses_post( $extra ) . '</small>' : '' ) . '</td><td>' . esc_html( captain_plugins_setup_status_label( $row['status'] ) ) . '</td></tr>';
+		echo '<tr><td>' . wp_kses(
+			$checkbox,
+			array(
+				'input' => array(
+					'type' => true,
+					'name' => true,
+					'value' => true,
+					'id' => true,
+					'checked' => true,
+				),
+			)
+		) . '</td><td><label for="cp-plugin-' . esc_attr( $key ) . '"><strong>' . esc_html( $row['name'] ) . '</strong></label><br><span class="description">' . esc_html( $row['description'] ) . '</span>' . ( '' !== $extra ? '<br><small>' . wp_kses_post( $extra ) . '</small>' : '' ) . '</td><td>' . esc_html( captain_plugins_setup_status_label( $row['status'] ) ) . '</td></tr>';
 	}
 	echo '</tbody></table><p><button class="button button-primary" type="submit">' . esc_html__( 'Auswahl installieren und aktivieren', 'captain-plugins' ) . '</button> <span class="description">' . esc_html__( 'Reihenfolge: WooCommerce, Yoast SEO, License Captain.', 'captain-plugins' ) . '</span></p></form></section>';
 }
 
 function captain_plugins_setup_content_card(): void {
 	$manifest = captain_plugins_content_manifest();
-	$counts   = array( 'core' => 0, 'products' => 0, 'guides' => 0 );
+	$counts   = array(
+		'core' => 0,
+		'products' => 0,
+		'guides' => 0,
+	);
 	foreach ( $manifest as $entry ) {
 		$group = (string) ( $entry['group'] ?? '' );
 		if ( isset( $counts[ $group ] ) ) {
@@ -308,7 +396,11 @@ function captain_plugins_setup_content_card(): void {
 	echo '<section class="card" id="cp-setup-content"><h2>' . esc_html__( '2. Website-Texte auswählen', 'captain-plugins' ) . '</h2><p>' . esc_html__( 'Der Theme-Entwurf enthält Startseite, Produktseiten, Unterseiten, Dokumentation, FAQ, Support, Lösungen und Ratgeber. Eigene Seiten werden nicht ersetzt. Bereits importierte, unveränderte Theme-Seiten können aktualisiert werden; manuell bearbeitete Seiten bleiben erhalten.', 'captain-plugins' ) . '</p>';
 	echo '<form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '"><input type="hidden" name="action" value="captain_plugins_setup_content">';
 	wp_nonce_field( 'captain_plugins_setup_content' );
-	$labels = array( 'core' => __( 'Startseite und Website-Grundseiten', 'captain-plugins' ), 'products' => __( 'Produktseiten, Features, Pro und Dokumentation', 'captain-plugins' ), 'guides' => __( 'Ratgeber', 'captain-plugins' ) );
+	$labels = array(
+		'core' => __( 'Startseite und Website-Grundseiten', 'captain-plugins' ),
+		'products' => __( 'Produktseiten, Features, Pro und Dokumentation', 'captain-plugins' ),
+		'guides' => __( 'Ratgeber', 'captain-plugins' ),
+	);
 	foreach ( $labels as $group => $label ) {
 		echo '<p><label><input type="checkbox" name="cp_groups[]" value="' . esc_attr( $group ) . '" checked> <strong>' . esc_html( $label ) . '</strong> <span class="description">(' . absint( $counts[ $group ] ) . ' Vorlagen)</span></label></p>';
 	}
@@ -320,7 +412,7 @@ function captain_plugins_setup_content_card(): void {
 function captain_plugins_setup_product_card(): void {
 	$woocommerce = class_exists( 'WooCommerce' );
 	$license     = class_exists( '\\WPLC\\Catalog\\Catalog' );
-	echo '<section class="card" id="cp-setup-products"><h2>' . esc_html__( '3. WooCommerce-Produkte anlegen', 'captain-plugins' ) . '</h2><p>' . esc_html__( 'Der Assistent kann die neun jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen.', 'captain-plugins' ) . '</p>';
+	echo '<section class="card" id="cp-setup-products"><h2>' . esc_html__( '3. WooCommerce-Produkte anlegen', 'captain-plugins' ) . '</h2><p>' . esc_html( sprintf( /* translators: %d: number of annual plans. */ __( 'Der Assistent kann die %d aktuell definierten jährlichen Captain-Pro-Pläne als virtuelle, verborgene WooCommerce-Entwürfe anlegen und mit License Captain verknüpfen. Alle derzeit bepreisten Captain-Pro-Editionen mit festgelegten Tarifen werden angelegt; noch nicht bepreiste Review- und Course-Captain-Pläne bleiben ausgenommen. Es werden keine Produkte veröffentlicht, keine Shop-Steuern geändert und keine Dateien zum Direktdownload eingetragen.', 'captain-plugins' ), count( captain_plugins_setup_plan_rows() ) ) ) . '</p>';
 	echo '<table class="widefat striped"><thead><tr><th>' . esc_html__( 'Lizenzprodukt', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Plan', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Jahrespreis', 'captain-plugins' ) . '</th><th>' . esc_html__( 'Live-Websites', 'captain-plugins' ) . '</th></tr></thead><tbody>';
 	foreach ( captain_plugins_setup_plan_rows() as $row ) {
 		echo '<tr><td>' . esc_html( $row['product_name'] ) . '</td><td>' . esc_html( ucfirst( $row['plan_key'] ) ) . '</td><td>' . esc_html( number_format_i18n( (float) $row['price'], 0 ) . ' € / Jahr' ) . '</td><td>' . absint( $row['limit'] ) . '</td></tr>';
@@ -335,11 +427,11 @@ function captain_plugins_setup_product_card(): void {
 	} elseif ( current_user_can( 'manage_woocommerce' ) ) {
 		echo '<form method="post" action="' . esc_url( admin_url( 'admin-post.php' ) ) . '"><input type="hidden" name="action" value="captain_plugins_setup_products">';
 		wp_nonce_field( 'captain_plugins_setup_products' );
-		echo '<p><button class="button button-primary" type="submit">' . esc_html__( 'Neun Produktentwürfe und Lizenzpläne anlegen', 'captain-plugins' ) . '</button></p></form>';
+		echo '<p><button class="button button-primary" type="submit">' . esc_html( sprintf( /* translators: %d: number of product drafts. */ __( '%d Produktentwürfe und Lizenzpläne anlegen', 'captain-plugins' ), count( captain_plugins_setup_plan_rows() ) ) ) . '</button></p></form>';
 	} else {
 		echo '<p class="notice notice-warning inline"><span>' . esc_html__( 'Dein Benutzerkonto darf keine WooCommerce-Produkte verwalten.', 'captain-plugins' ) . '</span></p>';
 	}
-	echo '<p class="description">' . esc_html__( 'License Captain ist in Captain Pro enthalten und wird nicht als separates Kaufprodukt angelegt. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind.', 'captain-plugins' ) . '</p></section>';
+	echo '<p class="description">' . esc_html__( 'Der License-Captain-Server muss aktiv sein, damit die Pro-Jahrespläne dieser Website als Lizenzprodukte zugeordnet werden. Kunden sehen davon nichts: Sie aktivieren ihren Lizenzschlüssel direkt im Pro-Add-on. Die erstellten Produkte bleiben Entwürfe, bis Produktdateien/Release-Bereitstellung, Steuern, Checkout, Lizenzserver und Supportangaben geprüft sind.', 'captain-plugins' ) . '</p></section>';
 }
 
 function captain_plugins_setup_page(): void {

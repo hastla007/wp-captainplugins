@@ -2,9 +2,12 @@
 Theme Name: Captain Plugins
 Theme URI: https://github.com/hastla007/wp-captainplugins
 Author: Captain Plugins
-Description: Leichtgewichtiges, responsives Block-Theme für die Captain-Plugins-Website.
-Version: 0.1.0
+Description: Leichtgewichtiges, barrierearmes Block-Theme für die Captain-Plugins-Website: Produktfamilie, Captain-Pro-Preise, Dokumentation, Ratgeber und WooCommerce-Seiten. Enthält Setup-Assistent, importierbare Seiteninhalte und Block-Patterns.
+Version: 0.6.1
 Requires at least: 6.6
-Requires PHP: 7.4
+Tested up to: 7.1
+Requires PHP: 8.5
 Text Domain: captain-plugins
+Domain Path: /languages
+Tags: block-patterns, full-site-editing, wide-blocks, translation-ready, e-commerce
 */

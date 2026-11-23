@@ -1,11 +1,60 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
-<!-- wp:group {"tagName":"main","anchor":"main-content","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"3rem","bottom":"4rem"}}}} -->
-<main id="main-content" class="wp-block-group" style="padding-top:3rem;padding-bottom:4rem"><!-- wp:query-title {"type":"search","level":1} /-->
-<!-- wp:search {"label":"Suche","showLabel":true,"buttonText":"Suchen","buttonUseIcon":false} /-->
-<!-- wp:query {"query":{"perPage":10,"inherit":true},"displayLayout":{"type":"list"}} -->
-<div class="wp-block-query"><!-- wp:post-template --><!-- wp:post-title {"isLink":true} /--><!-- wp:post-excerpt {"moreText":"Weiterlesen"} /--><!-- /wp:post-template -->
-<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} --><!-- wp:query-pagination-previous /--><!-- wp:query-pagination-numbers /--><!-- wp:query-pagination-next /--><!-- /wp:query-pagination -->
-<!-- wp:query-no-results --><!-- wp:paragraph --><p>Bitte prüfen Sie den Suchbegriff oder durchsuchen Sie unsere Produkte und Dokumentation.</p><!-- /wp:paragraph --><!-- /wp:query-no-results --></div>
-<!-- /wp:query --></main>
+
+<!-- wp:group {"tagName":"main","anchor":"main-content","className":"cp-main","layout":{"type":"default"}} -->
+<main id="main-content" class="wp-block-group cp-main">
+<!-- wp:group {"align":"full","className":"cp-page-header","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-page-header"><!-- wp:query-title {"type":"search","level":1,"className":"cp-page-title"} /-->
+
+<!-- wp:search {"label":"Website durchsuchen","showLabel":true,"placeholder":"Produkt, Funktion oder Frage","buttonText":"Suchen","className":"cp-search"} /--></div>
 <!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained","contentSize":"75rem"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:query {"query":{"perPage":12,"inherit":true},"align":"wide","className":"cp-query"} -->
+<div class="wp-block-query alignwide cp-query"><!-- wp:post-template {"className":"cp-card-grid","layout":{"type":"default"}} -->
+<!-- wp:group {"className":"cp-card cp-resource-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-resource-card"><!-- wp:post-title {"level":2,"isLink":true} /-->
+
+<!-- wp:post-excerpt {"moreText":"Weiterlesen","excerptLength":28} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous {"label":"Neuere Einträge"} /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next {"label":"Ältere Einträge"} /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Keine Treffer. Prüfen Sie die Schreibweise oder wählen Sie einen der folgenden Einstiege.</p>
+<!-- /wp:paragraph -->
+
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Häufig gesucht</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"className":"cp-link-list"} -->
+<ul class="wp-block-list cp-link-list"><!-- wp:list-item -->
+<li><a href="/produkte/">Alle Produkte im Überblick</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/vergleich/">Welches Plugin passt zu meinem Betrieb?</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/preise/">Preise für Captain Pro</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/dokumentation/">Dokumentation und Installation</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/faq/">Häufige Fragen</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/support/">Support kontaktieren</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

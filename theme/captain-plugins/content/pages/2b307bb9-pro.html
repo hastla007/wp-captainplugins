@@ -1,71 +1,144 @@
-<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
 <p>Affiliate Captain Pro erweitert die Partnerverwaltung um Integrationen und Auszahlungen für wachsende Programme, Plattformen und Unternehmen mit individuellen Abläufen.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Automatisieren Sie mit Webhooks</h2>
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--features","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--features"><!-- wp:group {"className":"cp-card-grid cp-card-grid--features","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card-grid cp-card-grid--features"><!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-feature-card"><!-- wp:heading {"level":2,"className":"cp-feature-card__title"} -->
+<h2 class="wp-block-heading cp-feature-card__title">Automatisieren Sie mit Webhooks</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Signierte Webhooks übermitteln relevante Ereignisse kontrolliert an Ihre Systeme und Automatisierungen.</p>
+<p>Signierte Webhooks (HMAC-SHA256) übermitteln Ereignisse zu Partnern, Provisionen und Auszahlungen an bis zu 20 HTTPS-Endpunkte. Fehlgeschlagene Zustellungen werden automatisch wiederholt und protokolliert. Die Ereignisse enthalten nur Kennungen und Status, keine Namen, E-Mail-Adressen oder Bankdaten. Einrichtung unter <strong>Affiliate Captain → Webhooks</strong>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Binden Sie eigene Abläufe über die API an</h2>
+<!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-feature-card"><!-- wp:heading {"level":2,"className":"cp-feature-card__title"} -->
+<h2 class="wp-block-heading cp-feature-card__title">Binden Sie eigene Abläufe über die API an</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Die erweiterte REST-API bietet zusätzliche Möglichkeiten für individuelle Integrationen und verwaltete Prozesse.</p>
+<p>Die erweiterte REST-API unter <code>/wp-json/affiliate-captain-pro/v1</code> liest und pflegt Partner und Provisionen und liest Auszahlungen. Zugriff haben nur angemeldete WordPress-Benutzer mit der passenden Affiliate-Captain-Berechtigung, etwa über ein Anwendungspasswort; wiederholte Buchungsanfragen werden über einen Idempotency-Key erkannt.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">Zeigen Sie Ihr eigenes Branding</h2>
+<!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-feature-card"><!-- wp:heading {"level":2,"className":"cp-feature-card__title"} -->
+<h2 class="wp-block-heading cp-feature-card__title">Zeigen Sie Ihr eigenes Branding</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Mit dem White-Label-Partnerportal präsentieren Sie Programm und Materialien unter Ihrer Marke.</p>
+<p>Mit dem White-Label-Partnerportal präsentieren Sie Programm und Materialien unter Ihrer Marke: eigenes Logo, Farben, Kopf- und Fußtext und Tab-Beschriftungen im Partnerbereich sowie eigener Absendername und eigene Texte in den E-Mails an Partner. Die Gutschrift-PDFs bleiben unverändert.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
-<h2 class="wp-block-heading">PayPal-Auszahlungen automatisieren</h2>
+<!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-feature-card"><!-- wp:heading {"level":2,"className":"cp-feature-card__title"} -->
+<h2 class="wp-block-heading cp-feature-card__title">PayPal-Auszahlungen automatisieren</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Führen Sie PayPal-Auszahlungen direkt aus dem Partnerprogramm aus und ergänzen Sie Ihre bestehenden Auszahlungsläufe.</p>
+<p>Führen Sie PayPal-Auszahlungen über die PayPal-Schnittstelle direkt aus dem Partnerprogramm aus – per Knopf, beim Erstellen einer Auszahlung oder einmal täglich. Der Status wird bei PayPal abgefragt; ein Sandbox-Modus erleichtert den Test. Die Auszahlungen ergänzen Ihre bestehenden Auszahlungsläufe.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"className":"cp-card cp-feature-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-card cp-feature-card"><!-- wp:heading {"level":2,"className":"cp-feature-card__title"} -->
+<h2 class="wp-block-heading cp-feature-card__title">Mehrere Partnerprogramme führen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Führen Sie mehrere Partnerprogramme mit eigenem Provisionssatz, eigener Haltefrist, Cookie-Laufzeit, Mindestauszahlung, Attributionsmodell und Bedingungsseite. Berichte lassen sich nach Programm filtern, und Partner sehen ihren Programmnamen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Jahrespläne</h2>
 <!-- /wp:heading -->
 
-<!-- wp:table {"className":"cp-pricing-table"} -->
-<figure class="wp-block-table cp-pricing-table"><table><thead><tr><th scope="col">Plan</th><th scope="col">Live-Websites</th><th scope="col">Preis pro Jahr</th></tr></thead><tbody><tr><td>Single</td><td>1</td><td>229 €</td></tr><tr><td>Business</td><td>5</td><td>399 €</td></tr><tr><td>Agency</td><td>25</td><td>699 €</td></tr></tbody></table></figure>
-<!-- /wp:table -->
+<!-- wp:group {"className":"cp-plan-grid","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-grid"><!-- wp:group {"className":"cp-plan-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-card"><!-- wp:heading {"level":3,"className":"cp-plan-card__name"} -->
+<h3 class="wp-block-heading cp-plan-card__name">Single</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__sites"} -->
+<p class="cp-plan-card__sites">1 Live-Website</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__price"} -->
+<p class="cp-plan-card__price"><strong>229 €</strong> / Jahr</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cp-plan-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-card"><!-- wp:heading {"level":3,"className":"cp-plan-card__name"} -->
+<h3 class="wp-block-heading cp-plan-card__name">Business</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__sites"} -->
+<p class="cp-plan-card__sites">5 Live-Websites</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__price"} -->
+<p class="cp-plan-card__price"><strong>399 €</strong> / Jahr</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cp-plan-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-card"><!-- wp:heading {"level":3,"className":"cp-plan-card__name"} -->
+<h3 class="wp-block-heading cp-plan-card__name">Agency</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__sites"} -->
+<p class="cp-plan-card__sites">25 Live-Websites</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__price"} -->
+<p class="cp-plan-card__price"><strong>699 €</strong> / Jahr</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p>Alle Pläne enthalten den vollständigen Pro-Umfang. License Captain ist ohne Aufpreis enthalten.</p>
+<p>Alle Pläne enthalten den vollständigen Pro-Umfang.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button {"className":"cp-button-pending"} -->
+<div class="wp-block-button cp-button-pending"><a class="wp-block-button__link wp-element-button">Affiliate Captain Pro auswählen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline cp-button-pending"} -->
+<div class="wp-block-button is-style-outline cp-button-pending"><a class="wp-block-button__link wp-element-button">Kostenlosen Kern starten</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-media-placeholder"><!-- wp:paragraph {"className":"cp-media-placeholder__label"} -->
+<p class="cp-media-placeholder__label">Produktansicht folgt</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong><span class="cp-link-placeholder"><span>Affiliate Captain Pro auswählen</span><small>Linkziel vor Veröffentlichung ergänzen</small></span></strong> · <span class="cp-link-placeholder"><span>Kostenlosen Kern starten</span><small>Linkziel vor Veröffentlichung ergänzen</small></span></p>
+<p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Zeigen Sie das Partnerportal mit angepasstem Firmenlogo, Farben und Navigation; verwenden Sie eine neutrale Demomarke und Testdaten.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[Screenshot-Platzhalter: Zeigen Sie das Partnerportal mit angepasstem Firmenlogo, Farben und Navigation; verwenden Sie eine neutrale Demomarke und Testdaten.] · [Demo: Webhook und Auszahlung]</p>
+<p class="cp-media-placeholder__brief"><strong>Demo:</strong> Webhook und Auszahlung</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>Voraussetzungen:</strong> Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 6.5+ und PHP 7.4+. WooCommerce ist optional. <a href="/kompatibilitaet/">Kompatibilität</a>.</p>
+<p class="cp-media-placeholder__note">Redaktioneller Platzhalter: vor Veröffentlichung durch freigegebene Medien bzw. einen belegten Kundenfall ersetzen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p><strong>Voraussetzungen:</strong> Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 7.0+ und PHP 8.5+. Den Lizenzschlüssel aktivieren Sie auf der Lizenzseite im Menü <strong>Affiliate Captain</strong>. WooCommerce ist optional. <a href="/kompatibilitaet/">Kompatibilität</a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

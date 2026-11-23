@@ -11,7 +11,7 @@ focus_keyphrase: WordPress Ticket Plugin FAQ
 Nein. Pass Captain kann eigenständig genutzt werden. WooCommerce ist optional.
 
 ## Welche Zahlungswege sind verfügbar?
-Sie können Stripe, PayPal oder Mollie nutzen oder Zahlungen über WooCommerce abwickeln.
+Sie können Überweisung mit GiroCode, Stripe, PayPal oder Mollie nutzen, an der Abendkasse verkaufen oder Zahlungen über WooCommerce abwickeln.
 
 ## Kann ich wiederkehrende Termine anbieten?
 Ja. Pass Captain unterstützt Einzeltermine und Serien mit eigenen Preisstufen.
@@ -26,7 +26,7 @@ Mit dem Webscanner oder dem installierbaren Offline-Scanner prüfen Sie Tickets.
 Ja. Ressourcen, Zeitfenster, Puffer, Buchungsregeln, Umbuchungen, Stornierungen und Wartelisten lassen sich für Servicebuchungen konfigurieren.
 
 ## Was ergänzt Pass Captain Pro?
-E-Rechnungen, Stripe-Terminal- und SumUp-Anbindung, White Label, virtueller Warteraum und schreibende API-Zugriffe.
+E-Rechnungen (XRechnung und ZUGFeRD), Kartenterminals von Stripe Terminal und SumUp an der Abendkasse, White Label, einen virtuellen Warteraum und eine schreibende REST-API.
 
 ## Berechnet Pass Captain automatisch meine Steuern?
 Pass Captain unterstützt konfigurierbare Steuerprofile. Steuersätze und die passende steuerliche Behandlung werden vom Betreiber festgelegt.

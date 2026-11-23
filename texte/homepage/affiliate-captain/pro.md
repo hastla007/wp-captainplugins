@@ -11,19 +11,23 @@ Affiliate Captain Pro erweitert die Partnerverwaltung um Integrationen und Ausza
 
 ## Automatisieren Sie mit Webhooks
 
-Signierte Webhooks übermitteln relevante Ereignisse kontrolliert an Ihre Systeme und Automatisierungen.
+Signierte Webhooks (HMAC-SHA256) übermitteln Ereignisse zu Partnern, Provisionen und Auszahlungen an bis zu 20 HTTPS-Endpunkte. Fehlgeschlagene Zustellungen werden automatisch wiederholt und protokolliert. Die Ereignisse enthalten nur Kennungen und Status, keine Namen, E-Mail-Adressen oder Bankdaten. Einrichtung unter **Affiliate Captain → Webhooks**.
 
 ## Binden Sie eigene Abläufe über die API an
 
-Die erweiterte REST-API bietet zusätzliche Möglichkeiten für individuelle Integrationen und verwaltete Prozesse.
+Die erweiterte REST-API unter `/wp-json/affiliate-captain-pro/v1` liest und pflegt Partner und Provisionen und liest Auszahlungen. Zugriff haben nur angemeldete WordPress-Benutzer mit der passenden Affiliate-Captain-Berechtigung, etwa über ein Anwendungspasswort; wiederholte Buchungsanfragen werden über einen Idempotency-Key erkannt.
 
 ## Zeigen Sie Ihr eigenes Branding
 
-Mit dem White-Label-Partnerportal präsentieren Sie Programm und Materialien unter Ihrer Marke.
+Mit dem White-Label-Partnerportal präsentieren Sie Programm und Materialien unter Ihrer Marke: eigenes Logo, Farben, Kopf- und Fußtext und Tab-Beschriftungen im Partnerbereich sowie eigener Absendername und eigene Texte in den E-Mails an Partner. Die Gutschrift-PDFs bleiben unverändert.
 
 ## PayPal-Auszahlungen automatisieren
 
-Führen Sie PayPal-Auszahlungen direkt aus dem Partnerprogramm aus und ergänzen Sie Ihre bestehenden Auszahlungsläufe.
+Führen Sie PayPal-Auszahlungen über die PayPal-Schnittstelle direkt aus dem Partnerprogramm aus – per Knopf, beim Erstellen einer Auszahlung oder einmal täglich. Der Status wird bei PayPal abgefragt; ein Sandbox-Modus erleichtert den Test. Die Auszahlungen ergänzen Ihre bestehenden Auszahlungsläufe.
+
+## Mehrere Partnerprogramme führen
+
+Führen Sie mehrere Partnerprogramme mit eigenem Provisionssatz, eigener Haltefrist, Cookie-Laufzeit, Mindestauszahlung, Attributionsmodell und Bedingungsseite. Berichte lassen sich nach Programm filtern, und Partner sehen ihren Programmnamen.
 
 ## Jahrespläne
 
@@ -33,10 +37,10 @@ Führen Sie PayPal-Auszahlungen direkt aus dem Partnerprogramm aus und ergänzen
 | Business | 5 | 399 € |
 | Agency | 25 | 699 € |
 
-Alle Pläne enthalten den vollständigen Affiliate-Captain-Pro-Umfang. License Captain Server wird separat angeboten und ist nicht Bestandteil dieses Plans.
+Alle Pläne enthalten den vollständigen Pro-Umfang.
 
 **[Affiliate Captain Pro auswählen]([Checkout-URL])** · [Kostenlosen Kern starten]([Download-URL])
 
 [Screenshot-Platzhalter: Zeigen Sie das Partnerportal mit angepasstem Firmenlogo, Farben und Navigation; verwenden Sie eine neutrale Demomarke und Testdaten.] · [Demo: Webhook und Auszahlung]
 
-**Voraussetzungen:** Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 6.5+ und PHP 7.4+. WooCommerce ist optional. [Kompatibilität](/kompatibilitaet/).
+**Voraussetzungen:** Affiliate Captain als Kern-Plugin; die kombinierte Installation mit Affiliate Captain Pro benötigt WordPress 7.0+ und PHP 8.5+. Den Lizenzschlüssel aktivieren Sie auf der Lizenzseite im Menü **Affiliate Captain**. WooCommerce ist optional. [Kompatibilität](/kompatibilitaet/).

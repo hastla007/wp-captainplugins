@@ -7,7 +7,7 @@ focus_keyphrase: Captain Pro installieren
 
 # Captain Pro installieren und freischalten
 
-Captain Pro wird als separates Add-on zum passenden kostenlosen Kern-Plugin installiert. Wählen Sie das Add-on, das zu Ihrem Produkt gehört: Voucher Captain Pro, Pass Captain Pro oder Affiliate Captain Pro.
+Captain Pro wird als separates Add-on zum passenden kostenlosen Kern-Plugin installiert. Wählen Sie das Add-on, das zu Ihrem Produkt gehört: Voucher, Pass, Affiliate, Form, Review, Workflow oder Course Captain Pro.
 
 ## 1. Kern-Plugin installieren
 
@@ -29,15 +29,19 @@ Laden Sie das gekaufte Add-on aus Ihrem Kundenkonto herunter. Öffnen Sie in Wor
 
 Öffnen Sie die passende Funktion im Kern-Plugin und führen Sie die Einrichtung anhand der jeweiligen Anleitung fort:
 
-- Voucher Captain Pro: CSV-Firmenbestellung, Wallet-Pässe und SMS.
+- Voucher Captain Pro: CSV-Firmenbestellung, Wallet-Pässe, SMS-Zustellung und White Label.
 - Pass Captain Pro: E-Rechnung, Kartenterminal, White Label, virtueller Warteraum und schreibende API.
-- Affiliate Captain Pro: Webhooks, erweiterte REST-API, White-Label-Portal und automatische PayPal-Auszahlungen.
+- Affiliate Captain Pro: Webhooks, erweiterte REST-API, White-Label-Portal, automatische PayPal-Auszahlungen und mehrere Partnerprogramme.
+- Form Captain Pro: mehrstufige Formulare, sichere Uploads, UND-/ODER-Regeln mit Routing, Webhooks, PDF-Ausgaben und WooCommerce-Käuferfragebögen.
+- Review Captain Pro: Plattformverbindungen und Sync, faire Bewertungsanfragen, Widgets, Auswertungen und Connector-Management.
+- Workflow Captain Pro: Captain-Suite-Provider, Event-Korrelation, Freigabeschritte, signierte Webhooks und n8n, eigene Connectoren und längere Protokolle.
+- Course Captain Pro: Lernpfade, erweiterte Drip-Regeln, Lösungserklärungen, Zertifikatsdesigner, Gruppenverwaltung, Auswertungen und Kursverkauf über WooCommerce.
 
 > **Screenshot-Platzhalter 3 – Pro-Funktion verfügbar:** Zeigen Sie eine Pro-Funktion des Add-ons mit aktivem Status, beispielsweise CSV-Bestellung, Ticket-White-Label oder Webhook-Einstellungen. Nur eine Testumgebung mit anonymisierten Daten verwenden.
 
 ## 5. Websites und Verlängerung verwalten
 
-Ihr Plan erlaubt die Nutzung auf 1, 5 oder 25 Live-Websites. Verwalten Sie Aktivierungen und Verlängerungen im Lizenzbereich Ihres Kontos. Updates für Captain Pro erhalten Sie über die üblichen WordPress-Plugin-Updates. Sie müssen keinen License Captain Server betreiben.
+Ihr Plan erlaubt die Nutzung auf 1, 5 oder 25 Live-Websites. Verwalten Sie Aktivierungen und Verlängerung über den von Captain Plugins bereitgestellten Lizenzbereich.
 
 [Screenshot-Platzhalter: Zeigen Sie den Planvergleich Single, Business und Agency mit den Limits 1, 5 und 25 Live-Websites sowie dem gewählten Plan; keine persönlichen Lizenzdaten abbilden.]  
 [Demo: Pro-Feature nach Aktivierung]
@@ -46,4 +50,4 @@ Ihr Plan erlaubt die Nutzung auf 1, 5 oder 25 Live-Websites. Verwalten Sie Aktiv
 
 ## Kompatibilität des Add-ons
 
-Alle Captain-Pro-Add-ons benötigen das jeweilige Kern-Plugin. Die Add-on-Pakete deklarieren WordPress 6.5+; für die kombinierte Installation gelten zusätzlich die PHP- und WooCommerce-Anforderungen des Kern-Plugins. [Kompatibilitätsmatrix öffnen](/kompatibilitaet/).
+Alle Captain-Pro-Add-ons benötigen das jeweilige Kern-Plugin. Alle Add-ons setzen WordPress 7.0 und PHP 8.5 voraus; wo WooCommerce genutzt wird, WooCommerce 11.2.2. Es gelten außerdem die Anforderungen des jeweiligen Kern-Plugins. [Kompatibilitätsmatrix öffnen](/kompatibilitaet/).

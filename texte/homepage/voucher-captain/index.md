@@ -17,11 +17,11 @@ Legen Sie ein Gutscheinprodukt mit festem Wert oder Wunschbetrag an. Ihre Kundin
 
 ## Für Ihren Shop konfigurierbar
 
-Erstellen Sie Rabattcodes, Geschenkkarten und Gutscheine für Produkte, Kategorien oder bestimmte Empfänger. Passen Sie PDF-Vorlagen an Ihre Marke an und lassen Sie Gutscheine sofort oder zu einem gewählten Datum zustellen.
+Erstellen Sie Rabattcodes, Geschenkkarten und Gutscheine für Produkte, Kategorien oder bestimmte Empfänger. Passen Sie PDF-Vorlagen an Ihre Marke an und lassen Sie Gutscheine sofort oder zu einem gewählten Datum zustellen. Aktionen mit Bonusgutscheinen, Freunde werben, aufladbare Geschenkkarten und Kundenguthaben sind ebenfalls kostenlos enthalten.
 
 ## Behalten Sie Einlösungen im Blick
 
-Verwalten Sie Gutscheine, korrigieren Sie Guthaben und verfolgen Sie Änderungen im Verlauf. Codes lassen sich importieren und Bestellungen im Kundenkonto abrufen.
+Verwalten Sie Gutscheine, korrigieren Sie Guthaben und verfolgen Sie Änderungen im Verlauf. Lösen Sie Gutscheine im Shop oder per Scanner am Schalter ein und werten Sie offene Gutscheinwerte und Einlösungen aus. Codes lassen sich importieren, Kundinnen und Kunden rufen ihre Gutscheine im Kundenkonto ab.
 
 [Screenshot-Platzhalter: WooCommerce-Gutscheinprodukt mit Wunschwert, Empfängername und Nachricht zeigen; Produktpreis und Daten fiktiv halten.]  
 [Screenshot-Platzhalter: Designer links und fertige PDF-Vorschau rechts zeigen, inklusive Logo, Wert und QR-Code mit ungültigem Testinhalt.]  
@@ -29,12 +29,12 @@ Verwalten Sie Gutscheine, korrigieren Sie Guthaben und verfolgen Sie Änderungen
 
 ## Mehr Möglichkeiten mit Captain Pro
 
-Verarbeiten Sie Firmenbestellungen in großen Mengen, bieten Sie digitale Wallet-Pässe an und versenden Sie Gutscheine per SMS.
+Verarbeiten Sie Firmenbestellungen per CSV-Empfängerliste, bieten Sie Wallet-Pässe für Apple und Google an, versenden Sie Gutscheine zusätzlich per SMS und treten Sie mit White Label unter Ihrer eigenen Marke auf.
 
 [Voucher Captain Pro ansehen](/voucher-captain/pro/) · [Häufige Fragen](/voucher-captain/faq/)
 
 ## Kompatibilität und Support
 
-Voucher Captain benötigt WordPress 6.4+, PHP 8.1+ sowie WooCommerce 8.9+; PHP muss GD, mbstring und zip bereitstellen. Die gemeinsame Installation mit Voucher Captain Pro benötigt WordPress 6.5+. HPOS und klassische Bestellspeicherung sind abgedeckt. Optional unterstützt Voucher Captain Yoast SEO, WooCommerce Subscriptions, WPML/WCML, gängige Mehrwährungs-Erweiterungen und Flexible Product Fields/Checkout Fields.
+Voucher Captain benötigt WordPress 7.0+, PHP 8.5+ sowie WooCommerce 11.2.2+; PHP muss GD, mbstring und zip bereitstellen. Für die gemeinsame Installation mit Voucher Captain Pro gelten dieselben Mindestversionen. HPOS, klassische Bestellspeicherung sowie Block-Warenkorb und Block-Kasse sind abgedeckt. Optional unterstützt Voucher Captain WooCommerce Subscriptions, WPML/WCML, Polylang, gängige Mehrwährungs-Erweiterungen, Flexible Product Fields/Checkout Fields sowie WP Pass Captain und WP Affiliate Captain.
 
 Single und Business enthalten Standard-Support; Agency enthält Priority-Support. [Alle Systemanforderungen und Integrationen](/kompatibilitaet/).

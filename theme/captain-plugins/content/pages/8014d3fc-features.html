@@ -1,63 +1,119 @@
-<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">WooCommerce als Lizenzshop</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Kennzeichnen Sie Produkte oder Varianten als Lizenzangebote. Legen Sie Plan, Abrechnungsintervall, Website-Limit, Supportstufe und Entitlements fest. Eine Lizenz wird je gekaufter Einheit erstellt.</p>
+<p>Kennzeichnen Sie Produkte oder Varianten im klassischen Produkteditor als Lizenzangebote. Legen Sie Plan, Abrechnungsintervall (monatlich oder jährlich), Limit für Live-Websites, Supportstufe und Entitlements fest. Viele Pläne pflegen Sie per CSV-Import und -Export; Produkte, Pläne und Funktionsbezeichnungen können außerdem aus einer Katalogdatei (<code>wplc-catalog.json</code>) im Release-Paket eingespielt werden. Eine Lizenz wird je gekaufter Einheit erstellt, sobald die Bestellung bezahlt ist; der Kauf setzt ein Kundenkonto voraus.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Website-Aktivierungen</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Kunden aktivieren ihre Lizenz für Live-, Staging- oder Entwicklungswebsites. Sie sehen Aktivierungen und können Websites deaktivieren, wenn ein Projekt umzieht.</p>
+<p>Kunden aktivieren ihre Lizenz für Live-, Staging- oder Entwicklungswebsites. Das Limit zählt Live-Websites; je Live-Website ist eine Staging-Website frei, dazu mindestens fünf lokale Entwicklungsinstallationen. Kunden sehen ihre Aktivierungen, deaktivieren Websites oder übertragen eine Aktivierung nach einem Domainumzug. Kopien einer Website erkennt der Client und schaltet Premium-Funktionen dort ab, bis die Kopie eigens aktiviert wird.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Laufzeit, Status und Verlängerung</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Verfolgen Sie Zustände und Änderungen im Auditverlauf. Kunden verlängern manuell oder nutzen die optionale automatische Stripe-Verlängerung.</p>
+<p>Lizenzen durchlaufen feste Zustände (aktiv, überfällig, gesperrt, abgelaufen, widerrufen); jede Änderung steht im Auditverlauf. Eine Erstattung widerruft die Lizenz, ein Stripe-Zahlungsstreit sperrt sie. Kunden verlängern manuell von 30 Tagen vor bis 30 Tage nach Ablauf mit demselben Schlüssel oder nutzen die optionale automatische Verlängerung über das offizielle WooCommerce-Stripe-Gateway, mit Vorabhinweis, Wiederholungsversuchen und 14 Tagen Kulanzzeit. Kunden wechseln anteilig in einen höheren Plan oder zur nächsten Verlängerung in einen günstigeren. Höhere Verlängerungspreise kündigen Sie mit Frist an.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Signierte API und Berechtigungen</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Produkt-Plugins fragen Lizenzstatus und Entitlements über signierte Requests und Responses ab. So können Funktionen und Updatezugriff an den erworbenen Plan gebunden werden.</p>
+<p>Der Client in Ihren Plugins fragt Lizenzstatus und Entitlements über die REST-API v1 ab. Anfragen werden je Installation signiert und gegen Wiederholung geschützt, Antworten mit Ed25519 signiert und an die Anfrage gebunden. Der Client prüft sie gegen den öffentlichen Schlüssel, den Sie im Plugin hinterlegen. So können Funktionen und Updatezugriff an den erworbenen Plan gebunden werden.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Server und Client</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>License Captain besteht aus zwei Bausteinen:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Server:</strong> das Plugin für Ihren WooCommerce-Shop. Es verkauft Lizenzen, verwaltet Aktivierungen, Laufzeiten und Berechtigungen und stellt Releases bereit.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><strong>Client:</strong> eine PHP-Bibliothek, die Sie per Exportskript unter dem Namensraum Ihres Plugins in jedes Plugin einbinden, das Sie lizenzieren möchten. Sie bringt Lizenzseite, Hinweise, Funktionsfreigabe, Offline-Fenster, Updater und Deinstallation mit. Ein Vertragstest prüft Aktivierung, Statusprüfung, Updateabruf und Deaktivierung gegen Ihren Server.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Der Client wird mit Ihrem Plugin ausgeliefert; ein separates Client-Plugin gibt es nicht. Auf den Websites Ihrer Kunden setzt er WordPress 7.0+ und PHP 8.5+ voraus. Ihre Kunden installieren nichts zusätzlich: Sie geben ihren Lizenzschlüssel direkt in Ihrem Plugin ein.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Updates und Release-Notizen</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Verwalten Sie Releases und stellen Sie Updates für Ihre Produkt-Plugins bereit. Changelogs können als Produktübersicht in Kundenkonten oder Inhaltsseiten angezeigt werden.</p>
+<p>Laden Sie Release-ZIPs in einen privaten Speicher oder einen S3-kompatiblen Bucket oder registrieren Sie eine HTTPS-Paketadresse mit SHA-256-Prüfsumme; veröffentlichen und zurückziehen Sie Releases im Admin oder per WP-CLI. Lizenzierte Installationen erhalten signierte Updateinformationen und kurzlebige Einmal-Downloadlinks. Changelogs können per Shortcode oder Block in Kundenkonten oder Inhaltsseiten angezeigt werden.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Kundenbereich und Datenschutz</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Der Kundenbereich fasst Lizenzen und aktivierte Websites zusammen. Datenschutzexport und -löschung unterstützen die Werkzeuge Ihrer WordPress-Installation.</p>
+<p>Der Kundenbereich fasst Lizenzen und aktivierte Websites zusammen. Kunden laden bis zu fünf Mitbenutzer ein oder übergeben eine Lizenz an ein anderes Kundenkonto. Eine Preistabelle mit Kaufbutton binden Sie per Shortcode oder Block ein. Fünfzehn Kunden-E-Mails laufen über die WooCommerce-E-Mail-Einstellungen; der Lizenzschlüssel steht standardmäßig nicht in der E-Mail. Datenschutzexport und -löschung unterstützen die Werkzeuge Ihrer WordPress-Installation, ein täglicher Job löscht alte Daten nach festen Fristen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-split"><!-- wp:group {"className":"cp-split__text","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-split__text"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Verwaltung und Betrieb</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lizenzliste mit Suche, Lizenzdetails mit Aktivierungen, Verlängerungen und Auditverlauf, Support-Aktionen wie Sperren, Widerrufen, Laufzeit ändern oder Lizenz manuell anlegen. Eigene Berechtigungen trennen Support, Katalog, Releases und Preise. Dazu kommen Diagnoseseite, WP-CLI-Befehle (auch für Schlüsselrotation) und dokumentierte Hooks für andere Plugins im Shop.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/license-captain/preise/">Preise und Pläne</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-media-placeholder"><!-- wp:paragraph {"className":"cp-media-placeholder__label"} -->
+<p class="cp-media-placeholder__label">Produktansicht folgt</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>[Screenshot-Platzhalter: Kundenansicht mit Lizenzstatus, Laufzeit und Website-Aktivierungen zeigen; Lizenzschlüssel und Domains durch Testwerte ersetzen.] · [Screenshot-Platzhalter: Changelog-Block mit Produktname, Releaseversion und sichtbaren Änderungsnotizen zeigen; ausschließlich fiktive Produktdaten verwenden.] <a href="/license-captain/im-paket/">Im Captain-Pro-Paket enthalten</a></p>
+<p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Kundenansicht mit Lizenzstatus, Laufzeit und Website-Aktivierungen zeigen; Lizenzschlüssel und Domains durch Testwerte ersetzen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Changelog-Block mit Produktname, Releaseversion und sichtbaren Änderungsnotizen zeigen; ausschließlich fiktive Produktdaten verwenden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__note">Redaktioneller Platzhalter: vor Veröffentlichung durch freigegebene Medien bzw. einen belegten Kundenfall ersetzen.</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

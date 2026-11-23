@@ -1,0 +1,107 @@
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
+<p>Workflow Captain Free lässt sich direkt in WordPress installieren. Für WooCommerce-Auslöser benötigen Sie WooCommerce; für Suite-Funktionen kommen Workflow Captain Pro, das passende Captain-Plugin und dessen Pro-Add-on hinzu.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Voraussetzungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>WordPress 7.0 oder neuer und PHP 8.5 oder neuer; empfohlen MySQL 9.7 oder MariaDB 12.3 (ältere Datenbankserver erzeugen nur eine Warnung im Website-Zustand).</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>WooCommerce optional ab Version 11.2.2 für die Bestell-Auslöser.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Für Pro: Workflow Captain ab Version 0.2.0 und eine gültige Workflow-Captain-Pro-Lizenz; für Suite-Funktionen das jeweilige Captain-Plugin mit kompatiblem Providervertrag und eine gültige Lizenz seines Pro-Add-ons.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Vor dem Start ein aktuelles Backup und eine Staging-Umgebung für erste Tests.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Installation</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Sichern Sie Website und Datenbank. Prüfen Sie die <a href="/workflow-captain/kompatibilitaet/">Kompatibilitätsübersicht</a>.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Installieren und aktivieren Sie Workflow Captain über den freigegebenen Download bzw. die WordPress-Pluginverwaltung.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Öffnen Sie <strong>Workflow Captain → Einstellungen</strong>, prüfen Sie Grenzen, Aufbewahrung und Rechte und kontrollieren Sie den Status unter <strong>Werkzeuge → Website-Zustand</strong>.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Falls benötigt, aktivieren Sie WooCommerce und kontrollieren Sie den Provider unter <strong>Workflow Captain → Provider</strong>.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Ist WP-Cron abgeschaltet, rufen Sie <code>wp workflow-captain process</code> jede Minute per System-Cron auf.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Für Pro: Laden Sie das Pro-Add-on aus Ihrem Kundenkonto hoch, aktivieren Sie es und tragen Sie Ihren Lizenzschlüssel unter <strong>Workflow Captain → Pro-Lizenz</strong> ein.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Aktivieren Sie nur die Captain-Plugins, deren Provider Sie tatsächlich verwenden möchten.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Einen ersten Workflow sicher einrichten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li>Legen Sie einen Workflow mit einem WordPress-, WooCommerce- oder Zeitplan-Auslöser an – oder importieren Sie eine Vorlage als Entwurf.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Ergänzen Sie eine einfache Bedingung und eine Nachricht, Markierung oder Notiz.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Prüfen Sie Empfänger, Felder und mögliche Seiteneffekte.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Führen Sie den Testlauf mit Beispieldaten aus; er hat keine Seiteneffekte.</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Aktivieren Sie den Workflow zunächst in einer Test- oder Staging-Umgebung. Prüfen Sie nach dem echten Ereignis den Run-Status und das Protokoll.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:group {"className":"cp-split","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-split"><!-- wp:group {"className":"cp-split__text","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-split__text"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Pro und Suite-Provider</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Für einen Captain-Provider müssen beide Seiten bereit sein: Das Quellplugin muss einen kompatiblen Vertrag bereitstellen, und sowohl Workflow Captain Pro als auch das Pro-Add-on des Produkts müssen lizenziert sein. Fehlt die Mindestversion, der Vertrag oder eine Lizenz, zeigen die Seite <strong>Workflow Captain → Provider</strong> und die Pro-Lizenzseite, warum der Provider nicht angemeldet ist. Er wird nicht stillschweigend durch direkte Datenbankzugriffe ersetzt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/faq/">Workflow Captain FAQ</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/dokumentation/workflow-captain/">Dokumentation</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/support/">Support</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-media-placeholder"><!-- wp:paragraph {"className":"cp-media-placeholder__label"} -->
+<p class="cp-media-placeholder__label">Produktansicht folgt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Installationsansicht mit Workflow Captain im Adminmenü, Systemstatus der WordPress-/Woo-Provider und einem ersten Dry Run zeigen. Keine Lizenzschlüssel oder realen Bestellungen sichtbar machen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__note">Redaktioneller Platzhalter: vor Veröffentlichung durch freigegebene Medien bzw. einen belegten Kundenfall ersetzen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

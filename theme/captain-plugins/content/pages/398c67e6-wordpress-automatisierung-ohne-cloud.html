@@ -1,0 +1,61 @@
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
+<p>Wiederkehrende Aufgaben lassen sich oft direkt in WordPress organisieren. Eine lokale Automatisierung kann externe Konten und zusätzliche Datenübertragungen vermeiden, wenn die beteiligten Plugins passende Ereignisse und Aktionen bereitstellen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Beginnen Sie mit einem klaren Auslöser</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Beschreiben Sie zuerst, welches Ereignis den Ablauf startet: etwa eine veröffentlichte Seite, ein geänderter Benutzerstatus oder eine abgeschlossene Bestellung. Prüfen Sie, ob das Quellplugin dieses Ereignis stabil und mit den nötigen Daten bereitstellt.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Grenzen Sie Bedingungen und Aktionen ein</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Verwenden Sie nur die Felder, die der Ablauf tatsächlich benötigt. Vermeiden Sie geheime Tokens und unnötige personenbezogene Daten. Aktionen mit finanziellen oder rechtlichen Folgen sollten im fachlich zuständigen Plugin bleiben und nicht durch einen allgemeinen Workflow nachgebildet werden.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Planen Sie Fehler und Wiederholungen mit</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ein Ereignis kann doppelt eintreffen oder ein Zielsystem kann vorübergehend nicht erreichbar sein. Deduplizierung, Idempotenz, begrenzte Wiederholungen und ein nachvollziehbares Protokoll gehören daher in die Planung – ebenso ein klarer Umgang mit Refunds und Stornos.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft cp-content-section--cta","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft cp-content-section--cta"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Wann externe Verbindungen sinnvoll sind</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wenn ein Prozess ein anderes System benötigt, kann eine kontrollierte API- oder Webhook-Verbindung sinnvoll sein. Konfigurieren Sie bekannte HTTPS-Ziele, Authentisierung und Feld-Allowlisten. Vermeiden Sie freie URLs und unkontrollierte Payloads.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Workflow Captain bündelt WordPress- und WooCommerce-Abläufe lokal und ruft selbst keinen externen Dienst auf. Pro ergänzt Suite-Provider, signierte Webhooks, n8n-Verbindungen und versionierte Connectoren.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/">Workflow Captain entdecken</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/integrationen/">Integrationen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/dokumentation/workflow-captain/">Dokumentation</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->

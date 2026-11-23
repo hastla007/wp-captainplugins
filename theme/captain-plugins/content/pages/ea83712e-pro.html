@@ -1,0 +1,194 @@
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
+<p>Wenn eine Anfrage mehr als ein paar Felder umfasst, braucht Ihr Team klare Abläufe und vollständige Einträge. Form Captain Pro ergänzt den kostenlosen Formular-Kern um mehrstufige Formulare, geschützte Datei-Uploads, UND-/ODER-Bedingungen mit Routing, signierte Webhooks, PDF-Ausgaben und WooCommerce-Käuferfragebögen. Pro ist ein separates Add-on und setzt das kostenlose Form Captain voraus.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Mehrstufige Formulare mit Fortsetzen-Funktion</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Teilen Sie umfangreiche Formulare mit dem Feld „Schrittgrenze“ in bis zu 20 Schritte auf. Eine Fortschrittsanzeige („Schritt 2 von 3“) zeigt, wo sich die absendende Person befindet. „Weiter“ prüft die Felder des Schritts auch serverseitig. Mit „Speichern und später fortsetzen“ erhält die Person einen Fortsetzen-Link, der 7 Tage gültig ist; sensible Felder, Datei- und Einwilligungsfelder werden nie im Entwurf gespeichert. Ohne JavaScript erscheint das Formular als eine Seite und funktioniert weiter.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Dateien geschützt anfragen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Der Feldtyp „Datei-Upload“ nimmt eine Datei je Feld an. Erlaubte Dateitypen (Standard: PDF, JPG, PNG; zusätzlich z. B. Office-Dateien ohne Makros) und die Höchstgröße (bis 10 MB) legen Sie je Feld fest. Der Dateiinhalt wird unabhängig von der Endung geprüft; SVG, HTML, Skripte, Archive und ausführbare Dateien sind nie erlaubt. Dateien liegen unter zufälligen Namen in einem geschützten Verzeichnis und lassen sich nur aus der Eintragsansicht mit Leserecht herunterladen. Löschung, Aufbewahrungsende, Anonymisierung und Datenschutz-Löschanfragen entfernen auch die zugehörigen Dateien. Ein Hook für Malware-Scanner steht bereit.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Regeln für Felder und Benachrichtigungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Statt einer einzelnen Regel je Feld (Free) blenden Sie Felder über Bedingungsgruppen mit bis zu 10 Regeln ein oder aus – wahlweise müssen alle (UND) oder eine (ODER) zutreffen. Routing-Regeln ersetzen oder ergänzen die Empfänger der Admin-Benachrichtigung und wählen eine eigene Bestätigungsmeldung oder Weiterleitungsseite anhand der Antworten. Die Prüfung erfolgt auch serverseitig; Regeln sind reine Daten, es wird kein Code ausgeführt.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Webhooks und nachvollziehbare Übergaben</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Legen Sie Endpunkte unter <strong>Form Captain → Webhooks</strong> an und übermitteln Sie je Formular bis zu 15 zugeordnete Felder an externe Systeme, etwa n8n, Make oder eigene Anwendungen. Webhooks verwenden eine HMAC-Signatur mit Zeitstempel und Nonce gegen Wiederholungsangriffe, Secret-Wechsel ohne Ausfall, Idempotenzschlüssel, ein Zeitlimit von 10 Sekunden sowie bis zu 8 Wiederholungen mit wachsendem Abstand. Erlaubt sind nur öffentliche HTTPS-Ziele; interne Adressen und Weiterleitungen werden blockiert. Sensible Felder werden nie übertragen. Schlägt eine Zustellung endgültig fehl, bleibt der Formulareintrag in WordPress erhalten und der Auftrag lässt sich in der Jobliste erneut anstoßen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">PDF-Ausgaben aus Einträgen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In der Eintragsansicht laden Sie einen Eintrag mit „Als PDF herunterladen“ als PDF/A-Dokument herunter. Das PDF wird beim Abruf mit festem Layout und eingebetteter Schrift erzeugt und nicht auf dem Server gespeichert. Es enthält die Antworten des Eintrags; sensible Felder erscheinen nur für Nutzer mit Exportrecht. Der Abruf erfordert das Recht, Einträge zu lesen. Es werden keine externen Ressourcen geladen; sehr lange Einträge werden nach 30 Seiten mit Hinweis gekürzt.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">WooCommerce-Käuferfragebögen nach dem Kauf</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ordnen Sie einem Produkt im klassischen WooCommerce-Produkteditor ein veröffentlichtes Formular zu, etwa für Personalisierungs- oder Lieferangaben. Nach bestätigter Zahlung erhält jede Bestellposition einen eigenen Fragebogen; der Link erscheint auf der Bestellbestätigung, unter „Mein Konto“ und in den Kunden-E-Mails von WooCommerce, für Gastbestellungen mit einem zeitlich begrenzten Zugangslink. Die Antwort wird als Form-Captain-Eintrag mit geprüftem Bestellbezug gespeichert; in der Bestellung sehen Sie den Status je Position. Optional markieren Sie einen Fragebogen als „vor Bearbeitung erforderlich“, fordern eine Korrektur an oder versenden eine einmalige Erinnerung.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Form Captain Pro verändert weder Checkout-Felder noch Zahlungs- oder Bestellstatus. Storno und Vollerstattung schließen offene Fragebögen. Unterstützt werden HPOS und der klassische Bestellspeicher sowie Bestellungen aus klassischem und Block-Checkout.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Captain-Suite-Verbindungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Verbindungen zu Pass Captain, Voucher Captain, Affiliate Captain und Review Captain Pro nutzen den versionierten öffentlichen Vertrag von Form Captain und werden unter <strong>Form Captain → Integrationen</strong> einzeln aktiviert. Eine Formulareinsendung löst keine Buchung, Ticket- oder Gutscheinausgabe, Partnerfreigabe oder Review-Veröffentlichung automatisch aus; jede Übergabe folgt den Freigaben und Grenzen des jeweiligen Plugins.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mit Workflow Captain Pro verarbeiten Sie Ereignisse von Form Captain nach dem Speichern, etwa einen neuen Eintrag, eine Statusänderung, eine Löschung, einen Einwilligungswiderruf oder einen Benachrichtigungsfehler. Diese Verbindung setzt eine aktive Form-Captain-Pro-Lizenz voraus. Workflows erhalten keine Freitexte und keine sensiblen Felder; Antworten nur aus ausdrücklich freigegebenen Auswahl-, Zahlen- und Einwilligungsfeldern.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Preise, Lizenz und Support</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"cp-plan-grid","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-grid"><!-- wp:group {"className":"cp-plan-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-card"><!-- wp:heading {"level":3,"className":"cp-plan-card__name"} -->
+<h3 class="wp-block-heading cp-plan-card__name">Single</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__sites"} -->
+<p class="cp-plan-card__sites">1 Live-Website</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__price"} -->
+<p class="cp-plan-card__price"><strong>59 €</strong> / Jahr</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"cp-plan-card__facts"} -->
+<ul class="wp-block-list cp-plan-card__facts"><!-- wp:list-item -->
+<li><strong>Support:</strong> Standard</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cp-plan-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-card"><!-- wp:heading {"level":3,"className":"cp-plan-card__name"} -->
+<h3 class="wp-block-heading cp-plan-card__name">Business</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__sites"} -->
+<p class="cp-plan-card__sites">5 Live-Websites</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__price"} -->
+<p class="cp-plan-card__price"><strong>129 €</strong> / Jahr</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"cp-plan-card__facts"} -->
+<ul class="wp-block-list cp-plan-card__facts"><!-- wp:list-item -->
+<li><strong>Support:</strong> Standard</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"cp-plan-card","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-plan-card"><!-- wp:heading {"level":3,"className":"cp-plan-card__name"} -->
+<h3 class="wp-block-heading cp-plan-card__name">Agency</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__sites"} -->
+<p class="cp-plan-card__sites">25 Live-Websites</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"cp-plan-card__price"} -->
+<p class="cp-plan-card__price"><strong>249 €</strong> / Jahr</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"cp-plan-card__facts"} -->
+<ul class="wp-block-list cp-plan-card__facts"><!-- wp:list-item -->
+<li><strong>Support:</strong> Priorisiert</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>Alle Pläne enthalten denselben Pro-Funktionsumfang, Updates und Support während der aktiven Laufzeit. Je Live-Website ist eine Staging-Aktivierung enthalten; Development-Aktivierungen zählen nicht zum Site-Limit. Es gibt keine Lifetime-Lizenz und keine kostenpflichtigen Einzel-Add-ons.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Form Captain Free und vorhandene Formulare und Einträge bleiben bei Ablauf einer Pro-Lizenz verfügbar. Ohne aktive Lizenz nimmt Pro keine neuen Uploads an, mehrstufige Formulare erscheinen als eine Seite und Webhook-Aufträge pausieren; bereits hochgeladene Dateien bleiben abrufbar und löschbar, offene Käuferfragebögen bleiben beantwortbar. Gespeicherte Pro-Einstellungen werden nicht gelöscht.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button {"className":"cp-button-pending"} -->
+<div class="wp-block-button cp-button-pending"><a class="wp-block-button__link wp-element-button">Form Captain Pro auswählen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/preise/">Alle Captain-Pro-Pläne</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/form-captain/features/">Form Captain Features</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/captain-pro/">Verfügbare Captain-Pro-Add-ons</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/form-captain/faq/">FAQ</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-media-placeholder"><!-- wp:paragraph {"className":"cp-media-placeholder__label"} -->
+<p class="cp-media-placeholder__label">Produktansicht folgt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Multi-Step-Formular mit Fortschrittsanzeige, bedingter Benachrichtigungsregel, geschützter Upload-Einstellung und PDF-Vorschau zeigen. Nur synthetische Beispieldaten verwenden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="cp-media-placeholder__note">Redaktioneller Platzhalter: vor Veröffentlichung durch freigegebene Medien bzw. einen belegten Kundenfall ersetzen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

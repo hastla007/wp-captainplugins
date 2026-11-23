@@ -7,7 +7,7 @@
 
 Das zentrale Redaktionskonzept liegt in [`texte/homepage/konzept.md`](texte/homepage/konzept.md). Es legt Positionierung, Produktumfang, Zielgruppen, Preise, Seitenintentionen und Yoast-Workflow fest. Die deutschsprachigen Entwürfe sind unter [`texte/homepage/README.md`](texte/homepage/README.md) verzeichnet: Startseite, Produktübersicht, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Support, Dokumentation, Bootsschulen-Lösung, Produktseiten, Features, Pro- bzw. Paket-Seiten, FAQs und Ratgeberartikel. Die bestehenden Entwürfe enthalten bereits beschriebene Platzhalter für Produkt-Screenshots, Demos und Kundenbeispiele.
 
-Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher Captain Pro, Pass Captain Pro und Affiliate Captain Pro sind kostenpflichtig. License Captain Server ist ein separat erhältliches Produkt für Plugin-Anbieter und nicht in Captain Pro enthalten. Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen.
+Für die Umsetzungsplanung gelten dieselben Angebotsannahmen wie im Redaktionskonzept: Kern-Plugins sind kostenlos; Voucher, Pass, Affiliate, Form, Review, Workflow und Course Captain Pro sind kostenpflichtig; License Captain ist ein eigenes Produkt aus Server und Client für Plugin-Hersteller. Unsere Pro-Add-ons werden intern darüber lizenziert (der Client steckt unsichtbar im Pro-Plugin); gegenüber Pro-Kunden wird License Captain nicht erwähnt. Pro-Preise werden vorläufig aus [`texte/homepage/preise.md`](texte/homepage/preise.md) übernommen; License-Captain-Preise stammen aus dem eigenen Shopkatalog.
 
 ### Bildmaterial im Repository
 
@@ -31,6 +31,7 @@ Das vorhandene Motiv zeigt einen gezeichneten Kapitän in mehreren Posen, darunt
 | Voucher Captain | Gutschein-Designer und Vorschau | Vorlagen, Empfängertext, QR-/Barcode und fertige PDF-Vorschau | Nur Testdaten und fiktive Empfänger verwenden |
 | Pass Captain | Eventablauf und Einlass | Veranstaltung, Ticketansicht, Scannerstatus und Teilnehmerübersicht | Namen, E-Mail-Adressen und Bestellnummern unkenntlich machen |
 | Affiliate Captain | Provision und Auszahlung | Partnerportal, Regelübersicht, nachvollziehbarer Auszahlungslauf | Keine realen Partner- oder Bankdaten |
+| Workflow Captain | Workflow-Builder und Run-Protokoll | Trigger, Bedingungen, Providerstatus und redigierte Runs | Keine echten Kundendaten, Tokens oder Secrets |
 | License Captain | Kunden-Lizenzbereich | Lizenzstatus, Aktivierungen und Produkt-Changelog | Keine echten Lizenzschlüssel oder Domains |
 | Captain Pro | Planvergleich | Single, Business und Agency mit Website-Limits | Preise mit Shop-Checkout abgleichen |
 
@@ -42,7 +43,7 @@ Die Website soll wie eine professionelle B2B-Softwaremarke wirken: klar, ruhig u
 
 - **Gestaltungsprinzip:** großzügige Abstände, klare Überschriften, gut scannbare Abschnitte, wenig dekorative Effekte.
 - **Farbansatz:** tiefes Marineblau als Markenanker, helle Flächen für Lesbarkeit, neutraler Textton und ein warmer Akzentton für interaktive Elemente. Konkrete Werte erst nach Prüfung vorhandener Logos und Bildfarben als Design-Tokens festlegen.
-- **Produktunterscheidung:** gleiche Layoutlogik und Komponenten, aber je Produkt ein eigener Akzent (Voucher, Pass, Affiliate, License), der auch mit Text/Icon erkennbar ist. Farbe allein darf die Zuordnung nicht vermitteln.
+- **Produktunterscheidung:** gleiche Layoutlogik und Komponenten, aber je Produkt ein eigener Akzent (Voucher, Pass, Affiliate, Form, Review, Workflow und License), der auch mit Text/Icon erkennbar ist. Farbe allein darf die Zuordnung nicht vermitteln.
 - **Schrift:** gut lesbare Sans-Serif für Fließtext und UI. Überschriften klar gestaffelt; Fließtext nicht zu schmal oder zu klein.
 - **Icons:** einheitlicher Satz, mit sichtbaren Beschriftungen, wenn das Symbol nicht selbsterklärend ist.
 - **Maskottchen:** punktuell einsetzen, nicht in jeder Sektion. Geeignete Stellen sind ein freundlicher Einstieg, erklärende Zwischenabschnitte und ein abschließender CTA. Bei kommerziellen Produktseiten bleibt die jeweilige Oberfläche das primäre Visual.
@@ -70,7 +71,7 @@ Die Website soll wie eine professionelle B2B-Softwaremarke wirken: klar, ruhig u
 
 Empfohlene primäre Navigation:
 
-- **Produkte** – Dropdown mit Voucher Captain, Pass Captain, Affiliate Captain und License Captain. Pro Produkt eine kurze Zielgruppenbeschreibung.
+- **Produkte** – Dropdown mit Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain, Course Captain und License Captain. Pro Produkt eine kurze Zielgruppenbeschreibung.
 - **Captain Pro** – erklärt das Premium-Angebot und die Beziehung zum kostenlosen Kern.
 - **Preise** – führt direkt zum Tarifvergleich.
 - **Lösungen** – Bootsschulen sowie später nur belegte Anwendungsfälle.
@@ -98,8 +99,8 @@ Die Seitenentwürfe sind überwiegend bereits vorhanden. Die folgende Zuordnung 
 | Einstieg | `/` | Markenversprechen, Produktauswahl und erste CTA |
 | Auswahl | `/produkte/` | passende Lösung nach Geschäftsaufgabe finden |
 | Angebot | `/captain-pro/`, `/preise/`, `/vergleich/` | Pro-Modell, Preise und Produkt-/Planvergleich |
-| Produkt | `/voucher-captain/`, `/pass-captain/`, `/affiliate-captain/`, `/license-captain/` | Nutzen, Einsatz, Hauptablauf und Einstieg |
-| Produktvertiefung | je Produkt `/features/`, `/pro/` bzw. `/im-paket/`, `/faq/` | Details, Upgradegrund, Einwände |
+| Produkt | `/voucher-captain/`, `/pass-captain/`, `/affiliate-captain/`, `/form-captain/`, `/review-captain/`, `/workflow-captain/`, `/license-captain/` | Nutzen, Einsatz, Hauptablauf und Einstieg |
+| Produktvertiefung | je Produkt `/features/`, `/pro/` oder `/preise/`, `/faq/` | Details, Upgradegrund, Einwände; License Captain führt auf eigene Preise und Pläne |
 | Lösung | `/loesungen/bootsschulen/` | konkreter Branchenablauf für Bootsschulen |
 | Technik | `/integrationen/`, `/kompatibilitaet/`, `/dokumentation/` | technische Evaluation und Einstieg |
 | Betreuung | `/support/`, `/faq/` | Hilfe vor und nach dem Kauf |
@@ -113,16 +114,16 @@ Footer und Breadcrumbs ergänzen die globale Orientierung. Für jede Unterseite 
 ### Startseite
 
 1. **Hero:** konkretes B2B-Versprechen, kurze Erklärung der Produktfamilie; CTA „Passende Lösung finden“ und sekundär „Preise ansehen“. Mögliches Visual: eine ausgewählte Kapitänsillustration plus echte Produkt-UI erst nach Verfügbarkeit.
-2. **Vier Aufgaben-Karten:** Gutscheine, Veranstaltungen/Buchungen, Partnerprogramm, Plugin-Lizenzen. Jede Karte führt auf die richtige Produktseite.
+2. **Acht Aufgaben-Karten:** Gutscheine, Veranstaltungen/Buchungen, Partnerprogramm, Formulare, Bewertungen, Automatisierungen, Online-Kurse und Plugin-Lizenzen. Jede Karte führt auf die richtige Produktseite.
 3. **Auswahlhilfe:** „Was möchten Sie organisieren?“ als kurze, direkt verlinkte Auswahl; kein Formularzwang.
 4. **Produktprinzip:** WordPress-zentrierter Ablauf, WooCommerce-Abhängigkeiten korrekt gekennzeichnet, dokumentierte Integrationen.
-5. **Free und Pro:** kostenlose Kern-Plugins und Pro-Erweiterungen klar trennen. License Captain Server als separates Angebot darstellen, nicht als Bestandteil von Captain Pro.
+5. **Free, Pro und License Captain:** kostenlose Kern-Plugins und Pro-Erweiterungen klar trennen; License Captain als eigenes Produkt (Server und Client) für Plugin-Hersteller zeigen; auf Pro-Seiten nicht erwähnen.
 6. **Belege:** freigegebene UI-Bilder oder Platzhalter. Bis echte Referenzen existieren keine leeren Testimonial-Karten veröffentlichen.
 7. **Häufige Fragen und Abschluss-CTA.**
 
 ### Produktübersicht
 
-Mit einem kurzen Einstiegsabsatz beginnen, danach vier lösungsbezogene Karten. Eine Auswahlmatrix zeigt Zielgruppe, Kerneinsatz, WooCommerce-Abhängigkeit und Angebot. Am Ende auf Vergleich, Preise, Integrationen und Support verlinken.
+Mit einem kurzen Einstiegsabsatz beginnen, danach acht Produktkarten für sieben kostenlose Kern-Plugins und License Captain. Eine Auswahlmatrix zeigt Zielgruppe, Kerneinsatz, WooCommerce-Abhängigkeit und Angebot. Am Ende auf Vergleich, Preise, Integrationen und Support verlinken.
 
 ### Produktübersicht je Plugin
 
@@ -137,13 +138,13 @@ Einheitliche Dramaturgie, produktspezifische Inhalte:
 7. Free-/Pro-Abgrenzung und Preisanker.
 8. kurze FAQ, Dokumentationslink und Abschluss-CTA.
 
-Die Features-Seite führt alle Fähigkeiten nach Arbeitsablauf gruppiert auf. Die Pro-Seite zeigt zuerst, für wen sich Pro eignet, dann die zusätzlichen Pro-Funktionen, Pläne und CTA. Die FAQ-Seite beantwortet konkrete Produktfragen und verlinkt weiterführende Antworten. Die License-Captain-Seite erklärt das separat erhältliche Server-Plugin und die Server-/Client-Integration. Die Pro-Seiten behaupten keine Inklusivleistung von License Captain.
+Die Features-Seite führt alle Fähigkeiten nach Arbeitsablauf gruppiert auf. Die Pro-Seite zeigt zuerst, für wen sich Pro eignet, dann die zusätzlichen Pro-Funktionen, Pläne und CTA. Die FAQ-Seite beantwortet konkrete Produktfragen und verlinkt weiterführende Antworten. License Captain erhält eigene Features-, Preise- und FAQ-Seiten als eigenes Produkt aus Server und Clientdukt. Die Produktseite erklärt Server und Client als getrennte Integrationsbausteine: direkte API-Client-Integration im Produkt-Plugin oder Anbindung über ein separates Client-Plugin.
 
 ### Preise und Vergleich
 
-- Drei klar vergleichbare Tarifstufen mit den vorläufigen Jahrespreisen aus `texte/homepage/preise.md`: Voucher Captain Pro 129/229/399 €, Pass Captain Pro 169/299/549 €, Affiliate Captain Pro 229/399/699 € für Single/Business/Agency.
+- Pro-Angebote zeigen ihre jeweiligen Jahrespreise und Site-Limits aus `texte/homepage/preise.md`: Voucher Captain Pro 129/229/399 €, Pass Captain Pro 169/299/549 €, Affiliate Captain Pro 229/399/699 €, Form Captain Pro 49/99/199 € (Solo/Studio/Agency) und Workflow Captain Pro 129/229/399 € (Single/Business/Agency) für 1/5/25 Websites. Review Captain Pro wird mit dem Shoppreis dargestellt, bis konkrete Beträge feststehen.
 - Website-Limits (1/5/25 Live-Websites) direkt am Tarifnamen und Preis anzeigen.
-- Deutlich erklären: Kern-Plugins kostenlos; jedes Pro-Add-on enthält dessen vollen Pro-Funktionsumfang. License Captain Server separat bepreisen und ausdrücklich von Captain Pro abgrenzen.
+- Deutlich erklären: Kern-Plugins kostenlos; jedes Pro-Add-on enthält dessen vollen Pro-Funktionsumfang; License Captain wird auf Pro- und Preisseiten nicht erwähnt.
 - Standard- bzw. Priority-Support entsprechend der vorhandenen Tariftexte beschriften. Keine Antwortzeit versprechen, solange nicht festgelegt.
 - Preise, Steuerbehandlung, Verlängerung und Checkout-URLs vor Veröffentlichung mit dem Shop synchronisieren. Solange offen, nicht durch Platzhalterpreise im Live-Shop publizieren.
 - Mobil: gestapelte Tarifkarten oder zugänglicher Produktselektor; niemals eine unbeschriftete, abgeschnittene Vergleichstabelle erzwingen.
@@ -163,7 +164,8 @@ Jede Seite hat eine primäre Handlung, die zum Informationsstand und tatsächlic
 | Kostenlose Kern-Plugin-Seite | „Kostenlos herunterladen“ (erst mit echter Download-URL) | „Dokumentation ansehen“ |
 | Produkt-Features | „Kostenlos starten“ oder „Pro-Funktionen ansehen“ | „Kompatibilität prüfen“ |
 | Pro-Seite / Preise | „Plan auswählen“ (mit Checkout-Link je Tarif) | „Alle Pläne vergleichen“ |
-| License Captain | „Server-Plugin ansehen“ | „Integration verstehen“ |
+| License Captain | „License Captain ansehen“ | „Features und Preise vergleichen“ |
+| Workflow Captain | „Workflow Captain kostenlos starten“ | „Pro-Integrationen ansehen“ |
 | Kompatibilität / Integrationen | „Installation ansehen“ | „Passendes Produkt entdecken“ |
 | Dokumentation / Support | „Support kontaktieren“ | „Zu den häufigen Fragen“ |
 | Ratgeber | kontextbezogenes Produkt entdecken | verwandten Ratgeber lesen |
@@ -233,42 +235,42 @@ Yoast SEO wird für Seitentitel, Meta-Descriptions, Social-Vorschau, Canonical/I
 
 ### Phase 1 – Inhalte und Quellen sichern
 
-- [ ] `texte/homepage/README.md` als Inhaltsinventar verwenden und alle Entwürfe den finalen URLs zuordnen.
-- [ ] Produktdaten, Free-/Pro-Grenzen, Kompatibilität und Supportmatrix aus dem bestehenden Produktkonzept übernehmen.
-- [ ] Vorläufige Preispläne übernehmen und Preisquelle/Checkout-Abgleich im Release-To-do festhalten.
-- [ ] Alle Screenshot-Platzhalter in ein Medieninventar übernehmen; benötigte Screenshots nach Produkt und Prozess priorisieren.
+- [x] `texte/homepage/README.md` als Inhaltsinventar verwenden und alle Entwürfe den finalen URLs zuordnen.
+- [x] Produktdaten, Free-/Pro-Grenzen, Kompatibilität und Supportmatrix aus dem bestehenden Produktkonzept übernehmen.
+- [x] Vorläufige Preispläne übernehmen und Preisquelle/Checkout-Abgleich im Release-To-do festhalten.
+- [x] Alle Screenshot-Platzhalter in ein Medieninventar übernehmen; benötigte Screenshots nach Produkt und Prozess priorisieren. *(Siehe [`texte/homepage/medieninventar.md`](texte/homepage/medieninventar.md), erzeugt mit `tools/media-inventory.py`.)*
 - [ ] Die acht Mascot-JPEGs einzeln sichten, Rechte/Originaldateien und Exportvarianten klären.
 
 ### Phase 2 – UI-Grundlage
 
-- [ ] Farb- und Typografietokens nach Prüfung bestehender Markenassets definieren.
-- [ ] Navigation, Footer, Breadcrumbs, Buttonvarianten, Karten, Tabellen und FAQ als wiederverwendbare Komponenten festlegen.
-- [ ] Responsive Verhalten jedes Komponenten-Typs bei schmaler, mittlerer und breiter Darstellung spezifizieren.
-- [ ] Barrierefreiheitsanforderungen in Komponentenabnahme aufnehmen.
+- [x] Farb- und Typografietokens nach Prüfung bestehender Markenassets definieren.
+- [x] Navigation, Footer, Breadcrumbs, Buttonvarianten, Karten, Tabellen und FAQ als wiederverwendbare Komponenten festlegen.
+- [x] Responsive Verhalten jedes Komponenten-Typs bei schmaler, mittlerer und breiter Darstellung spezifizieren.
+- [x] Barrierefreiheitsanforderungen in Komponentenabnahme aufnehmen.
 
 ### Phase 3 – Seitenaufbau
 
-- [ ] Globale Navigation und Footer umsetzen.
-- [ ] Startseite und Produktübersicht als Einstieg und Auswahlhilfe bauen.
-- [ ] Produktvorlage bauen und auf Voucher, Pass, Affiliate sowie License Captain anwenden.
-- [ ] Features-, Pro-/Im-Paket- und FAQ-Seitentypen aufbauen.
-- [ ] Preise, Vergleich, Integrationen, Kompatibilität, Support und Dokumentation ergänzen.
-- [ ] Lösung Bootsschulen und vorhandene Ratgeberseiten in die Ressourcen- bzw. Lösungsnavigation einordnen.
-- [ ] Leere Links, nicht verfügbare Demos und unaufgelöste Platzhalter aus der Navigation fernhalten.
+- [x] Globale Navigation und Footer umsetzen.
+- [x] Startseite und Produktübersicht als Einstieg und Auswahlhilfe bauen.
+- [x] Produktvorlage bauen und auf alle acht Produkte (Voucher, Pass, Affiliate, Form, Review, Workflow, Course und License Captain) anwenden.
+- [x] Features-, Pro-/Preise- und FAQ-Seitentypen aufbauen.
+- [x] Preise, Vergleich, Integrationen, Kompatibilität, Support und Dokumentation ergänzen.
+- [x] Lösung Bootsschulen und vorhandene Ratgeberseiten in die Ressourcen- bzw. Lösungsnavigation einordnen.
+- [x] Leere Links, nicht verfügbare Demos und unaufgelöste Platzhalter aus der Navigation fernhalten.
 
 ### Phase 4 – Medien und SEO
 
-- [ ] Maskottchen aus den JPEG-Vorlagen geeignet zuschneiden/exportieren und responsive Varianten bereitstellen.
+- [x] Maskottchen aus den JPEG-Vorlagen geeignet zuschneiden/exportieren und responsive Varianten bereitstellen.
 - [ ] Produkt-Screenshots nach Briefing erstellen, anonymisieren, beschriften und freigeben.
-- [ ] Yoast-Felder aus den vorhandenen Redaktionsentwürfen pflegen.
-- [ ] Interne Links, Breadcrumbs, Canonicals, Sitemap und Redirects prüfen.
+- [x] Yoast-Felder aus den vorhandenen Redaktionsentwürfen pflegen. *(Alle 90 Seiten mit SEO-Titel, Beschreibung, Keyphrase und Social-Bild; Übernahme durch den Seitenimport.)*
+- [ ] Interne Links, Breadcrumbs, Canonicals, Sitemap und Redirects prüfen. *(Links, Brotkrumen, Core-Sitemap, robots.txt und 301 für entfallene Seiten geprüft; Canonicals/Sitemap mit Yoast offen.)*
 
 ### Phase 5 – Abnahme und Launch
 
 - [ ] Alle CTAs auf echte Download-, Checkout-, Support- und Dokumentationsziele prüfen.
 - [ ] Preis, Steueranzeige, Verlängerung, Website-Limits und Supportbeschriftung im Shop mit Website abgleichen.
-- [ ] Mobilgeräte: Menü, Preisvergleich, Karten, Tabellen, Formulare, Sticky-Elemente und Bilder prüfen.
-- [ ] Tastaturbedienung, sichtbaren Fokus, Kontrast, Überschriften, Alt-Texte und Formularfehler manuell abnehmen.
+- [x] Mobilgeräte: Menü, Preisvergleich, Karten, Tabellen, Formulare, Sticky-Elemente und Bilder prüfen.
+- [ ] Tastaturbedienung, sichtbaren Fokus, Kontrast, Überschriften, Alt-Texte und Formularfehler manuell abnehmen. *(Automatisiert inkl. Shop-Formularfehlern erledigt; manuelle Abnahme mit Screenreader offen.)*
 - [ ] Links, Rechtschreibung, Ladezeit, Indexierungsstatus und Social-Vorschau vor Freigabe kontrollieren.
 - [ ] Platzhalter für Screenshots, Kontakt, Preisdetails und Unternehmensangaben vollständig ersetzen oder bewusst ausblenden.
 
@@ -276,7 +278,7 @@ Yoast SEO wird für Seitentitel, Meta-Descriptions, Social-Vorschau, Canonical/I
 
 Die Umsetzung ist konzeptgemäß, wenn:
 
-1. Besucher die vier Produkte samt Zielgruppe und Free-/Pro-Modell auf der Start- oder Produktübersicht schnell unterscheiden können.
+1. Besucher die acht Website-Produkte samt Zielgruppe und Free-/Pro-Modell auf der Start- oder Produktübersicht schnell unterscheiden können.
 2. Jede Produktseite sowie Features-, Pro-/Paket- und FAQ-Seite von jeder anderen Seite erreichbar ist und einen passenden CTA besitzt.
 3. Desktop- und Mobilnavigation mit Maus, Tastatur und Touch funktioniert.
 4. Inhalte bei schmalen Viewports ohne abgeschnittene Texte oder unerreichbare Tarifinformationen lesbar bleiben.
@@ -308,7 +310,7 @@ Empfohlen wird ein leichtgewichtiges natives WordPress-Block-Theme mit `theme.js
 
 Benötigte Grundvorlagen: Startseite, allgemeine Seite, Ratgeberbeitrag, Archiv, Suche und 404. Wiederverwendbare Patterns: Header/Mobilnavigation, Hero, Produktkarte, Featuregruppe, Workflow, Screenshot mit Bildunterschrift, Free-/Pro-Vergleich, Tarifkarte, Integrationshinweis, FAQ und Abschluss-CTA.
 
-Die bestehenden Texte werden in diese Vorlagen übertragen: Produktübersicht, Voucher Captain, Pass Captain, Affiliate Captain, License Captain, Features, Pro/Im-Paket, FAQs, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Dokumentation, Support, Bootsschulen-Lösung und Ratgeber. Die Copy und URLs werden aus `texte/homepage/README.md` übernommen; das Theme erzeugt keine separaten, widersprüchlichen Versionen.
+Die bestehenden Texte werden in diese Vorlagen übertragen: Produktübersicht, Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain, Course Captain, License Captain, Features, Pro-/Preisseiten, FAQs, Captain Pro, Preise, Vergleich, Integrationen, Kompatibilität, Dokumentation, Support, Bootsschulen-Lösung und Ratgeber. Die Copy und URLs werden aus `texte/homepage/README.md` übernommen; das Theme erzeugt keine separaten, widersprüchlichen Versionen.
 
 ### Responsive und barrierearme Umsetzung
 
@@ -316,7 +318,7 @@ Mobile Ansichten werden zuerst gestaltet. Karten und Preispläne stapeln sich; T
 
 ### Vorhandene und noch benötigte Medien
 
-Die acht Kapitäns-JPEGs in `design/mascot/` werden einzeln gesichtet und für wenige passende Stellen ausgewählt. Produktaufnahmen sind im Repo noch als Platzhalter-Briefings dokumentiert. Sie sollen später echte, anonymisierte Oberflächen zeigen: Gutschein-Designer/PDF, Event und Einlass, Partnerportal/Auszahlung, Lizenzübersicht und Tarifvergleich. Bis diese Bilder freigegeben sind, werden keine UI-Mockups als echte Produktansicht ausgegeben.
+Die acht Kapitäns-JPEGs in `design/mascot/` werden einzeln gesichtet und für wenige passende Stellen ausgewählt. Produktaufnahmen sind im Repo noch als Platzhalter-Briefings dokumentiert. Sie sollen später echte, anonymisierte Oberflächen zeigen: Gutschein-Designer/PDF, Event und Einlass, Partnerportal/Auszahlung, Workflow-Builder/Run-Protokoll, Lizenzübersicht und Tarifvergleich. Bis diese Bilder freigegeben sind, werden keine UI-Mockups als echte Produktansicht ausgegeben.
 
 ### Shop-, Kundenkonto- und Pluginansichten
 
@@ -341,7 +343,7 @@ Deutsch ist die Startsprache; alle Theme-UI-Texte werden mit Textdomain und Übe
 9. Responsive, Tastatur-, Screenreader-, Kontrast-, Performance- und Linkprüfung durchführen.
 10. Platzhalter und offene Preis-, Checkout-, Support- und Unternehmensangaben vor Livegang auflösen.
 
-**Abnahme:** Alle vorhandenen Seiten lassen sich aus wiederverwendbaren Vorlagen pflegen; Frontend und Editor verwenden dieselben Design-Tokens; Navigation und Komponenten funktionieren mobil und per Tastatur; Inhalte bleiben bei einem Themewechsel erhalten; keine Platzhalter oder unbelegten Referenzen werden versehentlich veröffentlicht.
+**Abnahme:** Alle vorhandenen Seiten – einschließlich der Workflow-Captain-Produkt-, Features-, Pro-, FAQ-, Installations-, Kompatibilitäts- und Integrationsseiten – lassen sich aus wiederverwendbaren Vorlagen pflegen; Frontend und Editor verwenden dieselben Design-Tokens; Navigation und Komponenten funktionieren mobil und per Tastatur; Inhalte bleiben bei einem Themewechsel erhalten; keine Platzhalter oder unbelegten Referenzen werden versehentlich veröffentlicht.
 
 
 ---
@@ -362,7 +364,7 @@ Diese KI-generierten Bilder veranschaulichen eine mögliche Umsetzung des Websit
 
 ### Produktübersicht
 
-![Mockup der Produktübersicht mit vier Captain-Plugins](design/mockups/products-overview-desktop.jpg)
+![Mockup der Produktübersicht mit sieben Website-Produkten (vor Aufnahme von Course Captain)](design/mockups/products-overview-all-plugins.jpg)
 
 ### Voucher Captain
 

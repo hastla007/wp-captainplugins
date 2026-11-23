@@ -1,9 +1,45 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
-<!-- wp:group {"tagName":"main","anchor":"main-content","align":"wide","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"6rem","bottom":"6rem"}}}} -->
-<main id="main-content" class="wp-block-group alignwide" style="padding-top:6rem;padding-bottom:6rem"><!-- wp:paragraph {"className":"cp-eyebrow"} --><p class="cp-eyebrow">Fehler 404</p><!-- /wp:paragraph -->
-<!-- wp:heading {"level":1,"fontSize":"x-large"} --><h1 class="wp-block-heading has-x-large-font-size">Diese Seite ist gerade nicht an Bord.</h1><!-- /wp:heading -->
-<!-- wp:paragraph {"fontSize":"medium"} --><p class="has-medium-font-size">Der Link ist möglicherweise veraltet. Suchen Sie nach dem gewünschten Produkt oder kehren Sie zur Übersicht zurück.</p><!-- /wp:paragraph -->
-<!-- wp:search {"label":"Website durchsuchen","showLabel":true,"buttonText":"Suchen"} /-->
-<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">Zur Startseite</a></div><!-- /wp:button --><!-- /wp:buttons --></main>
+
+<!-- wp:group {"tagName":"main","anchor":"main-content","className":"cp-main cp-main--404","layout":{"type":"default"}} -->
+<main id="main-content" class="wp-block-group cp-main cp-main--404">
+<!-- wp:group {"align":"full","className":"cp-page-header cp-page-header--telescope","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-page-header cp-page-header--telescope"><!-- wp:paragraph {"className":"cp-eyebrow"} -->
+<p class="cp-eyebrow">Fehler 404</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1,"className":"cp-page-title"} -->
+<h1 class="wp-block-heading cp-page-title">Diese Seite ist gerade nicht an Bord.</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"cp-page-lead"} -->
+<p class="cp-page-lead">Der Link ist möglicherweise veraltet. Suchen Sie nach dem gewünschten Thema oder nehmen Sie einen der Einstiege unten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:search {"label":"Website durchsuchen","showLabel":true,"placeholder":"Produkt, Funktion oder Frage","buttonText":"Suchen","className":"cp-search"} /--></div>
 <!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained","contentSize":"75rem"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Häufig gesucht</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"className":"cp-link-list"} -->
+<ul class="wp-block-list cp-link-list"><!-- wp:list-item -->
+<li><a href="/produkte/">Alle Produkte im Überblick</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/vergleich/">Welches Plugin passt zu meinem Betrieb?</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/preise/">Preise für Captain Pro</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/dokumentation/">Dokumentation und Installation</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/faq/">Häufige Fragen</a></li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li><a href="/support/">Support kontaktieren</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

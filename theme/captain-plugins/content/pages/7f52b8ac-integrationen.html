@@ -1,20 +1,20 @@
-<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
 <p>Die Captain-Plugins lassen sich einzeln einsetzen und über dokumentierte Schnittstellen in bestehende WordPress- und WooCommerce-Prozesse einbinden.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Integrationen nach Produkt</h2>
 <!-- /wp:heading -->
 
 <!-- wp:table -->
-<figure class="wp-block-table"><table><thead><tr><th scope="col">Produkt</th><th scope="col">Zentrale Anbindungen</th></tr></thead><tbody><tr><td>Voucher Captain</td><td>WooCommerce-Produkte, Bestellungen, HPOS und Blocks-Checkout; Mehrsprachigkeit mit WPML/WCML; Mehrwährung über unterstützte Erweiterungen; Gutscheinzahlung, Ticketgutscheine und gemeinsamer Scanner mit Pass Captain</td></tr><tr><td>Pass Captain</td><td>Direkte Zahlungen mit Stripe, PayPal oder Mollie; optional WooCommerce Classic- oder Blocks-Checkout; Voucher Captain; Affiliate Captain; Twilio oder generischer HTTP-Anbieter für SMS; iCal-Feeds, signierte Webhooks, Veranstalter- und Mobile-API</td></tr><tr><td>Affiliate Captain</td><td>Eigenständiges Partnerprogramm; WooCommerce optional; versionierter Integrationsvertrag für Verkaufsquellen wie Pass Captain und Voucher Captain sowie weitere kompatible Connectors</td></tr><tr><td>License Captain</td><td>WooCommerce als Lizenzshop; signierte REST-API für Produkt-Plugins; Entitlements, Lizenzprüfung und Updatebereitstellung; offizielles WooCommerce-Stripe-Gateway für automatische Verlängerungen</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table><thead><tr><th scope="col">Produkt</th><th scope="col">Zentrale Anbindungen</th></tr></thead><tbody><tr><td>Voucher Captain</td><td>WooCommerce-Produkte, Bestellungen, HPOS und Blocks-Checkout; WooCommerce Subscriptions; Mehrsprachigkeit mit WPML/WCML und Polylang; Mehrwährung über unterstützte Erweiterungen; Gutscheinzahlung, Ticketgutscheine und gemeinsamer Scanner mit Pass Captain; Affiliate Captain</td></tr><tr><td>Pass Captain</td><td>Direkte Zahlungen mit Stripe, PayPal oder Mollie; optional WooCommerce Classic- oder Blocks-Checkout; Voucher Captain; Affiliate Captain; Twilio oder generischer HTTP-Anbieter für SMS; iCal-Feeds, signierte Webhooks, Veranstalter- und Mobile-API</td></tr><tr><td>Affiliate Captain</td><td>Eigenständiges Partnerprogramm; WooCommerce optional; versionierter Integrationsvertrag für Verkaufsquellen wie Pass Captain und Voucher Captain sowie weitere kompatible Connectors; Partnerbewerbungen über Form Captain</td></tr><tr><td>Form Captain</td><td>Eigenständige Formulare und Entries; WooCommerce nur für Käuferfragebögen in Pro; versionierte Verbindungen zu Pass, Voucher, Affiliate, Review und Course Captain sowie separaten Projekt-Connectoren; Workflow-Ereignisse mit Workflow Captain Pro und Form Captain Pro</td></tr><tr><td>Review Captain</td><td>Google, Trustpilot, Trusted Shops/eTrusted, Apple App Store und Google Play über offizielle APIs, Widgets, Profil-Links oder manuelle Kuration; faire Anfragen nach bestätigtem Erlebnis; Workflow Captain und Pro-Manager für lokale Projekt-Connectoren</td></tr><tr><td>Course Captain</td><td>Eigenständiges LMS ohne Pflicht-Plugins; in Pro WooCommerce-Kurszugänge nach bestätigter Zahlung, Kursgutscheine über Voucher Captain, Kurszugänge aus Pass-Tickets (ein Check-in ist kein Abschluss), Formulare und Provisionen über die jeweiligen Captain-Plugins</td></tr><tr><td>Workflow Captain</td><td>WordPress Core und WooCommerce im kostenlosen Kern; in Pro Provider für Voucher, Pass, Affiliate, Form und Review Captain, signierte Webhooks und n8n, eigene Connectoren und netzwerkweite Multisite-Workflows</td></tr><tr><td>License Captain</td><td>WooCommerce als Lizenzshop; signierte REST-API für Produkt-Plugins; Entitlements, Lizenzprüfung und Updatebereitstellung; offizielles WooCommerce-Stripe-Gateway für automatische Verlängerungen</td></tr></tbody></table></figure>
 <!-- /wp:table --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Was Sie für eine Integration benötigen</h2>
 <!-- /wp:heading -->
@@ -25,7 +25,45 @@
 
 <!-- wp:paragraph -->
 <p>Die konkreten Mindestversionen und geprüften Plattformen finden Sie in der <a href="/kompatibilitaet/">Kompatibilitätsmatrix</a>. Eine Schritt-für-Schritt-Einrichtung steht in der <a href="/dokumentation/installation/">Dokumentation</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Form- und Review-Abläufe</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Form Captain speichert eine Einsendung zuerst als Eintrag in WordPress. Suite- oder Projektaktionen erfolgen danach über dokumentierte Verträge; ein Formular löst weder automatisch eine Buchung noch eine Zahlung oder Provisionsfreigabe aus. Review Captain plant höchstens eine Anfrage pro bestätigtem Erlebnis und Empfänger. Externe Plattformdaten werden nicht gescrapt und lokale Review-Einträge bleiben bis zur Moderation unveröffentlicht.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/form-captain/integrationen/">Form Captain Integrationen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/review-captain/integrationen/">Review Captain Integrationen</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft cp-content-section--cta","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft cp-content-section--cta"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Automationen mit Workflow Captain</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Workflow Captain bündelt WordPress- und WooCommerce-Abläufe im Kern-Plugin. Pro ergänzt versionierte Captain-Provider und sichere Webhooks. Jede Suite-Verbindung setzt das jeweilige Plugin und einen kompatiblen öffentlichen Providervertrag voraus; fachliche Daten und Zuständigkeiten bleiben beim Quellplugin.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"className":"cp-actions"} -->
+<div class="wp-block-buttons cp-actions"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/integrationen/">Workflow Captain Integrationen</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/workflow-captain/kompatibilitaet/">Voraussetzungen</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
 
 <!-- wp:buttons {"className":"cp-actions"} -->
 <div class="wp-block-buttons cp-actions"><!-- wp:button -->

@@ -1,31 +1,41 @@
-<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-intro","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-intro"><!-- wp:paragraph -->
 <p>Kunden sollten ihre gekauften Lizenzen und die zugehörigen Produktinformationen schnell finden. License Captain stellt eine Lizenzübersicht und Changelog-Ausgabe für Kundenbereiche und WordPress-Seiten bereit.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Lizenzübersicht einbinden</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Fügen Sie den Block „My licenses“ oder den Lizenz-Shortcode an der passenden Stelle im Kundenbereich ein. Kunden sehen dort ihre Lizenzinformationen und zugehörige Website-Aktivierungen.</p>
+<p>License Captain ergänzt das WooCommerce-Kundenkonto automatisch um die Seite <strong>Lizenzen</strong>. Dieselbe Liste können Sie mit dem Block „Meine Lizenzen“ oder dem Shortcode <code>[wplc_licenses]</code> an jeder anderen Stelle einbinden. Kunden sehen dort Schlüssel, Status, Plan, Laufzeit und aktivierte Websites und können Websites deaktivieren, verlängern, den Plan wechseln, das aktuelle Release herunterladen, Mitbenutzer einladen oder die Lizenz übergeben.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Produkt-Release-Notizen ausgeben</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Wählen Sie ein Produkt und die gewünschte Zahl von Einträgen. Der Changelog-Block oder Shortcode zeigt Release-Notizen direkt im Kundenbereich oder auf einer Dokumentationsseite.</p>
+<p>Wählen Sie ein Produkt und die gewünschte Zahl von Einträgen. Der Block „Änderungsprotokoll“ oder der Shortcode <code>[wplc_changelog product=&quot;produkt-schluessel&quot; limit=&quot;10&quot;]</code> zeigt Release-Notizen direkt im Kundenbereich oder auf einer Dokumentationsseite.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Pläne mit Preistabelle anbieten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Der Block „Preistabelle“ oder der Shortcode <code>[wplc_pricing]</code> zeigt die Pläne eines Produkts mit Preis, Laufzeit, Website-Limit, Funktionen und Kaufbutton. Aufgeführt werden nur veröffentlichte, kaufbare Produkte mit aktivem Plan.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Kundenführung verbessern</h2>
 <!-- /wp:heading -->
 
@@ -34,8 +44,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"cp-content-section cp-content-section--soft","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull cp-content-section cp-content-section--soft"><!-- wp:heading {"level":2} -->
+<!-- wp:group {"align":"full","className":"cp-content-section","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull cp-content-section"><!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Vor der Veröffentlichung prüfen</h2>
 <!-- /wp:heading -->
 
@@ -43,10 +53,10 @@
 <p>Kontrollieren Sie die Darstellung mit unterschiedlichen Lizenzstatus, auf Mobilgeräten und mit den eingesetzten Theme-Komponenten. Ergänzen Sie sichtbare Hinweise, wenn eine Lizenz abgelaufen oder eine Aktivierung nicht mehr verfügbar ist.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"constrained"}} -->
-<div class="wp-block-group cp-media-placeholder"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">Medien für diese Seite</h3>
-<!-- /wp:heading -->
+<!-- wp:group {"className":"cp-media-placeholder","layout":{"type":"default"}} -->
+<div class="wp-block-group cp-media-placeholder"><!-- wp:paragraph {"className":"cp-media-placeholder__label"} -->
+<p class="cp-media-placeholder__label">Produktansicht folgt</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p class="cp-media-placeholder__brief"><strong>Screenshot:</strong> Kundenkonto mit Lizenzstatus und Website-Aktivierungen zeigen; Schlüssel und Domains durch ungültige Beispieldaten ersetzen.</p>
@@ -66,7 +76,7 @@
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/license-captain/features/">License Captain Features ansehen</a></div>
 <!-- /wp:button -->
 <!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/captain-pro/">Captain Pro im Überblick</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/license-captain/preise/">Preise und Pläne</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->

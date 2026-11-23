@@ -17,7 +17,7 @@ Prüfen und genehmigen Sie Bewerbungen, organisieren Sie Partner in Gruppen und 
 
 ## Provisionen nachvollziehbar abrechnen
 
-Haltefristen, positionsgenaue Refund-Korrekturen und ein nachvollziehbares Provisionsledger geben Ihnen Übersicht über Gutschriften und Anpassungen. Bereiten Sie Auszahlungen vor und exportieren Sie SEPA-Dateien.
+Haltefristen, positionsgenaue Refund-Korrekturen und ein nachvollziehbares Provisionsledger geben Ihnen Übersicht über Gutschriften und Anpassungen. Bereiten Sie Auszahlungen vor, exportieren Sie SEPA-Dateien und stellen Sie Gutschriften als PDF und E-Rechnung bereit.
 
 ## Geben Sie Partnern die passenden Materialien
 
@@ -28,12 +28,12 @@ Stellen Sie Kampagnen, QR-Codes und Werbemittel im Partnerportal bereit. Partner
 
 ## Für weitere Integrationen
 
-Mit Affiliate Captain Pro ergänzen Sie signierte Webhooks, erweiterte REST-API, White Label und automatische PayPal-Auszahlungen.
+Mit Affiliate Captain Pro ergänzen Sie signierte Webhooks, erweiterte REST-API, White Label, automatische PayPal-Auszahlungen und mehrere Partnerprogramme.
 
 [Affiliate Captain Pro ansehen](/affiliate-captain/pro/) · [FAQ](/affiliate-captain/faq/)
 
 ## Kompatibilität und Support
 
-Affiliate Captain benötigt WordPress 6.3+ und PHP 7.4+ mit sodium und dom. zip wird für den Programmexport benötigt. WooCommerce ist optional ab Version 8.0; unterstützt werden HPOS, Classic- und Blocks-Checkout. Das Affiliate-Captain-Pro-Add-on setzt WordPress 6.5+ voraus.
+Affiliate Captain benötigt WordPress 7.0+ und PHP 8.5+ mit sodium und dom. zip wird für den Programmexport benötigt. WooCommerce ist optional ab Version 11.2.2; unterstützt werden HPOS, Classic- und Blocks-Checkout. Das Affiliate-Captain-Pro-Add-on setzt ebenfalls WordPress 7.0+ voraus.
 
 Single und Business enthalten Standard-Support; Agency enthält Priority-Support. [Alle Systemanforderungen und Integrationen](/kompatibilitaet/).

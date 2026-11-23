@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ruleset name="Captain Plugins Theme">
+	<description>WordPress-Coding-Standards (Sicherheit, i18n, Datenbank, Best Practices) und PHP-Kompatibilität ab 8.5 für das Theme.</description>
+
+	<file>theme/captain-plugins</file>
+	<exclude-pattern>theme/captain-plugins/content/*</exclude-pattern>
+	<exclude-pattern>theme/captain-plugins/languages/*</exclude-pattern>
+
+	<!-- Standards aus vendor/ (unabhängig davon, ob das Composer-Installer-Plugin gelaufen ist). -->
+	<config name="installed_paths" value="vendor/wp-coding-standards/wpcs,vendor/phpcompatibility/php-compatibility,vendor/phpcompatibility/phpcompatibility-paragonie,vendor/phpcompatibility/phpcompatibility-wp,vendor/phpcsstandards/phpcsextra,vendor/phpcsstandards/phpcsutils"/>
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+	<arg name="colors"/>
+
+	<config name="testVersion" value="8.5-"/>
+	<config name="minimum_wp_version" value="6.6"/>
+	<rule ref="PHPCompatibilityWP"/>
+
+	<rule ref="WordPress-Extra">
+		<!-- Code-Stil: kurze Zeilen und ausgerichtete Zuweisungen sind keine Sicherheitsfrage; das Theme nutzt bewusst kompakte Einzeiler. -->
+		<exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment"/>
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+		<exclude name="WordPress.Files.FileName"/>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties><property name="text_domain" type="array"><element value="captain-plugins"/></property></properties>
+	</rule>
+	<rule ref="WordPress.WP.Capabilities">
+		<properties><property name="custom_capabilities" type="array"><element value="manage_woocommerce"/></property></properties>
+	</rule>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties><property name="prefixes" type="array"><element value="captain_plugins"/><element value="CAPTAIN_PLUGINS"/><element value="CAPTAIN_LICENSE"/></property></properties>
+	</rule>
+</ruleset>

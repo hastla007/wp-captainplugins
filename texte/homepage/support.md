@@ -1,7 +1,7 @@
 ---
 url: /support/
 seo_title: Support für Captain Plugins – Hilfe und Kontakt
-meta_description: Finden Sie Dokumentation, Installationshilfen und Supportinformationen zu Voucher, Pass, Affiliate und License Captain.
+meta_description: Finden Sie Dokumentation, Installationshilfen und Support für Voucher, Pass, Affiliate, Form, Review, Workflow, Course und License Captain.
 focus_keyphrase: WordPress Plugin Support
 ---
 
@@ -16,17 +16,23 @@ Starten Sie mit den [Installationsanleitungen](/dokumentation/installation/), de
 - [Voucher Captain: Gutscheine und Geschenkkarten](/voucher-captain/faq/)
 - [Pass Captain: Events, Tickets und Buchungen](/pass-captain/faq/)
 - [Affiliate Captain: Partner und Provisionen](/affiliate-captain/faq/)
+- [Form Captain: Formulare und Einträge](/form-captain/faq/)
+- [Review Captain: Bewertungen und Quellen](/review-captain/faq/)
+- [Workflow Captain: Automationen und Integrationen](/workflow-captain/faq/)
+- [Course Captain: Kurse, Prüfungen und Zugänge](/course-captain/faq/)
 - [License Captain: Lizenzen und Updates](/license-captain/faq/)
 
 ## Support in Captain Pro
 
 | Plan | Live-Websites | Supportstufe |
 |---|---:|---|
-| Single | 1 | Standard |
-| Business | 5 | Standard |
-| Agency | 25 | Priority |
+| Captain Pro Single | 1 | Standard |
+| Captain Pro Business | 5 | Standard |
+| Captain Pro Agency | 25 | Priority |
+| Course Captain Single/Business | 1 / 5 | Standard |
+| Course Captain Agency | 25 | Priority |
 
-Die Supportstufe ist Bestandteil der jeweiligen Captain-Pro-Lizenz. License Captain ist ohne Aufpreis enthalten. Für die kostenlosen Kern-Plugins stehen Dokumentation und die jeweils veröffentlichten öffentlichen Supportkanäle zur Verfügung.
+Die Supportstufe ist Bestandteil des jeweiligen Captain-Pro-Plans. Für License Captain richtet sich der Supportumfang nach dem gewählten License-Captain-Plan. Für die kostenlosen Kern-Plugins stehen Dokumentation und die jeweils veröffentlichten öffentlichen Supportkanäle zur Verfügung.
 
 ## So helfen Sie uns, Ihre Anfrage zu lösen
 

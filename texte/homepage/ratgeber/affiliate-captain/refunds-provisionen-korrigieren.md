@@ -19,7 +19,7 @@ Legen Sie Haltefristen passend zu Rückgabe- und Prüfprozessen fest. So können
 
 ## Ledger und Auszahlungslauf prüfen
 
-Kontrollieren Sie Korrekturen im Ledger, bevor Sie einen Auszahlungslauf freigeben. Berichte und Änderungsverläufe helfen, Rückfragen intern zu klären.
+Kontrollieren Sie Korrekturen im Ledger, bevor Sie einen Auszahlungslauf freigeben. Wurde eine Provision bereits ausgezahlt, verrechnet Affiliate Captain die Korrektur im nächsten Lauf; Stornos und Chargebacks kehren den verbleibenden Betrag um, und wiederholte Erstattungsereignisse werden nicht doppelt gebucht. Berichte und Änderungsverläufe helfen, Rückfragen intern zu klären.
 
 ## Klare Grenzen für steuerliche Aussagen
 

@@ -1,7 +1,7 @@
 ---
 url: /ueber/
 seo_title: Über Captain Plugins – WordPress-Lösungen für Unternehmen
-meta_description: Lernen Sie Captain Plugins kennen: eigenständige WordPress-Lösungen für Gutscheinverkauf, Events, Partnerprogramme und Softwarelizenzen.
+meta_description: Lernen Sie Captain Plugins kennen: WordPress-Lösungen für Gutscheine, Events, Formulare, Kundenbewertungen, Partnerprogramme und Softwarelizenzen.
 focus_keyphrase: WordPress Plugins Unternehmen
 ---
 
@@ -9,7 +9,7 @@ focus_keyphrase: WordPress Plugins Unternehmen
 
 Captain Plugins entwickelt Lösungen für Unternehmen, die wichtige digitale Abläufe in ihrer eigenen WordPress-Umgebung steuern möchten.
 
-Unsere Plugins decken vier Aufgaben ab: Gutscheine und Geschenkkarten verkaufen, Events und Buchungen organisieren, Partnerprogramme betreiben sowie Lizenzen und Updates verwalten.
+Unsere Plugins unterstützen Geschäftsabläufe rund um Gutscheine, Events, Formulare, Kundenbewertungen, Online-Kurse, Partnerprogramme, Automationen und Softwarelizenzen.
 
 ## Unser Anspruch
 

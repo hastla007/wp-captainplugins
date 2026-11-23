@@ -53,6 +53,30 @@ Die folgenden Farbwerte sind ein **Startvorschlag**, kein bestätigtes bestehend
 
 Gold soll für kleine Highlights und nicht für Fließtext auf weißem Hintergrund genutzt werden, sofern die Kontrastprüfung keinen geeigneten Kontrast nachweist. Statusfarben erhalten stets ein Textlabel oder Symbol mit zugänglichem Namen.
 
+**Kontrastprüfung (Stand 16. November 2026, berechnet nach WCAG-Formel für die im Theme verwendeten Kombinationen):**
+
+| Kombination | Art | Kontrast | Anforderung (WCAG 2.2 AA) | Ergebnis |
+|---|---|---:|---:|---|
+| Buttontext Tiefblau auf Gold | Text | 6.50:1 | 4.5:1 | erfüllt |
+| Weiß auf Navy (Header, Footer, Tarifkopf) | Text | 11.80:1 | 4.5:1 | erfüllt |
+| Gold auf Navy (Footer-Überschriften) | Text | 5.27:1 | 4.5:1 | erfüllt |
+| Sekundärtext #C4D4DE auf Navy | Text | 7.76:1 | 4.5:1 | erfüllt |
+| Navy-Link auf Weiß | Text | 11.80:1 | 4.5:1 | erfüllt |
+| Sekundärtext auf Hellblau | Text | 5.65:1 | 4.5:1 | erfüllt |
+| Einleitungstext #334B5B auf Hellblau | Text | 8.06:1 | 4.5:1 | erfüllt |
+| Sekundärtext auf heller Fläche | Text | 5.96:1 | 4.5:1 | erfüllt |
+| Produkt-Icon Navy auf Hellblau | Grafik | 10.41:1 | 3:1 | erfüllt |
+| Haken-Icon #B4842B auf Weiß | Grafik | 3.35:1 | 3:1 | erfüllt |
+| Fokusring #075B82 auf Weiß | Fokus | 7.43:1 | 3:1 | erfüllt |
+| Fokusring Gold auf Navy | Fokus | 5.27:1 | 3:1 | erfüllt |
+| Platzhalter-Rahmen #8797A1 auf Weiß | Rahmen | 3.01:1 | 3:1 | erfüllt |
+| Erfolg #1F6B4F auf Weiß | Text | 6.41:1 | 4.5:1 | erfüllt |
+| Fehler #A73535 auf Weiß | Text | 6.55:1 | 4.5:1 | erfüllt |
+
+Gold wird im Theme nur als Flächenfarbe (Primärbutton mit tiefblauem Text), für Linien/Icons und auf Navy verwendet, nie als Fließtextfarbe auf Weiß. Produkte werden über Namen **und** Icon unterschieden; die Icons sind einfarbig Navy und keine zusätzlichen Produktfarben.
+
+**Umsetzung der Kapitänsillustrationen im Theme:** Aus `design/mascot/` sind vier Posen freigestellt und als WebP unter `theme/captain-plugins/assets/images/` exportiert: zeigend (Startseiten-Hero), Daumen hoch (Abschluss-CTA-Bänder), Fernrohr (404-Seite) und verschränkte Arme (Reserve). Sie werden als rein dekorative CSS-Hintergründe eingebunden und erscheinen deshalb nicht im Barrierefreiheitsbaum (entspricht leerem Alt-Text). Auf Mobilgeräten stehen Text und Haupt-CTA vor der Illustration. Die Bildrechte und finale Auswahl sind weiterhin vom Betreiber zu bestätigen.
+
 **Produktakzente (noch festzulegen):** Ein Akzent je Produktfamilie kann Karten, kleine Linien und Icons differenzieren. Die Farben werden in einer Tokens-Tabelle dokumentiert und auf Text-/UI-Kontrast geprüft; Produktfarben dürfen keine eigenständigen, losgelösten Markenwelten bilden.
 
 **Typografie:** lokal/systemnahes Sans-Serif-Stack als Standard, zum Beispiel `system-ui, -apple-system, "Segoe UI", sans-serif`. Eine zusätzliche Webfont wird nur eingesetzt, wenn ein klarer Markenwert entsteht und Lizenz, Ladeverhalten und Fallback geregelt sind. Fließtext großzügig bemessen und auf Mobilgeräten nicht unter komfortable Lesbarkeit verkleinern. Überschriften erhalten eine klare, responsive Skala; Zeilenlänge im Textbereich begrenzen.
@@ -134,7 +158,7 @@ Die vollständige URL- und Inhaltsstruktur steht im [Website-Umsetzungskonzept](
 - **Produktübersicht:** Auswahl nach Geschäftsaufgabe, Produktkarten und Vergleichseinstieg.
 - **Produktdetail:** Produkt-Hero, Workflow, wichtigste Features, UI-Bild, Integrationen/Voraussetzungen, Free-/Pro-Verweis, FAQ-Auszug, CTA.
 - **Features:** vollständige Funktionsgruppen mit internen Sprunglinks und UI-Bildbriefings.
-- **Pro-Seiten:** Upgrade-Grund, Kern-/Pro-Abgrenzung und Preis-/Plan-Karten. License Captain Server als separates Produkt mit eigenem Kaufpfad gestalten; niemals als Captain-Pro-Inklusivleistung darstellen.
+- **Pro-Seiten:** Upgrade-Grund, Kern-/Pro-Abgrenzung, Preis-/Plan-Karten. License Captain wird auf Pro-Seiten nicht erwähnt. Es erhält eigene Produkt- und Preisseiten, die Server (Shop) und Client (im Plugin des Herstellers) als ein Angebot erklären.
 - **Preise/Vergleich:** zugängliche Tarifkarten mit Website-Limits, Jahrespreis, Supportumfang und klarer Planwahl.
 - **Dokumentation/Support/FAQ:** ruhige Lesefläche, Inhaltsnavigation, Links zu Installation, Kompatibilität und Kontakt.
 - **Lösung/Use Case:** branchenspezifischer Ablauf und die tatsächlich passenden Produkte.
@@ -206,49 +230,49 @@ Yoast bleibt für SEO-Metadaten und passende Integrationen zuständig. Das Theme
 
 ### A. Vor dem Scaffold
 
-- [ ] Repo-Inventar mit den bestehenden Textdateien und URLs abgleichen; Seitenentwürfe nicht neu schreiben.
+- [x] Repo-Inventar mit den bestehenden Textdateien und URLs abgleichen; Seitenentwürfe nicht neu schreiben.
 - [ ] Vorhandenes Logo, Typografie und alle acht Kapitäns-JPEGs sichten; Nutzungsrechte, Auflösung und geeignete Posen erfassen.
-- [ ] Farbpalette mit Kontrastmessung finalisieren; Produktakzente dokumentieren.
+- [x] Farbpalette mit Kontrastmessung finalisieren; Produktakzente dokumentieren. *(Kontrasttabelle in Abschnitt 2; Produkte werden über Name und Icon statt über eigene Farben unterschieden.)*
 - [x] Architekturentscheidung festhalten: natives Block-Theme mit Site Editor, `theme.json`, HTML-Templates und Template Parts. Mindestversionen für WordPress, PHP und WooCommerce vor dem Scaffold aus der Kompatibilitätsmatrix der Produkte ableiten.
-- [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen.
+- [ ] Zielversionen von WordPress/PHP, Build-/Deployprozess und unterstützten Browsern vom Projekt festlegen. *(PHP 8.5 und Datenbank-Minima entschieden; Vorschlag Browsermatrix: jeweils die letzten zwei Versionen von Chrome, Edge, Firefox, Safari und iOS Safari sowie Firefox ESR – CSS ohne Blocker geprüft. WordPress-Zielversion und Deployprozess offen.)*
 - [ ] Release-Quelle für Preise, Checkout-, Download- und Support-URLs bestimmen.
-- [ ] Theme-Dateiname, Textdomain und Repository-Ordner festlegen.
+- [x] Theme-Dateiname, Textdomain und Repository-Ordner festlegen.
 
 ### B. Designsystem und Theme-Grundgerüst
 
-- [ ] CSS-Variablen und `theme.json` für Farben, Typografie, Layoutbreiten, Abstände und UI-Zustände definieren.
-- [ ] Editoransicht an Frontend-Stile angleichen.
-- [ ] Header, Desktop-/Mobile-Menü und Footer als Template Parts erstellen.
-- [ ] Globales Seitengerüst inklusive Skip-Link, Breadcrumb-Ausgabe und Hauptinhalt umsetzen.
-- [ ] Basis-Templates für Startseite, Seite, Beitrag, Archiv, Suche und 404 erstellen.
-- [ ] Komponenten-Patterns für Hero, CTA, Feature, Workflow, Screenshot, Preis, Vergleich, FAQ und Ressourcen erstellen.
+- [x] CSS-Variablen und `theme.json` für Farben, Typografie, Layoutbreiten, Abstände und UI-Zustände definieren.
+- [x] Editoransicht an Frontend-Stile angleichen. *(Geprüft mit `tools/qa/editor-check.cjs`.)*
+- [x] Header, Desktop-/Mobile-Menü und Footer als Template Parts erstellen.
+- [x] Globales Seitengerüst inklusive Skip-Link, Breadcrumb-Ausgabe und Hauptinhalt umsetzen.
+- [x] Basis-Templates für Startseite, Seite, Beitrag, Archiv, Suche und 404 erstellen.
+- [x] Komponenten-Patterns für Hero, CTA, Feature, Workflow, Screenshot, Preis, Vergleich, FAQ und Ressourcen erstellen.
 
 ### C. Inhaltsvorlagen aufsetzen
 
-- [ ] Startseite und Produktübersicht aus den bestehenden Markdown-Texten übertragen.
-- [ ] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain und License Captain anwenden.
-- [ ] Unterseiten Features, Pro/Im-Paket und FAQ in einheitliche Templates überführen.
-- [ ] Preis-/Vergleichsansicht mit zentralem Tarifinhalt und mobilen Alternativen einrichten.
-- [ ] Dokumentation, Support, Kompatibilität, Integrationen, Bootsschulen-Lösung und Ratgeber-Templates übertragen.
-- [ ] Alle Platzhalter im CMS als interne redaktionelle Aufgaben markieren; keine Platzhalterseiten öffentlich indexieren.
+- [x] Startseite und Produktübersicht aus den bestehenden Markdown-Texten übertragen.
+- [x] Wiederverwendbare Produktdetailvorlage auf Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain, Course Captain und License Captain anwenden.
+- [x] Unterseiten Features, Pro-/Preise und FAQ in einheitliche Templates überführen.
+- [x] Preis-/Vergleichsansicht mit zentralem Tarifinhalt und mobilen Alternativen einrichten.
+- [x] Dokumentation, Support, Kompatibilität, Integrationen, Bootsschulen-Lösung und Ratgeber-Templates übertragen.
+- [x] Alle Platzhalter im CMS als interne redaktionelle Aufgaben markieren; keine Platzhalterseiten öffentlich indexieren.
 
 ### D. Medien und Feinschliff
 
-- [ ] Maskottchen je Einsatzort auswählen, passend zuschneiden und optimierte Bildvarianten exportieren.
+- [x] Maskottchen je Einsatzort auswählen, passend zuschneiden und optimierte Bildvarianten exportieren. *(Rechte und finale Freigabe weiterhin offen.)*
 - [ ] Produkt-Screenshots gemäß den Bildbriefings in `konzept-website.md` erstellen und Datenschutzprüfung durchführen.
-- [ ] Alt-Texte und Bildunterschriften festlegen; dekorative Bilder als dekorativ behandeln.
-- [ ] Mobile Darstellung, Preisvergleiche, Tabellen, Menüs, Formulare und FAQ bei relevanten Breiten prüfen.
-- [ ] Visuelle Konsistenz zwischen Frontend und Block-Editor abnehmen.
+- [x] Alt-Texte und Bildunterschriften festlegen; dekorative Bilder als dekorativ behandeln.
+- [x] Mobile Darstellung, Preisvergleiche, Tabellen, Menüs, Formulare und FAQ bei relevanten Breiten prüfen.
+- [x] Visuelle Konsistenz zwischen Frontend und Block-Editor abnehmen. *(Startseite, Produkt-, Preis- und Ratgeberseite im Editor-Canvas verglichen.)*
 
 ### E. Qualitätsprüfung und Übergabe
 
-- [ ] Tastaturbedienung, Fokus, Kontrast, Vergrößerung, Screenreader-Ausgabe und reduzierte Bewegung prüfen.
-- [ ] Links, Navigationszustände, CTAs und Breadcrumbs validieren.
+- [ ] Tastaturbedienung, Fokus, Kontrast, Vergrößerung, Screenreader-Ausgabe und reduzierte Bewegung prüfen. *(Automatisiert auf 123 Seiten inkl. Shop erledigt, `tools/qa/keyboard.cjs` und `site-check.cjs --axe`; offen nur der Screenreader-Durchlauf von Hand.)*
+- [x] Links, Navigationszustände, CTAs und Breadcrumbs validieren.
 - [ ] Yoast-Breadcrumbs, Metadaten, Canonicals und Sitemap-Zuständigkeit gegen Theme-Ausgabe abgleichen.
-- [ ] Performance und Bildgrößen prüfen; unnötige Assets und Skripte entfernen.
+- [x] Performance und Bildgrößen prüfen; unnötige Assets und Skripte entfernen.
 - [ ] Kompatibilität mit WooCommerce, Yoast SEO und den tatsächlich aktivierten Plugins prüfen; Shop-Funktionen nicht im Theme nachbauen.
-- [ ] WooCommerce-Shopwege und Plugin-Frontends im sauberen Theme sowie nach Update testen (Produkt-/Tarifseite, Warenkorb, Blocks- und Classic-Checkout, Bestätigung, Konto, Lizenzansicht).
-- [ ] README mit Installation, Theme-Konfiguration, Block-Patterns, Design-Tokens und Erweiterungshinweisen anlegen.
+- [ ] WooCommerce-Shopwege und Plugin-Frontends im sauberen Theme sowie nach Update testen (Produkt-/Tarifseite, Warenkorb, Blocks- und Classic-Checkout, Bestätigung, Konto, Lizenzansicht). *(Mit WooCommerce 9.4 erledigt bis auf die Lizenzansicht, die den echten License-Captain-Server braucht; `tools/qa/shop-flow.cjs`.)*
+- [x] README mit Installation, Theme-Konfiguration, Block-Patterns, Design-Tokens und Erweiterungshinweisen anlegen.
 - [ ] Vor Release offene Unternehmens-, Preis-, Support- und Checkout-Angaben vollständig verifizieren.
 
 ## 11. Abnahmekriterien
@@ -271,7 +295,7 @@ Das Theme ist bereit für die redaktionelle Befüllung, wenn:
 - Offene Architekturentscheidung ist aufgelöst: Umsetzung als natives WordPress-Block-Theme mit Site Editor und `theme.json`. Vor dem Scaffold bleiben die konkreten Mindestversionen und WooCommerce-Versionen anhand der aktiven Plugin-Repositories festzulegen.
 - Finale Live-URLs, CTA-Ziele, Download-/Checkout-/Supportablauf.
 - Finale Produkt-Screenshots und freigegebene Mascot-Exporte.
-- Verbindliche Browser-/WordPress-/PHP-Zielmatrix.
+- Verbindliche Browser- und WordPress-Zielmatrix. *(PHP 8.5, MySQL 9.7 LTS und MariaDB 12.3 LTS sind seit 16. November 2026 als Minimum festgelegt.)*
 
 Diese Entscheidungen blockieren nicht die Strukturplanung. Sie werden während Designsystem und technischem Scaffold auf Grundlage des realen Logos, Stacks und Shopablaufs abgeschlossen.
 
@@ -290,7 +314,11 @@ Die folgenden Bilder übersetzen das Konzept in mögliche Seitenansichten. Sie s
 
 ### Produktübersicht – Desktop
 
-![Mockup der Produktübersicht mit vier Captain-Plugins](mockups/products-overview-desktop.jpg)
+![Produktübersichts-Mockup mit sieben Website-Produkten (vor Aufnahme von Course Captain)](mockups/products-overview-all-plugins.jpg)
+
+Das Mockup zeigt Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und License Captain; Course Captain ist am 16. November 2026 hinzugekommen und im Theme bereits als achte Produktkarte umgesetzt. Es ist eine visuelle Konzeptvorschau; Produkttexte, Download- und Checkout-Ziele werden aus den final freigegebenen Website-Inhalten übernommen.
+
+![Frühere Version des Produktübersichts-Mockups](mockups/products-overview-desktop.jpg)
 
 ### Voucher Captain – Desktop
 
@@ -353,7 +381,7 @@ Vor dem Theme-Scaffold wird eine konkrete Testmatrix aus den aktiven Repo-Mindes
 
 1. Block-Checkout und Classic-Checkout mit den vom Shop tatsächlich verwendeten Zahlungs- und Lizenzabläufen.
 2. Produktwahl → Warenkorb → Checkout → Bestellbestätigung → Konto → Lizenzaktivierung → Pro-Update.
-3. Öffentliche Frontendansichten der vier Produktfamilien mit dem Theme, inklusive mobil und bei leerem/Fehlerzustand.
+3. Öffentliche Frontendansichten der acht Website-Produkte mit dem Theme, inklusive mobil und bei leerem/Fehlerzustand.
 4. Yoast-Breadcrumbs/Metadaten sowie Sprachumschaltung ohne doppelte Ausgabe.
 5. Site-Editor-Änderungen vor und nach Theme-Update; Inhalte bleiben erhalten und Updates setzen keine redaktionellen Anpassungen zurück.
 6. Installierbares Theme-ZIP, Theme-Versionierung, Änderungsprotokoll, Staging-Abnahme und Rollbackweg.
