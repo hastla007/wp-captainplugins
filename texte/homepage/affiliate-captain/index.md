@@ -13,7 +13,7 @@ Gewinnen Sie Partner, ordnen Sie Empfehlungen nachvollziehbar zu und verwalten S
 
 ## Vom Partner bis zur Auszahlung
 
-Prüfen und genehmigen Sie Bewerbungen, organisieren Sie Partner in Gruppen und stellen Sie Referral-Links und Codes bereit. Legen Sie Regeln für Produkte, Kategorien oder einzelne Partner fest.
+Prüfen und genehmigen Sie Bewerbungen, organisieren Sie Partner in Gruppen und stellen Sie Referral-Links und Codes bereit. Legen Sie Regeln für Produkte, Kategorien oder einzelne Partner fest. Länderprofile für Deutschland, Österreich, die Schweiz und weitere Länder schlagen passende Einstellungen vor, die Sie vor der Übernahme prüfen.
 
 ## Provisionen nachvollziehbar abrechnen
 

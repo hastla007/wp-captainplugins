@@ -30,7 +30,7 @@ Workflow Captain richtet sich an Unternehmen, Shopbetreiber und Agenturen, die w
 
 ## Kostenloser Kern oder Workflow Captain Pro?
 
-**Free** enthält unbegrenzte Workflows und Ausführungen, den visuellen Editor mit Wenn/Sonst-Bedingungen, Wartezeiten und Zeitplänen, Auslöser für WordPress und WooCommerce, Testlauf, sichere Wiederholung fehlgeschlagener Ereignisse, Versionen, Export/Import und 30-Tage-Protokolle.
+**Free** enthält unbegrenzte Workflows und Ausführungen, den visuellen Editor mit Wenn/Sonst-Bedingungen, Wartezeiten und Zeitplänen, Auslöser für WordPress und WooCommerce, Testlauf, sichere Wiederholung fehlgeschlagener Ereignisse, Versionen, Export/Import, Länderprofile als Vorschlag, Testmodus und Protokolle mit einstellbarer Aufbewahrung bis 180 Tage.
 
 **Pro** ergänzt die Captain-Suite-Provider, eigene Connectoren, signierte Webhooks und n8n, netzwerkweite Multisite-Workflows, Event-Korrelation, Freigabeschritte, Abbruch geplanter Abläufe bei Refund oder Storno, Suite-Rezeptvorlagen und längere Protokollaufbewahrung.
 

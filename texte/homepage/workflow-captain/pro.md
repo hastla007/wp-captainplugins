@@ -23,9 +23,19 @@ Für Unternehmen, Shops und Agenturen, die Ereignisse zwischen mehreren Captain-
 - Netzwerkweite Workflows in Multisite: Ein Ereignis einer Website startet Schritte auf freigegebenen Ziel-Websites; jede teilnehmende Website zählt als eine Website der Lizenz.
 - Event-Korrelation über mehrere Ereignisse und Freigabeschritte.
 - Abbruch geplanter Abläufe bei Refund, Storno, Widerruf oder Opt-out.
-- Bis zu 365 Tage einstellbare Protokollaufbewahrung (Standard 90 Tage) und CSV-Protokollexport.
+- Protokollaufbewahrung über die freien 180 Tage hinaus, CSV-Protokollexport und ein längeres Änderungsprotokoll.
 
 Editor, Wenn/Sonst-Bedingungen, Wartezeiten, Zeitpläne, sichere Wiederholung, Versionen, Export/Import und Rechteverwaltung sind bereits im kostenlosen Workflow Captain enthalten.
+
+## Zusätzliche Einstellungen in Pro
+
+- Sendefenster und Ruhezeiten je Workflow, ein Feiertagskalender und Höchstzahlen je Empfänger für einzelne Workflows.
+- Freigabeschritte: Sie legen fest, wer genehmigen darf, bis wann und was bei Fristablauf passiert.
+- Ausgehende Webhook-Aufrufe: Aufbewahrung und Wiederholungen selbst einstellen.
+- Captain-Integrationen je Plugin ein- und ausschalten; die Grenzen der Gutschein-Aktionen sehen Sie auf einen Blick, eingestellt werden sie in Voucher Captain.
+- Multisite: Standardwerte für alle Websites des Netzwerks und Sperren einzelner Einstellungen je Website.
+
+Länderprofile, Ruhezeit für die ganze Website, Absender und Fußzeile, Testmodus, Export/Import und Zurücksetzen der Einstellungen sowie Aufbewahrung bis 180 Tage bleiben im kostenlosen Kern.
 
 Keine Task-Credits oder monatlichen Run-Limits. Die Tarife unterscheiden sich ausschließlich nach Live-Websites und Supportstufe.
 

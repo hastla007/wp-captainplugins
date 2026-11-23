@@ -25,6 +25,9 @@ Sie verwalten Auszahlungsläufe und Auszahlungsanträge und zahlen per Überweis
 ## Sehen Partner Kundendaten?
 Nein. Das Partnerportal stellt die eigenen Programmdaten bereit und gibt keinen Zugriff auf Kundendaten.
 
+## Kann ich Affiliate Captain an mein Land anpassen?
+Ja, im kostenlosen Kern. Länderprofile für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder schlagen Werte wie Steuersatz, Aufbewahrungsfrist und Belegtexte vor; Sie sehen die Änderungen vorher und übernehmen nur, was Sie bestätigen. Steuerwerte und Texte auf Gutschriften prüfen Sie oder Ihre Beratung. [Alle Einstellungen](/affiliate-captain/features/)
+
 ## Ist Affiliate Captain eine Rechts- oder Steuerberatung?
 Nein. Cookie-Consent, Steuern und Belegpflichten hängen vom Geschäftsmodell ab und müssen fachlich geprüft werden.
 

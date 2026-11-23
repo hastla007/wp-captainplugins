@@ -29,6 +29,10 @@ Führen Sie PayPal-Auszahlungen über die PayPal-Schnittstelle direkt aus dem Pa
 
 Führen Sie mehrere Partnerprogramme mit eigenem Provisionssatz, eigener Haltefrist, Cookie-Laufzeit, Mindestauszahlung, Attributionsmodell und Bedingungsseite. Berichte lassen sich nach Programm filtern, und Partner sehen ihren Programmnamen.
 
+## Pro-Einstellungen dort, wo Sie sie suchen
+
+Die Einstellungen für automatische PayPal-Auszahlungen, White Label und Webhooks erscheinen im passenden Bereich der Affiliate-Captain-Einstellungen. Wiederholungen, Sperre nach Fehlschlägen und Protokolldauer der Webhooks legen Sie selbst fest. Die Pro-Einstellungen sind in Export, Import und WP-CLI des Kerns eingebunden, sodass Sie Ihre gesamte Konfiguration in einem Schritt übertragen. Logo und Absender auf Gutschriften und in E-Mails sind bereits im kostenlosen Kern enthalten; Pro ergänzt die Gestaltung von Partnerportal und E-Mail-Vorlagen.
+
 ## Jahrespläne
 
 | Plan | Live-Websites | Preis pro Jahr |

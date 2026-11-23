@@ -43,6 +43,10 @@ Die Pro-Funktionen werden angehalten; betroffene Automationen pausieren. Workflo
 
 Nein. Freier PHP-/SQL-Code, willkürliche HTTP-Ziele und eine breite native App-Bibliothek gehören nicht zum V1-Umfang. Eigene Systeme können mit Pro über versionierte Connectoren, signierte Webhooks oder n8n angebunden werden.
 
+## Kann ich Workflow Captain an mein Land und meine Abläufe anpassen?
+
+Ja, im kostenlosen Kern. Länderprofile für Deutschland, Österreich, die Schweiz, die EU allgemein und andere Länder schlagen Werte wie Ruhezeiten, Einwilligung für Werbe-Nachrichten und Aufbewahrungsfristen vor; Sie sehen Vorher und Nachher und bestätigen jede Änderung. Danach passen Sie alles selbst an und übertragen die Einstellungen per Export und Import auf weitere Websites. Die Vorschläge ersetzen keine Rechtsberatung.
+
 ## Welche Voraussetzungen gelten?
 
 Workflow Captain setzt WordPress 7.0+ und PHP 8.5+ voraus; empfohlen sind MySQL 9.7 oder MariaDB 12.3. WooCommerce ist optional und wird ab Version 11.2.2 unterstützt. Die Mindeststände der einzelnen Suite-Provider stehen in der [Kompatibilitätsübersicht](/workflow-captain/kompatibilitaet/).
