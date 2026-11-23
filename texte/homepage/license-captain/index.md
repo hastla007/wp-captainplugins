@@ -17,7 +17,7 @@ Ordnen Sie WooCommerce-Produkten oder Varianten Lizenzpläne mit monatlichem ode
 
 ## Aktivierungen und Verlängerungen im Blick
 
-Das Website-Limit zählt Live-Websites. Zu jeder Live-Website gehört eine kostenlose Staging-Website, zusätzlich erlaubt jede Lizenz mindestens fünf lokale Entwicklungsinstallationen. Statusänderungen landen im Auditverlauf. Kunden verlängern manuell mit jeder Shop-Zahlungsart oder wählen im Checkout die automatische Verlängerung über das offizielle WooCommerce-Stripe-Gateway, mit Vorabhinweis vor jeder Abbuchung, Wiederholungsversuchen und 14 Tagen Kulanzzeit.
+Das Website-Limit zählt Live-Websites. Zu jeder Live-Website gehört eine kostenlose Staging-Website, zusätzlich erlaubt jede Lizenz mindestens fünf lokale Entwicklungsinstallationen. Statusänderungen landen im Auditverlauf. Kunden verlängern manuell mit jeder Shop-Zahlungsart oder wählen im Checkout die automatische Verlängerung über das offizielle WooCommerce-Stripe-Gateway, mit Vorabhinweis vor jeder Abbuchung, Wiederholungsversuchen und 14 Tagen Kulanzzeit. Diese Fristen sind Vorgaben: Kulanzzeit, Wiederholungsplan und weitere Regeln passen Sie in den Einstellungen an Ihr Geschäft an, auf Wunsch mit Vorschlägen aus einem Länderprofil.
 
 ## Eine bessere Übersicht für Ihre Kunden
 

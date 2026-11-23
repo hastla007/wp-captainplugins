@@ -37,4 +37,7 @@ License Captain verlängert Lizenzen selbst. Produkte von WooCommerce Subscripti
 ## Läuft der Server in einem Multisite-Netzwerk?
 Ja, jede Website des Netzwerks ist dabei ein eigener, unabhängiger Lizenzserver mit eigenen Lizenzen, Releases und API-Endpunkten. Vorgesehen ist der Betrieb auf der einen Shop-Website.
 
+## Kann ich Fristen und Regeln an mein Land und mein Geschäft anpassen?
+Ja. Kulanzzeit, Wiederholungsversuche, Verlängerungsfenster, Aufbewahrungsfristen, Zustimmungstexte und die Regeln für Staging- und Entwicklungswebsites stellen Sie auf der Einstellungsseite ein. Länderprofile für Deutschland, Österreich, die Schweiz und die EU schlagen Werte vor, die Sie vor der Übernahme sehen und selbst prüfen; rechtlich verbindlich sind sie nicht. Ihre Einstellungen lassen sich als JSON-Datei exportieren und in einen anderen Shop übernehmen.
+
 [Features ansehen](/license-captain/features/) · [Preise und Pläne](/license-captain/preise/) · [Support](/support/)

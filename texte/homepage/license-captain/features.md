@@ -38,7 +38,22 @@ Laden Sie Release-ZIPs in einen privaten Speicher oder einen S3-kompatiblen Buck
 
 ## Kundenbereich und Datenschutz
 
-Der Kundenbereich fasst Lizenzen und aktivierte Websites zusammen. Kunden laden bis zu fünf Mitbenutzer ein oder übergeben eine Lizenz an ein anderes Kundenkonto. Eine Preistabelle mit Kaufbutton binden Sie per Shortcode oder Block ein. Fünfzehn Kunden-E-Mails laufen über die WooCommerce-E-Mail-Einstellungen; der Lizenzschlüssel steht standardmäßig nicht in der E-Mail. Datenschutzexport und -löschung unterstützen die Werkzeuge Ihrer WordPress-Installation, ein täglicher Job löscht alte Daten nach festen Fristen.
+Der Kundenbereich fasst Lizenzen und aktivierte Websites zusammen. Kunden laden bis zu fünf Mitbenutzer ein oder übergeben eine Lizenz an ein anderes Kundenkonto. Eine Preistabelle mit Kaufbutton binden Sie per Shortcode oder Block ein. Fünfzehn Kunden-E-Mails laufen über die WooCommerce-E-Mail-Einstellungen; der Lizenzschlüssel steht standardmäßig nicht in der E-Mail. Datenschutzexport und -löschung unterstützen die Werkzeuge Ihrer WordPress-Installation, ein täglicher Job löscht alte Daten nach den eingestellten Fristen.
+
+## Einstellungen nach Ihren Regeln
+
+Fristen, Grenzen und Texte stellen Sie auf der Einstellungsseite ein, ohne Code anzufassen. Jede Einstellung startet mit einer Vorgabe, die dem bisherigen Verhalten entspricht; Sie passen sie an Ihr Geschäft an.
+
+- **Übersichtliche Reiter:** Verlängerung, Websites und Staging, Updates und Downloads, E-Mails und Texte, Recht und Datenschutz, Betrieb. Jedes Feld hat einen Hilfetext; überschreibt Code im Shop einen Wert, zeigt die Seite das an.
+- **Verlängerung:** Kulanzzeit, Wiederholungsplan fehlgeschlagener Abbuchungen, Zeitfenster der manuellen Verlängerung und Erinnerungstage legen Sie selbst fest.
+- **Länderprofile:** Für Deutschland, Österreich, die Schweiz, die EU allgemein und andere Länder schlägt License Captain Werte vor. Sie sehen vorher und nachher und übernehmen nur, was Sie auswählen; nichts wird still überschrieben. Die Vorschläge sind als ungeprüft gekennzeichnet und ersetzen keine Rechtsberatung.
+- **Recht und Datenschutz:** Aufbewahrungsfristen je Datenart sowie Wortlaut und Pflicht der Zustimmungen zu Widerrufsverzicht und automatischer Verlängerung, je Sprache. Die Vorgaben sind Vorschläge, die Sie für Ihr Land prüfen.
+- **Websites Ihrer Kunden:** Staging-Erkennung, Zahl der Staging- und Entwicklungs-Websites, Offline-Frist des Clients und neue Aktivierungen je Stunde, global oder je Tarif.
+- **Downloads und Mitbenutzer:** ob nach Ablauf noch geladen werden darf, wie viele ältere Versionen wählbar sind und wie viele Mitbenutzer eine Lizenz haben darf.
+- **Ihre Marke und Kommunikation:** Support-Kontakt, Installationsschritte und Dokumentationslink je Produkt, Bezeichnungen im Kundenkonto und Testversand jeder E-Mail. Gesundheitsmeldungen des Servers gehen an die Empfänger, die Sie eintragen.
+- **Client in Ihrem Plugin:** Support-Link und Texte der Lizenzseite passen Sie beim Export der Bibliothek an. Erkennt der Client die Umgebung falsch, wählen Ihre Kunden bei der Aktivierung, ob es eine Live-, Staging- oder Entwicklungswebsite ist.
+- **Einstellungen übertragen und sichern:** Export und Import als JSON-Datei mit Vorschau, Zugangsdaten und Schlüssel bleiben außen vor. Zurücksetzen je Bereich oder gesamt, dieselben Befehle per WP-CLI, und ein Änderungsprotokoll zeigt, wer wann welchen Wert geändert hat.
+- **Rechte und Deinstallation:** Regeln, die alle Kunden-Websites betreffen, ändert nur, wer dafür berechtigt ist. Beim Entfernen des Plugins entscheiden Sie, ob die Daten bleiben (Vorgabe) oder gelöscht werden.
 
 ## Verwaltung und Betrieb
 
