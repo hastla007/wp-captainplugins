@@ -18,7 +18,7 @@ Hier finden Sie die in den Produkt-Repositories dokumentierten Mindestversionen,
 | Voucher Captain | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | 11.2.2 erforderlich | PHP-Erweiterungen GD, mbstring und zip |
 | Voucher Captain Pro | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | 11.2.2 erforderlich | Voucher Captain ab 1.2.0 muss installiert sein |
 | Pass Captain | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 11.2.2 | Ohne WooCommerce nutzbar |
-| Pass Captain Pro | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 11.2.2 | Pass Captain ab 1.5.0 muss installiert sein |
+| Pass Captain Pro | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 11.2.2 | Pass Captain ab 1.6.0 muss installiert sein |
 | Affiliate Captain | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 11.2.2 | PHP-Erweiterungen sodium und dom; zip für Programmausgabe |
 | Affiliate Captain Pro | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Optional, ab 11.2.2 | Affiliate Captain muss installiert sein |
 | Form Captain | 7.0 | 8.5 | MySQL 9.7 / MariaDB 12.3 | Nicht erforderlich | Der Kern nutzt keine WooCommerce-Funktionen; keine Multisite-Unterstützung in v1.0 |

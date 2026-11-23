@@ -1,6 +1,6 @@
 # Abgleich Website ↔ Plugin-Stand
 
-Stand: 17.11.2026. Je Produkt wurden die Website-Texte gegen Code, Konzept bzw. Spezifikation und To-do-Liste geprüft, jeweils auf dem neuesten Entwicklungs-Branch. Vor dem Livegang und nach jedem Plugin-Release erneut prüfen.
+Stand: 17.11.2026, Nachtrag 23.11.2026. Je Produkt wurden die Website-Texte gegen Code, Konzept bzw. Spezifikation und To-do-Liste geprüft, jeweils auf dem neuesten Entwicklungs-Branch. Vor dem Livegang und nach jedem Plugin-Release erneut prüfen.
 
 **Entscheidung des Inhabers:** Alle Kern-Plugins und alle sieben Pro-Add-ons sind zum Release fertig. Die Website beschreibt deshalb den Release-Umfang ohne „in Vorbereitung“-Hinweise. Falls sich ein Add-on verzögert, gilt der Ablauf in [REDAKTION.md](REDAKTION.md#pro-add-ons-in-vorbereitung).
 
@@ -14,15 +14,15 @@ Die alten Angaben (WordPress 6.3 bis 6.8, WooCommerce 8.0 bis 8.9) stehen nur no
 
 | Produkt | Branch / Commit | Version | Auf `main`? |
 |---|---|---|---|
-| Voucher Captain | `claude/plugin-todo-liste-2a83v4` 51daf99 | 1.3.0 | nein (`main` 1.1.0) |
-| Pass Captain | `claude/wp-plugin-analysis-todos-kvbfan` 7eacad97 | 1.5.0 | nein (`main` 1.4.0) |
-| Affiliate Captain | `claude/exciting-maxwell-srtg6v` 0b87f61 | 0.17.0 | nein (`main` 0.16.0) |
+| Voucher Captain | `main` (Stand 23.11.) | 1.3.0 | ja |
+| Pass Captain | `main` (Stand 23.11.) | 1.6.0 | ja |
+| Affiliate Captain | `main` (Stand 23.11.) | 0.20.0 | ja |
 | Form Captain | `claude/sleepy-ptolemy-n32guj` 10cf219 | 1.0.0-dev | 7 Commits voraus |
 | Review Captain | `claude/plugin-todo-abarbeiten-xzv9c8` 6050bbd | 0.1.0-dev | 2 Commits voraus |
 | Workflow Captain | `main` = `claude/plugin-todo-liste-2a83v4` 197c8e8 | 0.2.0 | ja |
-| Course Captain | `claude/zen-mayer-wfhra1` 290c276 + `claude/vigilant-sagan-wzdo1a` | 1.0.0-dev | nein (`main` nur Dokumente) |
+| Course Captain | `main` (Stand 23.11., PR #3 aus `claude/blissful-curie-tuuf7q`) | 1.0.0-dev | ja |
 | License Captain | `claude/zen-babbage-7q4nac` fcd9146 | 0.2.0 | nein (60 Commits voraus) |
-| Captain Pro (Voucher, Pass, Affiliate, Form) | `claude/wp-plugin-analysis-todos-f78fzo` 313b766 (PR #7) | je 0.1.0 | nein |
+| Captain Pro (alle sechs Add-ons) | `main` (Stand 23.11., PR #7 gemergt, Kernel 1.2.0) | je 0.1.0 | ja |
 | Review Captain Pro | `claude/review-captain-pro` 1a6afa8 | 0.1.0 | nein |
 | Workflow Captain Pro | `claude/plugin-todo-liste-2a83v4` e004004 | 0.1.0 | nein |
 
@@ -42,7 +42,7 @@ Diese Funktionen beschreibt die Website, weil Konzept oder To-do sie für den Re
   - Pass-Adapter: Der Vertrag im Pass-Plugin fehlt noch.
 - **Form Captain:** Übergabe an Review Captain Pro und Course-Captain-Verbindung (beide im To-do offen).
 - **Affiliate Captain Pro:** PayPal-Sandbox-Test und End-to-end-Lauf (laut To-do offen). Die Funktionen sind gebaut.
-- **Voucher, Pass und Form Captain Pro:** gebaut, aber nur auf PR #7. Der Merge ist Voraussetzung für den Release.
+- **Voucher, Pass und Form Captain Pro:** gebaut; PR #7 ist seit 23.11. in `main`.
 
 ## Inhaltliche Korrekturen (Auswahl)
 
@@ -53,7 +53,7 @@ Diese Funktionen beschreibt die Website, weil Konzept oder To-do sie für den Re
 - **Pass:**
   - Abendkasse mit Fiskalisierung, Pässe, Gästelisten, Kontingente und Ticketumtausch ergänzt.
   - Neue Shortcode-Namen.
-  - Pro braucht Pass Captain ab 1.5.0.
+  - Pro braucht Pass Captain ab 1.6.0 (Stand 23.11.).
 - **Affiliate:**
   - Gruppen, Wunschcodes, Import, Betrugsregeln, Gutschriften/E-Rechnung ergänzt.
   - Die PayPal-Sammeldatei gehört schon zum Kern.
@@ -89,6 +89,20 @@ Diese Funktionen beschreibt die Website, weil Konzept oder To-do sie für den Re
 - **Form Captain Pro:** 59 / 129 / 249 € pro Jahr zzgl. USt. Website, Shop-Katalog (`inc/catalog.php`) und Preis-Pattern sind umgestellt.
 - **Plannamen:** Alle Add-ons heißen Single / Business / Agency (1 / 5 / 25 Live-Websites), auch Form und Review Captain Pro. Solo/Studio entfällt.
 - **BoatingSchool und LearnBoating:** Das sind interne Plugins des Inhabers (Testkunde). Sie erscheinen nicht auf der Website; `tools/acceptance-list.py` prüft das.
+
+## Nachtrag 23.11.2026: vom Inhaber zurückgehaltene Funktionen
+
+Captain Pro hat eine harte Sperre „gebaut, aber vom Inhaber noch nicht freigegeben“ (Entscheidung H1). Ein Release-Build lehnt diese Add-ons und Funktionen ab, bis die Freigabe da ist. Die Website beschreibt sie trotzdem (Annahme: alles ist zum Release fertig). Mit den Entscheidungen muss sie deshalb abgeglichen werden:
+
+| Add-on | Zurückgehalten | Offene Entscheidung | Auf der Website |
+|---|---|---|---|
+| Voucher Captain Pro | alle vier Funktionen (CSV-Firmenbestellung, Wallet, SMS, White Label) | E4: Umfang, Verkaufsstart mit oder ohne Voucher Pro | Pro-Seite, Preise, Captain Pro |
+| Affiliate Captain Pro | mehrere Programme, Store Credit, Stripe Connect, Leaderboard, Multi-Tier | E5 b: Umfang und Abnahme | nur „mehrere Partnerprogramme“ (Pro-Seite, Captain Pro, Pro-Installation) |
+| Workflow Captain Pro | ganzes Add-on | D3 (Zuschnitt frei/Pro), D12 (Verkaufsreihenfolge) | Pro-Seite, Preise, Captain Pro |
+
+Nicht zurückgehalten sind Pass, Form und Review Captain Pro sowie die ersten vier Funktionen von Affiliate Captain Pro.
+
+Neu seit 23.11. ist außerdem der Auftrag „Einstellungen der Captain Suite“: Länderprofile, Export/Import, Änderungsprotokoll und Pro-Hinweiszeilen im Kern; Rahmen in captain-pro `docs/settings/README.md`. Diese Funktionen sind noch in Arbeit und auf der Website noch nicht beschrieben.
 
 ## Offene Fragen an den Inhaber
 

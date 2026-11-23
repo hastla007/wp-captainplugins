@@ -188,7 +188,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/startseite.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "f151d19469795f67ad3803bc35af852ed018d1183fd3ae23a5ce773c4cc45ab4",
+		"source_hash" => "9ad4aa2a87d028ed6694631e34ff1bea419cdab98db96adb010208a74ca4fbe3",
 		"source_file" => "texte/homepage/kompatibilitaet.md",
 	],
 	[
@@ -862,7 +862,7 @@ return [
 		"social_description" => "",
 		"social_image" => "theme:assets/social/pass-captain.jpg",
 		"has_placeholders" => true,
-		"source_hash" => "3b5c58158f1829126ac238edb29052a1de83defe069b28cdd1d476ffa9345004",
+		"source_hash" => "465f938103591675f2f75850108960ee7d1efe8724a323c7b4178d5e500cce4d",
 		"source_file" => "texte/homepage/pass-captain/pro.md",
 	],
 	[
