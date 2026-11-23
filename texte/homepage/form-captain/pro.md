@@ -27,13 +27,24 @@ Legen Sie Endpunkte unter **Form Captain → Webhooks** an und übermitteln Sie 
 
 ## PDF-Ausgaben aus Einträgen
 
-In der Eintragsansicht laden Sie einen Eintrag mit „Als PDF herunterladen“ als PDF/A-Dokument herunter. Das PDF wird beim Abruf mit festem Layout und eingebetteter Schrift erzeugt und nicht auf dem Server gespeichert. Es enthält die Antworten des Eintrags; sensible Felder erscheinen nur für Nutzer mit Exportrecht. Der Abruf erfordert das Recht, Einträge zu lesen. Es werden keine externen Ressourcen geladen; sehr lange Einträge werden nach 30 Seiten mit Hinweis gekürzt.
+In der Eintragsansicht laden Sie einen Eintrag mit „Als PDF herunterladen“ als PDF/A-Dokument herunter. Das PDF wird beim Abruf mit eingebetteter Schrift erzeugt und nicht auf dem Server gespeichert. Es enthält die Antworten des Eintrags; sensible Felder erscheinen nur für Nutzer mit Exportrecht. Der Abruf erfordert das Recht, Einträge zu lesen. Es werden keine externen Ressourcen geladen; sehr lange Einträge werden nach 30 Seiten mit Hinweis gekürzt.
 
 ## WooCommerce-Käuferfragebögen nach dem Kauf
 
-Ordnen Sie einem Produkt im klassischen WooCommerce-Produkteditor ein veröffentlichtes Formular zu, etwa für Personalisierungs- oder Lieferangaben. Nach bestätigter Zahlung erhält jede Bestellposition einen eigenen Fragebogen; der Link erscheint auf der Bestellbestätigung, unter „Mein Konto“ und in den Kunden-E-Mails von WooCommerce, für Gastbestellungen mit einem zeitlich begrenzten Zugangslink. Die Antwort wird als Form-Captain-Eintrag mit geprüftem Bestellbezug gespeichert; in der Bestellung sehen Sie den Status je Position. Optional markieren Sie einen Fragebogen als „vor Bearbeitung erforderlich“, fordern eine Korrektur an oder versenden eine einmalige Erinnerung.
+Ordnen Sie einem Produkt im klassischen WooCommerce-Produkteditor ein veröffentlichtes Formular zu, etwa für Personalisierungs- oder Lieferangaben. Nach bestätigter Zahlung erhält jede Bestellposition einen eigenen Fragebogen; der Link erscheint auf der Bestellbestätigung, unter „Mein Konto“ und in den Kunden-E-Mails von WooCommerce, für Gastbestellungen mit einem zeitlich begrenzten Zugangslink. Die Antwort wird als Form-Captain-Eintrag mit geprüftem Bestellbezug gespeichert; in der Bestellung sehen Sie den Status je Position. Optional markieren Sie einen Fragebogen als „vor Bearbeitung erforderlich“, fordern eine Korrektur an oder versenden Erinnerungen.
 
 Form Captain Pro verändert weder Checkout-Felder noch Zahlungs- oder Bestellstatus. Storno und Vollerstattung schließen offene Fragebögen. Unterstützt werden HPOS und der klassische Bestellspeicher sowie Bestellungen aus klassischem und Block-Checkout.
+
+## Pro-Einstellungen
+
+Die Pro-Einstellungen erscheinen in den gewohnten Bereichen der Form-Captain-Einstellungen. Die auf dieser Seite genannten Werte sind die Vorgaben ab Werk; ohne Ihr Zutun ändert sich nichts.
+
+- **Uploads:** Vorgabe für erlaubte Dateitypen und Höchstgröße aller Upload-Felder, eine Obergrenze bis zum Serverlimit und eine eigene Aufbewahrung, mit der Dateien früher gelöscht werden als die Einsendung.
+- **Mehrstufige Formulare:** Gültigkeit gespeicherter Entwürfe (1 bis 30 Tage), Fortschritt als Balken, Text oder ausgeblendet sowie eigene Texte für Fortschritt und Schaltflächen.
+- **PDF:** Logo, Kopf- und Fußzeile, Papierformat A4 oder US-Letter, Sprache des Dokuments und auf Wunsch das PDF als Anhang der Admin-Benachrichtigung – ohne sensible Felder.
+- **Webhooks:** Zeitlimit und Zahl der Zustellversuche, global und je Endpunkt.
+- **WooCommerce-Fragebögen:** Vorgabe für Erinnerungen (bis zu drei je Fragebogen), Gültigkeit der Käufer-Links, die Bestellstatus, ab denen ein Fragebogen bereitsteht, sowie eigene Texte für Erinnerungs- und Korrektur-E-Mails.
+- **Deinstallation:** Pro-Daten wie hochgeladene Dateien behalten (Vorgabe) oder nach ausdrücklicher Bestätigung löschen.
 
 ## Captain-Suite-Verbindungen
 

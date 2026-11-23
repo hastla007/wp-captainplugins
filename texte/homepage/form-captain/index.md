@@ -27,7 +27,7 @@ Wählen Sie eine Vorlage, ergänzen Sie Felder und fügen Sie das Formular mit e
 
 ## Kostenloser Kern, der im Alltag nutzbar bleibt
 
-Form Captain Free unterstützt unbegrenzt viele Formulare und Einsendungen. Der Kern umfasst Feldeditor, Vorlagen, Feldvalidierung, einfache bedingte Feldanzeige, Einwilligungsfeld mit Nachweis, Bestätigungen, E-Mail-Benachrichtigungen, Eintragsverwaltung, CSV-Export, Formular- und Eintragsimport, Spamschutz, Rollenrechte sowie WordPress-Datenschutzwerkzeuge.
+Form Captain Free unterstützt unbegrenzt viele Formulare und Einsendungen. Der Kern umfasst Feldeditor, Vorlagen, Feldvalidierung, einfache bedingte Feldanzeige, Einwilligungsfeld mit Nachweis, Bestätigungen, E-Mail-Benachrichtigungen, Eintragsverwaltung, CSV-Export, Formular- und Eintragsimport, Spamschutz, Rollenrechte sowie WordPress-Datenschutzwerkzeuge. Länderprofile für Deutschland, Österreich, die Schweiz, die EU und international schlagen passende Einstellungen mit Vorher-Nachher-Ansicht vor, und per Export/Import übertragen Sie Ihre Einstellungen auf weitere Websites.
 
 ## Pro für anspruchsvollere Workflows
 

@@ -35,6 +35,10 @@ Pro enthält mehrstufige Formulare mit Fortsetzen-Link, geschützte Datei-Upload
 
 Single kostet 59 € pro Jahr für 1 Live-Website, Business 129 € für 5 Live-Websites und Agency 249 € für 25 Live-Websites, jeweils zzgl. Umsatzsteuer. Alle Pläne enthalten dieselben Pro-Funktionen; Agency enthält priorisierten Support.
 
+## Kann ich Form Captain an die Regeln meines Landes anpassen?
+
+Ja, im kostenlosen Kern. Länderprofile für Deutschland, Österreich, die Schweiz, die EU allgemein und „International“ schlagen Werte wie Aufbewahrung, CSV-Trennzeichen und Eingabeformate vor; Sie sehen jede Änderung vorher und übernehmen nur, was Sie auswählen. Die Profile sind Vorschläge und keine Rechtsberatung: Einwilligungstexte und Aufbewahrungsfristen prüfen Sie als Betreiber selbst. Ihre Einstellungen können Sie als JSON-Datei exportieren und auf weiteren Websites importieren.
+
 ## Benötige ich WooCommerce?
 
 Nein. Form Captain ist für eigenständige Formulare gedacht und greift nicht in WooCommerce ein. WooCommerce (ab Version 11.2) wird nur für die Käuferfragebögen von Form Captain Pro benötigt.

@@ -31,15 +31,32 @@ Bestehende Formulare aus einem verbreiteten Shortcode-Formularformat übernehmen
 
 ## Spamschutz und Datenschutzwerkzeuge
 
-Honeypot, Mindest-Ausfüllzeit, Rate-Limit und eine einfache Blockliste für Begriffe und E-Mail-Domains bilden den Basisspamschutz ohne Drittanbieter. Externe Captcha-Anbieter lassen sich über Erweiterungen ergänzen und müssen nach Anzeige von Anbieter und Datenfluss bewusst aktiviert werden. Datenexport, Löschung, Aufbewahrungsfristen (90 Tage, 12 Monate oder manuell), Einwilligungsnachweis und -widerruf sowie die WordPress-Privacy-Werkzeuge unterstützen den verantwortungsvollen Umgang mit Formulardaten.
+Honeypot, Mindest-Ausfüllzeit, Rate-Limit und eine einfache Blockliste für Begriffe und E-Mail-Domains bilden den Basisspamschutz ohne Drittanbieter. Externe Captcha-Anbieter lassen sich über Erweiterungen ergänzen und müssen nach Anzeige von Anbieter und Datenfluss bewusst aktiviert werden. Datenexport, Löschung, frei einstellbare Aufbewahrungsfristen, Einwilligungsnachweis und -widerruf sowie die WordPress-Privacy-Werkzeuge unterstützen den verantwortungsvollen Umgang mit Formulardaten.
 
 Systemstatus, Website-Zustand und WP-CLI-Befehle (`wp form-captain`) zeigen Warteschlange, Mailfehler und Cron-Status, ohne Formularinhalte preiszugeben.
+
+## Einstellungen und Anpassung an Ihr Land
+
+Form Captain lässt sich an Ihre Abläufe und die Gepflogenheiten Ihres Landes anpassen. Alle folgenden Einstellungen sind im kostenlosen Kern enthalten; Vorgaben ab Werk ändern bestehendes Verhalten nicht.
+
+- **Länderprofile als Vorschlag:** Für Deutschland, Österreich, die Schweiz, die EU allgemein und „International“ schlägt Form Captain passende Werte vor, etwa Aufbewahrung, Papierkorb-Frist, CSV-Trennzeichen sowie Postleitzahl- und Telefonformat für neue Felder. Sie sehen jeden Wert vorher und nachher und übernehmen nur, was Sie auswählen; nichts wird still überschrieben. Werte mit rechtlicher Bedeutung sind als ungeprüft gekennzeichnet – Einwilligungs- und Aufbewahrungswerte prüfen Sie als Betreiber selbst.
+- **Aufbewahrung frei wählbar:** Fristen in Tagen, Monaten oder Jahren oder manuelles Löschen, global und je Formular, dazu einstellbare Schonfrist und Vorwarnung vor dem Löschen.
+- **Eingabeformate je Land:** Postleitzahl-Muster für Deutschland, Österreich, die Schweiz oder allgemein, Telefonnummern wahlweise international mit „+“ und eine Mindestalter-Prüfung am Datumsfeld.
+- **Eigene Texte je Formular:** Schaltflächentext, Pflichtfeld-Hinweis und Fehlermeldungen passen Sie je Formular an. Die Bestätigungsmail geht in der Sprache der Seite hinaus, auf der das Formular stand.
+- **E-Mails mit Ihrem Auftritt:** Logo, Fußzeile etwa für Ihre Firmenangaben, feste Antwortadresse, Format je Formular und ein Test-Versand der echten Bestätigungsmail mit Beispielwerten.
+- **Double-Opt-in je Formular:** Auf Wunsch bestätigt die absendende Person ihre E-Mail-Adresse über einen Link, bevor Aktionen laufen. Gültigkeit des Links und Löschung unbestätigter Einsendungen stellen Sie ein.
+- **Grenzen und Vorgangsnummer:** Formulare öffnen und schließen zu einem Zeitpunkt oder nach einer Höchstzahl an Einsendungen. Eine Vorgangsnummer mit eigenem Präfix und optionalem Jahresneustart steht als Platzhalter in E-Mails bereit.
+- **Spamschutz nach Bedarf:** Ein eingebauter Schutz lässt den Browser eine kleine Rechenaufgabe lösen – ohne externen Dienst. Sendegrenzen sind einstellbar, dieser Schutz lässt sich je Formular verschärfen oder abschalten, und hinter Diensten wie Cloudflare wählen Sie die richtige Quelle der Besucheradresse.
+- **Einstellungen übertragen und nachvollziehen:** Export und Import als JSON-Datei mit Vorschau, ohne Zugangsdaten. Dazu Zurücksetzen je Bereich, ein Änderungsprotokoll (wer hat wann was von welchem auf welchen Wert geändert), WP-CLI-Befehle für Einstellungen und ein eigenes Recht, wer Einstellungen verwalten darf.
+- **Deinstallation nach Ihrer Wahl:** Daten behalten (Vorgabe) oder nach ausdrücklicher Bestätigung vollständig löschen. Hinweise auf Pro-Funktionen in den Einstellungen lassen sich ausblenden.
+
+Einstellungen für Pro-Funktionen wie Uploads, mehrstufige Formulare, PDF, Webhooks und WooCommerce-Fragebögen finden Sie auf der [Pro-Seite](/form-captain/pro/).
 
 ## Pro-Workflows
 
 Form Captain Pro ergänzt mehrstufige Formulare mit Fortschritt und Fortsetzen-Link, geschützte Uploads mit Typ- und Größenlimits sowie UND-/ODER-Bedingungsgruppen. Steuern Sie Bestätigungen und Benachrichtigungsziele anhand der Antworten. Serverseitige Validierung prüft die Regeln unabhängig von der Browserdarstellung. Für WooCommerce ordnen Sie Produkten einen Käuferfragebogen zu, den Kundinnen und Kunden nach bestätigtem Kauf ausfüllen.
 
-Webhooks übertragen zugeordnete Felder an öffentliche HTTPS-Ziele mit Signatur, Idempotenz, Zeitlimit, Wiederholungen und Jobstatus. Einträge lassen sich als PDF mit festem Layout herunterladen. Datei- und PDF-Zugriffe folgen den WordPress-Berechtigungen und Datenschutzregeln.
+Webhooks übertragen zugeordnete Felder an öffentliche HTTPS-Ziele mit Signatur, Idempotenz, Zeitlimit, Wiederholungen und Jobstatus. Einträge lassen sich als PDF herunterladen. Datei- und PDF-Zugriffe folgen den WordPress-Berechtigungen und Datenschutzregeln.
 
 ## Schnittstellen statt Datenbankkopplung
 
