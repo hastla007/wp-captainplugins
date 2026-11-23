@@ -1,6 +1,6 @@
 ---
 url: /voucher-captain/pro/
-seo_title: Voucher Captain Pro – Firmenbestellungen, Wallet, SMS und White Label
+seo_title: Voucher Captain Pro – Firmenkunden, Wallet, SMS, White Label
 meta_description: Erweitern Sie Voucher Captain mit Firmenbestellungen per CSV, Apple- und Google-Wallet-Pässen, SMS-Zustellung und White Label.
 focus_keyphrase: WooCommerce Gutschein Pro
 ---
