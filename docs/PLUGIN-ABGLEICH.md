@@ -102,6 +102,8 @@ Captain Pro hat eine harte Sperre „gebaut, aber vom Inhaber noch nicht freigeg
 
 Nicht zurückgehalten sind Pass, Form und Review Captain Pro sowie die ersten vier Funktionen von Affiliate Captain Pro.
 
+**Entscheidung der Inhaberin (23.11.2026):** Die Website bleibt unverändert. Vor dem Verkaufsstart wird nichts verkauft. Vor dem Livegang prüfen, welche Sperren noch gelten; für jedes dann noch gesperrte Add-on den Ablauf „in Vorbereitung“ aus [REDAKTION.md](REDAKTION.md#pro-add-ons-in-vorbereitung) anwenden.
+
 Neu seit 23.11. ist außerdem der Auftrag „Einstellungen der Captain Suite“: Länderprofile, Export/Import, Änderungsprotokoll und Pro-Hinweiszeilen im Kern; Rahmen in captain-pro `docs/settings/README.md`. Die Website beschreibt sie seit 23.11. nach dem geplanten Umfang (Entscheidung der Inhaberin):
 - **Übergreifend:** ein Abschnitt auf der Produktübersicht und eine Frage in der FAQ.
 - **Je Produkt:** ein Abschnitt „Einstellungen und Anpassung an Ihr Land“ auf der Features-Seite, Pro-Einstellungen auf der Pro-Seite, je eine FAQ-Frage.
