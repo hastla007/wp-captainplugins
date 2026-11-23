@@ -13,6 +13,9 @@ Ja. Voucher Captain, Pass Captain, Affiliate Captain, Form Captain, Review Capta
 ## Muss ich WooCommerce installieren?
 Das hängt vom Produkt ab. Voucher Captain setzt WooCommerce voraus. Pass Captain, Affiliate Captain, Form Captain, Review Captain, Workflow Captain und Course Captain können eigenständig genutzt werden; WooCommerce ist je nach Produkt optional für Shopkontexte, Produktzuordnung oder Ereignisse. License Captain nutzt WooCommerce für den Lizenzverkauf.
 
+## Kann ich die Plugins an mein Land anpassen?
+Ja. Jedes Captain-Plugin bringt Länderprofile für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder mit. Ein Profil schlägt Werte vor und zeigt die Änderungen vorher an; nichts wird ohne Ihre Bestätigung überschrieben. Fristen, Texte und Pflichtangaben stellen Sie selbst ein, rechtlich relevante Werte prüfen Sie oder Ihre Beratung. Einstellungen lassen sich exportieren, importieren und zurücksetzen. [Mehr dazu in der Produktübersicht](/produkte/)
+
 ## Was ist in Captain Pro enthalten?
 Jeder Pro-Plan umfasst die Funktionen des jeweiligen Add-ons. Die Planstufen unterscheiden sich nach der Zahl der Live-Websites. [Preise ansehen](/preise/)
 

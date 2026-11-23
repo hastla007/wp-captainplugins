@@ -20,6 +20,19 @@ Wählen Sie die Lösung, die zu Ihrem Geschäftsprozess passt. Die Kern-Plugins 
 | Course Captain | Online-Akademien, Coaches, Weiterbildung und Kursanbieter | Kurse, Lektionen, Fragenbank, Smarttrainer, Quiz, Prüfungen und Lernnachweise | Nicht erforderlich; für Kursverkauf mit Pro |
 | License Captain | Plugin-Hersteller, Softwareanbieter und Agenturen | Eigener Lizenzshop, Aktivierungen, Verlängerungen und Updatebereitstellung | Erforderlich für den License-Captain-Lizenzshop |
 
+## Für Ihr Land und Ihren Betrieb einstellbar
+
+Alle Captain-Plugins folgen denselben Regeln für Einstellungen. Wer ein Plugin kennt, findet sich in den anderen sofort zurecht.
+
+- **Länderprofile** für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder: Das Profil schlägt passende Werte vor, Sie sehen vorher und nachher und übernehmen nur, was Sie bestätigen. Werte mit rechtlichem Gewicht prüfen Sie selbst.
+- **Geschäftsregeln statt fester Werte:** Fristen, Grenzen, Kulanz- und Aufbewahrungszeiten sowie Texte stellen Sie selbst ein; jede Einstellung hat eine sichere Vorgabe und eine Hilfe.
+- **Export und Import** der Einstellungen als Datei, mit Vorschau und ohne Zugangsdaten. So übertragen Sie eine Konfiguration von der Testumgebung auf die Live-Website.
+- **Zurücksetzen und Änderungsprotokoll:** Sie setzen einen Bereich oder alles auf die Vorgaben zurück und sehen, wer wann was geändert hat.
+- **Eigene Berechtigung** für die Einstellungen und WP-CLI-Befehle für Agenturen und automatisierte Abläufe.
+- **Deinstallation mit Wahl:** Daten behalten (Vorgabe) oder vollständig löschen.
+
+Was ein Betrieb für den rechtlich richtigen Alltag in seinem Land braucht, ist im kostenlosen Kern enthalten. Captain Pro ergänzt Skalierung, Automatisierung und White Label.
+
 ## Voucher Captain
 
 Gestalten und verkaufen Sie Gutscheine mit Wunschwert, Empfängerangaben und individueller Zustellung. Verwalten Sie Restguthaben, Einlösungen, Aktionen und Empfehlungen an einem Ort.
