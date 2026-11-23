@@ -28,7 +28,7 @@ Alle Captain-Plugins folgen denselben Regeln für Einstellungen. Wer ein Plugin 
 - **Geschäftsregeln statt fester Werte:** Fristen, Grenzen, Kulanz- und Aufbewahrungszeiten sowie Texte stellen Sie selbst ein; jede Einstellung hat eine sichere Vorgabe und eine Hilfe.
 - **Export und Import** der Einstellungen als Datei, mit Vorschau und ohne Zugangsdaten. So übertragen Sie eine Konfiguration von der Testumgebung auf die Live-Website.
 - **Zurücksetzen und Änderungsprotokoll:** Sie setzen einen Bereich oder alles auf die Vorgaben zurück und sehen, wer wann was geändert hat.
-- **Eigene Berechtigung** für die Einstellungen und WP-CLI-Befehle für Agenturen und automatisierte Abläufe.
+- **WP-CLI-Befehle** für Agenturen und automatisierte Abläufe; wo ein Plugin eigene Rollen mitbringt, lässt sich der Zugriff auf die Einstellungen gezielt vergeben.
 - **Deinstallation mit Wahl:** Daten behalten (Vorgabe) oder vollständig löschen.
 
 Was ein Betrieb für den rechtlich richtigen Alltag in seinem Land braucht, ist im kostenlosen Kern enthalten. Captain Pro ergänzt Skalierung, Automatisierung und White Label.

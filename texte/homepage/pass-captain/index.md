@@ -17,7 +17,7 @@ Erstellen Sie Einzeltermine oder Serien, definieren Sie Preisstufen und veröffe
 
 ## Verkauf nach Ihrem Setup
 
-Nehmen Sie Zahlungen per Überweisung (mit GiroCode), Stripe, PayPal oder Mollie an, verkaufen Sie an der Abendkasse oder binden Sie WooCommerce optional ein. Regeln für Frühbucher, Zeitfenster, Kampagnen und Käuferlimits helfen, den Verkauf passend zu steuern.
+Nehmen Sie Zahlungen per Überweisung (mit GiroCode), Stripe, PayPal oder Mollie an, verkaufen Sie an der Abendkasse oder binden Sie WooCommerce optional ein. Regeln für Frühbucher, Zeitfenster, Kampagnen und Käuferlimits helfen, den Verkauf passend zu steuern. Länderprofile für Deutschland, Österreich, die Schweiz und weitere Länder schlagen passende Einstellungen vor, die Sie vor dem Übernehmen prüfen.
 
 ## Tickets und Einlass im Griff
 

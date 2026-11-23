@@ -25,6 +25,16 @@ Mit White Label ersetzen Sie Namen und Logo von Pass Captain durch Ihre eigenen,
 
 Die schreibende REST-API nutzt die API-Schlüssel von Pass Captain mit eigenen Schreibrechten: Bestellungen anlegen, Tickets stornieren oder neu ausstellen sowie Check-ins erfassen und zurücknehmen, jeweils auf ein Event begrenzt.
 
+## Pro-Einstellungen am gewohnten Ort
+
+Mit aktiver Lizenz erscheinen die Pro-Einstellungen direkt in den passenden Bereichen der Pass-Captain-Einstellungen.
+
+- **E-Rechnung:** Format, Zustellung als XML oder PDF, Käuferreferenz, elektronische Adresse, Bankdaten und Zahlungsbedingungen. Die Aufbewahrungsdauer der E-Rechnungen legen Sie selbst fest; die für Sie geltende Frist prüfen Sie.
+- **Kartenterminal:** Anbieter, Zeitlimit und die Zuordnung der Lesegeräte zu Ihren Kassen.
+- **White Label:** Neben Name, Logo und Menü blenden Sie den Hinweis auf Pass Captain auch in der Scanner-App, auf der Ticketseite und im Fuß des Ticket-PDFs aus.
+- **Warteraum:** Events, Einlasstempo, Zugangsdauer und Text; auf Wunsch schaltet sich der Warteraum zum Verkaufsstart automatisch ein.
+- **Schreibende API:** Aufbewahrung des Check-in-Protokolls und ein Limit je API-Schlüssel.
+
 ## Jahrespläne
 
 | Plan | Live-Websites | Preis pro Jahr |

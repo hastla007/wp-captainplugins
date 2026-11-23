@@ -31,4 +31,7 @@ E-Rechnungen (XRechnung und ZUGFeRD), Kartenterminals von Stripe Terminal und Su
 ## Berechnet Pass Captain automatisch meine Steuern?
 Pass Captain unterstützt konfigurierbare Steuerprofile. Steuersätze und die passende steuerliche Behandlung werden vom Betreiber festgelegt.
 
+## Kann ich Pass Captain an mein Land anpassen?
+Ja. Länderprofile für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder schlagen passende Werte vor, etwa für Währung, Rechnungsnummern und Aufbewahrungsfristen. Sie sehen die Änderungen vorher und übernehmen nur, was Sie bestätigen; rechtlich relevante Werte prüfen Sie selbst. Alle Einstellungen können Sie anschließend frei ändern, exportieren und zurücksetzen.
+
 [Features](/pass-captain/features/) · [Pro und Preise](/pass-captain/pro/) · [Support](/support/)

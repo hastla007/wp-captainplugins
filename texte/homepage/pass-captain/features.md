@@ -39,5 +39,19 @@ Nutzen Sie Rechnungen und Gutschriften, Erstattungsfreigaben, Regeln für mehrer
 
 WooCommerce ist optional und unterstützt Classic- und Blocks-Checkout sowie HPOS. Steuerprofile bilden Länder- und Steuerklassenkonfigurationen ab; die Steuersätze pflegt der Betreiber.
 
+## Einstellungen und Anpassung an Ihr Land
+
+Alles, was Sie für den Betrieb in Ihrem Land brauchen, stellen Sie im kostenlosen Kern ein.
+
+- **Länderprofile** für Deutschland, Österreich, die Schweiz, die übrige EU und weitere Länder: Das Profil schlägt Werte wie Währung, Rechnungsnummern, Aufbewahrungsfristen und Standardtexte vor. Sie sehen jede Änderung vorher und nachher und übernehmen nur, was Sie bestätigen. Werte mit rechtlichem Gewicht prüfen Sie selbst oder mit Ihrer Beratung.
+- **Währung:** Legen Sie Standardwährung und erlaubte Währungen fest und runden Sie Barbeträge an der Abendkasse auf Wunsch, etwa auf 5 Rappen.
+- **Rechnungen nach Ihren Vorgaben:** Nummernmuster, Startnummer, Stellenzahl und Jahresangabe wählen Sie selbst; dazu kommen Logo, Fußzeile, Zahlungsziel und Bankverbindung. Auch Ticket-PDFs erhalten Ihr Logo und Ihre Fußzeile.
+- **Einwilligungen und Pflichtlinks:** Ergänzen Sie eigene Zustimmungs-Haken im Checkout (nie vorangekreuzt, mit Nachweis), einen Alters-Haken sowie Links zu Impressum und Datenschutz. Die Formulierungen bestimmen Sie.
+- **Geschäftsregeln statt fester Werte:** Stornofrist und eine einfache Stornogebühr, Zugang zum Bestellportal, Protokoll- und Aufbewahrungsfristen stellen Sie selbst ein. Jede Einstellung hat eine sichere Vorgabe, einen Hilfetext und meldet ungültige Eingaben.
+- **Export und Import** der Einstellungen als JSON-Datei, mit Vorschau und ohne Zugangsdaten, zum Beispiel von der Testumgebung auf die Live-Website. Einzelne Bereiche oder alles setzen Sie auf die Vorgaben zurück.
+- **Änderungsprotokoll und WP-CLI:** Sie sehen, wer wann welchen Wert von was auf was geändert hat, und verwalten Einstellungen auch per Kommandozeile.
+- **Deinstallation mit Wahl:** Daten behalten (Vorgabe) oder nach ausdrücklicher Bestätigung vollständig löschen.
+- **Pro-Einstellungen** erscheinen als dezente Hinweiszeile am Ende des passenden Bereichs, die Sie ausblenden können.
+
 [Screenshot-Platzhalter: Scanneransicht nach erfolgreicher Prüfung eines ungültigen Demotickets zeigen, einschließlich Check-in-Status; QR-Code muss unbrauchbar sein.] · [Demo: Warteliste]  
 [Pass Captain Pro vergleichen](/pass-captain/pro/)
